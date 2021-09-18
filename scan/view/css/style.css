@@ -1,0 +1,166 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+    font-family: Helvetica, sans-serif;;
+    overflow: hidden;
+}
+
+a {
+    color: #ffffff;
+}
+
+#info {
+    position: absolute;
+    width: 100%;
+    color: #ffffff;
+    padding: 5px;
+    font-family: Monospace;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+}
+
+#menu {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.tag {
+    float: left;
+    background: rgba(238, 255, 255, 0);
+    border-radius: 3px 0 0 3px;
+    color: #999;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+}
+
+.tag::after {
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #eee;
+    border-top: 13px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tag:hover {
+    background-color: rgba(219, 127, 255, 0.55);
+    color: white;
+}
+
+.tag:hover::after {
+    border-left-color: rgba(219, 127, 255, 0.55);
+}
+
+.element {
+    width: 240px;
+    height: 320px;
+    box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.5);
+    /*border: 1px solid rgba(127, 255, 255, 0.25);*/
+    text-align: center;
+    cursor: default;
+}
+
+.element:hover {
+    box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.75);
+    border: 1px solid rgba(127, 255, 255, 0.75);
+}
+
+.element .symbol {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.95);
+}
+
+.element .name {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    right: auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(219, 127, 255, 0.75);
+    text-shadow: 0 0 10px rgba(219, 127, 255, 0.95);
+}
+
+.element .package_name {
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    right: auto;
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgba(219, 127, 255, 0.75);
+    text-shadow: 0 0 10px rgba(219, 127, 255, 0.95);
+}
+
+.element .details {
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    right: 0px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.element .details ul {
+    position: relative;
+    left: -35px;
+    list-style: none;
+    word-break: break-all;
+}
+
+.element .details ul li {
+    float: left;
+}
+
+
+
+button {
+    color: rgba(127, 255, 255, 0.75);
+    background: transparent;
+    outline: 1px solid rgba(127, 255, 255, 0.75);
+    border: 0px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 255, 255, 0.5);
+}
+
+button:active {
+    color: #000000;
+    background-color: rgba(0, 255, 255, 0.75);
+}

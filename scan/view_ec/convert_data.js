@@ -64,23 +64,38 @@ function calc_position_y(nodeSize) {
     return startPos + nodeSize * fix * Math.random();
 }
 
-/* 按类型区域进行排列 */
-function calc_pos_area(typeIndex) {
-    // for (let i = 0; i < graph.categories.length; i++) {
-    //     if (type.name === graph.categories[i].name) {
-    //         return {x: i * 100 + 100 * Math.random(), y: i * 100 + 100 * Math.random()}
-    //     }
-    // }
-    // return {x: -100 * Math.random(), y: -100 * Math.random()}
+var countGroupByType = {};
 
+/* 按类型区域进行排列 */
+function calc_pos_area(typeIndex, nodeIndexOfType) {
     // 每行12个
-    let row = Math.floor(typeIndex / 12);
+
+    const matrix = calc_post_matrix(countGroupByType[typeIndex].length, nodeIndexOfType);
+
     let column = typeIndex % 12;
-    let x = column * 2000 + 100 + 1000 * Math.random();
-    let y = row * 2000 + 100 + 1000 * Math.random();
+    let sX = column * 2000 + 100;
+    let x = sX + matrix.x;
+
+    let row = Math.floor(typeIndex / 12);
+    let sY = row * 2000 + 100;
+    let y = sY + matrix.y;
 
     return {x: x, y: y}
 }
+
+function calc_post_matrix(totalSize, index) {
+    // 一行共计1000，每行承载数量 = 1000 / totalSize * 2
+    let constNum = Math.floor(1000 / totalSize * 2);
+    // debugger;
+    let column = index % 20;
+    let x = column * index + 30;
+    let row = Math.floor(index / 20);
+    let y = row * index;
+    console.log("matrix:" + totalSize + ":" + index)
+    console.log("x:" + x + "y" + y)
+    return {x: x, y: y}
+}
+
 
 function merge_str(str, count) {
     let strArray = str.split('.', count);
@@ -116,12 +131,8 @@ function gen_find_node(data) {
     var length = graph.nodes.length;
     var node_id = length;
     var package = merge_str(data.package, 4);
-    if (package === "jointcert") {
-        debugger;
-    }
     console.log(package);
-    var category = gen_find_type(package);
-
+    var category_index = gen_find_type(package);
     var node = {
         "id": node_id,
         "name": data.name,
@@ -131,13 +142,19 @@ function gen_find_node(data) {
         "x": calc_position_x(length),
         "y": calc_position_y(length),
         // "value": 28.685715,
-        "category": category
+        "category": category_index
     }
+
     for (var i = 0; i < graph.nodes.length; i++) {
         if (node.fullName === graph.nodes[i].fullName) {
             return i;
         }
     }
+    if (!countGroupByType[category_index]) {
+        countGroupByType[category_index] = [];
+    }
+    countGroupByType[category_index].push(node_id);
+    node["index_of_category"] = countGroupByType[category_index].length - 1;
     graph.nodes.push(node);
     data["graphNodeId"] = node.id;
     return length;
@@ -176,7 +193,7 @@ function convert(dataCollection) {
 
     for (let i = 0; i < graph.nodes.length; i++) {
         var node = graph.nodes[i];
-        var pos = calc_pos_area(node.category);
+        var pos = calc_pos_area(node.category, node.index_of_category);
         node.x = pos.x;
         node.y = pos.y;
     }

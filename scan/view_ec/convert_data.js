@@ -76,10 +76,19 @@ function calc_pos_area(typeIndex) {
     // 每行12个
     let row = Math.floor(typeIndex / 12);
     let column = typeIndex % 12;
-    let x = column * 1000 + 100 + 1000 * Math.random();
-    let y = row * 1000 + 100 + 1000 * Math.random();
+    let x = column * 2000 + 100 + 1000 * Math.random();
+    let y = row * 2000 + 100 + 1000 * Math.random();
 
     return {x: x, y: y}
+}
+
+function merge_str(str, count) {
+    let strArray = str.split('.', count);
+    let mergeStr = "";
+    for (let strArrayKey in strArray) {
+        mergeStr += strArray[strArrayKey] + ".";
+    }
+    return mergeStr.substr(0, mergeStr.lastIndexOf("."));
 }
 
 /**
@@ -106,16 +115,23 @@ function calc_pos_area(typeIndex) {
 function gen_find_node(data) {
     var length = graph.nodes.length;
     var node_id = length;
+    var package = merge_str(data.package, 4);
+    if (package === "jointcert") {
+        debugger;
+    }
+    console.log(package);
+    var category = gen_find_type(package);
+
     var node = {
         "id": node_id,
         "name": data.name,
         "package": data.package,
         "fullName": data.package + "." + data.name,
-        "symbolSize": 10, // 每次引用都增加其大小
+        "symbolSize": 5, // 每次引用都增加其大小
         "x": calc_position_x(length),
         "y": calc_position_y(length),
         // "value": 28.685715,
-        "category": gen_find_type(data.package.substr(0, data.package.lastIndexOf(".")))
+        "category": category
     }
     for (var i = 0; i < graph.nodes.length; i++) {
         if (node.fullName === graph.nodes[i].fullName) {

@@ -1,10 +1,11 @@
 import json
 
-from scan.load_source_file import load_source_file
-from scan.read_source import getJavaFiles
+from scan.load_source import load_source_file
+from scan.read_source_file import getJavaFiles
 
 # 扫描包的文件
 # /Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy 下的所有 *.java 文件
+# source_files = getJavaFiles("/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/setting")
 source_files = getJavaFiles("/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy")
 
 cards: [] = []

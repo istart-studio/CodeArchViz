@@ -34,8 +34,8 @@ def set_class(instance, value, header):
 # line_headers: [] = ["package", "import", "class"]
 
 line_headers_setter: {} = {
-    "package": set_package,
-    "import": set_imports,
+    "package ": set_package,
+    "import ": set_imports,
     "class ": set_class,
     "public class ": set_class,
     "private class ": set_class,
@@ -87,7 +87,7 @@ def load_source_file(file):
     return source_instance
 
 
-sourceInstance = load_source_file(
-    "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/identity/IdentityManager.java")
-
-print(json.dumps(sourceInstance))
+# sourceInstance = load_source_file(
+#     "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/identity/IdentityManager.java")
+#
+# print(json.dumps(sourceInstance))

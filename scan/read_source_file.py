@@ -21,11 +21,11 @@ def getJavaFiles(dir):
 
 
 # /Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy 下的所有 *.java 文件
-
-sourceFiles: list = getJavaFiles("/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy")
-print("共计：%d " % len(sourceFiles))
-
-for file in sourceFiles:  # =>查找以.py结尾的文件
-    print("文件名：" + file)
+#
+# sourceFiles: list = getJavaFiles("/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy")
+# print("共计：%d " % len(sourceFiles))
+#
+# for file in sourceFiles:  # =>查找以.py结尾的文件
+#     print("文件名：" + file)
 
 # 输出文件

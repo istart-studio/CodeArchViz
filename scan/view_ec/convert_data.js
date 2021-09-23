@@ -71,7 +71,7 @@ function calc_pos_area(typeIndex, nodeIndexOfType) {
     // 每行12个
 
     const matrix = calc_post_matrix(countGroupByType[typeIndex].length, nodeIndexOfType);
-    console.log(matrix)
+    // console.log(matrix)
     let column = typeIndex % 12;
     let sX = column * 2000 + 100;
     let x = sX + matrix.x;
@@ -79,7 +79,7 @@ function calc_pos_area(typeIndex, nodeIndexOfType) {
     let row = Math.floor(typeIndex / 12);
     let sY = row * 2000 + 100;
     let y = sY + matrix.y;
-    console.log("x:" + x + "y:" + y)
+    // console.log("x:" + x + "y:" + y)
     return {x: x, y: y}
 }
 
@@ -137,7 +137,7 @@ function gen_find_node(data) {
     var length = graph.nodes.length;
     var node_id = length;
     var package = merge_str(data.package, 4);
-    console.log(package);
+    // console.log(package);
     var category_index = gen_find_type(package);
     var node = {
         "id": node_id,
@@ -148,10 +148,11 @@ function gen_find_node(data) {
         "x": calc_position_x(length),
         "y": calc_position_y(length),
         // "value": 28.685715,
-        "category": category_index
+        "category": category_index,
+        "sourceData": data,
     }
 
-    for (var i = 0; i < graph.nodes.length; i++) {
+    for (let i = 0; i < graph.nodes.length; i++) {
         if (node.fullName === graph.nodes[i].fullName) {
             return i;
         }

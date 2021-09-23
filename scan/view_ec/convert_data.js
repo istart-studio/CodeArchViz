@@ -71,7 +71,7 @@ function calc_pos_area(typeIndex, nodeIndexOfType) {
     // 每行12个
 
     const matrix = calc_post_matrix(countGroupByType[typeIndex].length, nodeIndexOfType);
-
+    console.log(matrix)
     let column = typeIndex % 12;
     let sX = column * 2000 + 100;
     let x = sX + matrix.x;
@@ -79,20 +79,26 @@ function calc_pos_area(typeIndex, nodeIndexOfType) {
     let row = Math.floor(typeIndex / 12);
     let sY = row * 2000 + 100;
     let y = sY + matrix.y;
-
+    console.log("x:" + x + "y:" + y)
     return {x: x, y: y}
 }
 
+/* 每个区域块的元素进行均匀分布 */
 function calc_post_matrix(totalSize, index) {
-    // 一行共计1000，每行承载数量 = 1000 / totalSize * 2
-    let constNum = Math.floor(1000 / totalSize * 2);
-    // debugger;
-    let column = index % 20;
-    let x = column * index + 30;
-    let row = Math.floor(index / 20);
-    let y = row * index;
-    console.log("matrix:" + totalSize + ":" + index)
-    console.log("x:" + x + "y" + y)
+
+    // 1500 * 1500 / totalSize = 总平方数 / 总计 = 每个占用平方
+    let preUsage = Math.floor(1500 * 1500 / totalSize);
+
+    // 每行可以容纳几个 = floor(1500 /  每个占用平方（开根）)
+    let rowCount = Math.floor(1500 / Math.sqrt(preUsage));
+    // x = 每个占用平方 * index % 每行可以容纳几个
+    let x = Math.sqrt(preUsage) * (index % rowCount);
+
+    // 每列可以容纳几个 = floor(1500 /  每个占用平方（开根）)
+    let columnCount = Math.floor(1500 / Math.sqrt(preUsage));
+    // y = 每个占用平方 * Math.floor(index / 每行可以容纳几个);
+    let y = Math.sqrt(preUsage) * (index / columnCount);
+
     return {x: x, y: y}
 }
 

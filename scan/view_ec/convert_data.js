@@ -195,8 +195,6 @@ function convert(dataCollection) {
     }
 
     // 按类型进行区域布局
-
-
     for (let i = 0; i < graph.nodes.length; i++) {
         var node = graph.nodes[i];
         var pos = calc_pos_area(node.category, node.index_of_category);

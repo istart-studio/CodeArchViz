@@ -12,8 +12,12 @@
 <div class="container-fluid" style="height: 100%">
     <div class="row" style="height: 100%">
         <div class="col-10" style="height: 100%">
-            <!-- 图 -->
-            <div id="graph" class="card" style="height: 100%;"></div>
+            <div class="row" style="height: 100%">
+                <!-- 全局图 -->
+                <div id="graph" class="card" style="height: 70%;"></div>
+                <!-- 单个对象图 -->
+                <div id="graph_link" class="card" style="height: 30%;"></div>
+            </div>
         </div>
         <div class="col-2">
             <!-- 详情 -->
@@ -35,21 +39,25 @@
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/jquery.json-viewer.js"></script>
 
+<!-- 单个依赖图 -->
+<script type="text/javascript" src="./simple_convert_data.js"></script>
+
 <script type="text/javascript">
     convert(data);
 
     function echarts_click(param) {
         console.log(param);
         var json = param.data.sourceData;
-        var jsonStr = JSON.stringify();
         var options = {
             collapsed: false,
             withQuotes: true
         };
         $('#json-render').jsonViewer(json, options);
+
+        render_source_link("graph_link", json)
     }
 
-    function render_source_link(divId, graphCollection) {
+    function render_source_graph(divId, graphCollection) {
         var dom = document.getElementById(divId);
         var myChart = echarts.init(dom);
         var option;
@@ -57,6 +65,9 @@
         // myChart.showLoading();
         // myChart.hideLoading();
         option = {
+            // title: {
+            //     text: 'Java Dependencies'
+            // },
             tooltip: {},
             legend: [
                 {
@@ -89,6 +100,13 @@
                     lineStyle: {
                         color: 'source',
                         curveness: 0.3
+                    },
+                    emphasis: {
+                        focus: 'adjacency',
+                        label: {
+                            position: 'right',
+                            show: true
+                        }
                     }
                 }
             ]
@@ -100,7 +118,54 @@
         }
     }
 
-    render_source_link("graph", graph)
+    render_source_graph("graph", graph)
+
+    function render_source_link(divId, data) {
+        console.log(data)
+        var graphData = convert_link_data(data);
+        console.log(graphData)
+        var dom = document.getElementById(divId);
+        var myChart = echarts.init(dom);
+        var option;
+        option = {
+            title: {
+                text: data.name + ' 依赖图'
+            },
+            tooltip: {},
+            animationDurationUpdate: 1500,
+            animationEasingUpdate: 'quinticInOut',
+            series: [
+                {
+                    type: 'graph',
+                    layout: 'none',
+                    symbolSize: 10,
+                    roam: true,
+                    label: {
+                        show: true
+                    },
+                    edgeSymbol: ['circle', 'arrow'],
+                    edgeSymbolSize: [4, 7],
+                    edgeLabel: {
+                        fontSize: 10
+                    },
+                    data: graphData.nodes,
+                    // links: [],
+                    links: graphData.links,
+                    lineStyle: {
+                        opacity: 0.9,
+                        width: 1,
+                        curveness: 0
+                    }
+                }
+            ]
+        };
+        myChart.setOption(option);
+
+        if (option && typeof option === 'object') {
+            myChart.setOption(option);
+        }
+    }
+
 
 </script>
 </body>

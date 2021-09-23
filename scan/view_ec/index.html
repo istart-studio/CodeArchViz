@@ -16,9 +16,9 @@
                 <!-- 全局图 -->
                 <div id="graph" class="card" style="height: 60%;"></div>
                 <!-- 单个对象 关系图 -->
-                <div id="graph_single_links" class="card" style="height: 40%;width: 50%"></div>
+                <div id="graph_left_tree" class="card" style="height: 40%;width: 50%"></div>
                 <!-- 单个对象 树图 -->
-                <div id="graph_single_tree" class="card" style="height: 40%;width: 50%"></div>
+                <div id="graph_right_tree" class="card" style="height: 40%;width: 50%"></div>
             </div>
         </div>
         <div class="col-2">
@@ -35,21 +35,25 @@
 <script type="text/javascript" src="js/echarts.js"></script>
 <!-- 加载图 -->
 <script type="text/javascript" src="./source_json_data.js"></script>
-<script type="text/javascript" src="./convert_data.js"></script>
+<script type="text/javascript" src="./convert_data_all_package.js"></script>
 
 <!-- json 序列化 -->
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/jquery.json-viewer.js"></script>
 
 <!-- 单个依赖图 关系图-->
-<script type="text/javascript" src="./convert_data_single_links.js"></script>
+<script type="text/javascript" src="./convert_data_left_tree.js"></script>
 
 <!-- 单个依赖图 树 -->
-<script type="text/javascript" src="./convert_data_single_tree.js"></script>
+<script type="text/javascript" src="./convert_data_right_tree.js"></script>
 
 <script type="text/javascript">
-    convert(data);
 
+    const globeData = data;
+
+    const allPackageData = convert_data_all_package(globeData);
+
+    // 全包
     function echarts_click(param) {
         console.log(param);
         var json = param.data.sourceData;
@@ -59,8 +63,8 @@
         };
         $('#json-render').jsonViewer(json, options);
 
-        render_source_link("graph_single_links", json)
-        render_source_tree("graph_single_tree", json)
+        render_left_tree("graph_left_tree", json, globeData)
+        render_right_tree("graph_right_tree", json)
     }
 
     function render_source_graph(divId, graphCollection) {
@@ -124,16 +128,17 @@
         }
     }
 
-    render_source_graph("graph", graph)
+    render_source_graph("graph", allPackageData)
 
+    // 被引用 废弃
     function render_source_link(divId, data) {
-        var graphData = convert_link_data(data);
+        var graphData = convert_left_link(data);
         var dom = document.getElementById(divId);
         var myChart = echarts.init(dom);
         var option;
         option = {
             title: {
-                text: data.name + ' 依赖图'
+                text: data.name + ' 引用'
             },
             tooltip: {},
             animationDurationUpdate: 1500,
@@ -170,10 +175,60 @@
         }
     }
 
+    // 被引用
+    function render_left_tree(divId, data, globeData) {
+        var graphData = convert_left_tree(data, globeData);
+        var dom = document.getElementById(divId);
+        var myChart = echarts.init(dom);
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                triggerOn: 'mousemove'
+            },
+            series: [
+                {
+                    type: 'tree',
+                    data: [graphData.nodes],
+                    top: '1%',
+                    left: '15%',
+                    bottom: '1%',
+                    right: '7%',
+                    symbolSize: 7,
+                    edgeShape: 'polyline',
+                    orient: 'RL',
+                    roam: true,
+                    label: {
+                        position: 'right',
+                        verticalAlign: 'middle',
+                        align: 'left'
+                    },
+                    leaves: {
+                        label: {
+                            position: 'left',
+                            verticalAlign: 'middle',
+                            align: 'right'
+                        }
+                    },
+                    emphasis: {
+                        focus: 'descendant'
+                    },
+                    expandAndCollapse: true,
+                    animationDuration: 550,
+                    animationDurationUpdate: 750
+                }
+            ]
+        };
+        myChart.setOption(option);
 
-    function render_source_tree(divId, data) {
+        if (option && typeof option === 'object') {
+            myChart.setOption(option);
+        }
+    }
 
-        var graphData = convert_tree_data(data);
+    // 引用
+    function render_right_tree(divId, data) {
+
+        var graphData = convert_right_tree(data);
 
         var dom = document.getElementById(divId);
         var myChart = echarts.init(dom);
@@ -182,6 +237,9 @@
             tooltip: {
                 trigger: 'item',
                 triggerOn: 'mousemove'
+            },
+            title: {
+                text: data.name + ' 依赖'
             },
             series: [
                 {
@@ -197,6 +255,7 @@
                     edgeShape: 'polyline',
                     edgeForkPosition: '63%',
                     initialTreeDepth: 3,
+                    roam: true,
                     lineStyle: {
                         width: 2
                     },

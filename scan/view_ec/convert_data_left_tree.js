@@ -117,23 +117,34 @@
 //     ]
 // };
 
-function convert_node_tree(data) {
+function convert_left_tree(data, globeData) {
+    function convert_node_tree(data) {
 
-    // 自身
-    let self = {
-        name: data.name,
-        children: []
-    };
-    data.imports.forEach(function (importItem, index) {
-        self.children.push({
-            name: importItem
-        })
-    });
-    return self;
-}
+        // 自身
+        const fullName = data.package + "." + data.name;
+        let self = {
+            name: data.name,
+            children: []
+        };
 
-function convert_tree_data(data) {
-    return {
-        nodes: convert_node_tree(data),
-    };
+        globeData.forEach(function (item, index) {
+            const itemFullName = item.package + "." + item.name;
+            item.imports.forEach(function (importItem, index) {
+                if (importItem === fullName) {
+                    self.children.push({
+                        name: itemFullName
+                    })
+                }
+            })
+        });
+        return self;
+    }
+
+    function convert_tree_data(data) {
+        return {
+            nodes: convert_node_tree(data),
+        };
+    }
+
+    return convert_tree_data(data)
 }

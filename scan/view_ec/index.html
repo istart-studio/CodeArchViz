@@ -120,8 +120,10 @@
 <script type="text/javascript">
 
     const globeData = data;
-    render_graph(globeData);
-    render_statistics(globeData, "com.dr.drs");
+    render_graph(globeData, function (singleData) {
+        render_statistics(globeData, singleData.package);
+    });
+    render_statistics(globeData, "com.dr");
 </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-function render_graph(globeData) {
+function render_graph(globeData, clickFunc) {
 
     function echarts_click(param) {
         console.log(param);
@@ -11,6 +11,9 @@ function render_graph(globeData) {
         if (json) {
             render_left_tree("graph_left_tree", json, globeData)
             render_right_tree("graph_right_tree", json)
+            if (clickFunc) {
+                clickFunc(json)
+            }
         }
     }
 

@@ -7,39 +7,102 @@
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/jquery.json-viewer.css" rel="stylesheet">
 </head>
-<body style="height: 100%; margin: 0">
+<body style="margin: 0">
 
-<div class="container" style="height: 100%">
-    <div class="row" style="height: 100%">
-        <div class="col-10" style="height: 100%">
-            <div class="row" style="height: 100%">
-                <!-- 全局图 -->
-                <div id="graph" class="card" style="height: 60%;"></div>
-                <!-- 单个对象 关系图 -->
-                <div id="graph_left_tree" class="card" style="height: 40%;width: 50%"></div>
-                <!-- 单个对象 树图 -->
-                <div id="graph_right_tree" class="card" style="height: 40%;width: 50%"></div>
+<div class="container" style="margin-bottom: 100px;">
+
+    <div class="row">
+        <div class="col-10">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            引用依赖
+                        </div>
+                        <div class="card-body">
+                            <!-- 全局图 -->
+                            <div id="graph" style="height: 600px;"></div>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            引用
+                        </div>
+                        <div class="card-body">
+                            <!-- 单个对象 关系图 -->
+                            <div id="graph_left_tree" style="height: 300px;"></div>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            依赖
+                        </div>
+                        <div class="card-body">
+                            <!-- 单个对象 树图 -->
+                            <div id="graph_right_tree" style="height: 300px;"></div>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div class="col-2">
-            <!-- 详情 -->
-            <div id="detail" class="card" style="height: 100%;padding-left: 20px;">
-                点击元素查看详情
-                <div id="json-render" style="font-size: 12px;"></div>
+            <div class="card">
+                <div class="card-header">
+                    点击元素查看详情
+                </div>
+                <div class="card-body">
+                    <!-- 详情 -->
+                    <div id="detail" style="height: 100%;">
+                        <div id="json-render" style="font-size: 12px;"></div>
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    2 days ago
+                </div>
             </div>
+
         </div>
     </div>
+
     <div class="row">
         <div class="col-12">
-            <div id="ana_top"></div>
+            <div class="card text-center">
+                <div class="card-header">
+                    引用统计
+                </div>
+                <div class="card-body">
+                    <div id="graph_top_ref" style="height: 500px;"></div>
+                </div>
+                <div class="card-footer text-muted">
+                    2 days ago
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
 
 <!-- echarts -->
 <script type="text/javascript" src="js/echarts.js"></script>
-<!-- 加载图 -->
+<!-- 数据 -->
 <script type="text/javascript" src="./source_json_data.js"></script>
+<!-- 全局关系图 -->
 <script type="text/javascript" src="./convert_data_all_package.js"></script>
 <!-- json 序列化 -->
 <script src="js/jquery-1.11.0.min.js"></script>
@@ -51,11 +114,14 @@
 
 <script type="text/javascript" src="./render_graph.js"></script>
 
+<!-- 统计图 -->
+<script type="text/javascript" src="./render_statistics.js"></script>
+
 <script type="text/javascript">
 
     const globeData = data;
     render_graph(globeData);
-
+    render_statistics(globeData, "com.dr.drs");
 </script>
 </body>
 </html>

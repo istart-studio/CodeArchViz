@@ -1,4 +1,14 @@
-function render_statistics(globeData, searchPackage) {
+/**
+ * option:{limit:10}
+ * @param globeData
+ * @param searchPackage
+ * @param option 配置
+ */
+function render_statistics(globeData, searchPackage, option) {
+
+    let _option = {
+        limit: option.limit ? option.limit : 10
+    }
 
     // 根据包进行排序，前10
     function sort(globeData, searchPackage) {
@@ -24,7 +34,7 @@ function render_statistics(globeData, searchPackage) {
         items.sort(function (first, second) {
             return second[1] - first[1];
         });
-        return items.slice(0, 10);
+        return items.slice(0, _option.limit);
     }
 
     // 全部统计最TOP的被引用
@@ -49,22 +59,28 @@ function render_statistics(globeData, searchPackage) {
         var myChart = echarts.init(dom);
         var option = {
             grid: {
-                bottom: 200
+                left: 350
             },
-            xAxis: {
+            xAxis: {},
+            yAxis: {
                 type: 'category',
                 data: renderData.names,
                 axisLabel: {
-                    width: 50,
-                    overflow: 'break',
-                    interval: 0, rotate: 0
+                    width: 45,
+                    fontSize: 10,
+                    // margin: 80,
+                    // overflow: 'break',
+                    interval: 0,
+                    rotate: 0,
+                    padding: [5, 5],
+                    formatter: function (value, index) {
+                        return value.replace(searchPackage, '.');
+                    },
                 },
-                inverse: false,
+
+                inverse: true,
                 animationDuration: 300,
                 animationDurationUpdate: 300,
-            },
-            yAxis: {
-                scale: true,
             },
             series: [
                 {
@@ -75,7 +91,7 @@ function render_statistics(globeData, searchPackage) {
                     roam: true,
                     label: {
                         show: true,
-                        position: 'top',
+                        position: 'right',
                         valueAnimation: true
                     }
                 },

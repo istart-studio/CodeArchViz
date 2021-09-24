@@ -5,7 +5,7 @@ function render_graph(globeData, clickFunc) {
         var json = param.data.sourceData;
         var options = {
             collapsed: false,
-            withQuotes: true
+            withQuotes: false
         };
         $('#json-render').jsonViewer(json, options);
         if (json) {

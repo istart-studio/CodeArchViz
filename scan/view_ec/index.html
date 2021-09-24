@@ -9,7 +9,7 @@
 </head>
 <body style="height: 100%; margin: 0">
 
-<div class="container-fluid" style="height: 100%">
+<div class="container" style="height: 100%">
     <div class="row" style="height: 100%">
         <div class="col-10" style="height: 100%">
             <div class="row" style="height: 100%">
@@ -23,10 +23,15 @@
         </div>
         <div class="col-2">
             <!-- 详情 -->
-            <div id="detail" class="card" style="height: 100%;padding-left: 20px">
+            <div id="detail" class="card" style="height: 100%;padding-left: 20px;">
                 点击元素查看详情
-                <div id="json-render"></div>
+                <div id="json-render" style="font-size: 12px;"></div>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div id="ana_top"></div>
         </div>
     </div>
 </div>
@@ -36,257 +41,20 @@
 <!-- 加载图 -->
 <script type="text/javascript" src="./source_json_data.js"></script>
 <script type="text/javascript" src="./convert_data_all_package.js"></script>
-
 <!-- json 序列化 -->
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/jquery.json-viewer.js"></script>
-
 <!-- 单个依赖图 关系图-->
 <script type="text/javascript" src="./convert_data_left_tree.js"></script>
-
 <!-- 单个依赖图 树 -->
 <script type="text/javascript" src="./convert_data_right_tree.js"></script>
+
+<script type="text/javascript" src="./render_graph.js"></script>
 
 <script type="text/javascript">
 
     const globeData = data;
-
-    const allPackageData = convert_data_all_package(globeData);
-
-    // 全包
-    function echarts_click(param) {
-        console.log(param);
-        var json = param.data.sourceData;
-        var options = {
-            collapsed: false,
-            withQuotes: true
-        };
-        $('#json-render').jsonViewer(json, options);
-
-        render_left_tree("graph_left_tree", json, globeData)
-        render_right_tree("graph_right_tree", json)
-    }
-
-    function render_source_graph(divId, graphCollection) {
-        var dom = document.getElementById(divId);
-        var myChart = echarts.init(dom);
-        var option;
-        myChart.on('click', echarts_click);
-        // myChart.showLoading();
-        // myChart.hideLoading();
-        option = {
-            // title: {
-            //     text: 'Java Dependencies'
-            // },
-            tooltip: {},
-            legend: [
-                {
-                    data: graphCollection.categories.map(function (a) {
-                        return a.name;
-                    })
-                }
-            ],
-            series: [
-                {
-                    name: '引用关系',
-                    type: 'graph',
-                    layout: 'none',
-                    data: graphCollection.nodes,
-                    links: graphCollection.links,
-                    categories: graphCollection.categories,
-                    roam: true,
-                    label: {
-                        show: true,
-                        position: 'right',
-                        formatter: '{b}'
-                    },
-                    labelLayout: {
-                        hideOverlap: true
-                    },
-                    scaleLimit: {
-                        min: 0.01,
-                        max: 30
-                    },
-                    lineStyle: {
-                        color: 'source',
-                        curveness: 0.3
-                    },
-                    emphasis: {
-                        focus: 'adjacency',
-                        label: {
-                            position: 'right',
-                            show: true
-                        }
-                    }
-                }
-            ]
-        };
-        myChart.setOption(option);
-
-        if (option && typeof option === 'object') {
-            myChart.setOption(option);
-        }
-    }
-
-    render_source_graph("graph", allPackageData)
-
-    // 被引用 废弃
-    function render_source_link(divId, data) {
-        var graphData = convert_left_link(data);
-        var dom = document.getElementById(divId);
-        var myChart = echarts.init(dom);
-        var option;
-        option = {
-            title: {
-                text: data.name + ' 引用'
-            },
-            tooltip: {},
-            animationDurationUpdate: 1500,
-            animationEasingUpdate: 'quinticInOut',
-            series: [
-                {
-                    type: 'graph',
-                    layout: 'none',
-                    symbolSize: 10,
-                    roam: true,
-                    label: {
-                        show: true
-                    },
-                    edgeSymbol: ['circle', 'arrow'],
-                    edgeSymbolSize: [4, 7],
-                    edgeLabel: {
-                        fontSize: 10
-                    },
-                    data: graphData.nodes,
-                    // links: [],
-                    links: graphData.links,
-                    lineStyle: {
-                        opacity: 0.9,
-                        width: 1,
-                        curveness: 0
-                    }
-                }
-            ]
-        };
-        myChart.setOption(option);
-
-        if (option && typeof option === 'object') {
-            myChart.setOption(option);
-        }
-    }
-
-    // 被引用
-    function render_left_tree(divId, data, globeData) {
-        var graphData = convert_left_tree(data, globeData);
-        var dom = document.getElementById(divId);
-        var myChart = echarts.init(dom);
-        var option = {
-            tooltip: {
-                trigger: 'item',
-                triggerOn: 'mousemove'
-            },
-            series: [
-                {
-                    type: 'tree',
-                    data: [graphData.nodes],
-                    top: '1%',
-                    left: '15%',
-                    bottom: '1%',
-                    right: '7%',
-                    symbolSize: 7,
-                    edgeShape: 'polyline',
-                    orient: 'RL',
-                    roam: true,
-                    label: {
-                        position: 'right',
-                        verticalAlign: 'middle',
-                        align: 'left'
-                    },
-                    leaves: {
-                        label: {
-                            position: 'left',
-                            verticalAlign: 'middle',
-                            align: 'right'
-                        }
-                    },
-                    emphasis: {
-                        focus: 'descendant'
-                    },
-                    expandAndCollapse: true,
-                    animationDuration: 550,
-                    animationDurationUpdate: 750
-                }
-            ]
-        };
-        myChart.setOption(option);
-
-        if (option && typeof option === 'object') {
-            myChart.setOption(option);
-        }
-    }
-
-    // 引用
-    function render_right_tree(divId, data) {
-
-        var graphData = convert_right_tree(data);
-
-        var dom = document.getElementById(divId);
-        var myChart = echarts.init(dom);
-        var option;
-        option = {
-            tooltip: {
-                trigger: 'item',
-                triggerOn: 'mousemove'
-            },
-            title: {
-                text: data.name + ' 依赖'
-            },
-            series: [
-                {
-                    type: 'tree',
-                    id: 0,
-                    name: graphData.nodes.name + ' 依赖树',
-                    data: [graphData.nodes],
-                    top: '10%',
-                    left: '8%',
-                    bottom: '22%',
-                    right: '20%',
-                    symbolSize: 7,
-                    edgeShape: 'polyline',
-                    edgeForkPosition: '63%',
-                    initialTreeDepth: 3,
-                    roam: true,
-                    lineStyle: {
-                        width: 2
-                    },
-                    label: {
-                        backgroundColor: '#fff',
-                        position: 'left',
-                        verticalAlign: 'middle',
-                        align: 'right'
-                    },
-                    leaves: {
-                        label: {
-                            position: 'right',
-                            verticalAlign: 'middle',
-                            align: 'left'
-                        }
-                    },
-                    emphasis: {
-                        focus: 'descendant'
-                    },
-                    expandAndCollapse: true,
-                    animationDuration: 550,
-                    animationDurationUpdate: 750
-                }
-            ]
-        };
-        myChart.setOption(option);
-
-        if (option && typeof option === 'object') {
-            myChart.setOption(option);
-        }
-    }
+    render_graph(globeData);
 
 </script>
 </body>

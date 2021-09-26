@@ -124,6 +124,9 @@ function convert_right_tree(data) {
             name: data.name,
             children: []
         };
+        if (!data.imports) {
+            return self;
+        }
         data.imports.forEach(function (importItem, index) {
             self.children.push({
                 name: importItem

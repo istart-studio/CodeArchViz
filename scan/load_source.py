@@ -1,7 +1,5 @@
 # -*- coding:utf-8 -*-
 
-import json
-
 
 def set_name(instance, value, header):
     instance['name'] = value
@@ -36,6 +34,10 @@ def set_class(instance, value, header):
 line_headers_setter: {} = {
     "package ": set_package,
     "import ": set_imports,
+    "abstract class ": set_class,
+    "public abstract class ": set_class,
+    "private abstract class ": set_class,
+    "protector abstract class ": set_class,
     "class ": set_class,
     "public class ": set_class,
     "private class ": set_class,
@@ -46,6 +48,10 @@ line_headers_setter: {} = {
     "enum ": set_class,
     "public enum ": set_class,
     "private enum ": set_class,
+    "@interface ": set_class,
+    "public @interface ": set_class,
+    "private @interface ": set_class,
+    "protector @interface ": set_class,
 }
 
 
@@ -85,7 +91,6 @@ def load_source_file(file):
         reader.close()
 
     return source_instance
-
 
 # sourceInstance = load_source_file(
 #     "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/identity/IdentityManager.java")

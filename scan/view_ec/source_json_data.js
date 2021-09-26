@@ -1,1 +1,6139 @@
-var data = [{"name": "MavenWrapperDownloader", "package": "", "type": "class", "imports": ["java.net.*", "java.io.*", "java.nio.channels.*", "java.util.Properties"], "class_name": "MavenWrapperDownloader", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/.mvn/wrapper/MavenWrapperDownloader.java"}, {"name": "ProxyFactory", "package": "com.dr.drs.proxy", "type": "class", "imports": ["com.dr.drs.proxy.runtimeproxy.IRuntimeProxyFactory", "com.dr.drs.proxy.runtimeproxy.RuntimeProxyFactory", "com.dr.drs.proxy.serverproxy.IServerProxyFactory", "com.dr.drs.proxy.serverproxy.ServerProxyFactory", "lombok.extern.slf4j.Slf4j", "java.util.Map"], "class_name": "ProxyFactory", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/ProxyFactory.java"}, {"name": "JSONTools", "package": "com.dr.drs.proxy", "type": "class", "imports": ["com.alibaba.fastjson.JSON", "com.alibaba.fastjson.JSONArray", "com.alibaba.fastjson.JSONObject", "java.sql.ResultSet", "java.sql.ResultSetMetaData", "java.sql.SQLException"], "class_name": "JSONTools", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/JSONTools.java"}, {"name": "DataProp", "package": "com.dr.drs.proxy", "type": "class", "imports": ["lombok.Getter", "lombok.Setter"], "class_name": "DataProp", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/DataProp.java"}, {"name": "RuntimeProxyFactory", "package": "com.dr.drs.proxy.runtimeproxy", "type": "class", "imports": ["com.dr.drs.proxy.runtimeproxy.authdatabaseporxy.AuthDatabaseProxy", "com.dr.drs.proxy.runtimeproxy.datalogporxy.DataLogProxy", "com.dr.drs.proxy.runtimeproxy.datarecordporxy.DataRecordProxy", "com.dr.drs.proxy.runtimeproxy.datastoreporxy.DataStoreProxy", "com.dr.drs.proxy.runtimeproxy.authhttpporxy.AuthHttpProxy", "com.dr.drs.proxy.runtimeproxy.logporxy.LogProxy", "com.dr.drs.proxy.runtimeproxy.mdidporxy.MDIDProxy", "com.dr.drs.proxy.runtimeproxy.redisproxy.RedisProxy", "java.util.Map"], "class_name": "RuntimeProxyFactory implements IRuntimeProxyFactory", "extend_name": "", "implements_name": ["IRuntimeProxyFactory"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/RuntimeProxyFactory.java"}, {"name": "IRuntimeProxyFactory", "package": "com.dr.drs.proxy.runtimeproxy", "type": "interface", "imports": ["com.dr.drs.proxy.runtimeproxy.authdatabaseporxy.AuthDatabaseProxy", "com.dr.drs.proxy.runtimeproxy.datalogporxy.DataLogProxy", "com.dr.drs.proxy.runtimeproxy.datarecordporxy.DataRecordProxy", "com.dr.drs.proxy.runtimeproxy.datastoreporxy.DataStoreProxy", "com.dr.drs.proxy.runtimeproxy.authhttpporxy.AuthHttpProxy", "com.dr.drs.proxy.runtimeproxy.logporxy.LogProxy", "com.dr.drs.proxy.runtimeproxy.mdidporxy.MDIDProxy", "com.dr.drs.proxy.runtimeproxy.redisproxy.RedisProxy"], "class_name": "IRuntimeProxyFactory", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/IRuntimeProxyFactory.java"}, {"name": "RuntimeProxy", "package": "com.dr.drs.proxy.runtimeproxy", "type": "class", "imports": [], "class_name": "RuntimeProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/RuntimeProxy.java"}, {"name": "KeyTypeEnum", "package": "com.dr.drs.proxy.runtimeproxy", "type": "enum", "imports": [], "class_name": "KeyTypeEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/KeyTypeEnum.java"}, {"name": "AuthDatabaseProxy", "package": "com.dr.drs.proxy.runtimeproxy.authdatabaseporxy", "type": "class", "imports": ["com.dr.drs.proxy.JSONTools", "com.dr.drs.proxy.runtimeproxy.RuntimeProxy", "lombok.extern.slf4j.Slf4j", "java.sql.*"], "class_name": "AuthDatabaseProxy extends RuntimeProxy implements IAuthDatabaseProxy", "extend_name": "RuntimeProxy", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/authdatabaseporxy/AuthDatabaseProxy.java"}, {"name": "IAuthDatabaseProxy", "package": "com.dr.drs.proxy.runtimeproxy.authdatabaseporxy", "type": "interface", "imports": ["java.sql.SQLException"], "class_name": "IAuthDatabaseProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/authdatabaseporxy/IAuthDatabaseProxy.java"}, {"name": "RedisProxy", "package": "com.dr.drs.proxy.runtimeproxy.redisproxy", "type": "class", "imports": ["com.dr.drs.proxy.runtimeproxy.RuntimeProxy", "lombok.extern.slf4j.Slf4j", "redis.clients.jedis.Jedis", "java.util.Map", "java.util.Random"], "class_name": "RedisProxy extends RuntimeProxy implements IRedisProxy", "extend_name": "RuntimeProxy", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/redisproxy/RedisProxy.java"}, {"name": "IRedisProxy", "package": "com.dr.drs.proxy.runtimeproxy.redisproxy", "type": "interface", "imports": [], "class_name": "IRedisProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/redisproxy/IRedisProxy.java"}, {"name": "IDataRecordProxy", "package": "com.dr.drs.proxy.runtimeproxy.datarecordporxy", "type": "interface", "imports": ["com.dr.drs.proxy.runtimeproxy.KeyTypeEnum"], "class_name": "IDataRecordProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/datarecordporxy/IDataRecordProxy.java"}, {"name": "DataRecordProxy", "package": "com.dr.drs.proxy.runtimeproxy.datarecordporxy", "type": "class", "imports": ["com.alibaba.fastjson.JSON", "com.dr.drs.proxy.entities.Relation", "com.dr.drs.proxy.entities.ResultEntity", "com.dr.drs.proxy.runtimeproxy.KeyTypeEnum", "com.dr.drs.proxy.runtimeproxy.RuntimeProxy", "com.mysql.cj.jdbc.MysqlDataSource", "lombok.extern.slf4j.Slf4j", "org.apache.ibatis.mapping.Environment", "org.apache.ibatis.session.Configuration", "org.apache.ibatis.session.SqlSession", "org.apache.ibatis.session.SqlSessionFactory", "org.apache.ibatis.session.SqlSessionFactoryBuilder", "org.apache.ibatis.transaction.TransactionFactory", "org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory", "java.util.*"], "class_name": "DataRecordProxy extends RuntimeProxy implements IDataRecordProxy", "extend_name": "RuntimeProxy", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/datarecordporxy/DataRecordProxy.java"}, {"name": "DataRecordMapper", "package": "com.dr.drs.proxy.runtimeproxy.datarecordporxy", "type": "interface", "imports": ["com.dr.drs.proxy.entities.Relation", "com.dr.drs.proxy.entities.ResultEntity", "org.apache.ibatis.annotations.Param", "org.apache.ibatis.annotations.Select", "java.util.List", "java.util.Map"], "class_name": "DataRecordMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/datarecordporxy/DataRecordMapper.java"}, {"name": "DataStoreMapper", "package": "com.dr.drs.proxy.runtimeproxy.datastoreporxy", "type": "interface", "imports": ["com.dr.drs.proxy.DataProp", "com.dr.drs.proxy.entities.Relation", "org.apache.ibatis.annotations.Insert", "org.apache.ibatis.annotations.Param", "org.apache.ibatis.annotations.Select", "java.util.List", "java.util.Map"], "class_name": "DataStoreMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/datastoreporxy/DataStoreMapper.java"}, {"name": "DataStoreProxy", "package": "com.dr.drs.proxy.runtimeproxy.datastoreporxy", "type": "class", "imports": ["com.alibaba.fastjson.JSON", "com.dr.drs.proxy.entities.TransferData", "com.dr.drs.proxy.DataProp", "com.dr.drs.proxy.runtimeproxy.KeyTypeEnum", "com.dr.drs.proxy.runtimeproxy.RuntimeProxy", "com.dr.drs.proxy.entities.Relation", "com.mysql.cj.jdbc.MysqlDataSource", "lombok.extern.slf4j.Slf4j", "org.apache.ibatis.mapping.Environment", "org.apache.ibatis.session.Configuration", "org.apache.ibatis.session.SqlSession", "org.apache.ibatis.session.SqlSessionFactory", "org.apache.ibatis.session.SqlSessionFactoryBuilder", "org.apache.ibatis.transaction.TransactionFactory", "org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory", "java.util.*"], "class_name": "DataStoreProxy extends RuntimeProxy implements IDataStoreProxy", "extend_name": "RuntimeProxy", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/datastoreporxy/DataStoreProxy.java"}, {"name": "IDataStoreProxy", "package": "com.dr.drs.proxy.runtimeproxy.datastoreporxy", "type": "interface", "imports": ["com.dr.drs.proxy.entities.TransferData", "com.dr.drs.proxy.runtimeproxy.KeyTypeEnum"], "class_name": "IDataStoreProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/datastoreporxy/IDataStoreProxy.java"}, {"name": "LogProxy", "package": "com.dr.drs.proxy.runtimeproxy.logporxy", "type": "class", "imports": ["com.dr.drs.proxy.JSONTools", "com.dr.drs.proxy.runtimeproxy.RuntimeProxy", "lombok.extern.slf4j.Slf4j", "java.sql.*", "java.util.Map"], "class_name": "LogProxy extends RuntimeProxy implements ILogProxy", "extend_name": "RuntimeProxy", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/logporxy/LogProxy.java"}, {"name": "ILogProxy", "package": "com.dr.drs.proxy.runtimeproxy.logporxy", "type": "interface", "imports": [], "class_name": "ILogProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/logporxy/ILogProxy.java"}, {"name": "DataLogProxy", "package": "com.dr.drs.proxy.runtimeproxy.datalogporxy", "type": "class", "imports": ["com.dr.drs.proxy.entities.TransferData", "com.dr.drs.proxy.runtimeproxy.RuntimeProxy", "com.mysql.cj.jdbc.MysqlDataSource", "lombok.extern.log4j.Log4j", "lombok.extern.slf4j.Slf4j", "org.apache.ibatis.mapping.Environment", "org.apache.ibatis.session.Configuration", "org.apache.ibatis.session.SqlSession", "org.apache.ibatis.session.SqlSessionFactory", "org.apache.ibatis.session.SqlSessionFactoryBuilder", "org.apache.ibatis.transaction.TransactionFactory", "org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory", "java.util.Map"], "class_name": "DataLogProxy extends RuntimeProxy implements IDataLogProxy", "extend_name": "RuntimeProxy", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/datalogporxy/DataLogProxy.java"}, {"name": "IDataLogProxy", "package": "com.dr.drs.proxy.runtimeproxy.datalogporxy", "type": "interface", "imports": ["com.dr.drs.proxy.entities.TransferData"], "class_name": "IDataLogProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/datalogporxy/IDataLogProxy.java"}, {"name": "DataLogMapper", "package": "com.dr.drs.proxy.runtimeproxy.datalogporxy", "type": "interface", "imports": ["com.dr.drs.proxy.entities.TransferData", "org.apache.ibatis.annotations.Insert", "org.apache.ibatis.annotations.Param"], "class_name": "DataLogMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/datalogporxy/DataLogMapper.java"}, {"name": "MDIDProxy", "package": "com.dr.drs.proxy.runtimeproxy.mdidporxy", "type": "class", "imports": ["com.dr.drs.proxy.runtimeproxy.RuntimeProxy", "lombok.Getter", "lombok.Setter", "java.util.UUID"], "class_name": "MDIDProxy extends RuntimeProxy implements IMDIDProxy", "extend_name": "RuntimeProxy", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/mdidporxy/MDIDProxy.java"}, {"name": "IMDIDProxy", "package": "com.dr.drs.proxy.runtimeproxy.mdidporxy", "type": "interface", "imports": [], "class_name": "IMDIDProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/mdidporxy/IMDIDProxy.java"}, {"name": "IAuthHttpProxy", "package": "com.dr.drs.proxy.runtimeproxy.authhttpporxy", "type": "interface", "imports": [], "class_name": "IAuthHttpProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/authhttpporxy/IAuthHttpProxy.java"}, {"name": "AuthHttpProxy", "package": "com.dr.drs.proxy.runtimeproxy.authhttpporxy", "type": "class", "imports": ["com.alibaba.fastjson.JSON", "com.alibaba.fastjson.JSONObject", "com.dr.drs.proxy.runtimeproxy.RuntimeProxy", "lombok.extern.slf4j.Slf4j", "java.io.IOException", "java.io.InputStream", "java.io.OutputStream", "java.net.HttpURLConnection", "java.net.URL", "java.net.URLEncoder", "java.nio.charset.StandardCharsets"], "class_name": "AuthHttpProxy extends RuntimeProxy implements IAuthHttpProxy", "extend_name": "RuntimeProxy", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/runtimeproxy/authhttpporxy/AuthHttpProxy.java"}, {"name": "CreateTableException", "package": "com.dr.drs.proxy.exception", "type": "class", "imports": [], "class_name": "CreateTableException extends Exception", "extend_name": "Exception", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/exception/CreateTableException.java"}, {"name": "ServerProxyFactory", "package": "com.dr.drs.proxy.serverproxy", "type": "class", "imports": ["com.dr.drs.proxy.serverproxy.datacacheproxy.DataCacheProxy", "com.dr.drs.proxy.serverproxy.datalogproxy.DataLogProxy", "com.dr.drs.proxy.serverproxy.datarecordproxy.DataRecordProxy", "com.dr.drs.proxy.serverproxy.datasaveproxy.IDataProxy", "com.dr.drs.proxy.serverproxy.datastoreproxy.DataStoreProxy", "com.dr.drs.proxy.serverproxy.mdidproxy.MDIDProxy", "com.dr.drs.proxy.serverproxy.redisproxy.IRedisProxy", "com.dr.drs.proxy.serverproxy.redisproxy.RedisProxy", "com.dr.drs.proxy.serverproxy.datacacheproxy.IDataCacheProxy", "java.util.Map"], "class_name": "ServerProxyFactory implements IServerProxyFactory", "extend_name": "", "implements_name": ["IServerProxyFactory"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/ServerProxyFactory.java"}, {"name": "IServerProxyFactory", "package": "com.dr.drs.proxy.serverproxy", "type": "interface", "imports": ["com.dr.drs.proxy.serverproxy.datacacheproxy.IDataCacheProxy", "com.dr.drs.proxy.serverproxy.datasaveproxy.IDataProxy", "com.dr.drs.proxy.serverproxy.mdidproxy.IMDIDProxy", "com.dr.drs.proxy.serverproxy.redisproxy.IRedisProxy"], "class_name": "IServerProxyFactory", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/IServerProxyFactory.java"}, {"name": "RedisProxy", "package": "com.dr.drs.proxy.serverproxy.redisproxy", "type": "class", "imports": ["com.dr.drs.proxy.entities.TransferData", "lombok.extern.slf4j.Slf4j", "redis.clients.jedis.Jedis", "java.util.*"], "class_name": "RedisProxy implements IRedisProxy", "extend_name": "", "implements_name": ["IRedisProxy"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/redisproxy/RedisProxy.java"}, {"name": "IRedisProxy", "package": "com.dr.drs.proxy.serverproxy.redisproxy", "type": "interface", "imports": ["com.dr.drs.proxy.entities.TransferData"], "class_name": "IRedisProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/redisproxy/IRedisProxy.java"}, {"name": "MDIDProxy", "package": "com.dr.drs.proxy.serverproxy.mdidproxy", "type": "class", "imports": ["lombok.Getter", "lombok.Setter", "java.util.UUID"], "class_name": "MDIDProxy implements IMDIDProxy", "extend_name": "", "implements_name": ["IMDIDProxy"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/mdidproxy/MDIDProxy.java"}, {"name": "IMDIDProxy", "package": "com.dr.drs.proxy.serverproxy.mdidproxy", "type": "interface", "imports": [], "class_name": "IMDIDProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/mdidproxy/IMDIDProxy.java"}, {"name": "IDataCacheProxy", "package": "com.dr.drs.proxy.serverproxy.datacacheproxy", "type": "interface", "imports": ["com.dr.drs.proxy.entities.TransferData", "java.util.Optional"], "class_name": "IDataCacheProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/datacacheproxy/IDataCacheProxy.java"}, {"name": "DataCacheMapper", "package": "com.dr.drs.proxy.serverproxy.datacacheproxy", "type": "interface", "imports": ["org.apache.ibatis.annotations.*", "java.util.List", "java.util.Map"], "class_name": "DataCacheMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/datacacheproxy/DataCacheMapper.java"}, {"name": "DataCacheProxy", "package": "com.dr.drs.proxy.serverproxy.datacacheproxy", "type": "class", "imports": ["com.alibaba.fastjson.JSON", "com.dr.drs.proxy.entities.TransferData", "com.mysql.cj.jdbc.MysqlDataSource", "lombok.Getter", "lombok.Setter", "lombok.extern.slf4j.Slf4j", "org.apache.ibatis.mapping.Environment", "org.apache.ibatis.session.Configuration", "org.apache.ibatis.session.SqlSession", "org.apache.ibatis.session.SqlSessionFactory", "org.apache.ibatis.session.SqlSessionFactoryBuilder", "org.apache.ibatis.transaction.TransactionFactory", "org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory", "java.util.List", "java.util.Map", "java.util.Optional"], "class_name": "DataCacheProxy implements IDataCacheProxy", "extend_name": "", "implements_name": ["IDataCacheProxy"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/datacacheproxy/DataCacheProxy.java"}, {"name": "DataLogProxy", "package": "com.dr.drs.proxy.serverproxy.datalogproxy", "type": "class", "imports": ["com.dr.drs.proxy.entities.TransferData", "com.dr.drs.proxy.serverproxy.datasaveproxy.DataSaveProxy", "com.dr.drs.proxy.serverproxy.datasaveproxy.IDataProxy", "com.dr.drs.proxy.exception.CreateTableException", "com.mysql.cj.jdbc.MysqlDataSource", "lombok.extern.slf4j.Slf4j", "org.apache.ibatis.mapping.Environment", "org.apache.ibatis.session.Configuration", "org.apache.ibatis.session.SqlSession", "org.apache.ibatis.session.SqlSessionFactory", "org.apache.ibatis.session.SqlSessionFactoryBuilder", "org.apache.ibatis.transaction.TransactionFactory", "org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory", "java.util.ArrayList", "java.util.List", "java.util.Map"], "class_name": "DataLogProxy extends DataSaveProxy implements IDataProxy, IDataLogProxy", "extend_name": "DataSaveProxy", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/datalogproxy/DataLogProxy.java"}, {"name": "IDataLogProxy", "package": "com.dr.drs.proxy.serverproxy.datalogproxy", "type": "interface", "imports": ["com.dr.drs.proxy.entities.TransferData", "java.util.List"], "class_name": "IDataLogProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/datalogproxy/IDataLogProxy.java"}, {"name": "DataLogMapper", "package": "com.dr.drs.proxy.serverproxy.datalogproxy", "type": "interface", "imports": ["com.dr.drs.proxy.entities.TransferData", "org.apache.ibatis.annotations.Insert", "org.apache.ibatis.annotations.Mapper", "org.apache.ibatis.annotations.Param", "org.apache.ibatis.annotations.Select", "java.util.List"], "class_name": "DataLogMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/datalogproxy/DataLogMapper.java"}, {"name": "IDataRecordProxy", "package": "com.dr.drs.proxy.serverproxy.datarecordproxy", "type": "interface", "imports": ["com.dr.drs.proxy.entities.TransferData", "java.util.List"], "class_name": "IDataRecordProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/datarecordproxy/IDataRecordProxy.java"}, {"name": "DataRecordProxy", "package": "com.dr.drs.proxy.serverproxy.datarecordproxy", "type": "class", "imports": ["com.dr.drs.proxy.entities.TransferData", "com.dr.drs.proxy.serverproxy.datasaveproxy.DataSaveProxy", "com.dr.drs.proxy.serverproxy.datasaveproxy.IDataProxy", "com.dr.drs.proxy.exception.CreateTableException", "com.mysql.cj.jdbc.MysqlDataSource", "lombok.extern.slf4j.Slf4j", "org.apache.ibatis.mapping.Environment", "org.apache.ibatis.session.Configuration", "org.apache.ibatis.session.SqlSession", "org.apache.ibatis.session.SqlSessionFactory", "org.apache.ibatis.session.SqlSessionFactoryBuilder", "org.apache.ibatis.transaction.TransactionFactory", "org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory", "java.util.ArrayList", "java.util.List", "java.util.Map"], "class_name": "DataRecordProxy extends DataSaveProxy implements IDataProxy, IDataRecordProxy", "extend_name": "DataSaveProxy", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/datarecordproxy/DataRecordProxy.java"}, {"name": "DataRecordMapper", "package": "com.dr.drs.proxy.serverproxy.datarecordproxy", "type": "interface", "imports": ["com.dr.drs.proxy.entities.TransferData", "com.dr.drs.proxy.DataProp", "org.apache.ibatis.annotations.Insert", "org.apache.ibatis.annotations.Mapper", "org.apache.ibatis.annotations.Param", "org.apache.ibatis.annotations.Select", "java.util.List"], "class_name": "DataRecordMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/datarecordproxy/DataRecordMapper.java"}, {"name": "IDataProxy", "package": "com.dr.drs.proxy.serverproxy.datasaveproxy", "type": "interface", "imports": ["com.dr.drs.proxy.entities.TransferData", "java.util.List"], "class_name": "IDataProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/datasaveproxy/IDataProxy.java"}, {"name": "DataSaveMapper", "package": "com.dr.drs.proxy.serverproxy.datasaveproxy", "type": "interface", "imports": ["com.dr.drs.proxy.DataProp", "org.apache.ibatis.annotations.Mapper", "org.apache.ibatis.annotations.Param", "org.apache.ibatis.annotations.Select", "java.util.List", "java.util.Map"], "class_name": "DataSaveMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/datasaveproxy/DataSaveMapper.java"}, {"name": "DataSaveProxy", "package": "com.dr.drs.proxy.serverproxy.datasaveproxy", "type": "class", "imports": ["com.dr.drs.proxy.DataProp", "com.dr.drs.proxy.exception.CreateTableException", "com.mysql.cj.jdbc.MysqlDataSource", "org.apache.ibatis.mapping.Environment", "org.apache.ibatis.session.Configuration", "org.apache.ibatis.session.SqlSession", "org.apache.ibatis.session.SqlSessionFactory", "org.apache.ibatis.session.SqlSessionFactoryBuilder", "org.apache.ibatis.transaction.TransactionFactory", "org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory", "java.util.List", "java.util.Map"], "class_name": "DataSaveProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/datasaveproxy/DataSaveProxy.java"}, {"name": "DataStoreMapper", "package": "com.dr.drs.proxy.serverproxy.datastoreproxy", "type": "interface", "imports": ["com.dr.drs.proxy.DataProp", "org.apache.ibatis.annotations.*", "java.util.List", "java.util.Map"], "class_name": "DataStoreMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/datastoreproxy/DataStoreMapper.java"}, {"name": "DataStoreProxy", "package": "com.dr.drs.proxy.serverproxy.datastoreproxy", "type": "class", "imports": ["com.alibaba.fastjson.JSON", "com.dr.drs.proxy.DataProp", "com.dr.drs.proxy.entities.TransferData", "com.dr.drs.proxy.exception.CreateTableException", "com.dr.drs.proxy.serverproxy.datasaveproxy.DataSaveProxy", "com.dr.drs.proxy.serverproxy.datasaveproxy.IDataProxy", "com.mysql.cj.jdbc.MysqlDataSource", "lombok.extern.slf4j.Slf4j", "org.apache.ibatis.mapping.Environment", "org.apache.ibatis.session.Configuration", "org.apache.ibatis.session.SqlSession", "org.apache.ibatis.session.SqlSessionFactory", "org.apache.ibatis.session.SqlSessionFactoryBuilder", "org.apache.ibatis.transaction.TransactionFactory", "org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory", "java.util.*"], "class_name": "DataStoreProxy extends DataSaveProxy implements IDataProxy", "extend_name": "DataSaveProxy", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/serverproxy/datastoreproxy/DataStoreProxy.java"}, {"name": "ResultEntity", "package": "com.dr.drs.proxy.entities", "type": "class", "imports": ["lombok.Data"], "class_name": "ResultEntity", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/entities/ResultEntity.java"}, {"name": "TransferData", "package": "com.dr.drs.proxy.entities", "type": "class", "imports": ["lombok.Getter", "lombok.Setter", "lombok.ToString"], "class_name": "TransferData", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/entities/TransferData.java"}, {"name": "Relation", "package": "com.dr.drs.proxy.entities", "type": "class", "imports": ["lombok.Getter", "lombok.Setter"], "class_name": "Relation", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/proxy/src/main/java/com/dr/drs/proxy/entities/Relation.java"}, {"name": "BusinessApplication", "package": "com.dr.drs", "type": "class", "imports": ["com.dr.drs.synchronizing.setup.Setup", "com.dr.drs.proxy.ProxyFactory", "lombok.extern.slf4j.Slf4j", "org.springframework.amqp.core.Message", "org.springframework.amqp.rabbit.annotation.Exchange", "org.springframework.amqp.rabbit.annotation.Queue", "org.springframework.amqp.rabbit.annotation.QueueBinding", "org.springframework.amqp.rabbit.annotation.RabbitListener", "org.springframework.boot.autoconfigure.SpringBootApplication", "org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration", "org.springframework.boot.builder.SpringApplicationBuilder", "org.springframework.cache.annotation.EnableCaching", "org.springframework.scheduling.annotation.EnableScheduling", "org.springframework.transaction.annotation.EnableTransactionManagement", "java.io.*", "java.util.HashMap", "java.util.Map", "java.util.Properties"], "class_name": "BusinessApplication", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/BusinessApplication.java"}, {"name": "ResourceCollector", "package": "com.dr.drs.business.monitor", "type": "interface", "imports": ["java.lang.annotation.*"], "class_name": "ResourceCollector", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/monitor/ResourceCollector.java"}, {"name": "RestApiRequestCollector", "package": "com.dr.drs.business.monitor", "type": "class", "imports": ["com.dr.drs.business.monitor.Interceptor.HttpResourceEvent", "com.dr.drs.business.monitor.aspect.ResourceEvent", "com.google.common.collect.Sets", "com.google.common.util.concurrent.ThreadFactoryBuilder", "com.google.gson.Gson", "org.apache.logging.log4j.util.Strings", "org.springframework.amqp.core.FanoutExchange", "org.springframework.amqp.core.Message", "org.springframework.amqp.core.MessageProperties", "org.springframework.amqp.rabbit.core.RabbitAdmin", "org.springframework.amqp.rabbit.core.RabbitTemplate", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.stereotype.Component", "javax.annotation.PostConstruct", "java.nio.charset.StandardCharsets", "java.util.HashMap", "java.util.Map", "java.util.Set", "java.util.concurrent.ExecutorService", "java.util.concurrent.Executors"], "class_name": "RestApiRequestCollector", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/monitor/RestApiRequestCollector.java"}, {"name": "AmqpConnectionProperties", "package": "com.dr.drs.business.monitor.config", "type": "class", "imports": ["lombok.Data"], "class_name": "AmqpConnectionProperties", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/monitor/config/AmqpConnectionProperties.java"}, {"name": "AutoAmqpConfigurationProperties", "package": "com.dr.drs.business.monitor.config", "type": "class", "imports": ["lombok.Data", "org.springframework.boot.context.properties.ConfigurationProperties", "org.springframework.context.annotation.Configuration", "org.springframework.context.annotation.PropertySource"], "class_name": "AutoAmqpConfigurationProperties", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/monitor/config/AutoAmqpConfigurationProperties.java"}, {"name": "RequestWrapper", "package": "com.dr.drs.business.monitor.rabbitmq", "type": "class", "imports": ["org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload", "javax.servlet.ReadListener", "javax.servlet.ServletInputStream", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletRequestWrapper", "java.io.*", "java.nio.charset.StandardCharsets"], "class_name": "RequestWrapper extends HttpServletRequestWrapper", "extend_name": "HttpServletRequestWrapper", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/monitor/rabbitmq/RequestWrapper.java"}, {"name": "RabbitBeanFactory", "package": "com.dr.drs.business.monitor.rabbitmq", "type": "class", "imports": ["com.dr.drs.business.monitor.config.AutoAmqpConfigurationProperties", "org.springframework.amqp.core.ExchangeBuilder", "org.springframework.amqp.core.FanoutExchange", "org.springframework.amqp.rabbit.connection.ConnectionFactory", "org.springframework.amqp.rabbit.core.RabbitAdmin", "org.springframework.amqp.rabbit.core.RabbitTemplate", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration"], "class_name": "RabbitBeanFactory", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/monitor/rabbitmq/RabbitBeanFactory.java"}, {"name": "RabbitFactoryBuilder", "package": "com.dr.drs.business.monitor.rabbitmq", "type": "class", "imports": ["com.dr.drs.business.monitor.config.AmqpConnectionProperties", "org.springframework.amqp.core.AcknowledgeMode", "org.springframework.amqp.rabbit.config.DirectRabbitListenerContainerFactory", "org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory", "org.springframework.amqp.rabbit.connection.CachingConnectionFactory", "org.springframework.amqp.rabbit.connection.ConnectionFactory", "org.springframework.amqp.support.converter.Jackson2JsonMessageConverter"], "class_name": "RabbitFactoryBuilder", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/monitor/rabbitmq/RabbitFactoryBuilder.java"}, {"name": "ApiFilter", "package": "com.dr.drs.business.monitor.rabbitmq", "type": "class", "imports": ["org.springframework.stereotype.Component", "javax.servlet.*", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletResponse", "java.io.IOException", "java.util.Arrays", "java.util.Collections", "java.util.HashSet", "java.util.Set"], "class_name": "ApiFilter implements Filter", "extend_name": "", "implements_name": ["Filter"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/monitor/rabbitmq/ApiFilter.java"}, {"name": "ResourceEvent", "package": "com.dr.drs.business.monitor.aspect", "type": "class", "imports": ["lombok.Data"], "class_name": "ResourceEvent", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/monitor/aspect/ResourceEvent.java"}, {"name": "MethodAspect", "package": "com.dr.drs.business.monitor.aspect", "type": "class", "imports": ["com.dr.drs.business.monitor.ResourceCollector", "com.dr.drs.business.monitor.RestApiRequestCollector", "lombok.extern.slf4j.Slf4j", "org.aspectj.lang.ProceedingJoinPoint", "org.aspectj.lang.annotation.Around", "org.aspectj.lang.annotation.Aspect", "org.aspectj.lang.reflect.MethodSignature", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Component", "java.lang.reflect.Method"], "class_name": "MethodAspect", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/monitor/aspect/MethodAspect.java"}, {"name": "HttpResourceEvent", "package": "com.dr.drs.business.monitor.Interceptor", "type": "class", "imports": ["lombok.Data", "java.util.Map"], "class_name": "HttpResourceEvent", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/monitor/Interceptor/HttpResourceEvent.java"}, {"name": "RestCtrlHandlerInterceptorAdapter", "package": "com.dr.drs.business.monitor.Interceptor", "type": "class", "imports": ["com.dr.drs.business.monitor.RestApiRequestCollector", "com.google.common.collect.Maps", "com.google.common.io.CharStreams", "lombok.extern.slf4j.Slf4j", "org.springframework.lang.NonNull", "org.springframework.lang.Nullable", "org.springframework.web.servlet.HandlerInterceptor", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletResponse", "java.util.Enumeration", "java.util.Map", "java.util.Objects"], "class_name": "RestCtrlHandlerInterceptorAdapter implements HandlerInterceptor", "extend_name": "", "implements_name": ["HandlerInterceptor"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/monitor/Interceptor/RestCtrlHandlerInterceptorAdapter.java"}, {"name": "RedisUtils", "package": "com.dr.drs.business.auth", "type": "class", "imports": ["org.apache.commons.lang3.StringUtils", "org.springframework.beans.factory.annotation.Value", "org.springframework.stereotype.Component", "redis.clients.jedis.Jedis", "redis.clients.jedis.JedisPool", "redis.clients.jedis.params.SetParams", "javax.annotation.Resource"], "class_name": "RedisUtils", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/auth/RedisUtils.java"}, {"name": "AuthInterceptor", "package": "com.dr.drs.business.auth", "type": "class", "imports": ["com.dr.drs.business.annotation.IgnoreAuth", "com.dr.drs.business.conf.Const", "lombok.extern.slf4j.Slf4j", "org.apache.commons.lang3.StringUtils", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.stereotype.Component", "org.springframework.web.method.HandlerMethod", "org.springframework.web.servlet.HandlerInterceptor", "javax.annotation.Resource", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletResponse"], "class_name": "AuthInterceptor implements HandlerInterceptor, Const", "extend_name": "", "implements_name": ["HandlerInterceptor", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/auth/AuthInterceptor.java"}, {"name": "DependencyExcutorImpl", "package": "com.dr.drs.business.dependencychk", "type": "class", "imports": ["com.dr.drs.business.controller.response.dataoperator.ResponseOperatorDetails", "com.dr.drs.business.controller.response.datapublish.ResponsePublishDetails", "com.dr.drs.business.dao.SPPublishRegisterMapper", "com.dr.drs.business.entities.SPPublishRegister", "com.dr.drs.business.entities.SPSubscribeApply", "com.dr.drs.business.dao.DependencyMapper", "com.dr.drs.business.dao.SODataOperatorMapper", "com.dr.drs.business.dao.SPSubscribeApplyMapper", "com.dr.drs.synchronizing.model.OperatorRuntimeProxyEnum", "com.dr.drs.synchronizing.model.OperatorTypeEnum", "java.util.Optional", "com.google.common.collect.Sets", "com.dr.drs.business.controller.response.subscritpion.ResponseSubscribeDetail", "com.dr.drs.synchronizing.Synchronizer", "com.dr.drs.synchronizing.error.AssigningTaskException", "com.dr.drs.synchronizing.management.pump.constant.ExtractRecordEnum", "com.dr.drs.synchronizing.management.pump.constant.SubscribeTargetEnum", "com.dr.drs.synchronizing.model.Operator", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "javax.annotation.Resource", "java.util.HashSet", "java.util.List", "java.util.Set", "static com.dr.drs.synchronizing.management.pump.constant.SubscribeTargetEnum.*"], "class_name": "DependencyExcutorImpl implements IDependencyExecutor", "extend_name": "", "implements_name": ["IDependencyExecutor"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dependencychk/DependencyExcutorImpl.java"}, {"name": "DependencyEvent", "package": "com.dr.drs.business.dependencychk", "type": "class", "imports": ["com.dr.drs.business.dao.DependencyMapper", "lombok.extern.slf4j.Slf4j", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.stereotype.Component", "org.springframework.transaction.annotation.Transactional", "javax.annotation.Resource", "java.util.ArrayList", "java.util.List"], "class_name": "DependencyEvent", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dependencychk/DependencyEvent.java"}, {"name": "IDependencyExecutor", "package": "com.dr.drs.business.dependencychk", "type": "interface", "imports": [], "class_name": "IDependencyExecutor", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dependencychk/IDependencyExecutor.java"}, {"name": "Reason", "package": "com.dr.drs.business.dependencychk", "type": "class", "imports": ["lombok.Getter", "lombok.Setter"], "class_name": "Reason", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dependencychk/Reason.java"}, {"name": "NodeType", "package": "com.dr.drs.business.dependencychk", "type": "enum", "imports": ["lombok.Getter", "java.util.HashMap", "java.util.Map"], "class_name": "NodeType", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dependencychk/NodeType.java"}, {"name": "FunctionEnum", "package": "com.dr.drs.business.dependencychk", "type": "enum", "imports": [], "class_name": "FunctionEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dependencychk/FunctionEnum.java"}, {"name": "Relation", "package": "com.dr.drs.business.dependencychk", "type": "class", "imports": ["lombok.Getter", "lombok.Setter", "lombok.ToString"], "class_name": "Relation", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dependencychk/Relation.java"}, {"name": "StoreFuncEnum", "package": "com.dr.drs.business.enums", "type": "enum", "imports": [], "class_name": "StoreFuncEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/enums/StoreFuncEnum.java"}, {"name": "SPSubscribeApplyMapper", "package": "com.dr.drs.business.dao", "type": "interface", "imports": ["com.dr.drs.business.controller.request.subscription.RequestSubscribeSubmit", "com.dr.drs.business.controller.response.subscritpion.ResponseSubscribe", "com.dr.drs.business.controller.response.subscritpion.ResponseSubscribeDetail", "com.dr.drs.business.entities.SPSubscribeApply", "org.apache.ibatis.annotations.Mapper", "org.apache.ibatis.annotations.Param", "org.apache.ibatis.annotations.Select", "org.apache.ibatis.annotations.Update", "java.util.Date", "java.util.List"], "class_name": "SPSubscribeApplyMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dao/SPSubscribeApplyMapper.java"}, {"name": "SDDataDefineMapper", "package": "com.dr.drs.business.dao", "type": "interface", "imports": ["com.dr.drs.business.controller.request.datadefine.DataProp", "com.dr.drs.business.controller.request.datadefine.RequestSubmit", "com.dr.drs.business.controller.request.datadefine.UpdDTO", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefineCount", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefine", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefineDetails", "org.apache.ibatis.annotations.*", "java.util.Date", "java.util.List"], "class_name": "SDDataDefineMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dao/SDDataDefineMapper.java"}, {"name": "SRResponseServiceMapper", "package": "com.dr.drs.business.dao", "type": "interface", "imports": ["com.dr.drs.business.controller.request.response.RequestResponseServiceSubmit", "com.dr.drs.business.controller.response.responseservice.ResponseResponseService", "com.dr.drs.business.controller.response.responseservice.ResponseResponseServiceDetails", "com.dr.drs.business.controller.response.serviceapply.ResponseRequestCount", "com.dr.drs.business.entities.SRResponseService", "org.apache.ibatis.annotations.Mapper", "org.apache.ibatis.annotations.Param", "org.apache.ibatis.annotations.Select", "org.apache.ibatis.annotations.Update", "java.util.Date", "java.util.List"], "class_name": "SRResponseServiceMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dao/SRResponseServiceMapper.java"}, {"name": "SMAccountMapper", "package": "com.dr.drs.business.dao", "type": "interface", "imports": ["com.dr.drs.business.entities.SMAccount", "org.apache.ibatis.annotations.*", "java.util.List"], "class_name": "SMAccountMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dao/SMAccountMapper.java"}, {"name": "SMManagementLogMapper", "package": "com.dr.drs.business.dao", "type": "interface", "imports": ["com.dr.drs.business.entities.SMManagementLog", "org.apache.ibatis.annotations.Mapper", "org.apache.ibatis.annotations.Param", "java.util.List"], "class_name": "SMManagementLogMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dao/SMManagementLogMapper.java"}, {"name": "SRServiceApplyMapper", "package": "com.dr.drs.business.dao", "type": "interface", "imports": ["com.dr.drs.business.controller.request.service.RequestServerSubmit", "com.dr.drs.business.controller.response.responseservice.ServiceRequestList", "com.dr.drs.business.controller.response.serviceapply.ResponseServiceApplyDetails", "com.dr.drs.business.controller.response.serviceapply.ResponseServiceApplyList", "com.dr.drs.business.entities.SRServiceApply", "org.apache.ibatis.annotations.Mapper", "org.apache.ibatis.annotations.Param", "org.apache.ibatis.annotations.Select", "org.apache.ibatis.annotations.Update", "java.util.Date", "java.util.List"], "class_name": "SRServiceApplyMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dao/SRServiceApplyMapper.java"}, {"name": "NodeTypeHandler", "package": "com.dr.drs.business.dao", "type": "class", "imports": ["com.dr.drs.business.dependencychk.NodeType", "org.apache.ibatis.type.BaseTypeHandler", "org.apache.ibatis.type.JdbcType", "java.sql.CallableStatement", "java.sql.PreparedStatement", "java.sql.ResultSet", "java.sql.SQLException"], "class_name": "NodeTypeHandler extends BaseTypeHandler<NodeType>", "extend_name": "BaseTypeHandler<NodeType>", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dao/NodeTypeHandler.java"}, {"name": "SDDataRelationMapper", "package": "com.dr.drs.business.dao", "type": "interface", "imports": ["com.dr.drs.business.controller.request.datarelation.RequestRelationSubmit", "com.dr.drs.business.controller.response.datarelation.ResponseRelation", "com.dr.drs.business.controller.response.datarelation.ResponseRelationDetails", "com.dr.drs.business.entities.SDDataRelation", "org.apache.ibatis.annotations.*", "java.util.Date", "java.util.List"], "class_name": "SDDataRelationMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dao/SDDataRelationMapper.java"}, {"name": "RunlogMapper", "package": "com.dr.drs.business.dao", "type": "interface", "imports": ["org.apache.ibatis.annotations.Insert", "org.apache.ibatis.annotations.Mapper", "org.apache.ibatis.annotations.Param", "java.util.Date"], "class_name": "RunlogMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dao/RunlogMapper.java"}, {"name": "SPPublishRegisterMapper", "package": "com.dr.drs.business.dao", "type": "interface", "imports": ["com.dr.drs.business.controller.request.publish.RequestPublishSubmit", "com.dr.drs.business.controller.response.datapublish.ResponsePublish", "com.dr.drs.business.controller.response.datapublish.ResponsePublishDetails", "com.dr.drs.business.controller.response.datapublish.Subscribe", "com.dr.drs.business.controller.response.subscritpion.ResponseSubscribeCount", "com.dr.drs.business.entities.SPPublishRegister", "org.apache.ibatis.annotations.*", "java.util.Date", "java.util.List"], "class_name": "SPPublishRegisterMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dao/SPPublishRegisterMapper.java"}, {"name": "SSDataNodeMapper", "package": "com.dr.drs.business.dao", "type": "interface", "imports": ["com.dr.drs.business.controller.request.datanode.RequestDataNodeSubmit", "com.dr.drs.business.entities.SSDataNode", "com.dr.drs.business.controller.response.datanode.ResponseDataNodeDetails", "com.dr.drs.business.controller.response.datanode.ResponseDataNodeList", "org.apache.ibatis.annotations.*", "java.util.Date", "java.util.List"], "class_name": "SSDataNodeMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dao/SSDataNodeMapper.java"}, {"name": "DependencyMapper", "package": "com.dr.drs.business.dao", "type": "interface", "imports": ["com.dr.drs.business.controller.response.ResponseReason", "com.dr.drs.business.dependencychk.Reason", "com.dr.drs.business.dependencychk.Relation", "org.apache.ibatis.annotations.*", "java.util.List"], "class_name": "DependencyMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dao/DependencyMapper.java"}, {"name": "SODataOperatorMapper", "package": "com.dr.drs.business.dao", "type": "interface", "imports": ["com.dr.drs.business.controller.request.operator.RequestOperatorSumbit", "com.dr.drs.business.controller.response.dataoperator.ResponseOperatorDetails", "com.dr.drs.business.controller.response.dataoperator.ResponseOperatorList", "com.dr.drs.business.controller.response.datapublish.ResponsePublish", "com.dr.drs.business.entities.SODataOperator", "org.apache.ibatis.annotations.Mapper", "org.apache.ibatis.annotations.Param", "org.apache.ibatis.annotations.Select", "org.apache.ibatis.annotations.Update", "java.util.Date", "java.util.List"], "class_name": "SODataOperatorMapper", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/dao/SODataOperatorMapper.java"}, {"name": "IgnoreAuth", "package": "com.dr.drs.business.annotation", "type": "interface", "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"], "class_name": "IgnoreAuth", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/annotation/IgnoreAuth.java"}, {"name": "Utils", "package": "com.dr.drs.business.utils", "type": "class", "imports": ["com.dr.drs.business.conf.Const", "java.util.ArrayList", "java.util.List"], "class_name": "Utils implements Const", "extend_name": "", "implements_name": ["Const"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/utils/Utils.java"}, {"name": "CsvUtil", "package": "com.dr.drs.business.utils", "type": "class", "imports": ["com.dr.drs.business.conf.Const", "com.dr.drs.business.service.ParseException", "com.opencsv.bean.CsvToBean", "com.opencsv.bean.CsvToBeanBuilder", "com.opencsv.bean.HeaderColumnNameMappingStrategy", "lombok.extern.slf4j.Slf4j", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.web.multipart.MultipartFile", "java.io.IOException", "java.io.InputStreamReader", "java.io.PrintWriter", "java.lang.reflect.Field", "java.nio.charset.StandardCharsets", "java.util.List"], "class_name": "CsvUtil", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/utils/CsvUtil.java"}, {"name": "OssUtils", "package": "com.dr.drs.business.utils", "type": "class", "imports": ["com.amazonaws.AmazonServiceException", "com.amazonaws.services.s3.AmazonS3", "com.amazonaws.services.s3.model.ObjectMetadata", "com.amazonaws.services.s3.model.S3Object", "com.amazonaws.services.s3.model.S3ObjectInputStream", "org.springframework.beans.factory.annotation.Value", "org.springframework.stereotype.Component", "javax.annotation.Resource", "java.io.*", "java.util.UUID"], "class_name": "OssUtils", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/utils/OssUtils.java"}, {"name": "M4DataPublishController", "package": "com.dr.drs.business.controller", "type": "class", "imports": ["com.alibaba.fastjson.JSON", "com.alibaba.fastjson.JSONObject", "com.dr.drs.business.annotation.IgnoreAuth", "com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.response.Unique", "com.dr.drs.business.controller.response.datapublish.ResponsePublish", "com.dr.drs.business.controller.response.datapublish.ResponsePublishDetails", "com.dr.drs.business.controller.util.ControllerUtils", "com.dr.drs.business.dependencychk.DependencyEvent", "com.dr.drs.business.entities.SPPublishRegister", "com.dr.drs.business.controller.response.Result", "com.dr.drs.business.controller.response.datapublish.ResponseCreateResult", "com.dr.drs.business.runlogprocessor.RunlogEntity", "com.dr.drs.business.runlogprocessor.RunlogProcessor", "com.dr.drs.business.service.IM4DataPublish", "com.dr.drs.business.service.IM4DataSubscription", "com.dr.drs.business.utils.Utils", "com.dr.drs.business.controller.request.publish.*", "com.dr.drs.synchronizing.error.AssigningTaskException", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.apache.commons.lang3.StringUtils", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RequestMethod", "org.springframework.web.bind.annotation.RestController", "javax.annotation.Resource", "javax.servlet.http.HttpServletRequest", "java.util.Date", "java.util.List"], "class_name": "M4DataPublishController implements Const", "extend_name": "", "implements_name": ["Const"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/M4DataPublishController.java"}, {"name": "M4ManagementLogController", "package": "com.dr.drs.business.controller", "type": "class", "imports": ["com.dr.drs.business.annotation.IgnoreAuth", "com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.managementlog.Query", "com.dr.drs.business.controller.request.managementlog.QueryDetails", "com.dr.drs.business.entities.SMManagementLog", "com.dr.drs.business.controller.request.managementlog.RequestManagementLog", "com.dr.drs.business.controller.response.Result", "com.dr.drs.business.controller.response.mangementlog.ResponseManagementLogCreate", "com.dr.drs.business.service.IM4ManagementLog", "io.swagger.annotations.Api", "io.swagger.annotations.ApiModelProperty", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.apache.commons.lang3.StringUtils", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RequestMethod", "org.springframework.web.bind.annotation.RestController", "javax.annotation.Resource", "javax.servlet.http.HttpServletRequest", "java.util.Date", "java.util.List"], "class_name": "M4ManagementLogController implements Const", "extend_name": "", "implements_name": ["Const"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/M4ManagementLogController.java"}, {"name": "M4DataOperatorController", "package": "com.dr.drs.business.controller", "type": "class", "imports": ["com.alibaba.fastjson.JSONObject", "com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.operator.*", "com.dr.drs.business.controller.response.Unique", "com.dr.drs.business.controller.response.dataoperator.ResponseOperatorDetails", "com.dr.drs.business.controller.response.dataoperator.ResponseOperatorList", "com.dr.drs.business.controller.response.datapublish.ResponsePublish", "com.dr.drs.business.controller.util.ControllerUtils", "com.dr.drs.business.entities.SODataOperator", "com.dr.drs.business.controller.request.RequestDataOperator", "com.dr.drs.business.controller.response.Result", "com.dr.drs.business.controller.response.dataoperator.ResponseCreateResult", "com.dr.drs.business.runlogprocessor.RunlogEntity", "com.dr.drs.business.runlogprocessor.RunlogProcessor", "com.dr.drs.business.service.IM4DataOperator", "com.dr.drs.business.utils.Utils", "com.dr.drs.synchronizing.error.AssigningTaskException", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.annotation.Resource", "javax.servlet.http.HttpServletRequest", "java.util.ArrayList", "java.util.Date", "java.util.List"], "class_name": "M4DataOperatorController implements Const", "extend_name": "", "implements_name": ["Const"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/M4DataOperatorController.java"}, {"name": "M4AdministratorController", "package": "com.dr.drs.business.controller", "type": "class", "imports": ["com.alibaba.fastjson.JSONObject", "com.dr.drs.business.annotation.IgnoreAuth", "com.dr.drs.business.auth.RedisUtils", "com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.response.Unique", "com.dr.drs.business.controller.response.user.ResponseUserInfo", "com.dr.drs.business.controller.util.ControllerUtils", "com.dr.drs.business.entities.SMAccount", "com.dr.drs.business.controller.request.user.RequestSMAccount", "com.dr.drs.business.controller.response.Result", "com.dr.drs.business.modules.MdidManger", "com.dr.drs.business.service.IM4Administrator", "com.google.code.kaptcha.Constants", "com.google.code.kaptcha.impl.DefaultKaptcha", "io.swagger.annotations.Api", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.apache.commons.codec.digest.DigestUtils", "org.apache.commons.lang3.StringUtils", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.annotation.Resource", "javax.imageio.ImageIO", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletResponse", "javax.validation.groups.Default", "java.awt.image.BufferedImage", "java.io.ByteArrayOutputStream"], "class_name": "M4AdministratorController implements Const", "extend_name": "", "implements_name": ["Const"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/M4AdministratorController.java"}, {"name": "M4DataRelationController", "package": "com.dr.drs.business.controller", "type": "class", "imports": ["com.alibaba.fastjson.JSONObject", "com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.datarelation.*", "com.dr.drs.business.controller.response.Result", "com.dr.drs.business.controller.response.Unique", "com.dr.drs.business.controller.response.datarelation.ResponseRelation", "com.dr.drs.business.controller.response.datarelation.ResponseRelationDetails", "com.dr.drs.business.controller.util.ControllerUtils", "com.dr.drs.business.entities.SDDataRelation", "com.dr.drs.business.service.IM4DataRelation", "com.dr.drs.business.utils.Utils", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.apache.commons.lang3.StringUtils", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RequestMethod", "org.springframework.web.bind.annotation.RestController", "javax.annotation.Resource", "javax.servlet.http.HttpServletRequest", "java.util.List"], "class_name": "M4DataRelationController implements Const", "extend_name": "", "implements_name": ["Const"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/M4DataRelationController.java"}, {"name": "M4ServiceTaskController", "package": "com.dr.drs.business.controller", "type": "class", "imports": [], "class_name": "M4ServiceTaskController", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/M4ServiceTaskController.java"}, {"name": "M4DataDefineController", "package": "com.dr.drs.business.controller", "type": "class", "imports": ["com.alibaba.fastjson.JSONObject", "com.dr.drs.business.annotation.IgnoreAuth", "com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.response.Unique", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefineCount", "com.dr.drs.business.controller.util.ControllerUtils", "com.dr.drs.business.controller.response.Result", "com.dr.drs.business.controller.response.datadefine.CreateResult", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefine", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefineDetails", "com.dr.drs.business.service.IM4Administrator", "com.dr.drs.business.service.IM4DataDefine", "com.dr.drs.business.service.ParseException", "com.dr.drs.business.utils.CsvUtil", "com.dr.drs.business.controller.request.datadefine.*", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.apache.commons.lang3.StringUtils", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "org.springframework.web.multipart.MultipartFile", "javax.annotation.Resource", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletResponse", "java.io.IOException", "java.io.PrintWriter", "java.nio.charset.StandardCharsets", "java.sql.SQLException", "java.util.ArrayList", "java.util.Date", "java.util.List"], "class_name": "M4DataDefineController implements Const", "extend_name": "", "implements_name": ["Const"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/M4DataDefineController.java"}, {"name": "M4DataNodeController", "package": "com.dr.drs.business.controller", "type": "class", "imports": ["com.alibaba.fastjson.JSONObject", "com.dr.drs.business.annotation.IgnoreAuth", "com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.datadefine.DataProp", "com.dr.drs.business.controller.request.datanode.*", "com.dr.drs.business.controller.response.Unique", "com.dr.drs.business.controller.util.ControllerUtils", "com.dr.drs.business.entities.SSDataNode", "com.dr.drs.business.controller.response.Result", "com.dr.drs.business.modules.MdidManger", "com.dr.drs.business.service.IM4DataNode", "com.dr.drs.business.utils.OssUtils", "com.dr.drs.business.controller.response.datanode.ResponseDataNodeDetails", "com.dr.drs.business.controller.response.datanode.ResponseDataNodeList", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.apache.commons.lang3.StringUtils", "org.springframework.beans.factory.annotation.Value", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "org.springframework.web.multipart.MultipartFile", "javax.annotation.Resource", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletResponse", "java.io.IOException", "java.util.ArrayList", "java.util.List"], "class_name": "M4DataNodeController implements Const", "extend_name": "", "implements_name": ["Const"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/M4DataNodeController.java"}, {"name": "M4ResponseServiceController", "package": "com.dr.drs.business.controller", "type": "class", "imports": ["com.alibaba.fastjson.JSONObject", "com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.response.RequestQueryResponse", "com.dr.drs.business.controller.request.response.RequestResponseServiceDetail", "com.dr.drs.business.controller.request.response.RequestDestroy", "com.dr.drs.business.controller.response.Result", "com.dr.drs.business.controller.response.Unique", "com.dr.drs.business.controller.response.responseservice.ResponseResponseService", "com.dr.drs.business.controller.response.responseservice.ResponseResponseServiceDetails", "com.dr.drs.business.controller.util.ControllerUtils", "com.dr.drs.business.entities.SRResponseService", "com.dr.drs.business.service.IM4ResponseService", "com.dr.drs.business.utils.Utils", "com.dr.drs.business.controller.request.response.RequestResponseServiceSubmit", "com.dr.drs.business.controller.request.response.RequestSRResponseService", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.apache.commons.lang3.StringUtils", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RequestMethod", "org.springframework.web.bind.annotation.RestController", "javax.annotation.Resource", "javax.servlet.http.HttpServletRequest", "java.util.List"], "class_name": "M4ResponseServiceController implements Const", "extend_name": "", "implements_name": ["Const"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/M4ResponseServiceController.java"}, {"name": "M4ServiceRequestsController", "package": "com.dr.drs.business.controller", "type": "class", "imports": ["com.alibaba.fastjson.JSON", "com.alibaba.fastjson.JSONObject", "com.dr.drs.business.annotation.IgnoreAuth", "com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.ServerRequestEntity", "com.dr.drs.business.controller.request.response.RequestServiceApplyVerify", "com.dr.drs.business.controller.request.service.*", "com.dr.drs.business.controller.response.Unique", "com.dr.drs.business.controller.response.serviceapply.ResponseRequestCount", "com.dr.drs.business.controller.response.serviceapply.ResponseServiceApplyDetails", "com.dr.drs.business.controller.response.serviceapply.ResponseServiceApplyList", "com.dr.drs.business.controller.response.Result", "com.dr.drs.business.controller.util.ControllerUtils", "com.dr.drs.business.entities.SRServiceApply", "com.dr.drs.business.runlogprocessor.RunlogEntity", "com.dr.drs.business.runlogprocessor.RunlogProcessor", "com.dr.drs.business.service.IM4ServiceRequest", "com.dr.drs.business.utils.Utils", "com.dr.drs.synchronizing.management.service.RequestAndResponse", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.apache.commons.lang3.StringUtils", "org.springframework.beans.factory.annotation.Value", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RequestMethod", "org.springframework.web.bind.annotation.RestController", "javax.annotation.Resource", "javax.servlet.http.HttpServletRequest", "java.util.List"], "class_name": "M4ServiceRequestsController implements Const", "extend_name": "", "implements_name": ["Const"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/M4ServiceRequestsController.java"}, {"name": "M4DataSubscriptionController", "package": "com.dr.drs.business.controller", "type": "class", "imports": ["com.alibaba.fastjson.JSONObject", "com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.subscription.*", "com.dr.drs.business.controller.response.Result", "com.dr.drs.business.controller.response.Unique", "com.dr.drs.business.controller.response.datapublish.ResponsePublishDetails", "com.dr.drs.business.controller.response.subscritpion.ResponseSubscribe", "com.dr.drs.business.controller.response.subscritpion.ResponseSubscribeCount", "com.dr.drs.business.controller.response.subscritpion.ResponseSubscribeDetail", "com.dr.drs.business.controller.util.ControllerUtils", "com.dr.drs.business.entities.SPSubscribeApply", "com.dr.drs.business.controller.request.RequestSPSubscribeApply", "com.dr.drs.business.runlogprocessor.RunlogEntity", "com.dr.drs.business.runlogprocessor.RunlogProcessor", "com.dr.drs.business.service.IM4DataOperator", "com.dr.drs.business.service.IM4DataPublish", "com.dr.drs.business.service.IM4DataSubscription", "com.dr.drs.business.utils.Utils", "com.dr.drs.synchronizing.error.AssigningTaskException", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.apache.commons.lang3.StringUtils", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RequestMethod", "org.springframework.web.bind.annotation.RestController", "javax.annotation.Resource", "javax.servlet.http.HttpServletRequest", "java.util.List"], "class_name": "M4DataSubscriptionController implements Const", "extend_name": "", "implements_name": ["Const"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/M4DataSubscriptionController.java"}, {"name": "BusServiceController", "package": "com.dr.drs.business.controller", "type": "class", "imports": ["io.swagger.annotations.*", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController", "javax.servlet.http.HttpServletRequest"], "class_name": "BusServiceController", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/BusServiceController.java"}, {"name": "ResponseReason", "package": "com.dr.drs.business.controller.response", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "lombok.ToString"], "class_name": "ResponseReason", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/ResponseReason.java"}, {"name": "Result<T>", "package": "com.dr.drs.business.controller.response", "type": "class", "imports": ["com.dr.drs.business.conf.Const", "io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "Result<T> implements Const", "extend_name": "", "implements_name": ["Const"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/Result.java"}, {"name": "Unique", "package": "com.dr.drs.business.controller.response", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.AllArgsConstructor", "lombok.Getter", "lombok.Setter"], "class_name": "Unique", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/Unique.java"}, {"name": "ResponseCreateResult", "package": "com.dr.drs.business.controller.response.dataoperator", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "ResponseCreateResult", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/dataoperator/ResponseCreateResult.java"}, {"name": "ResponseOperatorList", "package": "com.dr.drs.business.controller.response.dataoperator", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "ResponseOperatorList", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/dataoperator/ResponseOperatorList.java"}, {"name": "ResponseOperatorDetails", "package": "com.dr.drs.business.controller.response.dataoperator", "type": "class", "imports": ["com.dr.drs.business.controller.response.ResponseReason", "io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "java.util.ArrayList", "java.util.List"], "class_name": "ResponseOperatorDetails", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/dataoperator/ResponseOperatorDetails.java"}, {"name": "ResponseResponseServiceDetails", "package": "com.dr.drs.business.controller.response.responseservice", "type": "class", "imports": ["com.dr.drs.business.controller.response.ResponseReason", "io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "java.util.ArrayList", "java.util.List"], "class_name": "ResponseResponseServiceDetails", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/responseservice/ResponseResponseServiceDetails.java"}, {"name": "ServiceRequestList", "package": "com.dr.drs.business.controller.response.responseservice", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "ServiceRequestList", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/responseservice/ServiceRequestList.java"}, {"name": "ResponseResponseService", "package": "com.dr.drs.business.controller.response.responseservice", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "ResponseResponseService", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/responseservice/ResponseResponseService.java"}, {"name": "ResponsePublishDetails", "package": "com.dr.drs.business.controller.response.datapublish", "type": "class", "imports": ["com.dr.drs.business.controller.response.ResponseReason", "io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "java.util.ArrayList", "java.util.Date", "java.util.List"], "class_name": "ResponsePublishDetails", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/datapublish/ResponsePublishDetails.java"}, {"name": "ResponsePublish", "package": "com.dr.drs.business.controller.response.datapublish", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "java.util.Date"], "class_name": "ResponsePublish", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/datapublish/ResponsePublish.java"}, {"name": "Subscribe", "package": "com.dr.drs.business.controller.response.datapublish", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "javax.persistence.criteria.CriteriaBuilder"], "class_name": "Subscribe", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/datapublish/Subscribe.java"}, {"name": "ResponseCreateResult", "package": "com.dr.drs.business.controller.response.datapublish", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "ResponseCreateResult", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/datapublish/ResponseCreateResult.java"}, {"name": "ResponseDataNodeList", "package": "com.dr.drs.business.controller.response.datanode", "type": "class", "imports": ["com.dr.drs.business.entities.SSDataNode", "io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "ResponseDataNodeList", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/datanode/ResponseDataNodeList.java"}, {"name": "ResponseDataNodeDetails", "package": "com.dr.drs.business.controller.response.datanode", "type": "class", "imports": ["com.dr.drs.business.controller.response.ResponseReason", "io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "java.util.ArrayList", "java.util.List"], "class_name": "ResponseDataNodeDetails", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/datanode/ResponseDataNodeDetails.java"}, {"name": "ResponseDataDefineCount", "package": "com.dr.drs.business.controller.response.datadefine", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "ResponseDataDefineCount", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/datadefine/ResponseDataDefineCount.java"}, {"name": "ResponseDataDefineDetails", "package": "com.dr.drs.business.controller.response.datadefine", "type": "class", "imports": ["com.dr.drs.business.controller.request.datadefine.DataProp", "com.dr.drs.business.controller.response.ResponseReason", "io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "java.util.ArrayList", "java.util.Date", "java.util.List"], "class_name": "ResponseDataDefineDetails", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/datadefine/ResponseDataDefineDetails.java"}, {"name": "ResponseDataDefine", "package": "com.dr.drs.business.controller.response.datadefine", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "java.util.Date"], "class_name": "ResponseDataDefine", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/datadefine/ResponseDataDefine.java"}, {"name": "CreateResult", "package": "com.dr.drs.business.controller.response.datadefine", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "CreateResult", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/datadefine/CreateResult.java"}, {"name": "ResponseUserInfo", "package": "com.dr.drs.business.controller.response.user", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "ResponseUserInfo", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/user/ResponseUserInfo.java"}, {"name": "ResponseServiceApplyDetails", "package": "com.dr.drs.business.controller.response.serviceapply", "type": "class", "imports": ["com.dr.drs.business.controller.response.ResponseReason", "io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "java.util.ArrayList", "java.util.List"], "class_name": "ResponseServiceApplyDetails", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/serviceapply/ResponseServiceApplyDetails.java"}, {"name": "ResponseRequestCount", "package": "com.dr.drs.business.controller.response.serviceapply", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "ResponseRequestCount", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/serviceapply/ResponseRequestCount.java"}, {"name": "ResponseServiceApplyList", "package": "com.dr.drs.business.controller.response.serviceapply", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "lombok.ToString"], "class_name": "ResponseServiceApplyList", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/serviceapply/ResponseServiceApplyList.java"}, {"name": "ResponseSubscribe", "package": "com.dr.drs.business.controller.response.subscritpion", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "ResponseSubscribe", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/subscritpion/ResponseSubscribe.java"}, {"name": "ResponseSubscribeDetail", "package": "com.dr.drs.business.controller.response.subscritpion", "type": "class", "imports": ["com.dr.drs.business.controller.response.ResponseReason", "io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "java.util.ArrayList", "java.util.List"], "class_name": "ResponseSubscribeDetail", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/subscritpion/ResponseSubscribeDetail.java"}, {"name": "ResponseSubscribeCount", "package": "com.dr.drs.business.controller.response.subscritpion", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "ResponseSubscribeCount", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/subscritpion/ResponseSubscribeCount.java"}, {"name": "ResponseRelationDetails", "package": "com.dr.drs.business.controller.response.datarelation", "type": "class", "imports": ["com.dr.drs.business.controller.response.ResponseReason", "io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "java.util.ArrayList", "java.util.Date", "java.util.List"], "class_name": "ResponseRelationDetails", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/datarelation/ResponseRelationDetails.java"}, {"name": "ResponseRelation", "package": "com.dr.drs.business.controller.response.datarelation", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "java.util.Date"], "class_name": "ResponseRelation", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/datarelation/ResponseRelation.java"}, {"name": "ResponseManagementLogCreate", "package": "com.dr.drs.business.controller.response.mangementlog", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "ResponseManagementLogCreate", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/response/mangementlog/ResponseManagementLogCreate.java"}, {"name": "ControllerUtils", "package": "com.dr.drs.business.controller.util", "type": "class", "imports": ["com.dr.drs.business.auth.RedisUtils", "com.dr.drs.business.conf.Const", "lombok.extern.slf4j.Slf4j", "org.apache.commons.lang3.StringUtils", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Component", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletResponse", "java.io.IOException", "java.net.HttpURLConnection", "java.net.MalformedURLException", "java.net.URL", "java.util.HashSet", "java.util.List", "java.util.Set"], "class_name": "ControllerUtils implements Const", "extend_name": "", "implements_name": ["Const"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/util/ControllerUtils.java"}, {"name": "ServerRequestEntity", "package": "com.dr.drs.business.controller.request", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "ServerRequestEntity", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/ServerRequestEntity.java"}, {"name": "RequestSPSubscribeApply", "package": "com.dr.drs.business.controller.request", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "javax.validation.constraints.NotBlank"], "class_name": "RequestSPSubscribeApply", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/RequestSPSubscribeApply.java"}, {"name": "RequestDataOperator", "package": "com.dr.drs.business.controller.request", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "lombok.ToString", "javax.validation.constraints.NotBlank"], "class_name": "RequestDataOperator", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/RequestDataOperator.java"}, {"name": "RequestResponseServiceDetail", "package": "com.dr.drs.business.controller.request.response", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestResponseServiceDetail", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/response/RequestResponseServiceDetail.java"}, {"name": "RequestResponseServiceSubmit", "package": "com.dr.drs.business.controller.request.response", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "javax.validation.constraints.NotBlank"], "class_name": "RequestResponseServiceSubmit", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/response/RequestResponseServiceSubmit.java"}, {"name": "RequestQueryResponse", "package": "com.dr.drs.business.controller.request.response", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestQueryResponse", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/response/RequestQueryResponse.java"}, {"name": "RequestServiceApplyVerify", "package": "com.dr.drs.business.controller.request.response", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "javax.validation.constraints.NotBlank"], "class_name": "RequestServiceApplyVerify", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/response/RequestServiceApplyVerify.java"}, {"name": "RequestSRResponseService", "package": "com.dr.drs.business.controller.request.response", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "javax.validation.constraints.NotBlank"], "class_name": "RequestSRResponseService", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/response/RequestSRResponseService.java"}, {"name": "RequestDestroy", "package": "com.dr.drs.business.controller.request.response", "type": "class", "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "RequestDestroy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/response/RequestDestroy.java"}, {"name": "RequestDataNodeUpdate", "package": "com.dr.drs.business.controller.request.datanode", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "javax.validation.constraints.Email", "javax.validation.constraints.NotBlank"], "class_name": "RequestDataNodeUpdate", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datanode/RequestDataNodeUpdate.java"}, {"name": "RequestDataNodeDetails", "package": "com.dr.drs.business.controller.request.datanode", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestDataNodeDetails", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datanode/RequestDataNodeDetails.java"}, {"name": "RequestDestroy", "package": "com.dr.drs.business.controller.request.datanode", "type": "class", "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "RequestDestroy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datanode/RequestDestroy.java"}, {"name": "RequestDataNodeSubmit", "package": "com.dr.drs.business.controller.request.datanode", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "javax.validation.constraints.Email", "javax.validation.constraints.NotBlank"], "class_name": "RequestDataNodeSubmit", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datanode/RequestDataNodeSubmit.java"}, {"name": "RequestQueryByDnmdid", "package": "com.dr.drs.business.controller.request.datanode", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestQueryByDnmdid", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datanode/RequestQueryByDnmdid.java"}, {"name": "RequestDataNodeList", "package": "com.dr.drs.business.controller.request.datanode", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestDataNodeList", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datanode/RequestDataNodeList.java"}, {"name": "RequestManagementLog", "package": "com.dr.drs.business.controller.request.managementlog", "type": "class", "imports": ["com.fasterxml.jackson.annotation.JsonProperty", "io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestManagementLog", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/managementlog/RequestManagementLog.java"}, {"name": "QueryDetails", "package": "com.dr.drs.business.controller.request.managementlog", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "QueryDetails", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/managementlog/QueryDetails.java"}, {"name": "Query", "package": "com.dr.drs.business.controller.request.managementlog", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "Query", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/managementlog/Query.java"}, {"name": "RequestDetail", "package": "com.dr.drs.business.controller.request.datadefine", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestDetail", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datadefine/RequestDetail.java"}, {"name": "RequestSubmit", "package": "com.dr.drs.business.controller.request.datadefine", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "io.swagger.annotations.ApiOperation", "lombok.Getter", "lombok.Setter", "java.util.List"], "class_name": "RequestSubmit", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datadefine/RequestSubmit.java"}, {"name": "RequestDataDefine", "package": "com.dr.drs.business.controller.request.datadefine", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "RequestDataDefine", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datadefine/RequestDataDefine.java"}, {"name": "DataProp", "package": "com.dr.drs.business.controller.request.datadefine", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "DataProp", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datadefine/DataProp.java"}, {"name": "RequestDataProp", "package": "com.dr.drs.business.controller.request.datadefine", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "RequestDataProp", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datadefine/RequestDataProp.java"}, {"name": "UpdDTO", "package": "com.dr.drs.business.controller.request.datadefine", "type": "class", "imports": ["lombok.Getter", "lombok.Setter", "java.util.Date", "java.util.List"], "class_name": "UpdDTO", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datadefine/UpdDTO.java"}, {"name": "RequestDestroy", "package": "com.dr.drs.business.controller.request.datadefine", "type": "class", "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "RequestDestroy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datadefine/RequestDestroy.java"}, {"name": "RequestUpdate", "package": "com.dr.drs.business.controller.request.datadefine", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "javax.validation.constraints.NotBlank", "java.util.List"], "class_name": "RequestUpdate", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datadefine/RequestUpdate.java"}, {"name": "RequestSMAccount", "package": "com.dr.drs.business.controller.request.user", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestSMAccount", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/user/RequestSMAccount.java"}, {"name": "RequestVerify", "package": "com.dr.drs.business.controller.request.subscription", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "io.swagger.annotations.ApiOperation", "lombok.Getter", "lombok.Setter", "javax.validation.constraints.NotBlank"], "class_name": "RequestVerify", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/subscription/RequestVerify.java"}, {"name": "RequestSubscribeSubmit", "package": "com.dr.drs.business.controller.request.subscription", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "javax.validation.constraints.NotBlank"], "class_name": "RequestSubscribeSubmit", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/subscription/RequestSubscribeSubmit.java"}, {"name": "RequestSubscribeDetail", "package": "com.dr.drs.business.controller.request.subscription", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestSubscribeDetail", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/subscription/RequestSubscribeDetail.java"}, {"name": "RequestQueryX", "package": "com.dr.drs.business.controller.request.subscription", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestQueryX", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/subscription/RequestQueryX.java"}, {"name": "RequestSuspend", "package": "com.dr.drs.business.controller.request.subscription", "type": "class", "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "RequestSuspend", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/subscription/RequestSuspend.java"}, {"name": "RequestQueryL", "package": "com.dr.drs.business.controller.request.subscription", "type": "class", "imports": ["lombok.Getter", "lombok.Setter"], "class_name": "RequestQueryL", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/subscription/RequestQueryL.java"}, {"name": "RequestDestroy", "package": "com.dr.drs.business.controller.request.subscription", "type": "class", "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "RequestDestroy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/subscription/RequestDestroy.java"}, {"name": "RequestDetail", "package": "com.dr.drs.business.controller.request.publish", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestDetail", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/publish/RequestDetail.java"}, {"name": "RequestQuery", "package": "com.dr.drs.business.controller.request.publish", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestQuery", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/publish/RequestQuery.java"}, {"name": "PublishData", "package": "com.dr.drs.business.controller.request.publish", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "PublishData", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/publish/PublishData.java"}, {"name": "RequestPublishRegister", "package": "com.dr.drs.business.controller.request.publish", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "javax.validation.constraints.NotBlank"], "class_name": "RequestPublishRegister", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/publish/RequestPublishRegister.java"}, {"name": "RequestSuspend", "package": "com.dr.drs.business.controller.request.publish", "type": "class", "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "RequestSuspend", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/publish/RequestSuspend.java"}, {"name": "RequestDestroy", "package": "com.dr.drs.business.controller.request.publish", "type": "class", "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "RequestDestroy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/publish/RequestDestroy.java"}, {"name": "RequestPublishVerify", "package": "com.dr.drs.business.controller.request.publish", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestPublishVerify", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/publish/RequestPublishVerify.java"}, {"name": "RequestPublishSubmit", "package": "com.dr.drs.business.controller.request.publish", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.ToString", "javax.validation.constraints.NotBlank"], "class_name": "RequestPublishSubmit", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/publish/RequestPublishSubmit.java"}, {"name": "RequestVerify", "package": "com.dr.drs.business.controller.request.datarelation", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "org.apache.ibatis.annotations.Param", "javax.validation.constraints.NotBlank"], "class_name": "RequestVerify", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datarelation/RequestVerify.java"}, {"name": "RequestRelationSubmit", "package": "com.dr.drs.business.controller.request.datarelation", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "javax.validation.constraints.NotBlank"], "class_name": "RequestRelationSubmit", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datarelation/RequestRelationSubmit.java"}, {"name": "RequestQueryX", "package": "com.dr.drs.business.controller.request.datarelation", "type": "class", "imports": ["com.fasterxml.jackson.annotation.JsonProperty", "io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "lombok.ToString"], "class_name": "RequestQueryX", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datarelation/RequestQueryX.java"}, {"name": "RequestQueryL", "package": "com.dr.drs.business.controller.request.datarelation", "type": "class", "imports": ["lombok.Getter", "lombok.Setter"], "class_name": "RequestQueryL", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datarelation/RequestQueryL.java"}, {"name": "RequestDataRelation", "package": "com.dr.drs.business.controller.request.datarelation", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "lombok.ToString", "javax.validation.constraints.NotBlank"], "class_name": "RequestDataRelation", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datarelation/RequestDataRelation.java"}, {"name": "RequestDestroy", "package": "com.dr.drs.business.controller.request.datarelation", "type": "class", "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "RequestDestroy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datarelation/RequestDestroy.java"}, {"name": "RequestRelationDetails", "package": "com.dr.drs.business.controller.request.datarelation", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestRelationDetails", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/datarelation/RequestRelationDetails.java"}, {"name": "RequestQuery", "package": "com.dr.drs.business.controller.request.service", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestQuery", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/service/RequestQuery.java"}, {"name": "RequestServerApply", "package": "com.dr.drs.business.controller.request.service", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestServerApply", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/service/RequestServerApply.java"}, {"name": "RequestVerify", "package": "com.dr.drs.business.controller.request.service", "type": "class", "imports": ["lombok.Getter", "lombok.Setter"], "class_name": "RequestVerify", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/service/RequestVerify.java"}, {"name": "RequestDestroy", "package": "com.dr.drs.business.controller.request.service", "type": "class", "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "RequestDestroy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/service/RequestDestroy.java"}, {"name": "RequestServerSubmit", "package": "com.dr.drs.business.controller.request.service", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter", "javax.validation.constraints.NotBlank"], "class_name": "RequestServerSubmit", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/service/RequestServerSubmit.java"}, {"name": "RequestServiceRequestDetails", "package": "com.dr.drs.business.controller.request.service", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestServiceRequestDetails", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/service/RequestServiceRequestDetails.java"}, {"name": "RequestOperatorQueryX", "package": "com.dr.drs.business.controller.request.operator", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "io.swagger.annotations.ApiOperation", "lombok.Getter", "lombok.Setter"], "class_name": "RequestOperatorQueryX", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/operator/RequestOperatorQueryX.java"}, {"name": "RequestOperatorDetails", "package": "com.dr.drs.business.controller.request.operator", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestOperatorDetails", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/operator/RequestOperatorDetails.java"}, {"name": "RequestOperatorSumbit", "package": "com.dr.drs.business.controller.request.operator", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestOperatorSumbit", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/operator/RequestOperatorSumbit.java"}, {"name": "RequestOperatorVerify", "package": "com.dr.drs.business.controller.request.operator", "type": "class", "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.Setter"], "class_name": "RequestOperatorVerify", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/operator/RequestOperatorVerify.java"}, {"name": "RequestSuspend", "package": "com.dr.drs.business.controller.request.operator", "type": "class", "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "RequestSuspend", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/operator/RequestSuspend.java"}, {"name": "RequestDestroy", "package": "com.dr.drs.business.controller.request.operator", "type": "class", "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"], "class_name": "RequestDestroy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/controller/request/operator/RequestDestroy.java"}, {"name": "IM4ServiceTask", "package": "com.dr.drs.business.service", "type": "interface", "imports": [], "class_name": "IM4ServiceTask", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/IM4ServiceTask.java"}, {"name": "IM4DataOperator", "package": "com.dr.drs.business.service", "type": "interface", "imports": ["com.dr.drs.business.controller.request.operator.RequestDestroy", "com.dr.drs.business.controller.request.operator.RequestOperatorSumbit", "com.dr.drs.business.controller.request.operator.RequestSuspend", "com.dr.drs.business.controller.response.dataoperator.ResponseOperatorDetails", "com.dr.drs.business.controller.response.dataoperator.ResponseOperatorList", "com.dr.drs.business.controller.response.datapublish.ResponsePublish", "com.dr.drs.business.entities.SODataOperator", "com.dr.drs.business.controller.response.dataoperator.ResponseCreateResult", "com.dr.drs.synchronizing.error.AssigningTaskException", "java.util.List"], "class_name": "IM4DataOperator", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/IM4DataOperator.java"}, {"name": "IM4ServiceRequest", "package": "com.dr.drs.business.service", "type": "interface", "imports": ["com.dr.drs.business.controller.request.service.RequestServerSubmit", "com.dr.drs.business.controller.request.service.RequestDestroy", "com.dr.drs.business.controller.response.serviceapply.ResponseRequestCount", "com.dr.drs.business.controller.response.serviceapply.ResponseServiceApplyDetails", "com.dr.drs.business.entities.SRServiceApply", "com.dr.drs.business.controller.response.serviceapply.ResponseServiceApplyList", "com.dr.drs.synchronizing.error.SizeLimitException", "com.dr.drs.synchronizing.management.service.RequestAndResponse", "java.util.List"], "class_name": "IM4ServiceRequest", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/IM4ServiceRequest.java"}, {"name": "ParseException", "package": "com.dr.drs.business.service", "type": "class", "imports": [], "class_name": "ParseException extends Exception", "extend_name": "Exception", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/ParseException.java"}, {"name": "IM4Administrator", "package": "com.dr.drs.business.service", "type": "interface", "imports": ["com.dr.drs.business.entities.SMAccount", "java.util.List"], "class_name": "IM4Administrator", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/IM4Administrator.java"}, {"name": "IM4DataPublish", "package": "com.dr.drs.business.service", "type": "interface", "imports": ["com.dr.drs.business.controller.request.publish.*", "com.dr.drs.business.controller.response.datapublish.ResponsePublish", "com.dr.drs.business.controller.response.datapublish.ResponsePublishDetails", "com.dr.drs.business.entities.SPPublishRegister", "com.dr.drs.business.controller.response.datapublish.ResponseCreateResult", "com.dr.drs.synchronizing.error.AssigningTaskException", "java.util.List"], "class_name": "IM4DataPublish", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/IM4DataPublish.java"}, {"name": "IM4DataRelation", "package": "com.dr.drs.business.service", "type": "interface", "imports": ["com.dr.drs.business.controller.request.datarelation.RequestRelationSubmit", "com.dr.drs.business.controller.request.datarelation.RequestDestroy", "com.dr.drs.business.controller.response.datarelation.ResponseRelation", "com.dr.drs.business.controller.response.datarelation.ResponseRelationDetails", "com.dr.drs.business.entities.SDDataRelation", "com.dr.drs.business.conf.Const", "java.util.List"], "class_name": "IM4DataRelation", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/IM4DataRelation.java"}, {"name": "IM4DataSubscription", "package": "com.dr.drs.business.service", "type": "interface", "imports": ["com.dr.drs.business.controller.request.subscription.RequestDestroy", "com.dr.drs.business.controller.request.subscription.RequestSubscribeSubmit", "com.dr.drs.business.controller.request.subscription.RequestSuspend", "com.dr.drs.business.controller.response.datapublish.ResponsePublishDetails", "com.dr.drs.business.controller.response.datapublish.Subscribe", "com.dr.drs.business.controller.response.subscritpion.ResponseSubscribe", "com.dr.drs.business.controller.response.subscritpion.ResponseSubscribeCount", "com.dr.drs.business.controller.response.subscritpion.ResponseSubscribeDetail", "com.dr.drs.business.entities.SPSubscribeApply", "com.dr.drs.synchronizing.error.AssigningTaskException", "java.util.List"], "class_name": "IM4DataSubscription", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/IM4DataSubscription.java"}, {"name": "IM4DataNode", "package": "com.dr.drs.business.service", "type": "interface", "imports": ["com.dr.drs.business.controller.request.datanode.RequestDataNodeSubmit", "com.dr.drs.business.controller.request.datanode.RequestDestroy", "com.dr.drs.business.entities.SSDataNode", "com.dr.drs.business.controller.response.datanode.ResponseDataNodeDetails", "com.dr.drs.business.controller.response.datanode.ResponseDataNodeList", "java.util.List"], "class_name": "IM4DataNode", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/IM4DataNode.java"}, {"name": "IM4DataDefine", "package": "com.dr.drs.business.service", "type": "interface", "imports": ["com.dr.drs.business.controller.request.datadefine.DataProp", "com.dr.drs.business.controller.request.datadefine.RequestSubmit", "com.dr.drs.business.controller.request.datadefine.RequestDestroy", "com.dr.drs.business.controller.request.datadefine.UpdDTO", "com.dr.drs.business.controller.response.datadefine.CreateResult", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefineCount", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefine", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefineDetails", "org.springframework.web.multipart.MultipartFile", "java.sql.SQLException", "java.util.List"], "class_name": "IM4DataDefine", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/IM4DataDefine.java"}, {"name": "IM4ResponseService", "package": "com.dr.drs.business.service", "type": "interface", "imports": ["com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.response.RequestResponseServiceSubmit", "com.dr.drs.business.controller.request.response.RequestDestroy", "com.dr.drs.business.controller.response.responseservice.ResponseResponseService", "com.dr.drs.business.controller.response.responseservice.ResponseResponseServiceDetails", "com.dr.drs.business.entities.SRResponseService", "java.util.List"], "class_name": "IM4ResponseService", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/IM4ResponseService.java"}, {"name": "IM4ManagementLog", "package": "com.dr.drs.business.service", "type": "interface", "imports": ["com.dr.drs.business.entities.SMManagementLog", "java.util.List"], "class_name": "IM4ManagementLog", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/IM4ManagementLog.java"}, {"name": "IBUSService", "package": "com.dr.drs.business.service", "type": "interface", "imports": [], "class_name": "IBUSService", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/IBUSService.java"}, {"name": "M4DataNodeImpl", "package": "com.dr.drs.business.service.impl", "type": "class", "imports": ["com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.datanode.RequestDataNodeSubmit", "com.dr.drs.business.controller.request.datanode.RequestDestroy", "com.dr.drs.business.dao.DependencyMapper", "com.dr.drs.business.dao.SMAccountMapper", "com.dr.drs.business.dao.SSDataNodeMapper", "com.dr.drs.business.dependencychk.DependencyEvent", "com.dr.drs.business.dependencychk.NodeType", "com.dr.drs.business.entities.SMAccount", "com.dr.drs.business.entities.SSDataNode", "com.dr.drs.business.controller.response.datanode.ResponseDataNodeDetails", "com.dr.drs.business.controller.response.datanode.ResponseDataNodeList", "com.dr.drs.business.modules.MdidManger", "com.dr.drs.business.service.IM4DataNode", "com.google.common.base.Strings", "lombok.extern.slf4j.Slf4j", "org.apache.commons.codec.digest.DigestUtils", "org.springframework.beans.factory.annotation.Value", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "javax.annotation.Resource", "java.util.ArrayList", "java.util.List"], "class_name": "M4DataNodeImpl implements IM4DataNode, Const", "extend_name": "", "implements_name": ["IM4DataNode", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/impl/M4DataNodeImpl.java"}, {"name": "M4DataPublishImpl", "package": "com.dr.drs.business.service.impl", "type": "class", "imports": ["com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.publish.*", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefineDetails", "com.dr.drs.business.controller.response.datapublish.ResponsePublish", "com.dr.drs.business.controller.response.datapublish.ResponsePublishDetails", "com.dr.drs.business.dao.DependencyMapper", "com.dr.drs.business.dao.SDDataDefineMapper", "com.dr.drs.business.dao.SPPublishRegisterMapper", "com.dr.drs.business.dao.SSDataNodeMapper", "com.dr.drs.business.dependencychk.DependencyEvent", "com.dr.drs.business.dependencychk.NodeType", "com.dr.drs.business.entities.SPPublishRegister", "com.dr.drs.business.controller.response.datapublish.ResponseCreateResult", "com.dr.drs.business.modules.MdidManger", "com.dr.drs.business.service.IM4DataPublish", "com.dr.drs.synchronizing.Synchronizer", "com.dr.drs.proxy.entities.TransferData", "com.dr.drs.synchronizing.error.AssigningTaskException", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "javax.annotation.Resource", "java.util.Date", "java.util.List"], "class_name": "M4DataPublishImpl implements IM4DataPublish, Const", "extend_name": "", "implements_name": ["IM4DataPublish", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/impl/M4DataPublishImpl.java"}, {"name": "M4ResponseServiceImpl", "package": "com.dr.drs.business.service.impl", "type": "class", "imports": ["com.alibaba.fastjson.JSONObject", "com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.response.RequestResponseServiceSubmit", "com.dr.drs.business.controller.request.response.RequestDestroy", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefine", "com.dr.drs.business.controller.response.responseservice.ResponseResponseService", "com.dr.drs.business.controller.response.responseservice.ResponseResponseServiceDetails", "com.dr.drs.business.dependencychk.DependencyEvent", "com.dr.drs.business.dependencychk.NodeType", "com.dr.drs.business.entities.SMManagementLog", "com.dr.drs.business.entities.SRResponseService", "com.dr.drs.business.modules.MdidManger", "com.dr.drs.business.service.IM4ManagementLog", "com.dr.drs.business.service.IM4ResponseService", "com.dr.drs.business.dao.*", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "javax.annotation.Resource", "java.util.Date", "java.util.List"], "class_name": "M4ResponseServiceImpl implements IM4ResponseService, Const", "extend_name": "", "implements_name": ["IM4ResponseService", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/impl/M4ResponseServiceImpl.java"}, {"name": "M4AdministratorImpl", "package": "com.dr.drs.business.service.impl", "type": "class", "imports": ["com.dr.drs.business.dao.SMAccountMapper", "com.dr.drs.business.entities.SMAccount", "com.dr.drs.business.service.IM4Administrator", "lombok.extern.slf4j.Slf4j", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.stereotype.Service", "javax.annotation.Resource", "java.util.List"], "class_name": "M4AdministratorImpl implements IM4Administrator", "extend_name": "", "implements_name": ["IM4Administrator"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/impl/M4AdministratorImpl.java"}, {"name": "M4ServiceRequestImpl", "package": "com.dr.drs.business.service.impl", "type": "class", "imports": ["com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.service.RequestServerSubmit", "com.dr.drs.business.controller.request.service.RequestDestroy", "com.dr.drs.business.controller.response.serviceapply.ResponseRequestCount", "com.dr.drs.business.controller.response.serviceapply.ResponseServiceApplyDetails", "com.dr.drs.business.controller.response.serviceapply.ResponseServiceApplyList", "com.dr.drs.business.dao.DependencyMapper", "com.dr.drs.business.dao.SRResponseServiceMapper", "com.dr.drs.business.dao.SRServiceApplyMapper", "com.dr.drs.business.dao.SSDataNodeMapper", "com.dr.drs.business.dependencychk.DependencyEvent", "com.dr.drs.business.dependencychk.NodeType", "com.dr.drs.business.entities.SRResponseService", "com.dr.drs.business.entities.SRServiceApply", "com.dr.drs.business.modules.MdidManger", "com.dr.drs.business.service.IM4ServiceRequest", "com.dr.drs.synchronizing.Synchronizer", "com.dr.drs.synchronizing.error.SizeLimitException", "com.dr.drs.synchronizing.management.service.RequestAndResponse", "lombok.extern.slf4j.Slf4j", "org.apache.commons.lang3.StringUtils", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "javax.annotation.Resource", "java.util.ArrayList", "java.util.Date", "java.util.List"], "class_name": "M4ServiceRequestImpl implements IM4ServiceRequest, Const", "extend_name": "", "implements_name": ["IM4ServiceRequest", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/impl/M4ServiceRequestImpl.java"}, {"name": "M4ManagementLogImpl", "package": "com.dr.drs.business.service.impl", "type": "class", "imports": ["com.dr.drs.business.dao.SMManagementLogMapper", "com.dr.drs.business.entities.SMManagementLog", "com.dr.drs.business.modules.MdidManger", "com.dr.drs.business.service.IM4ManagementLog", "lombok.extern.slf4j.Slf4j", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.stereotype.Service", "javax.annotation.Resource", "java.util.List"], "class_name": "M4ManagementLogImpl implements IM4ManagementLog", "extend_name": "", "implements_name": ["IM4ManagementLog"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/impl/M4ManagementLogImpl.java"}, {"name": "M4DataSubscriptionImpl", "package": "com.dr.drs.business.service.impl", "type": "class", "imports": ["com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.subscription.RequestDestroy", "com.dr.drs.business.controller.request.subscription.RequestSubscribeSubmit", "com.dr.drs.business.controller.request.subscription.RequestSuspend", "com.dr.drs.business.controller.response.dataoperator.ResponseOperatorDetails", "com.dr.drs.business.controller.response.datapublish.ResponsePublishDetails", "com.dr.drs.business.controller.response.datapublish.Subscribe", "com.dr.drs.business.controller.response.subscritpion.ResponseSubscribe", "com.dr.drs.business.controller.response.subscritpion.ResponseSubscribeCount", "com.dr.drs.business.controller.response.subscritpion.ResponseSubscribeDetail", "com.dr.drs.business.dependencychk.DependencyEvent", "com.dr.drs.business.dependencychk.NodeType", "com.dr.drs.business.entities.SPSubscribeApply", "com.dr.drs.business.modules.MdidManger", "com.dr.drs.business.service.IM4DataSubscription", "com.dr.drs.business.dao.*", "com.dr.drs.synchronizing.Synchronizer", "com.dr.drs.synchronizing.error.AssigningTaskException", "com.dr.drs.synchronizing.management.pump.constant.ExtractRecordEnum", "com.dr.drs.synchronizing.management.pump.constant.SubscribeTargetEnum", "lombok.extern.slf4j.Slf4j", "org.apache.commons.lang3.StringUtils", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "javax.annotation.Resource", "java.util.*", "static com.dr.drs.business.conf.Const.STOP_NODE_INTERVAL", "static com.dr.drs.synchronizing.management.pump.constant.SubscribeTargetEnum.*", "static com.dr.drs.synchronizing.management.pump.constant.SubscribeTargetEnum.APPLICATION"], "class_name": "M4DataSubscriptionImpl implements IM4DataSubscription", "extend_name": "", "implements_name": ["IM4DataSubscription"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/impl/M4DataSubscriptionImpl.java"}, {"name": "DataOperatorImpl", "package": "com.dr.drs.business.service.impl", "type": "class", "imports": ["com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.operator.RequestDestroy", "com.dr.drs.business.controller.request.operator.RequestOperatorSumbit", "com.dr.drs.business.controller.request.operator.RequestSuspend", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefine", "com.dr.drs.business.controller.response.dataoperator.ResponseOperatorDetails", "com.dr.drs.business.controller.response.dataoperator.ResponseOperatorList", "com.dr.drs.business.controller.response.datapublish.ResponsePublish", "com.dr.drs.business.dependencychk.DependencyEvent", "com.dr.drs.business.dependencychk.NodeType", "com.dr.drs.business.entities.SODataOperator", "com.dr.drs.business.controller.response.dataoperator.ResponseCreateResult", "com.dr.drs.business.entities.SPSubscribeApply", "com.dr.drs.business.entities.SRResponseService", "com.dr.drs.business.entities.SRServiceApply", "com.dr.drs.business.modules.MdidManger", "com.dr.drs.business.service.IM4DataOperator", "com.dr.drs.business.dao.*", "com.dr.drs.synchronizing.Synchronizer", "com.dr.drs.synchronizing.error.AssigningTaskException", "com.dr.drs.synchronizing.model.Operator", "com.dr.drs.synchronizing.model.OperatorRuntimeProxyEnum", "com.dr.drs.synchronizing.model.OperatorTypeEnum", "com.google.common.base.Strings", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.commons.lang3.StringUtils", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "javax.annotation.Resource", "java.util.Date", "java.util.List", "java.util.Optional", "java.util.Set"], "class_name": "DataOperatorImpl implements IM4DataOperator, Const", "extend_name": "", "implements_name": ["IM4DataOperator", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/impl/DataOperatorImpl.java"}, {"name": "M4DataDefineImpl", "package": "com.dr.drs.business.service.impl", "type": "class", "imports": ["com.alibaba.fastjson.JSONObject", "com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.datadefine.RequestSubmit", "com.dr.drs.business.controller.request.datadefine.RequestDestroy", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefineCount", "com.dr.drs.business.dao.DependencyMapper", "com.dr.drs.business.dao.SDDataDefineMapper", "com.dr.drs.business.dao.SSDataNodeMapper", "com.dr.drs.business.dependencychk.DependencyEvent", "com.dr.drs.business.dependencychk.NodeType", "com.dr.drs.business.entities.SMManagementLog", "com.dr.drs.business.controller.request.datadefine.DataProp", "com.dr.drs.business.controller.request.datadefine.UpdDTO", "com.dr.drs.business.controller.response.datadefine.CreateResult", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefine", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefineDetails", "com.dr.drs.business.modules.MdidManger", "com.dr.drs.business.service.IM4DataDefine", "com.dr.drs.business.service.IM4ManagementLog", "com.dr.drs.business.service.ParseException", "com.dr.drs.business.utils.CsvUtil", "com.dr.drs.proxy.ProxyFactory", "com.dr.drs.proxy.serverproxy.datastoreproxy.DataStoreProxy", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.web.multipart.MultipartFile", "javax.annotation.Resource", "java.sql.SQLException", "java.util.Date", "java.util.LinkedList", "java.util.List"], "class_name": "M4DataDefineImpl implements IM4DataDefine, Const", "extend_name": "", "implements_name": ["IM4DataDefine", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/impl/M4DataDefineImpl.java"}, {"name": "M4DataRelationImpl", "package": "com.dr.drs.business.service.impl", "type": "class", "imports": ["com.dr.drs.business.conf.Const", "com.dr.drs.business.controller.request.datadefine.DataProp", "com.dr.drs.business.controller.request.datarelation.RequestRelationSubmit", "com.dr.drs.business.controller.request.datarelation.RequestDestroy", "com.dr.drs.business.controller.response.datarelation.ResponseRelation", "com.dr.drs.business.controller.response.datarelation.ResponseRelationDetails", "com.dr.drs.business.dao.DependencyMapper", "com.dr.drs.business.dao.SDDataDefineMapper", "com.dr.drs.business.dao.SDDataRelationMapper", "com.dr.drs.business.dao.SSDataNodeMapper", "com.dr.drs.business.dependencychk.DependencyEvent", "com.dr.drs.business.dependencychk.NodeType", "com.dr.drs.business.entities.SDDataRelation", "com.dr.drs.business.controller.response.datadefine.ResponseDataDefine", "com.dr.drs.business.modules.MdidManger", "com.dr.drs.business.service.IM4DataRelation", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "javax.annotation.Resource", "java.util.Date", "java.util.List"], "class_name": "M4DataRelationImpl implements IM4DataRelation, Const", "extend_name": "", "implements_name": ["IM4DataRelation", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/service/impl/M4DataRelationImpl.java"}, {"name": "MdidManger", "package": "com.dr.drs.business.modules", "type": "class", "imports": ["org.springframework.beans.factory.annotation.Value", "org.springframework.stereotype.Component", "java.util.UUID"], "class_name": "MdidManger", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/modules/MdidManger.java"}, {"name": "ISPDataStubService", "package": "com.dr.drs.business.modules.serverproxy", "type": "interface", "imports": [], "class_name": "ISPDataStubService", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/modules/serverproxy/ISPDataStubService.java"}, {"name": "ISPBufferService", "package": "com.dr.drs.business.modules.serverproxy", "type": "interface", "imports": [], "class_name": "ISPBufferService", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/modules/serverproxy/ISPBufferService.java"}, {"name": "ISPQueueService", "package": "com.dr.drs.business.modules.serverproxy", "type": "interface", "imports": [], "class_name": "ISPQueueService", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/modules/serverproxy/ISPQueueService.java"}, {"name": "ISPTasksService", "package": "com.dr.drs.business.modules.serverproxy", "type": "interface", "imports": [], "class_name": "ISPTasksService", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/modules/serverproxy/ISPTasksService.java"}, {"name": "ISPRunLogService", "package": "com.dr.drs.business.modules.serverproxy", "type": "interface", "imports": [], "class_name": "ISPRunLogService", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/modules/serverproxy/ISPRunLogService.java"}, {"name": "ISPDataLogService", "package": "com.dr.drs.business.modules.serverproxy", "type": "interface", "imports": [], "class_name": "ISPDataLogService", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/modules/serverproxy/ISPDataLogService.java"}, {"name": "ISPMDIDService", "package": "com.dr.drs.business.modules.serverproxy", "type": "interface", "imports": [], "class_name": "ISPMDIDService", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/modules/serverproxy/ISPMDIDService.java"}, {"name": "ISPWarehouseService", "package": "com.dr.drs.business.modules.serverproxy", "type": "interface", "imports": [], "class_name": "ISPWarehouseService", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/modules/serverproxy/ISPWarehouseService.java"}, {"name": "ISPCacheService", "package": "com.dr.drs.business.modules.serverproxy", "type": "interface", "imports": [], "class_name": "ISPCacheService", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/modules/serverproxy/ISPCacheService.java"}, {"name": "RedisConfig", "package": "com.dr.drs.business.conf", "type": "class", "imports": ["org.springframework.beans.factory.annotation.Value", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "org.springframework.context.annotation.PropertySource", "redis.clients.jedis.JedisPool", "redis.clients.jedis.JedisPoolConfig"], "class_name": "RedisConfig", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/conf/RedisConfig.java"}, {"name": "WebConfig", "package": "com.dr.drs.business.conf", "type": "class", "imports": ["com.dr.drs.business.auth.AuthInterceptor", "com.dr.drs.business.auth.RedisUtils", "com.dr.drs.business.monitor.Interceptor.RestCtrlHandlerInterceptorAdapter", "com.dr.drs.business.monitor.RestApiRequestCollector", "org.springframework.context.annotation.Configuration", "org.springframework.web.method.support.HandlerMethodArgumentResolver", "org.springframework.web.servlet.config.annotation.InterceptorRegistry", "org.springframework.web.servlet.config.annotation.WebMvcConfigurer", "javax.annotation.Resource", "java.util.HashMap", "java.util.List", "java.util.Map"], "class_name": "WebConfig implements WebMvcConfigurer", "extend_name": "", "implements_name": ["WebMvcConfigurer"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/conf/WebConfig.java"}, {"name": "SwaggerConfig", "package": "com.dr.drs.business.conf", "type": "class", "imports": ["org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "springfox.documentation.builders.PathSelectors", "springfox.documentation.builders.RequestHandlerSelectors", "springfox.documentation.spi.DocumentationType", "springfox.documentation.spring.web.plugins.Docket", "springfox.documentation.swagger2.annotations.EnableSwagger2"], "class_name": "SwaggerConfig", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/conf/SwaggerConfig.java"}, {"name": "Const", "package": "com.dr.drs.business.conf", "type": "interface", "imports": [], "class_name": "Const", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/conf/Const.java"}, {"name": "KaptchaConfig", "package": "com.dr.drs.business.conf", "type": "class", "imports": ["com.google.code.kaptcha.impl.DefaultKaptcha", "com.google.code.kaptcha.util.Config", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "java.util.Properties"], "class_name": "KaptchaConfig", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/conf/KaptchaConfig.java"}, {"name": "CorsConfig", "package": "com.dr.drs.business.conf", "type": "class", "imports": ["org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "org.springframework.web.cors.CorsConfiguration", "org.springframework.web.cors.UrlBasedCorsConfigurationSource", "org.springframework.web.filter.CorsFilter"], "class_name": "CorsConfig", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/conf/CorsConfig.java"}, {"name": "OssConfig", "package": "com.dr.drs.business.conf", "type": "class", "imports": ["com.amazonaws.AmazonServiceException", "com.amazonaws.ClientConfiguration", "com.amazonaws.auth.AWSCredentials", "com.amazonaws.auth.AWSCredentialsProvider", "com.amazonaws.auth.AWSStaticCredentialsProvider", "com.amazonaws.auth.BasicAWSCredentials", "com.amazonaws.client.builder.AwsClientBuilder", "com.amazonaws.services.s3.AmazonS3", "com.amazonaws.services.s3.AmazonS3Client", "com.amazonaws.services.s3.model.ObjectMetadata", "org.springframework.beans.factory.annotation.Value", "org.springframework.context.annotation.Bean", "org.springframework.stereotype.Component", "javax.annotation.Resource", "java.io.FileInputStream", "java.io.InputStream", "java.util.UUID"], "class_name": "OssConfig", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/conf/OssConfig.java"}, {"name": "RequestAndResponseReport", "package": "com.dr.drs.business.runlogprocessor", "type": "class", "imports": ["lombok.Data", "lombok.NoArgsConstructor"], "class_name": "RequestAndResponseReport", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/runlogprocessor/RequestAndResponseReport.java"}, {"name": "PublishReport", "package": "com.dr.drs.business.runlogprocessor", "type": "class", "imports": ["lombok.Data", "lombok.NoArgsConstructor"], "class_name": "PublishReport", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/runlogprocessor/PublishReport.java"}, {"name": "RunlogEntity", "package": "com.dr.drs.business.runlogprocessor", "type": "class", "imports": ["lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "java.util.Date"], "class_name": "RunlogEntity", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/runlogprocessor/RunlogEntity.java"}, {"name": "RunlogProcessor", "package": "com.dr.drs.business.runlogprocessor", "type": "class", "imports": ["com.alibaba.fastjson.JSONObject", "com.dr.drs.business.auth.RedisUtils", "com.dr.drs.business.controller.response.serviceapply.ResponseServiceApplyDetails", "com.dr.drs.business.dao.RunlogMapper", "com.dr.drs.business.dao.SPPublishRegisterMapper", "com.dr.drs.business.dao.SRResponseServiceMapper", "com.dr.drs.business.dao.SRServiceApplyMapper", "com.dr.drs.business.modules.MdidManger", "com.dr.drs.business.monitor.Interceptor.HttpResourceEvent", "com.dr.drs.business.monitor.ResourceCollector", "com.dr.drs.synchronizing.Synchronizer", "com.dr.drs.synchronizing.management.constant.ExecutionState", "com.dr.drs.synchronizing.management.escrow.record.ExtractDataRecordTask", "com.dr.drs.synchronizing.management.event.ComputingTaskExecuteEvent", "com.dr.drs.synchronizing.management.pump.cleansing.DataCleansingTask", "com.dr.drs.synchronizing.management.pump.dispatch.SubscribeDataDispatchTask", "com.dr.drs.synchronizing.management.pump.shunt.RealTimeShuntTask", "com.dr.drs.synchronizing.management.service.RequestAndResponseTask", "com.google.gson.Gson", "lombok.extern.slf4j.Slf4j", "org.apache.commons.lang3.StringUtils", "org.apache.logging.log4j.util.Strings", "org.springframework.amqp.core.Message", "org.springframework.amqp.core.MessageProperties", "org.springframework.amqp.rabbit.core.RabbitTemplate", "org.springframework.boot.ApplicationArguments", "org.springframework.boot.ApplicationRunner", "org.springframework.stereotype.Component", "javax.annotation.Resource", "java.nio.charset.StandardCharsets", "java.util.Date"], "class_name": "RunlogProcessor implements ApplicationRunner, Synchronizer.RuntimeLogSubscribe", "extend_name": "", "implements_name": ["ApplicationRunner", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/runlogprocessor/RunlogProcessor.java"}, {"name": "SPSubscribeApply", "package": "com.dr.drs.business.entities", "type": "class", "imports": ["lombok.Getter", "lombok.Setter", "java.util.Date"], "class_name": "SPSubscribeApply", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/entities/SPSubscribeApply.java"}, {"name": "SDDataRelation", "package": "com.dr.drs.business.entities", "type": "class", "imports": ["lombok.Getter", "lombok.Setter", "lombok.ToString", "java.util.Date"], "class_name": "SDDataRelation", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/entities/SDDataRelation.java"}, {"name": "SSClusterNode", "package": "com.dr.drs.business.entities", "type": "class", "imports": [], "class_name": "SSClusterNode", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/entities/SSClusterNode.java"}, {"name": "SRServiceApply", "package": "com.dr.drs.business.entities", "type": "class", "imports": ["lombok.Getter", "lombok.Setter", "java.util.Date"], "class_name": "SRServiceApply", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/entities/SRServiceApply.java"}, {"name": "SMAccount", "package": "com.dr.drs.business.entities", "type": "class", "imports": ["lombok.Getter", "lombok.Setter", "lombok.ToString"], "class_name": "SMAccount", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/entities/SMAccount.java"}, {"name": "SODataOperator", "package": "com.dr.drs.business.entities", "type": "class", "imports": ["lombok.Getter", "lombok.Setter", "lombok.ToString", "java.util.Date"], "class_name": "SODataOperator", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/entities/SODataOperator.java"}, {"name": "SSDataNode", "package": "com.dr.drs.business.entities", "type": "class", "imports": ["lombok.Getter", "lombok.Setter", "lombok.ToString", "org.apache.commons.lang3.StringUtils", "java.util.Date"], "class_name": "SSDataNode", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/entities/SSDataNode.java"}, {"name": "SMPermission", "package": "com.dr.drs.business.entities", "type": "class", "imports": ["lombok.Getter", "lombok.Setter"], "class_name": "SMPermission", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/entities/SMPermission.java"}, {"name": "SRResponseService", "package": "com.dr.drs.business.entities", "type": "class", "imports": ["lombok.Getter", "lombok.Setter", "java.util.Date"], "class_name": "SRResponseService", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/entities/SRResponseService.java"}, {"name": "SPPublishRegister", "package": "com.dr.drs.business.entities", "type": "class", "imports": ["lombok.Getter", "lombok.Setter", "java.util.Date"], "class_name": "SPPublishRegister", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/entities/SPPublishRegister.java"}, {"name": "SDDataProperty", "package": "com.dr.drs.business.entities", "type": "class", "imports": ["lombok.Getter", "lombok.Setter"], "class_name": "SDDataProperty implements java.io.Serializable", "extend_name": "", "implements_name": ["java.io.Serializable"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/entities/SDDataProperty.java"}, {"name": "SSServerNode", "package": "com.dr.drs.business.entities", "type": "class", "imports": [], "class_name": "SSServerNode", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/entities/SSServerNode.java"}, {"name": "SMManagementLog", "package": "com.dr.drs.business.entities", "type": "class", "imports": ["lombok.Getter", "lombok.Setter", "java.io.Serializable", "java.util.Date"], "class_name": "SMManagementLog implements Serializable", "extend_name": "", "implements_name": ["Serializable"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/entities/SMManagementLog.java"}, {"name": "SDDataDefine", "package": "com.dr.drs.business.entities", "type": "class", "imports": ["lombok.Getter", "lombok.Setter", "java.util.Date"], "class_name": "SDDataDefine implements java.io.Serializable", "extend_name": "", "implements_name": ["java.io.Serializable"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/business/entities/SDDataDefine.java"}, {"name": "ApplicationConfig", "package": "com.dr.drs.logconfig", "type": "class", "imports": ["ch.qos.logback.classic.helpers.MDCInsertingServletFilter", "org.springframework.boot.web.servlet.FilterRegistrationBean", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "org.springframework.stereotype.Component", "javax.servlet.Filter", "java.util.ArrayList", "java.util.List"], "class_name": "ApplicationConfig", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/logconfig/ApplicationConfig.java"}, {"name": "LogIpConfig", "package": "com.dr.drs.logconfig", "type": "class", "imports": ["ch.qos.logback.classic.pattern.ClassicConverter", "ch.qos.logback.classic.spi.ILoggingEvent", "lombok.extern.slf4j.Slf4j", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.context.annotation.Configuration", "org.springframework.stereotype.Component", "java.net.InetAddress", "java.net.UnknownHostException"], "class_name": "LogIpConfig extends ClassicConverter", "extend_name": "ClassicConverter", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/business/src/main/java/com/dr/drs/logconfig/LogIpConfig.java"}, {"name": "SynchronizerTest", "package": "com.dr.drs.synchronizing", "type": "class", "imports": ["com.dr.drs.synchronizing.error.AssigningTaskException", "com.dr.drs.synchronizing.error.SizeLimitException", "com.dr.drs.synchronizing.management.pump.constant.ExtractRecordEnum", "com.dr.drs.synchronizing.management.pump.constant.SubscribeTargetEnum", "com.dr.drs.synchronizing.management.service.RequestAndResponse", "com.dr.drs.synchronizing.model.Operator", "com.dr.drs.synchronizing.model.OperatorRuntimeProxyEnum", "com.dr.drs.synchronizing.model.OperatorTypeEnum", "com.dr.drs.synchronizing.model.Subscribe", "com.dr.drs.proxy.entities.TransferData", "com.dr.drs.synchronizing.proxy.server.MMIDProxy", "com.dr.drs.synchronizing.proxy.server.Serializations", "com.google.common.collect.Sets", "com.google.common.util.concurrent.Uninterruptibles", "lombok.extern.slf4j.Slf4j", "org.junit.After", "org.junit.Ignore", "org.junit.Test", "java.util.Optional", "java.util.Set", "java.util.concurrent.TimeUnit"], "class_name": "SynchronizerTest extends BasicAutoSetup", "extend_name": "BasicAutoSetup", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/test/java/com/dr/drs/synchronizing/SynchronizerTest.java"}, {"name": "TestData", "package": "com.dr.drs.synchronizing", "type": "class", "imports": ["com.dr.drs.synchronizing.proxy.server.MMIDProxy", "lombok.Data"], "class_name": "TestData", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/test/java/com/dr/drs/synchronizing/TestData.java"}, {"name": "BasicAutoSetup", "package": "com.dr.drs.synchronizing", "type": "class", "imports": ["com.dr.drs.synchronizing.setup.Setup", "com.dr.drs.synchronizing.constant.SettingArgsEnum", "com.google.common.collect.Maps", "org.junit.Before", "org.junit.Ignore", "java.util.Map"], "class_name": "BasicAutoSetup", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/test/java/com/dr/drs/synchronizing/BasicAutoSetup.java"}, {"name": "SetupTest", "package": "com.dr.drs.synchronizing.setup", "type": "class", "imports": ["com.dr.drs.synchronizing.constant.SettingArgsEnum", "com.google.common.collect.Maps", "com.google.common.util.concurrent.Uninterruptibles", "org.junit.Ignore", "org.junit.Test", "java.util.Map", "java.util.concurrent.TimeUnit"], "class_name": "SetupTest", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/test/java/com/dr/drs/synchronizing/setup/SetupTest.java"}, {"name": "DataCleansingPumpTest", "package": "com.dr.drs.synchronizing.management.pump.cleansing", "type": "class", "imports": ["com.dr.drs.synchronizing.BasicAutoSetup", "com.dr.drs.synchronizing.TestData", "com.dr.drs.synchronizing.management.Manager", "com.dr.drs.synchronizing.management.constant.ExecutorCommand", "com.dr.drs.synchronizing.proxy.server.Serializations", "com.dr.drs.proxy.entities.TransferData", "com.google.common.util.concurrent.Uninterruptibles", "org.junit.Ignore", "org.junit.Test", "java.util.concurrent.TimeUnit"], "class_name": "DataCleansingPumpTest extends BasicAutoSetup", "extend_name": "BasicAutoSetup", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/test/java/com/dr/drs/synchronizing/management/pump/cleansing/DataCleansingPumpTest.java"}, {"name": "V8OperatorTest", "package": "com.dr.drs.synchronizing.management.operator", "type": "class", "imports": ["com.dr.drs.synchronizing.TestData", "com.dr.drs.synchronizing.model.Operator", "com.dr.drs.synchronizing.proxy.server.MMIDProxy", "com.dr.drs.synchronizing.proxy.server.Serializations", "com.dr.drs.proxy.ProxyFactory", "com.dr.drs.proxy.entities.TransferData", "org.junit.Assert", "org.junit.Before", "org.junit.Ignore", "org.junit.Test", "java.util.HashMap", "java.util.Map", "java.util.Optional", "java.util.UUID"], "class_name": "V8OperatorTest", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/test/java/com/dr/drs/synchronizing/management/operator/V8OperatorTest.java"}, {"name": "CurrentServerNodeRcpLowerHandlerTest", "package": "com.dr.drs.synchronizing.component.lb", "type": "class", "imports": ["com.dr.drs.synchronizing.BasicAutoSetup", "com.dr.drs.synchronizing.component.server.ServerNode", "com.dr.drs.synchronizing.management.escrow.record.ExtractDataRecordTask", "com.dr.drs.synchronizing.management.pump.constant.ExtractRecordEnum", "com.dr.drs.synchronizing.proxy.server.RedisProxy", "com.google.common.util.concurrent.Uninterruptibles", "org.junit.Ignore", "org.junit.Test", "java.util.concurrent.TimeUnit"], "class_name": "CurrentServerNodeRcpLowerHandlerTest extends BasicAutoSetup", "extend_name": "BasicAutoSetup", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/test/java/com/dr/drs/synchronizing/component/lb/CurrentServerNodeRcpLowerHandlerTest.java"}, {"name": "ClusterServerNodeOutageHandlerTest", "package": "com.dr.drs.synchronizing.component.lb", "type": "class", "imports": ["com.dr.drs.synchronizing.BasicAutoSetup", "com.dr.drs.synchronizing.component.server.ServerNode", "com.dr.drs.synchronizing.management.pump.shunt.RealTimeShuntTask", "com.dr.drs.synchronizing.proxy.server.RedisProxy", "com.google.common.util.concurrent.Uninterruptibles", "org.junit.Ignore", "org.junit.Test", "java.util.concurrent.TimeUnit"], "class_name": "ClusterServerNodeOutageHandlerTest extends BasicAutoSetup", "extend_name": "BasicAutoSetup", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/test/java/com/dr/drs/synchronizing/component/lb/ClusterServerNodeOutageHandlerTest.java"}, {"name": "ClaimTaskHandlerTest", "package": "com.dr.drs.synchronizing.component.lb", "type": "class", "imports": ["com.dr.drs.synchronizing.BasicAutoSetup", "com.dr.drs.synchronizing.component.server.ServerNode", "com.dr.drs.synchronizing.management.pump.shunt.RealTimeShuntTask", "com.dr.drs.synchronizing.proxy.server.RedisProxy", "com.google.common.util.concurrent.Uninterruptibles", "org.junit.Ignore", "org.junit.Test", "java.io.IOException", "java.util.concurrent.TimeUnit"], "class_name": "ClaimTaskHandlerTest extends BasicAutoSetup", "extend_name": "BasicAutoSetup", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/test/java/com/dr/drs/synchronizing/component/lb/ClaimTaskHandlerTest.java"}, {"name": "HeartBeaterTest", "package": "com.dr.drs.synchronizing.component.heartbeat", "type": "class", "imports": ["org.junit.Ignore", "org.junit.Test"], "class_name": "HeartBeaterTest", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/test/java/com/dr/drs/synchronizing/component/heartbeat/HeartBeaterTest.java"}, {"name": "Idempotent", "package": "studio.istart.idempotent", "type": "class", "imports": ["com.dr.drs.synchronizing.proxy.lock.RedisLocker", "studio.istart.idempotent.exception.AcquireLockException", "studio.istart.idempotent.exception.CallbackExecuteException", "studio.istart.idempotent.exception.ReleaseLockException", "java.io.IOException", "java.util.Objects"], "class_name": "Idempotent implements AutoCloseable", "extend_name": "", "implements_name": ["AutoCloseable"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/studio/istart/idempotent/Idempotent.java"}, {"name": "IdempotentLocker", "package": "studio.istart.idempotent", "type": "interface", "imports": ["studio.istart.idempotent.exception.AcquireLockException", "studio.istart.idempotent.exception.ReleaseLockException", "java.io.Closeable"], "class_name": "IdempotentLocker extends Closeable", "extend_name": "Closeable", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/studio/istart/idempotent/IdempotentLocker.java"}, {"name": "IdempotentCallBack<V>", "package": "studio.istart.idempotent", "type": "interface", "imports": [], "class_name": "IdempotentCallBack<V>", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/studio/istart/idempotent/IdempotentCallBack.java"}, {"name": "IdempotentRunnable", "package": "studio.istart.idempotent", "type": "interface", "imports": [], "class_name": "IdempotentRunnable", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/studio/istart/idempotent/IdempotentRunnable.java"}, {"name": "Retry", "package": "studio.istart.idempotent.studio.istart.retry", "type": "class", "imports": ["lombok.extern.slf4j.Slf4j"], "class_name": "Retry", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/studio/istart/idempotent/studio/istart/retry/Retry.java"}, {"name": "ReleaseLockException", "package": "studio.istart.idempotent.exception", "type": "class", "imports": [], "class_name": "ReleaseLockException extends Exception", "extend_name": "Exception", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/studio/istart/idempotent/exception/ReleaseLockException.java"}, {"name": "AcquireLockException", "package": "studio.istart.idempotent.exception", "type": "class", "imports": [], "class_name": "AcquireLockException extends Exception", "extend_name": "Exception", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/studio/istart/idempotent/exception/AcquireLockException.java"}, {"name": "CallbackExecuteException", "package": "studio.istart.idempotent.exception", "type": "class", "imports": [], "class_name": "CallbackExecuteException extends Exception", "extend_name": "Exception", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/studio/istart/idempotent/exception/CallbackExecuteException.java"}, {"name": "Synchronizer", "package": "com.dr.drs.synchronizing", "type": "class", "imports": ["com.dr.drs.synchronizing.component.lb.LoadBalancer", "com.dr.drs.synchronizing.component.server.ServerNode", "com.dr.drs.synchronizing.component.server.ServerNodeComponent", "com.dr.drs.synchronizing.constant.EventType", "com.dr.drs.synchronizing.error.Assert", "com.dr.drs.synchronizing.error.AssigningTaskException", "com.dr.drs.synchronizing.error.SizeLimitException", "com.dr.drs.synchronizing.management.Manager", "com.dr.drs.synchronizing.management.escrow.record.ExtractDataRecordTask", "com.dr.drs.synchronizing.management.event.ComputingTaskExecuteEvent", "com.dr.drs.synchronizing.management.pump.cleansing.DataCleansingTask", "com.dr.drs.synchronizing.management.pump.constant.ExtractRecordEnum", "com.dr.drs.synchronizing.management.pump.constant.SubscribeTargetEnum", "com.dr.drs.synchronizing.management.pump.dispatch.SubscribeDataDispatchTask", "com.dr.drs.synchronizing.management.pump.shunt.RealTimeShuntTask", "com.dr.drs.synchronizing.management.service.RequestAndResponse", "com.dr.drs.synchronizing.model.Operator", "com.dr.drs.synchronizing.model.OperatorTypeEnum", "com.dr.drs.synchronizing.proxy.ServerProxyContainer", "com.dr.drs.synchronizing.proxy.event.EventBusProxy", "com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.dr.drs.synchronizing.proxy.server.ExecuteConfigProxy", "com.dr.drs.synchronizing.proxy.server.MMIDProxy", "com.dr.drs.synchronizing.setup.Starter", "com.dr.drs.proxy.entities.TransferData", "com.google.common.eventbus.Subscribe", "lombok.NonNull", "lombok.extern.slf4j.Slf4j", "java.util.Map", "java.util.Objects", "java.util.Set"], "class_name": "Synchronizer implements Starter, ServerNodeComponent", "extend_name": "", "implements_name": ["Starter", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/Synchronizer.java"}, {"name": "ServerProxyContainer", "package": "com.dr.drs.synchronizing.proxy", "type": "class", "imports": ["com.dr.drs.synchronizing.management.pump.constant.ExtractRecordEnum", "com.dr.drs.synchronizing.proxy.constant.DataInputHandlerEnum", "com.dr.drs.synchronizing.proxy.server.ExecuteConfigProxy", "com.dr.drs.synchronizing.proxy.server.HttpProxy", "com.dr.drs.synchronizing.setup.Starter", "com.dr.drs.proxy.ProxyFactory", "com.dr.drs.proxy.serverproxy.datasaveproxy.IDataProxy", "com.dr.drs.proxy.serverproxy.IServerProxyFactory", "com.dr.drs.proxy.serverproxy.datacacheproxy.IDataCacheProxy", "com.dr.drs.proxy.serverproxy.redisproxy.IRedisProxy", "java.util.Map"], "class_name": "ServerProxyContainer implements Starter", "extend_name": "", "implements_name": ["Starter"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/proxy/ServerProxyContainer.java"}, {"name": "OperatorRuntimeProxy", "package": "com.dr.drs.synchronizing.proxy.runtime", "type": "class", "imports": ["com.dr.drs.synchronizing.management.operator.JsMethod", "com.dr.drs.synchronizing.model.Operator", "com.dr.drs.synchronizing.model.OperatorRuntimeProxyEnum", "com.dr.drs.proxy.ProxyFactory", "com.dr.drs.proxy.entities.TransferData", "com.dr.drs.proxy.runtimeproxy.KeyTypeEnum", "com.eclipsesource.v8.V8", "com.eclipsesource.v8.V8Object", "lombok.Data", "lombok.NonNull", "java.lang.reflect.Method"], "class_name": "OperatorRuntimeProxy extends V8Object", "extend_name": "V8Object", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/proxy/runtime/OperatorRuntimeProxy.java"}, {"name": "RedisLocker", "package": "com.dr.drs.synchronizing.proxy.lock", "type": "class", "imports": ["com.dr.drs.synchronizing.proxy.server.RedisProxy", "com.google.common.base.Strings", "io.lettuce.core.api.StatefulRedisConnection", "io.lettuce.core.api.sync.RedisCommands", "lombok.extern.slf4j.Slf4j", "studio.istart.idempotent.IdempotentLocker", "studio.istart.idempotent.exception.AcquireLockException", "studio.istart.idempotent.exception.ReleaseLockException", "java.io.IOException", "java.util.Objects"], "class_name": "RedisLocker implements IdempotentLocker", "extend_name": "", "implements_name": ["IdempotentLocker"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/proxy/lock/RedisLocker.java"}, {"name": "DistributedLockEnum", "package": "com.dr.drs.synchronizing.proxy.lock", "type": "enum", "imports": [], "class_name": "DistributedLockEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/proxy/lock/DistributedLockEnum.java"}, {"name": "Serializations", "package": "com.dr.drs.synchronizing.proxy.server", "type": "class", "imports": ["com.google.gson.Gson", "com.google.gson.reflect.TypeToken", "java.lang.reflect.Type", "java.util.Map"], "class_name": "Serializations", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/proxy/server/Serializations.java"}, {"name": "HttpProxy", "package": "com.dr.drs.synchronizing.proxy.server", "type": "enum", "imports": ["com.google.common.base.Strings", "lombok.Getter", "lombok.extern.slf4j.Slf4j", "okhttp3.*", "okhttp3.logging.HttpLoggingInterceptor", "java.io.IOException", "java.util.concurrent.TimeUnit"], "class_name": "HttpProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/proxy/server/HttpProxy.java"}, {"name": "MMIDProxy", "package": "com.dr.drs.synchronizing.proxy.server", "type": "class", "imports": ["com.google.common.base.Charsets", "com.google.common.hash.Hashing", "java.util.UUID"], "class_name": "MMIDProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/proxy/server/MMIDProxy.java"}, {"name": "RedisProxy", "package": "com.dr.drs.synchronizing.proxy.server", "type": "class", "imports": ["com.dr.drs.synchronizing.constant.SettingArgsEnum", "com.dr.drs.synchronizing.error.Assert", "com.dr.drs.synchronizing.setup.Setup", "com.dr.drs.synchronizing.setup.Starter", "com.google.common.collect.Maps", "com.google.common.collect.Range", "io.lettuce.core.RedisClient", "io.lettuce.core.api.StatefulRedisConnection", "io.lettuce.core.api.sync.RedisCommands", "lombok.Getter", "lombok.NonNull", "lombok.extern.slf4j.Slf4j", "java.io.IOException", "java.time.Duration", "java.util.Map", "java.util.Objects"], "class_name": "RedisProxy implements Starter", "extend_name": "", "implements_name": ["Starter"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/proxy/server/RedisProxy.java"}, {"name": "Cacheable", "package": "com.dr.drs.synchronizing.proxy.server", "type": "interface", "imports": [], "class_name": "Cacheable", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/proxy/server/Cacheable.java"}, {"name": "ExecuteConfigProxy", "package": "com.dr.drs.synchronizing.proxy.server", "type": "class", "imports": ["java.util.Optional", "com.dr.drs.synchronizing.management.constant.ExecutionState", "com.dr.drs.synchronizing.management.escrow.record.ExtractDataRecordTask", "com.dr.drs.synchronizing.management.pump.constant.DataEscrowEnum", "com.dr.drs.synchronizing.management.pump.constant.ExtractRecordEnum", "com.dr.drs.synchronizing.management.pump.constant.SubscribeTargetEnum", "com.dr.drs.synchronizing.management.service.RequestServiceDefined", "com.dr.drs.synchronizing.management.service.ResponseServiceDefined", "com.dr.drs.synchronizing.model.Operator", "com.dr.drs.synchronizing.model.OperatorRuntimeProxyEnum", "com.dr.drs.synchronizing.model.OperatorTypeEnum", "com.dr.drs.synchronizing.model.Subscribe", "com.dr.drs.synchronizing.setup.Starter", "com.google.common.base.Strings", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "lombok.NonNull", "lombok.extern.slf4j.Slf4j", "java.io.IOException", "java.sql.*", "java.util.*", "java.util.stream.Collectors"], "class_name": "ExecuteConfigProxy implements Starter", "extend_name": "", "implements_name": ["Starter"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/proxy/server/ExecuteConfigProxy.java"}, {"name": "ComputingTask", "package": "com.dr.drs.synchronizing.proxy.server", "type": "class", "imports": ["com.dr.drs.synchronizing.management.constant.ExecutionState", "com.dr.drs.synchronizing.management.escrow.record.ExtractDataRecordTask", "com.dr.drs.synchronizing.management.pump.cleansing.DataCleansingTask", "com.dr.drs.synchronizing.management.pump.constant.DataHandlerEnum", "com.dr.drs.synchronizing.management.pump.dispatch.SubscribeDataDispatchTask", "com.dr.drs.synchronizing.management.pump.shunt.RealTimeShuntTask", "lombok.Data", "lombok.NoArgsConstructor", "java.util.Objects"], "class_name": "ComputingTask implements Cacheable", "extend_name": "", "implements_name": ["Cacheable"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/proxy/server/ComputingTask.java"}, {"name": "DataInputHandlerEnum", "package": "com.dr.drs.synchronizing.proxy.constant", "type": "enum", "imports": [], "class_name": "DataInputHandlerEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/proxy/constant/DataInputHandlerEnum.java"}, {"name": "EventBusProxy", "package": "com.dr.drs.synchronizing.proxy.event", "type": "class", "imports": ["com.dr.drs.synchronizing.constant.EventType", "com.google.common.collect.Maps", "com.google.common.eventbus.EventBus", "java.util.Map"], "class_name": "EventBusProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/proxy/event/EventBusProxy.java"}, {"name": "Starter", "package": "com.dr.drs.synchronizing.setup", "type": "interface", "imports": ["java.util.Map"], "class_name": "Starter", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/setup/Starter.java"}, {"name": "Setup", "package": "com.dr.drs.synchronizing.setup", "type": "class", "imports": ["com.dr.drs.synchronizing.Synchronizer", "com.dr.drs.synchronizing.component.cluster.Cluster", "com.dr.drs.synchronizing.component.event.ManagerEventHandler", "com.dr.drs.synchronizing.component.heartbeat.HeartBeater", "com.dr.drs.synchronizing.component.lb.ComputingResourcePool", "com.dr.drs.synchronizing.component.lb.LoadBalancer", "com.dr.drs.synchronizing.component.server.ServerNode", "com.dr.drs.synchronizing.component.server.ServerNodeComponent", "com.dr.drs.synchronizing.constant.SettingArgsEnum", "com.dr.drs.synchronizing.error.Assert", "com.dr.drs.synchronizing.proxy.ServerProxyContainer", "com.dr.drs.synchronizing.proxy.server.ExecuteConfigProxy", "com.dr.drs.synchronizing.proxy.server.RedisProxy", "com.google.common.base.Strings", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "java.util.ArrayList", "java.util.Map", "java.util.Objects"], "class_name": "Setup", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/setup/Setup.java"}, {"name": "Manager", "package": "com.dr.drs.synchronizing.management", "type": "class", "imports": ["com.dr.drs.synchronizing.error.Assert", "com.dr.drs.synchronizing.management.constant.ExecutorCommand", "com.dr.drs.synchronizing.management.constant.SelectStrategy", "com.dr.drs.synchronizing.management.escrow.record.ExtractDataRecordPumpPool", "com.dr.drs.synchronizing.management.pump.cleansing.DataCleansingPumpPool", "com.dr.drs.synchronizing.management.pump.constant.DataHandlerEnum", "com.dr.drs.synchronizing.management.pump.dispatch.SubscribeDataDispatchPumpPool", "com.dr.drs.synchronizing.management.pump.shunt.RealtimeShuntPumpPool", "com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.dr.drs.proxy.entities.TransferData", "com.google.common.base.Strings", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "java.util.Map", "java.util.Objects"], "class_name": "Manager", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/Manager.java"}, {"name": "HandleStrategy<T", "package": "com.dr.drs.synchronizing.management", "type": "interface", "imports": ["com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.dr.drs.proxy.entities.TransferData"], "class_name": "HandleStrategy<T extends ComputingTask>", "extend_name": "ComputingTask>", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/HandleStrategy.java"}, {"name": "BasicHandlePool<T", "package": "com.dr.drs.synchronizing.management", "type": "class", "imports": ["com.dr.drs.synchronizing.management.pump.DataHandler", "com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "java.util.Map", "java.util.Objects"], "class_name": "BasicHandlePool<T extends ComputingTask> implements HandleStrategy<T>", "extend_name": "ComputingTask>", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/BasicHandlePool.java"}, {"name": "SelectStrategy", "package": "com.dr.drs.synchronizing.management.constant", "type": "enum", "imports": [], "class_name": "SelectStrategy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/constant/SelectStrategy.java"}, {"name": "ExecutorCommand", "package": "com.dr.drs.synchronizing.management.constant", "type": "enum", "imports": [], "class_name": "ExecutorCommand", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/constant/ExecutorCommand.java"}, {"name": "ExecutionState", "package": "com.dr.drs.synchronizing.management.constant", "type": "enum", "imports": [], "class_name": "ExecutionState", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/constant/ExecutionState.java"}, {"name": "ExecutorEventEnum", "package": "com.dr.drs.synchronizing.management.constant", "type": "enum", "imports": [], "class_name": "ExecutorEventEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/constant/ExecutorEventEnum.java"}, {"name": "DataHandler", "package": "com.dr.drs.synchronizing.management.pump", "type": "interface", "imports": [], "class_name": "DataHandler", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/DataHandler.java"}, {"name": "DataPump", "package": "com.dr.drs.synchronizing.management.pump", "type": "class", "imports": [], "class_name": "DataPump implements DataHandler", "extend_name": "", "implements_name": ["DataHandler"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/DataPump.java"}, {"name": "DataCleansingPump", "package": "com.dr.drs.synchronizing.management.pump.cleansing", "type": "class", "imports": ["com.dr.drs.synchronizing.error.Assert", "com.dr.drs.synchronizing.management.constant.ExecutionState", "com.dr.drs.synchronizing.management.constant.ExecutorCommand", "com.dr.drs.synchronizing.management.constant.ExecutorEventEnum", "com.dr.drs.synchronizing.management.escrow.DataEscrowProxy", "com.dr.drs.synchronizing.management.executor.Executor", "com.dr.drs.synchronizing.management.operator.CleansingOperatorRuntimeContainer", "com.dr.drs.synchronizing.management.pump.DataPump", "com.dr.drs.synchronizing.management.pump.constant.DataEscrowEnum", "com.dr.drs.synchronizing.management.pump.runtime.CallbackHttpRuntime", "com.dr.drs.synchronizing.management.pump.shunt.RealTimeShuntTask", "com.dr.drs.synchronizing.management.pump.shunt.RealtimeShuntPump", "com.dr.drs.synchronizing.model.Operator", "com.dr.drs.synchronizing.proxy.ServerProxyContainer", "com.dr.drs.synchronizing.proxy.constant.DataInputHandlerEnum", "com.dr.drs.proxy.entities.TransferData", "com.dr.drs.proxy.serverproxy.datacacheproxy.IDataCacheProxy", "com.google.common.base.Strings", "lombok.extern.slf4j.Slf4j", "java.util.Objects", "java.util.Optional"], "class_name": "DataCleansingPump extends DataPump", "extend_name": "DataPump", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/cleansing/DataCleansingPump.java"}, {"name": "DataCleansingPumpPool", "package": "com.dr.drs.synchronizing.management.pump.cleansing", "type": "class", "imports": ["com.dr.drs.synchronizing.error.Assert", "com.dr.drs.synchronizing.management.BasicHandlePool", "com.dr.drs.synchronizing.management.pump.DataHandler", "com.dr.drs.synchronizing.proxy.ServerProxyContainer", "com.dr.drs.synchronizing.proxy.constant.DataInputHandlerEnum", "com.dr.drs.proxy.entities.TransferData", "com.google.common.base.Strings", "lombok.extern.slf4j.Slf4j"], "class_name": "DataCleansingPumpPool extends BasicHandlePool<DataCleansingTask>", "extend_name": "BasicHandlePool<DataCleansingTask>", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/cleansing/DataCleansingPumpPool.java"}, {"name": "DataCleansingTask", "package": "com.dr.drs.synchronizing.management.pump.cleansing", "type": "class", "imports": ["com.dr.drs.synchronizing.management.pump.constant.DataHandlerEnum", "com.dr.drs.synchronizing.model.OperatorTypeEnum", "com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.dr.drs.synchronizing.proxy.server.MMIDProxy", "lombok.Getter"], "class_name": "DataCleansingTask extends ComputingTask", "extend_name": "ComputingTask", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/cleansing/DataCleansingTask.java"}, {"name": "SubscribeDataDispatchPump", "package": "com.dr.drs.synchronizing.management.pump.dispatch", "type": "class", "imports": ["com.dr.drs.synchronizing.error.Assert", "com.dr.drs.synchronizing.management.constant.ExecutionState", "com.dr.drs.synchronizing.management.constant.ExecutorCommand", "com.dr.drs.synchronizing.management.constant.ExecutorEventEnum", "com.dr.drs.synchronizing.management.executor.Executor", "com.dr.drs.synchronizing.management.executor.RuntimeContainerWithoutClose", "com.dr.drs.synchronizing.management.pump.DataPump", "com.dr.drs.synchronizing.management.pump.cleansing.DataCleansingPumpPool", "com.dr.drs.synchronizing.management.pump.constant.SubscribeTargetEnum", "com.dr.drs.synchronizing.management.pump.runtime.CallbackHttpRuntime", "com.dr.drs.synchronizing.management.pump.runtime.SubscribeFilterOperatorRuntime", "com.dr.drs.synchronizing.model.Operator", "com.dr.drs.synchronizing.model.Subscribe", "com.dr.drs.synchronizing.proxy.ServerProxyContainer", "com.dr.drs.synchronizing.proxy.constant.DataInputHandlerEnum", "com.dr.drs.proxy.entities.TransferData", "com.dr.drs.proxy.serverproxy.datacacheproxy.IDataCacheProxy", "lombok.extern.slf4j.Slf4j", "java.util.Optional"], "class_name": "SubscribeDataDispatchPump extends DataPump", "extend_name": "DataPump", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/dispatch/SubscribeDataDispatchPump.java"}, {"name": "SubscribeDataDispatchTask", "package": "com.dr.drs.synchronizing.management.pump.dispatch", "type": "class", "imports": ["com.dr.drs.synchronizing.management.pump.constant.DataHandlerEnum", "com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.dr.drs.synchronizing.proxy.server.MMIDProxy", "lombok.Getter", "java.util.Objects"], "class_name": "SubscribeDataDispatchTask extends ComputingTask", "extend_name": "ComputingTask", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/dispatch/SubscribeDataDispatchTask.java"}, {"name": "SubscribeDataDispatchPumpPool", "package": "com.dr.drs.synchronizing.management.pump.dispatch", "type": "class", "imports": ["com.dr.drs.synchronizing.error.Assert", "com.dr.drs.synchronizing.management.BasicHandlePool", "com.dr.drs.synchronizing.management.pump.DataHandler", "com.dr.drs.synchronizing.proxy.ServerProxyContainer", "com.dr.drs.synchronizing.proxy.constant.DataInputHandlerEnum", "com.dr.drs.proxy.entities.TransferData", "com.google.common.base.Strings"], "class_name": "SubscribeDataDispatchPumpPool extends BasicHandlePool<SubscribeDataDispatchTask>", "extend_name": "BasicHandlePool<SubscribeDataDispatchTask>", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/dispatch/SubscribeDataDispatchPumpPool.java"}, {"name": "SubscribeFilterOperatorRuntime", "package": "com.dr.drs.synchronizing.management.pump.runtime", "type": "class", "imports": ["com.dr.drs.synchronizing.error.Assert", "com.dr.drs.synchronizing.management.operator.FilterOperatorRuntimeContainer", "com.dr.drs.proxy.entities.TransferData", "com.dr.drs.synchronizing.model.Subscribe", "com.dr.drs.proxy.serverproxy.datacacheproxy.IDataCacheProxy", "java.io.IOException", "java.util.Optional"], "class_name": "SubscribeFilterOperatorRuntime extends FilterOperatorRuntimeContainer", "extend_name": "FilterOperatorRuntimeContainer", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/runtime/SubscribeFilterOperatorRuntime.java"}, {"name": "CallbackHttpRuntime", "package": "com.dr.drs.synchronizing.management.pump.runtime", "type": "class", "imports": ["com.dr.drs.synchronizing.management.constant.ExecutionState", "com.dr.drs.synchronizing.management.executor.RuntimeContainerWithoutClose", "com.dr.drs.synchronizing.proxy.server.HttpProxy", "com.dr.drs.proxy.entities.TransferData", "com.dr.drs.proxy.serverproxy.datacacheproxy.IDataCacheProxy", "com.github.rholder.retry.RetryException", "com.github.rholder.retry.Retryer", "com.github.rholder.retry.RetryerBuilder", "lombok.NonNull", "lombok.extern.slf4j.Slf4j", "java.util.Optional", "java.util.concurrent.ExecutionException"], "class_name": "CallbackHttpRuntime extends RuntimeContainerWithoutClose", "extend_name": "RuntimeContainerWithoutClose", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/runtime/CallbackHttpRuntime.java"}, {"name": "RealTimeShuntTask", "package": "com.dr.drs.synchronizing.management.pump.shunt", "type": "class", "imports": ["com.dr.drs.synchronizing.management.pump.constant.DataHandlerEnum", "com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.dr.drs.synchronizing.proxy.server.MMIDProxy", "lombok.Data", "lombok.Getter", "lombok.Setter", "java.util.Date"], "class_name": "RealTimeShuntTask extends ComputingTask", "extend_name": "ComputingTask", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/shunt/RealTimeShuntTask.java"}, {"name": "RealtimeShuntPump", "package": "com.dr.drs.synchronizing.management.pump.shunt", "type": "class", "imports": ["com.dr.drs.synchronizing.management.constant.ExecutionState", "com.dr.drs.synchronizing.management.constant.ExecutorCommand", "com.dr.drs.synchronizing.management.constant.ExecutorEventEnum", "com.dr.drs.synchronizing.management.escrow.DataEscrowProxy", "com.dr.drs.synchronizing.management.escrow.record.ExtractDataRecordTask", "com.dr.drs.synchronizing.management.executor.Executor", "com.dr.drs.synchronizing.management.executor.RuntimeContainerWithoutClose", "com.dr.drs.synchronizing.management.pump.DataPump", "com.dr.drs.synchronizing.management.pump.constant.DataEscrowEnum", "com.dr.drs.synchronizing.management.pump.dispatch.SubscribeDataDispatchPumpPool", "com.dr.drs.synchronizing.model.Subscribe", "com.dr.drs.synchronizing.proxy.ServerProxyContainer", "com.dr.drs.synchronizing.proxy.constant.DataInputHandlerEnum", "com.dr.drs.proxy.entities.TransferData", "com.dr.drs.proxy.serverproxy.datacacheproxy.IDataCacheProxy", "com.google.gson.Gson", "lombok.extern.slf4j.Slf4j", "java.util.Objects", "java.util.Optional", "java.util.Set"], "class_name": "RealtimeShuntPump extends DataPump", "extend_name": "DataPump", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/shunt/RealtimeShuntPump.java"}, {"name": "RealtimeShuntPumpPool", "package": "com.dr.drs.synchronizing.management.pump.shunt", "type": "class", "imports": ["com.dr.drs.synchronizing.management.BasicHandlePool", "com.dr.drs.synchronizing.management.pump.DataHandler", "com.dr.drs.synchronizing.proxy.ServerProxyContainer", "com.dr.drs.synchronizing.proxy.constant.DataInputHandlerEnum", "com.dr.drs.proxy.entities.TransferData"], "class_name": "RealtimeShuntPumpPool extends BasicHandlePool<RealTimeShuntTask>", "extend_name": "BasicHandlePool<RealTimeShuntTask>", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/shunt/RealtimeShuntPumpPool.java"}, {"name": "RealtimeDistributedEvent", "package": "com.dr.drs.synchronizing.management.pump.shunt.event", "type": "class", "imports": [], "class_name": "RealtimeDistributedEvent", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/shunt/event/RealtimeDistributedEvent.java"}, {"name": "ExtractRecordEnum", "package": "com.dr.drs.synchronizing.management.pump.constant", "type": "enum", "imports": [], "class_name": "ExtractRecordEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/constant/ExtractRecordEnum.java"}, {"name": "DataHandlerEnum", "package": "com.dr.drs.synchronizing.management.pump.constant", "type": "enum", "imports": [], "class_name": "DataHandlerEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/constant/DataHandlerEnum.java"}, {"name": "SubscribeTargetEnum", "package": "com.dr.drs.synchronizing.management.pump.constant", "type": "enum", "imports": [], "class_name": "SubscribeTargetEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/constant/SubscribeTargetEnum.java"}, {"name": "DataEscrowEnum", "package": "com.dr.drs.synchronizing.management.pump.constant", "type": "enum", "imports": [], "class_name": "DataEscrowEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/pump/constant/DataEscrowEnum.java"}, {"name": "DataEscrowProxy", "package": "com.dr.drs.synchronizing.management.escrow", "type": "class", "imports": ["com.dr.drs.synchronizing.management.pump.constant.DataEscrowEnum", "com.dr.drs.synchronizing.management.pump.constant.ExtractRecordEnum", "com.dr.drs.synchronizing.proxy.ServerProxyContainer", "com.dr.drs.proxy.entities.TransferData", "lombok.extern.slf4j.Slf4j"], "class_name": "DataEscrowProxy", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/escrow/DataEscrowProxy.java"}, {"name": "ExtractDataRecordPumpPool", "package": "com.dr.drs.synchronizing.management.escrow.record", "type": "class", "imports": ["com.dr.drs.synchronizing.error.Assert", "com.dr.drs.synchronizing.management.BasicHandlePool", "com.dr.drs.synchronizing.management.pump.DataHandler", "com.dr.drs.proxy.entities.TransferData", "com.google.common.base.Strings"], "class_name": "ExtractDataRecordPumpPool extends BasicHandlePool<ExtractDataRecordTask>", "extend_name": "BasicHandlePool<ExtractDataRecordTask>", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/escrow/record/ExtractDataRecordPumpPool.java"}, {"name": "ExtractDataRecordTask", "package": "com.dr.drs.synchronizing.management.escrow.record", "type": "class", "imports": ["com.dr.drs.synchronizing.management.pump.constant.DataHandlerEnum", "com.dr.drs.synchronizing.management.pump.constant.ExtractRecordEnum", "com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.dr.drs.synchronizing.proxy.server.MMIDProxy", "com.dr.drs.synchronizing.proxy.server.Serializations", "lombok.Getter", "lombok.Setter"], "class_name": "ExtractDataRecordTask extends ComputingTask", "extend_name": "ComputingTask", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/escrow/record/ExtractDataRecordTask.java"}, {"name": "ExtractDataRecordPump", "package": "com.dr.drs.synchronizing.management.escrow.record", "type": "class", "imports": ["com.dr.drs.synchronizing.error.Assert", "com.dr.drs.synchronizing.management.constant.ExecutionState", "com.dr.drs.synchronizing.management.constant.ExecutorCommand", "com.dr.drs.synchronizing.management.constant.ExecutorEventEnum", "com.dr.drs.synchronizing.management.executor.Executor", "com.dr.drs.synchronizing.management.executor.RuntimeContainerWithoutClose", "com.dr.drs.synchronizing.management.pump.DataPump", "com.dr.drs.synchronizing.management.pump.cleansing.DataCleansingPumpPool", "com.dr.drs.synchronizing.management.pump.constant.ExtractRecordEnum", "com.dr.drs.synchronizing.management.pump.dispatch.SubscribeDataDispatchPumpPool", "com.dr.drs.synchronizing.model.Operator", "com.dr.drs.synchronizing.model.Subscribe", "com.dr.drs.synchronizing.proxy.ServerProxyContainer", "com.dr.drs.proxy.entities.TransferData", "com.dr.drs.proxy.serverproxy.datasaveproxy.IDataProxy", "com.google.common.base.Strings", "lombok.extern.slf4j.Slf4j", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.concurrent.atomic.AtomicLong"], "class_name": "ExtractDataRecordPump extends DataPump", "extend_name": "DataPump", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/escrow/record/ExtractDataRecordPump.java"}, {"name": "DataWarehousePump", "package": "com.dr.drs.synchronizing.management.escrow.warehouse", "type": "class", "imports": [], "class_name": "DataWarehousePump", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/escrow/warehouse/DataWarehousePump.java"}, {"name": "ExecuteChain", "package": "com.dr.drs.synchronizing.management.executor", "type": "class", "imports": ["com.google.common.collect.Lists", "lombok.NonNull", "java.util.Iterator", "java.util.List"], "class_name": "ExecuteChain implements Iterable<Executor>", "extend_name": "", "implements_name": ["Iterable<Executor>"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/executor/ExecuteChain.java"}, {"name": "RuntimeContainer", "package": "com.dr.drs.synchronizing.management.executor", "type": "class", "imports": ["com.dr.drs.synchronizing.management.constant.ExecutionState", "java.io.Closeable"], "class_name": "RuntimeContainer implements Closeable, Runnable", "extend_name": "", "implements_name": ["Closeable", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/executor/RuntimeContainer.java"}, {"name": "RuntimeContainerWithoutClose", "package": "com.dr.drs.synchronizing.management.executor", "type": "class", "imports": ["lombok.extern.slf4j.Slf4j", "java.io.IOException"], "class_name": "RuntimeContainerWithoutClose extends RuntimeContainer", "extend_name": "RuntimeContainer", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/executor/RuntimeContainerWithoutClose.java"}, {"name": "Executor", "package": "com.dr.drs.synchronizing.management.executor", "type": "class", "imports": ["com.dr.drs.synchronizing.constant.EventType", "com.dr.drs.synchronizing.management.constant.ExecutionState", "com.dr.drs.synchronizing.management.constant.ExecutorCommand", "com.dr.drs.synchronizing.management.constant.ExecutorEventEnum", "com.dr.drs.synchronizing.management.event.ComputingTaskExecuteEvent", "com.dr.drs.synchronizing.management.event.EventReport", "com.dr.drs.synchronizing.proxy.event.EventBusProxy", "com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.google.common.util.concurrent.Uninterruptibles", "lombok.extern.slf4j.Slf4j", "java.util.concurrent.TimeUnit", "java.util.concurrent.atomic.AtomicInteger"], "class_name": "Executor implements EventReport", "extend_name": "", "implements_name": ["EventReport"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/executor/Executor.java"}, {"name": "RuntimeFlagEnum", "package": "com.dr.drs.synchronizing.management.executor", "type": "enum", "imports": [], "class_name": "RuntimeFlagEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/executor/RuntimeFlagEnum.java"}, {"name": "RequestAndResponse", "package": "com.dr.drs.synchronizing.management.service", "type": "class", "imports": ["com.dr.drs.synchronizing.constant.EventType", "com.dr.drs.synchronizing.error.SizeLimitException", "com.dr.drs.synchronizing.management.constant.ExecutionState", "com.dr.drs.synchronizing.management.event.ComputingTaskExecuteEvent", "com.dr.drs.synchronizing.management.executor.RuntimeFlagEnum", "com.dr.drs.synchronizing.management.operator.FilterOperatorRuntimeContainer", "com.dr.drs.synchronizing.management.operator.InterceptorOperatorRuntimeContainer", "com.dr.drs.synchronizing.model.Operator", "com.dr.drs.synchronizing.proxy.ServerProxyContainer", "com.dr.drs.synchronizing.proxy.event.EventBusProxy", "com.dr.drs.synchronizing.proxy.server.ExecuteConfigProxy", "com.dr.drs.synchronizing.proxy.server.HttpProxy", "com.dr.drs.synchronizing.proxy.server.MMIDProxy", "com.dr.drs.proxy.entities.TransferData", "com.github.rholder.retry.RetryException", "com.github.rholder.retry.Retryer", "com.github.rholder.retry.RetryerBuilder", "com.google.common.base.Strings", "lombok.Data", "lombok.NonNull", "lombok.Setter", "lombok.extern.slf4j.Slf4j", "java.io.IOException", "java.util.Date", "java.util.List", "java.util.Optional", "java.util.concurrent.ExecutionException"], "class_name": "RequestAndResponse", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/service/RequestAndResponse.java"}, {"name": "ResponseServiceDefined", "package": "com.dr.drs.synchronizing.management.service", "type": "class", "imports": ["lombok.Data"], "class_name": "ResponseServiceDefined", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/service/ResponseServiceDefined.java"}, {"name": "RequestServiceDefined", "package": "com.dr.drs.synchronizing.management.service", "type": "class", "imports": ["lombok.Data"], "class_name": "RequestServiceDefined", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/service/RequestServiceDefined.java"}, {"name": "RequestAndResponseTask", "package": "com.dr.drs.synchronizing.management.service", "type": "class", "imports": ["com.dr.drs.synchronizing.management.pump.constant.DataHandlerEnum", "com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.dr.drs.synchronizing.proxy.server.MMIDProxy", "lombok.Data", "java.util.Date"], "class_name": "RequestAndResponseTask extends ComputingTask", "extend_name": "ComputingTask", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/service/RequestAndResponseTask.java"}, {"name": "ComputingTaskExecuteEvent", "package": "com.dr.drs.synchronizing.management.event", "type": "class", "imports": ["com.dr.drs.synchronizing.management.constant.ExecutionState", "com.dr.drs.synchronizing.management.executor.RuntimeFlagEnum", "com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.dr.drs.synchronizing.proxy.server.MMIDProxy", "lombok.Data", "lombok.NonNull", "lombok.experimental.Accessors"], "class_name": "ComputingTaskExecuteEvent", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/event/ComputingTaskExecuteEvent.java"}, {"name": "EventReport", "package": "com.dr.drs.synchronizing.management.event", "type": "interface", "imports": [], "class_name": "EventReport", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/event/EventReport.java"}, {"name": "FilterOperatorRuntimeContainer", "package": "com.dr.drs.synchronizing.management.operator", "type": "class", "imports": ["com.dr.drs.synchronizing.model.Operator", "java.util.Optional"], "class_name": "FilterOperatorRuntimeContainer extends CleansingOperatorRuntimeContainer", "extend_name": "CleansingOperatorRuntimeContainer", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/operator/FilterOperatorRuntimeContainer.java"}, {"name": "JsMethod", "package": "com.dr.drs.synchronizing.management.operator", "type": "interface", "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"], "class_name": "JsMethod", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/operator/JsMethod.java"}, {"name": "InterceptorOperatorRuntimeContainer", "package": "com.dr.drs.synchronizing.management.operator", "type": "class", "imports": ["com.dr.drs.synchronizing.management.executor.RuntimeContainerWithoutClose", "com.dr.drs.synchronizing.model.Operator", "com.dr.drs.proxy.entities.TransferData", "lombok.NonNull", "java.util.List", "java.util.Optional"], "class_name": "InterceptorOperatorRuntimeContainer extends RuntimeContainerWithoutClose", "extend_name": "RuntimeContainerWithoutClose", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/operator/InterceptorOperatorRuntimeContainer.java"}, {"name": "OperatorCleansingRecordEnum", "package": "com.dr.drs.synchronizing.management.operator", "type": "enum", "imports": [], "class_name": "OperatorCleansingRecordEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/operator/OperatorCleansingRecordEnum.java"}, {"name": "V8Operator", "package": "com.dr.drs.synchronizing.management.operator", "type": "class", "imports": ["com.dr.drs.synchronizing.model.Operator", "com.dr.drs.synchronizing.proxy.runtime.OperatorRuntimeProxy", "com.dr.drs.proxy.entities.TransferData", "com.eclipsesource.v8.V8", "com.eclipsesource.v8.V8Array", "com.google.common.base.Strings", "lombok.extern.slf4j.Slf4j", "java.util.Objects", "java.util.Optional"], "class_name": "V8Operator", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/operator/V8Operator.java"}, {"name": "CleansingOperatorRuntimeContainer", "package": "com.dr.drs.synchronizing.management.operator", "type": "class", "imports": ["com.dr.drs.synchronizing.management.executor.RuntimeContainerWithoutClose", "com.dr.drs.proxy.entities.TransferData", "com.dr.drs.synchronizing.model.Operator", "com.google.common.base.Strings", "java.util.Optional"], "class_name": "CleansingOperatorRuntimeContainer extends RuntimeContainerWithoutClose", "extend_name": "RuntimeContainerWithoutClose", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/management/operator/CleansingOperatorRuntimeContainer.java"}, {"name": "Cluster", "package": "com.dr.drs.synchronizing.component.cluster", "type": "class", "imports": ["com.dr.drs.synchronizing.component.server.ServerNode", "com.dr.drs.synchronizing.proxy.server.Cacheable", "com.dr.drs.synchronizing.proxy.server.MMIDProxy", "com.dr.drs.synchronizing.proxy.server.RedisProxy", "com.dr.drs.synchronizing.proxy.server.Serializations", "com.dr.drs.synchronizing.setup.Starter", "com.google.common.base.Strings", "com.google.common.util.concurrent.Uninterruptibles", "io.lettuce.core.api.sync.RedisCommands", "lombok.Getter", "lombok.extern.slf4j.Slf4j", "studio.istart.idempotent.Idempotent", "studio.istart.idempotent.exception.AcquireLockException", "studio.istart.idempotent.exception.CallbackExecuteException", "studio.istart.idempotent.exception.ReleaseLockException", "studio.istart.idempotent.studio.istart.retry.Retry", "java.io.IOException", "java.util.List", "java.util.Map", "java.util.Set", "java.util.UUID", "java.util.concurrent.TimeUnit", "java.util.stream.Collectors", "static com.dr.drs.synchronizing.proxy.lock.DistributedLockEnum.REGISTER_CLUSTER"], "class_name": "Cluster implements Starter, Cacheable", "extend_name": "", "implements_name": ["Starter", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/cluster/Cluster.java"}, {"name": "LoadBalancer", "package": "com.dr.drs.synchronizing.component.lb", "type": "class", "imports": ["com.dr.drs.synchronizing.component.heartbeat.event.HeartBeatEvent", "com.dr.drs.synchronizing.component.server.ServerNode", "com.dr.drs.synchronizing.component.server.ServerNodeComponent", "com.dr.drs.synchronizing.constant.EventType", "com.dr.drs.synchronizing.constant.SettingArgsEnum", "com.dr.drs.synchronizing.error.AssigningTaskException", "com.dr.drs.synchronizing.proxy.ServerProxyContainer", "com.dr.drs.synchronizing.proxy.event.EventBusProxy", "com.dr.drs.synchronizing.proxy.lock.DistributedLockEnum", "com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.dr.drs.synchronizing.proxy.server.ExecuteConfigProxy", "com.dr.drs.synchronizing.proxy.server.RedisProxy", "com.dr.drs.synchronizing.setup.Setup", "com.dr.drs.synchronizing.setup.Starter", "com.google.common.base.Strings", "com.google.common.collect.Maps", "com.google.common.collect.Queues", "com.google.common.eventbus.Subscribe", "com.google.common.util.concurrent.ThreadFactoryBuilder", "io.lettuce.core.api.sync.RedisCommands", "lombok.NonNull", "lombok.extern.slf4j.Slf4j", "studio.istart.idempotent.Idempotent", "studio.istart.idempotent.exception.AcquireLockException", "studio.istart.idempotent.exception.CallbackExecuteException", "studio.istart.idempotent.exception.ReleaseLockException", "java.io.IOException", "java.util.*", "java.util.concurrent.ThreadPoolExecutor", "java.util.concurrent.TimeUnit", "java.util.stream.Collectors"], "class_name": "LoadBalancer implements ServerNodeComponent, Starter", "extend_name": "", "implements_name": ["ServerNodeComponent", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/lb/LoadBalancer.java"}, {"name": "ClusterServerNodeOutageHandler", "package": "com.dr.drs.synchronizing.component.lb", "type": "class", "imports": ["com.dr.drs.synchronizing.component.cluster.Cluster", "com.dr.drs.synchronizing.component.server.ServerNode", "com.dr.drs.synchronizing.proxy.lock.DistributedLockEnum", "com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.dr.drs.synchronizing.proxy.server.RedisProxy", "com.google.common.collect.Maps", "lombok.NonNull", "lombok.extern.slf4j.Slf4j", "studio.istart.idempotent.Idempotent", "studio.istart.idempotent.exception.AcquireLockException", "studio.istart.idempotent.exception.CallbackExecuteException", "studio.istart.idempotent.exception.ReleaseLockException", "java.io.IOException", "java.util.Iterator", "java.util.List", "java.util.Map", "java.util.Optional"], "class_name": "ClusterServerNodeOutageHandler implements Runnable", "extend_name": "", "implements_name": ["Runnable"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/lb/ClusterServerNodeOutageHandler.java"}, {"name": "CurrentServerNodeRcpLowerHandler", "package": "com.dr.drs.synchronizing.component.lb", "type": "class", "imports": ["com.dr.drs.synchronizing.component.server.ServerNode", "lombok.extern.slf4j.Slf4j", "java.util.Optional"], "class_name": "CurrentServerNodeRcpLowerHandler implements Runnable", "extend_name": "", "implements_name": ["Runnable"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/lb/CurrentServerNodeRcpLowerHandler.java"}, {"name": "ComputingResourcePool", "package": "com.dr.drs.synchronizing.component.lb", "type": "class", "imports": ["com.dr.drs.synchronizing.component.server.ServerNode", "com.dr.drs.synchronizing.component.server.ServerNodeComponent", "com.dr.drs.synchronizing.management.Manager", "com.dr.drs.synchronizing.management.constant.ExecutorCommand", "com.dr.drs.synchronizing.management.constant.SelectStrategy", "com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.dr.drs.synchronizing.proxy.server.RedisProxy", "com.dr.drs.synchronizing.setup.Starter", "com.google.common.base.Strings", "lombok.extern.slf4j.Slf4j", "java.io.IOException", "java.util.List", "java.util.Map", "java.util.Objects"], "class_name": "ComputingResourcePool implements ServerNodeComponent, Starter", "extend_name": "", "implements_name": ["ServerNodeComponent", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/lb/ComputingResourcePool.java"}, {"name": "ClaimTaskHandler", "package": "com.dr.drs.synchronizing.component.lb", "type": "class", "imports": ["lombok.extern.slf4j.Slf4j"], "class_name": "ClaimTaskHandler implements Runnable", "extend_name": "", "implements_name": ["Runnable"], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/lb/ClaimTaskHandler.java"}, {"name": "CurrentServerNodeWorkLoadOverEvent", "package": "com.dr.drs.synchronizing.component.lb.event", "type": "class", "imports": ["com.dr.drs.synchronizing.component.server.ServerNode", "lombok.Getter", "java.util.Set"], "class_name": "CurrentServerNodeWorkLoadOverEvent", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/lb/event/CurrentServerNodeWorkLoadOverEvent.java"}, {"name": "ServerNodeOutageEvent", "package": "com.dr.drs.synchronizing.component.lb.event", "type": "class", "imports": ["lombok.Getter"], "class_name": "ServerNodeOutageEvent", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/lb/event/ServerNodeOutageEvent.java"}, {"name": "ServerNode", "package": "com.dr.drs.synchronizing.component.server", "type": "class", "imports": ["com.dr.drs.synchronizing.component.heartbeat.ResidualComputingPower", "com.dr.drs.synchronizing.constant.SettingArgsEnum", "com.dr.drs.synchronizing.error.Assert", "com.dr.drs.synchronizing.proxy.server.*", "com.dr.drs.synchronizing.setup.Setup", "com.dr.drs.synchronizing.setup.Starter", "com.google.common.base.Strings", "io.lettuce.core.api.sync.RedisCommands", "lombok.Data", "lombok.extern.slf4j.Slf4j", "java.io.IOException", "java.util.Map", "java.util.Objects"], "class_name": "ServerNode implements Starter, Cacheable", "extend_name": "", "implements_name": ["Starter", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/server/ServerNode.java"}, {"name": "ServerNodeComponent", "package": "com.dr.drs.synchronizing.component.server", "type": "interface", "imports": [], "class_name": "ServerNodeComponent", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/server/ServerNodeComponent.java"}, {"name": "ServerNodeState", "package": "com.dr.drs.synchronizing.component.server", "type": "enum", "imports": [], "class_name": "ServerNodeState", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/server/ServerNodeState.java"}, {"name": "ResidualComputingPower", "package": "com.dr.drs.synchronizing.component.heartbeat", "type": "class", "imports": ["com.sun.management.OperatingSystemMXBean", "lombok.extern.slf4j.Slf4j", "java.lang.management.ManagementFactory", "java.util.Objects"], "class_name": "ResidualComputingPower", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/heartbeat/ResidualComputingPower.java"}, {"name": "HeartBeater", "package": "com.dr.drs.synchronizing.component.heartbeat", "type": "class", "imports": ["com.dr.drs.synchronizing.component.heartbeat.event.HeartBeatEvent", "com.dr.drs.synchronizing.component.heartbeat.event.HeartBeatState", "com.dr.drs.synchronizing.component.server.ServerNode", "com.dr.drs.synchronizing.component.server.ServerNodeComponent", "com.dr.drs.synchronizing.constant.EventType", "com.dr.drs.synchronizing.constant.SettingArgsEnum", "com.dr.drs.synchronizing.error.Assert", "com.dr.drs.synchronizing.proxy.event.EventBusProxy", "com.dr.drs.synchronizing.proxy.server.RedisProxy", "com.dr.drs.synchronizing.setup.Setup", "com.dr.drs.synchronizing.setup.Starter", "com.google.common.base.Strings", "io.lettuce.core.api.sync.RedisCommands", "lombok.Getter", "lombok.Setter", "lombok.extern.slf4j.Slf4j", "studio.istart.idempotent.studio.istart.retry.Retry", "java.io.Closeable", "java.io.IOException", "java.util.Map", "java.util.Objects", "java.util.Timer", "java.util.TimerTask", "java.util.concurrent.ThreadLocalRandom", "java.util.concurrent.TimeUnit"], "class_name": "HeartBeater implements Starter, ServerNodeComponent, Closeable", "extend_name": "", "implements_name": ["Starter", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/heartbeat/HeartBeater.java"}, {"name": "HeartBeatEvent", "package": "com.dr.drs.synchronizing.component.heartbeat.event", "type": "class", "imports": ["lombok.Getter"], "class_name": "HeartBeatEvent", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/heartbeat/event/HeartBeatEvent.java"}, {"name": "HeartBeatState", "package": "com.dr.drs.synchronizing.component.heartbeat.event", "type": "enum", "imports": [], "class_name": "HeartBeatState", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/heartbeat/event/HeartBeatState.java"}, {"name": "ComputingEventHandler", "package": "com.dr.drs.synchronizing.component.event", "type": "interface", "imports": ["com.dr.drs.synchronizing.management.event.ComputingTaskExecuteEvent"], "class_name": "ComputingEventHandler", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/event/ComputingEventHandler.java"}, {"name": "ManagerEventHandler", "package": "com.dr.drs.synchronizing.component.event", "type": "class", "imports": ["com.dr.drs.synchronizing.component.lb.LoadBalancer", "com.dr.drs.synchronizing.component.server.ServerNode", "com.dr.drs.synchronizing.component.server.ServerNodeComponent", "com.dr.drs.synchronizing.constant.EventType", "com.dr.drs.synchronizing.management.Manager", "com.dr.drs.synchronizing.management.constant.ExecutionState", "com.dr.drs.synchronizing.management.constant.ExecutorCommand", "com.dr.drs.synchronizing.management.event.ComputingTaskExecuteEvent", "com.dr.drs.synchronizing.management.pump.constant.DataHandlerEnum", "com.dr.drs.synchronizing.proxy.ServerProxyContainer", "com.dr.drs.synchronizing.proxy.event.EventBusProxy", "com.dr.drs.synchronizing.proxy.server.ComputingTask", "com.dr.drs.synchronizing.proxy.server.ExecuteConfigProxy", "com.dr.drs.synchronizing.setup.Starter", "com.google.common.base.Strings", "com.google.common.collect.Maps", "com.google.common.eventbus.AllowConcurrentEvents", "com.google.common.eventbus.Subscribe", "com.google.common.util.concurrent.ThreadFactoryBuilder", "lombok.extern.slf4j.Slf4j", "java.util.Map", "java.util.Objects", "java.util.Optional", "java.util.concurrent.ExecutorService", "java.util.concurrent.Executors"], "class_name": "ManagerEventHandler implements ServerNodeComponent, Starter", "extend_name": "", "implements_name": ["ServerNodeComponent", ""], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/component/event/ManagerEventHandler.java"}, {"name": "EventType", "package": "com.dr.drs.synchronizing.constant", "type": "enum", "imports": [], "class_name": "EventType", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/constant/EventType.java"}, {"name": "SettingArgsEnum", "package": "com.dr.drs.synchronizing.constant", "type": "enum", "imports": [], "class_name": "SettingArgsEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/constant/SettingArgsEnum.java"}, {"name": "OperatorTypeEnum", "package": "com.dr.drs.synchronizing.model", "type": "enum", "imports": [], "class_name": "OperatorTypeEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/model/OperatorTypeEnum.java"}, {"name": "Operator", "package": "com.dr.drs.synchronizing.model", "type": "class", "imports": ["com.dr.drs.synchronizing.management.pump.constant.DataEscrowEnum", "com.dr.drs.synchronizing.management.pump.constant.ExtractRecordEnum", "lombok.Data", "java.util.Optional", "java.util.Set"], "class_name": "Operator", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/model/Operator.java"}, {"name": "Subscribe", "package": "com.dr.drs.synchronizing.model", "type": "class", "imports": ["com.dr.drs.synchronizing.management.pump.constant.ExtractRecordEnum", "com.dr.drs.synchronizing.management.pump.constant.SubscribeTargetEnum", "lombok.Data", "lombok.NonNull", "java.util.Optional", "java.util.Set"], "class_name": "Subscribe", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/model/Subscribe.java"}, {"name": "OperatorRuntimeProxyEnum", "package": "com.dr.drs.synchronizing.model", "type": "enum", "imports": [], "class_name": "OperatorRuntimeProxyEnum", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/model/OperatorRuntimeProxyEnum.java"}, {"name": "SizeLimitException", "package": "com.dr.drs.synchronizing.error", "type": "class", "imports": [], "class_name": "SizeLimitException extends Exception", "extend_name": "Exception", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/error/SizeLimitException.java"}, {"name": "Assert", "package": "com.dr.drs.synchronizing.error", "type": "class", "imports": ["lombok.extern.slf4j.Slf4j"], "class_name": "Assert", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/error/Assert.java"}, {"name": "AssigningTaskException", "package": "com.dr.drs.synchronizing.error", "type": "class", "imports": [], "class_name": "AssigningTaskException extends Exception", "extend_name": "Exception", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/synchronizing/src/main/java/com/dr/drs/synchronizing/error/AssigningTaskException.java"}, {"name": "MavenWrapperDownloader", "package": "", "type": "class", "imports": ["java.net.*", "java.io.*", "java.nio.channels.*", "java.util.Properties"], "class_name": "MavenWrapperDownloader", "extend_name": "", "implements_name": [], "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs/.mvn/wrapper/MavenWrapperDownloader.java"}];
+var data = [{
+    "name": "AppAuth",
+    "package": "com.dr.op.app.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.*", "java.io.Serializable"],
+    "class_name": "AppAuth implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/app/entity/AppAuth.java"
+}, {
+    "name": "App",
+    "package": "com.dr.op.app.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Column", "javax.persistence.Entity", "javax.persistence.Id", "javax.persistence.Table"],
+    "class_name": "App",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/app/entity/App.java"
+}, {
+    "name": "AiAjcInitTest",
+    "package": "com.dr.op.app.ai.api",
+    "type": "class",
+    "imports": ["com.dr.OpApplication", "com.dr.op.ajc.AppJointCertService", "com.dr.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.strategy.basic.account.repository.UnifyAccountRepository", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.identity.repository.IdentityRepository", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.Map", "java.util.Optional"],
+    "class_name": "AiAjcInitTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/app/ai/api/AiAjcInitTest.java"
+}, {
+    "name": "AppStoreApiTest",
+    "package": "com.dr.op.app.api",
+    "type": "class",
+    "imports": ["com.dr.OpApplication", "com.dr.op.app.http.req.AppStoreListRequest", "com.dr.op.app.http.req.AppStoreSubscribeRequest", "com.dr.op.app.http.resp.AppStoreListResponse", "com.dr.op.app.http.resp.AppStoreSubscribeResponse", "com.dr.op.app.service.AppStoreService", "com.dr.op.globe.http.FallPaged", "com.google.common.collect.Sets", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.HashSet"],
+    "class_name": "AppStoreApiTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/app/api/AppStoreApiTest.java"
+}, {
+    "name": "FallPagedTest",
+    "package": "com.dr.op.globe.http",
+    "type": "class",
+    "imports": ["org.apache.commons.compress.utils.Lists", "org.junit.Assert", "org.junit.Test", "java.util.List"],
+    "class_name": "FallPagedTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/globe/http/FallPagedTest.java"
+}, {
+    "name": "BizOrganizationApiTest",
+    "package": "com.dr.op.org.api",
+    "type": "class",
+    "imports": ["com.dr.OpApplication", "com.dr.op.globe.http.FallPaged", "com.dr.op.org.BizOrgService", "com.dr.op.org.api.http.request.MemberListRequest", "com.dr.op.org.api.http.response.MemberResponse", "com.dr.op.org.constant.IdentityClass", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner"],
+    "class_name": "BizOrganizationApiTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/org/api/BizOrganizationApiTest.java"
+}, {
+    "name": "OpOrganizationServiceTest",
+    "package": "com.dr.op.org.service",
+    "type": "class",
+    "imports": ["com.dr.OpApplication", "com.dr.op.org.OpOrgService", "com.dr.op.org.api.http.request.CreateAccountRequest", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.google.common.collect.Sets", "org.junit.Ignore", "org.junit.jupiter.api.Test", "org.junit.runner.RunWith", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "javax.annotation.Resource"],
+    "class_name": "OpOrganizationServiceTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/org/service/OpOrganizationServiceTest.java"
+}, {
+    "name": "BroadcastApiTest",
+    "package": "com.dr.op.bussiness.api",
+    "type": "class",
+    "imports": ["com.dr.OpApplication", "com.dr.op.bussiness.api.request.*", "com.dr.op.bussiness.api.response.AddRealTimeInfoResponse", "com.dr.op.bussiness.api.response.BroadcastRealTimeInfoResponse", "com.dr.op.bussiness.api.response.BroadcastResponse", "com.dr.op.bussiness.entity.BroadcastManager", "com.dr.op.bussiness.entity.RealtimeInfoDistribution", "com.dr.op.bussiness.service.BroadcastService", "com.dr.op.globe.http.FallPaged", "org.junit.jupiter.api.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.ArrayList", "java.util.List"],
+    "class_name": "BroadcastApiTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/bussiness/api/BroadcastApiTest.java"
+}, {
+    "name": "AccountServiceTest",
+    "package": "com.dr.op.account",
+    "type": "class",
+    "imports": ["com.dr.op.account.api.http.AccountInfoAttachment", "com.dr.strategy.support.serialization.Serializations", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.junit.Test", "java.util.Set"],
+    "class_name": "AccountServiceTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/account/AccountServiceTest.java"
+}, {
+    "name": "TiAccountServiceTest",
+    "package": "com.dr.op.account",
+    "type": "class",
+    "imports": ["com.dr.OpApplication", "com.dr.op.account.consts.AccountTypeEnum", "com.dr.op.account.consts.SexTypeEnum", "com.dr.op.account.entity.AccountInfoEntity", "com.dr.op.org.OpOrgService", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.support.serialization.Serializations", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.apache.poi.ss.usermodel.*", "org.apache.poi.xssf.usermodel.XSSFWorkbook", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "org.springframework.util.Assert", "java.io.FileInputStream", "java.io.IOException", "java.nio.charset.StandardCharsets", "java.nio.file.Files", "java.nio.file.Path", "java.nio.file.Paths", "java.nio.file.StandardOpenOption", "java.util.*", "java.util.stream.Collectors"],
+    "class_name": "TiAccountServiceTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/account/TiAccountServiceTest.java"
+}, {
+    "name": "OrderServiceConfig",
+    "package": "com.dr.op.data.order",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.config.AppConfig", "com.dr.strategy.basic.app.config.AppConfigItem", "com.dr.strategy.basic.app.consts.AppConfigTypeEnum", "com.dr.strategy.basic.app.consts.AppConfigValueTypeEnum", "lombok.Data", "static com.dr.op.data.order.Constant.APPID"],
+    "class_name": "OrderServiceConfig",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/data/order/OrderServiceConfig.java"
+}, {
+    "name": "Constant",
+    "package": "com.dr.op.data.order",
+    "type": "class",
+    "imports": [],
+    "class_name": "Constant",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/data/order/Constant.java"
+}, {
+    "name": "OrderService",
+    "package": "com.dr.op.data.order",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.App", "com.dr.strategy.basic.app.biz.BizClassifies", "com.dr.strategy.basic.app.biz.BizClassify", "com.dr.strategy.basic.app.menu.AppCustomMenu", "com.dr.strategy.basic.app.menu.AppDataDefineMenu", "com.dr.strategy.basic.app.menu.AppMenu", "com.dr.strategy.basic.role.PresetRole", "com.dr.strategy.basic.role.PresetRoles", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component", "static com.dr.op.data.order.Constant.*"],
+    "class_name": "OrderService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/data/order/OrderService.java"
+}, {
+    "name": "OrderEntity",
+    "package": "com.dr.op.data.order",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.data.DataDefineClass", "com.dr.strategy.basic.data.DataDefineField", "com.dr.strategy.basic.data.FieldTypeEnum", "com.dr.strategy.basic.entity.BasicEntity", "com.dr.strategy.basic.role.PresetRole", "com.dr.strategy.basic.role.PresetRoles", "lombok.EqualsAndHashCode", "javax.persistence.Entity", "javax.persistence.Table", "static com.dr.op.data.order.Constant.APPID", "static com.dr.op.data.order.Constant.BIZ_BUY_ID"],
+    "class_name": "OrderEntity extends BasicEntity",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/data/order/OrderEntity.java"
+}, {
+    "name": "DataExcelUtilTest",
+    "package": "com.dr.op.data.util",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.data.FieldTypeEnum", "org.junit.Test", "java.io.FileInputStream", "java.io.FileNotFoundException"],
+    "class_name": "DataExcelUtilTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/data/util/DataExcelUtilTest.java"
+}, {
+    "name": "EasyExcelTest",
+    "package": "com.dr.op.data.excel",
+    "type": "class",
+    "imports": ["com.alibaba.excel.EasyExcel", "org.junit.jupiter.api.Test", "java.util.ArrayList", "java.util.Date", "java.util.List"],
+    "class_name": "EasyExcelTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/data/excel/EasyExcelTest.java"
+}, {
+    "name": "DataApiTest",
+    "package": "com.dr.op.data.api",
+    "type": "class",
+    "imports": ["com.dr.OpApplication", "com.dr.op.data.api.http.request.*", "com.dr.op.data.api.http.response.*", "com.dr.op.data.consts.KvnsEnum", "com.dr.op.data.entity.DataProp", "com.dr.op.data.service.IDataService", "com.dr.op.data.util.DataKvns", "com.dr.op.globe.http.FallPaged", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.http.ResponseEntity", "org.springframework.test.context.junit4.SpringRunner", "java.io.FileOutputStream", "java.io.IOException", "java.sql.SQLException", "java.util.HashSet", "java.util.List"],
+    "class_name": "DataApiTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/data/api/DataApiTest.java"
+}, {
+    "name": "ImSessionServiceImplTest",
+    "package": "com.dr.op.imsession.service.impl",
+    "type": "class",
+    "imports": ["com.alibaba.fastjson.JSON", "com.dr.OpApplication", "com.dr.op.imsession.MongodbApplicationTests", "com.dr.op.imsession.api.request.*", "com.dr.op.imsession.entity.ImSessionEntity", "com.dr.op.imsession.entity.Person", "com.dr.op.imsession.service.ImSessionService", "org.junit.jupiter.api.Test", "org.junit.runner.RunWith", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.data.mongodb.core.MongoTemplate", "org.springframework.test.context.junit4.SpringRunner", "java.util.Arrays", "java.util.HashSet", "java.util.Set"],
+    "class_name": "ImSessionServiceImplTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/imsession/service/impl/ImSessionServiceImplTest.java"
+}, {
+    "name": "AddressBookServiceImplTest",
+    "package": "com.dr.op.imsession.service.impl",
+    "type": "class",
+    "imports": ["com.alibaba.fastjson.JSON", "com.dr.OpApplication", "com.dr.op.globe.http.FallObjectPaged", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.util.IdGenerator", "com.dr.op.globe.util.SnowflakeIdWorker", "com.dr.op.imsession.api.request.*", "com.dr.op.imsession.api.response.FondContactResponse", "com.dr.op.imsession.api.response.VerifyContactPersonResponse", "com.dr.op.imsession.entity.AddressBookEntity", "com.dr.op.imsession.entity.ContactPerson", "com.dr.op.imsession.entity.PersonEntity", "com.dr.op.imsession.enums.PersonTag", "com.dr.op.imsession.service.AddressBookService", "org.junit.jupiter.api.Test", "org.junit.runner.RunWith", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.data.mongodb.core.MongoTemplate", "org.springframework.test.context.junit4.SpringRunner", "java.util.Arrays", "java.util.Collections", "java.util.List"],
+    "class_name": "AddressBookServiceImplTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/test/java/com/dr/op/imsession/service/impl/AddressBookServiceImplTest.java"
+}, {
+    "name": "OpApplication",
+    "package": "com.dr",
+    "type": "class",
+    "imports": ["org.mybatis.spring.annotation.MapperScan", "org.springframework.boot.SpringApplication", "org.springframework.boot.autoconfigure.SpringBootApplication"],
+    "class_name": "OpApplication",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/OpApplication.java"
+}, {
+    "name": "BizRoleApi",
+    "package": "com.dr.op.role.api",
+    "type": "class",
+    "imports": ["com.dr.op.app.repository.AppInfoRepository", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.op.org.api.http.response.PresetRoleResponse", "com.dr.op.role.api.http.request.*", "com.dr.op.role.api.http.response.*", "com.dr.op.role.consts.ExcludeIdentityModifyMode", "com.dr.op.role.service.BizRoleService", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.dr.strategy.basic.role.entity.RoleEntity", "com.dr.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.basic.token.Current", "com.google.gson.JsonElement", "com.google.gson.JsonParser", "io.swagger.annotations.*", "org.apache.logging.log4j.util.Strings", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.*", "javax.annotation.Resource", "java.util.*", "java.util.stream.Collectors"],
+    "class_name": "BizRoleApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/BizRoleApi.java"
+}, {
+    "name": "DetailRuleResponse",
+    "package": "com.dr.op.role.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
+    "class_name": "DetailRuleResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/response/DetailRuleResponse.java"
+}, {
+    "name": "SaveOrUpdateResponse",
+    "package": "com.dr.op.role.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.AllArgsConstructor", "lombok.Data"],
+    "class_name": "SaveOrUpdateResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/response/SaveOrUpdateResponse.java"
+}, {
+    "name": "ExecListResponse",
+    "package": "com.dr.op.role.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor"],
+    "class_name": "ExecListResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/response/ExecListResponse.java"
+}, {
+    "name": "DetailResponse",
+    "package": "com.dr.op.role.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DetailResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/response/DetailResponse.java"
+}, {
+    "name": "ListRuleResponse",
+    "package": "com.dr.op.role.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "ListRuleResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/response/ListRuleResponse.java"
+}, {
+    "name": "ExceModifyResponse",
+    "package": "com.dr.op.role.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "ExceModifyResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/response/ExceModifyResponse.java"
+}, {
+    "name": "PagingResponse",
+    "package": "com.dr.op.role.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "PagingResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/response/PagingResponse.java"
+}, {
+    "name": "DeleteResponse",
+    "package": "com.dr.op.role.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DeleteResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/response/DeleteResponse.java"
+}, {
+    "name": "RuleSaveResponse",
+    "package": "com.dr.op.role.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "RuleSaveResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/response/RuleSaveResponse.java"
+}, {
+    "name": "SwitchRequest",
+    "package": "com.dr.op.role.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "SwitchRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/request/SwitchRequest.java"
+}, {
+    "name": "SwitchRoleRequest",
+    "package": "com.dr.op.role.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "SwitchRoleRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/request/SwitchRoleRequest.java"
+}, {
+    "name": "SaveOrUpdateRequest",
+    "package": "com.dr.op.role.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "SaveOrUpdateRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/request/SaveOrUpdateRequest.java"
+}, {
+    "name": "ExceptionModifyRequest",
+    "package": "com.dr.op.role.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
+    "class_name": "ExceptionModifyRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/request/ExceptionModifyRequest.java"
+}, {
+    "name": "DeleteRequest",
+    "package": "com.dr.op.role.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DeleteRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/request/DeleteRequest.java"
+}, {
+    "name": "DeleteRuleRequest",
+    "package": "com.dr.op.role.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DeleteRuleRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/request/DeleteRuleRequest.java"
+}, {
+    "name": "RuleSaveRequest",
+    "package": "com.dr.op.role.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "RuleSaveRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/api/http/request/RuleSaveRequest.java"
+}, {
+    "name": "BizRoleService",
+    "package": "com.dr.op.role.service",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.op.globe.jpa.FallPageable", "com.dr.op.org.api.http.response.PresetRoleResponse", "com.dr.op.role.api.http.request.RuleSaveRequest", "com.dr.op.role.api.http.response.ExecListResponse", "com.dr.op.role.api.http.response.PagingResponse", "com.dr.op.role.consts.ExcludeIdentityModifyMode", "com.dr.strategy.basic.app.AppManager", "com.dr.strategy.basic.app.entity.AppEntity", "com.dr.strategy.basic.app.entity.BizEntity", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.consts.IdentityRoleRuleEnum", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.dr.strategy.basic.role.RoleManager", "com.dr.strategy.basic.role.entity.RoleEntity", "com.dr.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.google.common.base.Strings", "com.google.common.collect.Sets", "com.google.gson.JsonElement", "com.google.gson.JsonParser", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "javax.annotation.Resource", "java.util.*", "java.util.stream.Collectors"],
+    "class_name": "BizRoleService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/service/BizRoleService.java"
+}, {
+    "name": "ExcludeIdentityModifyMode",
+    "package": "com.dr.op.role.consts",
+    "type": "enum",
+    "imports": ["lombok.Getter"],
+    "class_name": "ExcludeIdentityModifyMode",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/role/consts/ExcludeIdentityModifyMode.java"
+}, {
+    "name": "AppAuthSubRepository",
+    "package": "com.dr.op.app.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.app.entity.AppAuthSubEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional", "java.util.Set"],
+    "class_name": "AppAuthSubRepository extends CrudRepository<AppAuthSubEntity, Integer>",
+    "extend_name": "CrudRepository<AppAuthSubEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppAuthSubRepository.java"
+}, {
+    "name": "AppCenterTopRepository",
+    "package": "com.dr.op.app.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.app.entity.AppCenterTop", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional"],
+    "class_name": "AppCenterTopRepository extends CrudRepository<AppCenterTop, Integer>",
+    "extend_name": "CrudRepository<AppCenterTop,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppCenterTopRepository.java"
+}, {
+    "name": "AppCenterFastEntranceRepository",
+    "package": "com.dr.op.app.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.app.entity.AppCenterFastEntrance", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional"],
+    "class_name": "AppCenterFastEntranceRepository extends CrudRepository<AppCenterFastEntrance, Integer>",
+    "extend_name": "CrudRepository<AppCenterFastEntrance,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppCenterFastEntranceRepository.java"
+}, {
+    "name": "AppWorkbenchFastRepository",
+    "package": "com.dr.op.app.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.app.entity.AppWorkbenchLock", "org.springframework.data.repository.CrudRepository", "java.util.List"],
+    "class_name": "AppWorkbenchFastRepository extends CrudRepository<AppWorkbenchLock, Integer>",
+    "extend_name": "CrudRepository<AppWorkbenchLock,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppWorkbenchFastRepository.java"
+}, {
+    "name": "AppCfgPersonalPrivilegeRepository",
+    "package": "com.dr.op.app.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.app.entity.AppCfgPersonalPrivilegeEntity", "com.dr.op.app.entity.AppCfgPersonalPrivilegeUnionId", "org.springframework.data.repository.CrudRepository"],
+    "class_name": "AppCfgPersonalPrivilegeRepository extends CrudRepository<AppCfgPersonalPrivilegeEntity, AppCfgPersonalPrivilegeUnionId>",
+    "extend_name": "CrudRepository<AppCfgPersonalPrivilegeEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppCfgPersonalPrivilegeRepository.java"
+}, {
+    "name": "AppInfoRepository",
+    "package": "com.dr.op.app.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.app.entity.AppInfoEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.Query", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Set"],
+    "class_name": "AppInfoRepository extends CrudRepository<AppInfoEntity, String>",
+    "extend_name": "CrudRepository<AppInfoEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppInfoRepository.java"
+}, {
+    "name": "AppCfgPersonalRepository",
+    "package": "com.dr.op.app.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.app.entity.AppCfgPersonalEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.Query", "org.springframework.data.repository.CrudRepository", "java.util.List"],
+    "class_name": "AppCfgPersonalRepository extends CrudRepository<AppCfgPersonalEntity, Integer>",
+    "extend_name": "CrudRepository<AppCfgPersonalEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppCfgPersonalRepository.java"
+}, {
+    "name": "AppCfgGlobalRepository",
+    "package": "com.dr.op.app.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.app.entity.AppCfgGlobalEntity", "com.dr.op.app.entity.AppCfgGlobalUnionId", "org.springframework.data.repository.CrudRepository"],
+    "class_name": "AppCfgGlobalRepository extends CrudRepository<AppCfgGlobalEntity, AppCfgGlobalUnionId>",
+    "extend_name": "CrudRepository<AppCfgGlobalEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppCfgGlobalRepository.java"
+}, {
+    "name": "AppWorkbenchLock",
+    "package": "com.dr.op.app.entity",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.annotation.IdType", "com.baomidou.mybatisplus.annotation.TableId", "com.baomidou.mybatisplus.annotation.TableName", "lombok.Data", "javax.persistence.*", "java.io.Serializable"],
+    "class_name": "AppWorkbenchLock implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/entity/AppWorkbenchLock.java"
+}, {
+    "name": "AppCfgGlobalUnionId",
+    "package": "com.dr.op.app.entity",
+    "type": "class",
+    "imports": ["lombok.Data", "lombok.NoArgsConstructor", "java.io.Serializable"],
+    "class_name": "AppCfgGlobalUnionId implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/entity/AppCfgGlobalUnionId.java"
+}, {
+    "name": "AppCfgPersonalEntity",
+    "package": "com.dr.op.app.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicEntity", "io.swagger.annotations.ApiModel", "lombok.Data", "javax.persistence.Column", "javax.persistence.Entity", "javax.persistence.Table", "java.io.Serializable"],
+    "class_name": "AppCfgPersonalEntity extends BasicEntity implements Serializable",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/entity/AppCfgPersonalEntity.java"
+}, {
+    "name": "AppCfgPersonalPrivilegeUnionId",
+    "package": "com.dr.op.app.entity",
+    "type": "class",
+    "imports": ["lombok.Data", "lombok.NoArgsConstructor", "javax.persistence.Id", "java.io.Serializable"],
+    "class_name": "AppCfgPersonalPrivilegeUnionId implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/entity/AppCfgPersonalPrivilegeUnionId.java"
+}, {
+    "name": "AppAuthSubEntity",
+    "package": "com.dr.op.app.entity",
+    "type": "class",
+    "imports": ["com.dr.op.app.consts.AppAuthEnum", "com.dr.strategy.basic.entity.BasicEntity", "io.swagger.annotations.ApiModel", "lombok.Data", "javax.persistence.Column", "javax.persistence.Entity", "javax.persistence.Index", "javax.persistence.Table", "java.io.Serializable", "java.time.Instant"],
+    "class_name": "AppAuthSubEntity extends BasicEntity implements Serializable",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/entity/AppAuthSubEntity.java"
+}, {
+    "name": "AppInfoEntity",
+    "package": "com.dr.op.app.entity",
+    "type": "class",
+    "imports": ["com.dr.op.app.http.AttachmentInfo", "com.dr.op.app.http.resp.AppBusinessInfoResponse", "com.dr.op.app.http.resp.AppConfigInfo", "com.dr.op.app.http.resp.AppMenuInfoResponse", "com.dr.op.app.http.resp.AppPermissionInfoResponse", "com.dr.strategy.support.serialization.Serializations", "io.swagger.annotations.ApiModel", "lombok.Data", "org.apache.logging.log4j.util.Strings", "org.springframework.util.CollectionUtils", "javax.persistence.Column", "javax.persistence.Entity", "javax.persistence.Id", "javax.persistence.Table", "java.io.Serializable", "java.util.List"],
+    "class_name": "AppInfoEntity implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/entity/AppInfoEntity.java"
+}, {
+    "name": "AppCfgGlobalEntity",
+    "package": "com.dr.op.app.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "lombok.Data", "javax.persistence.*", "java.io.Serializable"],
+    "class_name": "AppCfgGlobalEntity implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/entity/AppCfgGlobalEntity.java"
+}, {
+    "name": "AppCenterFastEntrance",
+    "package": "com.dr.op.app.entity",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.annotation.IdType", "com.baomidou.mybatisplus.annotation.TableId", "com.baomidou.mybatisplus.annotation.TableName", "lombok.Data", "javax.persistence.*", "java.io.Serializable"],
+    "class_name": "AppCenterFastEntrance implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/entity/AppCenterFastEntrance.java"
+}, {
+    "name": "AppCenterTop",
+    "package": "com.dr.op.app.entity",
+    "type": "class",
+    "imports": ["lombok.Data", "javax.persistence.*"],
+    "class_name": "AppCenterTop",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/entity/AppCenterTop.java"
+}, {
+    "name": "AppCfgPersonalPrivilegeEntity",
+    "package": "com.dr.op.app.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "lombok.Data", "javax.persistence.*", "java.io.Serializable"],
+    "class_name": "AppCfgPersonalPrivilegeEntity implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/entity/AppCfgPersonalPrivilegeEntity.java"
+}, {
+    "name": "AttachmentInfo",
+    "package": "com.dr.op.app.http",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AttachmentInfo",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/AttachmentInfo.java"
+}, {
+    "name": "AppWorkbenchInfoResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppWorkbenchInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppWorkbenchInfoResponse.java"
+}, {
+    "name": "AppAuthConfigItem",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Objects"],
+    "class_name": "AppAuthConfigItem",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppAuthConfigItem.java"
+}, {
+    "name": "AppStoreListResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppStoreListResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppStoreListResponse.java"
+}, {
+    "name": "AppUpdateDescResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["com.dr.op.app.http.AttachmentInfo", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "AppUpdateDescResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppUpdateDescResponse.java"
+}, {
+    "name": "AppRefreshResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "AppRefreshResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppRefreshResponse.java"
+}, {
+    "name": "AppCenterMenusResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppCenterMenusResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppCenterMenusResponse.java"
+}, {
+    "name": "AppWorkbenchListResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["com.google.common.collect.Lists", "lombok.Data", "org.springframework.util.CollectionUtils", "java.util.List"],
+    "class_name": "AppWorkbenchListResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppWorkbenchListResponse.java"
+}, {
+    "name": "AppAuthAppInfoResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppAuthAppInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppAuthAppInfoResponse.java"
+}, {
+    "name": "AppCenterLockResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["lombok.Data"],
+    "class_name": "AppCenterLockResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppCenterLockResponse.java"
+}, {
+    "name": "AppCenterFastEntranceResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable"],
+    "class_name": "AppCenterFastEntranceResponse implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppCenterFastEntranceResponse.java"
+}, {
+    "name": "AppAuthDetailResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List", "java.util.Set"],
+    "class_name": "AppAuthDetailResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppAuthDetailResponse.java"
+}, {
+    "name": "AppCfgItemResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppCfgItemResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppCfgItemResponse.java"
+}, {
+    "name": "AppCenterSetTopResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["lombok.Data"],
+    "class_name": "AppCenterSetTopResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppCenterSetTopResponse.java"
+}, {
+    "name": "AppPermissionInfoResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppPermissionInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppPermissionInfoResponse.java"
+}, {
+    "name": "AppCfgRuleDetailResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["com.dr.op.dv.http.resp.VisibleRuleLabelResponse", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "AppCfgRuleDetailResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppCfgRuleDetailResponse.java"
+}, {
+    "name": "AppCenterListResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppCenterListResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppCenterListResponse.java"
+}, {
+    "name": "AppAuthInfoResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppAuthInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppAuthInfoResponse.java"
+}, {
+    "name": "AppConfigInfo",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "AppConfigInfo",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppConfigInfo.java"
+}, {
+    "name": "AppConfigPersonalResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppConfigPersonalResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppConfigPersonalResponse.java"
+}, {
+    "name": "AppAssignTargetByIdentityResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "AppAssignTargetByIdentityResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppAssignTargetByIdentityResponse.java"
+}, {
+    "name": "AppRefreshInfoResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppRefreshInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppRefreshInfoResponse.java"
+}, {
+    "name": "AppInfoResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "AppInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppInfoResponse.java"
+}, {
+    "name": "AppDetailResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["com.dr.op.app.http.AttachmentInfo", "com.dr.op.app.http.req.AppMenuInfoRequest", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "AppDetailResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppDetailResponse.java"
+}, {
+    "name": "AppBusinessInfoResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppBusinessInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppBusinessInfoResponse.java"
+}, {
+    "name": "AppStoreSubscribeResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppStoreSubscribeResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppStoreSubscribeResponse.java"
+}, {
+    "name": "AppMenuInfoResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "AppMenuInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppMenuInfoResponse.java"
+}, {
+    "name": "AppCfgAssignTargetByIdentityResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["com.dr.op.app.http.req.AppCfgDetailInfo", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "AppCfgAssignTargetByIdentityResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppCfgAssignTargetByIdentityResponse.java"
+}, {
+    "name": "AppCfgRuleLabelResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppCfgRuleLabelResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppCfgRuleLabelResponse.java"
+}, {
+    "name": "AppWorkbenchLockResponse",
+    "package": "com.dr.op.app.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppWorkbenchLockResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/resp/AppWorkbenchLockResponse.java"
+}, {
+    "name": "AppCenterLockRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.NotBlank"],
+    "class_name": "AppCenterLockRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppCenterLockRequest.java"
+}, {
+    "name": "CommonExceptionModifyRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "CommonExceptionModifyRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/CommonExceptionModifyRequest.java"
+}, {
+    "name": "AppcfgAssignRuleInfo",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["com.dr.op.allocation.consts.AllocationTagSystemKeyEnum", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppcfgAssignRuleInfo",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppcfgAssignRuleInfo.java"
+}, {
+    "name": "AppAssignRuleInfo",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["com.dr.op.allocation.consts.AllocationTagSystemKeyEnum", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppAssignRuleInfo",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppAssignRuleInfo.java"
+}, {
+    "name": "AppAuthDetailRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["com.dr.op.ajc.api.http.request.ConfigItem", "com.dr.op.app.http.resp.AppConfigInfo", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List", "java.util.Set"],
+    "class_name": "AppAuthDetailRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppAuthDetailRequest.java"
+}, {
+    "name": "DeleteCommonRuleRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DeleteCommonRuleRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/DeleteCommonRuleRequest.java"
+}, {
+    "name": "AppCenterMenusRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "AppCenterMenusRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppCenterMenusRequest.java"
+}, {
+    "name": "AppDetailSaveRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["com.dr.op.app.http.AttachmentInfo", "com.dr.op.app.http.resp.*", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.Valid", "java.util.List"],
+    "class_name": "AppDetailSaveRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppDetailSaveRequest.java"
+}, {
+    "name": "AppCfgPersonalPrivilegeInfo",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["com.dr.op.app.http.resp.AppConfigInfo", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "AppCfgPersonalPrivilegeInfo",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppCfgPersonalPrivilegeInfo.java"
+}, {
+    "name": "AppDetailRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull"],
+    "class_name": "AppDetailRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppDetailRequest.java"
+}, {
+    "name": "AppCenterListRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.validation.annotation.Validated"],
+    "class_name": "AppCenterListRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppCenterListRequest.java"
+}, {
+    "name": "AppAuthRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppAuthRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppAuthRequest.java"
+}, {
+    "name": "AppUpdateDescRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["com.dr.op.app.http.AttachmentInfo", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "java.util.List"],
+    "class_name": "AppUpdateDescRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppUpdateDescRequest.java"
+}, {
+    "name": "AppStoreListRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.PageRequest", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List", "java.util.Set"],
+    "class_name": "AppStoreListRequest extends PageRequest",
+    "extend_name": "PageRequest",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppStoreListRequest.java"
+}, {
+    "name": "AppCfgDetailInfo",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["com.dr.op.app.http.resp.AppConfigInfo", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "AppCfgDetailInfo",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppCfgDetailInfo.java"
+}, {
+    "name": "AppStoreSubscribeRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppStoreSubscribeRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppStoreSubscribeRequest.java"
+}, {
+    "name": "AppMenuInfoRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.Valid", "javax.validation.constraints.NotBlank"],
+    "class_name": "AppMenuInfoRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppMenuInfoRequest.java"
+}, {
+    "name": "AppWorkbenchListRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AppWorkbenchListRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppWorkbenchListRequest.java"
+}, {
+    "name": "AppWorkbenchLockRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "AppWorkbenchLockRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppWorkbenchLockRequest.java"
+}, {
+    "name": "AppCenterSetTopRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "AppCenterSetTopRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppCenterSetTopRequest.java"
+}, {
+    "name": "AppPutOnShelvesRequest",
+    "package": "com.dr.op.app.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "AppPutOnShelvesRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/http/req/AppPutOnShelvesRequest.java"
+}, {
+    "name": "AiAppForOA",
+    "package": "com.dr.op.app.ai",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.App", "com.dr.strategy.basic.app.config.AppConfig", "com.dr.strategy.basic.app.consts.AppDisplayEnum", "com.dr.strategy.basic.app.jc.AppJointCertConfigItem", "com.dr.strategy.basic.app.jc.AppJointCertification", "lombok.Data", "static com.dr.op.app.ai.consts.AiAppConst.Key.FAN_WEI_OA_LINE"],
+    "class_name": "AiAppForOA",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/AiAppForOA.java"
+}, {
+    "name": "AiAppForYX",
+    "package": "com.dr.op.app.ai",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.App", "com.dr.strategy.basic.app.config.AppConfig", "com.dr.strategy.basic.app.consts.AppDisplayEnum", "com.dr.strategy.basic.app.jc.AppJointCertConfigItem", "com.dr.strategy.basic.app.jc.AppJointCertification", "lombok.Data", "static com.dr.op.app.ai.consts.AiAppConst.Key.FAN_WEI_YX_LINE"],
+    "class_name": "AiAppForYX",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/AiAppForYX.java"
+}, {
+    "name": "AppAuthTokenRepository",
+    "package": "com.dr.op.app.ai.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.app.ai.entity.AppAuthTokenEntity", "com.dr.op.app.ai.entity.AppAuthTokenId", "org.springframework.data.repository.CrudRepository"],
+    "class_name": "AppAuthTokenRepository extends CrudRepository<AppAuthTokenEntity, AppAuthTokenId>",
+    "extend_name": "CrudRepository<AppAuthTokenEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/repository/AppAuthTokenRepository.java"
+}, {
+    "name": "AppAuthTokenEntity",
+    "package": "com.dr.op.app.ai.entity",
+    "type": "class",
+    "imports": ["lombok.Data", "javax.persistence.EmbeddedId", "javax.persistence.Entity", "javax.persistence.Table"],
+    "class_name": "AppAuthTokenEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/entity/AppAuthTokenEntity.java"
+}, {
+    "name": "AppAuthTokenId",
+    "package": "com.dr.op.app.ai.entity",
+    "type": "class",
+    "imports": ["lombok.Data", "javax.persistence.Embeddable", "java.io.Serializable"],
+    "class_name": "AppAuthTokenId implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/entity/AppAuthTokenId.java"
+}, {
+    "name": "AiYxAuthTokenApi",
+    "package": "com.dr.op.app.ai.api",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.ApiUrlConst", "com.dr.op.app.ai.api.http.req.yx.YxAuthTokenReq", "com.dr.op.app.ai.api.http.res.yx.YxLoginResponse", "com.dr.op.app.ai.service.AiYxAuthTokenService", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController", "javax.validation.Valid"],
+    "class_name": "AiYxAuthTokenApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/api/AiYxAuthTokenApi.java"
+}, {
+    "name": "AiFwAuthTokenApi",
+    "package": "com.dr.op.app.ai.api",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.ApiUrlConst", "com.dr.op.app.ai.api.http.req.BasicAuthTokenReq", "com.dr.op.app.ai.service.AiFwAuthTokenService", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController"],
+    "class_name": "AiFwAuthTokenApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/api/AiFwAuthTokenApi.java"
+}, {
+    "name": "YxLoginResponse",
+    "package": "com.dr.op.app.ai.api.http.res.yx",
+    "type": "class",
+    "imports": ["lombok.Data", "java.io.Serializable"],
+    "class_name": "YxLoginResponse implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/api/http/res/yx/YxLoginResponse.java"
+}, {
+    "name": "BasicAuthTokenReq",
+    "package": "com.dr.op.app.ai.api.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.Api", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.NotBlank", "java.io.Serializable"],
+    "class_name": "BasicAuthTokenReq implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/api/http/req/BasicAuthTokenReq.java"
+}, {
+    "name": "YxLoginInfoParam",
+    "package": "com.dr.op.app.ai.api.http.req.yx",
+    "type": "class",
+    "imports": ["lombok.Data", "java.io.Serializable"],
+    "class_name": "YxLoginInfoParam implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/api/http/req/yx/YxLoginInfoParam.java"
+}, {
+    "name": "YxAuthTokenReq",
+    "package": "com.dr.op.app.ai.api.http.req.yx",
+    "type": "class",
+    "imports": ["com.dr.op.app.ai.api.http.req.BasicAuthTokenReq", "io.swagger.annotations.Api", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.NotBlank", "java.io.Serializable"],
+    "class_name": "YxAuthTokenReq extends BasicAuthTokenReq implements Serializable",
+    "extend_name": "BasicAuthTokenReq",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/api/http/req/yx/YxAuthTokenReq.java"
+}, {
+    "name": "FwLoginInfoParam",
+    "package": "com.dr.op.app.ai.api.http.req.fw",
+    "type": "class",
+    "imports": ["lombok.Data", "java.io.Serializable"],
+    "class_name": "FwLoginInfoParam implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/api/http/req/fw/FwLoginInfoParam.java"
+}, {
+    "name": "AiYxAuthTokenService",
+    "package": "com.dr.op.app.ai.service",
+    "type": "class",
+    "imports": ["com.dr.op.app.ai.api.http.req.yx.YxAuthTokenReq", "com.dr.op.app.ai.api.http.req.yx.YxLoginInfoParam", "com.dr.op.app.ai.api.http.res.yx.YxLoginResponse", "com.dr.op.app.ai.consts.AiAppConst", "com.dr.op.app.ai.consts.HttpURLConnectionUtils", "com.dr.strategy.support.LogElapsedTime", "com.dr.strategy.support.serialization.Serializations", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service"],
+    "class_name": "AiYxAuthTokenService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/service/AiYxAuthTokenService.java"
+}, {
+    "name": "AiFwAuthTokenService",
+    "package": "com.dr.op.app.ai.service",
+    "type": "class",
+    "imports": ["com.dr.op.app.ai.api.http.req.BasicAuthTokenReq", "com.dr.op.app.ai.api.http.req.fw.FwLoginInfoParam", "com.dr.op.app.ai.consts.AiAppConst", "com.dr.op.app.ai.consts.HttpURLConnectionUtils", "com.dr.strategy.support.LogElapsedTime", "com.dr.strategy.support.serialization.Serializations", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service"],
+    "class_name": "AiFwAuthTokenService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/service/AiFwAuthTokenService.java"
+}, {
+    "name": "AiCommonAuthTokenService",
+    "package": "com.dr.op.app.ai.service",
+    "type": "class",
+    "imports": ["com.dr.op.ajc.AppJointCertService", "com.dr.op.ajc.api.http.request.ConfigItem", "com.dr.op.ajc.api.http.response.AppJointCertResponse", "com.dr.op.app.ai.entity.AppAuthTokenEntity", "com.dr.op.app.ai.entity.AppAuthTokenId", "com.dr.op.app.ai.repository.AppAuthTokenRepository", "com.dr.strategy.support.LogElapsedTime", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.util.Objects", "java.util.Optional", "java.util.Set"],
+    "class_name": "AiCommonAuthTokenService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/service/AiCommonAuthTokenService.java"
+}, {
+    "name": "HttpURLConnectionUtils",
+    "package": "com.dr.op.app.ai.consts",
+    "type": "class",
+    "imports": ["java.io.*", "java.net.HttpURLConnection", "java.net.MalformedURLException", "java.net.URL", "java.nio.charset.StandardCharsets"],
+    "class_name": "HttpURLConnectionUtils",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/consts/HttpURLConnectionUtils.java"
+}, {
+    "name": "AiAppConst",
+    "package": "com.dr.op.app.ai.consts",
+    "type": "class",
+    "imports": [],
+    "class_name": "AiAppConst",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/consts/AiAppConst.java"
+}, {
+    "name": "AppAssignApi",
+    "package": "com.dr.op.app.api",
+    "type": "class",
+    "imports": ["com.dr.op.allocation.service.CommonAllocationRuleService", "com.dr.op.app.http.req.AppAssignRuleInfo", "com.dr.op.app.http.req.CommonExceptionModifyRequest", "com.dr.op.app.http.req.DeleteCommonRuleRequest", "com.dr.op.app.http.resp.AppAssignTargetByIdentityResponse", "com.dr.op.app.service.AppAssignService", "com.dr.op.dv.http.resp.VisibleExecListResponse", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.*", "java.util.List", "java.util.Set"],
+    "class_name": "AppAssignApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/api/AppAssignApi.java"
+}, {
+    "name": "AppStoreApi",
+    "package": "com.dr.op.app.api",
+    "type": "class",
+    "imports": ["cn.hutool.core.lang.Assert", "com.dr.op.app.http.req.AppStoreListRequest", "com.dr.op.app.http.req.AppStoreSubscribeRequest", "com.dr.op.app.http.resp.AppStoreListResponse", "com.dr.op.app.http.resp.AppStoreSubscribeResponse", "com.dr.op.app.service.AppStoreService", "com.dr.op.globe.config.OSSConfig", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController", "javax.validation.Valid"],
+    "class_name": "AppStoreApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/api/AppStoreApi.java"
+}, {
+    "name": "AppCenterApi",
+    "package": "com.dr.op.app.api",
+    "type": "class",
+    "imports": ["com.dr.op.app.http.req.*", "com.dr.op.app.http.resp.*", "com.dr.op.app.service.AppCenterService", "com.dr.op.globe.config.OSSConfig", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.annotation.Resource", "javax.validation.constraints.NotNull", "java.util.List"],
+    "class_name": "AppCenterApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/api/AppCenterApi.java"
+}, {
+    "name": "AppCfgApi",
+    "package": "com.dr.op.app.api",
+    "type": "class",
+    "imports": ["com.dr.op.allocation.service.CommonAllocationRuleService", "com.dr.op.app.http.req.*", "com.dr.op.app.http.resp.AppCfgAssignTargetByIdentityResponse", "com.dr.op.app.http.resp.AppConfigInfo", "com.dr.op.app.http.resp.AppConfigPersonalResponse", "com.dr.op.app.http.resp.AppInfoResponse", "com.dr.op.app.service.AppCfgService", "com.dr.op.dv.http.resp.VisibleExecListResponse", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.basic.token.Current", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.*", "lombok.extern.log4j.Log4j2", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.*", "java.util.List", "java.util.Set"],
+    "class_name": "AppCfgApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/api/AppCfgApi.java"
+}, {
+    "name": "ModelConvert",
+    "package": "com.dr.op.app.api",
+    "type": "class",
+    "imports": ["com.dr.op.ajc.api.http.request.ConfigItem", "com.dr.op.ajc.api.http.response.AppJointCertDefineResponse", "com.dr.op.ajc.api.http.response.ConfigDefineItem", "com.dr.op.app.consts.*", "com.dr.op.app.entity.AppAuthSubEntity", "com.dr.op.app.entity.AppCenterFastEntrance", "com.dr.op.app.entity.AppInfoEntity", "com.dr.op.app.entity.AppWorkbenchLock", "com.dr.op.app.http.req.AppCenterLockRequest", "com.dr.op.app.http.req.AppDetailSaveRequest", "com.dr.op.app.http.req.AppMenuInfoRequest", "com.dr.op.app.http.req.AppUpdateDescRequest", "com.dr.op.app.http.resp.*", "com.dr.op.app.service.AppMgrService", "com.dr.strategy.basic.app.config.AppConfigDefine", "com.dr.strategy.basic.app.entity.AppEntity", "com.dr.strategy.basic.app.menu.AppMenuDefine", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.role.entity.RoleEntity", "com.dr.strategy.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.BeanUtils", "org.springframework.util.CollectionUtils", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
+    "class_name": "ModelConvert",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/api/ModelConvert.java"
+}, {
+    "name": "AppWorkbenchApi",
+    "package": "com.dr.op.app.api",
+    "type": "class",
+    "imports": ["com.dr.op.app.http.req.AppWorkbenchListRequest", "com.dr.op.app.http.req.AppWorkbenchLockRequest", "com.dr.op.app.http.resp.AppWorkbenchListResponse", "com.dr.op.app.http.resp.AppWorkbenchLockResponse", "com.dr.op.app.service.AppWorkBenchService", "com.dr.op.globe.config.OSSConfig", "com.dr.op.globe.http.ApiUrlConst", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.annotation.Resource", "javax.validation.Valid"],
+    "class_name": "AppWorkbenchApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/api/AppWorkbenchApi.java"
+}, {
+    "name": "AppMgrApi",
+    "package": "com.dr.op.app.api",
+    "type": "class",
+    "imports": ["com.dr.op.app.consts.AppAuthActionEnum", "com.dr.op.app.http.req.*", "com.dr.op.app.http.resp.*", "com.dr.op.app.service.AppMgrService", "com.dr.op.globe.config.OSSConfig", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull"],
+    "class_name": "AppMgrApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/api/AppMgrApi.java"
+}, {
+    "name": "AppAssignService",
+    "package": "com.dr.op.app.service",
+    "type": "class",
+    "imports": ["com.dr.op.allocation.entity.CommonAllocationRuleEntity", "com.dr.op.allocation.service.CommonAllocationRuleService", "com.dr.op.app.entity.AppInfoEntity", "com.dr.op.app.http.req.AppAssignRuleInfo", "com.dr.op.app.http.resp.AppAssignTargetByIdentityResponse", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.strategy.basic.allocation.BasicAllocationManager", "com.dr.strategy.basic.entity.BasicAllocationRule", "com.dr.strategy.support.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.util.*", "java.util.stream.Collectors"],
+    "class_name": "AppAssignService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/service/AppAssignService.java"
+}, {
+    "name": "AppMgrService",
+    "package": "com.dr.op.app.service",
+    "type": "class",
+    "imports": ["com.dr.op.ajc.AppJointCertService", "com.dr.op.ajc.api.http.request.ConfigItem", "com.dr.op.ajc.api.http.request.SaveAppJointCertRequest", "com.dr.op.ajc.api.http.response.AppJointCertDefineResponse", "com.dr.op.ajc.api.http.response.AppJointCertResponse", "com.dr.op.ajc.api.http.response.ConfigDefineItem", "com.dr.op.app.api.ModelConvert", "com.dr.op.app.consts.*", "com.dr.op.app.entity.AppAuthSubEntity", "com.dr.op.app.entity.AppInfoEntity", "com.dr.op.app.http.req.AppAuthDetailRequest", "com.dr.op.app.http.req.AppDetailSaveRequest", "com.dr.op.app.http.req.AppUpdateDescRequest", "com.dr.op.app.http.resp.*", "com.dr.op.app.repository.AppAuthSubRepository", "com.dr.op.app.repository.AppInfoRepository", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.op.globe.jpa.FallPageable", "com.dr.strategy.basic.account.consts.UnifyAccountState", "com.dr.strategy.basic.app.AppManager", "com.dr.strategy.basic.app.config.AppConfigDefine", "com.dr.strategy.basic.app.entity.AppEntity", "com.dr.strategy.basic.app.entity.BizEntity", "com.dr.strategy.basic.app.menu.AppMenuDefine", "com.dr.strategy.basic.entity.BasicTagEntity", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.role.RoleManager", "com.dr.strategy.basic.role.entity.RoleEntity", "com.dr.strategy.basic.token.Current", "com.dr.strategy.support.LogElapsedTime", "com.dr.strategy.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "lombok.AllArgsConstructor", "lombok.Builder", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "javax.annotation.PostConstruct", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.*", "java.util.function.Consumer", "java.util.function.Function", "java.util.function.Supplier", "java.util.stream.Collectors"],
+    "class_name": "AppMgrService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/service/AppMgrService.java"
+}, {
+    "name": "AppCfgService",
+    "package": "com.dr.op.app.service",
+    "type": "class",
+    "imports": ["com.dr.op.allocation.entity.CommonAllocationRuleEntity", "com.dr.op.allocation.service.CommonAllocationRuleService", "com.dr.op.app.api.ModelConvert", "com.dr.op.app.consts.AppAuthEnum", "com.dr.op.app.consts.AppGloBalCfgEnum", "com.dr.op.app.entity.*", "com.dr.op.app.http.req.AppCfgDetailInfo", "com.dr.op.app.http.req.AppCfgPersonalPrivilegeInfo", "com.dr.op.app.http.req.AppcfgAssignRuleInfo", "com.dr.op.app.http.resp.AppCfgAssignTargetByIdentityResponse", "com.dr.op.app.http.resp.AppConfigInfo", "com.dr.op.app.http.resp.AppConfigPersonalResponse", "com.dr.op.app.http.resp.AppInfoResponse", "com.dr.op.app.repository.*", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.op.globe.jpa.FallPageable", "com.dr.strategy.basic.allocation.BasicAllocationManager", "com.dr.strategy.basic.app.AppManager", "com.dr.strategy.basic.app.config.AppConfigDefine", "com.dr.strategy.basic.app.consts.AppConfigTypeEnum", "com.dr.strategy.basic.entity.BasicAllocationRule", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.support.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "com.google.gson.Gson", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "java.math.BigDecimal", "java.util.*", "java.util.stream.Collectors"],
+    "class_name": "AppCfgService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/service/AppCfgService.java"
+}, {
+    "name": "AppStoreService",
+    "package": "com.dr.op.app.service",
+    "type": "class",
+    "imports": ["com.dr.op.app.api.ModelConvert", "com.dr.op.app.consts.AppAuthActionEnum", "com.dr.op.app.consts.AppAuthEnum", "com.dr.op.app.entity.AppAuthSubEntity", "com.dr.op.app.entity.AppInfoEntity", "com.dr.op.app.http.req.AppStoreListRequest", "com.dr.op.app.http.req.AppStoreSubscribeRequest", "com.dr.op.app.http.resp.AppStoreListResponse", "com.dr.op.app.http.resp.AppStoreSubscribeResponse", "com.dr.op.app.repository.AppAuthSubRepository", "com.dr.op.globe.http.FallPaged", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.support.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "java.util.Comparator", "java.util.List", "java.util.Optional", "java.util.stream.Collectors"],
+    "class_name": "AppStoreService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/service/AppStoreService.java"
+}, {
+    "name": "AppCenterService",
+    "package": "com.dr.op.app.service",
+    "type": "class",
+    "imports": ["com.dr.op.app.api.ModelConvert", "com.dr.op.app.consts.AppInfoTypeEnum", "com.dr.op.app.consts.AppLockStatus", "com.dr.op.app.consts.AppTopType", "com.dr.op.app.entity.AppAuthSubEntity", "com.dr.op.app.entity.AppCenterFastEntrance", "com.dr.op.app.entity.AppCenterTop", "com.dr.op.app.entity.AppInfoEntity", "com.dr.op.app.http.req.AppCenterListRequest", "com.dr.op.app.http.req.AppCenterLockRequest", "com.dr.op.app.http.req.AppCenterMenusRequest", "com.dr.op.app.http.req.AppCenterSetTopRequest", "com.dr.op.app.http.resp.*", "com.dr.op.app.repository.AppCenterFastEntranceRepository", "com.dr.op.app.repository.AppCenterTopRepository", "com.dr.op.globe.exception.BusinessException", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.strategy.basic.token.Current", "com.dr.strategy.support.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "javax.annotation.Resource", "javax.transaction.Transactional", "java.time.Instant", "java.util.*", "java.util.stream.Collectors"],
+    "class_name": "AppCenterService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/service/AppCenterService.java"
+}, {
+    "name": "AppWorkBenchService",
+    "package": "com.dr.op.app.service",
+    "type": "class",
+    "imports": ["com.dr.op.app.api.ModelConvert", "com.dr.op.app.consts.AppDisplayEnum", "com.dr.op.app.consts.AppLockStatus", "com.dr.op.app.consts.AppRegisterStatusEnum", "com.dr.op.app.consts.AppShelveEnum", "com.dr.op.app.entity.AppAuthSubEntity", "com.dr.op.app.entity.AppInfoEntity", "com.dr.op.app.entity.AppWorkbenchLock", "com.dr.op.app.http.req.AppWorkbenchListRequest", "com.dr.op.app.http.resp.AppCenterFastEntranceResponse", "com.dr.op.app.http.resp.AppWorkbenchInfoResponse", "com.dr.op.app.http.resp.AppWorkbenchListResponse", "com.dr.op.app.http.resp.AppWorkbenchLockResponse", "com.dr.op.app.repository.AppAuthSubRepository", "com.dr.op.app.repository.AppInfoRepository", "com.dr.op.app.repository.AppWorkbenchFastRepository", "com.dr.strategy.support.LogElapsedTime", "com.google.common.collect.Lists", "lombok.AllArgsConstructor", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "javax.annotation.Resource", "java.time.Instant", "java.util.Comparator", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors"],
+    "class_name": "AppWorkBenchService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/service/AppWorkBenchService.java"
+}, {
+    "name": "WorkBenchMode",
+    "package": "com.dr.op.app.consts",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor", "org.springframework.util.Assert", "java.util.Arrays", "java.util.Optional"],
+    "class_name": "WorkBenchMode",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/consts/WorkBenchMode.java"
+}, {
+    "name": "SubscribeWay",
+    "package": "com.dr.op.app.consts",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "org.springframework.util.Assert", "java.util.Arrays", "java.util.Optional"],
+    "class_name": "SubscribeWay",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/consts/SubscribeWay.java"
+}, {
+    "name": "AppAuthActionEnum",
+    "package": "com.dr.op.app.consts",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor", "org.springframework.util.Assert", "java.util.Arrays", "java.util.Optional"],
+    "class_name": "AppAuthActionEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/consts/AppAuthActionEnum.java"
+}, {
+    "name": "BusinessTypeAppEnum",
+    "package": "com.dr.op.app.consts",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "org.springframework.util.Assert", "java.util.Arrays", "java.util.Optional"],
+    "class_name": "BusinessTypeAppEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/consts/BusinessTypeAppEnum.java"
+}, {
+    "name": "AppLockStatus",
+    "package": "com.dr.op.app.consts",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor", "org.springframework.util.Assert", "java.util.Arrays", "java.util.Optional"],
+    "class_name": "AppLockStatus",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/consts/AppLockStatus.java"
+}, {
+    "name": "AppTopType",
+    "package": "com.dr.op.app.consts",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor", "org.springframework.util.Assert", "java.util.Arrays", "java.util.Optional"],
+    "class_name": "AppTopType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/consts/AppTopType.java"
+}, {
+    "name": "AppAuthEnum",
+    "package": "com.dr.op.app.consts",
+    "type": "enum",
+    "imports": ["lombok.Getter", "org.springframework.util.Assert", "java.util.Arrays", "java.util.Optional"],
+    "class_name": "AppAuthEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/consts/AppAuthEnum.java"
+}, {
+    "name": "AppRegisterStatusEnum",
+    "package": "com.dr.op.app.consts",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "org.springframework.util.Assert", "java.util.Arrays", "java.util.Optional"],
+    "class_name": "AppRegisterStatusEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/consts/AppRegisterStatusEnum.java"
+}, {
+    "name": "AppGloBalCfgEnum",
+    "package": "com.dr.op.app.consts",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "org.springframework.util.Assert", "java.util.Arrays", "java.util.Optional"],
+    "class_name": "AppGloBalCfgEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/consts/AppGloBalCfgEnum.java"
+}, {
+    "name": "AppInfoTypeEnum",
+    "package": "com.dr.op.app.consts",
+    "type": "enum",
+    "imports": ["com.dr.op.app.http.AttachmentInfo", "com.dr.op.app.http.resp.AppBusinessInfoResponse", "com.dr.op.app.http.resp.AppConfigInfo", "com.dr.op.app.http.resp.AppMenuInfoResponse", "com.dr.op.app.http.resp.AppPermissionInfoResponse", "com.dr.strategy.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.gson.reflect.TypeToken", "lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor", "org.apache.logging.log4j.util.Strings", "java.lang.reflect.Type", "java.util.List"],
+    "class_name": "AppInfoTypeEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/consts/AppInfoTypeEnum.java"
+}, {
+    "name": "AppDisplayEnum",
+    "package": "com.dr.op.app.consts",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "org.springframework.util.Assert", "java.util.Arrays", "java.util.Optional"],
+    "class_name": "AppDisplayEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/consts/AppDisplayEnum.java"
+}, {
+    "name": "AppBasicEnum",
+    "package": "com.dr.op.app.consts",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "org.springframework.util.Assert", "java.util.Arrays", "java.util.Optional"],
+    "class_name": "AppBasicEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/consts/AppBasicEnum.java"
+}, {
+    "name": "AppShelveEnum",
+    "package": "com.dr.op.app.consts",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "org.springframework.util.Assert", "java.util.Arrays", "java.util.Optional"],
+    "class_name": "AppShelveEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/consts/AppShelveEnum.java"
+}, {
+    "name": "IdGenerator",
+    "package": "com.dr.op.globe.util",
+    "type": "class",
+    "imports": ["java.text.SimpleDateFormat", "java.util.Arrays", "java.util.Collections", "java.util.Date", "java.util.List"],
+    "class_name": "IdGenerator",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/util/IdGenerator.java"
+}, {
+    "name": "DateUtils",
+    "package": "com.dr.op.globe.util",
+    "type": "class",
+    "imports": ["org.apache.commons.lang3.StringUtils", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "java.sql.Time", "java.sql.Timestamp", "java.text.ParseException", "java.text.SimpleDateFormat", "java.time.*", "java.time.temporal.ChronoUnit", "java.util.Calendar", "java.util.Date", "java.util.concurrent.TimeUnit"],
+    "class_name": "DateUtils",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/util/DateUtils.java"
+}, {
+    "name": "SnowflakeIdWorker",
+    "package": "com.dr.op.globe.util",
+    "type": "class",
+    "imports": ["org.apache.commons.lang3.RandomUtils", "org.apache.commons.lang3.StringUtils", "org.apache.commons.lang3.SystemUtils", "java.net.Inet4Address", "java.net.UnknownHostException"],
+    "class_name": "SnowflakeIdWorker",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/util/SnowflakeIdWorker.java"
+}, {
+    "name": "RedisComponent",
+    "package": "com.dr.op.globe.config",
+    "type": "class",
+    "imports": ["org.springframework.beans.factory.annotation.Autowired", "org.springframework.data.redis.core.RedisTemplate", "org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer", "org.springframework.data.redis.serializer.RedisSerializer", "org.springframework.data.redis.serializer.StringRedisSerializer", "org.springframework.stereotype.Component", "org.springframework.util.CollectionUtils", "java.util.List", "java.util.Map", "java.util.Set", "java.util.concurrent.TimeUnit"],
+    "class_name": "RedisComponent",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/config/RedisComponent.java"
+}, {
+    "name": "WebMvcConfig",
+    "package": "com.dr.op.globe.config",
+    "type": "class",
+    "imports": ["org.springframework.web.context.request.async.TimeoutCallableProcessingInterceptor", "org.springframework.web.servlet.config.annotation.AsyncSupportConfigurer", "org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport"],
+    "class_name": "WebMvcConfig extends WebMvcConfigurationSupport",
+    "extend_name": "WebMvcConfigurationSupport",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/config/WebMvcConfig.java"
+}, {
+    "name": "TokenConfig",
+    "package": "com.dr.op.globe.config",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.ApiUrlConst", "com.dr.strategy.api.RestApiTokenHandlerFilter", "com.dr.strategy.api.RestApiTokenHandlerFilterForAdmin", "com.dr.strategy.basic.token.TokenManger", "com.google.common.collect.Lists", "org.springframework.boot.web.servlet.FilterRegistrationBean", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration"],
+    "class_name": "TokenConfig",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/config/TokenConfig.java"
+}, {
+    "name": "MongoPrimaryConfig",
+    "package": "com.dr.op.globe.config",
+    "type": "class",
+    "imports": ["org.springframework.beans.factory.annotation.Qualifier", "org.springframework.boot.context.properties.ConfigurationProperties", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "org.springframework.context.annotation.Primary", "org.springframework.data.mongodb.MongoDatabaseFactory", "org.springframework.data.mongodb.core.MongoTemplate", "org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory"],
+    "class_name": "MongoPrimaryConfig extends AbstractMongoConfig",
+    "extend_name": "AbstractMongoConfig",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/config/MongoPrimaryConfig.java"
+}, {
+    "name": "SwaggerConfig",
+    "package": "com.dr.op.globe.config",
+    "type": "class",
+    "imports": ["com.dr.strategy.api.SwaggerConfigBuilder", "lombok.extern.slf4j.Slf4j", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "springfox.documentation.spring.web.plugins.Docket", "springfox.documentation.swagger2.annotations.EnableSwagger2"],
+    "class_name": "SwaggerConfig",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/config/SwaggerConfig.java"
+}, {
+    "name": "MybatisPlusConfig",
+    "package": "com.dr.op.globe.config",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration"],
+    "class_name": "MybatisPlusConfig",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/config/MybatisPlusConfig.java"
+}, {
+    "name": "AbstractMongoConfig",
+    "package": "com.dr.op.globe.config",
+    "type": "abstract class",
+    "imports": ["lombok.Getter", "lombok.Setter"],
+    "class_name": "AbstractMongoConfig",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/config/AbstractMongoConfig.java"
+}, {
+    "name": "OSSConfig",
+    "package": "com.dr.op.globe.config",
+    "type": "class",
+    "imports": ["lombok.Data", "org.apache.logging.log4j.util.Strings", "org.springframework.boot.context.properties.ConfigurationProperties", "org.springframework.context.annotation.Configuration"],
+    "class_name": "OSSConfig",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/config/OSSConfig.java"
+}, {
+    "name": "FallPageable",
+    "package": "com.dr.op.globe.jpa",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.PageRequest", "org.springframework.data.domain.Pageable", "org.springframework.data.domain.Sort", "java.io.Serializable"],
+    "class_name": "FallPageable implements Pageable, Serializable",
+    "extend_name": "",
+    "implements_name": ["Pageable", ""],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/jpa/FallPageable.java"
+}, {
+    "name": "SpringDataPageAble",
+    "package": "com.dr.op.globe.constant",
+    "type": "class",
+    "imports": ["lombok.AllArgsConstructor", "lombok.NoArgsConstructor", "org.springframework.data.domain.Pageable", "org.springframework.data.domain.Sort", "javax.validation.constraints.Min"],
+    "class_name": "SpringDataPageAble implements Pageable",
+    "extend_name": "",
+    "implements_name": ["Pageable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/constant/SpringDataPageAble.java"
+}, {
+    "name": "Constant",
+    "package": "com.dr.op.globe.constant",
+    "type": "interface",
+    "imports": [],
+    "class_name": "Constant",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/constant/Constant.java"
+}, {
+    "name": "CommonResponse<T>",
+    "package": "com.dr.op.globe.constant",
+    "type": "class",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Data"],
+    "class_name": "CommonResponse<T>",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/constant/CommonResponse.java"
+}, {
+    "name": "BizErrorCode",
+    "package": "com.dr.op.globe.constant",
+    "type": "enum",
+    "imports": ["com.dr.op.globe.exception.AssemblyUtil", "lombok.AllArgsConstructor", "lombok.Getter"],
+    "class_name": "BizErrorCode",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/constant/BizErrorCode.java"
+}, {
+    "name": "PageRequest",
+    "package": "com.dr.op.globe.http",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.apache.logging.log4j.util.Strings", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.PositiveOrZero"],
+    "class_name": "PageRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/http/PageRequest.java"
+}, {
+    "name": "ApiUrlConst",
+    "package": "com.dr.op.globe.http",
+    "type": "class",
+    "imports": [],
+    "class_name": "ApiUrlConst",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/http/ApiUrlConst.java"
+}, {
+    "name": "FallObjectPaged<T>",
+    "package": "com.dr.op.globe.http",
+    "type": "class",
+    "imports": ["com.dr.op.imsession.entity.OrgEntity", "io.swagger.annotations.ApiModel", "lombok.Data", "java.util.Set"],
+    "class_name": "FallObjectPaged<T>",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/http/FallObjectPaged.java"
+}, {
+    "name": "Paged<T>",
+    "package": "com.dr.op.globe.http",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "Paged<T>",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/http/Paged.java"
+}, {
+    "name": "FallPaged<T>",
+    "package": "com.dr.op.globe.http",
+    "type": "class",
+    "imports": ["com.google.common.collect.Lists", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.Min", "javax.validation.constraints.NotNull", "java.util.Collection", "java.util.List", "java.util.stream.Collectors"],
+    "class_name": "FallPaged<T>",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/http/FallPaged.java"
+}, {
+    "name": "ErrorCodeEnum",
+    "package": "com.dr.op.globe.exception",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter"],
+    "class_name": "ErrorCodeEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/exception/ErrorCodeEnum.java"
+}, {
+    "name": "AssemblyUtil",
+    "package": "com.dr.op.globe.exception",
+    "type": "class",
+    "imports": [],
+    "class_name": "AssemblyUtil",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/exception/AssemblyUtil.java"
+}, {
+    "name": "SystemException",
+    "package": "com.dr.op.globe.exception",
+    "type": "class",
+    "imports": ["lombok.Setter", "org.apache.logging.log4j.util.Strings"],
+    "class_name": "SystemException extends AbstractException",
+    "extend_name": "AbstractException",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/exception/SystemException.java"
+}, {
+    "name": "SystemError",
+    "package": "com.dr.op.globe.exception",
+    "type": "interface",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter"],
+    "class_name": "SystemError extends ErrorInfo",
+    "extend_name": "ErrorInfo",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/exception/SystemError.java"
+}, {
+    "name": "ErrorInfo",
+    "package": "com.dr.op.globe.exception",
+    "type": "interface",
+    "imports": [],
+    "class_name": "ErrorInfo",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/exception/ErrorInfo.java"
+}, {
+    "name": "AbstractException",
+    "package": "com.dr.op.globe.exception",
+    "type": "abstract class",
+    "imports": [],
+    "class_name": "AbstractException extends RuntimeException implements ErrorInfo",
+    "extend_name": "RuntimeException",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/exception/AbstractException.java"
+}, {
+    "name": "Result<T>",
+    "package": "com.dr.op.globe.exception",
+    "type": "class",
+    "imports": ["lombok.Getter", "lombok.ToString"],
+    "class_name": "Result<T>",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/exception/Result.java"
+}, {
+    "name": "BusinessException",
+    "package": "com.dr.op.globe.exception",
+    "type": "class",
+    "imports": ["com.dr.op.globe.constant.BizErrorCode", "lombok.Setter", "org.apache.logging.log4j.util.Strings"],
+    "class_name": "BusinessException extends AbstractException",
+    "extend_name": "AbstractException",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/exception/BusinessException.java"
+}, {
+    "name": "OpOrgService",
+    "package": "com.dr.op.org",
+    "type": "class",
+    "imports": ["com.dr.op.account.AccountService", "com.dr.op.account.api.AccountModelConvert", "com.dr.op.account.api.http.resp.AccountInfoResponse", "com.dr.op.account.entity.AccountInfoEntity", "com.dr.op.app.entity.AppInfoEntity", "com.dr.op.app.http.resp.AppPermissionInfoResponse", "com.dr.op.app.repository.AppInfoRepository", "com.dr.op.app.service.AppMgrService", "com.dr.op.globe.config.OSSConfig", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.op.globe.jpa.FallPageable", "com.dr.op.org.api.http.request.CreateAccountRequest", "com.dr.op.org.api.http.response.AppAuthDetailResponse", "com.dr.op.org.api.http.response.AppResponse", "com.dr.op.org.api.http.response.OrgInfoDetail", "com.dr.op.org.api.http.response.OrgList", "com.dr.strategy.basic.app.AppManager", "com.dr.strategy.basic.app.consts.AppConfigValueTypeEnum", "com.dr.strategy.basic.app.entity.AppEntity", "com.dr.strategy.basic.entity.IdentityState", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.consts.IdentityRoleRuleEnum", "com.dr.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.role.RoleManager", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.support.LogElapsedTime", "com.dr.strategy.support.serialization.Serializations", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "com.google.gson.Gson", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "javax.annotation.Resource", "java.util.*", "java.util.stream.Collectors"],
+    "class_name": "OpOrgService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/OpOrgService.java"
+}, {
+    "name": "BizOrgService",
+    "package": "com.dr.op.org",
+    "type": "class",
+    "imports": ["com.dr.op.account.AccountService", "com.dr.op.account.api.AccountModelConvert", "com.dr.op.account.api.http.req.ResetPwdRequest", "com.dr.op.account.api.http.resp.AccountInfoResponse", "com.dr.op.account.entity.AccountInfoEntity", "com.dr.op.globe.config.OSSConfig", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.jpa.FallPageable", "com.dr.op.label.service.CustomTagSystemManager", "com.dr.op.org.api.OrgModelConvert", "com.dr.op.org.api.http.Tags", "com.dr.op.org.api.http.request.MemberListRequest", "com.dr.op.org.api.http.request.ModifyLabelRequest", "com.dr.op.org.api.http.request.RoleRuleCorrectRequest", "com.dr.op.org.api.http.request.SaveMemberRequest", "com.dr.op.org.api.http.response.MemberInfoResponse", "com.dr.op.org.api.http.response.MemberResponse", "com.dr.op.org.api.http.response.OrgList", "com.dr.op.org.api.http.response.QueryListResponse", "com.dr.strategy.basic.entity.BasicTagEntity", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.consts.IdentityRoleRuleEnum", "com.dr.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.dr.strategy.basic.role.RoleManager", "com.dr.strategy.basic.role.entity.RoleEntity", "com.dr.strategy.basic.tag.preset.BasicTagSystem", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.support.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "com.google.gson.Gson", "org.apache.logging.log4j.util.Strings", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "javax.annotation.Resource", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.*", "java.util.stream.Collectors"],
+    "class_name": "BizOrgService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/BizOrgService.java"
+}, {
+    "name": "IdentityClass",
+    "package": "com.dr.op.org.constant",
+    "type": "enum",
+    "imports": ["com.dr.strategy.basic.identity.consts.IdentityTypeEnum", "com.google.common.collect.Sets", "lombok.Getter", "java.util.Set"],
+    "class_name": "IdentityClass",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/constant/IdentityClass.java"
+}, {
+    "name": "OrgModelConvert",
+    "package": "com.dr.op.org.api",
+    "type": "class",
+    "imports": ["com.dr.op.account.api.http.resp.AccountInfoResponse", "com.dr.op.org.api.http.response.MemberInfoResponse", "com.dr.strategy.basic.identity.entity.IdentityEntity"],
+    "class_name": "OrgModelConvert",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/OrgModelConvert.java"
+}, {
+    "name": "OpOrganizationApi",
+    "package": "com.dr.op.org.api",
+    "type": "class",
+    "imports": ["com.dr.op.app.http.req.AppAuthDetailRequest", "com.dr.op.app.service.AppMgrService", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.op.org.BizOrgService", "com.dr.op.org.OpOrgService", "com.dr.op.org.api.http.request.CreateAccountRequest", "com.dr.op.org.api.http.request.SwitchRequest", "com.dr.op.org.api.http.response.*", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.annotation.Resource", "javax.validation.Valid"],
+    "class_name": "OpOrganizationApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/OpOrganizationApi.java"
+}, {
+    "name": "BizOrganizationApi",
+    "package": "com.dr.op.org.api",
+    "type": "class",
+    "imports": ["com.dr.op.account.AccountService", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.op.org.BizOrgService", "com.dr.op.org.api.http.request.*", "com.dr.op.org.api.http.response.*", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.*", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "java.util.List", "java.util.Set", "java.util.stream.Collectors"],
+    "class_name": "BizOrganizationApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/BizOrganizationApi.java"
+}, {
+    "name": "Tags",
+    "package": "com.dr.op.org.api.http",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Set"],
+    "class_name": "Tags",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/Tags.java"
+}, {
+    "name": "LabelCorrectResponse",
+    "package": "com.dr.op.org.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "LabelCorrectResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/response/LabelCorrectResponse.java"
+}, {
+    "name": "AppAuthDetailResponse",
+    "package": "com.dr.op.org.api.http.response",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.consts.AppConfigValueTypeEnum", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
+    "class_name": "AppAuthDetailResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/response/AppAuthDetailResponse.java"
+}, {
+    "name": "QueryListResponse",
+    "package": "com.dr.op.org.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "QueryListResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/response/QueryListResponse.java"
+}, {
+    "name": "AppResponse",
+    "package": "com.dr.op.org.api.http.response",
+    "type": "class",
+    "imports": ["com.dr.op.app.http.resp.AppPermissionInfoResponse", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Id", "java.util.List"],
+    "class_name": "AppResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/response/AppResponse.java"
+}, {
+    "name": "PresetRoleResponse",
+    "package": "com.dr.op.org.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
+    "class_name": "PresetRoleResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/response/PresetRoleResponse.java"
+}, {
+    "name": "PresetTagResponse",
+    "package": "com.dr.op.org.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "PresetTagResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/response/PresetTagResponse.java"
+}, {
+    "name": "OrgInfoDetail",
+    "package": "com.dr.op.org.api.http.response",
+    "type": "class",
+    "imports": ["com.dr.op.account.api.http.AccountInfoAttachment", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
+    "class_name": "OrgInfoDetail",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/response/OrgInfoDetail.java"
+}, {
+    "name": "RoleRuleCorrectResponse",
+    "package": "com.dr.op.org.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "RoleRuleCorrectResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/response/RoleRuleCorrectResponse.java"
+}, {
+    "name": "MemberInfoResponse",
+    "package": "com.dr.op.org.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "MemberInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/response/MemberInfoResponse.java"
+}, {
+    "name": "PresetRole",
+    "package": "com.dr.op.org.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "PresetRole",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/response/PresetRole.java"
+}, {
+    "name": "OrgList",
+    "package": "com.dr.op.org.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "OrgList",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/response/OrgList.java"
+}, {
+    "name": "MemberResponse",
+    "package": "com.dr.op.org.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "MemberResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/response/MemberResponse.java"
+}, {
+    "name": "SwitchRequest",
+    "package": "com.dr.op.org.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "SwitchRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/request/SwitchRequest.java"
+}, {
+    "name": "ModifyLabelRequest",
+    "package": "com.dr.op.org.api.http.request",
+    "type": "class",
+    "imports": ["com.dr.op.org.api.http.Tags", "com.google.common.collect.Maps", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Map", "java.util.Set"],
+    "class_name": "ModifyLabelRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/request/ModifyLabelRequest.java"
+}, {
+    "name": "CreateAccountRequest",
+    "package": "com.dr.op.org.api.http.request",
+    "type": "class",
+    "imports": ["com.dr.op.account.api.http.AccountInfoAttachment", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull", "java.util.Set"],
+    "class_name": "CreateAccountRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/request/CreateAccountRequest.java"
+}, {
+    "name": "MemberListRequest",
+    "package": "com.dr.op.org.api.http.request",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.PageRequest", "com.dr.op.org.constant.IdentityClass", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.EqualsAndHashCode", "javax.validation.constraints.NotBlank"],
+    "class_name": "MemberListRequest extends PageRequest",
+    "extend_name": "PageRequest",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/request/MemberListRequest.java"
+}, {
+    "name": "SaveMemberRequest",
+    "package": "com.dr.op.org.api.http.request",
+    "type": "class",
+    "imports": ["com.dr.op.account.consts.AccountTypeEnum", "com.dr.op.account.entity.AccountInfoEntity", "com.dr.strategy.support.serialization.Serializations", "com.google.common.collect.Sets", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.apache.logging.log4j.util.Strings"],
+    "class_name": "SaveMemberRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/request/SaveMemberRequest.java"
+}, {
+    "name": "ResetPasswordRequest",
+    "package": "com.dr.op.org.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "ResetPasswordRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/request/ResetPasswordRequest.java"
+}, {
+    "name": "RoleRuleCorrectRequest",
+    "package": "com.dr.op.org.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "RoleRuleCorrectRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/org/api/http/request/RoleRuleCorrectRequest.java"
+}, {
+    "name": "LabelInfoRepository",
+    "package": "com.dr.op.label.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.label.entity.LabelInfoEntity", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional", "java.util.stream.Stream"],
+    "class_name": "LabelInfoRepository extends CrudRepository<LabelInfoEntity, Integer>",
+    "extend_name": "CrudRepository<LabelInfoEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/repository/LabelInfoRepository.java"
+}, {
+    "name": "LabelInfoEntity",
+    "package": "com.dr.op.label.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicTagEntity", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.Entity", "javax.persistence.Table", "java.io.Serializable"],
+    "class_name": "LabelInfoEntity extends BasicTagEntity implements Serializable",
+    "extend_name": "BasicTagEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/entity/LabelInfoEntity.java"
+}, {
+    "name": "LabelOpApi",
+    "package": "com.dr.op.label.api",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.ApiUrlConst", "com.dr.op.org.api.http.response.PresetTagResponse", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.basic.tag.TagSystemManager", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController", "java.util.Set", "java.util.stream.Collectors"],
+    "class_name": "LabelOpApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/api/LabelOpApi.java"
+}, {
+    "name": "LabelSystemApi",
+    "package": "com.dr.op.label.api",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.op.label.api.http.request.*", "com.dr.op.label.api.http.response.LabelInfoDetail", "com.dr.op.label.api.http.response.LabelShortInfoResponse", "com.dr.op.label.entity.LabelInfoEntity", "com.dr.op.label.service.LabelService", "com.dr.op.label.service.LabelSystemService", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.tag.entity.TagSystemEntity", "com.dr.strategy.basic.token.Current", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.*", "javax.annotation.Resource", "javax.validation.Valid", "java.util.List", "java.util.Optional"],
+    "class_name": "LabelSystemApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/api/LabelSystemApi.java"
+}, {
+    "name": "LabelInfoDetail",
+    "package": "com.dr.op.label.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull", "java.util.List"],
+    "class_name": "LabelInfoDetail",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/api/http/response/LabelInfoDetail.java"
+}, {
+    "name": "LabelShortInfoResponse",
+    "package": "com.dr.op.label.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "LabelShortInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/api/http/response/LabelShortInfoResponse.java"
+}, {
+    "name": "LabelSystemRequest",
+    "package": "com.dr.op.label.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "LabelSystemRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/api/http/request/LabelSystemRequest.java"
+}, {
+    "name": "LabelSystemSaveReq",
+    "package": "com.dr.op.label.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "LabelSystemSaveReq",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/api/http/request/LabelSystemSaveReq.java"
+}, {
+    "name": "LabelSaveReq",
+    "package": "com.dr.op.label.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull"],
+    "class_name": "LabelSaveReq",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/api/http/request/LabelSaveReq.java"
+}, {
+    "name": "LabelUpdateStateReq",
+    "package": "com.dr.op.label.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "LabelUpdateStateReq",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/api/http/request/LabelUpdateStateReq.java"
+}, {
+    "name": "LabelRequest",
+    "package": "com.dr.op.label.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "LabelRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/api/http/request/LabelRequest.java"
+}, {
+    "name": "LabelService",
+    "package": "com.dr.op.label.service",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.op.label.api.http.request.LabelRequest", "com.dr.op.label.api.http.request.LabelSaveReq", "com.dr.op.label.api.http.response.LabelInfoDetail", "com.dr.op.label.api.http.response.LabelShortInfoResponse", "com.dr.op.label.entity.LabelInfoEntity", "com.dr.op.label.repository.LabelInfoRepository", "com.dr.strategy.basic.entity.BasicTagEntity", "com.dr.strategy.basic.entity.EntityState", "com.dr.strategy.basic.tag.TagSystemManager", "com.dr.strategy.basic.tag.preset.BasicTagSystem", "com.dr.strategy.setting.ServerSettings", "com.dr.strategy.support.enums.Enumerations", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.BeanUtils", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "javax.annotation.Resource", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotEmpty", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.stream.Collectors"],
+    "class_name": "LabelService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/service/LabelService.java"
+}, {
+    "name": "LabelSystemService",
+    "package": "com.dr.op.label.service",
+    "type": "class",
+    "imports": ["com.dr.op.globe.exception.BusinessException", "com.dr.op.label.api.http.request.LabelSystemSaveReq", "com.dr.strategy.basic.entity.EntityState", "com.dr.strategy.basic.tag.entity.TagSystemEntity", "com.dr.strategy.support.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "javax.annotation.Resource", "javax.transaction.Transactional", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotEmpty", "javax.validation.constraints.NotNull", "javax.validation.constraints.PositiveOrZero", "java.time.Instant", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
+    "class_name": "LabelSystemService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/service/LabelSystemService.java"
+}, {
+    "name": "CustomTagSystemManager",
+    "package": "com.dr.op.label.service",
+    "type": "class",
+    "imports": ["com.dr.op.label.entity.LabelInfoEntity", "com.dr.op.label.repository.LabelInfoRepository", "com.dr.strategy.basic.entity.EntityState", "com.dr.strategy.basic.tag.consts.TagTypeEnum", "com.dr.strategy.basic.tag.entity.TagSystemEntity", "com.dr.strategy.basic.tag.preset.BasicTagSystem", "com.dr.strategy.basic.tag.preset.PresetTagSystemContainer", "com.dr.strategy.basic.tag.repository.TagSystemRepository", "com.dr.strategy.setting.ServerSettings", "com.dr.strategy.support.LogElapsedTime", "com.dr.strategy.support.enums.Enumerations", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.data.redis.core.RedisTemplate", "org.springframework.stereotype.Component", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors", "static com.dr.strategy.basic.tag.consts.TagSystemType.CUSTOM_TAG_SYSTEM"],
+    "class_name": "CustomTagSystemManager extends BasicTagSystem",
+    "extend_name": "BasicTagSystem",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/service/CustomTagSystemManager.java"
+}, {
+    "name": "LabelType",
+    "package": "com.dr.op.label.consts",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "LabelType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/consts/LabelType.java"
+}, {
+    "name": "ReplyInfo",
+    "package": "com.dr.op.bussiness.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicEntity", "lombok.Data"],
+    "class_name": "ReplyInfo extends BasicEntity",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/entity/ReplyInfo.java"
+}, {
+    "name": "Collect",
+    "package": "com.dr.op.bussiness.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicEntity", "lombok.Data"],
+    "class_name": "Collect extends BasicEntity",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/entity/Collect.java"
+}, {
+    "name": "RealtimeInfo",
+    "package": "com.dr.op.bussiness.entity",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.annotation.IdType", "com.baomidou.mybatisplus.annotation.TableId", "com.baomidou.mybatisplus.annotation.TableName", "com.dr.strategy.basic.entity.BasicEntity", "io.swagger.annotations.ApiModel", "lombok.Data", "javax.persistence.*"],
+    "class_name": "RealtimeInfo extends BasicEntity",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/entity/RealtimeInfo.java"
+}, {
+    "name": "TasksEntity",
+    "package": "com.dr.op.bussiness.entity",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.annotation.IdType", "com.baomidou.mybatisplus.annotation.TableId", "com.baomidou.mybatisplus.annotation.TableName", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.*"],
+    "class_name": "TasksEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/entity/TasksEntity.java"
+}, {
+    "name": "Comment",
+    "package": "com.dr.op.bussiness.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicEntity", "lombok.Data"],
+    "class_name": "Comment extends BasicEntity",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/entity/Comment.java"
+}, {
+    "name": "DataBoardLock",
+    "package": "com.dr.op.bussiness.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicEntity", "lombok.Data"],
+    "class_name": "DataBoardLock extends BasicEntity",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/entity/DataBoardLock.java"
+}, {
+    "name": "BroadcastManager",
+    "package": "com.dr.op.bussiness.entity",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.annotation.IdType", "com.baomidou.mybatisplus.annotation.TableId", "com.baomidou.mybatisplus.annotation.TableName", "com.dr.strategy.basic.token.Current", "com.dr.strategy.basic.token.CurrentUser", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.*", "java.time.Instant"],
+    "class_name": "BroadcastManager",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/entity/BroadcastManager.java"
+}, {
+    "name": "Broadcast",
+    "package": "com.dr.op.bussiness.entity",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.annotation.IdType", "com.baomidou.mybatisplus.annotation.TableId", "com.baomidou.mybatisplus.annotation.TableName", "com.dr.strategy.basic.entity.BasicEntity", "lombok.Data", "javax.persistence.*"],
+    "class_name": "Broadcast  extends BasicEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/entity/Broadcast.java"
+}, {
+    "name": "RealtimeInfoDistribution",
+    "package": "com.dr.op.bussiness.entity",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.annotation.IdType", "com.baomidou.mybatisplus.annotation.TableId", "com.baomidou.mybatisplus.annotation.TableName", "com.dr.strategy.basic.token.Current", "com.dr.strategy.basic.token.CurrentUser", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.*", "java.time.Instant"],
+    "class_name": "RealtimeInfoDistribution",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/entity/RealtimeInfoDistribution.java"
+}, {
+    "name": "CollectType",
+    "package": "com.dr.op.bussiness.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "CollectType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/enums/CollectType.java"
+}, {
+    "name": "RealTimeInfoType",
+    "package": "com.dr.op.bussiness.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "RealTimeInfoType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/enums/RealTimeInfoType.java"
+}, {
+    "name": "KindType",
+    "package": "com.dr.op.bussiness.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "KindType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/enums/KindType.java"
+}, {
+    "name": "OperateType",
+    "package": "com.dr.op.bussiness.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "OperateType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/enums/OperateType.java"
+}, {
+    "name": "LockType",
+    "package": "com.dr.op.bussiness.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "LockType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/enums/LockType.java"
+}, {
+    "name": "EntryType",
+    "package": "com.dr.op.bussiness.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "EntryType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/enums/EntryType.java"
+}, {
+    "name": "InfoStatusType",
+    "package": "com.dr.op.bussiness.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "InfoStatusType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/enums/InfoStatusType.java"
+}, {
+    "name": "LabelType",
+    "package": "com.dr.op.bussiness.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "LabelType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/enums/LabelType.java"
+}, {
+    "name": "FilterType",
+    "package": "com.dr.op.bussiness.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "FilterType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/enums/FilterType.java"
+}, {
+    "name": "RealtimeInfoDistributionMapper",
+    "package": "com.dr.op.bussiness.mapper",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.dr.op.bussiness.entity.RealtimeInfoDistribution", "java.util.List"],
+    "class_name": "RealtimeInfoDistributionMapper extends BaseMapper<RealtimeInfoDistribution>",
+    "extend_name": "BaseMapper<RealtimeInfoDistribution>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/RealtimeInfoDistributionMapper.java"
+}, {
+    "name": "CommentMapper",
+    "package": "com.dr.op.bussiness.mapper",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.op.bussiness.entity.Comment", "java.util.List"],
+    "class_name": "CommentMapper extends BaseMapper<Comment>",
+    "extend_name": "BaseMapper<Comment>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/CommentMapper.java"
+}, {
+    "name": "RealtimeInfoMapper",
+    "package": "com.dr.op.bussiness.mapper",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.op.bussiness.api.request.RealtimeInfoRequest", "com.dr.op.bussiness.api.response.RealTimeInfoDetailResponse", "com.dr.op.bussiness.entity.RealtimeInfo", "org.apache.ibatis.annotations.Param", "java.util.List"],
+    "class_name": "RealtimeInfoMapper extends BaseMapper<RealtimeInfo>",
+    "extend_name": "BaseMapper<RealtimeInfo>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/RealtimeInfoMapper.java"
+}, {
+    "name": "ReplyInfoMapper",
+    "package": "com.dr.op.bussiness.mapper",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.op.bussiness.entity.ReplyInfo", "java.util.List"],
+    "class_name": "ReplyInfoMapper extends BaseMapper<ReplyInfo>",
+    "extend_name": "BaseMapper<ReplyInfo>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/ReplyInfoMapper.java"
+}, {
+    "name": "TaskMapper",
+    "package": "com.dr.op.bussiness.mapper",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.baomidou.mybatisplus.core.metadata.IPage", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.op.bussiness.api.request.TasksListRequest", "com.dr.op.bussiness.api.request.TasksRequest", "com.dr.op.bussiness.entity.TasksEntity", "org.apache.ibatis.annotations.Mapper", "org.apache.ibatis.annotations.Param", "java.util.List"],
+    "class_name": "TaskMapper extends BaseMapper<TasksEntity>",
+    "extend_name": "BaseMapper<TasksEntity>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/TaskMapper.java"
+}, {
+    "name": "CollectMapper",
+    "package": "com.dr.op.bussiness.mapper",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.dr.op.bussiness.entity.Collect", "java.util.List"],
+    "class_name": "CollectMapper extends BaseMapper<Collect>",
+    "extend_name": "BaseMapper<Collect>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/CollectMapper.java"
+}, {
+    "name": "BroadcastManagerMapper",
+    "package": "com.dr.op.bussiness.mapper",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.dr.op.bussiness.entity.BroadcastManager", "org.apache.ibatis.annotations.Param", "java.util.List"],
+    "class_name": "BroadcastManagerMapper extends BaseMapper<BroadcastManager>",
+    "extend_name": "BaseMapper<BroadcastManager>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/BroadcastManagerMapper.java"
+}, {
+    "name": "BroadcastMapper",
+    "package": "com.dr.op.bussiness.mapper",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.op.bussiness.entity.Broadcast", "java.util.List"],
+    "class_name": "BroadcastMapper extends BaseMapper<Broadcast>",
+    "extend_name": "BaseMapper<Broadcast>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/BroadcastMapper.java"
+}, {
+    "name": "DataBoardLockMapper",
+    "package": "com.dr.op.bussiness.mapper",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.dr.op.bussiness.entity.DataBoardLock", "java.util.List"],
+    "class_name": "DataBoardLockMapper extends BaseMapper<DataBoardLock>",
+    "extend_name": "BaseMapper<DataBoardLock>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/DataBoardLockMapper.java"
+}, {
+    "name": "RealtimeInfoApi",
+    "package": "com.dr.op.bussiness.api",
+    "type": "class",
+    "imports": ["cn.hutool.core.util.ObjectUtil", "com.dr.op.bussiness.api.request.CommentRequest", "com.dr.op.bussiness.api.request.RealtimeInfoRequest", "com.dr.op.bussiness.api.request.ReplyRequest", "com.dr.op.bussiness.api.response.CommentResponse", "com.dr.op.bussiness.api.response.RealTimeInfoDetailResponse", "com.dr.op.bussiness.api.response.RealtimeInfoResponse", "com.dr.op.bussiness.api.response.ReplyResponse", "com.dr.op.bussiness.service.RealtimeInfoService", "com.dr.op.globe.constant.BizErrorCode", "com.dr.op.globe.exception.BusinessException", "com.dr.op.globe.exception.SystemError", "com.dr.op.globe.exception.SystemException", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.strategy.api.ServiceResponse", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController"],
+    "class_name": "RealtimeInfoApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/RealtimeInfoApi.java"
+}, {
+    "name": "BoardApi",
+    "package": "com.dr.op.bussiness.api",
+    "type": "class",
+    "imports": ["cn.hutool.core.util.ObjectUtil", "com.dr.op.bussiness.api.request.BoardRequest", "com.dr.op.bussiness.service.BoardService", "com.dr.op.globe.constant.BizErrorCode", "com.dr.op.globe.exception.BusinessException", "com.dr.op.globe.exception.SystemError", "com.dr.op.globe.exception.SystemException", "com.dr.op.globe.http.ApiUrlConst", "com.dr.strategy.api.ServiceResponse", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController"],
+    "class_name": "BoardApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/BoardApi.java"
+}, {
+    "name": "BroadcastApi",
+    "package": "com.dr.op.bussiness.api",
+    "type": "class",
+    "imports": ["cn.hutool.core.util.ObjectUtil", "com.dr.op.bussiness.api.request.*", "com.dr.op.bussiness.api.response.BroadcastRealTimeInfoResponse", "com.dr.op.bussiness.api.response.BroadcastResponse", "com.dr.op.bussiness.service.BroadcastService", "com.dr.op.globe.constant.BizErrorCode", "com.dr.op.globe.exception.BusinessException", "com.dr.op.globe.exception.SystemError", "com.dr.op.globe.exception.SystemException", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController"],
+    "class_name": "BroadcastApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/BroadcastApi.java"
+}, {
+    "name": "TasksApi",
+    "package": "com.dr.op.bussiness.api",
+    "type": "class",
+    "imports": ["com.dr.op.bussiness.api.request.TasksListRequest", "com.dr.op.bussiness.api.request.TasksRequest", "com.dr.op.bussiness.api.response.TaskClassifyResponse", "com.dr.op.bussiness.entity.TasksEntity", "com.dr.op.bussiness.service.TaskService", "com.dr.op.globe.constant.BizErrorCode", "com.dr.op.globe.exception.BusinessException", "com.dr.op.globe.exception.SystemError", "com.dr.op.globe.exception.SystemException", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.support.serialization.Serializations", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "org.apache.logging.log4j.util.Strings", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.web.bind.annotation.*", "javax.annotation.Resource"],
+    "class_name": "TasksApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/TasksApi.java"
+}, {
+    "name": "RealTimeInfoDetailResponse",
+    "package": "com.dr.op.bussiness.api.response",
+    "type": "class",
+    "imports": ["com.dr.op.bussiness.entity.Comment", "com.dr.op.bussiness.entity.ReplyInfo", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "RealTimeInfoDetailResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/response/RealTimeInfoDetailResponse.java"
+}, {
+    "name": "BroadcastResponse",
+    "package": "com.dr.op.bussiness.api.response",
+    "type": "class",
+    "imports": ["com.dr.op.bussiness.entity.BroadcastManager", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "BroadcastResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/response/BroadcastResponse.java"
+}, {
+    "name": "AddRealTimeInfoResponse",
+    "package": "com.dr.op.bussiness.api.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AddRealTimeInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/response/AddRealTimeInfoResponse.java"
+}, {
+    "name": "RealtimeInfoResponse",
+    "package": "com.dr.op.bussiness.api.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "lombok.Data", "javax.persistence.Id", "java.util.Date"],
+    "class_name": "RealtimeInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/response/RealtimeInfoResponse.java"
+}, {
+    "name": "ManagerResponse",
+    "package": "com.dr.op.bussiness.api.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "ManagerResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/response/ManagerResponse.java"
+}, {
+    "name": "TaskClassifyResponse",
+    "package": "com.dr.op.bussiness.api.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "TaskClassifyResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/response/TaskClassifyResponse.java"
+}, {
+    "name": "SuscribeAppResponse",
+    "package": "com.dr.op.bussiness.api.response",
+    "type": "class",
+    "imports": ["lombok.Data"],
+    "class_name": "SuscribeAppResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/response/SuscribeAppResponse.java"
+}, {
+    "name": "DataBoardResponse",
+    "package": "com.dr.op.bussiness.api.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DataBoardResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/response/DataBoardResponse.java"
+}, {
+    "name": "CommentResponse",
+    "package": "com.dr.op.bussiness.api.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "CommentResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/response/CommentResponse.java"
+}, {
+    "name": "BroadcastRealTimeInfoResponse",
+    "package": "com.dr.op.bussiness.api.response",
+    "type": "class",
+    "imports": ["lombok.Data", "java.util.Date"],
+    "class_name": "BroadcastRealTimeInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/response/BroadcastRealTimeInfoResponse.java"
+}, {
+    "name": "ReplyResponse",
+    "package": "com.dr.op.bussiness.api.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "ReplyResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/response/ReplyResponse.java"
+}, {
+    "name": "BoardResponse",
+    "package": "com.dr.op.bussiness.api.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "BoardResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/response/BoardResponse.java"
+}, {
+    "name": "BroadcastRequest",
+    "package": "com.dr.op.bussiness.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "BroadcastRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/request/BroadcastRequest.java"
+}, {
+    "name": "RealtimeInfoRequest",
+    "package": "com.dr.op.bussiness.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "RealtimeInfoRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/request/RealtimeInfoRequest.java"
+}, {
+    "name": "AddRealTimeInfoRequest",
+    "package": "com.dr.op.bussiness.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AddRealTimeInfoRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/request/AddRealTimeInfoRequest.java"
+}, {
+    "name": "CommentRequest",
+    "package": "com.dr.op.bussiness.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "CommentRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/request/CommentRequest.java"
+}, {
+    "name": "TasksRequest",
+    "package": "com.dr.op.bussiness.api.request",
+    "type": "class",
+    "imports": ["com.dr.op.bussiness.entity.TasksEntity", "io.swagger.annotations.ApiModel", "lombok.Data", "lombok.EqualsAndHashCode"],
+    "class_name": "TasksRequest extends TasksEntity",
+    "extend_name": "TasksEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/request/TasksRequest.java"
+}, {
+    "name": "SuscribeAppRequest",
+    "package": "com.dr.op.bussiness.api.request",
+    "type": "class",
+    "imports": ["lombok.Data"],
+    "class_name": "SuscribeAppRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/request/SuscribeAppRequest.java"
+}, {
+    "name": "PublishRequest",
+    "package": "com.dr.op.bussiness.api.request",
+    "type": "class",
+    "imports": ["com.dr.op.bussiness.entity.RealtimeInfoDistribution", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "PublishRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/request/PublishRequest.java"
+}, {
+    "name": "BroadcastRealTimeInfoRequest",
+    "package": "com.dr.op.bussiness.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "BroadcastRealTimeInfoRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/request/BroadcastRealTimeInfoRequest.java"
+}, {
+    "name": "BoardRequest",
+    "package": "com.dr.op.bussiness.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "BoardRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/request/BoardRequest.java"
+}, {
+    "name": "ManagerRequest",
+    "package": "com.dr.op.bussiness.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "ManagerRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/request/ManagerRequest.java"
+}, {
+    "name": "AddBroadcastRequest",
+    "package": "com.dr.op.bussiness.api.request",
+    "type": "class",
+    "imports": ["com.dr.op.bussiness.entity.BroadcastManager", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "AddBroadcastRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/request/AddBroadcastRequest.java"
+}, {
+    "name": "ReplyRequest",
+    "package": "com.dr.op.bussiness.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "ReplyRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/request/ReplyRequest.java"
+}, {
+    "name": "TasksListRequest",
+    "package": "com.dr.op.bussiness.api.request",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.PageRequest", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.EqualsAndHashCode"],
+    "class_name": "TasksListRequest extends PageRequest",
+    "extend_name": "PageRequest",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/api/request/TasksListRequest.java"
+}, {
+    "name": "RealtimeInfoService",
+    "package": "com.dr.op.bussiness.service",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.extension.service.IService", "com.dr.op.bussiness.api.request.CommentRequest", "com.dr.op.bussiness.api.request.RealtimeInfoRequest", "com.dr.op.bussiness.api.request.ReplyRequest", "com.dr.op.bussiness.api.response.CommentResponse", "com.dr.op.bussiness.api.response.RealTimeInfoDetailResponse", "com.dr.op.bussiness.api.response.RealtimeInfoResponse", "com.dr.op.bussiness.api.response.ReplyResponse", "com.dr.op.bussiness.entity.RealtimeInfo", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest"],
+    "class_name": "RealtimeInfoService extends IService<RealtimeInfo>",
+    "extend_name": "IService<RealtimeInfo>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/RealtimeInfoService.java"
+}, {
+    "name": "BroadcastService",
+    "package": "com.dr.op.bussiness.service",
+    "type": "interface",
+    "imports": ["com.dr.op.bussiness.api.request.AddBroadcastRequest", "com.dr.op.bussiness.api.request.AddRealTimeInfoRequest", "com.dr.op.bussiness.api.request.BroadcastRealTimeInfoRequest", "com.dr.op.bussiness.api.request.BroadcastRequest", "com.dr.op.bussiness.api.response.AddRealTimeInfoResponse", "com.dr.op.bussiness.api.response.BroadcastRealTimeInfoResponse", "com.dr.op.bussiness.api.response.BroadcastResponse", "com.dr.op.bussiness.entity.RealtimeInfoDistribution", "com.dr.op.globe.http.FallPaged", "java.util.List"],
+    "class_name": "BroadcastService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/BroadcastService.java"
+}, {
+    "name": "CommentService",
+    "package": "com.dr.op.bussiness.service",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.extension.service.IService", "com.dr.op.bussiness.entity.Comment"],
+    "class_name": "CommentService extends IService<Comment>",
+    "extend_name": "IService<Comment>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/CommentService.java"
+}, {
+    "name": "BroadcastManagerService",
+    "package": "com.dr.op.bussiness.service",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.extension.service.IService", "com.dr.op.bussiness.entity.BroadcastManager"],
+    "class_name": "BroadcastManagerService extends IService<BroadcastManager>",
+    "extend_name": "IService<BroadcastManager>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/BroadcastManagerService.java"
+}, {
+    "name": "TaskService",
+    "package": "com.dr.op.bussiness.service",
+    "type": "interface",
+    "imports": ["com.dr.op.bussiness.api.request.TasksListRequest", "com.dr.op.bussiness.api.request.TasksRequest", "com.dr.op.bussiness.api.response.TaskClassifyResponse", "com.dr.op.bussiness.entity.TasksEntity", "com.dr.op.globe.http.FallPaged"],
+    "class_name": "TaskService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/TaskService.java"
+}, {
+    "name": "BoardService",
+    "package": "com.dr.op.bussiness.service",
+    "type": "interface",
+    "imports": ["com.dr.op.bussiness.api.request.BoardRequest", "com.dr.op.bussiness.api.response.BoardResponse", "com.dr.op.bussiness.api.response.DataBoardResponse", "java.util.List"],
+    "class_name": "BoardService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/BoardService.java"
+}, {
+    "name": "ReplyInfoService",
+    "package": "com.dr.op.bussiness.service",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.extension.service.IService", "com.dr.op.bussiness.entity.Comment", "com.dr.op.bussiness.entity.ReplyInfo"],
+    "class_name": "ReplyInfoService extends IService<ReplyInfo>",
+    "extend_name": "IService<ReplyInfo>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/ReplyInfoService.java"
+}, {
+    "name": "BroadcastServiceImpl",
+    "package": "com.dr.op.bussiness.service.impl",
+    "type": "class",
+    "imports": ["cn.hutool.core.util.ObjectUtil", "com.alibaba.fastjson.JSON", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.op.bussiness.api.request.AddBroadcastRequest", "com.dr.op.bussiness.api.request.AddRealTimeInfoRequest", "com.dr.op.bussiness.api.request.BroadcastRealTimeInfoRequest", "com.dr.op.bussiness.api.request.BroadcastRequest", "com.dr.op.bussiness.api.response.AddRealTimeInfoResponse", "com.dr.op.bussiness.api.response.BroadcastRealTimeInfoResponse", "com.dr.op.bussiness.api.response.BroadcastResponse", "com.dr.op.bussiness.entity.Broadcast", "com.dr.op.bussiness.entity.BroadcastManager", "com.dr.op.bussiness.entity.RealtimeInfo", "com.dr.op.bussiness.entity.RealtimeInfoDistribution", "com.dr.op.bussiness.enums.InfoStatusType", "com.dr.op.bussiness.mapper.BroadcastManagerMapper", "com.dr.op.bussiness.mapper.BroadcastMapper", "com.dr.op.bussiness.mapper.RealtimeInfoDistributionMapper", "com.dr.op.bussiness.mapper.RealtimeInfoMapper", "com.dr.op.bussiness.service.BroadcastManagerService", "com.dr.op.bussiness.service.BroadcastService", "com.dr.op.globe.constant.BizErrorCode", "com.dr.op.globe.exception.BusinessException", "com.dr.op.globe.http.FallPaged", "com.dr.strategy.basic.token.Current", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "javax.annotation.Resource", "java.util.List", "java.util.stream.Collectors", "static com.dr.op.bussiness.enums.InfoStatusType.INFO_STATUS_TYPE0", "static com.dr.op.bussiness.enums.InfoStatusType.INFO_STATUS_TYPE1"],
+    "class_name": "BroadcastServiceImpl extends ServiceImpl<BroadcastMapper, Broadcast> implements BroadcastService",
+    "extend_name": "ServiceImpl<BroadcastMapper,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/impl/BroadcastServiceImpl.java"
+}, {
+    "name": "RealtimeInfoServiceImpl",
+    "package": "com.dr.op.bussiness.service.impl",
+    "type": "class",
+    "imports": ["cn.hutool.core.util.ObjectUtil", "com.alibaba.fastjson.JSON", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.op.bussiness.api.request.CommentRequest", "com.dr.op.bussiness.api.request.RealtimeInfoRequest", "com.dr.op.bussiness.api.request.ReplyRequest", "com.dr.op.bussiness.api.response.CommentResponse", "com.dr.op.bussiness.api.response.RealTimeInfoDetailResponse", "com.dr.op.bussiness.api.response.RealtimeInfoResponse", "com.dr.op.bussiness.api.response.ReplyResponse", "com.dr.op.bussiness.entity.*", "com.dr.op.bussiness.enums.CollectType", "com.dr.op.bussiness.enums.FilterType", "com.dr.op.bussiness.enums.KindType", "com.dr.op.bussiness.enums.OperateType", "com.dr.op.bussiness.mapper.*", "com.dr.op.bussiness.service.CommentService", "com.dr.op.bussiness.service.RealtimeInfoService", "com.dr.op.globe.constant.BizErrorCode", "com.dr.op.globe.exception.BusinessException", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.strategy.basic.token.Current", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "javax.annotation.Resource", "java.util.ArrayList", "java.util.Calendar", "java.util.Date", "java.util.List", "java.util.stream.Collectors"],
+    "class_name": "RealtimeInfoServiceImpl extends ServiceImpl<RealtimeInfoMapper, RealtimeInfo> implements RealtimeInfoService",
+    "extend_name": "ServiceImpl<RealtimeInfoMapper,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/impl/RealtimeInfoServiceImpl.java"
+}, {
+    "name": "CommentServiceImpl",
+    "package": "com.dr.op.bussiness.service.impl",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.op.bussiness.entity.Comment", "com.dr.op.bussiness.mapper.CommentMapper", "com.dr.op.bussiness.service.CommentService", "lombok.extern.log4j.Log4j2", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Propagation", "org.springframework.transaction.annotation.Transactional"],
+    "class_name": "CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> implements CommentService",
+    "extend_name": "ServiceImpl<CommentMapper,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/impl/CommentServiceImpl.java"
+}, {
+    "name": "BoardServiceImpl",
+    "package": "com.dr.op.bussiness.service.impl",
+    "type": "class",
+    "imports": ["cn.hutool.core.util.ObjectUtil", "com.dr.op.app.http.resp.AppDetailResponse", "com.dr.op.app.service.AppMgrService", "com.dr.op.bussiness.api.request.BoardRequest", "com.dr.op.bussiness.api.response.BoardResponse", "com.dr.op.bussiness.api.response.DataBoardResponse", "com.dr.op.bussiness.entity.DataBoardLock", "com.dr.op.bussiness.mapper.DataBoardLockMapper", "com.dr.op.bussiness.service.BoardService", "com.dr.strategy.basic.token.Current", "lombok.extern.log4j.Log4j2", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Propagation", "org.springframework.transaction.annotation.Transactional", "javax.annotation.Resource", "java.util.ArrayList", "java.util.List", "static com.dr.op.bussiness.enums.LockType.LOCK_TYPE0", "static com.dr.op.bussiness.enums.LockType.LOCK_TYPE1"],
+    "class_name": "BoardServiceImpl implements BoardService",
+    "extend_name": "",
+    "implements_name": ["BoardService"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/impl/BoardServiceImpl.java"
+}, {
+    "name": "ReplyInfoServiceImpl",
+    "package": "com.dr.op.bussiness.service.impl",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.op.bussiness.entity.ReplyInfo", "com.dr.op.bussiness.mapper.ReplyInfoMapper", "com.dr.op.bussiness.service.ReplyInfoService", "lombok.extern.log4j.Log4j2", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Propagation", "org.springframework.transaction.annotation.Transactional"],
+    "class_name": "ReplyInfoServiceImpl extends ServiceImpl<ReplyInfoMapper, ReplyInfo> implements ReplyInfoService",
+    "extend_name": "ServiceImpl<ReplyInfoMapper,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/impl/ReplyInfoServiceImpl.java"
+}, {
+    "name": "BroadcastManagerServiceImpl",
+    "package": "com.dr.op.bussiness.service.impl",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.op.bussiness.entity.BroadcastManager", "com.dr.op.bussiness.mapper.BroadcastManagerMapper", "com.dr.op.bussiness.service.BroadcastManagerService", "org.springframework.stereotype.Service"],
+    "class_name": "BroadcastManagerServiceImpl extends ServiceImpl<BroadcastManagerMapper, BroadcastManager> implements BroadcastManagerService",
+    "extend_name": "ServiceImpl<BroadcastManagerMapper,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/impl/BroadcastManagerServiceImpl.java"
+}, {
+    "name": "TaskServiceImpl",
+    "package": "com.dr.op.bussiness.service.impl",
+    "type": "class",
+    "imports": ["cn.hutool.core.util.ObjectUtil", "com.baomidou.mybatisplus.core.metadata.IPage", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.op.bussiness.api.request.TasksListRequest", "com.dr.op.bussiness.api.request.TasksRequest", "com.dr.op.bussiness.api.response.TaskClassifyResponse", "com.dr.op.bussiness.entity.TasksEntity", "com.dr.op.bussiness.mapper.TaskMapper", "com.dr.op.bussiness.service.TaskService", "com.dr.op.globe.constant.BizErrorCode", "com.dr.op.globe.exception.BusinessException", "com.dr.op.globe.exception.SystemError", "com.dr.op.globe.exception.SystemException", "com.dr.op.globe.http.FallPaged", "com.dr.strategy.basic.token.Current", "com.dr.strategy.support.serialization.Serializations", "lombok.Data", "org.apache.logging.log4j.util.Strings", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.stereotype.Service", "javax.annotation.Resource", "javax.transaction.Transactional", "java.util.List", "java.util.Set"],
+    "class_name": "TaskServiceImpl implements TaskService",
+    "extend_name": "",
+    "implements_name": ["TaskService"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/impl/TaskServiceImpl.java"
+}, {
+    "name": "NoticeApi",
+    "package": "com.dr.op.notice",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.op.notice.http.req.NoticeDetailRequest", "com.dr.op.notice.http.req.NoticePublishRequest", "com.dr.op.notice.http.resp.NoticeAccountResponse", "com.dr.op.notice.http.resp.NoticeDetailResponse", "com.dr.op.notice.http.resp.NoticeInfoResponse", "com.dr.op.notice.service.NoticeAccountService", "com.dr.op.notice.service.NoticeService", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "io.swagger.annotations.*", "org.springframework.web.bind.annotation.*", "java.util.Optional"],
+    "class_name": "NoticeApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/NoticeApi.java"
+}, {
+    "name": "NoticeRepo",
+    "package": "com.dr.op.notice.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.notice.entity.NoticeEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.Query", "org.springframework.data.repository.CrudRepository", "java.util.List"],
+    "class_name": "NoticeRepo extends CrudRepository<NoticeEntity, Integer>",
+    "extend_name": "CrudRepository<NoticeEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/repository/NoticeRepo.java"
+}, {
+    "name": "NoticeAccountConfigRepo",
+    "package": "com.dr.op.notice.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.notice.entity.NoticeAccountConfigEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.mongodb.repository.MongoRepository", "java.util.List", "java.util.Optional"],
+    "class_name": "NoticeAccountConfigRepo extends MongoRepository<NoticeAccountConfigEntity, String>",
+    "extend_name": "MongoRepository<NoticeAccountConfigEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/repository/NoticeAccountConfigRepo.java"
+}, {
+    "name": "NoticeRecordRepo",
+    "package": "com.dr.op.notice.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.notice.entity.NoticeRecordEntity", "org.springframework.data.repository.CrudRepository", "java.util.Optional"],
+    "class_name": "NoticeRecordRepo extends CrudRepository<NoticeRecordEntity, Integer>",
+    "extend_name": "CrudRepository<NoticeRecordEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/repository/NoticeRecordRepo.java"
+}, {
+    "name": "PublishScope",
+    "package": "com.dr.op.notice.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "PublishScope",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/entity/PublishScope.java"
+}, {
+    "name": "RecipientLabel",
+    "package": "com.dr.op.notice.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "RecipientLabel",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/entity/RecipientLabel.java"
+}, {
+    "name": "Attachment",
+    "package": "com.dr.op.notice.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "Attachment",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/entity/Attachment.java"
+}, {
+    "name": "NoticeEntity",
+    "package": "com.dr.op.notice.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicEntity", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Column", "javax.persistence.Entity", "javax.persistence.Table"],
+    "class_name": "NoticeEntity extends BasicEntity",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/entity/NoticeEntity.java"
+}, {
+    "name": "NoticeRecordEntity",
+    "package": "com.dr.op.notice.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicEntity", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Entity", "javax.persistence.Table"],
+    "class_name": "NoticeRecordEntity extends BasicEntity",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/entity/NoticeRecordEntity.java"
+}, {
+    "name": "NoticeAccountConfigEntity",
+    "package": "com.dr.op.notice.entity",
+    "type": "class",
+    "imports": ["lombok.Data", "org.springframework.data.mongodb.core.mapping.Document", "javax.persistence.Id"],
+    "class_name": "NoticeAccountConfigEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/entity/NoticeAccountConfigEntity.java"
+}, {
+    "name": "PublishModel",
+    "package": "com.dr.op.notice.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "PublishModel",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/enums/PublishModel.java"
+}, {
+    "name": "PublishState",
+    "package": "com.dr.op.notice.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "PublishState",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/enums/PublishState.java"
+}, {
+    "name": "NoticeAccountResponse",
+    "package": "com.dr.op.notice.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable"],
+    "class_name": "NoticeAccountResponse implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/http/resp/NoticeAccountResponse.java"
+}, {
+    "name": "NoticeQueryResponse",
+    "package": "com.dr.op.notice.http.resp",
+    "type": "class",
+    "imports": ["com.dr.op.notice.entity.NoticeEntity", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "NoticeQueryResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/http/resp/NoticeQueryResponse.java"
+}, {
+    "name": "NoticeReadSignResponse",
+    "package": "com.dr.op.notice.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "NoticeReadSignResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/http/resp/NoticeReadSignResponse.java"
+}, {
+    "name": "NoticeDetailResponse",
+    "package": "com.dr.op.notice.http.resp",
+    "type": "class",
+    "imports": ["com.dr.op.notice.entity.Attachment", "com.dr.op.notice.entity.PublishScope", "com.dr.op.notice.entity.RecipientLabel", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable", "java.util.List", "java.util.Set"],
+    "class_name": "NoticeDetailResponse implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/http/resp/NoticeDetailResponse.java"
+}, {
+    "name": "NoticeInfoResponse",
+    "package": "com.dr.op.notice.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable"],
+    "class_name": "NoticeInfoResponse implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/http/resp/NoticeInfoResponse.java"
+}, {
+    "name": "NoticePublishRequest",
+    "package": "com.dr.op.notice.http.req",
+    "type": "class",
+    "imports": ["com.dr.op.notice.entity.PublishScope", "com.dr.op.notice.entity.RecipientLabel", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "NoticePublishRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/http/req/NoticePublishRequest.java"
+}, {
+    "name": "NoticeDetailRequest",
+    "package": "com.dr.op.notice.http.req",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.PageRequest", "com.dr.op.notice.entity.Attachment", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull", "java.util.Set"],
+    "class_name": "NoticeDetailRequest extends PageRequest",
+    "extend_name": "PageRequest",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/http/req/NoticeDetailRequest.java"
+}, {
+    "name": "NoticeInfoRequest",
+    "package": "com.dr.op.notice.http.req",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.PageRequest", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "NoticeInfoRequest extends PageRequest",
+    "extend_name": "PageRequest",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/http/req/NoticeInfoRequest.java"
+}, {
+    "name": "NoticeAccountRequest",
+    "package": "com.dr.op.notice.http.req",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.PageRequest", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.NotBlank"],
+    "class_name": "NoticeAccountRequest extends PageRequest",
+    "extend_name": "PageRequest",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/http/req/NoticeAccountRequest.java"
+}, {
+    "name": "NoticeAccountService",
+    "package": "com.dr.op.notice.service",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.op.globe.jpa.FallPageable", "com.dr.op.notice.entity.NoticeAccountConfigEntity", "com.dr.op.notice.entity.NoticeEntity", "com.dr.op.notice.entity.NoticeRecordEntity", "com.dr.op.notice.enums.PublishState", "com.dr.op.notice.http.resp.NoticeAccountResponse", "com.dr.op.notice.http.resp.NoticeReadSignResponse", "com.dr.op.notice.repository.NoticeAccountConfigRepo", "com.dr.op.notice.repository.NoticeRecordRepo", "com.dr.op.notice.repository.NoticeRepo", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.data.mongodb.core.MongoTemplate", "org.springframework.stereotype.Service", "java.time.Instant", "java.util.List", "java.util.Optional", "java.util.stream.Collectors"],
+    "class_name": "NoticeAccountService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/service/NoticeAccountService.java"
+}, {
+    "name": "NoticeService",
+    "package": "com.dr.op.notice.service",
+    "type": "class",
+    "imports": ["com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.op.globe.jpa.FallPageable", "com.dr.op.notice.entity.Attachment", "com.dr.op.notice.entity.NoticeEntity", "com.dr.op.notice.entity.PublishScope", "com.dr.op.notice.entity.RecipientLabel", "com.dr.op.notice.enums.PublishState", "com.dr.op.notice.http.req.NoticeDetailRequest", "com.dr.op.notice.http.req.NoticePublishRequest", "com.dr.op.notice.http.resp.NoticeDetailResponse", "com.dr.op.notice.http.resp.NoticeInfoResponse", "com.dr.op.notice.repository.NoticeRepo", "com.dr.strategy.support.serialization.Serializations", "com.google.common.reflect.TypeToken", "org.apache.logging.log4j.util.Strings", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.time.Instant", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
+    "class_name": "NoticeService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/service/NoticeService.java"
+}, {
+    "name": "LabelSysResponse",
+    "package": "com.dr.op.dv.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "LabelSysResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/http/resp/LabelSysResponse.java"
+}, {
+    "name": "BusinessResponse",
+    "package": "com.dr.op.dv.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "BusinessResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/http/resp/BusinessResponse.java"
+}, {
+    "name": "VisibleAssignTargetByIdentityResponse",
+    "package": "com.dr.op.dv.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "VisibleAssignTargetByIdentityResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/http/resp/VisibleAssignTargetByIdentityResponse.java"
+}, {
+    "name": "VisibleExecListResponse",
+    "package": "com.dr.op.dv.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor"],
+    "class_name": "VisibleExecListResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/http/resp/VisibleExecListResponse.java"
+}, {
+    "name": "VisibleRuleDetailResponse",
+    "package": "com.dr.op.dv.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "VisibleRuleDetailResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/http/resp/VisibleRuleDetailResponse.java"
+}, {
+    "name": "VisibleRuleLabelResponse",
+    "package": "com.dr.op.dv.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "VisibleRuleLabelResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/http/resp/VisibleRuleLabelResponse.java"
+}, {
+    "name": "VisibleRuleResponse",
+    "package": "com.dr.op.dv.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "VisibleRuleResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/http/resp/VisibleRuleResponse.java"
+}, {
+    "name": "VisibleRuleDetailDvRequest",
+    "package": "com.dr.op.dv.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "VisibleRuleDetailDvRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/http/req/VisibleRuleDetailDvRequest.java"
+}, {
+    "name": "VisibleExceptionModifyRequest",
+    "package": "com.dr.op.dv.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "VisibleExceptionModifyRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/http/req/VisibleExceptionModifyRequest.java"
+}, {
+    "name": "CommonDvRequest",
+    "package": "com.dr.op.dv.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "CommonDvRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/http/req/CommonDvRequest.java"
+}, {
+    "name": "VisibleAssignRuleInfo",
+    "package": "com.dr.op.dv.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "VisibleAssignRuleInfo",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/http/req/VisibleAssignRuleInfo.java"
+}, {
+    "name": "VisibleRuleLabelRequest",
+    "package": "com.dr.op.dv.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "VisibleRuleLabelRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/http/req/VisibleRuleLabelRequest.java"
+}, {
+    "name": "VisibleRuleDvRequest",
+    "package": "com.dr.op.dv.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "VisibleRuleDvRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/http/req/VisibleRuleDvRequest.java"
+}, {
+    "name": "DeleteVisibleRuleRequest",
+    "package": "com.dr.op.dv.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DeleteVisibleRuleRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/http/req/DeleteVisibleRuleRequest.java"
+}, {
+    "name": "DataVisitApi",
+    "package": "com.dr.op.dv.api",
+    "type": "class",
+    "imports": ["com.dr.op.dv.http.resp.BusinessResponse", "com.dr.op.dv.service.DataVisitService", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "io.swagger.annotations.*", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.GetMapping", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RequestParam", "org.springframework.web.bind.annotation.RestController"],
+    "class_name": "DataVisitApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/api/DataVisitApi.java"
+}, {
+    "name": "VisibleRuleApi",
+    "package": "com.dr.op.dv.api",
+    "type": "class",
+    "imports": ["com.dr.op.dv.http.req.DeleteVisibleRuleRequest", "com.dr.op.dv.http.req.VisibleAssignRuleInfo", "com.dr.op.dv.http.req.VisibleExceptionModifyRequest", "com.dr.op.dv.http.req.VisibleRuleDetailDvRequest", "com.dr.op.dv.http.resp.VisibleAssignTargetByIdentityResponse", "com.dr.op.dv.http.resp.VisibleExecListResponse", "com.dr.op.dv.http.resp.VisibleRuleDetailResponse", "com.dr.op.dv.http.resp.VisibleRuleResponse", "com.dr.op.dv.service.VisibleRuleService", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.basic.token.Current", "io.swagger.annotations.*", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.*", "java.util.List", "java.util.Set"],
+    "class_name": "VisibleRuleApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/api/VisibleRuleApi.java"
+}, {
+    "name": "VisibleRuleService",
+    "package": "com.dr.op.dv.service",
+    "type": "class",
+    "imports": ["com.dr.op.app.consts.AppDisplayEnum", "com.dr.op.app.http.resp.AppDetailResponse", "com.dr.op.app.service.AppMgrService", "com.dr.op.dv.http.req.VisibleAssignRuleInfo", "com.dr.op.dv.http.req.VisibleExceptionModifyRequest", "com.dr.op.dv.http.req.VisibleRuleDetailDvRequest", "com.dr.op.dv.http.req.VisibleRuleLabelRequest", "com.dr.op.dv.http.resp.*", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.op.globe.jpa.FallPageable", "com.dr.op.label.api.http.response.LabelInfoDetail", "com.dr.op.label.service.LabelService", "com.dr.op.label.service.LabelSystemService", "com.dr.strategy.basic.allocation.BasicAllocationManager", "com.dr.strategy.basic.app.AppManager", "com.dr.strategy.basic.app.entity.BizEntity", "com.dr.strategy.basic.entity.BasicAllocationRule", "com.dr.strategy.basic.entity.BasicTagEntity", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.strategy.basic.tag.entity.TagSystemEntity", "com.dr.strategy.basic.visible.VisibleManager", "com.dr.strategy.basic.visible.row.entity.IdentityRefDataVisibleEntity", "com.dr.strategy.basic.visible.row.entity.VisibleAllocationId", "com.dr.strategy.basic.visible.row.entity.VisibleRuleEntity", "com.dr.strategy.basic.visible.row.rule.IdentityVisibleRule", "com.dr.strategy.basic.visible.row.rule.SimpleVisibleRule", "com.dr.strategy.basic.visible.row.rule.Tags", "com.dr.strategy.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.util.*", "java.util.concurrent.atomic.AtomicInteger", "java.util.stream.Collectors"],
+    "class_name": "VisibleRuleService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/service/VisibleRuleService.java"
+}, {
+    "name": "DataVisitService",
+    "package": "com.dr.op.dv.service",
+    "type": "class",
+    "imports": ["com.dr.op.app.consts.AppAuthEnum", "com.dr.op.app.entity.AppInfoEntity", "com.dr.op.app.http.resp.AppBusinessInfoResponse", "com.dr.op.app.repository.AppInfoRepository", "com.dr.op.dv.http.resp.BusinessResponse", "com.dr.op.dv.http.resp.LabelSysResponse", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.op.label.service.CustomTagSystemManager", "com.dr.strategy.basic.tag.entity.TagSystemEntity", "com.google.common.reflect.TypeToken", "com.google.gson.Gson", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.util.Comparator", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
+    "class_name": "DataVisitService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/service/DataVisitService.java"
+}, {
+    "name": "VisibleTypeEnum",
+    "package": "com.dr.op.dv.consts",
+    "type": "enum",
+    "imports": ["com.dr.strategy.support.enums.KeyValueEnum"],
+    "class_name": "VisibleTypeEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/dv/consts/VisibleTypeEnum.java"
+}, {
+    "name": "OOService",
+    "package": "com.dr.op.oo",
+    "type": "class",
+    "imports": ["com.dr.op.account.AccountService", "com.dr.op.account.consts.AccountTypeEnum", "com.dr.op.account.consts.SexTypeEnum", "com.dr.op.account.entity.AccountInfoEntity", "com.dr.op.oo.api.http.req.OOCreateAccountRequest", "com.dr.op.oo.api.http.req.OOModifyAccountRequest", "com.dr.strategy.basic.account.UnifyAccountManager", "com.dr.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.support.LogElapsedTime", "com.dr.strategy.support.serialization.Serializations", "com.google.common.base.Strings", "com.google.common.collect.Sets", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Arrays", "java.util.Optional", "java.util.Set"],
+    "class_name": "OOService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/oo/OOService.java"
+}, {
+    "name": "OOAccountApi",
+    "package": "com.dr.op.oo.api",
+    "type": "class",
+    "imports": ["com.dr.op.account.AccountService", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.oo.OOService", "com.dr.op.oo.api.http.req.OOCreateAccountRequest", "com.dr.op.oo.api.http.req.OOModifyAccountRequest", "com.dr.op.oo.api.http.req.OOResetPwdRequest", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "org.springframework.web.bind.annotation.*"],
+    "class_name": "OOAccountApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/oo/api/OOAccountApi.java"
+}, {
+    "name": "OOResetPwdRequest",
+    "package": "com.dr.op.oo.api.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "OOResetPwdRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/oo/api/http/req/OOResetPwdRequest.java"
+}, {
+    "name": "OOCreateAccountRequest",
+    "package": "com.dr.op.oo.api.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.Max", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank"],
+    "class_name": "OOCreateAccountRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/oo/api/http/req/OOCreateAccountRequest.java"
+}, {
+    "name": "OOModifyAccountRequest",
+    "package": "com.dr.op.oo.api.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.Max", "javax.validation.constraints.NotBlank"],
+    "class_name": "OOModifyAccountRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/oo/api/http/req/OOModifyAccountRequest.java"
+}, {
+    "name": "AccountService",
+    "package": "com.dr.op.account",
+    "type": "class",
+    "imports": ["com.dr.op.account.api.AccountModelConvert", "com.dr.op.account.api.http.resp.*", "com.dr.op.account.entity.AccountInfoEntity", "com.dr.op.account.repository.AccountInfoRepo", "com.dr.op.globe.jpa.FallPageable", "com.dr.strategy.basic.account.UnifyAccountManager", "com.dr.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.strategy.basic.entity.EntityState", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.role.RoleManager", "com.dr.strategy.basic.role.entity.RoleEntity", "com.dr.strategy.basic.tag.preset.BasicTagSystem", "com.dr.strategy.basic.token.TokenException", "com.dr.strategy.basic.token.TokenManger", "com.dr.strategy.support.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotEmpty", "javax.validation.constraints.NotNull", "java.util.*", "java.util.function.Consumer", "java.util.stream.Collectors"],
+    "class_name": "AccountService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/AccountService.java"
+}, {
+    "name": "AccountInfoRepo",
+    "package": "com.dr.op.account.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.account.entity.AccountInfoEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional"],
+    "class_name": "AccountInfoRepo extends CrudRepository<AccountInfoEntity, Integer>",
+    "extend_name": "CrudRepository<AccountInfoEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/repository/AccountInfoRepo.java"
+}, {
+    "name": "AccountInfoEntity",
+    "package": "com.dr.op.account.entity",
+    "type": "class",
+    "imports": ["com.dr.op.account.consts.SexTypeEnum", "com.dr.strategy.basic.entity.BasicEntity", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Column", "javax.persistence.Entity", "javax.persistence.Table"],
+    "class_name": "AccountInfoEntity extends BasicEntity",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/entity/AccountInfoEntity.java"
+}, {
+    "name": "LoginApi",
+    "package": "com.dr.op.account.api",
+    "type": "class",
+    "imports": ["com.dr.op.account.AccountService", "com.dr.op.account.api.http.req.AdminLoginRequest", "com.dr.op.account.api.http.req.CurrentUserChangedIdentityRequest", "com.dr.op.account.api.http.req.LoginRequest", "com.dr.op.account.api.http.resp.*", "com.dr.op.globe.http.ApiUrlConst", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.basic.account.UnifyAccountManager", "com.dr.strategy.basic.token.Current", "com.dr.strategy.basic.token.CurrentUser", "com.dr.strategy.basic.token.TokenException", "com.dr.strategy.basic.token.TokenManger", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.*", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "java.util.List", "java.util.UUID", "java.util.stream.Collectors"],
+    "class_name": "LoginApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/LoginApi.java"
+}, {
+    "name": "AccountApi",
+    "package": "com.dr.op.account.api",
+    "type": "class",
+    "imports": ["com.dr.op.account.AccountService", "com.dr.op.account.api.http.req.ModifyAccountRequest", "com.dr.op.account.api.http.req.ResetPwdRequest", "com.dr.op.account.api.http.req.SwitchAccountRequest", "com.dr.op.account.api.http.resp.AccountInfoResponse", "com.dr.op.account.api.http.resp.AccountListResponse", "com.dr.op.account.api.http.resp.IdentityListGroupByOrgResponse", "com.dr.op.account.entity.AccountInfoEntity", "com.dr.op.globe.config.OSSConfig", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "io.swagger.annotations.*", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "java.util.List", "java.util.stream.Collectors"],
+    "class_name": "AccountApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/AccountApi.java"
+}, {
+    "name": "AccountModelConvert",
+    "package": "com.dr.op.account.api",
+    "type": "class",
+    "imports": ["com.dr.op.account.api.http.AccountInfoAttachment", "com.dr.op.account.api.http.req.ModifyAccountRequest", "com.dr.op.account.api.http.resp.AccountInfoResponse", "com.dr.op.account.api.http.resp.AccountListResponse", "com.dr.op.account.api.http.resp.LoginUserInfo", "com.dr.op.account.api.http.resp.OrgPathItemResp", "com.dr.op.account.entity.AccountInfoEntity", "com.dr.op.globe.config.OSSConfig", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.role.entity.RoleEntity", "com.dr.strategy.support.serialization.Serializations", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "org.apache.logging.log4j.util.Strings", "java.util.Objects", "java.util.Set", "java.util.function.Function", "java.util.stream.Collectors"],
+    "class_name": "AccountModelConvert",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/AccountModelConvert.java"
+}, {
+    "name": "AccountInfoAttachment",
+    "package": "com.dr.op.account.api.http",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AccountInfoAttachment",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/AccountInfoAttachment.java"
+}, {
+    "name": "CurrentUserChangedIdentityResponse",
+    "package": "com.dr.op.account.api.http.resp",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.identity.entity.IdentityEntity", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
+    "class_name": "CurrentUserChangedIdentityResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/resp/CurrentUserChangedIdentityResponse.java"
+}, {
+    "name": "LoginUserInfo",
+    "package": "com.dr.op.account.api.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Objects", "java.util.Set"],
+    "class_name": "LoginUserInfo",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/resp/LoginUserInfo.java"
+}, {
+    "name": "IdentityListGroupByOrgResponse",
+    "package": "com.dr.op.account.api.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "lombok.Data", "java.util.List"],
+    "class_name": "IdentityListGroupByOrgResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/resp/IdentityListGroupByOrgResponse.java"
+}, {
+    "name": "AccountListResponse",
+    "package": "com.dr.op.account.api.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AccountListResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/resp/AccountListResponse.java"
+}, {
+    "name": "AdminLoginResponse",
+    "package": "com.dr.op.account.api.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AdminLoginResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/resp/AdminLoginResponse.java"
+}, {
+    "name": "IdentityListResponse",
+    "package": "com.dr.op.account.api.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "IdentityListResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/resp/IdentityListResponse.java"
+}, {
+    "name": "AccountInfoResponse",
+    "package": "com.dr.op.account.api.http.resp",
+    "type": "class",
+    "imports": ["com.dr.op.account.api.http.AccountInfoAttachment", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
+    "class_name": "AccountInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/resp/AccountInfoResponse.java"
+}, {
+    "name": "LoginResponse",
+    "package": "com.dr.op.account.api.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "LoginResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/resp/LoginResponse.java"
+}, {
+    "name": "OrgPathItemResp",
+    "package": "com.dr.op.account.api.http.resp",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "OrgPathItemResp",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/resp/OrgPathItemResp.java"
+}, {
+    "name": "ModifyAccountRequest",
+    "package": "com.dr.op.account.api.http.req",
+    "type": "class",
+    "imports": ["com.dr.op.account.api.http.AccountInfoAttachment", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Set"],
+    "class_name": "ModifyAccountRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/req/ModifyAccountRequest.java"
+}, {
+    "name": "AdminLoginRequest",
+    "package": "com.dr.op.account.api.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "AdminLoginRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/req/AdminLoginRequest.java"
+}, {
+    "name": "ResetPwdRequest",
+    "package": "com.dr.op.account.api.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank"],
+    "class_name": "ResetPwdRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/req/ResetPwdRequest.java"
+}, {
+    "name": "CurrentUserChangedIdentityRequest",
+    "package": "com.dr.op.account.api.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
+    "class_name": "CurrentUserChangedIdentityRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/req/CurrentUserChangedIdentityRequest.java"
+}, {
+    "name": "LoginRequest",
+    "package": "com.dr.op.account.api.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "LoginRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/req/LoginRequest.java"
+}, {
+    "name": "SwitchAccountRequest",
+    "package": "com.dr.op.account.api.http.req",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.Min"],
+    "class_name": "SwitchAccountRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/api/http/req/SwitchAccountRequest.java"
+}, {
+    "name": "SexTypeEnum",
+    "package": "com.dr.op.account.consts",
+    "type": "enum",
+    "imports": ["com.dr.strategy.support.enums.KeyValueEnum", "org.apache.commons.lang3.StringUtils"],
+    "class_name": "SexTypeEnum implements KeyValueEnum<Integer, String>",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum<Integer", ""],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/consts/SexTypeEnum.java"
+}, {
+    "name": "AccountTypeEnum",
+    "package": "com.dr.op.account.consts",
+    "type": "enum",
+    "imports": ["lombok.Getter"],
+    "class_name": "AccountTypeEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/consts/AccountTypeEnum.java"
+}, {
+    "name": "LoginModeEnum",
+    "package": "com.dr.op.account.consts",
+    "type": "enum",
+    "imports": ["com.dr.strategy.support.enums.KeyValueEnum"],
+    "class_name": "LoginModeEnum implements KeyValueEnum<Integer, String>",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum<Integer", ""],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/consts/LoginModeEnum.java"
+}, {
+    "name": "DataDefinitionDto",
+    "package": "com.dr.op.data.dto",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.annotation.TableField", "com.dr.op.data.entity.DataDefinition", "com.dr.op.data.entity.DataProp", "com.dr.strategy.basic.data.DataDefine", "com.dr.strategy.support.serialization.Serializations", "com.google.common.reflect.TypeToken", "io.swagger.annotations.ApiModel", "lombok.Data", "java.util.Comparator", "java.util.List", "java.util.stream.Collectors"],
+    "class_name": "DataDefinitionDto extends DataDefinition",
+    "extend_name": "DataDefinition",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/dto/DataDefinitionDto.java"
+}, {
+    "name": "DataOrder",
+    "package": "com.dr.op.data.util",
+    "type": "class",
+    "imports": ["com.dr.op.data.consts.OrderEnum", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable"],
+    "class_name": "DataOrder implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/util/DataOrder.java"
+}, {
+    "name": "DataKvns",
+    "package": "com.dr.op.data.util",
+    "type": "class",
+    "imports": ["com.dr.op.data.consts.KvnsEnum", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable"],
+    "class_name": "DataKvns implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/util/DataKvns.java"
+}, {
+    "name": "FileUtils",
+    "package": "com.dr.op.data.util",
+    "type": "class",
+    "imports": ["cn.hutool.core.io.FileUtil", "java.io.BufferedInputStream", "java.io.IOException", "java.io.InputStream", "java.net.URL", "java.net.URLConnection"],
+    "class_name": "FileUtils extends FileUtil",
+    "extend_name": "FileUtil",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/util/FileUtils.java"
+}, {
+    "name": "DataExcelUtil",
+    "package": "com.dr.op.data.util",
+    "type": "class",
+    "imports": ["cn.hutool.core.lang.Assert", "cn.hutool.core.util.StrUtil", "com.dr.op.data.dto.DataDefinitionDto", "com.dr.op.data.entity.DataProp", "com.google.common.collect.Lists", "org.apache.logging.log4j.util.Strings", "org.apache.poi.hssf.usermodel.HSSFDataFormat", "org.apache.poi.ss.usermodel.*", "org.apache.poi.xssf.streaming.SXSSFWorkbook", "org.apache.poi.xssf.usermodel.XSSFCell", "org.apache.poi.xssf.usermodel.XSSFRow", "org.apache.poi.xssf.usermodel.XSSFSheet", "org.apache.poi.xssf.usermodel.XSSFWorkbook", "java.io.ByteArrayOutputStream", "java.io.IOException", "java.io.InputStream", "java.util.Iterator", "java.util.LinkedHashMap", "java.util.List", "java.util.Map"],
+    "class_name": "DataExcelUtil",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/util/DataExcelUtil.java"
+}, {
+    "name": "DataSqlUtil",
+    "package": "com.dr.op.data.util",
+    "type": "class",
+    "imports": ["cn.hutool.core.util.ObjectUtil", "cn.hutool.core.util.StrUtil", "com.dr.op.data.consts.KvnsEnum", "com.dr.op.data.dto.DataDefinitionDto", "com.dr.op.data.entity.DataProp", "org.apache.logging.log4j.util.Strings", "org.springframework.util.CollectionUtils", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.stream.Collectors"],
+    "class_name": "DataSqlUtil",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/util/DataSqlUtil.java"
+}, {
+    "name": "CamelCaseUtil",
+    "package": "com.dr.op.data.util",
+    "type": "class",
+    "imports": [],
+    "class_name": "CamelCaseUtil",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/util/CamelCaseUtil.java"
+}, {
+    "name": "DataDefinition",
+    "package": "com.dr.op.data.entity",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.annotation.TableName", "com.dr.strategy.basic.token.Current", "com.dr.strategy.basic.token.CurrentUser", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.*", "java.io.Serializable", "java.time.Instant"],
+    "class_name": "DataDefinition implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/entity/DataDefinition.java"
+}, {
+    "name": "DataProp",
+    "package": "com.dr.op.data.entity",
+    "type": "class",
+    "imports": ["lombok.Data", "java.io.Serializable"],
+    "class_name": "DataProp implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/entity/DataProp.java"
+}, {
+    "name": "DataFilter",
+    "package": "com.dr.op.data.entity",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.annotation.IdType", "com.baomidou.mybatisplus.annotation.TableId", "com.baomidou.mybatisplus.annotation.TableName", "com.dr.strategy.basic.token.Current", "com.dr.strategy.basic.token.CurrentUser", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.*", "java.io.Serializable", "java.time.Instant"],
+    "class_name": "DataFilter implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/entity/DataFilter.java"
+}, {
+    "name": "DataFilterMapper",
+    "package": "com.dr.op.data.mapper",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.dr.op.data.entity.DataFilter", "org.apache.ibatis.annotations.Mapper"],
+    "class_name": "DataFilterMapper extends BaseMapper<DataFilter>",
+    "extend_name": "BaseMapper<DataFilter>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/mapper/DataFilterMapper.java"
+}, {
+    "name": "DataListMapper",
+    "package": "com.dr.op.data.mapper",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.core.metadata.IPage", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.op.data.api.http.response.DataSummaryResponse", "com.dr.op.data.entity.DataProp", "org.apache.ibatis.annotations.Mapper", "org.apache.ibatis.annotations.Param", "java.util.LinkedHashMap", "java.util.List"],
+    "class_name": "DataListMapper",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/mapper/DataListMapper.java"
+}, {
+    "name": "DataDefineMapper",
+    "package": "com.dr.op.data.mapper",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.dr.op.data.entity.DataDefinition", "org.apache.ibatis.annotations.Mapper"],
+    "class_name": "DataDefineMapper extends BaseMapper<DataDefinition>",
+    "extend_name": "BaseMapper<DataDefinition>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/mapper/DataDefineMapper.java"
+}, {
+    "name": "DataApi",
+    "package": "com.dr.op.data.api",
+    "type": "class",
+    "imports": ["cn.hutool.core.lang.Assert", "com.dr.op.data.api.http.page.DataPageRequest", "com.dr.op.data.api.http.request.*", "com.dr.op.data.api.http.response.*", "com.dr.op.data.service.IDataService", "com.dr.op.data.util.DataKvns", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.support.serialization.Serializations", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.log4j.Log4j2", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.context.annotation.Scope", "org.springframework.http.ResponseEntity", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController", "javax.servlet.http.HttpServletResponse", "java.sql.SQLException", "java.util.LinkedHashMap", "java.util.List"],
+    "class_name": "DataApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/DataApi.java"
+}, {
+    "name": "DataPageRequest",
+    "package": "com.dr.op.data.api.http.page",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.op.globe.http.PageRequest", "io.swagger.annotations.ApiModel", "lombok.Data"],
+    "class_name": "DataPageRequest extends PageRequest",
+    "extend_name": "PageRequest",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/page/DataPageRequest.java"
+}, {
+    "name": "DataFallPaging<T>",
+    "package": "com.dr.op.data.api.http.page",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.core.metadata.IPage", "com.dr.op.globe.http.FallPaged"],
+    "class_name": "DataFallPaging<T> extends FallPaged<T>",
+    "extend_name": "FallPaged<T>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/page/DataFallPaging.java"
+}, {
+    "name": "DataPropResponse",
+    "package": "com.dr.op.data.api.http.response",
+    "type": "class",
+    "imports": ["com.dr.op.data.entity.DataProp", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable"],
+    "class_name": "DataPropResponse implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/response/DataPropResponse.java"
+}, {
+    "name": "DataDefineResponse",
+    "package": "com.dr.op.data.api.http.response",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.data.DataDefine", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable"],
+    "class_name": "DataDefineResponse implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/response/DataDefineResponse.java"
+}, {
+    "name": "DataSummaryResponse",
+    "package": "com.dr.op.data.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable"],
+    "class_name": "DataSummaryResponse implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/response/DataSummaryResponse.java"
+}, {
+    "name": "DataDefinePropResponse",
+    "package": "com.dr.op.data.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable", "java.util.List"],
+    "class_name": "DataDefinePropResponse implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/response/DataDefinePropResponse.java"
+}, {
+    "name": "DataFilterResponse",
+    "package": "com.dr.op.data.api.http.response",
+    "type": "class",
+    "imports": ["cn.hutool.core.date.DatePattern", "cn.hutool.core.date.DateUtil", "com.dr.op.data.entity.DataFilter", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable", "java.util.Date"],
+    "class_name": "DataFilterResponse implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/response/DataFilterResponse.java"
+}, {
+    "name": "DataFilterSaveRequest",
+    "package": "com.dr.op.data.api.http.request",
+    "type": "class",
+    "imports": ["com.dr.op.data.util.DataKvns", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "DataFilterSaveRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/request/DataFilterSaveRequest.java"
+}, {
+    "name": "DataPropHighlightRequest",
+    "package": "com.dr.op.data.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DataPropHighlightRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/request/DataPropHighlightRequest.java"
+}, {
+    "name": "DataTagSumRequest",
+    "package": "com.dr.op.data.api.http.request",
+    "type": "class",
+    "imports": ["com.dr.op.data.api.http.page.DataPageRequest", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DataTagSumRequest extends DataPageRequest",
+    "extend_name": "DataPageRequest",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/request/DataTagSumRequest.java"
+}, {
+    "name": "DataFilterUpdateRequest",
+    "package": "com.dr.op.data.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DataFilterUpdateRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/request/DataFilterUpdateRequest.java"
+}, {
+    "name": "DataListRequest",
+    "package": "com.dr.op.data.api.http.request",
+    "type": "class",
+    "imports": ["com.dr.op.data.api.http.page.DataPageRequest", "com.dr.op.data.util.DataKvns", "com.dr.op.data.util.DataOrder", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List", "java.util.Set"],
+    "class_name": "DataListRequest extends DataPageRequest",
+    "extend_name": "DataPageRequest",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/request/DataListRequest.java"
+}, {
+    "name": "DataTagListRequest",
+    "package": "com.dr.op.data.api.http.request",
+    "type": "class",
+    "imports": ["com.dr.op.data.api.http.page.DataPageRequest", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DataTagListRequest extends DataPageRequest",
+    "extend_name": "DataPageRequest",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/request/DataTagListRequest.java"
+}, {
+    "name": "DataDefResetRequest",
+    "package": "com.dr.op.data.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DataDefResetRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/request/DataDefResetRequest.java"
+}, {
+    "name": "DataPropOrderRequest",
+    "package": "com.dr.op.data.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DataPropOrderRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/request/DataPropOrderRequest.java"
+}, {
+    "name": "DataFilterPageRequest",
+    "package": "com.dr.op.data.api.http.request",
+    "type": "class",
+    "imports": ["com.dr.op.data.api.http.page.DataPageRequest", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DataFilterPageRequest extends DataPageRequest",
+    "extend_name": "DataPageRequest",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/request/DataFilterPageRequest.java"
+}, {
+    "name": "DataUploadRequest",
+    "package": "com.dr.op.data.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DataUploadRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/request/DataUploadRequest.java"
+}, {
+    "name": "DataDefDetailRequest",
+    "package": "com.dr.op.data.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DataDefDetailRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/request/DataDefDetailRequest.java"
+}, {
+    "name": "DataDownloadRequest",
+    "package": "com.dr.op.data.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DataDownloadRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/request/DataDownloadRequest.java"
+}, {
+    "name": "DataPropDingRequest",
+    "package": "com.dr.op.data.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DataPropDingRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/request/DataPropDingRequest.java"
+}, {
+    "name": "DataFilterDeleteRequest",
+    "package": "com.dr.op.data.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DataFilterDeleteRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/request/DataFilterDeleteRequest.java"
+}, {
+    "name": "IDataService",
+    "package": "com.dr.op.data.service",
+    "type": "interface",
+    "imports": ["cn.hutool.core.date.DatePattern", "cn.hutool.core.date.DateUtil", "com.dr.op.data.api.http.page.DataPageRequest", "com.dr.op.data.api.http.request.*", "com.dr.op.data.api.http.response.*", "com.dr.op.data.entity.DataProp", "com.dr.op.globe.http.FallPaged", "org.springframework.http.HttpHeaders", "org.springframework.http.HttpStatus", "org.springframework.http.ResponseEntity", "java.sql.SQLException", "java.util.LinkedHashMap", "java.util.List"],
+    "class_name": "IDataService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/service/IDataService.java"
+}, {
+    "name": "IDataFilterService",
+    "package": "com.dr.op.data.service",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.extension.service.IService", "com.dr.op.data.entity.DataFilter"],
+    "class_name": "IDataFilterService extends IService<DataFilter>",
+    "extend_name": "IService<DataFilter>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/service/IDataFilterService.java"
+}, {
+    "name": "IDataDefineService",
+    "package": "com.dr.op.data.service",
+    "type": "interface",
+    "imports": ["com.baomidou.mybatisplus.extension.service.IService", "com.dr.op.data.entity.DataDefinition"],
+    "class_name": "IDataDefineService extends IService<DataDefinition>",
+    "extend_name": "IService<DataDefinition>",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/service/IDataDefineService.java"
+}, {
+    "name": "DataDefineServiceImpl",
+    "package": "com.dr.op.data.service.impl",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.op.data.entity.DataDefinition", "com.dr.op.data.mapper.DataDefineMapper", "com.dr.op.data.service.IDataDefineService", "org.springframework.stereotype.Service"],
+    "class_name": "DataDefineServiceImpl extends ServiceImpl<DataDefineMapper, DataDefinition> implements IDataDefineService",
+    "extend_name": "ServiceImpl<DataDefineMapper,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/service/impl/DataDefineServiceImpl.java"
+}, {
+    "name": "DataServiceImpl",
+    "package": "com.dr.op.data.service.impl",
+    "type": "class",
+    "imports": ["cn.hutool.core.date.DatePattern", "cn.hutool.core.date.DateUtil", "cn.hutool.core.lang.Assert", "cn.hutool.core.util.NumberUtil", "cn.hutool.core.util.StrUtil", "com.baomidou.mybatisplus.core.conditions.query.QueryWrapper", "com.baomidou.mybatisplus.core.metadata.IPage", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.op.data.api.http.page.DataFallPaging", "com.dr.op.data.api.http.page.DataPageRequest", "com.dr.op.data.api.http.request.*", "com.dr.op.data.api.http.response.*", "com.dr.op.data.dto.DataDefinitionDto", "com.dr.op.data.entity.DataDefinition", "com.dr.op.data.entity.DataFilter", "com.dr.op.data.entity.DataProp", "com.dr.op.data.mapper.DataListMapper", "com.dr.op.data.service.IDataDefineService", "com.dr.op.data.service.IDataFilterService", "com.dr.op.data.service.IDataService", "com.dr.op.data.util.DataExcelUtil", "com.dr.op.data.util.DataKvns", "com.dr.op.data.util.DataOrder", "com.dr.op.data.util.DataSqlUtil", "com.dr.op.globe.config.OSSConfig", "com.dr.op.globe.http.FallPaged", "com.dr.op.data.util.FileUtils", "com.dr.strategy.basic.data.DataDefine", "com.dr.strategy.basic.data.DataManager", "com.dr.strategy.basic.data.FieldTypeEnum", "com.dr.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.strategy.basic.visible.VisibleQuerySqlBuilder", "com.dr.strategy.setting.ServerSettings", "com.dr.strategy.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.http.HttpHeaders", "org.springframework.http.HttpStatus", "org.springframework.http.ResponseEntity", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.CollectionUtils", "javax.annotation.Resource", "java.io.ByteArrayOutputStream", "java.io.IOException", "java.io.InputStream", "java.net.URL", "java.sql.SQLException", "java.util.*", "java.util.regex.Pattern", "java.util.stream.Collectors"],
+    "class_name": "DataServiceImpl implements IDataService",
+    "extend_name": "",
+    "implements_name": ["IDataService"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/service/impl/DataServiceImpl.java"
+}, {
+    "name": "DataFilterServiceImpl",
+    "package": "com.dr.op.data.service.impl",
+    "type": "class",
+    "imports": ["com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.op.data.entity.DataFilter", "com.dr.op.data.mapper.DataFilterMapper", "com.dr.op.data.service.IDataFilterService", "org.springframework.stereotype.Service"],
+    "class_name": "DataFilterServiceImpl extends ServiceImpl<DataFilterMapper, DataFilter> implements IDataFilterService",
+    "extend_name": "ServiceImpl<DataFilterMapper,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/service/impl/DataFilterServiceImpl.java"
+}, {
+    "name": "OrderEnum",
+    "package": "com.dr.op.data.consts",
+    "type": "enum",
+    "imports": [],
+    "class_name": "OrderEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/consts/OrderEnum.java"
+}, {
+    "name": "KvnsEnum",
+    "package": "com.dr.op.data.consts",
+    "type": "enum",
+    "imports": [],
+    "class_name": "KvnsEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/consts/KvnsEnum.java"
+}, {
+    "name": "DataConstants",
+    "package": "com.dr.op.data.consts",
+    "type": "enum",
+    "imports": [],
+    "class_name": "DataConstants",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/consts/DataConstants.java"
+}, {
+    "name": "AppJointCertService",
+    "package": "com.dr.op.ajc",
+    "type": "class",
+    "imports": ["com.dr.op.account.AccountService", "com.dr.op.ajc.api.http.request.ConfigItem", "com.dr.op.ajc.api.http.request.SaveAppJointCertRequest", "com.dr.op.ajc.api.http.response.AppJointCertDefineResponse", "com.dr.op.ajc.api.http.response.AppJointCertResponse", "com.dr.op.ajc.api.http.response.ConfigDefineItem", "com.dr.op.ajc.entity.AppJointCertConfigEntity", "com.dr.op.ajc.entity.AppJointCertConfigId", "com.dr.op.ajc.entity.JointCertResponseDataEntity", "com.dr.op.ajc.repository.AppJointCertRepository", "com.dr.op.ajc.repository.JointCertResponseDataRepository", "com.dr.strategy.basic.app.jc.AppJointCertDefine", "com.dr.strategy.basic.app.jc.AppJointCertManager", "com.dr.strategy.basic.entity.BasicTagEntity", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.support.serialization.Serializations", "com.google.common.reflect.TypeToken", "org.apache.logging.log4j.util.Strings", "org.springframework.lang.NonNull", "org.springframework.lang.Nullable", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.time.Instant", "java.util.*", "java.util.stream.Collectors"],
+    "class_name": "AppJointCertService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/AppJointCertService.java"
+}, {
+    "name": "JointCertResponseDataRepository",
+    "package": "com.dr.op.ajc.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.ajc.entity.JointCertResponseDataEntity", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional", "java.util.Set"],
+    "class_name": "JointCertResponseDataRepository extends CrudRepository<JointCertResponseDataEntity, String>",
+    "extend_name": "CrudRepository<JointCertResponseDataEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/repository/JointCertResponseDataRepository.java"
+}, {
+    "name": "AppJointCertRepository",
+    "package": "com.dr.op.ajc.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.ajc.entity.AppJointCertConfigEntity", "com.dr.op.ajc.entity.AppJointCertConfigId", "org.springframework.data.repository.CrudRepository"],
+    "class_name": "AppJointCertRepository extends CrudRepository<AppJointCertConfigEntity, AppJointCertConfigId>",
+    "extend_name": "CrudRepository<AppJointCertConfigEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/repository/AppJointCertRepository.java"
+}, {
+    "name": "AppJointCertConfigEntity",
+    "package": "com.dr.op.ajc.entity",
+    "type": "class",
+    "imports": ["lombok.Data", "javax.persistence.Column", "javax.persistence.EmbeddedId", "javax.persistence.Entity", "javax.persistence.Table"],
+    "class_name": "AppJointCertConfigEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/entity/AppJointCertConfigEntity.java"
+}, {
+    "name": "AppJointCertConfigId",
+    "package": "com.dr.op.ajc.entity",
+    "type": "class",
+    "imports": ["lombok.Data", "javax.persistence.Embeddable", "java.io.Serializable"],
+    "class_name": "AppJointCertConfigId implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/entity/AppJointCertConfigId.java"
+}, {
+    "name": "JointCertResponseDataEntity",
+    "package": "com.dr.op.ajc.entity",
+    "type": "class",
+    "imports": ["lombok.Data", "javax.persistence.Entity", "javax.persistence.Id", "javax.persistence.Table"],
+    "class_name": "JointCertResponseDataEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/entity/JointCertResponseDataEntity.java"
+}, {
+    "name": "WechatService",
+    "package": "com.dr.op.ajc.wechat",
+    "type": "class",
+    "imports": ["com.dr.op.account.AccountService", "com.dr.op.account.api.AccountModelConvert", "com.dr.op.account.api.http.resp.LoginResponse", "com.dr.op.account.api.http.resp.OrgPathItemResp", "com.dr.op.ajc.wechat.api.http.request.WechatAssociateRequest", "com.dr.op.ajc.wechat.api.http.request.WechatLoginRequest", "com.dr.op.ajc.wechat.api.http.request.WechatQRCodeRequest", "com.dr.op.ajc.wechat.api.http.response.WechatAccessTokenResponse", "com.dr.op.ajc.wechat.api.http.response.WechatQRCodeResponse", "com.dr.op.ajc.wechat.consts.WechatAssociateStatusEnum", "com.dr.op.ajc.wechat.consts.WechatQRCodeStatusEnum", "com.dr.op.ajc.wechat.entity.WechatAssociateEntity", "com.dr.op.ajc.wechat.repository.WechatAccountRepo", "com.dr.strategy.basic.account.UnifyAccountManager", "com.dr.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.strategy.basic.token.TokenException", "com.dr.strategy.support.LogElapsedTime", "com.fasterxml.jackson.core.JsonProcessingException", "com.fasterxml.jackson.databind.ObjectMapper", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "org.springframework.validation.annotation.Validated", "org.springframework.web.client.RestTemplate", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Optional", "java.util.stream.Collectors"],
+    "class_name": "WechatService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/wechat/WechatService.java"
+}, {
+    "name": "WechatAccountRepo",
+    "package": "com.dr.op.ajc.wechat.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.ajc.wechat.entity.WechatAssociateEntity", "org.springframework.data.repository.CrudRepository", "java.util.Optional"],
+    "class_name": "WechatAccountRepo extends CrudRepository<WechatAssociateEntity, Long>",
+    "extend_name": "CrudRepository<WechatAssociateEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/wechat/repository/WechatAccountRepo.java"
+}, {
+    "name": "WechatAssociateEntity",
+    "package": "com.dr.op.ajc.wechat.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicEntity", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Column", "javax.persistence.Entity", "javax.persistence.Table", "javax.validation.Valid", "javax.validation.constraints.NotNull"],
+    "class_name": "WechatAssociateEntity extends BasicEntity",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/wechat/entity/WechatAssociateEntity.java"
+}, {
+    "name": "WechatApi",
+    "package": "com.dr.op.ajc.wechat.api",
+    "type": "class",
+    "imports": ["com.dr.op.account.api.http.resp.LoginResponse", "com.dr.op.account.api.http.resp.OrgPathItemResp", "com.dr.op.ajc.wechat.WechatService", "com.dr.op.ajc.wechat.api.http.request.WechatAssociateRequest", "com.dr.op.ajc.wechat.api.http.request.WechatLoginRequest", "com.dr.op.ajc.wechat.api.http.request.WechatQRCodeRequest", "com.dr.op.ajc.wechat.api.http.response.WechatQRCodeResponse", "com.dr.op.globe.http.ApiUrlConst", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.basic.token.TokenException", "com.dr.strategy.support.LogElapsedTime", "io.swagger.annotations.Api", "io.swagger.annotations.ApiOperation", "io.swagger.annotations.ApiParam", "org.springframework.web.bind.annotation.*", "java.util.List"],
+    "class_name": "WechatApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/wechat/api/WechatApi.java"
+}, {
+    "name": "WechatQRCodeResponse",
+    "package": "com.dr.op.ajc.wechat.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "WechatQRCodeResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/wechat/api/http/response/WechatQRCodeResponse.java"
+}, {
+    "name": "WechatAccessTokenResponse",
+    "package": "com.dr.op.ajc.wechat.api.http.response",
+    "type": "class",
+    "imports": ["com.fasterxml.jackson.annotation.JsonProperty", "io.swagger.annotations.ApiModel", "lombok.Data"],
+    "class_name": "WechatAccessTokenResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/wechat/api/http/response/WechatAccessTokenResponse.java"
+}, {
+    "name": "WechatAssociateRequest",
+    "package": "com.dr.op.ajc.wechat.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "WechatAssociateRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/wechat/api/http/request/WechatAssociateRequest.java"
+}, {
+    "name": "WechatQRCodeRequest",
+    "package": "com.dr.op.ajc.wechat.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "WechatQRCodeRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/wechat/api/http/request/WechatQRCodeRequest.java"
+}, {
+    "name": "WechatLoginRequest",
+    "package": "com.dr.op.ajc.wechat.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
+    "class_name": "WechatLoginRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/wechat/api/http/request/WechatLoginRequest.java"
+}, {
+    "name": "WechatQRCodeStatusEnum",
+    "package": "com.dr.op.ajc.wechat.consts",
+    "type": "enum",
+    "imports": ["com.dr.strategy.support.enums.KeyValueEnum", "lombok.Getter"],
+    "class_name": "WechatQRCodeStatusEnum implements KeyValueEnum<Integer, String>",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum<Integer", ""],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/wechat/consts/WechatQRCodeStatusEnum.java"
+}, {
+    "name": "WechatAssociateStatusEnum",
+    "package": "com.dr.op.ajc.wechat.consts",
+    "type": "enum",
+    "imports": ["com.dr.strategy.support.enums.KeyValueEnum", "lombok.Getter"],
+    "class_name": "WechatAssociateStatusEnum implements KeyValueEnum<Integer, String>",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum<Integer", ""],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/wechat/consts/WechatAssociateStatusEnum.java"
+}, {
+    "name": "BizAppJointCertApi",
+    "package": "com.dr.op.ajc.api",
+    "type": "class",
+    "imports": ["com.dr.op.ajc.AppJointCertService", "com.dr.op.ajc.api.http.request.SaveAppJointCertRequest", "com.dr.op.ajc.api.http.request.SaveRespRequest", "com.dr.op.ajc.api.http.response.AppJointCertDefineResponse", "com.dr.op.ajc.api.http.response.AppJointCertResponse", "com.dr.op.ajc.api.http.response.JointCertResponseDataResponse", "com.dr.op.globe.http.ApiUrlConst", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.support.serialization.Serializations", "com.google.gson.reflect.TypeToken", "io.swagger.annotations.*", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.lang.NonNull", "org.springframework.web.bind.annotation.*", "java.util.List", "java.util.Map", "java.util.Optional", "java.util.stream.Collectors"],
+    "class_name": "BizAppJointCertApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/api/BizAppJointCertApi.java"
+}, {
+    "name": "OpAppJointCertApi",
+    "package": "com.dr.op.ajc.api",
+    "type": "class",
+    "imports": ["com.dr.op.ajc.AppJointCertService", "com.dr.op.ajc.api.http.request.SaveAppJointCertRequest", "com.dr.op.ajc.api.http.request.SaveRespRequest", "com.dr.op.ajc.api.http.response.AppJointCertDefineResponse", "com.dr.op.ajc.api.http.response.AppJointCertResponse", "com.dr.op.ajc.api.http.response.JointCertResponseDataResponse", "com.dr.op.globe.http.ApiUrlConst", "com.dr.strategy.api.ServiceResponse", "com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.support.serialization.Serializations", "com.google.gson.reflect.TypeToken", "io.swagger.annotations.*", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.lang.NonNull", "org.springframework.web.bind.annotation.*", "java.util.List", "java.util.Map", "java.util.Optional", "java.util.stream.Collectors"],
+    "class_name": "OpAppJointCertApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/api/OpAppJointCertApi.java"
+}, {
+    "name": "AppJointCertResponse",
+    "package": "com.dr.op.ajc.api.http.response",
+    "type": "class",
+    "imports": ["com.dr.op.ajc.api.http.request.ConfigItem", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Objects", "java.util.Set"],
+    "class_name": "AppJointCertResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/api/http/response/AppJointCertResponse.java"
+}, {
+    "name": "ConfigDefineItem",
+    "package": "com.dr.op.ajc.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "ConfigDefineItem",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/api/http/response/ConfigDefineItem.java"
+}, {
+    "name": "AppJointCertDefineResponse",
+    "package": "com.dr.op.ajc.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List", "java.util.Set"],
+    "class_name": "AppJointCertDefineResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/api/http/response/AppJointCertDefineResponse.java"
+}, {
+    "name": "JointCertResponseDataResponse",
+    "package": "com.dr.op.ajc.api.http.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Map"],
+    "class_name": "JointCertResponseDataResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/api/http/response/JointCertResponseDataResponse.java"
+}, {
+    "name": "SaveRespRequest",
+    "package": "com.dr.op.ajc.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Map"],
+    "class_name": "SaveRespRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/api/http/request/SaveRespRequest.java"
+}, {
+    "name": "SaveAppJointCertRequest",
+    "package": "com.dr.op.ajc.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
+    "class_name": "SaveAppJointCertRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/api/http/request/SaveAppJointCertRequest.java"
+}, {
+    "name": "ConfigItem",
+    "package": "com.dr.op.ajc.api.http.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Objects"],
+    "class_name": "ConfigItem",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/api/http/request/ConfigItem.java"
+}, {
+    "name": "ContactPerson",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Date"],
+    "class_name": "ContactPerson",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/ContactPerson.java"
+}, {
+    "name": "BlackUser",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
+    "class_name": "BlackUser",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/BlackUser.java"
+}, {
+    "name": "BlackUserRepository",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "BlackUserRepository",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/BlackUserRepository.java"
+}, {
+    "name": "ChatUserEntity",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "ChatUserEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/ChatUserEntity.java"
+}, {
+    "name": "OrgEntity",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "OrgEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/OrgEntity.java"
+}, {
+    "name": "Recent",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["lombok.Data", "java.util.List"],
+    "class_name": "Recent",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/Recent.java"
+}, {
+    "name": "ImSessionEntity",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Date", "java.util.Set"],
+    "class_name": "ImSessionEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/ImSessionEntity.java"
+}, {
+    "name": "AddressBookEntity",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Id", "java.util.Set"],
+    "class_name": "AddressBookEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/AddressBookEntity.java"
+}, {
+    "name": "Person",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.NoArgsConstructor", "java.util.Date"],
+    "class_name": "Person",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/Person.java"
+}, {
+    "name": "LoadMsgEntity",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "LoadMsgEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/LoadMsgEntity.java"
+}, {
+    "name": "ImSessionMsgEntity",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Date"],
+    "class_name": "ImSessionMsgEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/ImSessionMsgEntity.java"
+}, {
+    "name": "ImMsgGlobalConfigEntity",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.data.mongodb.core.mapping.Document", "javax.persistence.Id", "java.util.Date", "java.util.Set"],
+    "class_name": "ImMsgGlobalConfigEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/ImMsgGlobalConfigEntity.java"
+}, {
+    "name": "ImPersonalConfigEntity",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.identity.entity.IdentityEntity", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.data.mongodb.core.mapping.Document", "javax.persistence.Id", "java.util.Date", "java.util.Set"],
+    "class_name": "ImPersonalConfigEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/ImPersonalConfigEntity.java"
+}, {
+    "name": "PersonEntity",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Id", "java.util.Set"],
+    "class_name": "PersonEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/PersonEntity.java"
+}, {
+    "name": "ImSession",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "ImSession",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/ImSession.java"
+}, {
+    "name": "CreateSessionEntity",
+    "package": "com.dr.op.imsession.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "CreateSessionEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/entity/CreateSessionEntity.java"
+}, {
+    "name": "IsCurrentType",
+    "package": "com.dr.op.imsession.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor", "org.apache.commons.lang3.StringUtils"],
+    "class_name": "IsCurrentType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/enums/IsCurrentType.java"
+}, {
+    "name": "PersonTag",
+    "package": "com.dr.op.imsession.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "PersonTag",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/enums/PersonTag.java"
+}, {
+    "name": "QueryMode",
+    "package": "com.dr.op.imsession.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "QueryMode",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/enums/QueryMode.java"
+}, {
+    "name": "TemplateType",
+    "package": "com.dr.op.imsession.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "TemplateType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/enums/TemplateType.java"
+}, {
+    "name": "SessionType",
+    "package": "com.dr.op.imsession.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "SessionType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/enums/SessionType.java"
+}, {
+    "name": "PersonType",
+    "package": "com.dr.op.imsession.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "PersonType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/enums/PersonType.java"
+}, {
+    "name": "ContactType",
+    "package": "com.dr.op.imsession.enums",
+    "type": "enum",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
+    "class_name": "ContactType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/enums/ContactType.java"
+}, {
+    "name": "ImSessionApi",
+    "package": "com.dr.op.imsession.api",
+    "type": "class",
+    "imports": ["com.alibaba.fastjson.JSON", "com.dr.op.globe.constant.BizErrorCode", "com.dr.op.globe.exception.BusinessException", "com.dr.op.globe.exception.SystemError", "com.dr.op.globe.exception.SystemException", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallPaged", "com.dr.op.imsession.api.request.*", "com.dr.op.imsession.api.response.UserInfoResponse", "com.dr.op.imsession.entity.AddressBookEntity", "com.dr.op.imsession.entity.ImSessionEntity", "com.dr.op.imsession.entity.ImSessionMsgEntity", "com.dr.op.imsession.entity.LoadMsgEntity", "com.dr.op.imsession.service.ImSessionService", "com.dr.strategy.api.ServiceResponse", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "org.apache.commons.lang3.StringEscapeUtils", "org.apache.commons.lang3.StringUtils", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.CollectionUtils", "org.springframework.web.bind.annotation.*", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletResponse", "java.io.IOException", "java.util.List", "java.util.Map"],
+    "class_name": "ImSessionApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/ImSessionApi.java"
+}, {
+    "name": "AddressBookApi",
+    "package": "com.dr.op.imsession.api",
+    "type": "class",
+    "imports": ["com.alibaba.fastjson.JSON", "com.dr.op.globe.constant.BizErrorCode", "com.dr.op.globe.exception.BusinessException", "com.dr.op.globe.exception.SystemError", "com.dr.op.globe.exception.SystemException", "com.dr.op.globe.http.ApiUrlConst", "com.dr.op.globe.http.FallObjectPaged", "com.dr.op.globe.http.FallPaged", "com.dr.op.imsession.api.request.*", "com.dr.op.imsession.api.response.*", "com.dr.op.imsession.entity.AddressBookEntity", "com.dr.op.imsession.entity.ContactPerson", "com.dr.op.imsession.service.AddressBookService", "com.dr.strategy.api.ServiceResponse", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "org.apache.commons.lang3.StringUtils", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.*"],
+    "class_name": "AddressBookApi",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/AddressBookApi.java"
+}, {
+    "name": "UserInfoResponse",
+    "package": "com.dr.op.imsession.api.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "UserInfoResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/response/UserInfoResponse.java"
+}, {
+    "name": "LookOverResponse",
+    "package": "com.dr.op.imsession.api.response",
+    "type": "class",
+    "imports": ["lombok.Data"],
+    "class_name": "LookOverResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/response/LookOverResponse.java"
+}, {
+    "name": "FavoriteResponse",
+    "package": "com.dr.op.imsession.api.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "FavoriteResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/response/FavoriteResponse.java"
+}, {
+    "name": "FondContact",
+    "package": "com.dr.op.imsession.api.response",
+    "type": "class",
+    "imports": ["lombok.Data"],
+    "class_name": "FondContact",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/response/FondContact.java"
+}, {
+    "name": "AddContactPersonResponse",
+    "package": "com.dr.op.imsession.api.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AddContactPersonResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/response/AddContactPersonResponse.java"
+}, {
+    "name": "OpenAddressBookResponse",
+    "package": "com.dr.op.imsession.api.response",
+    "type": "class",
+    "imports": ["com.dr.op.imsession.entity.OrgEntity", "com.dr.op.imsession.entity.Recent", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List", "java.util.Set"],
+    "class_name": "OpenAddressBookResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/response/OpenAddressBookResponse.java"
+}, {
+    "name": "ContactPersonResponse",
+    "package": "com.dr.op.imsession.api.response",
+    "type": "class",
+    "imports": ["com.dr.op.imsession.entity.ContactPerson", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "ContactPersonResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/response/ContactPersonResponse.java"
+}, {
+    "name": "QueryImMsgResponse",
+    "package": "com.dr.op.imsession.api.response",
+    "type": "class",
+    "imports": ["com.dr.op.imsession.entity.ImSessionMsgEntity", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "QueryImMsgResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/response/QueryImMsgResponse.java"
+}, {
+    "name": "VerifyContactPersonResponse",
+    "package": "com.dr.op.imsession.api.response",
+    "type": "class",
+    "imports": ["com.dr.op.imsession.entity.ImSession", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "VerifyContactPersonResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/response/VerifyContactPersonResponse.java"
+}, {
+    "name": "FondContactResponse",
+    "package": "com.dr.op.imsession.api.response",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List", "java.util.Set"],
+    "class_name": "FondContactResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/response/FondContactResponse.java"
+}, {
+    "name": "AddressBookResponse",
+    "package": "com.dr.op.imsession.api.response",
+    "type": "class",
+    "imports": ["com.dr.op.imsession.entity.OrgEntity", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
+    "class_name": "AddressBookResponse",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/response/AddressBookResponse.java"
+}, {
+    "name": "AddPersonRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["com.dr.op.imsession.entity.Person", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "AddPersonRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/AddPersonRequest.java"
+}, {
+    "name": "AddContactPersonRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "AddContactPersonRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/AddContactPersonRequest.java"
+}, {
+    "name": "ReadMsgRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "ReadMsgRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/ReadMsgRequest.java"
+}, {
+    "name": "SendMsgRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["com.dr.op.imsession.entity.Person", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List", "java.util.Set"],
+    "class_name": "SendMsgRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/SendMsgRequest.java"
+}, {
+    "name": "ContactPersonRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "ContactPersonRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/ContactPersonRequest.java"
+}, {
+    "name": "DeleteContactRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DeleteContactRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/DeleteContactRequest.java"
+}, {
+    "name": "DeletePersonRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["com.dr.op.imsession.entity.Person", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "DeletePersonRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/DeletePersonRequest.java"
+}, {
+    "name": "LookOverRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "LookOverRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/LookOverRequest.java"
+}, {
+    "name": "VerifyContactPersonRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "VerifyContactPersonRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/VerifyContactPersonRequest.java"
+}, {
+    "name": "ChatUser",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "ChatUser",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/ChatUser.java"
+}, {
+    "name": "MsgTemplate",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["com.dr.op.imsession.enums.TemplateType", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Date"],
+    "class_name": "MsgTemplate",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/MsgTemplate.java"
+}, {
+    "name": "TopRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "TopRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/TopRequest.java"
+}, {
+    "name": "OpenAddressBookRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["lombok.Data"],
+    "class_name": "OpenAddressBookRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/OpenAddressBookRequest.java"
+}, {
+    "name": "QueryMsgDetailRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "QueryMsgDetailRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/QueryMsgDetailRequest.java"
+}, {
+    "name": "CreateImSessionRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "CreateImSessionRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/CreateImSessionRequest.java"
+}, {
+    "name": "FondContactRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "FondContactRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/FondContactRequest.java"
+}, {
+    "name": "SearchParamRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
+    "class_name": "SearchParamRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/SearchParamRequest.java"
+}, {
+    "name": "MsgContent",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.EqualsAndHashCode"],
+    "class_name": "MsgContent extends MsgTemplate",
+    "extend_name": "MsgTemplate",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/MsgContent.java"
+}, {
+    "name": "HitContactRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "HitContactRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/HitContactRequest.java"
+}, {
+    "name": "DeleteGroupRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DeleteGroupRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/DeleteGroupRequest.java"
+}, {
+    "name": "QuitRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "QuitRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/QuitRequest.java"
+}, {
+    "name": "QueryPersonRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "QueryPersonRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/QueryPersonRequest.java"
+}, {
+    "name": "SpeakingNotAllowedRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["com.dr.op.imsession.entity.Person", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
+    "class_name": "SpeakingNotAllowedRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/SpeakingNotAllowedRequest.java"
+}, {
+    "name": "DisturbRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "DisturbRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/DisturbRequest.java"
+}, {
+    "name": "FavoriteRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "FavoriteRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/FavoriteRequest.java"
+}, {
+    "name": "ImSessionMsgRequest",
+    "package": "com.dr.op.imsession.api.request",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
+    "class_name": "ImSessionMsgRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/api/request/ImSessionMsgRequest.java"
+}, {
+    "name": "ImSessionService",
+    "package": "com.dr.op.imsession.service",
+    "type": "interface",
+    "imports": ["com.dr.op.globe.http.FallPaged", "com.dr.op.imsession.api.request.*", "com.dr.op.imsession.api.response.UserInfoResponse", "com.dr.op.imsession.entity.AddressBookEntity", "com.dr.op.imsession.entity.ImSessionEntity", "com.dr.op.imsession.entity.ImSessionMsgEntity", "com.dr.op.imsession.entity.LoadMsgEntity", "java.util.List"],
+    "class_name": "ImSessionService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/service/ImSessionService.java"
+}, {
+    "name": "AddressBookService",
+    "package": "com.dr.op.imsession.service",
+    "type": "interface",
+    "imports": ["com.dr.op.account.api.http.resp.AccountInfoResponse", "com.dr.op.globe.http.FallObjectPaged", "com.dr.op.globe.http.FallPaged", "com.dr.op.imsession.api.request.*", "com.dr.op.imsession.api.response.*", "com.dr.op.imsession.entity.AddressBookEntity", "com.dr.op.imsession.entity.ContactPerson", "java.util.Optional"],
+    "class_name": "AddressBookService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/service/AddressBookService.java"
+}, {
+    "name": "AddressBookServiceImpl",
+    "package": "com.dr.op.imsession.service.impl",
+    "type": "class",
+    "imports": ["com.dr.op.account.AccountService", "com.dr.op.account.api.AccountModelConvert", "com.dr.op.account.api.http.resp.AccountInfoResponse", "com.dr.op.account.consts.SexTypeEnum", "com.dr.op.account.entity.AccountInfoEntity", "com.dr.op.globe.config.OSSConfig", "com.dr.op.globe.constant.BizErrorCode", "com.dr.op.globe.exception.BusinessException", "com.dr.op.globe.http.FallObjectPaged", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.util.IdGenerator", "com.dr.op.globe.util.SnowflakeIdWorker", "com.dr.op.imsession.api.request.*", "com.dr.op.imsession.api.response.*", "com.dr.op.imsession.entity.*", "com.dr.op.imsession.enums.ContactType", "com.dr.op.imsession.enums.IsCurrentType", "com.dr.op.imsession.enums.PersonTag", "com.dr.op.imsession.enums.SessionType", "com.dr.op.imsession.service.AddressBookService", "com.dr.op.imsession.service.ImSessionService", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.token.Current", "org.apache.commons.lang3.StringUtils", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.beans.BeanUtils", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.data.domain.PageRequest", "org.springframework.data.domain.Pageable", "org.springframework.data.mongodb.core.MongoTemplate", "org.springframework.data.mongodb.core.query.Criteria", "org.springframework.data.mongodb.core.query.Query", "org.springframework.data.mongodb.core.query.Update", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.CollectionUtils", "java.util.*"],
+    "class_name": "AddressBookServiceImpl implements AddressBookService",
+    "extend_name": "",
+    "implements_name": ["AddressBookService"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/service/impl/AddressBookServiceImpl.java"
+}, {
+    "name": "ImSessionServiceImpl",
+    "package": "com.dr.op.imsession.service.impl",
+    "type": "class",
+    "imports": ["com.alibaba.fastjson.JSON", "com.dr.op.account.AccountService", "com.dr.op.account.api.AccountModelConvert", "com.dr.op.account.api.http.resp.AccountInfoResponse", "com.dr.op.account.entity.AccountInfoEntity", "com.dr.op.globe.config.OSSConfig", "com.dr.op.globe.config.RedisComponent", "com.dr.op.globe.constant.BizErrorCode", "com.dr.op.globe.constant.Constant", "com.dr.op.globe.exception.BusinessException", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.util.DateUtils", "com.dr.op.globe.util.IdGenerator", "com.dr.op.globe.util.SnowflakeIdWorker", "com.dr.op.imsession.api.request.*", "com.dr.op.imsession.api.response.UserInfoResponse", "com.dr.op.imsession.entity.*", "com.dr.op.imsession.enums.IsCurrentType", "com.dr.op.imsession.enums.PersonType", "com.dr.op.imsession.enums.QueryMode", "com.dr.op.imsession.enums.SessionType", "com.dr.op.imsession.service.ImSessionService", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.token.Current", "com.mongodb.client.MongoIterable", "org.apache.commons.lang3.StringUtils", "org.apache.logging.log4j.util.Strings", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.beans.BeanUtils", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.data.domain.PageRequest", "org.springframework.data.domain.Pageable", "org.springframework.data.domain.Sort", "org.springframework.data.mongodb.core.MongoTemplate", "org.springframework.data.mongodb.core.query.Criteria", "org.springframework.data.mongodb.core.query.Query", "org.springframework.data.mongodb.core.query.Update", "org.springframework.stereotype.Service", "org.springframework.util.CollectionUtils", "javax.transaction.Transactional", "java.util.*", "java.util.stream.Collectors"],
+    "class_name": "ImSessionServiceImpl implements ImSessionService",
+    "extend_name": "",
+    "implements_name": ["ImSessionService"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/imsession/service/impl/ImSessionServiceImpl.java"
+}, {
+    "name": "CommonAllocationRuleRepository",
+    "package": "com.dr.op.allocation.repository",
+    "type": "interface",
+    "imports": ["com.dr.op.allocation.entity.CommonAllocationRuleEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.Query", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Set"],
+    "class_name": "CommonAllocationRuleRepository extends CrudRepository<CommonAllocationRuleEntity, Integer>",
+    "extend_name": "CrudRepository<CommonAllocationRuleEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/allocation/repository/CommonAllocationRuleRepository.java"
+}, {
+    "name": "CommonAllocationRuleEntity",
+    "package": "com.dr.op.allocation.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicAllocationRule", "lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "javax.persistence.*", "java.io.Serializable"],
+    "class_name": "CommonAllocationRuleEntity extends BasicAllocationRule implements Serializable",
+    "extend_name": "BasicAllocationRule",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/allocation/entity/CommonAllocationRuleEntity.java"
+}, {
+    "name": "CommonRuleUnionId",
+    "package": "com.dr.op.allocation.entity",
+    "type": "class",
+    "imports": ["lombok.Data", "lombok.NoArgsConstructor", "java.io.Serializable"],
+    "class_name": "CommonRuleUnionId implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/allocation/entity/CommonRuleUnionId.java"
+}, {
+    "name": "CommonAllocationRuleService",
+    "package": "com.dr.op.allocation.service",
+    "type": "class",
+    "imports": ["com.dr.op.allocation.entity.CommonAllocationRuleEntity", "com.dr.op.allocation.repository.CommonAllocationRuleRepository", "com.dr.op.app.http.req.CommonExceptionModifyRequest", "com.dr.op.dv.http.resp.VisibleExecListResponse", "com.dr.op.globe.jpa.FallPageable", "com.dr.strategy.basic.entity.BasicAllocationRule", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.util.*", "java.util.stream.Collectors"],
+    "class_name": "CommonAllocationRuleService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/allocation/service/CommonAllocationRuleService.java"
+}, {
+    "name": "AllocationTagSystemKeyEnum",
+    "package": "com.dr.op.allocation.consts",
+    "type": "enum",
+    "imports": [],
+    "class_name": "AllocationTagSystemKeyEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/allocation/consts/AllocationTagSystemKeyEnum.java"
+}, {
+    "name": "MavenWrapperDownloader",
+    "package": "",
+    "type": "class",
+    "imports": ["java.net.*", "java.io.*", "java.nio.channels.*", "java.util.Properties"],
+    "class_name": "MavenWrapperDownloader",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/.mvn/wrapper/MavenWrapperDownloader.java"
+}, {
+    "name": "StrategyApplicationTests",
+    "package": "com.dr.strategy",
+    "type": "class",
+    "imports": ["org.junit.jupiter.api.Test", "org.springframework.boot.test.context.SpringBootTest"],
+    "class_name": "StrategyApplicationTests",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/StrategyApplicationTests.java"
+}, {
+    "name": "BasicSpringbootTester",
+    "package": "com.dr.strategy",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.account.UnifyAccountManager", "com.dr.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.strategy.basic.token.Current", "com.dr.strategy.basic.token.CurrentUser", "com.dr.strategy.basic.token.TokenException", "com.dr.strategy.basic.token.TokenManger", "com.dr.strategy.setting.ServerSettings", "lombok.AllArgsConstructor", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.junit.Before", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner"],
+    "class_name": "BasicSpringbootTester",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/BasicSpringbootTester.java"
+}, {
+    "name": "StrategyApplication",
+    "package": "com.dr.strategy",
+    "type": "class",
+    "imports": ["org.springframework.boot.SpringApplication", "org.springframework.boot.autoconfigure.SpringBootApplication"],
+    "class_name": "StrategyApplication",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/StrategyApplication.java"
+}, {
+    "name": "TokenMangerTest",
+    "package": "com.dr.strategy.basic.token",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired"],
+    "class_name": "TokenMangerTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/token/TokenMangerTest.java"
+}, {
+    "name": "VisibleManagerTest",
+    "package": "com.dr.strategy.basic.visible",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "com.dr.strategy.basic.cases.order.OrderEntity", "com.dr.strategy.basic.cases.order.OrderService", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.basic.tag.ref.RefTagException", "com.dr.strategy.basic.visible.row.rule.IdentityVisibleRule", "com.dr.strategy.basic.visible.row.rule.SimpleVisibleRule", "com.dr.strategy.basic.visible.row.rule.Tags", "lombok.extern.slf4j.Slf4j", "org.assertj.core.util.Sets", "org.junit.Assert", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.util.LinkedHashSet", "java.util.Set", "static com.dr.strategy.basic.cases.order.Constant.APPID", "static com.dr.strategy.basic.cases.order.Constant.BIZ_BUY_ID"],
+    "class_name": "VisibleManagerTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/visible/VisibleManagerTest.java"
+}, {
+    "name": "VisibleQuerySqlBuilderTest",
+    "package": "com.dr.strategy.basic.visible",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "com.dr.strategy.basic.cases.order.Constant", "com.dr.strategy.basic.cases.order.OrderEntity", "com.dr.strategy.basic.tag.TagException", "com.dr.strategy.basic.tag.consts.PresetTagSystemKey", "lombok.extern.slf4j.Slf4j", "org.assertj.core.util.Lists", "org.assertj.core.util.Sets", "org.junit.Before", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.util.Set"],
+    "class_name": "VisibleQuerySqlBuilderTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/visible/VisibleQuerySqlBuilderTest.java"
+}, {
+    "name": "RoleManagerTest",
+    "package": "com.dr.strategy.basic.role",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "com.dr.strategy.basic.role.consts.PresetRoleIdConst", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.google.common.collect.Sets", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired"],
+    "class_name": "RoleManagerTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/role/RoleManagerTest.java"
+}, {
+    "name": "RestMonitorTest",
+    "package": "com.dr.strategy.basic.monitor",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "org.junit.Test", "org.springframework.amqp.core.Message", "org.springframework.amqp.rabbit.annotation.Exchange", "org.springframework.amqp.rabbit.annotation.Queue", "org.springframework.amqp.rabbit.annotation.QueueBinding", "org.springframework.amqp.rabbit.annotation.RabbitListener", "org.springframework.web.bind.annotation.*"],
+    "class_name": "RestMonitorTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/monitor/RestMonitorTest.java"
+}, {
+    "name": "AppManagerTest",
+    "package": "com.dr.strategy.basic.app",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "com.dr.strategy.basic.cases.order.OrderServiceConfig", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.util.Map"],
+    "class_name": "AppManagerTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/app/AppManagerTest.java"
+}, {
+    "name": "AppContainerTest",
+    "package": "com.dr.strategy.basic.app",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "com.dr.strategy.basic.app.scan.AppContainer", "lombok.extern.slf4j.Slf4j", "org.junit.Test"],
+    "class_name": "AppContainerTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/app/AppContainerTest.java"
+}, {
+    "name": "IdentityManagerTest",
+    "package": "com.dr.strategy.basic.identity",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "com.dr.strategy.basic.identity.consts.IdentityRoleRuleEnum", "com.dr.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "lombok.extern.slf4j.Slf4j", "org.assertj.core.util.Sets", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.util.List"],
+    "class_name": "IdentityManagerTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/identity/IdentityManagerTest.java"
+}, {
+    "name": "IdentityRepositoryTest",
+    "package": "com.dr.strategy.basic.identity.repository",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "com.dr.strategy.basic.identity.entity.IdentityEntity", "org.junit.Test", "javax.annotation.Resource", "javax.transaction.Transactional", "java.util.Set", "java.util.stream.Collectors"],
+    "class_name": "IdentityRepositoryTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/identity/repository/IdentityRepositoryTest.java"
+}, {
+    "name": "BasicAllocationRuleTest",
+    "package": "com.dr.strategy.basic.entity",
+    "type": "class",
+    "imports": ["org.junit.jupiter.api.Test"],
+    "class_name": "BasicAllocationRuleTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/entity/BasicAllocationRuleTest.java"
+}, {
+    "name": "BasicEntityTest",
+    "package": "com.dr.strategy.basic.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "lombok.extern.slf4j.Slf4j"],
+    "class_name": "BasicEntityTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/entity/BasicEntityTest.java"
+}, {
+    "name": "OrderRepository",
+    "package": "com.dr.strategy.basic.cases.order",
+    "type": "interface",
+    "imports": ["org.springframework.data.repository.CrudRepository"],
+    "class_name": "OrderRepository extends CrudRepository<OrderEntity, String>",
+    "extend_name": "CrudRepository<OrderEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/cases/order/OrderRepository.java"
+}, {
+    "name": "OrderServiceConfig",
+    "package": "com.dr.strategy.basic.cases.order",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.config.AppConfig", "com.dr.strategy.basic.app.config.AppConfigItem", "com.dr.strategy.basic.app.consts.AppConfigTypeEnum", "com.dr.strategy.basic.app.consts.AppConfigValueTypeEnum", "lombok.Data", "static com.dr.strategy.basic.cases.order.Constant.APPID"],
+    "class_name": "OrderServiceConfig",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/cases/order/OrderServiceConfig.java"
+}, {
+    "name": "Constant",
+    "package": "com.dr.strategy.basic.cases.order",
+    "type": "class",
+    "imports": [],
+    "class_name": "Constant",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/cases/order/Constant.java"
+}, {
+    "name": "OrderCaseTester",
+    "package": "com.dr.strategy.basic.cases.order",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.basic.tag.ref.RefTagException", "lombok.extern.slf4j.Slf4j", "org.assertj.core.util.Sets", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.util.Set"],
+    "class_name": "OrderCaseTester extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/cases/order/OrderCaseTester.java"
+}, {
+    "name": "OrderService",
+    "package": "com.dr.strategy.basic.cases.order",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.App", "com.dr.strategy.basic.app.biz.BizClassifies", "com.dr.strategy.basic.app.biz.BizClassify", "com.dr.strategy.basic.app.menu.AppCustomMenu", "com.dr.strategy.basic.app.menu.AppDataDefineMenu", "com.dr.strategy.basic.app.menu.AppMenu", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.role.PresetRole", "com.dr.strategy.basic.role.PresetRoles", "com.dr.strategy.basic.tag.TagSystemManager", "com.dr.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.basic.tag.ref.RefTagException", "lombok.extern.slf4j.Slf4j", "org.assertj.core.util.Sets", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Component", "java.util.Set", "static com.dr.strategy.basic.cases.order.Constant.*"],
+    "class_name": "OrderService",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/cases/order/OrderService.java"
+}, {
+    "name": "OrderEntity",
+    "package": "com.dr.strategy.basic.cases.order",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.data.DataDefineClass", "com.dr.strategy.basic.data.DataDefineField", "com.dr.strategy.basic.data.FieldTypeEnum", "com.dr.strategy.basic.entity.BasicEntity", "com.dr.strategy.basic.role.PresetRole", "com.dr.strategy.basic.role.PresetRoles", "com.dr.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.strategy.basic.tag.consts.ReferTagPersistenceEnum", "com.dr.strategy.basic.tag.ref.RefTag", "com.dr.strategy.basic.visible.column.ColumnVisible", "com.dr.strategy.basic.visible.row.VisibleTag", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.Entity", "javax.persistence.Table", "static com.dr.strategy.basic.cases.order.Constant.*"],
+    "class_name": "OrderEntity extends BasicEntity",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/cases/order/OrderEntity.java"
+}, {
+    "name": "AreaTagSystemManager",
+    "package": "com.dr.strategy.basic.cases.area",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.consts.AppKeyConst", "com.dr.strategy.basic.entity.EntityState", "com.dr.strategy.basic.tag.TagSystem", "com.dr.strategy.basic.tag.consts.TagTypeEnum", "com.dr.strategy.basic.tag.preset.BasicTagSystem", "org.springframework.stereotype.Component", "java.util.List", "java.util.Optional"],
+    "class_name": "AreaTagSystemManager extends BasicTagSystem",
+    "extend_name": "BasicTagSystem",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/cases/area/AreaTagSystemManager.java"
+}, {
+    "name": "UnifyAccountManagerTest",
+    "package": "com.dr.strategy.basic.account",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "com.dr.strategy.basic.token.TokenException", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired"],
+    "class_name": "UnifyAccountManagerTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/account/UnifyAccountManagerTest.java"
+}, {
+    "name": "DataDefineContainerTest",
+    "package": "com.dr.strategy.basic.data",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "lombok.extern.slf4j.Slf4j", "org.junit.Test"],
+    "class_name": "DataDefineContainerTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/data/DataDefineContainerTest.java"
+}, {
+    "name": "TagSystemManagerTest",
+    "package": "com.dr.strategy.basic.tag",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "com.dr.strategy.basic.entity.EntityState", "com.dr.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.strategy.basic.tag.preset.BasicTagSystem", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired"],
+    "class_name": "TagSystemManagerTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/tag/TagSystemManagerTest.java"
+}, {
+    "name": "BasicPresetVisibleTagsStatementSystemTest",
+    "package": "com.dr.strategy.basic.tag.preset",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "com.dr.strategy.basic.app.consts.AppKeyConst", "com.dr.strategy.basic.entity.EntityState", "com.dr.strategy.basic.tag.TagSystem", "com.dr.strategy.basic.tag.consts.TagTypeEnum", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Component", "java.util.List", "java.util.Optional"],
+    "class_name": "BasicPresetVisibleTagsStatementSystemTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/tag/preset/BasicPresetVisibleTagsStatementSystemTest.java"
+}, {
+    "name": "CommonAllocationRuleServiceTest",
+    "package": "com.dr.strategy.basic.allocation",
+    "type": "class",
+    "imports": ["com.dr.strategy.BasicSpringbootTester", "com.dr.strategy.basic.allocation.entity.CommonAllocationRuleEntity", "com.dr.strategy.basic.allocation.entity.CommonRuleUnionId", "com.dr.strategy.basic.allocation.service.CommonAllocationRuleService", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.HashSet", "java.util.Optional", "java.util.Set"],
+    "class_name": "CommonAllocationRuleServiceTest extends BasicSpringbootTester",
+    "extend_name": "BasicSpringbootTester",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/allocation/CommonAllocationRuleServiceTest.java"
+}, {
+    "name": "HashingTest",
+    "package": "com.dr.strategy.support.hash",
+    "type": "class",
+    "imports": ["com.google.common.base.Charsets", "org.junit.Assert", "org.junit.Test"],
+    "class_name": "HashingTest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/support/hash/HashingTest.java"
+}, {
+    "name": "GlobeServiceResultEnum",
+    "package": "com.dr.strategy.basic",
+    "type": "enum",
+    "imports": ["com.dr.strategy.support.enums.KeyValueEnum"],
+    "class_name": "GlobeServiceResultEnum implements KeyValueEnum<Integer, String>",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum<Integer", ""],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/GlobeServiceResultEnum.java"
+}, {
+    "name": "GlobeScanner",
+    "package": "com.dr.strategy.basic",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.App", "com.dr.strategy.basic.app.biz.BizClassifies", "com.dr.strategy.basic.app.biz.BizClassify", "com.dr.strategy.basic.app.consts.AppKeyConst", "com.dr.strategy.basic.app.scan.AppScanner", "com.dr.strategy.basic.data.DataDefineScanner", "com.dr.strategy.basic.role.PresetRoleScanner", "com.dr.strategy.basic.tag.preset.PresetTagSystemScanner", "com.dr.strategy.basic.tag.ref.RefTagScanner", "com.dr.strategy.basic.visible.column.ColumnVisibleScanner", "com.dr.strategy.support.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.springframework.context.event.ContextRefreshedEvent", "org.springframework.context.event.EventListener", "org.springframework.stereotype.Component"],
+    "class_name": "GlobeScanner",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/GlobeScanner.java"
+}, {
+    "name": "TokenManger",
+    "package": "com.dr.strategy.basic.token",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.account.UnifyAccountManager", "com.dr.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.role.RoleManager", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "lombok.NonNull", "lombok.extern.slf4j.Slf4j", "org.springframework.lang.Nullable", "org.springframework.stereotype.Component", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.Map", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors", "static com.dr.strategy.basic.token.Token.NEVER_EXPIRED"],
+    "class_name": "TokenManger",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/token/TokenManger.java"
+}, {
+    "name": "CurrentUser",
+    "package": "com.dr.strategy.basic.token",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.google.common.collect.Maps", "lombok.Data", "org.springframework.util.Assert", "java.time.Instant", "java.util.Map", "java.util.Optional", "java.util.Set"],
+    "class_name": "CurrentUser",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/token/CurrentUser.java"
+}, {
+    "name": "Current",
+    "package": "com.dr.strategy.basic.token",
+    "type": "class",
+    "imports": ["lombok.NonNull", "java.util.Objects", "java.util.Optional"],
+    "class_name": "Current",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/token/Current.java"
+}, {
+    "name": "TokenException",
+    "package": "com.dr.strategy.basic.token",
+    "type": "class",
+    "imports": [],
+    "class_name": "TokenException extends Exception",
+    "extend_name": "Exception",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/token/TokenException.java"
+}, {
+    "name": "CurrentUserException",
+    "package": "com.dr.strategy.basic.token",
+    "type": "class",
+    "imports": [],
+    "class_name": "CurrentUserException extends RuntimeException",
+    "extend_name": "RuntimeException",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/token/CurrentUserException.java"
+}, {
+    "name": "Token",
+    "package": "com.dr.strategy.basic.token",
+    "type": "class",
+    "imports": ["com.google.gson.Gson", "lombok.Data", "java.time.Instant", "java.util.Map"],
+    "class_name": "Token",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/token/Token.java"
+}, {
+    "name": "AES",
+    "package": "com.dr.strategy.basic.token",
+    "type": "class",
+    "imports": ["com.google.common.base.Charsets", "javax.crypto.BadPaddingException", "javax.crypto.Cipher", "javax.crypto.IllegalBlockSizeException", "javax.crypto.NoSuchPaddingException", "javax.crypto.spec.SecretKeySpec", "java.io.UnsupportedEncodingException", "java.nio.charset.StandardCharsets", "java.security.InvalidKeyException", "java.security.MessageDigest", "java.security.NoSuchAlgorithmException", "java.util.Arrays", "java.util.Base64"],
+    "class_name": "AES",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/token/AES.java"
+}, {
+    "name": "VisibleManager",
+    "package": "com.dr.strategy.basic.visible",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.allocation.BasicAllocationManager", "com.dr.strategy.basic.app.consts.AppKeyConst", "com.dr.strategy.basic.entity.BasicAllocationRule", "com.dr.strategy.basic.entity.BasicEntity", "com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.role.PresetRole", "com.dr.strategy.basic.role.PresetRoles", "com.dr.strategy.basic.role.RoleAction", "com.dr.strategy.basic.token.Current", "com.dr.strategy.basic.visible.column.ColumnVisible", "com.dr.strategy.basic.visible.row.entity.IdentityRefDataVisibleEntity", "com.dr.strategy.basic.visible.row.entity.VisibleAllocationId", "com.dr.strategy.basic.visible.row.entity.VisibleRuleEntity", "com.dr.strategy.basic.visible.row.repository.IdentityRefDataVisibleRepository", "com.dr.strategy.basic.visible.row.repository.VisibleRuleRepository", "com.dr.strategy.basic.visible.row.rule.IdentityVisibleRule", "com.dr.strategy.basic.visible.row.rule.SimpleVisibleRule", "com.dr.strategy.basic.visible.row.rule.Tags", "com.dr.strategy.setting.ServerSettings", "com.dr.strategy.support.LogElapsedTime", "com.dr.strategy.support.NumericConverter", "com.dr.strategy.support.serialization.Serializations", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "java.lang.reflect.Field", "java.time.Instant", "java.util.LinkedHashSet", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors", "static com.dr.strategy.basic.role.consts.PresetRoleIdConst.VISIBLE_BASIC"],
+    "class_name": "VisibleManager",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/VisibleManager.java"
+}, {
+    "name": "ColumnVisibleContainer",
+    "package": "com.dr.strategy.basic.visible",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.visible.column.ColumnVisible", "com.google.common.collect.Maps", "org.springframework.util.Assert", "java.util.Map", "java.util.Optional"],
+    "class_name": "ColumnVisibleContainer",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/ColumnVisibleContainer.java"
+}, {
+    "name": "VisibleQuerySqlBuilder",
+    "package": "com.dr.strategy.basic.visible",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicEntity", "com.dr.strategy.basic.entity.BasicTagEntity", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.token.Current", "com.dr.strategy.basic.visible.row.VisibleTag", "com.dr.strategy.basic.visible.row.rule.IdentityVisibleRule", "com.dr.strategy.basic.visible.row.rule.Tags", "com.dr.strategy.support.LogElapsedTime", "com.google.common.base.Joiner", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.lang.reflect.Field", "java.util.ArrayList", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors"],
+    "class_name": "VisibleQuerySqlBuilder",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/VisibleQuerySqlBuilder.java"
+}, {
+    "name": "ColumnVisibleScanner",
+    "package": "com.dr.strategy.basic.visible.column",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicEntity", "com.dr.strategy.basic.role.PresetRoleContainer", "com.dr.strategy.basic.visible.ColumnVisibleContainer", "com.dr.strategy.setting.ServerSettings", "com.dr.strategy.support.BeanScanner", "com.google.common.collect.Maps", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.config.BeanDefinition", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.lang.reflect.Field", "java.util.Map", "java.util.Objects", "java.util.Set"],
+    "class_name": "ColumnVisibleScanner",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/column/ColumnVisibleScanner.java"
+}, {
+    "name": "ColumnVisible",
+    "package": "com.dr.strategy.basic.visible.column",
+    "type": "interface",
+    "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "ColumnVisible",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/column/ColumnVisible.java"
+}, {
+    "name": "VisibleColumnManager",
+    "package": "com.dr.strategy.basic.visible.column",
+    "type": "class",
+    "imports": ["lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component"],
+    "class_name": "VisibleColumnManager",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/column/VisibleColumnManager.java"
+}, {
+    "name": "ColumnVisibleRule",
+    "package": "com.dr.strategy.basic.visible.column",
+    "type": "class",
+    "imports": ["lombok.Data"],
+    "class_name": "ColumnVisibleRule",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/column/ColumnVisibleRule.java"
+}, {
+    "name": "VisibleTag",
+    "package": "com.dr.strategy.basic.visible.row",
+    "type": "interface",
+    "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "VisibleTag",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/row/VisibleTag.java"
+}, {
+    "name": "VisibleRuleRepository",
+    "package": "com.dr.strategy.basic.visible.row.repository",
+    "type": "interface",
+    "imports": ["com.dr.strategy.basic.visible.row.entity.VisibleRuleEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.Query", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Set"],
+    "class_name": "VisibleRuleRepository extends CrudRepository<VisibleRuleEntity, Integer>",
+    "extend_name": "CrudRepository<VisibleRuleEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/row/repository/VisibleRuleRepository.java"
+}, {
+    "name": "IdentityRefDataVisibleRepository",
+    "package": "com.dr.strategy.basic.visible.row.repository",
+    "type": "interface",
+    "imports": ["com.dr.strategy.basic.visible.row.entity.IdentityRefDataVisibleEntity", "com.dr.strategy.basic.visible.row.entity.VisibleAllocationId", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.Query", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Set"],
+    "class_name": "IdentityRefDataVisibleRepository extends CrudRepository<IdentityRefDataVisibleEntity, VisibleAllocationId>",
+    "extend_name": "CrudRepository<IdentityRefDataVisibleEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/row/repository/IdentityRefDataVisibleRepository.java"
+}, {
+    "name": "IdentityRefDataVisibleEntity",
+    "package": "com.dr.strategy.basic.visible.row.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicAllocationRule", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.EmbeddedId", "javax.persistence.Entity", "javax.persistence.Table"],
+    "class_name": "IdentityRefDataVisibleEntity extends BasicAllocationRule",
+    "extend_name": "BasicAllocationRule",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/row/entity/IdentityRefDataVisibleEntity.java"
+}, {
+    "name": "VisibleRuleEntity",
+    "package": "com.dr.strategy.basic.visible.row.entity",
+    "type": "class",
+    "imports": ["lombok.Data", "javax.persistence.*"],
+    "class_name": "VisibleRuleEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/row/entity/VisibleRuleEntity.java"
+}, {
+    "name": "VisibleAllocationId",
+    "package": "com.dr.strategy.basic.visible.row.entity",
+    "type": "class",
+    "imports": ["lombok.Data", "javax.persistence.Embeddable", "java.io.Serializable"],
+    "class_name": "VisibleAllocationId implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/row/entity/VisibleAllocationId.java"
+}, {
+    "name": "Tags",
+    "package": "com.dr.strategy.basic.visible.row.rule",
+    "type": "class",
+    "imports": ["lombok.Data", "java.util.LinkedHashSet"],
+    "class_name": "Tags",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/row/rule/Tags.java"
+}, {
+    "name": "IdentityVisibleRule",
+    "package": "com.dr.strategy.basic.visible.row.rule",
+    "type": "class",
+    "imports": ["lombok.Data", "java.util.Objects"],
+    "class_name": "IdentityVisibleRule",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/row/rule/IdentityVisibleRule.java"
+}, {
+    "name": "SimpleVisibleRule",
+    "package": "com.dr.strategy.basic.visible.row.rule",
+    "type": "class",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "java.util.LinkedHashSet"],
+    "class_name": "SimpleVisibleRule",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/row/rule/SimpleVisibleRule.java"
+}, {
+    "name": "VisibleRuleTypeEnum",
+    "package": "com.dr.strategy.basic.visible.row.consts",
+    "type": "enum",
+    "imports": ["lombok.Getter"],
+    "class_name": "VisibleRuleTypeEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/row/consts/VisibleRuleTypeEnum.java"
+}, {
+    "name": "RoleAction",
+    "package": "com.dr.strategy.basic.role",
+    "type": "interface",
+    "imports": ["org.apache.logging.log4j.util.Strings", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "RoleAction",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/role/RoleAction.java"
+}, {
+    "name": "RoleActionCtrl",
+    "package": "com.dr.strategy.basic.role",
+    "type": "interface",
+    "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "RoleActionCtrl",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/role/RoleActionCtrl.java"
+}, {
+    "name": "RoleAspect",
+    "package": "com.dr.strategy.basic.role",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.identity.IdentityManager", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.role.entity.RoleEntity", "com.dr.strategy.basic.token.Current", "com.dr.strategy.basic.token.CurrentUser", "com.dr.strategy.setting.ServerSettings", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.aspectj.lang.ProceedingJoinPoint", "org.aspectj.lang.annotation.Aspect", "org.aspectj.lang.annotation.Before", "org.aspectj.lang.reflect.MethodSignature", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.lang.reflect.Method", "java.util.Objects", "java.util.Set", "static com.dr.strategy.basic.role.consts.PresetRoleIdConst.ROLE_NONE"],
+    "class_name": "RoleAspect",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/role/RoleAspect.java"
+}, {
+    "name": "PresetRoleScanner",
+    "package": "com.dr.strategy.basic.role",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.scan.AppContainer", "com.dr.strategy.basic.role.consts.RoleTypeEnum", "com.dr.strategy.basic.role.entity.RoleEntity", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.setting.ServerSettings", "com.dr.strategy.support.BeanScanner", "com.dr.strategy.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.config.BeanDefinition", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.lang.reflect.Method", "java.util.List", "java.util.Set"],
+    "class_name": "PresetRoleScanner",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/role/PresetRoleScanner.java"
+}, {
+    "name": "PresetRoles",
+    "package": "com.dr.strategy.basic.role",
+    "type": "interface",
+    "imports": ["org.apache.logging.log4j.util.Strings", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "PresetRoles",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/role/PresetRoles.java"
+}, {
+    "name": "PresetRoleContainer",
+    "package": "com.dr.strategy.basic.role",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.role.entity.RoleEntity", "com.google.common.collect.Maps", "java.util.Map"],
+    "class_name": "PresetRoleContainer",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/role/PresetRoleContainer.java"
+}, {
+    "name": "AuthenticationException",
+    "package": "com.dr.strategy.basic.role",
+    "type": "class",
+    "imports": [],
+    "class_name": "AuthenticationException extends Exception",
+    "extend_name": "Exception",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/role/AuthenticationException.java"
+}, {
+    "name": "PresetRole",
+    "package": "com.dr.strategy.basic.role",
+    "type": "interface",
+    "imports": ["com.dr.strategy.basic.role.consts.PresetRoleIdConst", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "PresetRole",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/role/PresetRole.java"
+}, {
+    "name": "RoleManager",
+    "package": "com.dr.strategy.basic.role",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.consts.AppKeyConst", "com.dr.strategy.basic.entity.EntityState", "com.dr.strategy.basic.role.consts.PresetRoleIdConst", "com.dr.strategy.basic.role.consts.RoleTypeEnum", "com.dr.strategy.basic.role.entity.RoleEntity", "com.dr.strategy.basic.role.repository.RoleRepository", "com.dr.strategy.basic.tag.TagSystem", "com.dr.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.strategy.basic.tag.consts.TagTypeEnum", "com.dr.strategy.basic.tag.preset.BasicTagSystem", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.setting.ServerSettings", "com.dr.strategy.support.LogElapsedTime", "com.dr.strategy.support.enums.Enumerations", "com.dr.strategy.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotEmpty", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors", "static com.dr.strategy.basic.role.consts.PresetRoleIdConst.ROLE_BASIC", "static com.dr.strategy.basic.role.consts.PresetRoleIdConst.ROLE_NONE"],
+    "class_name": "RoleManager extends BasicTagSystem",
+    "extend_name": "BasicTagSystem",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/role/RoleManager.java"
+}, {
+    "name": "RoleRepository",
+    "package": "com.dr.strategy.basic.role.repository",
+    "type": "interface",
+    "imports": ["com.dr.strategy.basic.role.entity.RoleEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional", "java.util.stream.Stream"],
+    "class_name": "RoleRepository extends CrudRepository<RoleEntity, Integer>",
+    "extend_name": "CrudRepository<RoleEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/role/repository/RoleRepository.java"
+}, {
+    "name": "RoleEntity",
+    "package": "com.dr.strategy.basic.role.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicTagEntity", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.Entity", "javax.persistence.Table"],
+    "class_name": "RoleEntity extends BasicTagEntity",
+    "extend_name": "BasicTagEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/role/entity/RoleEntity.java"
+}, {
+    "name": "RoleTypeEnum",
+    "package": "com.dr.strategy.basic.role.consts",
+    "type": "enum",
+    "imports": ["lombok.Getter"],
+    "class_name": "RoleTypeEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/role/consts/RoleTypeEnum.java"
+}, {
+    "name": "PresetRoleIdConst",
+    "package": "com.dr.strategy.basic.role.consts",
+    "type": "class",
+    "imports": [],
+    "class_name": "PresetRoleIdConst",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/role/consts/PresetRoleIdConst.java"
+}, {
+    "name": "ResourceCollector",
+    "package": "com.dr.strategy.basic.monitor",
+    "type": "interface",
+    "imports": ["java.lang.annotation.*"],
+    "class_name": "ResourceCollector",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/monitor/ResourceCollector.java"
+}, {
+    "name": "RestApiRequestCollector",
+    "package": "com.dr.strategy.basic.monitor",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.monitor.Interceptor.HttpResourceEvent", "com.dr.strategy.basic.monitor.aspect.ResourceEvent", "com.google.common.collect.Sets", "com.google.common.util.concurrent.ThreadFactoryBuilder", "com.google.gson.Gson", "org.apache.logging.log4j.util.Strings", "org.springframework.amqp.core.FanoutExchange", "org.springframework.amqp.core.Message", "org.springframework.amqp.core.MessageProperties", "org.springframework.amqp.rabbit.core.RabbitAdmin", "org.springframework.amqp.rabbit.core.RabbitTemplate", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.stereotype.Component", "javax.annotation.PostConstruct", "java.nio.charset.StandardCharsets", "java.util.Map", "java.util.Set", "java.util.concurrent.ExecutorService", "java.util.concurrent.Executors", "static com.dr.strategy.basic.monitor.consts.AmqpConstant.COLLECT_REST_API_EXCHANGE"],
+    "class_name": "RestApiRequestCollector",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/monitor/RestApiRequestCollector.java"
+}, {
+    "name": "AutoAmqpConfiguration",
+    "package": "com.dr.strategy.basic.monitor.config",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.monitor.rabbitmq.RabbitBeanFactory", "lombok.extern.slf4j.Slf4j", "org.springframework.boot.autoconfigure.condition.ConditionalOnClass"],
+    "class_name": "AutoAmqpConfiguration",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/monitor/config/AutoAmqpConfiguration.java"
+}, {
+    "name": "AmqpConnectionProperties",
+    "package": "com.dr.strategy.basic.monitor.config",
+    "type": "class",
+    "imports": ["lombok.Data"],
+    "class_name": "AmqpConnectionProperties",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/monitor/config/AmqpConnectionProperties.java"
+}, {
+    "name": "YamlPropertyLoaderFactory",
+    "package": "com.dr.strategy.basic.monitor.config",
+    "type": "class",
+    "imports": ["lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.config.YamlPropertiesFactoryBean", "org.springframework.core.env.PropertiesPropertySource", "org.springframework.core.env.PropertySource", "org.springframework.core.io.Resource", "org.springframework.core.io.support.EncodedResource", "org.springframework.core.io.support.PropertySourceFactory", "org.springframework.lang.Nullable", "java.io.IOException", "java.util.Objects", "java.util.Properties"],
+    "class_name": "YamlPropertyLoaderFactory",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/monitor/config/YamlPropertyLoaderFactory.java"
+}, {
+    "name": "AutoAmqpConfigurationProperties",
+    "package": "com.dr.strategy.basic.monitor.config",
+    "type": "class",
+    "imports": ["lombok.Data", "org.springframework.boot.context.properties.ConfigurationProperties", "org.springframework.context.annotation.PropertySource"],
+    "class_name": "AutoAmqpConfigurationProperties",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/monitor/config/AutoAmqpConfigurationProperties.java"
+}, {
+    "name": "RabbitBeanFactory",
+    "package": "com.dr.strategy.basic.monitor.rabbitmq",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.monitor.config.AmqpConnectionProperties", "com.dr.strategy.basic.monitor.config.AutoAmqpConfigurationProperties", "org.springframework.amqp.rabbit.connection.ConnectionFactory", "org.springframework.amqp.rabbit.core.RabbitAdmin", "org.springframework.amqp.rabbit.core.RabbitTemplate", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.boot.autoconfigure.condition.ConditionalOnClass", "org.springframework.context.annotation.Bean"],
+    "class_name": "RabbitBeanFactory",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/monitor/rabbitmq/RabbitBeanFactory.java"
+}, {
+    "name": "RabbitFactoryBuilder",
+    "package": "com.dr.strategy.basic.monitor.rabbitmq",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.monitor.config.AmqpConnectionProperties", "org.springframework.amqp.core.AcknowledgeMode", "org.springframework.amqp.rabbit.config.DirectRabbitListenerContainerFactory", "org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory", "org.springframework.amqp.rabbit.connection.CachingConnectionFactory", "org.springframework.amqp.rabbit.connection.ConnectionFactory", "org.springframework.amqp.support.converter.Jackson2JsonMessageConverter"],
+    "class_name": "RabbitFactoryBuilder",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/monitor/rabbitmq/RabbitFactoryBuilder.java"
+}, {
+    "name": "ResourceEvent",
+    "package": "com.dr.strategy.basic.monitor.aspect",
+    "type": "class",
+    "imports": ["lombok.Data"],
+    "class_name": "ResourceEvent",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/monitor/aspect/ResourceEvent.java"
+}, {
+    "name": "MethodAspect",
+    "package": "com.dr.strategy.basic.monitor.aspect",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.monitor.ResourceCollector", "com.dr.strategy.basic.monitor.RestApiRequestCollector", "lombok.extern.slf4j.Slf4j", "org.aspectj.lang.ProceedingJoinPoint", "org.aspectj.lang.annotation.Around", "org.aspectj.lang.annotation.Aspect", "org.aspectj.lang.reflect.MethodSignature", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Component", "java.lang.reflect.Method"],
+    "class_name": "MethodAspect",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/monitor/aspect/MethodAspect.java"
+}, {
+    "name": "HttpResourceEvent",
+    "package": "com.dr.strategy.basic.monitor.Interceptor",
+    "type": "class",
+    "imports": ["lombok.Data", "java.util.Map"],
+    "class_name": "HttpResourceEvent",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/monitor/Interceptor/HttpResourceEvent.java"
+}, {
+    "name": "WebConfig",
+    "package": "com.dr.strategy.basic.monitor.Interceptor",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.monitor.RestApiRequestCollector", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.context.annotation.Configuration", "org.springframework.web.servlet.config.annotation.InterceptorRegistry", "org.springframework.web.servlet.config.annotation.WebMvcConfigurer"],
+    "class_name": "WebConfig implements WebMvcConfigurer",
+    "extend_name": "",
+    "implements_name": ["WebMvcConfigurer"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/monitor/Interceptor/WebConfig.java"
+}, {
+    "name": "RestCtrlHandlerInterceptorAdapter",
+    "package": "com.dr.strategy.basic.monitor.Interceptor",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.monitor.RestApiRequestCollector", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "com.google.common.io.CharStreams", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.lang.NonNull", "org.springframework.lang.Nullable", "org.springframework.web.servlet.HandlerInterceptor", "javax.servlet.*", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletResponse", "java.io.IOException", "java.util.Map", "java.util.Objects", "java.util.Set"],
+    "class_name": "RestCtrlHandlerInterceptorAdapter implements HandlerInterceptor, Filter",
+    "extend_name": "",
+    "implements_name": ["HandlerInterceptor", ""],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/monitor/Interceptor/RestCtrlHandlerInterceptorAdapter.java"
+}, {
+    "name": "AmqpConstant",
+    "package": "com.dr.strategy.basic.monitor.consts",
+    "type": "class",
+    "imports": [],
+    "class_name": "AmqpConstant",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/monitor/consts/AmqpConstant.java"
+}, {
+    "name": "AppManager",
+    "package": "com.dr.strategy.basic.app",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.config.AppConfig", "com.dr.strategy.basic.app.config.AppConfigDefine", "com.dr.strategy.basic.app.entity.AppEntity", "com.dr.strategy.basic.app.entity.BizEntity", "com.dr.strategy.basic.app.menu.AppMenuDefine", "com.dr.strategy.basic.app.scan.AppContainer", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.lang.reflect.Field", "java.util.List", "java.util.Map", "java.util.Objects"],
+    "class_name": "AppManager",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/AppManager.java"
+}, {
+    "name": "App",
+    "package": "com.dr.strategy.basic.app",
+    "type": "interface",
+    "imports": ["com.dr.strategy.basic.app.consts.AppDisplayEnum", "org.apache.logging.log4j.util.Strings", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "App",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/App.java"
+}, {
+    "name": "BizClassifies",
+    "package": "com.dr.strategy.basic.app.biz",
+    "type": "interface",
+    "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "BizClassifies",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/biz/BizClassifies.java"
+}, {
+    "name": "BizClassify",
+    "package": "com.dr.strategy.basic.app.biz",
+    "type": "interface",
+    "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "BizClassify",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/biz/BizClassify.java"
+}, {
+    "name": "AppConfigItem",
+    "package": "com.dr.strategy.basic.app.config",
+    "type": "interface",
+    "imports": ["com.dr.strategy.basic.app.consts.AppConfigTypeEnum", "com.dr.strategy.basic.app.consts.AppConfigValueTypeEnum", "org.apache.logging.log4j.util.Strings", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "AppConfigItem",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/config/AppConfigItem.java"
+}, {
+    "name": "AppConfig",
+    "package": "com.dr.strategy.basic.app.config",
+    "type": "interface",
+    "imports": ["java.lang.annotation.*"],
+    "class_name": "AppConfig",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/config/AppConfig.java"
+}, {
+    "name": "AppConfigDefine",
+    "package": "com.dr.strategy.basic.app.config",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.consts.AppConfigTypeEnum", "com.dr.strategy.basic.app.consts.AppConfigValueTypeEnum", "lombok.Data", "java.lang.reflect.Field"],
+    "class_name": "AppConfigDefine",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/config/AppConfigDefine.java"
+}, {
+    "name": "BizEntity",
+    "package": "com.dr.strategy.basic.app.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.biz.BizClassify", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Id"],
+    "class_name": "BizEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/entity/BizEntity.java"
+}, {
+    "name": "AppEntity",
+    "package": "com.dr.strategy.basic.app.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.consts.AppDisplayEnum", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Id"],
+    "class_name": "AppEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/entity/AppEntity.java"
+}, {
+    "name": "AppScanner",
+    "package": "com.dr.strategy.basic.app.scan",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.GlobeScanner", "com.dr.strategy.basic.app.App", "com.dr.strategy.basic.app.biz.BizClassifies", "com.dr.strategy.basic.app.biz.BizClassify", "com.dr.strategy.basic.app.config.AppConfig", "com.dr.strategy.basic.app.config.AppConfigDefine", "com.dr.strategy.basic.app.config.AppConfigItem", "com.dr.strategy.basic.app.consts.AppMenuType", "com.dr.strategy.basic.app.entity.AppEntity", "com.dr.strategy.basic.app.entity.BizEntity", "com.dr.strategy.basic.app.jc.AppJointCertScanner", "com.dr.strategy.basic.app.menu.AppCustomMenu", "com.dr.strategy.basic.app.menu.AppDataDefineMenu", "com.dr.strategy.basic.app.menu.AppMenu", "com.dr.strategy.basic.app.menu.AppMenuDefine", "com.dr.strategy.setting.ServerSettings", "com.dr.strategy.support.BeanScanner", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.config.BeanDefinition", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.lang.reflect.Field", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.Set"],
+    "class_name": "AppScanner implements GlobeScanner.Scanner",
+    "extend_name": "",
+    "implements_name": ["GlobeScanner.Scanner"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/scan/AppScanner.java"
+}, {
+    "name": "AppContainer",
+    "package": "com.dr.strategy.basic.app.scan",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.config.AppConfigDefine", "com.dr.strategy.basic.app.entity.AppEntity", "com.dr.strategy.basic.app.entity.BizEntity", "com.dr.strategy.basic.app.jc.AppJointCertDefine", "com.dr.strategy.basic.app.menu.AppMenuDefine", "com.google.common.collect.Maps", "java.util.List", "java.util.Map"],
+    "class_name": "AppContainer",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/scan/AppContainer.java"
+}, {
+    "name": "AppCustomMenu",
+    "package": "com.dr.strategy.basic.app.menu",
+    "type": "interface",
+    "imports": [],
+    "class_name": "AppCustomMenu",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/menu/AppCustomMenu.java"
+}, {
+    "name": "AppMenu",
+    "package": "com.dr.strategy.basic.app.menu",
+    "type": "interface",
+    "imports": ["java.lang.annotation.*"],
+    "class_name": "AppMenu",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/menu/AppMenu.java"
+}, {
+    "name": "AppMenuDefine",
+    "package": "com.dr.strategy.basic.app.menu",
+    "type": "class",
+    "imports": ["lombok.Data"],
+    "class_name": "AppMenuDefine",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/menu/AppMenuDefine.java"
+}, {
+    "name": "AppDataDefineMenu",
+    "package": "com.dr.strategy.basic.app.menu",
+    "type": "interface",
+    "imports": ["org.apache.logging.log4j.util.Strings"],
+    "class_name": "AppDataDefineMenu",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/menu/AppDataDefineMenu.java"
+}, {
+    "name": "AppJointCertDefine",
+    "package": "com.dr.strategy.basic.app.jc",
+    "type": "class",
+    "imports": ["lombok.Data", "java.util.List", "java.util.Objects", "java.util.Set"],
+    "class_name": "AppJointCertDefine",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/jc/AppJointCertDefine.java"
+}, {
+    "name": "AppJointCertConfigItem",
+    "package": "com.dr.strategy.basic.app.jc",
+    "type": "interface",
+    "imports": ["org.apache.logging.log4j.util.Strings", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "AppJointCertConfigItem",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/jc/AppJointCertConfigItem.java"
+}, {
+    "name": "AppJointCertification",
+    "package": "com.dr.strategy.basic.app.jc",
+    "type": "interface",
+    "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "AppJointCertification",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/jc/AppJointCertification.java"
+}, {
+    "name": "AppJointCertConfigItemDefine",
+    "package": "com.dr.strategy.basic.app.jc",
+    "type": "class",
+    "imports": ["lombok.Data", "java.util.Objects"],
+    "class_name": "AppJointCertConfigItemDefine",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/jc/AppJointCertConfigItemDefine.java"
+}, {
+    "name": "AppJointCertScanner",
+    "package": "com.dr.strategy.basic.app.jc",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.GlobeScanner", "com.dr.strategy.basic.app.entity.AppEntity", "com.dr.strategy.basic.app.scan.AppContainer", "com.dr.strategy.support.BeanScanner", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.config.BeanDefinition", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.util.Arrays", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors"],
+    "class_name": "AppJointCertScanner implements GlobeScanner.Scanner",
+    "extend_name": "",
+    "implements_name": ["GlobeScanner.Scanner"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/jc/AppJointCertScanner.java"
+}, {
+    "name": "AppJointCertManager",
+    "package": "com.dr.strategy.basic.app.jc",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.scan.AppContainer", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.util.Map", "java.util.Optional"],
+    "class_name": "AppJointCertManager",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/jc/AppJointCertManager.java"
+}, {
+    "name": "AppConfigValueTypeEnum",
+    "package": "com.dr.strategy.basic.app.consts",
+    "type": "enum",
+    "imports": ["com.dr.strategy.support.enums.KeyValueEnum"],
+    "class_name": "AppConfigValueTypeEnum implements KeyValueEnum<Integer, String>",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum<Integer", ""],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/consts/AppConfigValueTypeEnum.java"
+}, {
+    "name": "AppMenuType",
+    "package": "com.dr.strategy.basic.app.consts",
+    "type": "enum",
+    "imports": ["lombok.Getter"],
+    "class_name": "AppMenuType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/consts/AppMenuType.java"
+}, {
+    "name": "AppKeyConst",
+    "package": "com.dr.strategy.basic.app.consts",
+    "type": "class",
+    "imports": [],
+    "class_name": "AppKeyConst",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/consts/AppKeyConst.java"
+}, {
+    "name": "AppDisplayEnum",
+    "package": "com.dr.strategy.basic.app.consts",
+    "type": "enum",
+    "imports": [],
+    "class_name": "AppDisplayEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/consts/AppDisplayEnum.java"
+}, {
+    "name": "AppConfigTypeEnum",
+    "package": "com.dr.strategy.basic.app.consts",
+    "type": "enum",
+    "imports": ["com.dr.strategy.support.enums.KeyValueEnum", "java.util.Arrays"],
+    "class_name": "AppConfigTypeEnum implements KeyValueEnum<Integer, String>",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum<Integer", ""],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/consts/AppConfigTypeEnum.java"
+}, {
+    "name": "IdentityManager",
+    "package": "com.dr.strategy.basic.identity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.allocation.BasicAllocationQuery", "com.dr.strategy.basic.app.consts.AppKeyConst", "com.dr.strategy.basic.entity.BasicTagEntity", "com.dr.strategy.basic.entity.EntityState", "com.dr.strategy.basic.entity.IdentityState", "com.dr.strategy.basic.identity.consts.IdentityRoleRuleEnum", "com.dr.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.strategy.basic.identity.entity.IdentityEntity", "com.dr.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.dr.strategy.basic.identity.entity.IdentityRefRoleId", "com.dr.strategy.basic.identity.repository.IdentityRefRoleRepository", "com.dr.strategy.basic.identity.repository.IdentityRepository", "com.dr.strategy.basic.role.*", "com.dr.strategy.basic.role.entity.RoleEntity", "com.dr.strategy.basic.tag.TagSystem", "com.dr.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.strategy.basic.tag.consts.TagTypeEnum", "com.dr.strategy.basic.tag.preset.BasicTagSystem", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.setting.ServerSettings", "com.dr.strategy.support.LogElapsedTime", "com.dr.strategy.support.enums.Enumerations", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "javax.annotation.Resource", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotEmpty", "javax.validation.constraints.NotNull", "java.util.*", "java.util.stream.Collectors", "java.util.stream.Stream", "static com.dr.strategy.basic.entity.BasicTagEntity.SPLITTER_CHAR", "static com.dr.strategy.basic.role.consts.PresetRoleIdConst.IDENTITY_BASIC"],
+    "class_name": "IdentityManager extends BasicTagSystem",
+    "extend_name": "BasicTagSystem",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/identity/IdentityManager.java"
+}, {
+    "name": "IdentityRefRoleRepository",
+    "package": "com.dr.strategy.basic.identity.repository",
+    "type": "interface",
+    "imports": ["com.dr.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.dr.strategy.basic.identity.entity.IdentityRefRoleId", "org.springframework.data.repository.CrudRepository", "org.springframework.stereotype.Repository", "java.util.List", "java.util.Set"],
+    "class_name": "IdentityRefRoleRepository extends CrudRepository<IdentityRefRoleEntity, IdentityRefRoleId>",
+    "extend_name": "CrudRepository<IdentityRefRoleEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/identity/repository/IdentityRefRoleRepository.java"
+}, {
+    "name": "IdentityRepository",
+    "package": "com.dr.strategy.basic.identity.repository",
+    "type": "interface",
+    "imports": ["com.dr.strategy.basic.identity.entity.IdentityEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.repository.CrudRepository", "org.springframework.stereotype.Repository", "java.util.Collection", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Stream"],
+    "class_name": "IdentityRepository extends CrudRepository<IdentityEntity, Integer>",
+    "extend_name": "CrudRepository<IdentityEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/identity/repository/IdentityRepository.java"
+}, {
+    "name": "IdentityEntity",
+    "package": "com.dr.strategy.basic.identity.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicTagEntity", "com.dr.strategy.basic.entity.EntityState", "com.dr.strategy.basic.entity.IdentityState", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.Entity", "javax.persistence.Index", "javax.persistence.Table", "javax.validation.constraints.Min", "java.io.Serializable"],
+    "class_name": "IdentityEntity extends BasicTagEntity implements Serializable",
+    "extend_name": "BasicTagEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/identity/entity/IdentityEntity.java"
+}, {
+    "name": "IdentifyAndAccountResult",
+    "package": "com.dr.strategy.basic.identity.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Column"],
+    "class_name": "IdentifyAndAccountResult",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/identity/entity/IdentifyAndAccountResult.java"
+}, {
+    "name": "IdentityRefRoleId",
+    "package": "com.dr.strategy.basic.identity.entity",
+    "type": "class",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "javax.persistence.Embeddable", "java.io.Serializable"],
+    "class_name": "IdentityRefRoleId implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/identity/entity/IdentityRefRoleId.java"
+}, {
+    "name": "IdentityRefRoleEntity",
+    "package": "com.dr.strategy.basic.identity.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicAllocationRule", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.EmbeddedId", "javax.persistence.Entity", "javax.persistence.Index", "javax.persistence.Table"],
+    "class_name": "IdentityRefRoleEntity extends BasicAllocationRule",
+    "extend_name": "BasicAllocationRule",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/identity/entity/IdentityRefRoleEntity.java"
+}, {
+    "name": "IdentityTypeEnum",
+    "package": "com.dr.strategy.basic.identity.consts",
+    "type": "enum",
+    "imports": ["lombok.Getter"],
+    "class_name": "IdentityTypeEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/identity/consts/IdentityTypeEnum.java"
+}, {
+    "name": "IdentityRoleRuleEnum",
+    "package": "com.dr.strategy.basic.identity.consts",
+    "type": "enum",
+    "imports": ["lombok.Getter"],
+    "class_name": "IdentityRoleRuleEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/identity/consts/IdentityRoleRuleEnum.java"
+}, {
+    "name": "EntityState",
+    "package": "com.dr.strategy.basic.entity",
+    "type": "enum",
+    "imports": ["com.dr.strategy.support.enums.KeyValueEnum", "lombok.Getter"],
+    "class_name": "EntityState implements KeyValueEnum<Integer, String>",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum<Integer", ""],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/entity/EntityState.java"
+}, {
+    "name": "BasicAllocationRule",
+    "package": "com.dr.strategy.basic.entity",
+    "type": "class",
+    "imports": ["com.google.common.collect.Sets", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.apache.logging.log4j.util.Strings", "org.springframework.util.Assert", "javax.persistence.Column", "javax.persistence.MappedSuperclass", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.Arrays", "java.util.Set", "java.util.stream.Collectors"],
+    "class_name": "BasicAllocationRule",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/entity/BasicAllocationRule.java"
+}, {
+    "name": "BasicTagEntity",
+    "package": "com.dr.strategy.basic.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.support.serialization.Serializations", "com.google.common.base.Splitter", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "com.google.gson.reflect.TypeToken", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.apache.logging.log4j.util.Strings", "javax.persistence.Column", "javax.persistence.MappedSuperclass", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors"],
+    "class_name": "BasicTagEntity extends BasicEntity",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/entity/BasicTagEntity.java"
+}, {
+    "name": "IdentityState",
+    "package": "com.dr.strategy.basic.entity",
+    "type": "enum",
+    "imports": ["com.dr.strategy.support.enums.KeyValueEnum", "lombok.Getter"],
+    "class_name": "IdentityState implements KeyValueEnum<Integer, String>",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum<Integer", ""],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/entity/IdentityState.java"
+}, {
+    "name": "BasicEntity",
+    "package": "com.dr.strategy.basic.entity",
+    "type": "abstract class",
+    "imports": ["com.dr.strategy.basic.token.Current", "com.dr.strategy.basic.token.CurrentUser", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.*", "java.time.Instant"],
+    "class_name": "BasicEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/entity/BasicEntity.java"
+}, {
+    "name": "UnifyAccountManager",
+    "package": "com.dr.strategy.basic.account",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.account.consts.UnifyAccountState", "com.dr.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.strategy.basic.account.repository.UnifyAccountRepository", "com.dr.strategy.basic.identity.repository.IdentityRepository", "com.dr.strategy.basic.token.Token", "com.dr.strategy.basic.token.TokenException", "com.dr.strategy.support.hash.Hashing", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.nio.charset.StandardCharsets", "java.util.Optional", "static com.dr.strategy.basic.token.Token.NEVER_EXPIRED"],
+    "class_name": "UnifyAccountManager",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/account/UnifyAccountManager.java"
+}, {
+    "name": "UnifyAccountRepository",
+    "package": "com.dr.strategy.basic.account.repository",
+    "type": "interface",
+    "imports": ["com.dr.strategy.basic.account.entity.UnifyAccountEntity", "org.springframework.data.repository.CrudRepository", "java.util.Optional"],
+    "class_name": "UnifyAccountRepository extends CrudRepository<UnifyAccountEntity, Integer>",
+    "extend_name": "CrudRepository<UnifyAccountEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/account/repository/UnifyAccountRepository.java"
+}, {
+    "name": "UnifyAccountEntity",
+    "package": "com.dr.strategy.basic.account.entity",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicEntity", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.Entity", "javax.persistence.Index", "javax.persistence.Table"],
+    "class_name": "UnifyAccountEntity extends BasicEntity",
+    "extend_name": "BasicEntity",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/account/entity/UnifyAccountEntity.java"
+}, {
+    "name": "UnifyAccountState",
+    "package": "com.dr.strategy.basic.account.consts",
+    "type": "enum",
+    "imports": ["lombok.Getter"],
+    "class_name": "UnifyAccountState",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/account/consts/UnifyAccountState.java"
+}, {
+    "name": "DataDefineContainer",
+    "package": "com.dr.strategy.basic.data",
+    "type": "class",
+    "imports": ["com.google.common.collect.Maps", "java.util.Map"],
+    "class_name": "DataDefineContainer",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/data/DataDefineContainer.java"
+}, {
+    "name": "DataDefineClass",
+    "package": "com.dr.strategy.basic.data",
+    "type": "interface",
+    "imports": ["org.apache.logging.log4j.util.Strings", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "DataDefineClass",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/data/DataDefineClass.java"
+}, {
+    "name": "FieldTypeEnum",
+    "package": "com.dr.strategy.basic.data",
+    "type": "enum",
+    "imports": [],
+    "class_name": "FieldTypeEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/data/FieldTypeEnum.java"
+}, {
+    "name": "DataManager",
+    "package": "com.dr.strategy.basic.data",
+    "type": "class",
+    "imports": ["com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.util.Map", "java.util.Set"],
+    "class_name": "DataManager",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/data/DataManager.java"
+}, {
+    "name": "DataDefine",
+    "package": "com.dr.strategy.basic.data",
+    "type": "class",
+    "imports": ["lombok.Data", "java.util.List"],
+    "class_name": "DataDefine",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/data/DataDefine.java"
+}, {
+    "name": "DataDefineScanner",
+    "package": "com.dr.strategy.basic.data",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.GlobeScanner", "com.dr.strategy.basic.app.scan.AppContainer", "com.dr.strategy.support.BeanScanner", "com.dr.strategy.support.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.config.BeanDefinition", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.lang.reflect.Field", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.Set"],
+    "class_name": "DataDefineScanner implements GlobeScanner.Scanner",
+    "extend_name": "",
+    "implements_name": ["GlobeScanner.Scanner"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/data/DataDefineScanner.java"
+}, {
+    "name": "DataDefineField",
+    "package": "com.dr.strategy.basic.data",
+    "type": "interface",
+    "imports": ["org.apache.logging.log4j.util.Strings", "java.lang.annotation.*"],
+    "class_name": "DataDefineField",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/data/DataDefineField.java"
+}, {
+    "name": "PresetTags",
+    "package": "com.dr.strategy.basic.tag",
+    "type": "interface",
+    "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "PresetTags",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/PresetTags.java"
+}, {
+    "name": "TagQuery",
+    "package": "com.dr.strategy.basic.tag",
+    "type": "interface",
+    "imports": ["com.dr.strategy.basic.entity.EntityState", "com.dr.strategy.basic.tag.preset.BasicTagSystem", "org.springframework.transaction.annotation.Transactional", "javax.validation.constraints.Min", "javax.validation.constraints.PositiveOrZero", "java.util.List", "java.util.Optional"],
+    "class_name": "TagQuery",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/TagQuery.java"
+}, {
+    "name": "TagSystemManager",
+    "package": "com.dr.strategy.basic.tag",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicEntity", "com.dr.strategy.basic.entity.BasicTagEntity", "com.dr.strategy.basic.tag.entity.TagSystemEntity", "com.dr.strategy.basic.tag.preset.BasicTagSystem", "com.dr.strategy.basic.tag.preset.PresetTagSystemContainer", "com.dr.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.strategy.basic.tag.ref.RefTagContainer", "com.dr.strategy.basic.tag.ref.RefTagException", "com.dr.strategy.support.serialization.Serializations", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "com.google.gson.Gson", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.data.redis.core.RedisTemplate", "org.springframework.stereotype.Component", "javax.validation.constraints.NotBlank", "java.lang.reflect.Field", "java.util.*", "java.util.stream.Collectors", "static com.dr.strategy.basic.tag.consts.TagSystemType.PRESET_TAG_SYSTEM"],
+    "class_name": "TagSystemManager",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/TagSystemManager.java"
+}, {
+    "name": "TagSystem",
+    "package": "com.dr.strategy.basic.tag",
+    "type": "interface",
+    "imports": ["com.dr.strategy.basic.tag.consts.TagTypeEnum", "org.apache.logging.log4j.util.Strings", "java.lang.annotation.*"],
+    "class_name": "TagSystem",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/TagSystem.java"
+}, {
+    "name": "RedisConfig",
+    "package": "com.dr.strategy.basic.tag",
+    "type": "class",
+    "imports": ["org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "org.springframework.data.redis.connection.RedisConnectionFactory", "org.springframework.data.redis.core.RedisTemplate"],
+    "class_name": "RedisConfig",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/RedisConfig.java"
+}, {
+    "name": "PresetTag",
+    "package": "com.dr.strategy.basic.tag",
+    "type": "interface",
+    "imports": ["org.apache.logging.log4j.util.Strings", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
+    "class_name": "PresetTag",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/PresetTag.java"
+}, {
+    "name": "TagException",
+    "package": "com.dr.strategy.basic.tag",
+    "type": "class",
+    "imports": [],
+    "class_name": "TagException extends Exception",
+    "extend_name": "Exception",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/TagException.java"
+}, {
+    "name": "TagSystemRepository",
+    "package": "com.dr.strategy.basic.tag.repository",
+    "type": "interface",
+    "imports": ["com.dr.strategy.basic.tag.entity.TagSystemEntity", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional", "java.util.Set"],
+    "class_name": "TagSystemRepository extends CrudRepository<TagSystemEntity, String>",
+    "extend_name": "CrudRepository<TagSystemEntity,",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/repository/TagSystemRepository.java"
+}, {
+    "name": "RefTagScanner",
+    "package": "com.dr.strategy.basic.tag.ref",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicEntity", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.config.BeanDefinition", "org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider", "org.springframework.core.type.filter.AssignableTypeFilter", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.lang.reflect.Field", "java.util.Map", "java.util.Objects"],
+    "class_name": "RefTagScanner",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/ref/RefTagScanner.java"
+}, {
+    "name": "RefTagScannerException",
+    "package": "com.dr.strategy.basic.tag.ref",
+    "type": "class",
+    "imports": [],
+    "class_name": "RefTagScannerException extends Exception",
+    "extend_name": "Exception",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/ref/RefTagScannerException.java"
+}, {
+    "name": "RefTagException",
+    "package": "com.dr.strategy.basic.tag.ref",
+    "type": "class",
+    "imports": [],
+    "class_name": "RefTagException extends Exception",
+    "extend_name": "Exception",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/ref/RefTagException.java"
+}, {
+    "name": "RefTagDefined",
+    "package": "com.dr.strategy.basic.tag.ref",
+    "type": "class",
+    "imports": ["lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "java.lang.reflect.Field", "java.util.Objects"],
+    "class_name": "RefTagDefined",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/ref/RefTagDefined.java"
+}, {
+    "name": "RefTag",
+    "package": "com.dr.strategy.basic.tag.ref",
+    "type": "interface",
+    "imports": ["com.dr.strategy.basic.tag.consts.ReferTagPersistenceEnum", "java.lang.annotation.*"],
+    "class_name": "RefTag",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/ref/RefTag.java"
+}, {
+    "name": "RefTagContainer",
+    "package": "com.dr.strategy.basic.tag.ref",
+    "type": "class",
+    "imports": ["com.google.common.collect.Maps", "org.springframework.lang.NonNull", "java.util.Map", "java.util.Objects"],
+    "class_name": "RefTagContainer",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/ref/RefTagContainer.java"
+}, {
+    "name": "OpRoleTagSystem",
+    "package": "com.dr.strategy.basic.tag.preset",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.app.consts.AppKeyConst", "com.dr.strategy.basic.entity.EntityState", "com.dr.strategy.basic.tag.PresetTag", "com.dr.strategy.basic.tag.PresetTags", "com.dr.strategy.basic.tag.TagSystem", "com.dr.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.strategy.basic.tag.consts.TagTypeEnum", "org.springframework.stereotype.Component", "java.util.List", "java.util.Optional"],
+    "class_name": "OpRoleTagSystem extends BasicTagSystem",
+    "extend_name": "BasicTagSystem",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/preset/OpRoleTagSystem.java"
+}, {
+    "name": "PresetTagSystemScanner",
+    "package": "com.dr.strategy.basic.tag.preset",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicTagEntity", "com.dr.strategy.basic.tag.PresetTag", "com.dr.strategy.basic.tag.PresetTags", "com.dr.strategy.basic.tag.TagSystem", "com.dr.strategy.basic.tag.TagSystemManager", "com.dr.strategy.basic.tag.entity.TagSystemEntity", "com.dr.strategy.setting.ServerSettings", "com.dr.strategy.support.BeanScanner", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.config.BeanDefinition", "org.springframework.context.ApplicationContext", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.util.Arrays", "java.util.Map", "java.util.Set", "java.util.stream.Collectors"],
+    "class_name": "PresetTagSystemScanner",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/preset/PresetTagSystemScanner.java"
+}, {
+    "name": "BasicTagSystem",
+    "package": "com.dr.strategy.basic.tag.preset",
+    "type": "abstract class",
+    "imports": ["com.dr.strategy.basic.entity.BasicEntity", "com.dr.strategy.basic.entity.BasicTagEntity", "com.dr.strategy.basic.tag.TagException", "com.dr.strategy.basic.tag.TagQuery", "com.dr.strategy.basic.tag.TagSystemManager", "com.dr.strategy.basic.tag.consts.ReferTagPersistenceEnum", "com.dr.strategy.basic.tag.ref.RefTagContainer", "com.dr.strategy.basic.tag.ref.RefTagDefined", "com.dr.strategy.basic.tag.ref.RefTagException", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "com.google.gson.Gson", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.util.Assert", "javax.annotation.Resource", "javax.validation.constraints.NotNull", "java.lang.reflect.Field", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.Set", "static com.dr.strategy.basic.entity.BasicTagEntity.SPLITTER_CHAR"],
+    "class_name": "BasicTagSystem implements TagQuery",
+    "extend_name": "",
+    "implements_name": ["TagQuery"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/preset/BasicTagSystem.java"
+}, {
+    "name": "PresetTagSystemException",
+    "package": "com.dr.strategy.basic.tag.preset",
+    "type": "class",
+    "imports": [],
+    "class_name": "PresetTagSystemException extends RuntimeException",
+    "extend_name": "RuntimeException",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/preset/PresetTagSystemException.java"
+}, {
+    "name": "PresetTagSystemContainer",
+    "package": "com.dr.strategy.basic.tag.preset",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicTagEntity", "com.dr.strategy.basic.tag.entity.TagSystemEntity", "com.google.common.collect.Maps", "java.util.Map"],
+    "class_name": "PresetTagSystemContainer",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/preset/PresetTagSystemContainer.java"
+}, {
+    "name": "TagSystemEntity",
+    "package": "com.dr.strategy.basic.tag.entity",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.*"],
+    "class_name": "TagSystemEntity",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/entity/TagSystemEntity.java"
+}, {
+    "name": "TagTypeEnum",
+    "package": "com.dr.strategy.basic.tag.consts",
+    "type": "enum",
+    "imports": ["lombok.Getter"],
+    "class_name": "TagTypeEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/consts/TagTypeEnum.java"
+}, {
+    "name": "ReferTagPersistenceEnum",
+    "package": "com.dr.strategy.basic.tag.consts",
+    "type": "enum",
+    "imports": [],
+    "class_name": "ReferTagPersistenceEnum",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/consts/ReferTagPersistenceEnum.java"
+}, {
+    "name": "PresetTagSystemKey",
+    "package": "com.dr.strategy.basic.tag.consts",
+    "type": "class",
+    "imports": [],
+    "class_name": "PresetTagSystemKey",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/consts/PresetTagSystemKey.java"
+}, {
+    "name": "TagSystemType",
+    "package": "com.dr.strategy.basic.tag.consts",
+    "type": "class",
+    "imports": [],
+    "class_name": "TagSystemType",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/consts/TagSystemType.java"
+}, {
+    "name": "BasicAllocationQuery",
+    "package": "com.dr.strategy.basic.allocation",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicAllocationRule", "lombok.extern.slf4j.Slf4j", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Stream"],
+    "class_name": "BasicAllocationQuery",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/allocation/BasicAllocationQuery.java"
+}, {
+    "name": "BasicAllocationManager",
+    "package": "com.dr.strategy.basic.allocation",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.entity.BasicAllocationRule", "com.dr.strategy.basic.identity.IdentityManager", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component", "java.util.LinkedHashSet", "java.util.Set", "java.util.stream.Collectors", "java.util.stream.Stream"],
+    "class_name": "BasicAllocationManager",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/allocation/BasicAllocationManager.java"
+}, {
+    "name": "ElapsedTimeAspect",
+    "package": "com.dr.strategy.support",
+    "type": "class",
+    "imports": ["com.dr.strategy.support.trace.Trace", "lombok.extern.slf4j.Slf4j", "org.aspectj.lang.ProceedingJoinPoint", "org.aspectj.lang.annotation.Around", "org.aspectj.lang.annotation.Aspect", "org.springframework.context.annotation.Configuration", "java.util.Objects"],
+    "class_name": "ElapsedTimeAspect",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/ElapsedTimeAspect.java"
+}, {
+    "name": "LogElapsedTime",
+    "package": "com.dr.strategy.support",
+    "type": "interface",
+    "imports": [],
+    "class_name": "LogElapsedTime",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/LogElapsedTime.java"
+}, {
+    "name": "NumericConverter",
+    "package": "com.dr.strategy.support",
+    "type": "class",
+    "imports": ["com.google.common.collect.Maps", "org.apache.logging.log4j.util.Strings", "org.springframework.util.Assert", "java.util.HashSet", "java.util.Map", "java.util.Objects", "java.util.Set", "java.util.function.Function"],
+    "class_name": "NumericConverter",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/NumericConverter.java"
+}, {
+    "name": "LogbackForIP",
+    "package": "com.dr.strategy.support",
+    "type": "class",
+    "imports": ["ch.qos.logback.classic.pattern.ClassicConverter", "ch.qos.logback.classic.spi.ILoggingEvent", "lombok.extern.slf4j.Slf4j", "org.springframework.context.annotation.Configuration", "org.springframework.stereotype.Component", "java.net.InetAddress", "java.net.UnknownHostException"],
+    "class_name": "LogbackForIP extends ClassicConverter",
+    "extend_name": "ClassicConverter",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/LogbackForIP.java"
+}, {
+    "name": "BeanScanner",
+    "package": "com.dr.strategy.support",
+    "type": "class",
+    "imports": ["org.springframework.beans.factory.config.BeanDefinition", "org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider", "org.springframework.core.type.filter.AnnotationTypeFilter", "org.springframework.core.type.filter.AssignableTypeFilter", "java.lang.annotation.Annotation", "java.util.Set"],
+    "class_name": "BeanScanner",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/BeanScanner.java"
+}, {
+    "name": "Trace",
+    "package": "com.dr.strategy.support.trace",
+    "type": "class",
+    "imports": ["lombok.Data", "java.io.Serializable", "java.util.UUID", "java.util.concurrent.TimeUnit"],
+    "class_name": "Trace implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/trace/Trace.java"
+}, {
+    "name": "Hashing",
+    "package": "com.dr.strategy.support.hash",
+    "type": "class",
+    "imports": ["java.nio.charset.Charset"],
+    "class_name": "Hashing",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/hash/Hashing.java"
+}, {
+    "name": "Serializations",
+    "package": "com.dr.strategy.support.serialization",
+    "type": "class",
+    "imports": ["com.google.gson.Gson", "com.google.gson.reflect.TypeToken", "java.lang.reflect.Type", "java.util.Map"],
+    "class_name": "Serializations",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/serialization/Serializations.java"
+}, {
+    "name": "JsonSerializable",
+    "package": "com.dr.strategy.support.serialization",
+    "type": "interface",
+    "imports": ["java.io.Serializable"],
+    "class_name": "JsonSerializable extends Serializable",
+    "extend_name": "Serializable",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/serialization/JsonSerializable.java"
+}, {
+    "name": "Enumerations",
+    "package": "com.dr.strategy.support.enums",
+    "type": "class",
+    "imports": ["org.springframework.lang.NonNull", "java.util.Optional"],
+    "class_name": "Enumerations",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/enums/Enumerations.java"
+}, {
+    "name": "KeyValueEnum<K,",
+    "package": "com.dr.strategy.support.enums",
+    "type": "interface",
+    "imports": [],
+    "class_name": "KeyValueEnum<K, V>",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/enums/KeyValueEnum.java"
+}, {
+    "name": "BlockLockPool",
+    "package": "com.dr.strategy.support.lock",
+    "type": "class",
+    "imports": ["com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "java.util.Objects", "java.util.concurrent.ConcurrentMap"],
+    "class_name": "BlockLockPool",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/lock/BlockLockPool.java"
+}, {
+    "name": "BlockLock",
+    "package": "com.dr.strategy.support.lock",
+    "type": "class",
+    "imports": ["lombok.extern.slf4j.Slf4j", "org.springframework.util.Assert", "java.util.Objects", "java.util.concurrent.Callable", "java.util.concurrent.TimeUnit", "java.util.concurrent.locks.Condition", "java.util.concurrent.locks.Lock", "java.util.concurrent.locks.ReentrantLock", "java.util.function.Predicate"],
+    "class_name": "BlockLock",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/lock/BlockLock.java"
+}, {
+    "name": "ExceptionAdvice",
+    "package": "com.dr.strategy.api",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.basic.role.AuthenticationException", "com.dr.strategy.support.serialization.Serializations", "com.google.common.base.Throwables", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.http.HttpStatus", "org.springframework.http.ResponseEntity", "org.springframework.web.bind.MethodArgumentNotValidException", "org.springframework.web.bind.annotation.ExceptionHandler", "org.springframework.web.bind.annotation.RestControllerAdvice", "javax.servlet.http.HttpServletRequest", "java.util.Collections", "java.util.Map", "java.util.Objects", "java.util.Set"],
+    "class_name": "ExceptionAdvice",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/api/RestApiExceptionAdvice.java"
+}, {
+    "name": "SwaggerConfigBuilder",
+    "package": "com.dr.strategy.api",
+    "type": "class",
+    "imports": ["springfox.documentation.builders.PathSelectors", "springfox.documentation.builders.RequestHandlerSelectors", "springfox.documentation.spi.DocumentationType", "springfox.documentation.spring.web.plugins.Docket"],
+    "class_name": "SwaggerConfigBuilder",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/api/SwaggerConfigBuilder.java"
+}, {
+    "name": "RestApiTokenHandlerFilterForAdmin",
+    "package": "com.dr.strategy.api",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.basic.token.Current", "com.dr.strategy.basic.token.CurrentUser", "com.dr.strategy.basic.token.TokenException", "com.dr.strategy.basic.token.TokenManger", "com.dr.strategy.support.serialization.Serializations", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "javax.servlet.*", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletResponse", "java.io.IOException", "java.io.PrintWriter"],
+    "class_name": "RestApiTokenHandlerFilterForAdmin implements Filter",
+    "extend_name": "",
+    "implements_name": ["Filter"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/api/RestApiTokenHandlerFilterForAdmin.java"
+}, {
+    "name": "RestApiTokenHandlerFilter",
+    "package": "com.dr.strategy.api",
+    "type": "class",
+    "imports": ["com.dr.strategy.basic.GlobeServiceResultEnum", "com.dr.strategy.basic.token.Current", "com.dr.strategy.basic.token.CurrentUser", "com.dr.strategy.basic.token.TokenException", "com.dr.strategy.basic.token.TokenManger", "com.dr.strategy.support.serialization.Serializations", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "javax.servlet.*", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletResponse", "java.io.IOException", "java.io.PrintWriter"],
+    "class_name": "RestApiTokenHandlerFilter implements Filter",
+    "extend_name": "",
+    "implements_name": ["Filter"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/api/RestApiTokenHandlerFilter.java"
+}, {
+    "name": "ServiceResponse<T>",
+    "package": "com.dr.strategy.api",
+    "type": "class",
+    "imports": ["com.dr.strategy.support.enums.KeyValueEnum", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.NoArgsConstructor", "java.io.Serializable"],
+    "class_name": "ServiceResponse<T> implements Serializable",
+    "extend_name": "",
+    "implements_name": ["Serializable"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/api/ServiceResponse.java"
+}, {
+    "name": "SwaggerDisplayConfig",
+    "package": "com.dr.strategy.api",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Value", "org.springframework.context.annotation.Primary", "org.springframework.stereotype.Component", "springfox.documentation.builders.ModelPropertyBuilder", "springfox.documentation.schema.Annotations", "springfox.documentation.spi.DocumentationType", "springfox.documentation.spi.schema.ModelPropertyBuilderPlugin", "springfox.documentation.spi.schema.contexts.ModelPropertyContext", "springfox.documentation.swagger.schema.ApiModelProperties", "java.lang.reflect.Field", "java.util.Arrays", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.stream.Collectors"],
+    "class_name": "SwaggerDisplayConfig implements ModelPropertyBuilderPlugin",
+    "extend_name": "",
+    "implements_name": ["ModelPropertyBuilderPlugin"],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/api/SwaggerDisplayConfig.java"
+}, {
+    "name": "ServerSettings",
+    "package": "com.dr.strategy.setting",
+    "type": "class",
+    "imports": ["lombok.Data", "org.springframework.beans.factory.annotation.Value", "org.springframework.stereotype.Component"],
+    "class_name": "ServerSettings",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/setting/ServerSettings.java"
+}];

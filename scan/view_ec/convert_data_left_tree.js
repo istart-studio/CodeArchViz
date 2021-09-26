@@ -121,12 +121,12 @@ function convert_left_tree(data, globeData) {
     function convert_node_tree(data) {
 
         // 自身
-        const fullName = data.package + "." + data.name;
         let self = {
             name: data.name,
             children: []
         };
 
+        const fullName = data.package + "." + data.name;
         globeData.forEach(function (item, index) {
             const itemFullName = item.package + "." + item.name;
             item.imports.forEach(function (importItem, index) {

@@ -13,18 +13,28 @@ def set_imports(instance, value, header):
     instance['imports'].append(value)
 
 
+def substr_class_name(value, search_char):
+    pattern_index = value.find(search_char)
+    if pattern_index != -1:
+        return value[0:pattern_index]
+    else:
+        return value
+
+
 def set_class(instance, value, header):
     # 只做一次
     if instance['class_name'] != "":
         return
 
-    instance['class_name'] = value
+    # 范型类 <E,V>
+    instance['class_name'] = substr_class_name(value, "<")
+
     instance['type'] = header.strip()
-    values = value.split(" ")
+    values = instance['class_name'].split(" ")
     instance['name'] = values[0]
     if len(values) >= 3:
         if values[1] == 'extends':
-            instance['extend_name'] = values[2]
+            instance['extend_name'] = substr_class_name(values[2], "<")
         if values[1] == 'implements':
             instance['implements_name'] = values[2].split(',')
 

@@ -354,8 +354,8 @@ var data = [{
     "package": "com.dr.op.app.repository",
     "type": "interface",
     "imports": ["com.dr.op.app.entity.AppAuthSubEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional", "java.util.Set"],
-    "class_name": "AppAuthSubRepository extends CrudRepository<AppAuthSubEntity, Integer>",
-    "extend_name": "CrudRepository<AppAuthSubEntity,",
+    "class_name": "AppAuthSubRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppAuthSubRepository.java"
 }, {
@@ -363,8 +363,8 @@ var data = [{
     "package": "com.dr.op.app.repository",
     "type": "interface",
     "imports": ["com.dr.op.app.entity.AppCenterTop", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional"],
-    "class_name": "AppCenterTopRepository extends CrudRepository<AppCenterTop, Integer>",
-    "extend_name": "CrudRepository<AppCenterTop,",
+    "class_name": "AppCenterTopRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppCenterTopRepository.java"
 }, {
@@ -372,8 +372,8 @@ var data = [{
     "package": "com.dr.op.app.repository",
     "type": "interface",
     "imports": ["com.dr.op.app.entity.AppCenterFastEntrance", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional"],
-    "class_name": "AppCenterFastEntranceRepository extends CrudRepository<AppCenterFastEntrance, Integer>",
-    "extend_name": "CrudRepository<AppCenterFastEntrance,",
+    "class_name": "AppCenterFastEntranceRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppCenterFastEntranceRepository.java"
 }, {
@@ -381,8 +381,8 @@ var data = [{
     "package": "com.dr.op.app.repository",
     "type": "interface",
     "imports": ["com.dr.op.app.entity.AppWorkbenchLock", "org.springframework.data.repository.CrudRepository", "java.util.List"],
-    "class_name": "AppWorkbenchFastRepository extends CrudRepository<AppWorkbenchLock, Integer>",
-    "extend_name": "CrudRepository<AppWorkbenchLock,",
+    "class_name": "AppWorkbenchFastRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppWorkbenchFastRepository.java"
 }, {
@@ -390,8 +390,8 @@ var data = [{
     "package": "com.dr.op.app.repository",
     "type": "interface",
     "imports": ["com.dr.op.app.entity.AppCfgPersonalPrivilegeEntity", "com.dr.op.app.entity.AppCfgPersonalPrivilegeUnionId", "org.springframework.data.repository.CrudRepository"],
-    "class_name": "AppCfgPersonalPrivilegeRepository extends CrudRepository<AppCfgPersonalPrivilegeEntity, AppCfgPersonalPrivilegeUnionId>",
-    "extend_name": "CrudRepository<AppCfgPersonalPrivilegeEntity,",
+    "class_name": "AppCfgPersonalPrivilegeRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppCfgPersonalPrivilegeRepository.java"
 }, {
@@ -399,8 +399,8 @@ var data = [{
     "package": "com.dr.op.app.repository",
     "type": "interface",
     "imports": ["com.dr.op.app.entity.AppInfoEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.Query", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Set"],
-    "class_name": "AppInfoRepository extends CrudRepository<AppInfoEntity, String>",
-    "extend_name": "CrudRepository<AppInfoEntity,",
+    "class_name": "AppInfoRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppInfoRepository.java"
 }, {
@@ -408,8 +408,8 @@ var data = [{
     "package": "com.dr.op.app.repository",
     "type": "interface",
     "imports": ["com.dr.op.app.entity.AppCfgPersonalEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.Query", "org.springframework.data.repository.CrudRepository", "java.util.List"],
-    "class_name": "AppCfgPersonalRepository extends CrudRepository<AppCfgPersonalEntity, Integer>",
-    "extend_name": "CrudRepository<AppCfgPersonalEntity,",
+    "class_name": "AppCfgPersonalRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppCfgPersonalRepository.java"
 }, {
@@ -417,8 +417,8 @@ var data = [{
     "package": "com.dr.op.app.repository",
     "type": "interface",
     "imports": ["com.dr.op.app.entity.AppCfgGlobalEntity", "com.dr.op.app.entity.AppCfgGlobalUnionId", "org.springframework.data.repository.CrudRepository"],
-    "class_name": "AppCfgGlobalRepository extends CrudRepository<AppCfgGlobalEntity, AppCfgGlobalUnionId>",
-    "extend_name": "CrudRepository<AppCfgGlobalEntity,",
+    "class_name": "AppCfgGlobalRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/repository/AppCfgGlobalRepository.java"
 }, {
@@ -993,8 +993,8 @@ var data = [{
     "package": "com.dr.op.app.ai.repository",
     "type": "interface",
     "imports": ["com.dr.op.app.ai.entity.AppAuthTokenEntity", "com.dr.op.app.ai.entity.AppAuthTokenId", "org.springframework.data.repository.CrudRepository"],
-    "class_name": "AppAuthTokenRepository extends CrudRepository<AppAuthTokenEntity, AppAuthTokenId>",
-    "extend_name": "CrudRepository<AppAuthTokenEntity,",
+    "class_name": "AppAuthTokenRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/app/ai/repository/AppAuthTokenRepository.java"
 }, {
@@ -1484,11 +1484,11 @@ var data = [{
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/constant/Constant.java"
 }, {
-    "name": "CommonResponse<T>",
+    "name": "CommonResponse",
     "package": "com.dr.op.globe.constant",
     "type": "class",
     "imports": ["lombok.AllArgsConstructor", "lombok.Data"],
-    "class_name": "CommonResponse<T>",
+    "class_name": "CommonResponse",
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/constant/CommonResponse.java"
@@ -1520,29 +1520,29 @@ var data = [{
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/http/ApiUrlConst.java"
 }, {
-    "name": "FallObjectPaged<T>",
+    "name": "FallObjectPaged",
     "package": "com.dr.op.globe.http",
     "type": "class",
     "imports": ["com.dr.op.imsession.entity.OrgEntity", "io.swagger.annotations.ApiModel", "lombok.Data", "java.util.Set"],
-    "class_name": "FallObjectPaged<T>",
+    "class_name": "FallObjectPaged",
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/http/FallObjectPaged.java"
 }, {
-    "name": "Paged<T>",
+    "name": "Paged",
     "package": "com.dr.op.globe.http",
     "type": "class",
     "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
-    "class_name": "Paged<T>",
+    "class_name": "Paged",
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/http/Paged.java"
 }, {
-    "name": "FallPaged<T>",
+    "name": "FallPaged",
     "package": "com.dr.op.globe.http",
     "type": "class",
     "imports": ["com.google.common.collect.Lists", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.Min", "javax.validation.constraints.NotNull", "java.util.Collection", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "FallPaged<T>",
+    "class_name": "FallPaged",
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/http/FallPaged.java"
@@ -1601,11 +1601,11 @@ var data = [{
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/exception/AbstractException.java"
 }, {
-    "name": "Result<T>",
+    "name": "Result",
     "package": "com.dr.op.globe.exception",
     "type": "class",
     "imports": ["lombok.Getter", "lombok.ToString"],
-    "class_name": "Result<T>",
+    "class_name": "Result",
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/globe/exception/Result.java"
@@ -1857,8 +1857,8 @@ var data = [{
     "package": "com.dr.op.label.repository",
     "type": "interface",
     "imports": ["com.dr.op.label.entity.LabelInfoEntity", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional", "java.util.stream.Stream"],
-    "class_name": "LabelInfoRepository extends CrudRepository<LabelInfoEntity, Integer>",
-    "extend_name": "CrudRepository<LabelInfoEntity,",
+    "class_name": "LabelInfoRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/label/repository/LabelInfoRepository.java"
 }, {
@@ -2154,8 +2154,8 @@ var data = [{
     "package": "com.dr.op.bussiness.mapper",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.dr.op.bussiness.entity.RealtimeInfoDistribution", "java.util.List"],
-    "class_name": "RealtimeInfoDistributionMapper extends BaseMapper<RealtimeInfoDistribution>",
-    "extend_name": "BaseMapper<RealtimeInfoDistribution>",
+    "class_name": "RealtimeInfoDistributionMapper extends BaseMapper",
+    "extend_name": "BaseMapper",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/RealtimeInfoDistributionMapper.java"
 }, {
@@ -2163,8 +2163,8 @@ var data = [{
     "package": "com.dr.op.bussiness.mapper",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.op.bussiness.entity.Comment", "java.util.List"],
-    "class_name": "CommentMapper extends BaseMapper<Comment>",
-    "extend_name": "BaseMapper<Comment>",
+    "class_name": "CommentMapper extends BaseMapper",
+    "extend_name": "BaseMapper",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/CommentMapper.java"
 }, {
@@ -2172,8 +2172,8 @@ var data = [{
     "package": "com.dr.op.bussiness.mapper",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.op.bussiness.api.request.RealtimeInfoRequest", "com.dr.op.bussiness.api.response.RealTimeInfoDetailResponse", "com.dr.op.bussiness.entity.RealtimeInfo", "org.apache.ibatis.annotations.Param", "java.util.List"],
-    "class_name": "RealtimeInfoMapper extends BaseMapper<RealtimeInfo>",
-    "extend_name": "BaseMapper<RealtimeInfo>",
+    "class_name": "RealtimeInfoMapper extends BaseMapper",
+    "extend_name": "BaseMapper",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/RealtimeInfoMapper.java"
 }, {
@@ -2181,8 +2181,8 @@ var data = [{
     "package": "com.dr.op.bussiness.mapper",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.op.bussiness.entity.ReplyInfo", "java.util.List"],
-    "class_name": "ReplyInfoMapper extends BaseMapper<ReplyInfo>",
-    "extend_name": "BaseMapper<ReplyInfo>",
+    "class_name": "ReplyInfoMapper extends BaseMapper",
+    "extend_name": "BaseMapper",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/ReplyInfoMapper.java"
 }, {
@@ -2190,8 +2190,8 @@ var data = [{
     "package": "com.dr.op.bussiness.mapper",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.baomidou.mybatisplus.core.metadata.IPage", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.op.bussiness.api.request.TasksListRequest", "com.dr.op.bussiness.api.request.TasksRequest", "com.dr.op.bussiness.entity.TasksEntity", "org.apache.ibatis.annotations.Mapper", "org.apache.ibatis.annotations.Param", "java.util.List"],
-    "class_name": "TaskMapper extends BaseMapper<TasksEntity>",
-    "extend_name": "BaseMapper<TasksEntity>",
+    "class_name": "TaskMapper extends BaseMapper",
+    "extend_name": "BaseMapper",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/TaskMapper.java"
 }, {
@@ -2199,8 +2199,8 @@ var data = [{
     "package": "com.dr.op.bussiness.mapper",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.dr.op.bussiness.entity.Collect", "java.util.List"],
-    "class_name": "CollectMapper extends BaseMapper<Collect>",
-    "extend_name": "BaseMapper<Collect>",
+    "class_name": "CollectMapper extends BaseMapper",
+    "extend_name": "BaseMapper",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/CollectMapper.java"
 }, {
@@ -2208,8 +2208,8 @@ var data = [{
     "package": "com.dr.op.bussiness.mapper",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.dr.op.bussiness.entity.BroadcastManager", "org.apache.ibatis.annotations.Param", "java.util.List"],
-    "class_name": "BroadcastManagerMapper extends BaseMapper<BroadcastManager>",
-    "extend_name": "BaseMapper<BroadcastManager>",
+    "class_name": "BroadcastManagerMapper extends BaseMapper",
+    "extend_name": "BaseMapper",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/BroadcastManagerMapper.java"
 }, {
@@ -2217,8 +2217,8 @@ var data = [{
     "package": "com.dr.op.bussiness.mapper",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.op.bussiness.entity.Broadcast", "java.util.List"],
-    "class_name": "BroadcastMapper extends BaseMapper<Broadcast>",
-    "extend_name": "BaseMapper<Broadcast>",
+    "class_name": "BroadcastMapper extends BaseMapper",
+    "extend_name": "BaseMapper",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/BroadcastMapper.java"
 }, {
@@ -2226,8 +2226,8 @@ var data = [{
     "package": "com.dr.op.bussiness.mapper",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.dr.op.bussiness.entity.DataBoardLock", "java.util.List"],
-    "class_name": "DataBoardLockMapper extends BaseMapper<DataBoardLock>",
-    "extend_name": "BaseMapper<DataBoardLock>",
+    "class_name": "DataBoardLockMapper extends BaseMapper",
+    "extend_name": "BaseMapper",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/mapper/DataBoardLockMapper.java"
 }, {
@@ -2496,8 +2496,8 @@ var data = [{
     "package": "com.dr.op.bussiness.service",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.extension.service.IService", "com.dr.op.bussiness.api.request.CommentRequest", "com.dr.op.bussiness.api.request.RealtimeInfoRequest", "com.dr.op.bussiness.api.request.ReplyRequest", "com.dr.op.bussiness.api.response.CommentResponse", "com.dr.op.bussiness.api.response.RealTimeInfoDetailResponse", "com.dr.op.bussiness.api.response.RealtimeInfoResponse", "com.dr.op.bussiness.api.response.ReplyResponse", "com.dr.op.bussiness.entity.RealtimeInfo", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest"],
-    "class_name": "RealtimeInfoService extends IService<RealtimeInfo>",
-    "extend_name": "IService<RealtimeInfo>",
+    "class_name": "RealtimeInfoService extends IService",
+    "extend_name": "IService",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/RealtimeInfoService.java"
 }, {
@@ -2514,8 +2514,8 @@ var data = [{
     "package": "com.dr.op.bussiness.service",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.extension.service.IService", "com.dr.op.bussiness.entity.Comment"],
-    "class_name": "CommentService extends IService<Comment>",
-    "extend_name": "IService<Comment>",
+    "class_name": "CommentService extends IService",
+    "extend_name": "IService",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/CommentService.java"
 }, {
@@ -2523,8 +2523,8 @@ var data = [{
     "package": "com.dr.op.bussiness.service",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.extension.service.IService", "com.dr.op.bussiness.entity.BroadcastManager"],
-    "class_name": "BroadcastManagerService extends IService<BroadcastManager>",
-    "extend_name": "IService<BroadcastManager>",
+    "class_name": "BroadcastManagerService extends IService",
+    "extend_name": "IService",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/BroadcastManagerService.java"
 }, {
@@ -2550,8 +2550,8 @@ var data = [{
     "package": "com.dr.op.bussiness.service",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.extension.service.IService", "com.dr.op.bussiness.entity.Comment", "com.dr.op.bussiness.entity.ReplyInfo"],
-    "class_name": "ReplyInfoService extends IService<ReplyInfo>",
-    "extend_name": "IService<ReplyInfo>",
+    "class_name": "ReplyInfoService extends IService",
+    "extend_name": "IService",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/ReplyInfoService.java"
 }, {
@@ -2559,8 +2559,8 @@ var data = [{
     "package": "com.dr.op.bussiness.service.impl",
     "type": "class",
     "imports": ["cn.hutool.core.util.ObjectUtil", "com.alibaba.fastjson.JSON", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.op.bussiness.api.request.AddBroadcastRequest", "com.dr.op.bussiness.api.request.AddRealTimeInfoRequest", "com.dr.op.bussiness.api.request.BroadcastRealTimeInfoRequest", "com.dr.op.bussiness.api.request.BroadcastRequest", "com.dr.op.bussiness.api.response.AddRealTimeInfoResponse", "com.dr.op.bussiness.api.response.BroadcastRealTimeInfoResponse", "com.dr.op.bussiness.api.response.BroadcastResponse", "com.dr.op.bussiness.entity.Broadcast", "com.dr.op.bussiness.entity.BroadcastManager", "com.dr.op.bussiness.entity.RealtimeInfo", "com.dr.op.bussiness.entity.RealtimeInfoDistribution", "com.dr.op.bussiness.enums.InfoStatusType", "com.dr.op.bussiness.mapper.BroadcastManagerMapper", "com.dr.op.bussiness.mapper.BroadcastMapper", "com.dr.op.bussiness.mapper.RealtimeInfoDistributionMapper", "com.dr.op.bussiness.mapper.RealtimeInfoMapper", "com.dr.op.bussiness.service.BroadcastManagerService", "com.dr.op.bussiness.service.BroadcastService", "com.dr.op.globe.constant.BizErrorCode", "com.dr.op.globe.exception.BusinessException", "com.dr.op.globe.http.FallPaged", "com.dr.strategy.basic.token.Current", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "javax.annotation.Resource", "java.util.List", "java.util.stream.Collectors", "static com.dr.op.bussiness.enums.InfoStatusType.INFO_STATUS_TYPE0", "static com.dr.op.bussiness.enums.InfoStatusType.INFO_STATUS_TYPE1"],
-    "class_name": "BroadcastServiceImpl extends ServiceImpl<BroadcastMapper, Broadcast> implements BroadcastService",
-    "extend_name": "ServiceImpl<BroadcastMapper,",
+    "class_name": "BroadcastServiceImpl extends ServiceImpl",
+    "extend_name": "ServiceImpl",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/impl/BroadcastServiceImpl.java"
 }, {
@@ -2568,8 +2568,8 @@ var data = [{
     "package": "com.dr.op.bussiness.service.impl",
     "type": "class",
     "imports": ["cn.hutool.core.util.ObjectUtil", "com.alibaba.fastjson.JSON", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.op.bussiness.api.request.CommentRequest", "com.dr.op.bussiness.api.request.RealtimeInfoRequest", "com.dr.op.bussiness.api.request.ReplyRequest", "com.dr.op.bussiness.api.response.CommentResponse", "com.dr.op.bussiness.api.response.RealTimeInfoDetailResponse", "com.dr.op.bussiness.api.response.RealtimeInfoResponse", "com.dr.op.bussiness.api.response.ReplyResponse", "com.dr.op.bussiness.entity.*", "com.dr.op.bussiness.enums.CollectType", "com.dr.op.bussiness.enums.FilterType", "com.dr.op.bussiness.enums.KindType", "com.dr.op.bussiness.enums.OperateType", "com.dr.op.bussiness.mapper.*", "com.dr.op.bussiness.service.CommentService", "com.dr.op.bussiness.service.RealtimeInfoService", "com.dr.op.globe.constant.BizErrorCode", "com.dr.op.globe.exception.BusinessException", "com.dr.op.globe.http.FallPaged", "com.dr.op.globe.http.PageRequest", "com.dr.strategy.basic.token.Current", "org.slf4j.Logger", "org.slf4j.LoggerFactory", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "javax.annotation.Resource", "java.util.ArrayList", "java.util.Calendar", "java.util.Date", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "RealtimeInfoServiceImpl extends ServiceImpl<RealtimeInfoMapper, RealtimeInfo> implements RealtimeInfoService",
-    "extend_name": "ServiceImpl<RealtimeInfoMapper,",
+    "class_name": "RealtimeInfoServiceImpl extends ServiceImpl",
+    "extend_name": "ServiceImpl",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/impl/RealtimeInfoServiceImpl.java"
 }, {
@@ -2577,8 +2577,8 @@ var data = [{
     "package": "com.dr.op.bussiness.service.impl",
     "type": "class",
     "imports": ["com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.op.bussiness.entity.Comment", "com.dr.op.bussiness.mapper.CommentMapper", "com.dr.op.bussiness.service.CommentService", "lombok.extern.log4j.Log4j2", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Propagation", "org.springframework.transaction.annotation.Transactional"],
-    "class_name": "CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> implements CommentService",
-    "extend_name": "ServiceImpl<CommentMapper,",
+    "class_name": "CommentServiceImpl extends ServiceImpl",
+    "extend_name": "ServiceImpl",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/impl/CommentServiceImpl.java"
 }, {
@@ -2595,8 +2595,8 @@ var data = [{
     "package": "com.dr.op.bussiness.service.impl",
     "type": "class",
     "imports": ["com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.op.bussiness.entity.ReplyInfo", "com.dr.op.bussiness.mapper.ReplyInfoMapper", "com.dr.op.bussiness.service.ReplyInfoService", "lombok.extern.log4j.Log4j2", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Propagation", "org.springframework.transaction.annotation.Transactional"],
-    "class_name": "ReplyInfoServiceImpl extends ServiceImpl<ReplyInfoMapper, ReplyInfo> implements ReplyInfoService",
-    "extend_name": "ServiceImpl<ReplyInfoMapper,",
+    "class_name": "ReplyInfoServiceImpl extends ServiceImpl",
+    "extend_name": "ServiceImpl",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/impl/ReplyInfoServiceImpl.java"
 }, {
@@ -2604,8 +2604,8 @@ var data = [{
     "package": "com.dr.op.bussiness.service.impl",
     "type": "class",
     "imports": ["com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.op.bussiness.entity.BroadcastManager", "com.dr.op.bussiness.mapper.BroadcastManagerMapper", "com.dr.op.bussiness.service.BroadcastManagerService", "org.springframework.stereotype.Service"],
-    "class_name": "BroadcastManagerServiceImpl extends ServiceImpl<BroadcastManagerMapper, BroadcastManager> implements BroadcastManagerService",
-    "extend_name": "ServiceImpl<BroadcastManagerMapper,",
+    "class_name": "BroadcastManagerServiceImpl extends ServiceImpl",
+    "extend_name": "ServiceImpl",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/bussiness/service/impl/BroadcastManagerServiceImpl.java"
 }, {
@@ -2631,8 +2631,8 @@ var data = [{
     "package": "com.dr.op.notice.repository",
     "type": "interface",
     "imports": ["com.dr.op.notice.entity.NoticeEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.Query", "org.springframework.data.repository.CrudRepository", "java.util.List"],
-    "class_name": "NoticeRepo extends CrudRepository<NoticeEntity, Integer>",
-    "extend_name": "CrudRepository<NoticeEntity,",
+    "class_name": "NoticeRepo extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/repository/NoticeRepo.java"
 }, {
@@ -2640,8 +2640,8 @@ var data = [{
     "package": "com.dr.op.notice.repository",
     "type": "interface",
     "imports": ["com.dr.op.notice.entity.NoticeAccountConfigEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.mongodb.repository.MongoRepository", "java.util.List", "java.util.Optional"],
-    "class_name": "NoticeAccountConfigRepo extends MongoRepository<NoticeAccountConfigEntity, String>",
-    "extend_name": "MongoRepository<NoticeAccountConfigEntity,",
+    "class_name": "NoticeAccountConfigRepo extends MongoRepository",
+    "extend_name": "MongoRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/repository/NoticeAccountConfigRepo.java"
 }, {
@@ -2649,8 +2649,8 @@ var data = [{
     "package": "com.dr.op.notice.repository",
     "type": "interface",
     "imports": ["com.dr.op.notice.entity.NoticeRecordEntity", "org.springframework.data.repository.CrudRepository", "java.util.Optional"],
-    "class_name": "NoticeRecordRepo extends CrudRepository<NoticeRecordEntity, Integer>",
-    "extend_name": "CrudRepository<NoticeRecordEntity,",
+    "class_name": "NoticeRecordRepo extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/notice/repository/NoticeRecordRepo.java"
 }, {
@@ -3054,8 +3054,8 @@ var data = [{
     "package": "com.dr.op.account.repository",
     "type": "interface",
     "imports": ["com.dr.op.account.entity.AccountInfoEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional"],
-    "class_name": "AccountInfoRepo extends CrudRepository<AccountInfoEntity, Integer>",
-    "extend_name": "CrudRepository<AccountInfoEntity,",
+    "class_name": "AccountInfoRepo extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/repository/AccountInfoRepo.java"
 }, {
@@ -3243,9 +3243,9 @@ var data = [{
     "package": "com.dr.op.account.consts",
     "type": "enum",
     "imports": ["com.dr.strategy.support.enums.KeyValueEnum", "org.apache.commons.lang3.StringUtils"],
-    "class_name": "SexTypeEnum implements KeyValueEnum<Integer, String>",
+    "class_name": "SexTypeEnum implements KeyValueEnum",
     "extend_name": "",
-    "implements_name": ["KeyValueEnum<Integer", ""],
+    "implements_name": ["KeyValueEnum"],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/consts/SexTypeEnum.java"
 }, {
     "name": "AccountTypeEnum",
@@ -3261,9 +3261,9 @@ var data = [{
     "package": "com.dr.op.account.consts",
     "type": "enum",
     "imports": ["com.dr.strategy.support.enums.KeyValueEnum"],
-    "class_name": "LoginModeEnum implements KeyValueEnum<Integer, String>",
+    "class_name": "LoginModeEnum implements KeyValueEnum",
     "extend_name": "",
-    "implements_name": ["KeyValueEnum<Integer", ""],
+    "implements_name": ["KeyValueEnum"],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/account/consts/LoginModeEnum.java"
 }, {
     "name": "DataDefinitionDto",
@@ -3360,8 +3360,8 @@ var data = [{
     "package": "com.dr.op.data.mapper",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.dr.op.data.entity.DataFilter", "org.apache.ibatis.annotations.Mapper"],
-    "class_name": "DataFilterMapper extends BaseMapper<DataFilter>",
-    "extend_name": "BaseMapper<DataFilter>",
+    "class_name": "DataFilterMapper extends BaseMapper",
+    "extend_name": "BaseMapper",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/mapper/DataFilterMapper.java"
 }, {
@@ -3378,8 +3378,8 @@ var data = [{
     "package": "com.dr.op.data.mapper",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.dr.op.data.entity.DataDefinition", "org.apache.ibatis.annotations.Mapper"],
-    "class_name": "DataDefineMapper extends BaseMapper<DataDefinition>",
-    "extend_name": "BaseMapper<DataDefinition>",
+    "class_name": "DataDefineMapper extends BaseMapper",
+    "extend_name": "BaseMapper",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/mapper/DataDefineMapper.java"
 }, {
@@ -3401,12 +3401,12 @@ var data = [{
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/page/DataPageRequest.java"
 }, {
-    "name": "DataFallPaging<T>",
+    "name": "DataFallPaging",
     "package": "com.dr.op.data.api.http.page",
     "type": "class",
     "imports": ["com.baomidou.mybatisplus.core.metadata.IPage", "com.dr.op.globe.http.FallPaged"],
-    "class_name": "DataFallPaging<T> extends FallPaged<T>",
-    "extend_name": "FallPaged<T>",
+    "class_name": "DataFallPaging",
+    "extend_name": "",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/api/http/page/DataFallPaging.java"
 }, {
@@ -3594,8 +3594,8 @@ var data = [{
     "package": "com.dr.op.data.service",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.extension.service.IService", "com.dr.op.data.entity.DataFilter"],
-    "class_name": "IDataFilterService extends IService<DataFilter>",
-    "extend_name": "IService<DataFilter>",
+    "class_name": "IDataFilterService extends IService",
+    "extend_name": "IService",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/service/IDataFilterService.java"
 }, {
@@ -3603,8 +3603,8 @@ var data = [{
     "package": "com.dr.op.data.service",
     "type": "interface",
     "imports": ["com.baomidou.mybatisplus.extension.service.IService", "com.dr.op.data.entity.DataDefinition"],
-    "class_name": "IDataDefineService extends IService<DataDefinition>",
-    "extend_name": "IService<DataDefinition>",
+    "class_name": "IDataDefineService extends IService",
+    "extend_name": "IService",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/service/IDataDefineService.java"
 }, {
@@ -3612,8 +3612,8 @@ var data = [{
     "package": "com.dr.op.data.service.impl",
     "type": "class",
     "imports": ["com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.op.data.entity.DataDefinition", "com.dr.op.data.mapper.DataDefineMapper", "com.dr.op.data.service.IDataDefineService", "org.springframework.stereotype.Service"],
-    "class_name": "DataDefineServiceImpl extends ServiceImpl<DataDefineMapper, DataDefinition> implements IDataDefineService",
-    "extend_name": "ServiceImpl<DataDefineMapper,",
+    "class_name": "DataDefineServiceImpl extends ServiceImpl",
+    "extend_name": "ServiceImpl",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/service/impl/DataDefineServiceImpl.java"
 }, {
@@ -3630,8 +3630,8 @@ var data = [{
     "package": "com.dr.op.data.service.impl",
     "type": "class",
     "imports": ["com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.op.data.entity.DataFilter", "com.dr.op.data.mapper.DataFilterMapper", "com.dr.op.data.service.IDataFilterService", "org.springframework.stereotype.Service"],
-    "class_name": "DataFilterServiceImpl extends ServiceImpl<DataFilterMapper, DataFilter> implements IDataFilterService",
-    "extend_name": "ServiceImpl<DataFilterMapper,",
+    "class_name": "DataFilterServiceImpl extends ServiceImpl",
+    "extend_name": "ServiceImpl",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/data/service/impl/DataFilterServiceImpl.java"
 }, {
@@ -3675,8 +3675,8 @@ var data = [{
     "package": "com.dr.op.ajc.repository",
     "type": "interface",
     "imports": ["com.dr.op.ajc.entity.JointCertResponseDataEntity", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional", "java.util.Set"],
-    "class_name": "JointCertResponseDataRepository extends CrudRepository<JointCertResponseDataEntity, String>",
-    "extend_name": "CrudRepository<JointCertResponseDataEntity,",
+    "class_name": "JointCertResponseDataRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/repository/JointCertResponseDataRepository.java"
 }, {
@@ -3684,8 +3684,8 @@ var data = [{
     "package": "com.dr.op.ajc.repository",
     "type": "interface",
     "imports": ["com.dr.op.ajc.entity.AppJointCertConfigEntity", "com.dr.op.ajc.entity.AppJointCertConfigId", "org.springframework.data.repository.CrudRepository"],
-    "class_name": "AppJointCertRepository extends CrudRepository<AppJointCertConfigEntity, AppJointCertConfigId>",
-    "extend_name": "CrudRepository<AppJointCertConfigEntity,",
+    "class_name": "AppJointCertRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/repository/AppJointCertRepository.java"
 }, {
@@ -3729,8 +3729,8 @@ var data = [{
     "package": "com.dr.op.ajc.wechat.repository",
     "type": "interface",
     "imports": ["com.dr.op.ajc.wechat.entity.WechatAssociateEntity", "org.springframework.data.repository.CrudRepository", "java.util.Optional"],
-    "class_name": "WechatAccountRepo extends CrudRepository<WechatAssociateEntity, Long>",
-    "extend_name": "CrudRepository<WechatAssociateEntity,",
+    "class_name": "WechatAccountRepo extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/wechat/repository/WechatAccountRepo.java"
 }, {
@@ -3801,18 +3801,18 @@ var data = [{
     "package": "com.dr.op.ajc.wechat.consts",
     "type": "enum",
     "imports": ["com.dr.strategy.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "WechatQRCodeStatusEnum implements KeyValueEnum<Integer, String>",
+    "class_name": "WechatQRCodeStatusEnum implements KeyValueEnum",
     "extend_name": "",
-    "implements_name": ["KeyValueEnum<Integer", ""],
+    "implements_name": ["KeyValueEnum"],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/wechat/consts/WechatQRCodeStatusEnum.java"
 }, {
     "name": "WechatAssociateStatusEnum",
     "package": "com.dr.op.ajc.wechat.consts",
     "type": "enum",
     "imports": ["com.dr.strategy.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "WechatAssociateStatusEnum implements KeyValueEnum<Integer, String>",
+    "class_name": "WechatAssociateStatusEnum implements KeyValueEnum",
     "extend_name": "",
-    "implements_name": ["KeyValueEnum<Integer", ""],
+    "implements_name": ["KeyValueEnum"],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/ajc/wechat/consts/WechatAssociateStatusEnum.java"
 }, {
     "name": "BizAppJointCertApi",
@@ -4494,8 +4494,8 @@ var data = [{
     "package": "com.dr.op.allocation.repository",
     "type": "interface",
     "imports": ["com.dr.op.allocation.entity.CommonAllocationRuleEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.Query", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Set"],
-    "class_name": "CommonAllocationRuleRepository extends CrudRepository<CommonAllocationRuleEntity, Integer>",
-    "extend_name": "CrudRepository<CommonAllocationRuleEntity,",
+    "class_name": "CommonAllocationRuleRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/op/src/main/java/com/dr/op/allocation/repository/CommonAllocationRuleRepository.java"
 }, {
@@ -4674,8 +4674,8 @@ var data = [{
     "package": "com.dr.strategy.basic.cases.order",
     "type": "interface",
     "imports": ["org.springframework.data.repository.CrudRepository"],
-    "class_name": "OrderRepository extends CrudRepository<OrderEntity, String>",
-    "extend_name": "CrudRepository<OrderEntity,",
+    "class_name": "OrderRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/test/java/com/dr/strategy/basic/cases/order/OrderRepository.java"
 }, {
@@ -4791,9 +4791,9 @@ var data = [{
     "package": "com.dr.strategy.basic",
     "type": "enum",
     "imports": ["com.dr.strategy.support.enums.KeyValueEnum"],
-    "class_name": "GlobeServiceResultEnum implements KeyValueEnum<Integer, String>",
+    "class_name": "GlobeServiceResultEnum implements KeyValueEnum",
     "extend_name": "",
-    "implements_name": ["KeyValueEnum<Integer", ""],
+    "implements_name": ["KeyValueEnum"],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/GlobeServiceResultEnum.java"
 }, {
     "name": "GlobeScanner",
@@ -4944,8 +4944,8 @@ var data = [{
     "package": "com.dr.strategy.basic.visible.row.repository",
     "type": "interface",
     "imports": ["com.dr.strategy.basic.visible.row.entity.VisibleRuleEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.Query", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Set"],
-    "class_name": "VisibleRuleRepository extends CrudRepository<VisibleRuleEntity, Integer>",
-    "extend_name": "CrudRepository<VisibleRuleEntity,",
+    "class_name": "VisibleRuleRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/row/repository/VisibleRuleRepository.java"
 }, {
@@ -4953,8 +4953,8 @@ var data = [{
     "package": "com.dr.strategy.basic.visible.row.repository",
     "type": "interface",
     "imports": ["com.dr.strategy.basic.visible.row.entity.IdentityRefDataVisibleEntity", "com.dr.strategy.basic.visible.row.entity.VisibleAllocationId", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.Query", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Set"],
-    "class_name": "IdentityRefDataVisibleRepository extends CrudRepository<IdentityRefDataVisibleEntity, VisibleAllocationId>",
-    "extend_name": "CrudRepository<IdentityRefDataVisibleEntity,",
+    "class_name": "IdentityRefDataVisibleRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/visible/row/repository/IdentityRefDataVisibleRepository.java"
 }, {
@@ -5106,8 +5106,8 @@ var data = [{
     "package": "com.dr.strategy.basic.role.repository",
     "type": "interface",
     "imports": ["com.dr.strategy.basic.role.entity.RoleEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional", "java.util.stream.Stream"],
-    "class_name": "RoleRepository extends CrudRepository<RoleEntity, Integer>",
-    "extend_name": "CrudRepository<RoleEntity,",
+    "class_name": "RoleRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/role/repository/RoleRepository.java"
 }, {
@@ -5457,9 +5457,9 @@ var data = [{
     "package": "com.dr.strategy.basic.app.consts",
     "type": "enum",
     "imports": ["com.dr.strategy.support.enums.KeyValueEnum"],
-    "class_name": "AppConfigValueTypeEnum implements KeyValueEnum<Integer, String>",
+    "class_name": "AppConfigValueTypeEnum implements KeyValueEnum",
     "extend_name": "",
-    "implements_name": ["KeyValueEnum<Integer", ""],
+    "implements_name": ["KeyValueEnum"],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/consts/AppConfigValueTypeEnum.java"
 }, {
     "name": "AppMenuType",
@@ -5493,9 +5493,9 @@ var data = [{
     "package": "com.dr.strategy.basic.app.consts",
     "type": "enum",
     "imports": ["com.dr.strategy.support.enums.KeyValueEnum", "java.util.Arrays"],
-    "class_name": "AppConfigTypeEnum implements KeyValueEnum<Integer, String>",
+    "class_name": "AppConfigTypeEnum implements KeyValueEnum",
     "extend_name": "",
-    "implements_name": ["KeyValueEnum<Integer", ""],
+    "implements_name": ["KeyValueEnum"],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/app/consts/AppConfigTypeEnum.java"
 }, {
     "name": "IdentityManager",
@@ -5511,8 +5511,8 @@ var data = [{
     "package": "com.dr.strategy.basic.identity.repository",
     "type": "interface",
     "imports": ["com.dr.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.dr.strategy.basic.identity.entity.IdentityRefRoleId", "org.springframework.data.repository.CrudRepository", "org.springframework.stereotype.Repository", "java.util.List", "java.util.Set"],
-    "class_name": "IdentityRefRoleRepository extends CrudRepository<IdentityRefRoleEntity, IdentityRefRoleId>",
-    "extend_name": "CrudRepository<IdentityRefRoleEntity,",
+    "class_name": "IdentityRefRoleRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/identity/repository/IdentityRefRoleRepository.java"
 }, {
@@ -5520,8 +5520,8 @@ var data = [{
     "package": "com.dr.strategy.basic.identity.repository",
     "type": "interface",
     "imports": ["com.dr.strategy.basic.identity.entity.IdentityEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.repository.CrudRepository", "org.springframework.stereotype.Repository", "java.util.Collection", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Stream"],
-    "class_name": "IdentityRepository extends CrudRepository<IdentityEntity, Integer>",
-    "extend_name": "CrudRepository<IdentityEntity,",
+    "class_name": "IdentityRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/identity/repository/IdentityRepository.java"
 }, {
@@ -5583,9 +5583,9 @@ var data = [{
     "package": "com.dr.strategy.basic.entity",
     "type": "enum",
     "imports": ["com.dr.strategy.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "EntityState implements KeyValueEnum<Integer, String>",
+    "class_name": "EntityState implements KeyValueEnum",
     "extend_name": "",
-    "implements_name": ["KeyValueEnum<Integer", ""],
+    "implements_name": ["KeyValueEnum"],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/entity/EntityState.java"
 }, {
     "name": "BasicAllocationRule",
@@ -5610,9 +5610,9 @@ var data = [{
     "package": "com.dr.strategy.basic.entity",
     "type": "enum",
     "imports": ["com.dr.strategy.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "IdentityState implements KeyValueEnum<Integer, String>",
+    "class_name": "IdentityState implements KeyValueEnum",
     "extend_name": "",
-    "implements_name": ["KeyValueEnum<Integer", ""],
+    "implements_name": ["KeyValueEnum"],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/entity/IdentityState.java"
 }, {
     "name": "BasicEntity",
@@ -5637,8 +5637,8 @@ var data = [{
     "package": "com.dr.strategy.basic.account.repository",
     "type": "interface",
     "imports": ["com.dr.strategy.basic.account.entity.UnifyAccountEntity", "org.springframework.data.repository.CrudRepository", "java.util.Optional"],
-    "class_name": "UnifyAccountRepository extends CrudRepository<UnifyAccountEntity, Integer>",
-    "extend_name": "CrudRepository<UnifyAccountEntity,",
+    "class_name": "UnifyAccountRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/account/repository/UnifyAccountRepository.java"
 }, {
@@ -5790,8 +5790,8 @@ var data = [{
     "package": "com.dr.strategy.basic.tag.repository",
     "type": "interface",
     "imports": ["com.dr.strategy.basic.tag.entity.TagSystemEntity", "org.springframework.data.repository.CrudRepository", "java.util.List", "java.util.Optional", "java.util.Set"],
-    "class_name": "TagSystemRepository extends CrudRepository<TagSystemEntity, String>",
-    "extend_name": "CrudRepository<TagSystemEntity,",
+    "class_name": "TagSystemRepository extends CrudRepository",
+    "extend_name": "CrudRepository",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/basic/tag/repository/TagSystemRepository.java"
 }, {
@@ -6047,11 +6047,11 @@ var data = [{
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/enums/Enumerations.java"
 }, {
-    "name": "KeyValueEnum<K,",
+    "name": "KeyValueEnum",
     "package": "com.dr.strategy.support.enums",
     "type": "interface",
     "imports": [],
-    "class_name": "KeyValueEnum<K, V>",
+    "class_name": "KeyValueEnum",
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/support/enums/KeyValueEnum.java"
@@ -6110,13 +6110,13 @@ var data = [{
     "implements_name": ["Filter"],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/api/RestApiTokenHandlerFilter.java"
 }, {
-    "name": "ServiceResponse<T>",
+    "name": "ServiceResponse",
     "package": "com.dr.strategy.api",
     "type": "class",
     "imports": ["com.dr.strategy.support.enums.KeyValueEnum", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.NoArgsConstructor", "java.io.Serializable"],
-    "class_name": "ServiceResponse<T> implements Serializable",
+    "class_name": "ServiceResponse",
     "extend_name": "",
-    "implements_name": ["Serializable"],
+    "implements_name": [],
     "file_name": "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy/strategy/src/main/java/com/dr/strategy/api/ServiceResponse.java"
 }, {
     "name": "SwaggerDisplayConfig",

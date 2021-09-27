@@ -43,6 +43,7 @@ function render_fan_in_out(globeData, searchPackage) {
                 })
             });
             fanOut.value = fanOut.refs.length;
+            console.log({name: data.name, value: fanOut.value})
             return fanOut;
         }
 
@@ -50,7 +51,7 @@ function render_fan_in_out(globeData, searchPackage) {
         // 稳定组件：如果3个组件都依赖于X（Fan-In=3），而X不依赖于任何组件（Fan-Out=0），则X为稳定组件，不稳定性为0。
         // 不稳定性：(Fan-Out)/(Fan-In + Fan-Out)。为0时最稳定，为1时最不稳定。
         function convert_data_stable_unstable(fanOutValue, fanInValue) {
-            console.log({fanOut: renderData, fanIn: fanInValue});
+            console.log({fanOut: fanOutValue, fanIn: fanInValue});
             if ((fanInValue + fanOutValue) === 0) {
                 return 0;
             }

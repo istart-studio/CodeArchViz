@@ -1,5 +1,15 @@
-function convert_data_all_package(globeData) {
+/**
+ * 构建全部数据
+ *
+ * @param globeData
+ * @param maxPackageDeepLevel 包的最大深度值 默认为 4
+ * @returns {{nodes: *[], links: *[], categories: *[]}}
+ */
+function convert_data_all_package(globeData, searchPackage, maxPackageDeepLevel) {
 
+    if (!maxPackageDeepLevel) {
+        maxPackageDeepLevel = 7;
+    }
 
     var graph = {
         nodes: [],
@@ -139,7 +149,7 @@ function convert_data_all_package(globeData) {
     function gen_find_node(data) {
         var length = graph.nodes.length;
         var node_id = length;
-        var package = merge_str(data.package, 4);
+        var package = merge_str(data.package, maxPackageDeepLevel);
         // console.log(package);
         var category_index = gen_find_type(package);
         var node = {
@@ -171,9 +181,9 @@ function convert_data_all_package(globeData) {
     }
 
 
-    function gen_find_link(data) {
-        for (var nodeIndex = 0; nodeIndex < graph.nodes.length; nodeIndex++) {
-            var node = graph.nodes[nodeIndex];
+    function gen_find_link(nodes, data) {
+        for (var nodeIndex = 0; nodeIndex < nodes.length; nodeIndex++) {
+            var node = nodes[nodeIndex];
             for (var importIndex = 0; importIndex < data.imports.length; importIndex++) {
                 var fullName = data.imports[importIndex];
                 if (node.fullName === fullName) {
@@ -191,11 +201,13 @@ function convert_data_all_package(globeData) {
     function convert(dataCollection) {
         for (let i = 0; i < dataCollection.length; i++) {
             var data = dataCollection[i];
-            gen_find_node(data)
+            if (data.package && data.package.indexOf(searchPackage) !== -1) {
+                gen_find_node(data)
+            }
         }
         for (let j = 0; j < dataCollection.length; j++) {
             var data = dataCollection[j];
-            gen_find_link(data)
+            gen_find_link(graph.nodes, data)
         }
 
         // 按类型进行区域布局

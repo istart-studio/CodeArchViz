@@ -118,7 +118,7 @@
 <script type="text/javascript" src="js/echarts.js"></script>
 <!-- 数据 -->
 <script type="text/javascript" src="./source_json_data.js"></script>
-<!-- 全局关系图 -->
+<!-- 全局关系图 （全局图、引用、依赖）3个图，并且关联了点击json-->
 <script type="text/javascript" src="./convert_data_all_package.js"></script>
 <!-- json 序列化 -->
 <script src="js/jquery-1.11.0.min.js"></script>
@@ -128,7 +128,7 @@
 <!-- 单个依赖图 树 -->
 <script type="text/javascript" src="./convert_data_right_tree.js"></script>
 
-<script type="text/javascript" src="./render_graph.js"></script>
+<script type="text/javascript" src="render_tree_graph.js"></script>
 
 <!-- 统计图 -->
 <script type="text/javascript" src="./render_statistics.js"></script>
@@ -139,11 +139,17 @@
 <script type="text/javascript">
 
     const globeData = data;
-    render_graph(globeData, function (singleData) {
-        render_statistics(globeData, singleData.package, {limit: 20});
-    });
-    render_statistics(globeData, "com.dr", {limit: 20});
-    render_fan_in_out(globeData, "com.dr");
+    var options = {
+        globeData: data,
+        searchPackage: "com.dr.oursp.retail.trade",
+        maxPackageDeepLevel: 6,
+        clickFunc: function (singleData) {
+            render_statistics(globeData, singleData.package, {limit: 20});
+        }
+    }
+    render_tree_graph(options);
+    render_statistics(globeData, "com.dr.oursp.retail.trade", {limit: 20});
+    render_fan_in_out(globeData, "com.dr.oursp.retail.trade");
 </script>
 </body>
 </html>

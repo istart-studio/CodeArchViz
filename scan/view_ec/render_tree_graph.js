@@ -1,4 +1,11 @@
-function render_graph(globeData, clickFunc) {
+function render_tree_graph(options) {
+
+    var globeData, searchPackage, maxPackageDeepLevel, clickFunc;
+
+    globeData = options.globeData;
+    searchPackage = options.searchPackage;
+    maxPackageDeepLevel = options.maxPackageDeepLevel;
+    clickFunc = options.clickFunc;
 
     function echarts_click(param) {
         console.log(param);
@@ -19,7 +26,7 @@ function render_graph(globeData, clickFunc) {
 
     // 全包 引用关系图
     function render_source_graph(divId, globeData) {
-        const allPackageData = convert_data_all_package(globeData);
+        const allPackageData = convert_data_all_package(globeData, searchPackage, maxPackageDeepLevel);
         var dom = document.getElementById(divId);
         var myChart = echarts.init(dom);
         var option;

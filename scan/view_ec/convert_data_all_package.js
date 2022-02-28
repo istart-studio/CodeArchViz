@@ -45,15 +45,15 @@ function convert_data_all_package(globeData, searchPackage, maxPackageDeepLevel)
       }
      */
 
-    /* 设置类型 并返回 类型的索引（ID） */
-    function gen_find_type(type) {
+    /* 设置类型 并返回 图形类型(categories)的索引（ID） */
+    function graph_categories_index(type) {
         for (var i = 0; i < graph.categories.length; i++) {
             if (type === graph.categories[i].name) {
                 return i;
             }
         }
         graph.categories.push({"name": type})
-        return graph.categories.length;
+        return graph.categories.length - 1;
     }
 
     /* 计算大小 */
@@ -116,7 +116,7 @@ function convert_data_all_package(globeData, searchPackage, maxPackageDeepLevel)
     }
 
 
-    function merge_str(str, count) {
+    function merge_package_str(str, count) {
         let strArray = str.split('.', count);
         let mergeStr = "";
         for (let strArrayKey in strArray) {
@@ -149,9 +149,9 @@ function convert_data_all_package(globeData, searchPackage, maxPackageDeepLevel)
     function gen_find_node(data) {
         var length = graph.nodes.length;
         var node_id = length;
-        var package = merge_str(data.package, maxPackageDeepLevel);
+        var package = merge_package_str(data.package, maxPackageDeepLevel);
         // console.log(package);
-        var category_index = gen_find_type(package);
+        var category_index = graph_categories_index(package);
         var node = {
             "id": node_id,
             "name": data.name,

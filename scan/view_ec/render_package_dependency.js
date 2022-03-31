@@ -24,13 +24,9 @@ function render_package_dependency(globeData, options) {
             }
             const javaClassFullName = javaClass.name;
             if (data.reference.clients[javaClass.package][javaClassFullName]) {
-                data.reference.clients[javaClass.package][javaClassFullName].count = data.reference.clients[javaClass.package][javaClassFullName].count + 1;
-                data.reference.clients[javaClass.package][javaClassFullName].detail.push(importPackageName);
+                data.reference.clients[javaClass.package][javaClassFullName].push(importPackageName);
             } else {
-                data.reference.clients[javaClass.package][javaClassFullName] = {
-                    count: 1,
-                    detail: [importPackageName]
-                }
+                data.reference.clients[javaClass.package][javaClassFullName] = [importPackageName];
             }
         }
 

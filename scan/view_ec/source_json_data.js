@@ -3089,7 +3089,7 @@ var data = [{
     "name": "CoalSupplyBehavior",
     "package": "com.dr.oursp.retail.commodity.supply.coal.behavior",
     "type": "interface",
-    "imports": ["com.dr.oursp.retail.commodity.coal.behavior.SnapshotBehavior", "com.dr.oursp.retail.commodity.supply.coal.entity.SupplyEntity", "com.dr.oursp.retail.support.AccurateNumber"],
+    "imports": ["com.dr.oursp.retail.commodity.supply.coal.entity.SupplyEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.snapshot.SnapshotBehavior"],
     "class_name": "CoalSupplyBehavior extends SnapshotBehavior",
     "extend_name": "SnapshotBehavior",
     "implements_name": [],
@@ -3329,15 +3329,6 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/commodity/coal/behavior/CoalCommodityBehaviorContext.java"
 }, {
-    "name": "SnapshotBehavior",
-    "package": "com.dr.oursp.retail.commodity.coal.behavior",
-    "type": "interface",
-    "imports": [],
-    "class_name": "SnapshotBehavior",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/commodity/coal/behavior/SnapshotBehavior.java"
-}, {
     "name": "BasicCoalCommodityBehavior",
     "package": "com.dr.oursp.retail.commodity.coal.behavior",
     "type": "class",
@@ -3350,7 +3341,7 @@ var data = [{
     "name": "CoalCommodityBehavior",
     "package": "com.dr.oursp.retail.commodity.coal.behavior",
     "type": "interface",
-    "imports": ["com.dr.oursp.retail.commodity.coal.entity.CommodityEntity", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.support.AccurateNumber", "java.util.function.Function"],
+    "imports": ["com.dr.oursp.retail.commodity.coal.entity.CommodityEntity", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.snapshot.SnapshotBehavior", "java.util.function.Function"],
     "class_name": "CoalCommodityBehavior extends SnapshotBehavior",
     "extend_name": "SnapshotBehavior",
     "implements_name": [],
@@ -3680,6 +3671,15 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/support/RangeNumber.java"
 }, {
+    "name": "SnapshotBehavior",
+    "package": "com.dr.oursp.retail.support.snapshot",
+    "type": "interface",
+    "imports": [],
+    "class_name": "SnapshotBehavior",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/support/snapshot/SnapshotBehavior.java"
+}, {
     "name": "Snapshot",
     "package": "com.dr.oursp.retail.support.snapshot",
     "type": "interface",
@@ -3824,42 +3824,6 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/statistical/vo/StatisticsTotalVo.java"
 }, {
-    "name": "StatisticalApi",
-    "package": "com.dr.oursp.retail.statistical.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.retail.statistical.api.http.StatisticaResponse", "com.dr.oursp.retail.statistical.api.http.StatisticalRequest", "com.dr.oursp.retail.statistical.service.StatisticalService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "io.swagger.annotations.Api", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.CrossOrigin", "org.springframework.web.bind.annotation.GetMapping", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController", "java.util.List"],
-    "class_name": "StatisticalApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/statistical/api/StatisticalApi.java"
-}, {
-    "name": "StatisticalRequest",
-    "package": "com.dr.oursp.retail.statistical.api.http",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "io.swagger.annotations.ApiParam", "lombok.Data"],
-    "class_name": "StatisticalRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/statistical/api/http/StatisticalRequest.java"
-}, {
-    "name": "StatisticaResponse",
-    "package": "com.dr.oursp.retail.statistical.api.http",
-    "type": "class",
-    "imports": ["lombok.Data"],
-    "class_name": "StatisticaResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/statistical/api/http/StatisticaResponse.java"
-}, {
-    "name": "StatisticalService",
-    "package": "com.dr.oursp.retail.statistical.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.order.domain.CommodityOrder", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.commodity.order.repository.CommodityOrderRepository", "com.dr.oursp.retail.logistics.waybill.plan.PlanWaybill", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillRepository", "com.dr.oursp.retail.statistical.api.http.StatisticaResponse", "com.dr.oursp.retail.statistical.api.http.StatisticalRequest", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "com.google.common.collect.Lists", "org.springframework.stereotype.Service", "java.util.List", "java.util.Objects", "java.util.stream.Collectors"],
-    "class_name": "StatisticalService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/statistical/service/StatisticalService.java"
-}, {
     "name": "StatisticsService",
     "package": "com.dr.oursp.retail.statistical.service",
     "type": "class",
@@ -3887,15 +3851,6 @@ var data = [{
     "implements_name": ["KeyValueEnum"],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/statistical/consts/ResourceActionEnum.java"
 }, {
-    "name": "StatisticalScene",
-    "package": "com.dr.oursp.retail.statistical.consts",
-    "type": "enum",
-    "imports": [],
-    "class_name": "StatisticalScene",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/statistical/consts/StatisticalScene.java"
-}, {
     "name": "StatisticsConstant",
     "package": "com.dr.oursp.retail.statistical.consts",
     "type": "class",
@@ -3904,15 +3859,6 @@ var data = [{
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/statistical/consts/StatisticsConstant.java"
-}, {
-    "name": "PublishTypeEnum",
-    "package": "com.dr.oursp.retail.statistical.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "PublishTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/statistical/consts/PublishTypeEnum.java"
 }, {
     "name": "ResourceTypeEnum",
     "package": "com.dr.oursp.retail.statistical.consts",
@@ -4673,7 +4619,7 @@ var data = [{
     "name": "PlanWaybillBehavior",
     "package": "com.dr.oursp.retail.logistics.waybill.plan.behavior",
     "type": "interface",
-    "imports": ["com.dr.oursp.retail.commodity.coal.behavior.SnapshotBehavior", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillEntity", "com.dr.oursp.retail.support.AccurateNumber", "java.util.function.Function"],
+    "imports": ["com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.snapshot.SnapshotBehavior", "java.util.function.Function"],
     "class_name": "PlanWaybillBehavior extends SnapshotBehavior",
     "extend_name": "SnapshotBehavior",
     "implements_name": [],
@@ -4916,7 +4862,7 @@ var data = [{
     "name": "CarWaybillBehavior",
     "package": "com.dr.oursp.retail.logistics.waybill.execute.car.behavior",
     "type": "interface",
-    "imports": ["com.dr.oursp.retail.commodity.coal.behavior.SnapshotBehavior", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CoordinateVo", "com.dr.oursp.retail.logistics.waybill.execute.car.repository.CarWaybillEntity", "com.dr.oursp.retail.support.AccurateNumber"],
+    "imports": ["com.dr.oursp.retail.logistics.waybill.execute.car.domain.CoordinateVo", "com.dr.oursp.retail.logistics.waybill.execute.car.repository.CarWaybillEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.snapshot.SnapshotBehavior"],
     "class_name": "CarWaybillBehavior extends SnapshotBehavior",
     "extend_name": "SnapshotBehavior",
     "implements_name": [],
@@ -5969,7 +5915,7 @@ var data = [{
     "name": "PayCenterCallBackParam",
     "package": "com.dr.oursp.retail.player.account.proxy.callback",
     "type": "abstract class",
-    "imports": ["lombok.extern.slf4j.Slf4j", "org.springframework.web.util.UriComponentsBuilder", "java.beans.IntrospectionException", "java.beans.PropertyDescriptor", "java.lang.reflect.Field", "java.lang.reflect.InvocationTargetException"],
+    "imports": ["com.dr.support.serialization.Serializations", "lombok.extern.slf4j.Slf4j", "org.springframework.web.util.UriComponentsBuilder", "java.beans.IntrospectionException", "java.beans.PropertyDescriptor", "java.lang.reflect.Field", "java.lang.reflect.InvocationTargetException"],
     "class_name": "PayCenterCallBackParam",
     "extend_name": "",
     "implements_name": [],

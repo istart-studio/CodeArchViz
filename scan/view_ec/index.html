@@ -164,9 +164,10 @@
     });
     render_statistics(globeData, "com.dr.oursp.retail.trade", {limit: 20});
     render_fan_in_out(globeData, "com.dr.oursp.retail.trade");
+
     render_package_dependency(globeData, {
         divId: "#package-json-render",
-        searchPackages: ["com.dr.oursp.retail.trade", "com.dr.oursp.retail.player", "com.dr.oursp.retail.commodity"],
+        searchPackages: ["com.dr.oursp.retail.trade", "com.dr.oursp.retail.player", "com.dr.oursp.retail.commodity", "com.dr.oursp.retail.logistics"],
         excludePackages: ["com.dr.oursp.retail.app", "com.dr.oursp.retail.consts", "com.dr.oursp.retail.remote"],
         collapsed: true,
         withQuotes: false

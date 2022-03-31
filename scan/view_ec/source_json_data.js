@@ -470,7 +470,7 @@ var data = [{
     "name": "BasicApi",
     "package": "com.dr.oursp.retail.app.api",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.globe.config.web.RetailCurrentUser", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.token.Current", "java.util.Set", "java.util.stream.Collectors"],
+    "imports": [],
     "class_name": "BasicApi",
     "extend_name": "",
     "implements_name": [],
@@ -497,7 +497,7 @@ var data = [{
     "name": "PlayerApi",
     "package": "com.dr.oursp.retail.app.api.admin",
     "type": "class",
-    "imports": ["com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.dto.PageParam", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.globe.http.FallPaged", "com.dr.oursp.globe.http.PageRequest", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.org.api.OpOrgModelConvert", "com.dr.oursp.infra.org.api.http.response.OrgInfoDetail", "com.dr.oursp.retail.app.api.http.request.player.PlayerSaveRequest", "com.dr.oursp.retail.app.service.PlayerService", "com.dr.oursp.retail.partner.RetailRole", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.consts.SignedStateEnum", "com.dr.oursp.retail.player.reference.caller.pay.exception.DrPayCenterFeignException", "com.dr.oursp.retail.player.vo.RetailPlayerDetailVO", "com.dr.oursp.retail.player.vo.RetailPlayerPropDefinition", "com.dr.oursp.retail.player.vo.RetailPlayerProps", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.oursp.thrid.pay.repo.PayCenterSubjectEntity", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.omg.CORBA.Object", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "java.math.BigDecimal", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
+    "imports": ["com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.dto.PageParam", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.globe.http.FallPaged", "com.dr.oursp.globe.http.PageRequest", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.org.api.OpOrgModelConvert", "com.dr.oursp.infra.org.api.http.response.OrgInfoDetail", "com.dr.oursp.retail.app.api.http.request.player.PlayerSaveRequest", "com.dr.oursp.retail.app.service.PlayerService", "com.dr.oursp.retail.partner.RetailRole", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.consts.SignedStateEnum", "com.dr.oursp.retail.player.reference.caller.pay.exception.DrPayCenterFeignException", "com.dr.oursp.retail.player.vo.RetailPlayerDetailVO", "com.dr.oursp.retail.player.vo.RetailPlayerPropDefinition", "com.dr.oursp.retail.player.vo.RetailPlayerProps", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.oursp.third.pay.repo.PayCenterSubjectEntity", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.omg.CORBA.Object", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "java.math.BigDecimal", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
     "class_name": "PlayerApi",
     "extend_name": "",
     "implements_name": [],
@@ -1406,7 +1406,7 @@ var data = [{
     "name": "PlayerService",
     "package": "com.dr.oursp.retail.app.service",
     "type": "class",
-    "imports": ["com.dr.oursp.globe.dto.PageParam", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.app.api.http.request.auth.AppAuthDetailRequest", "com.dr.oursp.infra.app.service.AppManagerService", "com.dr.oursp.infra.org.OpOrgService", "com.dr.oursp.retail.app.service.param.player.PlayerModelConvert", "com.dr.oursp.retail.globe.PlatformTypeEnum", "com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "com.dr.oursp.retail.partner.RetailRole", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.CapitalAccount", "com.dr.oursp.retail.player.account.CapitalAccountSelector", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.consts.TransferAmountTypeEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountNotFoundException", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceiptByRedirectUrl", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.player.consts.DockingPlatformEnum", "com.dr.oursp.retail.player.consts.SignedStateEnum", "com.dr.oursp.retail.player.domain.RetailPlayerSelector", "com.dr.oursp.retail.player.reference.caller.pay.exception.DrPayCenterFeignException", "com.dr.oursp.retail.player.reference.entity.IdentityRemoteRelationEntity", "com.dr.oursp.retail.player.reference.repository.AccountIdentityRemoteRelationAggregation", "com.dr.oursp.retail.player.reference.vo.BaseRemoteVO", "com.dr.oursp.retail.player.repository.AggregateRepository", "com.dr.oursp.retail.player.repository.RetailPlayerRepository", "com.dr.oursp.retail.player.vo.RetailPlayerPropDefinition", "com.dr.oursp.retail.player.vo.RetailPlayerProps", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.oursp.thrid.consts.BizDomainEnum", "com.dr.oursp.thrid.pay.PayCenter", "com.dr.oursp.thrid.pay.ThirdPlatformCapitalAccount", "com.dr.oursp.thrid.pay.repo.PayCenterSubjectEntity", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "java.math.BigDecimal", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
+    "imports": ["com.dr.oursp.globe.dto.PageParam", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.app.api.http.request.auth.AppAuthDetailRequest", "com.dr.oursp.infra.app.service.AppManagerService", "com.dr.oursp.infra.org.OpOrgService", "com.dr.oursp.retail.app.service.param.player.PlayerModelConvert", "com.dr.oursp.retail.globe.PlatformTypeEnum", "com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "com.dr.oursp.retail.partner.RetailRole", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.CapitalAccount", "com.dr.oursp.retail.player.account.CapitalAccountSelector", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.consts.TransferAmountTypeEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountNotFoundException", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceiptByRedirectUrl", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.player.consts.DockingPlatformEnum", "com.dr.oursp.retail.player.consts.SignedStateEnum", "com.dr.oursp.retail.player.domain.RetailPlayerSelector", "com.dr.oursp.retail.player.reference.caller.pay.exception.DrPayCenterFeignException", "com.dr.oursp.retail.player.reference.entity.IdentityRemoteRelationEntity", "com.dr.oursp.retail.player.reference.repository.AccountIdentityRemoteRelationAggregation", "com.dr.oursp.retail.player.reference.vo.BaseRemoteVO", "com.dr.oursp.retail.player.repository.AggregateRepository", "com.dr.oursp.retail.player.repository.RetailPlayerRepository", "com.dr.oursp.retail.player.vo.RetailPlayerPropDefinition", "com.dr.oursp.retail.player.vo.RetailPlayerProps", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.oursp.third.consts.BizDomainEnum", "com.dr.oursp.third.pay.PayCenter", "com.dr.oursp.third.pay.ThirdPlatformCapitalAccount", "com.dr.oursp.third.pay.repo.PayCenterSubjectEntity", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "java.math.BigDecimal", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
     "class_name": "PlayerService",
     "extend_name": "",
     "implements_name": [],
@@ -3386,7 +3386,7 @@ var data = [{
     "name": "DraftState",
     "package": "com.dr.oursp.retail.commodity.coal.state",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.coal.behavior.CoalCommodityBehavior", "com.dr.oursp.retail.commodity.coal.behavior.CoalCommodityModifiableProperties", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.coal.domain.Modifier", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.support.AccurateNumber", "lombok.extern.slf4j.Slf4j", "java.util.function.Function"],
+    "imports": ["com.dr.oursp.retail.commodity.coal.behavior.CoalCommodityBehavior", "com.dr.oursp.retail.commodity.coal.behavior.CoalCommodityModifiableProperties", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.coal.domain.Modifier", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.support.AccurateNumber", "lombok.extern.slf4j.Slf4j", "java.time.Instant", "java.util.function.Function"],
     "class_name": "DraftState extends CoalCommodityBehaviorState",
     "extend_name": "CoalCommodityBehaviorState",
     "implements_name": [],
@@ -5717,7 +5717,7 @@ var data = [{
     "name": "RetailPlayer",
     "package": "com.dr.oursp.retail.player",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.partner.RetailRole", "com.dr.oursp.retail.player.account.CapitalAccount", "com.dr.oursp.retail.player.account.changing.AbstractCapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy", "com.dr.oursp.retail.player.domain.RetailPlayerCreator", "com.dr.oursp.retail.player.domain.RetailPlayerSelector", "com.dr.oursp.retail.player.repository.AggregateRepository", "com.dr.oursp.retail.player.vo.RetailPlayerPropDefinition", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "lombok.Getter", "lombok.extern.slf4j.Slf4j"],
+    "imports": ["com.dr.oursp.retail.partner.RetailRole", "com.dr.oursp.retail.player.account.CapitalAccount", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.proxy.AbstractCapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy", "com.dr.oursp.retail.player.domain.RetailPlayerCreator", "com.dr.oursp.retail.player.domain.RetailPlayerSelector", "com.dr.oursp.retail.player.repository.AggregateRepository", "com.dr.oursp.retail.player.vo.RetailPlayerPropDefinition", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "lombok.Getter", "lombok.extern.slf4j.Slf4j"],
     "class_name": "RetailPlayer",
     "extend_name": "",
     "implements_name": [],
@@ -5840,6 +5840,15 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/account/CapitalAccount.java"
 }, {
+    "name": "AbstractCapitalAccountManagerProxyFactory",
+    "package": "com.dr.oursp.retail.player.account.proxy",
+    "type": "abstract class",
+    "imports": ["com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum"],
+    "class_name": "AbstractCapitalAccountManagerProxyFactory",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/account/proxy/AbstractCapitalAccountManagerProxyFactory.java"
+}, {
     "name": "MoneyAccountRemoteRelationRepository",
     "package": "com.dr.oursp.retail.player.account.proxy",
     "type": "interface",
@@ -5852,7 +5861,7 @@ var data = [{
     "name": "PayCenterProxy",
     "package": "com.dr.oursp.retail.player.account.proxy",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.changing.ChangingCapitalAccount", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetailByRefundBidMargin", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceiptByRedirectUrl", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.thrid.consts.BizDomainEnum", "com.dr.oursp.thrid.pay.PayCenter", "com.dr.oursp.thrid.pay.consts.PayCenterCapitalAccountTypeEnum", "com.dr.oursp.thrid.pay.http.response.BasicSignAccountCapitalResponse", "com.dr.oursp.thrid.pay.http.response.SignAccountCapitalPayResponse", "com.dr.oursp.thrid.pay.http.response.SignAccountCapitalRefundResponse", "com.dr.oursp.thrid.pay.repo.PayCenterCapitalAccountEntity", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Component", "java.io.IOException", "java.util.List", "java.util.Map"],
+    "imports": ["com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.changing.ChangingCapitalAccount", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetailByRefundBidMargin", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceiptByRedirectUrl", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.third.consts.BizDomainEnum", "com.dr.oursp.third.pay.PayCenter", "com.dr.oursp.third.pay.consts.PayCenterCapitalAccountTypeEnum", "com.dr.oursp.third.pay.http.response.BasicSignAccountCapitalResponse", "com.dr.oursp.third.pay.http.response.SignAccountCapitalPayResponse", "com.dr.oursp.third.pay.http.response.SignAccountCapitalRefundResponse", "com.dr.oursp.third.pay.repo.PayCenterCapitalAccountEntity", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.io.IOException", "java.util.List", "java.util.Map"],
     "class_name": "PayCenterProxy implements CapitalAccountManagerProxy",
     "extend_name": "",
     "implements_name": ["CapitalAccountManagerProxy"],
@@ -5879,7 +5888,7 @@ var data = [{
     "name": "CapitalAccountManagerProxyFactory",
     "package": "com.dr.oursp.retail.player.account.proxy",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.player.account.changing.AbstractCapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "org.springframework.stereotype.Component"],
+    "imports": ["com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "org.springframework.stereotype.Component"],
     "class_name": "CapitalAccountManagerProxyFactory extends AbstractCapitalAccountManagerProxyFactory",
     "extend_name": "AbstractCapitalAccountManagerProxyFactory",
     "implements_name": [],
@@ -5906,11 +5915,20 @@ var data = [{
     "name": "CapitalBehaviorDetailByBidMargin",
     "package": "com.dr.oursp.retail.player.account.proxy.detail",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.support.AccurateNumber", "lombok.Getter", "lombok.Setter", "lombok.experimental.Accessors", "org.springframework.web.util.UriComponentsBuilder"],
+    "imports": ["com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.proxy.callback.PayCenterCallbackParamsForBidMargin", "com.dr.oursp.retail.support.AccurateNumber", "lombok.Getter", "lombok.Setter", "lombok.experimental.Accessors"],
     "class_name": "CapitalBehaviorDetailByBidMargin extends CapitalBehaviorDetail",
     "extend_name": "CapitalBehaviorDetail",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/account/proxy/detail/CapitalBehaviorDetailByBidMargin.java"
+}, {
+    "name": "CapitalBehaviorDetailByPayment",
+    "package": "com.dr.oursp.retail.player.account.proxy.detail",
+    "type": "class",
+    "imports": ["com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.proxy.callback.PayCenterCallBackParamsForPayment", "lombok.Getter", "lombok.Setter", "lombok.experimental.Accessors"],
+    "class_name": "CapitalBehaviorDetailByPayment extends CapitalBehaviorDetail",
+    "extend_name": "CapitalBehaviorDetail",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/account/proxy/detail/CapitalBehaviorDetailByPayment.java"
 }, {
     "name": "CapitalBehaviorDetailBuilder",
     "package": "com.dr.oursp.retail.player.account.proxy.detail",
@@ -5920,15 +5938,6 @@ var data = [{
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/account/proxy/detail/CapitalBehaviorDetailBuilder.java"
-}, {
-    "name": "CapitalBehaviorDetailByBid",
-    "package": "com.dr.oursp.retail.player.account.proxy.detail",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "lombok.Getter", "lombok.Setter", "lombok.experimental.Accessors", "org.springframework.web.util.UriComponentsBuilder"],
-    "class_name": "CapitalBehaviorDetailByBid extends CapitalBehaviorDetail",
-    "extend_name": "CapitalBehaviorDetail",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/account/proxy/detail/CapitalBehaviorDetailByBid.java"
 }, {
     "name": "CapitalBehaviorDetail",
     "package": "com.dr.oursp.retail.player.account.proxy.detail",
@@ -5948,14 +5957,32 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/account/proxy/detail/CapitalBehaviorDetailByRefundBidMargin.java"
 }, {
-    "name": "AbstractCapitalAccountManagerProxyFactory",
-    "package": "com.dr.oursp.retail.player.account.changing",
+    "name": "PayCenterCallBackParamsForPayment",
+    "package": "com.dr.oursp.retail.player.account.proxy.callback",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "java.io.Serializable"],
+    "class_name": "PayCenterCallBackParamsForPayment extends PayCenterCallBackParam implements Serializable",
+    "extend_name": "PayCenterCallBackParam",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/account/proxy/callback/PayCenterCallBackParamsForPayment.java"
+}, {
+    "name": "PayCenterCallBackParam",
+    "package": "com.dr.oursp.retail.player.account.proxy.callback",
     "type": "abstract class",
-    "imports": ["com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy"],
-    "class_name": "AbstractCapitalAccountManagerProxyFactory",
+    "imports": ["lombok.extern.slf4j.Slf4j", "org.springframework.web.util.UriComponentsBuilder", "java.beans.IntrospectionException", "java.beans.PropertyDescriptor", "java.lang.reflect.Field", "java.lang.reflect.InvocationTargetException"],
+    "class_name": "PayCenterCallBackParam",
     "extend_name": "",
     "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/account/changing/AbstractCapitalAccountManagerProxyFactory.java"
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/account/proxy/callback/PayCenterCallBackParam.java"
+}, {
+    "name": "PayCenterCallbackParamsForBidMargin",
+    "package": "com.dr.oursp.retail.player.account.proxy.callback",
+    "type": "class",
+    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.io.Serializable", "java.math.BigDecimal"],
+    "class_name": "PayCenterCallbackParamsForBidMargin extends PayCenterCallBackParam implements Serializable",
+    "extend_name": "PayCenterCallBackParam",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/account/proxy/callback/PayCenterCallbackParamsForBidMargin.java"
 }, {
     "name": "ChangingCapitalAccount",
     "package": "com.dr.oursp.retail.player.account.changing",
@@ -6131,7 +6158,7 @@ var data = [{
     "name": "CapitalAccountRepository",
     "package": "com.dr.oursp.retail.player.account.repo",
     "type": "interface",
-    "imports": ["org.springframework.data.mongodb.repository.MongoRepository", "java.util.stream.Stream"],
+    "imports": ["org.springframework.data.mongodb.repository.MongoRepository", "java.util.Optional", "java.util.stream.Stream"],
     "class_name": "CapitalAccountRepository extends MongoRepository",
     "extend_name": "MongoRepository",
     "implements_name": [],
@@ -6326,24 +6353,6 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/reference/repository/AccountRemoteRelationRepository.java"
 }, {
-    "name": "DrPaySignRelationRepository",
-    "package": "com.dr.oursp.retail.player.reference.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.retail.player.reference.entity.DrPaySignRelationEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.mongodb.repository.MongoRepository", "java.util.List", "java.util.Optional"],
-    "class_name": "DrPaySignRelationRepository extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/reference/repository/DrPaySignRelationRepository.java"
-}, {
-    "name": "DrPaySignRelationEntity",
-    "package": "com.dr.oursp.retail.player.reference.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.Builder", "lombok.Data", "lombok.EqualsAndHashCode", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.index.Indexed", "org.springframework.data.mongodb.core.mapping.Document"],
-    "class_name": "DrPaySignRelationEntity extends BasicDocumentEntity",
-    "extend_name": "BasicDocumentEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/reference/entity/DrPaySignRelationEntity.java"
-}, {
     "name": "AccountUntreatedLogEntity",
     "package": "com.dr.oursp.retail.player.reference.entity",
     "type": "class",
@@ -6478,51 +6487,6 @@ var data = [{
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/reference/caller/yunxiao/dto/request/ServiceResponseDataRequest.java"
-}, {
-    "name": "SignAccountCapitalRefundParam",
-    "package": "com.dr.oursp.retail.player.reference.caller.pay.param",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data", "java.math.BigDecimal"],
-    "class_name": "SignAccountCapitalRefundParam",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/reference/caller/pay/param/SignAccountCapitalRefundParam.java"
-}, {
-    "name": "SignClientParam",
-    "package": "com.dr.oursp.retail.player.reference.caller.pay.param",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data"],
-    "class_name": "SignClientParam",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/reference/caller/pay/param/SignClientParam.java"
-}, {
-    "name": "SignAccountParam",
-    "package": "com.dr.oursp.retail.player.reference.caller.pay.param",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data"],
-    "class_name": "SignAccountParam",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/reference/caller/pay/param/SignAccountParam.java"
-}, {
-    "name": "SignAccountCapitalAsyncPayParam",
-    "package": "com.dr.oursp.retail.player.reference.caller.pay.param",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data", "java.math.BigDecimal", "java.util.Map"],
-    "class_name": "SignAccountCapitalAsyncPayParam",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/reference/caller/pay/param/SignAccountCapitalAsyncPayParam.java"
-}, {
-    "name": "SignAccountCapitalPayParam",
-    "package": "com.dr.oursp.retail.player.reference.caller.pay.param",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data", "java.math.BigDecimal"],
-    "class_name": "SignAccountCapitalPayParam",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/player/reference/caller/pay/param/SignAccountCapitalPayParam.java"
 }, {
     "name": "DrPayCenterFeignException",
     "package": "com.dr.oursp.retail.player.reference.caller.pay.exception",
@@ -6848,50 +6812,41 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/remote/yunxiao/service/vo/YunXiaoOrgInfoVO.java"
 }, {
-    "name": "DrPayRemoteApi",
+    "name": "PayCenterRemoteApi",
     "package": "com.dr.oursp.retail.remote.pay.api",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.reference.caller.pay.consts.DrPayResponseCodeEnum", "com.dr.oursp.retail.remote.pay.api.http.request.DrPayBidRequest", "com.dr.oursp.retail.remote.pay.api.http.request.PayCenterCallbackByBidMarginRequest", "com.dr.oursp.retail.remote.pay.api.http.request.SignAccountCapitalAsyncPayRequest", "com.dr.oursp.retail.remote.pay.consts.PayApiUrlConst", "com.dr.oursp.retail.remote.pay.service.DrPayRemoteService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.thrid.pay.http.response.CapitalChangingReceipt", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.fasterxml.jackson.databind.DeserializationFeature", "com.fasterxml.jackson.databind.ObjectMapper", "io.swagger.annotations.Api", "io.swagger.annotations.ApiParam", "lombok.extern.slf4j.Slf4j", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.*", "java.util.List", "java.util.Map"],
-    "class_name": "DrPayRemoteApi",
+    "imports": ["com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.remote.pay.api.consts.PayApiUrlConst", "com.dr.oursp.retail.remote.pay.api.http.request.SignAccountCapitalAsyncPayRequest", "com.dr.oursp.retail.remote.pay.service.PayCenterCallbackHandler", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiParam", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "java.util.Map"],
+    "class_name": "PayCenterRemoteApi",
     "extend_name": "",
     "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/remote/pay/api/DrPayRemoteApi.java"
-}, {
-    "name": "PayCenterCallbackByBidMarginRequest",
-    "package": "com.dr.oursp.retail.remote.pay.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.math.BigDecimal"],
-    "class_name": "PayCenterCallbackByBidMarginRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/remote/pay/api/http/request/PayCenterCallbackByBidMarginRequest.java"
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/remote/pay/api/PayCenterRemoteApi.java"
 }, {
     "name": "SignAccountCapitalAsyncPayRequest",
     "package": "com.dr.oursp.retail.remote.pay.api.http.request",
     "type": "class",
-    "imports": ["com.dr.oursp.thrid.pay.http.response.SignAccountCapitalPayResponse"],
+    "imports": ["com.dr.oursp.third.pay.http.response.SignAccountCapitalPayResponse"],
     "class_name": "SignAccountCapitalAsyncPayRequest extends SignAccountCapitalPayResponse",
     "extend_name": "SignAccountCapitalPayResponse",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/remote/pay/api/http/request/SignAccountCapitalAsyncPayRequest.java"
 }, {
-    "name": "DrPayBidRequest",
-    "package": "com.dr.oursp.retail.remote.pay.api.http.request",
+    "name": "PayApiUrlConst",
+    "package": "com.dr.oursp.retail.remote.pay.api.consts",
     "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "DrPayBidRequest",
+    "imports": [],
+    "class_name": "PayApiUrlConst",
     "extend_name": "",
     "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/remote/pay/api/http/request/DrPayBidRequest.java"
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/remote/pay/api/consts/PayApiUrlConst.java"
 }, {
-    "name": "DrPayRemoteService",
+    "name": "PayCenterCallbackHandler",
     "package": "com.dr.oursp.retail.remote.pay.service",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.player.account.CapitalAccount", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.player.reference.repository.DrPaySignRelationRepository", "com.dr.oursp.retail.remote.pay.service.event.*", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "java.math.BigDecimal"],
-    "class_name": "DrPayRemoteService",
+    "imports": ["com.dr.domain.ModifierException", "com.dr.oursp.retail.player.account.CapitalAccount", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.callback.PayCenterCallBackParamsForPayment", "com.dr.oursp.retail.player.account.proxy.callback.PayCenterCallbackParamsForBidMargin", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.player.reference.caller.pay.consts.DrPayResponseCodeEnum", "com.dr.oursp.retail.remote.pay.api.http.request.SignAccountCapitalAsyncPayRequest", "com.dr.oursp.retail.remote.pay.service.event.*", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.third.pay.http.response.CapitalChangingReceipt", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.fasterxml.jackson.databind.DeserializationFeature", "com.fasterxml.jackson.databind.ObjectMapper", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.math.BigDecimal", "java.util.List", "java.util.Map"],
+    "class_name": "PayCenterCallbackHandler",
     "extend_name": "",
     "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/remote/pay/service/DrPayRemoteService.java"
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/remote/pay/service/PayCenterCallbackHandler.java"
 }, {
     "name": "DrPayCommodityBidMarginEvent",
     "package": "com.dr.oursp.retail.remote.pay.service.event",
@@ -6955,13 +6910,4 @@ var data = [{
     "extend_name": "Event",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/remote/pay/service/event/DrPayCallbackEvent.java"
-}, {
-    "name": "PayApiUrlConst",
-    "package": "com.dr.oursp.retail.remote.pay.consts",
-    "type": "class",
-    "imports": [],
-    "class_name": "PayApiUrlConst",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail/remote/pay/consts/PayApiUrlConst.java"
 }];

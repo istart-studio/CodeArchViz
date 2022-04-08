@@ -1,661 +1,4 @@
 var data = [{
-    "name": "BasicOurspApplicationTester",
-    "package": "com.dr.oursp.retail",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.strategy.basic.account.UnifyAccountManager", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.oursp.strategy.basic.token.TokenManger", "com.dr.oursp.strategy.setting.ServerSettings", "lombok.AllArgsConstructor", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.junit.Before", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner"],
-    "class_name": "BasicOurspApplicationTester",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/BasicOurspApplicationTester.java"
-}, {
-    "name": "CommodityOrderTest",
-    "package": "com.dr.oursp.retail.order",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.commodity.order.domain.CommodityOrder", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.commodity.order.repository.CommodityOrderRepository", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.bid.domain.entity.TradeBidRecordEntity", "com.dr.oursp.strategy.setting.PlatformSetting", "org.junit.jupiter.api.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "CommodityOrderTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/order/CommodityOrderTest.java"
-}, {
-    "name": "DocumentsInvokeFeignTest",
-    "package": "com.dr.oursp.retail.contract",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.BasicOurspApplicationTester", "com.dr.oursp.retail.app.service.TradeContractService", "com.dr.oursp.retail.globe.PlatformTypeEnum", "com.dr.oursp.retail.player.reference.consts.CheckStateEnum", "com.dr.oursp.retail.player.reference.consts.FixtureTypeEnum", "com.dr.oursp.retail.player.reference.vo.FixtureRemoteVO", "com.dr.oursp.retail.player.reference.vo.TradeOrderRemoteVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.api.ServiceResponse", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.math.BigDecimal", "java.time.Instant"],
-    "class_name": "DocumentsInvokeFeignTest extends BasicOurspApplicationTester",
-    "extend_name": "BasicOurspApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/contract/DocumentsInvokeFeignTest.java"
-}, {
-    "name": "SquaringUpWaybillTest",
-    "package": "com.dr.oursp.retail.squaring.waybill",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.squaring.behavior.DataNexus", "com.dr.oursp.retail.squaring.waybill.behavior.SquaringUpWaybillBehavior", "com.dr.oursp.retail.squaring.waybill.domain.Creator", "com.dr.oursp.retail.squaring.waybill.repository.SquaringUpWaybillRepository", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.setting.PlatformSetting", "com.google.common.collect.Lists", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "SquaringUpWaybillTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/squaring/waybill/SquaringUpWaybillTest.java"
-}, {
-    "name": "SquaringUpManagerTest",
-    "package": "com.dr.oursp.retail.squaring.remote",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.BasicOurspApplicationTester", "com.dr.oursp.third.squaring.remote.SquaringUpManager", "com.dr.oursp.third.squaring.remote.exception.SquaringException", "com.dr.oursp.third.squaring.remote.response.ProcessingResultResponse", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.checkerframework.checker.nullness.qual.Nullable", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.HashMap", "java.util.List", "java.util.Map"],
-    "class_name": "SquaringUpManagerTest extends BasicOurspApplicationTester",
-    "extend_name": "BasicOurspApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/squaring/remote/SquaringUpManagerTest.java"
-}, {
-    "name": "SellingAppTest",
-    "package": "com.dr.oursp.retail.app",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.OurspApplication", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.support.RangeNumber", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.List"],
-    "class_name": "SellingAppTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/app/SellingAppTest.java"
-}, {
-    "name": "PurchasingAppTest",
-    "package": "com.dr.oursp.retail.app",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.support.EnumWrapper", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.Optional"],
-    "class_name": "PurchasingAppTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/app/PurchasingAppTest.java"
-}, {
-    "name": "WsTimer",
-    "package": "com.dr.oursp.retail.app",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.google.common.util.concurrent.ThreadFactoryBuilder", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.concurrent.Executors", "java.util.concurrent.ScheduledExecutorService", "java.util.concurrent.ScheduledFuture", "java.util.concurrent.TimeUnit"],
-    "class_name": "WsTimer",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/app/WsTimer.java"
-}, {
-    "name": "SupplyingAppTest",
-    "package": "com.dr.oursp.retail.app",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.OurspApplication", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner"],
-    "class_name": "SupplyingAppTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/app/SupplyingAppTest.java"
-}, {
-    "name": "ConveyingAppTest",
-    "package": "com.dr.oursp.retail.app",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageRequest", "com.dr.oursp.OurspApplication", "com.dr.oursp.retail.logistics.car.domain.CarVo", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.List"],
-    "class_name": "ConveyingAppTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/app/ConveyingAppTest.java"
-}, {
-    "name": "AppTest",
-    "package": "com.dr.oursp.retail.app",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.OurspApplication", "com.dr.oursp.retail.app.service.CommodityService", "com.dr.oursp.retail.app.service.PartnerService", "com.dr.oursp.retail.app.service.QualityService", "com.dr.oursp.retail.app.service.param.QualityReportCommonModifyParam", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.config.ws.AbstractWsRequest", "com.dr.oursp.retail.globe.config.ws.DefaultWsRequest", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.partner.domain.RepeatException", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.repo.CapitalAccountEntity", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.quality.consts.QualityProvidesNodeEnum", "com.dr.oursp.retail.quality.consts.QualityTypeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.support.serialization.Serializations", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.databene.contiperf.PerfTest", "org.databene.contiperf.junit.ContiPerfRule", "org.junit.Rule", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.math.BigDecimal", "java.time.Instant", "java.util.List", "java.util.UUID", "java.util.concurrent.atomic.AtomicInteger"],
-    "class_name": "AppTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/app/AppTest.java"
-}, {
-    "name": "PurchasingApiTest",
-    "package": "com.dr.oursp.retail.app.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.app.PurchasingApp", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner"],
-    "class_name": "PurchasingApiTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/app/api/PurchasingApiTest.java"
-}, {
-    "name": "CommodityCommonRuleRequestTest",
-    "package": "com.dr.oursp.retail.app.api.http.request",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.coal.rule.CommodityRuleVo", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.support.enums.Enumerations", "com.google.common.collect.Sets", "org.junit.jupiter.api.Test"],
-    "class_name": "CommodityCommonRuleRequestTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/app/api/http/request/CommodityCommonRuleRequestTest.java"
-}, {
-    "name": "ExecuteWaybillServiceTest",
-    "package": "com.dr.oursp.retail.app.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteInExecutionStateEnum", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.Optional"],
-    "class_name": "ExecuteWaybillServiceTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/app/service/ExecuteWaybillServiceTest.java"
-}, {
-    "name": "DriverServiceTest",
-    "package": "com.dr.oursp.retail.app.service",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.OurspApplication", "com.dr.oursp.retail.logistics.freighter.consts.CarrierSignedStateEnum", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.List"],
-    "class_name": "DriverServiceTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/app/service/DriverServiceTest.java"
-}, {
-    "name": "ExecuteOrderServiceTest",
-    "package": "com.dr.oursp.retail.app.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.BasicOurspApplicationTester", "com.dr.oursp.retail.app.service.order.CommodityTradeOrderService", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.commodity.order.repository.CommodityOrderEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.RangeNumber", "com.google.common.collect.Sets", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner"],
-    "class_name": "ExecuteOrderServiceTest extends BasicOurspApplicationTester",
-    "extend_name": "BasicOurspApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/app/service/ExecuteOrderServiceTest.java"
-}, {
-    "name": "CommodityServiceTest",
-    "package": "com.dr.oursp.retail.app.service",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.OurspApplication", "com.dr.oursp.retail.app.service.param.TradeConfirmBidParam", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.support.AccurateNumber", "com.google.common.collect.Lists", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.List"],
-    "class_name": "CommodityServiceTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/app/service/CommodityServiceTest.java"
-}, {
-    "name": "WaybillTradeOrderServiceTest",
-    "package": "com.dr.oursp.retail.app.service.order",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.OurspApplication", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.List"],
-    "class_name": "WaybillTradeOrderServiceTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/app/service/order/WaybillTradeOrderServiceTest.java"
-}, {
-    "name": "CategoryServiceTest",
-    "package": "com.dr.oursp.retail.category.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.BasicOurspApplicationTester", "com.dr.oursp.retail.app.service.CategoryService", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.category.domain.CategoryVO", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner"],
-    "class_name": "CategoryServiceTest extends BasicOurspApplicationTester",
-    "extend_name": "BasicOurspApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/category/api/CategoryServiceTest.java"
-}, {
-    "name": "QualityReportTest",
-    "package": "com.dr.oursp.retail.quality",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.quality.consts.QualityProvidesNodeEnum", "com.dr.oursp.retail.quality.consts.QualityTypeEnum", "com.dr.oursp.retail.quality.domain.QualityReport", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.quality.entity.QualityReportEntity", "com.dr.oursp.retail.quality.repository.QualityReportRepository", "lombok.extern.slf4j.Slf4j", "org.junit.jupiter.api.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.Comparator", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "QualityReportTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/quality/QualityReportTest.java"
-}, {
-    "name": "AbstractMultipleResourceCompetitionTest",
-    "package": "com.dr.oursp.retail.globe",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.support.Idempotent.RedisLocker", "com.dr.support.competition.AbstractMultipleResourceCompetition", "com.dr.support.competition.ResourceCallback", "com.dr.support.competition.ResourceCompetitionLocker", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.competition.exception.CallbackExecuteException", "com.dr.support.competition.exception.ReleaseLockException", "com.google.common.collect.Lists", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.databene.contiperf.PerfTest", "org.databene.contiperf.junit.ContiPerfRule", "org.junit.Rule", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.data.redis.core.RedisTemplate", "org.springframework.test.context.junit4.SpringRunner", "java.util.List"],
-    "class_name": "AbstractMultipleResourceCompetitionTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/globe/AbstractMultipleResourceCompetitionTest.java"
-}, {
-    "name": "RedisConfigTest",
-    "package": "com.dr.oursp.retail.globe.redis",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.data.redis.core.RedisTemplate", "org.springframework.test.context.junit4.SpringRunner"],
-    "class_name": "RedisConfigTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/globe/redis/RedisConfigTest.java"
-}, {
-    "name": "TradeTest",
-    "package": "com.dr.oursp.retail.trade",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.repository.CommodityOrderRepository", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.repository.AggregateRepository", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.module.bid.domain.repository.TradeBidRecordRepository", "com.dr.oursp.retail.trade.module.session.domain.repository.TradeSessionRepository", "com.dr.oursp.strategy.setting.PlatformSetting", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.validation.annotation.Validated", "java.io.IOException"],
-    "class_name": "TradeTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/trade/TradeTest.java"
-}, {
-    "name": "BasicStrategyApplicationTester",
-    "package": "com.dr.oursp.retail.trade",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.strategy.basic.account.UnifyAccountManager", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.oursp.strategy.basic.token.TokenManger", "com.dr.oursp.strategy.setting.ServerSettings", "lombok.AllArgsConstructor", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.junit.Before", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner"],
-    "class_name": "BasicStrategyApplicationTester",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/trade/BasicStrategyApplicationTester.java"
-}, {
-    "name": "TradeTest2",
-    "package": "com.dr.oursp.retail.trade",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.commodity.coal.Commodity", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.repository.TradeCommodityRepository", "com.dr.oursp.retail.commodity.coal.rule.CommodityRuleVo", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.repository.CommodityOrderRepository", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.Supply", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.commodity.supply.coal.repository.SupplyRepository", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.changing.ChangingCapitalAccount", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.AbstractCapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.account.repo.CapitalAccountEntity", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.player.reference.caller.yunxiao.DrsInvokeFeignClientImpl", "com.dr.oursp.retail.player.repository.AggregateRepository", "com.dr.oursp.retail.player.repository.RetailPlayerRepository", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.module.bid.domain.repository.TradeBidRecordRepository", "com.dr.oursp.retail.trade.module.margin.domain.TradeMarginRepository", "com.dr.oursp.retail.trade.module.session.domain.repository.TradeSessionRepository", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.setting.PlatformSetting", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.data.domain.Example", "org.springframework.data.domain.Page", "org.springframework.data.domain.Pageable", "org.springframework.data.domain.Sort", "org.springframework.test.context.junit4.SpringRunner", "org.springframework.validation.annotation.Validated", "java.io.IOException", "java.math.BigDecimal", "java.time.Instant", "java.time.temporal.ChronoUnit", "java.util.List", "java.util.Optional", "java.util.stream.Collectors", "java.util.stream.Stream"],
-    "class_name": "TradeTest2 extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/trade/TradeTest2.java"
-}, {
-    "name": "TradeSignUpTest",
-    "package": "com.dr.oursp.retail.trade",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.commodity.coal.repository.TradeCommodityRepository", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.repository.CommodityOrderRepository", "com.dr.oursp.retail.commodity.supply.coal.repository.SupplyRepository", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.changing.ChangingCapitalAccount", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.AbstractCapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.account.repo.CapitalAccountEntity", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.player.entity.RetailPlayerEntity", "com.dr.oursp.retail.player.reference.caller.yunxiao.DrsInvokeFeignClientImpl", "com.dr.oursp.retail.player.repository.RetailPlayerRepository", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "com.dr.oursp.retail.trade.module.bid.domain.entity.TradeBidRecordEntity", "com.dr.oursp.retail.trade.module.bid.domain.repository.TradeBidRecordRepository", "com.dr.oursp.retail.trade.module.margin.domain.TradeMarginRepository", "com.dr.oursp.retail.trade.module.prepare.domain.TradeSignUpRepository", "com.dr.oursp.retail.trade.module.session.domain.entity.TradeSessionEntity", "com.dr.oursp.retail.trade.module.session.domain.repository.TradeSessionRepository", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.domain.Identity", "com.dr.oursp.strategy.basic.identity.domain.action.Selector", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.identity.repository.IdentityRepository", "com.dr.oursp.strategy.setting.PlatformSetting", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.data.domain.Example", "org.springframework.data.domain.Page", "org.springframework.data.domain.Pageable", "org.springframework.data.domain.Sort", "org.springframework.data.jpa.domain.Specification", "org.springframework.test.context.junit4.SpringRunner", "org.springframework.validation.annotation.Validated", "java.io.IOException", "java.math.BigDecimal", "java.util.Collection", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Stream"],
-    "class_name": "TradeSignUpTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/trade/TradeSignUpTest.java"
-}, {
-    "name": "TradeTradeDealOldHandlerTest",
-    "package": "com.dr.oursp.retail.trade.deal",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.trade.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.checker.TradeDealChecker", "org.junit.jupiter.api.Test"],
-    "class_name": "TradeTradeDealOldHandlerTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/trade/deal/TradeTradeDealOldHandlerTest.java"
-}, {
-    "name": "TradeTradeDealOldHandler",
-    "package": "com.dr.oursp.retail.trade.deal",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.support.snapshot.Snapshot", "com.dr.oursp.retail.trade.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.checker.TradeDealChecker", "com.dr.oursp.retail.trade.domain.TradeSessionVo", "com.dr.support.trace.LogElapsedTime", "lombok.AllArgsConstructor", "lombok.Getter", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "java.util.List", "java.util.Set", "java.util.function.BiFunction", "java.util.function.Consumer", "java.util.stream.Collectors"],
-    "class_name": "TradeTradeDealOldHandler",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/trade/deal/TradeTradeDealOldHandler.java"
-}, {
-    "name": "DealBuilderTest",
-    "package": "com.dr.oursp.retail.trade.deal",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.trade.module.bid.TradeBidRecordBuilder", "com.dr.oursp.retail.trade.module.bid.domain.repository.TradeBidRecordRepository", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "com.dr.oursp.retail.trade.module.session.domain.repository.TradeSessionRepository", "org.junit.Test", "java.util.function.Consumer"],
-    "class_name": "DealBuilderTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/trade/deal/DealBuilderTest.java"
-}, {
-    "name": "TradeTradeDealOldRulesCheckTest",
-    "package": "com.dr.oursp.retail.trade.deal",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.trade.checker.TradeDealChecker", "org.junit.jupiter.api.Test"],
-    "class_name": "TradeTradeDealOldRulesCheckTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/trade/deal/TradeTradeDealOldRulesCheckTest.java"
-}, {
-    "name": "TradeSignUpTest",
-    "package": "com.dr.oursp.retail.trade.prepare",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.trade.module.prepare.TradeSignUpBuilder", "com.dr.oursp.retail.trade.module.prepare.TradeSignUpVO", "com.dr.oursp.retail.trade.module.prepare.domain.TradeSignUpRepository", "org.junit.jupiter.api.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.Optional"],
-    "class_name": "TradeSignUpTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/trade/prepare/TradeSignUpTest.java"
-}, {
-    "name": "BidMarginCheckerTest",
-    "package": "com.dr.oursp.retail.trade.checker",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.consts.CheckException", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.consts.TradeRuleDefinition", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.snapshot.Snapshot", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.google.common.collect.Lists", "org.junit.jupiter.api.Test", "java.util.Set"],
-    "class_name": "BidMarginCheckerTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/trade/checker/BidMarginCheckerTest.java"
-}, {
-    "name": "TradeBidRecordTest",
-    "package": "com.dr.oursp.retail.trade.bid",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.repository.CommodityOrderRepository", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.logistics.waybill.plan.PlanWaybillTradeRuleVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.TradeItemFactory", "com.dr.oursp.retail.trade.TradeItemVO", "com.dr.oursp.retail.trade.consts.BidStateEnum", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordBuilder", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.bid.domain.entity.TradeBidRecordEntity", "com.dr.oursp.retail.trade.module.bid.domain.repository.TradeBidRecordRepository", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "com.dr.oursp.retail.trade.module.session.domain.entity.TradeSessionEntity", "com.dr.oursp.retail.trade.module.session.domain.repository.TradeSessionRepository", "com.dr.oursp.strategy.setting.PlatformSetting", "com.google.common.collect.Sets", "org.apache.logging.log4j.util.Strings", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "TradeBidRecordTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/trade/bid/TradeBidRecordTest.java"
-}, {
-    "name": "SupplyTest",
-    "package": "com.dr.oursp.retail.commodity.supply.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.app.service.CommodityService", "com.dr.oursp.retail.app.service.event.commodity.CommodityEventDriver", "com.dr.oursp.retail.category.consts.ParameterTypeEnum", "com.dr.oursp.retail.category.domain.Category", "com.dr.oursp.retail.category.domain.CategoryOption", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.category.domain.CategoryVO", "com.dr.oursp.retail.category.entity.CategoryDefineParam", "com.dr.oursp.retail.category.entity.CategoryOptionParam", "com.dr.oursp.retail.category.repository.CategoryOptionsRepository", "com.dr.oursp.retail.category.repository.CategoryRepository", "com.dr.oursp.retail.commodity.supply.coal.behavior.CoalSupplyModifiableProperties", "com.dr.oursp.retail.commodity.supply.coal.behavior.CoalSupplyModifiablePropertiesImpl", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.Supply", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.commodity.supply.coal.repository.SupplyRepository", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.logistics.address.domain.Address", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.address.entity.AddressArea", "com.dr.oursp.retail.logistics.address.repository.AddressRepository", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.quality.consts.QualityProvidesNodeEnum", "com.dr.oursp.retail.quality.consts.QualityTypeEnum", "com.dr.oursp.retail.quality.domain.QualityReport", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.quality.repository.QualityReportRepository", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.dr.oursp.strategy.basic.entity.seed.AutoIncrementSeed", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.competition.exception.AcquireLockException", "lombok.extern.slf4j.Slf4j", "org.assertj.core.util.Lists", "org.assertj.core.util.Sets", "org.junit.jupiter.api.Test", "org.junit.runner.RunWith", "org.springframework.beans.BeanUtils", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.time.Instant", "java.time.temporal.ChronoUnit", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "SupplyTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/commodity/supply/domain/SupplyTest.java"
-}, {
-    "name": "CommodityRuleVoDefinitionTest",
-    "package": "com.dr.oursp.retail.commodity.coal",
-    "type": "class",
-    "imports": ["org.junit.Test"],
-    "class_name": "CommodityRuleVoDefinitionTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/commodity/coal/CommodityRuleVoDefinitionTest.java"
-}, {
-    "name": "CommodityRuleVoDefinitionBuilderTest",
-    "package": "com.dr.oursp.retail.commodity.coal",
-    "type": "class",
-    "imports": ["com.google.common.collect.Range", "lombok.extern.slf4j.Slf4j", "org.junit.Test"],
-    "class_name": "CommodityRuleVoDefinitionBuilderTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/commodity/coal/CommodityRuleVoDefinitionBuilderTest.java"
-}, {
-    "name": "CommodityTest",
-    "package": "com.dr.oursp.retail.commodity.coal",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.commodity.coal.behavior.CoalCommodityModifiableProperties", "com.dr.oursp.retail.commodity.coal.behavior.CoalCommodityModifiablePropertiesImpl", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.repository.TradeCommodityRepository", "com.dr.oursp.retail.commodity.coal.rule.CommodityRuleVo", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.Idempotent.RedisLocker", "com.dr.oursp.retail.support.Idempotent.ResourceCompetitionBuilder", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.competition.ResourceCallback", "com.dr.support.competition.ResourceCompetition", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.competition.exception.CallbackExecuteException", "com.dr.support.competition.exception.ReleaseLockException", "lombok.Builder", "lombok.Setter", "lombok.experimental.Accessors", "lombok.extern.slf4j.Slf4j", "org.assertj.core.util.Sets", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.data.redis.core.RedisTemplate", "org.springframework.test.context.junit4.SpringRunner", "java.time.Instant", "java.time.temporal.ChronoUnit", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.function.Consumer", "java.util.stream.Collectors"],
-    "class_name": "CommodityTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/commodity/coal/CommodityTest.java"
-}, {
-    "name": "TradeRuleCheckerTest",
-    "package": "com.dr.oursp.retail.commodity.coal",
-    "type": "class",
-    "imports": [],
-    "class_name": "TradeRuleCheckerTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/commodity/coal/TradeRuleCheckerTest.java"
-}, {
-    "name": "TestEnum",
-    "package": "com.dr.oursp.retail.commodity.coal.vo",
-    "type": "enum",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.support.enums.KeyValueEnum", "com.google.common.collect.Lists", "lombok.Builder", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.junit.Assert", "org.junit.Test", "org.junit.runner.RunWith", "org.mockito.internal.util.collections.Sets", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document", "org.springframework.data.mongodb.repository.MongoRepository", "org.springframework.test.context.junit4.SpringRunner", "java.util.List", "java.util.Set"],
-    "class_name": "TestEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/commodity/coal/vo/CommodityVoTest.java"
-}, {
-    "name": "TestMongoService",
-    "package": "com.dr.oursp.retail.mongodb",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.data.mongodb.core.MongoTemplate", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional"],
-    "class_name": "TestMongoService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/mongodb/TestMongoService.java"
-}, {
-    "name": "TestEntity2",
-    "package": "com.dr.oursp.retail.mongodb",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.experimental.SuperBuilder", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document"],
-    "class_name": "TestEntity2",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/mongodb/TestEntity2.java"
-}, {
-    "name": "TestMongoDb",
-    "package": "com.dr.oursp.retail.mongodb",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.app.service.CommodityService", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.List"],
-    "class_name": "TestMongoDb",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/mongodb/TestMongoDb.java"
-}, {
-    "name": "TestRepository2",
-    "package": "com.dr.oursp.retail.mongodb",
-    "type": "interface",
-    "imports": ["org.springframework.data.mongodb.repository.MongoRepository"],
-    "class_name": "TestRepository2 extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/mongodb/TestRepository2.java"
-}, {
-    "name": "TestEntity",
-    "package": "com.dr.oursp.retail.mongodb",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document"],
-    "class_name": "TestEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/mongodb/TestEntity.java"
-}, {
-    "name": "TestRepository",
-    "package": "com.dr.oursp.retail.mongodb",
-    "type": "interface",
-    "imports": ["org.springframework.data.mongodb.repository.MongoRepository"],
-    "class_name": "TestRepository extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/mongodb/TestRepository.java"
-}, {
-    "name": "PartnershipTest",
-    "package": "com.dr.oursp.retail.partner.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.repository.PartnerRepository", "com.dr.oursp.strategy.setting.PlatformSetting", "org.junit.jupiter.api.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "javax.transaction.Transactional", "java.util.List", "java.util.Optional", "java.util.stream.Collectors"],
-    "class_name": "PartnershipTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/partner/domain/PartnershipTest.java"
-}, {
-    "name": "RangeNumberTest",
-    "package": "com.dr.oursp.retail.support",
-    "type": "class",
-    "imports": ["org.junit.Assert", "org.junit.Test"],
-    "class_name": "RangeNumberTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/support/RangeNumberTest.java"
-}, {
-    "name": "AccurateNumberTest",
-    "package": "com.dr.oursp.retail.support",
-    "type": "class",
-    "imports": ["org.junit.Assert", "org.junit.Test"],
-    "class_name": "AccurateNumberTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/support/AccurateNumberTest.java"
-}, {
-    "name": "SnapshotEntityTest",
-    "package": "com.dr.oursp.retail.support.snapshot",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "lombok.extern.slf4j.Slf4j", "org.junit.jupiter.api.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "org.springframework.validation.annotation.Validated", "java.util.Optional"],
-    "class_name": "SnapshotEntityTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/support/snapshot/SnapshotEntityTest.java"
-}, {
-    "name": "ResourceCompetitionBuilderTest",
-    "package": "com.dr.oursp.retail.support.Idempotent",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.support.competition.ResourceCallback", "com.dr.support.competition.ResourceCompetition", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.competition.exception.CallbackExecuteException", "com.dr.support.competition.exception.ReleaseLockException", "org.apache.logging.log4j.util.Strings", "org.junit.Test", "org.springframework.data.redis.core.RedisTemplate"],
-    "class_name": "ResourceCompetitionBuilderTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/support/Idempotent/ResourceCompetitionBuilderTest.java"
-}, {
-    "name": "AddressTest",
-    "package": "com.dr.oursp.retail.address.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.logistics.address.domain.Address", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.address.entity.AddressArea", "com.dr.oursp.retail.logistics.address.repository.AddressRepository", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.junit.jupiter.api.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "AddressTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/address/domain/AddressTest.java"
-}, {
-    "name": "PlanWaybillTest",
-    "package": "com.dr.oursp.retail.logistics",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.app.service.PlanWaybillService", "com.dr.oursp.retail.app.service.param.TradeConfirmBidParam", "com.dr.oursp.retail.consts.*", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.time.Instant", "java.util.List", "java.util.Set", "java.util.concurrent.TimeUnit", "java.util.stream.Collectors"],
-    "class_name": "PlanWaybillTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/logistics/PlanWaybillTest.java"
-}, {
-    "name": "LogisticsTest",
-    "package": "com.dr.oursp.retail.logistics",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.BasicOurspApplicationTester", "com.dr.oursp.retail.logistics.order.repository.ExecuteOrderRepository", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired"],
-    "class_name": "LogisticsTest extends BasicOurspApplicationTester",
-    "extend_name": "BasicOurspApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/logistics/LogisticsTest.java"
-}, {
-    "name": "ExecuteWaybillTest",
-    "package": "com.dr.oursp.retail.logistics",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.app.service.ExecuteWaybillService", "com.dr.oursp.retail.app.service.param.CarWaybillModifyParam", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.RangeNumber", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.time.Instant", "java.util.concurrent.TimeUnit"],
-    "class_name": "ExecuteWaybillTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/logistics/ExecuteWaybillTest.java"
-}, {
-    "name": "ExecuteOrderTest",
-    "package": "com.dr.oursp.retail.logistics.order.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.commodity.order.domain.CommodityOrder", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.commodity.order.repository.CommodityOrderRepository", "com.dr.oursp.retail.logistics.order.behavior.modify.ExecuteOrderModifiableProperties", "com.dr.oursp.retail.logistics.order.behavior.modify.ExecuteOrderProcessPropertiesImplement", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderApprovalActionEnum", "com.dr.oursp.retail.logistics.order.domain.rule.ExecuteOrderRuleVO", "com.dr.oursp.retail.logistics.order.exception.ExecuteOrderPayDuplicatesException", "com.dr.oursp.retail.logistics.order.repository.ExecuteOrderRepository", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "com.google.common.collect.Sets", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.function.Function", "java.util.stream.Collectors"],
-    "class_name": "ExecuteOrderTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/logistics/order/domain/ExecuteOrderTest.java"
-}, {
-    "name": "PlanWaybillRepositoryTest",
-    "package": "com.dr.oursp.retail.logistics.waybill.plan.repository",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.Optional"],
-    "class_name": "PlanWaybillRepositoryTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/logistics/waybill/plan/repository/PlanWaybillRepositoryTest.java"
-}, {
-    "name": "LogisticsRemoteTest",
-    "package": "com.dr.oursp.retail.logistics.reference",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.BasicOurspApplicationTester", "com.dr.oursp.retail.globe.PlatformTypeEnum", "com.dr.oursp.retail.logistics.reference.dto.request.*", "com.dr.oursp.retail.logistics.reference.dto.response.CarrierOrderResponse", "com.dr.oursp.retail.logistics.reference.dto.response.PlanWayBillResponse", "com.dr.oursp.retail.logistics.reference.dto.response.TrackVinLoginResponse", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.support.serialization.Serializations", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.math.BigDecimal", "java.time.Instant", "java.util.List"],
-    "class_name": "LogisticsRemoteTest  extends BasicOurspApplicationTester",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/logistics/reference/LogisticsRemoteTest.java"
-}, {
-    "name": "InvoiceTest",
-    "package": "com.dr.oursp.retail.invoice",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.retail.invoice.model.InvoiceContent", "com.dr.oursp.retail.invoice.repository.InvoiceEntity", "com.dr.oursp.retail.invoice.repository.InvoiceRepository", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.time.Instant", "java.util.List"],
-    "class_name": "InvoiceTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/invoice/InvoiceTest.java"
-}, {
-    "name": "PlayerInvokeFeignTest",
-    "package": "com.dr.oursp.retail.player",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.BasicOurspApplicationTester", "com.dr.oursp.retail.app.service.PlayerService", "org.springframework.beans.factory.annotation.Autowired"],
-    "class_name": "PlayerInvokeFeignTest extends BasicOurspApplicationTester",
-    "extend_name": "BasicOurspApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/player/PlayerInvokeFeignTest.java"
-}, {
-    "name": "MoneyAccountInvokeTest",
-    "package": "com.dr.oursp.retail.player",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.BasicOurspApplicationTester", "com.dr.oursp.retail.player.account.consts.TransferAmountTypeEnum", "com.dr.oursp.retail.player.reference.caller.yunxiao.YunXiaoCapitalAccountManagerProxy", "com.dr.oursp.retail.player.reference.vo.MoneyAccountVO", "org.databene.contiperf.PerfTest", "org.databene.contiperf.junit.ContiPerfRule", "org.junit.Rule", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.math.BigDecimal"],
-    "class_name": "MoneyAccountInvokeTest extends BasicOurspApplicationTester",
-    "extend_name": "BasicOurspApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/player/MoneyAccountInvokeTest.java"
-}, {
-    "name": "RetailPlayerTest",
-    "package": "com.dr.oursp.retail.player",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.OurspApplication", "com.dr.oursp.retail.BasicOurspApplicationTester", "com.dr.oursp.retail.app.service.PartnerService", "com.dr.oursp.retail.app.service.PlayerService", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.TransferAmountTypeEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.player.consts.SignedStateEnum", "com.dr.oursp.retail.player.repository.AggregateRepository", "com.dr.oursp.retail.player.repository.RetailPlayerRepository", "com.dr.oursp.retail.player.vo.RetailPlayerPropDefinition", "com.dr.oursp.retail.player.vo.RetailPlayerProps", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.enums.Enumerations", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.junit.Before", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.io.IOException", "java.math.BigDecimal", "java.util.List", "java.util.Optional", "java.util.Set"],
-    "class_name": "RetailPlayerTest extends BasicOurspApplicationTester",
-    "extend_name": "BasicOurspApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/player/RetailPlayerTest.java"
-}, {
-    "name": "YunXiaoAccount",
-    "package": "com.dr.oursp.retail.player.yunxiao.dto",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.player.reference.vo.BaseRemoteVO", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "YunXiaoAccount extends BaseRemoteVO",
-    "extend_name": "BaseRemoteVO",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/player/yunxiao/dto/YunXiaoAccount.java"
-}, {
-    "name": "InitData",
-    "package": "com.dr.oursp.retail.player.yunxiao.init",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.BasicOurspApplicationTester", "com.dr.oursp.retail.app.service.PlayerService", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.io.IOException"],
-    "class_name": "InitData extends BasicOurspApplicationTester",
-    "extend_name": "BasicOurspApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/player/yunxiao/init/InitData.java"
-}, {
-    "name": "initializeBuyers",
-    "package": "com.dr.oursp.retail.player.yunxiao.init",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.app.service.AppManagerService", "com.dr.oursp.retail.player.reference.vo.PurchaserRemoteVO", "com.dr.oursp.retail.remote.yunxiao.service.PlayerRemoteService", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.setting.PlatformSetting", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Component", "java.io.IOException", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.concurrent.atomic.AtomicInteger", "java.util.stream.Collectors"],
-    "class_name": "initializeBuyers",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/player/yunxiao/init/initializeBuyers.java"
-}, {
-    "name": "InitializeDealer",
-    "package": "com.dr.oursp.retail.player.yunxiao.init",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.consts.AccountTypeEnum", "com.dr.oursp.infra.account.consts.SexTypeEnum", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.entity.PhoneAssociateEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.account.service.PhoneLoginService", "com.dr.oursp.infra.org.OpOrgService", "com.dr.oursp.retail.app.service.PlayerService", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.player.consts.SignedStateEnum", "com.dr.oursp.retail.player.reference.consts.RemoteRelationModelConvert", "com.dr.oursp.retail.player.reference.consts.YunXiaoConstants", "com.dr.oursp.retail.player.reference.consts.YunXiaoOrgAccountEnum", "com.dr.oursp.retail.player.reference.consts.YunXiaoOrgTypeEnum", "com.dr.oursp.retail.player.reference.entity.AccountRemoteRelationEntity", "com.dr.oursp.retail.player.reference.repository.AccountRemoteRelationRepository", "com.dr.oursp.retail.player.reference.repository.IdentityRemoteRelationRepository", "com.dr.oursp.retail.player.yunxiao.dto.YunXiaoAccount", "com.dr.oursp.strategy.basic.account.UnifyAccountManager", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntityWithId", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.enums.Enumerations", "com.dr.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.apache.poi.ss.usermodel.*", "org.apache.poi.xssf.usermodel.XSSFWorkbook", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "javax.validation.constraints.NotNull", "java.io.FileInputStream", "java.io.IOException", "java.util.*", "java.util.stream.Collectors"],
-    "class_name": "InitializeDealer",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/player/yunxiao/init/InitializeDealer.java"
-}, {
-    "name": "InitializeFundAccount",
-    "package": "com.dr.oursp.retail.player.yunxiao.init",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountInfoService", "com.dr.oursp.retail.app.service.PlayerService", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.third.ThirdPlatformSettingEntity", "com.dr.oursp.third.consts.BizDomainEnum", "com.dr.oursp.third.pay.PayCenter", "com.dr.oursp.third.pay.PayCenterRemoteCallException", "com.dr.support.trace.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Component", "java.util.List", "java.util.Optional"],
-    "class_name": "InitializeFundAccount",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/player/yunxiao/init/InitializeFundAccount.java"
-}, {
-    "name": "initializeSupplier",
-    "package": "com.dr.oursp.retail.player.yunxiao.init",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.player.reference.vo.SupplierRemoteVO", "com.dr.oursp.retail.remote.yunxiao.service.PlayerRemoteService", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.setting.PlatformSetting", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.apache.poi.ss.usermodel.*", "org.apache.poi.xssf.usermodel.XSSFWorkbook", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Component", "java.io.FileInputStream", "java.io.IOException", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.concurrent.atomic.AtomicInteger", "java.util.stream.Collectors"],
-    "class_name": "initializeSupplier",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/player/yunxiao/init/initializeSupplier.java"
-}, {
-    "name": "CapitalAccountTest",
-    "package": "com.dr.oursp.retail.player.account",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.BasicOurspApplicationTester", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.consts.TransferAmountTypeEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.AbstractCapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.player.account.statement.CapitalAccountStatementRepository", "com.dr.oursp.retail.player.reference.caller.yunxiao.DrsInvokeFeignClientImpl", "com.dr.oursp.retail.player.reference.caller.yunxiao.YunXiaoCapitalAccountManagerProxy", "com.dr.oursp.retail.support.AccurateNumber", "com.google.common.collect.Sets", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.io.IOException", "java.math.BigDecimal"],
-    "class_name": "CapitalAccountTest extends BasicOurspApplicationTester",
-    "extend_name": "BasicOurspApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/player/account/CapitalAccountTest.java"
-}, {
-    "name": "CapitalBehaviorDetailByBidMarginTest",
-    "package": "com.dr.oursp.retail.player.account.proxy.detail",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.support.AccurateNumber", "org.junit.Assert", "org.junit.Test"],
-    "class_name": "CapitalBehaviorDetailByBidMarginTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/player/account/proxy/detail/CapitalBehaviorDetailByBidMarginTest.java"
-}, {
-    "name": "CapitalAccountChangingTest",
-    "package": "com.dr.oursp.retail.player.account.changing",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.BasicOurspApplicationTester", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.PayCenterProxy", "com.dr.oursp.retail.player.reference.caller.yunxiao.DrsInvokeFeignClientImpl", "com.dr.oursp.retail.player.reference.caller.yunxiao.YunXiaoCapitalAccountManagerProxy", "com.dr.oursp.retail.support.EnumWrapper", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.io.IOException"],
-    "class_name": "CapitalAccountChangingTest extends BasicOurspApplicationTester",
-    "extend_name": "BasicOurspApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/player/account/changing/CapitalAccountChangingTest.java"
-}, {
-    "name": "CapitalAccountStatementTest",
-    "package": "com.dr.oursp.retail.player.account.statement",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.BasicOurspApplicationTester", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.transaction.annotation.Transactional", "java.util.stream.Collectors"],
-    "class_name": "CapitalAccountStatementTest extends BasicOurspApplicationTester",
-    "extend_name": "BasicOurspApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/player/account/statement/CapitalAccountStatementTest.java"
-}, {
-    "name": "ShortUrlGenerator",
-    "package": "com.dr.oursp.retail.player.reference",
-    "type": "class",
-    "imports": ["com.google.common.base.Strings", "com.google.common.collect.ImmutableMap", "com.google.common.hash.Hashing", "org.junit.jupiter.api.Test", "org.springframework.web.util.UriComponentsBuilder", "java.io.UnsupportedEncodingException", "java.math.BigDecimal", "java.math.BigInteger", "java.net.URLDecoder", "java.nio.charset.StandardCharsets"],
-    "class_name": "ShortUrlGenerator",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/player/reference/ShortUrlTest.java"
-}, {
-    "name": "LogisticsRemoteServiceTest",
-    "package": "com.dr.oursp.retail.remote",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.BasicOurspApplicationTester", "com.dr.oursp.retail.logistics.reference.dto.request.BidSubmitRequest", "com.dr.oursp.retail.logistics.reference.dto.request.DeliveryRequest", "com.dr.oursp.retail.logistics.reference.dto.request.PerformWaybillAcceptRequest", "com.dr.oursp.retail.logistics.reference.dto.request.TrunkConfirmRequest", "com.dr.oursp.retail.remote.zhonghuan.service.LogisticsRemoteService", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.math.BigDecimal", "java.time.Instant"],
-    "class_name": "LogisticsRemoteServiceTest extends BasicOurspApplicationTester",
-    "extend_name": "BasicOurspApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/test/java/com/dr/oursp/retail/remote/LogisticsRemoteServiceTest.java"
-}, {
     "name": "OurspRetailApplication",
     "package": "com.dr.oursp.retail",
     "type": "class",
@@ -920,7 +263,7 @@ var data = [{
     "name": "SellingApp",
     "package": "com.dr.oursp.retail.app",
     "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.infra.account.service.AccountInfoService", "com.dr.oursp.retail.app.service.*", "com.dr.oursp.retail.app.service.order.CommodityTradeOrderService", "com.dr.oursp.retail.app.service.order.WaybillTradeOrderService", "com.dr.oursp.retail.app.service.param.CommodityCommonModifyParam", "com.dr.oursp.retail.app.service.param.TradeConfirmBidParam", "com.dr.oursp.retail.app.service.param.TradeRejectBidParam", "com.dr.oursp.retail.app.service.squaring.SquaringUpGoodsService", "com.dr.oursp.retail.app.service.squaring.SquaringUpWaybillService", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.consts.CommodityOrderStateEnum", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyLogicStateEnum", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteStateEnum", "com.dr.oursp.retail.logistics.waybill.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.TradeItemFactory", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.retry.annotation.Retryable", "org.springframework.stereotype.Service", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.EnumSet", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.function.BiPredicate"],
+    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.infra.account.service.AccountInfoService", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.app.service.*", "com.dr.oursp.retail.app.service.order.CommodityTradeOrderService", "com.dr.oursp.retail.app.service.order.WaybillTradeOrderService", "com.dr.oursp.retail.app.service.param.CommodityCommonModifyParam", "com.dr.oursp.retail.app.service.param.TradeConfirmBidParam", "com.dr.oursp.retail.app.service.param.TradeRejectBidParam", "com.dr.oursp.retail.app.service.squaring.SquaringUpGoodsService", "com.dr.oursp.retail.app.service.squaring.SquaringUpWaybillService", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyLogicStateEnum", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.invoice.order.consts.CommodityOrderStateEnum", "com.dr.oursp.retail.invoice.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.TradeItemFactory", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.retry.annotation.Retryable", "org.springframework.stereotype.Service", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.EnumSet", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.function.BiPredicate"],
     "class_name": "SellingApp extends AbstractRetailApp",
     "extend_name": "AbstractRetailApp",
     "implements_name": [],
@@ -929,7 +272,7 @@ var data = [{
     "name": "SupplyingApp",
     "package": "com.dr.oursp.retail.app",
     "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountInfoService", "com.dr.oursp.retail.app.service.*", "com.dr.oursp.retail.app.service.order.CommodityTradeOrderService", "com.dr.oursp.retail.app.service.order.WaybillTradeOrderService", "com.dr.oursp.retail.app.service.param.LogisticsAddressCommonModifyParam", "com.dr.oursp.retail.app.service.param.SupplyCommonModifyParam", "com.dr.oursp.retail.app.service.squaring.SquaringUpGoodsService", "com.dr.oursp.retail.app.service.squaring.SquaringUpWaybillService", "com.dr.oursp.retail.category.consts.OptionsStateEnum", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyLogicStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteStateEnum", "com.dr.oursp.retail.logistics.waybill.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.quality.consts.QualityProvidesNodeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.retry.annotation.Retryable", "org.springframework.stereotype.Service", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.EnumSet", "java.util.List", "java.util.Optional", "java.util.Set"],
+    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountInfoService", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.app.service.*", "com.dr.oursp.retail.app.service.order.CommodityTradeOrderService", "com.dr.oursp.retail.app.service.order.WaybillTradeOrderService", "com.dr.oursp.retail.app.service.param.LogisticsAddressCommonModifyParam", "com.dr.oursp.retail.app.service.param.SupplyCommonModifyParam", "com.dr.oursp.retail.app.service.squaring.SquaringUpGoodsService", "com.dr.oursp.retail.app.service.squaring.SquaringUpWaybillService", "com.dr.oursp.retail.category.consts.OptionsStateEnum", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyLogicStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.invoice.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.quality.consts.QualityProvidesNodeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.retry.annotation.Retryable", "org.springframework.stereotype.Service", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.EnumSet", "java.util.List", "java.util.Optional", "java.util.Set"],
     "class_name": "SupplyingApp extends AbstractRetailApp",
     "extend_name": "AbstractRetailApp",
     "implements_name": [],
@@ -947,7 +290,7 @@ var data = [{
     "name": "PurchasingApp",
     "package": "com.dr.oursp.retail.app",
     "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.infra.account.service.AccountInfoService", "com.dr.oursp.retail.app.service.*", "com.dr.oursp.retail.app.service.except.CommodityBidMarginException", "com.dr.oursp.retail.app.service.order.CommodityTradeOrderService", "com.dr.oursp.retail.app.service.order.WaybillTradeOrderService", "com.dr.oursp.retail.app.service.param.LogisticsAddressCommonModifyParam", "com.dr.oursp.retail.app.service.param.TradeConfirmBidParam", "com.dr.oursp.retail.app.service.param.TradeRejectBidParam", "com.dr.oursp.retail.app.service.squaring.SquaringUpGoodsService", "com.dr.oursp.retail.app.service.squaring.SquaringUpWaybillService", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.consts.CommodityOrderStateEnum", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.consts.TradeRuleVo", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteInExecutionStateEnum", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteStateEnum", "com.dr.oursp.retail.logistics.waybill.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.consts.DockingPlatformEnum", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.quality.consts.QualityProvidesNodeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.squaring.goods.SquaringUpGoodsVo", "com.dr.oursp.retail.squaring.waybill.SquaringUpWaybillVo", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.*", "java.util.function.BiPredicate", "java.util.function.Predicate", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.infra.account.service.AccountInfoService", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.app.service.*", "com.dr.oursp.retail.app.service.except.CommodityBidMarginException", "com.dr.oursp.retail.app.service.order.CommodityTradeOrderService", "com.dr.oursp.retail.app.service.order.WaybillTradeOrderService", "com.dr.oursp.retail.app.service.param.LogisticsAddressCommonModifyParam", "com.dr.oursp.retail.app.service.param.TradeConfirmBidParam", "com.dr.oursp.retail.app.service.param.TradeRejectBidParam", "com.dr.oursp.retail.app.service.squaring.SquaringUpGoodsService", "com.dr.oursp.retail.app.service.squaring.SquaringUpWaybillService", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.*", "com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.invoice.order.consts.CommodityOrderStateEnum", "com.dr.oursp.retail.invoice.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteInExecutionStateEnum", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.consts.DockingPlatformEnum", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.quality.consts.QualityProvidesNodeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.squaring.goods.SquaringUpGoodsVo", "com.dr.oursp.retail.squaring.waybill.SquaringUpWaybillVo", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.*", "java.util.function.BiPredicate", "java.util.function.Predicate", "java.util.stream.Collectors"],
     "class_name": "PurchasingApp extends AbstractRetailApp",
     "extend_name": "AbstractRetailApp",
     "implements_name": [],
@@ -956,7 +299,7 @@ var data = [{
     "name": "ConveyingApp",
     "package": "com.dr.oursp.retail.app",
     "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.infra.account.service.AccountInfoService", "com.dr.oursp.retail.app.service.*", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.state.PlanWaybillHallLogicStateEnum", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.state.PlanWaybillHallTradeBidLogicStateEnum", "com.dr.oursp.retail.app.service.order.CommodityTradeOrderService", "com.dr.oursp.retail.app.service.order.WaybillTradeOrderService", "com.dr.oursp.retail.app.service.param.CarWaybillModifyParam", "com.dr.oursp.retail.app.service.param.CreateCarParam", "com.dr.oursp.retail.app.service.param.ModifyCarParam", "com.dr.oursp.retail.app.service.squaring.SquaringUpGoodsService", "com.dr.oursp.retail.app.service.squaring.SquaringUpWaybillService", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.car.consts.CarAvailableEnum", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.consts.CarrierSignedStateEnum", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CoordinateVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteAffiliationEnum", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteInExecutionStateEnum", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteStateEnum", "com.dr.oursp.retail.logistics.waybill.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.quality.consts.QualityProvidesNodeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.squaring.waybill.SquaringUpWaybillVo", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.support.enums.KeyValueEnum", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.io.IOException", "java.util.*", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.infra.account.service.AccountInfoService", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.app.service.*", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.state.PlanWaybillHallLogicStateEnum", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.state.PlanWaybillHallTradeBidLogicStateEnum", "com.dr.oursp.retail.app.service.order.CommodityTradeOrderService", "com.dr.oursp.retail.app.service.order.WaybillTradeOrderService", "com.dr.oursp.retail.app.service.param.CarWaybillModifyParam", "com.dr.oursp.retail.app.service.param.CreateCarParam", "com.dr.oursp.retail.app.service.param.ModifyCarParam", "com.dr.oursp.retail.app.service.squaring.SquaringUpGoodsService", "com.dr.oursp.retail.app.service.squaring.SquaringUpWaybillService", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.invoice.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.car.consts.CarAvailableEnum", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.consts.CarrierSignedStateEnum", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CoordinateVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteAffiliationEnum", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteInExecutionStateEnum", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.quality.consts.QualityProvidesNodeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.squaring.waybill.SquaringUpWaybillVo", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.support.enums.KeyValueEnum", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.io.IOException", "java.util.*", "java.util.stream.Collectors"],
     "class_name": "ConveyingApp extends AbstractRetailApp",
     "extend_name": "AbstractRetailApp",
     "implements_name": [],
@@ -965,7 +308,7 @@ var data = [{
     "name": "SellingApi",
     "package": "com.dr.oursp.retail.app.api",
     "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.app.SellingApp", "com.dr.oursp.retail.app.api.http.PurchasingModelConvert", "com.dr.oursp.retail.app.api.http.request.*", "com.dr.oursp.retail.app.api.http.response.TradeBidHistoryResponse", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyLogicStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Sets", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.*", "java.util.function.Function", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.app.SellingApp", "com.dr.oursp.retail.app.api.http.PurchasingModelConvert", "com.dr.oursp.retail.app.api.http.request.*", "com.dr.oursp.retail.app.api.http.response.TradeBidHistoryResponse", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyLogicStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Sets", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.*", "java.util.function.Function", "java.util.stream.Collectors"],
     "class_name": "SellingApi extends BasicApi",
     "extend_name": "BasicApi",
     "implements_name": [],
@@ -974,7 +317,7 @@ var data = [{
     "name": "SupplyingApi",
     "package": "com.dr.oursp.retail.app.api",
     "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.app.SupplyingApp", "com.dr.oursp.retail.app.api.http.request.*", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyLogicStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Sets", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.EnumSet", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.function.Function", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.app.SupplyingApp", "com.dr.oursp.retail.app.api.http.request.*", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyLogicStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Sets", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.EnumSet", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.function.Function", "java.util.stream.Collectors"],
     "class_name": "SupplyingApi extends BasicApi",
     "extend_name": "BasicApi",
     "implements_name": [],
@@ -983,7 +326,7 @@ var data = [{
     "name": "PurchasingApi",
     "package": "com.dr.oursp.retail.app.api",
     "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.app.PurchasingApp", "com.dr.oursp.retail.app.api.http.PurchasingModelConvert", "com.dr.oursp.retail.app.api.http.request.*", "com.dr.oursp.retail.app.api.http.response.TradeBidHistoryResponse", "com.dr.oursp.retail.app.api.http.response.TradeCapitalAccountResponse", "com.dr.oursp.retail.app.service.CarService", "com.dr.oursp.retail.app.service.except.CommodityBidMarginException", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.squaring.waybill.SquaringUpWaybillVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Sets", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.EnumSet", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.app.PurchasingApp", "com.dr.oursp.retail.app.api.http.PurchasingModelConvert", "com.dr.oursp.retail.app.api.http.request.*", "com.dr.oursp.retail.app.api.http.response.TradeBidHistoryResponse", "com.dr.oursp.retail.app.api.http.response.TradeCapitalAccountResponse", "com.dr.oursp.retail.app.service.CarService", "com.dr.oursp.retail.app.service.except.CommodityBidMarginException", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.squaring.waybill.SquaringUpWaybillVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Sets", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.EnumSet", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors"],
     "class_name": "PurchasingApi extends BasicApi",
     "extend_name": "BasicApi",
     "implements_name": [],
@@ -992,7 +335,7 @@ var data = [{
     "name": "ConveyingApi",
     "package": "com.dr.oursp.retail.app.api",
     "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.app.ConveyingApp", "com.dr.oursp.retail.app.api.http.ConveyingModelConvert", "com.dr.oursp.retail.app.api.http.PurchasingModelConvert", "com.dr.oursp.retail.app.api.http.request.*", "com.dr.oursp.retail.app.api.http.response.CarLocationResponse", "com.dr.oursp.retail.app.api.http.response.TradeCapitalAccountResponse", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.state.PlanWaybillHallLogicStateEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.car.consts.CarAvailableEnum", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.consts.CarrierSignedStateEnum", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CoordinateVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteAffiliationEnum", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteInExecutionStateEnum", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.squaring.waybill.SquaringUpWaybillVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiOperation", "io.swagger.annotations.ApiParam", "lombok.extern.slf4j.Slf4j", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.io.IOException", "java.time.Instant", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.app.ConveyingApp", "com.dr.oursp.retail.app.api.http.ConveyingModelConvert", "com.dr.oursp.retail.app.api.http.PurchasingModelConvert", "com.dr.oursp.retail.app.api.http.request.*", "com.dr.oursp.retail.app.api.http.response.CarLocationResponse", "com.dr.oursp.retail.app.api.http.response.TradeCapitalAccountResponse", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.state.PlanWaybillHallLogicStateEnum", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.logistics.car.consts.CarAvailableEnum", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.consts.CarrierSignedStateEnum", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CoordinateVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteAffiliationEnum", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteInExecutionStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.squaring.waybill.SquaringUpWaybillVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiOperation", "io.swagger.annotations.ApiParam", "lombok.extern.slf4j.Slf4j", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.io.IOException", "java.time.Instant", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.stream.Collectors"],
     "class_name": "ConveyingApi extends BasicApi",
     "extend_name": "BasicApi",
     "implements_name": [],
@@ -1028,7 +371,7 @@ var data = [{
     "name": "PlayerApi",
     "package": "com.dr.oursp.retail.app.api.admin",
     "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageParam", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.org.api.OpOrgModelConvert", "com.dr.oursp.infra.org.api.http.response.OrgInfoDetail", "com.dr.oursp.retail.app.api.http.request.player.PlayerSaveRequest", "com.dr.oursp.retail.app.service.PlayerService", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.consts.SignedStateEnum", "com.dr.oursp.retail.player.vo.RetailPlayerDetailVO", "com.dr.oursp.retail.player.vo.RetailPlayerPropDefinition", "com.dr.oursp.retail.player.vo.RetailPlayerProps", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.oursp.third.pay.PayCenterRemoteCallException", "com.dr.oursp.third.pay.repo.PayCenterSubjectEntity", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.omg.CORBA.Object", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "java.math.BigDecimal", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageParam", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.org.api.OpOrgModelConvert", "com.dr.oursp.infra.org.api.http.response.OrgInfoDetail", "com.dr.oursp.retail.app.api.http.request.player.PlayerSaveRequest", "com.dr.oursp.retail.app.service.PlayerService", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.consts.SignedStateEnum", "com.dr.oursp.retail.player.vo.RetailPlayerDetailVO", "com.dr.oursp.retail.player.vo.RetailPlayerPropDefinition", "com.dr.oursp.retail.player.vo.RetailPlayerProps", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.oursp.third.pay.PayCenterRemoteCallException", "com.dr.oursp.third.pay.repo.PayCenterSubjectEntity", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.omg.CORBA.Object", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "java.math.BigDecimal", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
     "class_name": "PlayerApi",
     "extend_name": "",
     "implements_name": [],
@@ -1073,7 +416,7 @@ var data = [{
     "name": "TradeBidHistoryResponse",
     "package": "com.dr.oursp.retail.app.api.http.response",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.trade.consts.BidStateEnum", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.SuperBuilder"],
+    "imports": ["com.dr.oursp.retail.consts.BidStateEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.SuperBuilder"],
     "class_name": "TradeBidHistoryResponse",
     "extend_name": "",
     "implements_name": [],
@@ -1388,7 +731,7 @@ var data = [{
     "name": "WaybillOrderQueryRequest",
     "package": "com.dr.oursp.retail.app.api.http.request",
     "type": "class",
-    "imports": ["com.dr.domain.selector.PageRequest", "com.dr.oursp.retail.logistics.waybill.order.consts.WaybillOrderStateEnum", "com.dr.support.enums.Enumerations", "com.dr.support.enums.KeyValueEnum", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Objects"],
+    "imports": ["com.dr.domain.selector.PageRequest", "com.dr.oursp.retail.invoice.order.consts.WaybillOrderStateEnum", "com.dr.support.enums.Enumerations", "com.dr.support.enums.KeyValueEnum", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Objects"],
     "class_name": "WaybillOrderQueryRequest extends PageRequest",
     "extend_name": "PageRequest",
     "implements_name": [],
@@ -1406,7 +749,7 @@ var data = [{
     "name": "CommodityCommonRuleRequest",
     "package": "com.dr.oursp.retail.app.api.http.request",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.coal.rule.CommodityRuleVo", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.dr.support.enums.Enumerations", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull", "java.math.BigDecimal", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
+    "imports": ["com.dr.oursp.retail.commodity.coal.rule.CommodityRuleVo", "com.dr.oursp.retail.consts.*", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.support.enums.Enumerations", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull", "java.math.BigDecimal", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
     "class_name": "CommodityCommonRuleRequest",
     "extend_name": "",
     "implements_name": [],
@@ -1496,7 +839,7 @@ var data = [{
     "name": "SupplyCommonModifyRequest",
     "package": "com.dr.oursp.retail.app.api.http.request",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.app.service.param.SupplyCommonModifyParam", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.dr.support.enums.Enumerations", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "javax.validation.constraints.Size", "java.math.BigDecimal", "java.util.Set", "java.util.stream.Collectors"],
+    "imports": ["com.dr.oursp.retail.app.service.param.SupplyCommonModifyParam", "com.dr.oursp.retail.consts.*", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.support.enums.Enumerations", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "javax.validation.constraints.Size", "java.math.BigDecimal", "java.util.Set", "java.util.stream.Collectors"],
     "class_name": "SupplyCommonModifyRequest",
     "extend_name": "",
     "implements_name": [],
@@ -1568,7 +911,7 @@ var data = [{
     "name": "PlanWaybillRuleRequest",
     "package": "com.dr.oursp.retail.app.api.http.request",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.consts.TradeRuleVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set", "java.util.stream.Collectors"],
+    "imports": ["com.dr.oursp.retail.consts.*", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set", "java.util.stream.Collectors"],
     "class_name": "PlanWaybillRuleRequest",
     "extend_name": "",
     "implements_name": [],
@@ -1703,7 +1046,7 @@ var data = [{
     "name": "MobileConveyingApi",
     "package": "com.dr.oursp.retail.app.api.mobile",
     "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.app.ConveyingApp", "com.dr.oursp.retail.app.api.BasicApi", "com.dr.oursp.retail.app.api.http.PurchasingModelConvert", "com.dr.oursp.retail.app.api.http.request.ExecuteWaybillPageRequest", "com.dr.oursp.retail.app.api.http.request.QueryWaybillRequest", "com.dr.oursp.retail.app.api.http.request.TradeBidMarginRequest", "com.dr.oursp.retail.app.api.http.request.WaybillRemarkRequest", "com.dr.oursp.retail.app.api.http.response.TradeCapitalAccountResponse", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.state.PlanWaybillHallLogicStateEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteAffiliationEnum", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteInExecutionStateEnum", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteStateEnum", "com.dr.oursp.retail.logistics.waybill.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.io.IOException", "java.time.Instant", "java.util.List", "java.util.Objects", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.app.ConveyingApp", "com.dr.oursp.retail.app.api.BasicApi", "com.dr.oursp.retail.app.api.http.PurchasingModelConvert", "com.dr.oursp.retail.app.api.http.request.ExecuteWaybillPageRequest", "com.dr.oursp.retail.app.api.http.request.QueryWaybillRequest", "com.dr.oursp.retail.app.api.http.request.TradeBidMarginRequest", "com.dr.oursp.retail.app.api.http.request.WaybillRemarkRequest", "com.dr.oursp.retail.app.api.http.response.TradeCapitalAccountResponse", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.state.PlanWaybillHallLogicStateEnum", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.invoice.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteAffiliationEnum", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteInExecutionStateEnum", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.io.IOException", "java.time.Instant", "java.util.List", "java.util.Objects", "java.util.stream.Collectors"],
     "class_name": "MobileConveyingApi extends BasicApi",
     "extend_name": "BasicApi",
     "implements_name": [],
@@ -1712,7 +1055,7 @@ var data = [{
     "name": "MobilePurchasingApi",
     "package": "com.dr.oursp.retail.app.api.mobile",
     "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.app.PurchasingApp", "com.dr.oursp.retail.app.api.BasicApi", "com.dr.oursp.retail.app.api.http.PurchasingModelConvert", "com.dr.oursp.retail.app.api.http.consts.MobilePartnerManagementEnum", "com.dr.oursp.retail.app.api.http.request.*", "com.dr.oursp.retail.app.api.http.response.TradeCapitalAccountResponse", "com.dr.oursp.retail.app.service.except.CommodityBidMarginException", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteInExecutionStateEnum", "com.dr.oursp.retail.logistics.waybill.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Sets", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.EnumSet", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.app.PurchasingApp", "com.dr.oursp.retail.app.api.BasicApi", "com.dr.oursp.retail.app.api.http.PurchasingModelConvert", "com.dr.oursp.retail.app.api.http.consts.MobilePartnerManagementEnum", "com.dr.oursp.retail.app.api.http.request.*", "com.dr.oursp.retail.app.api.http.response.TradeCapitalAccountResponse", "com.dr.oursp.retail.app.service.except.CommodityBidMarginException", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.invoice.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteInExecutionStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Sets", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.EnumSet", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors"],
     "class_name": "MobilePurchasingApi extends BasicApi",
     "extend_name": "BasicApi",
     "implements_name": [],
@@ -1721,7 +1064,7 @@ var data = [{
     "name": "MobileSupplyingApi",
     "package": "com.dr.oursp.retail.app.api.mobile",
     "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.app.SupplyingApp", "com.dr.oursp.retail.app.api.BasicApi", "com.dr.oursp.retail.app.api.http.consts.MobileSupplyingSupplyEnum", "com.dr.oursp.retail.app.api.http.consts.MobileSupplyingTradeOrderEnum", "com.dr.oursp.retail.app.api.http.request.*", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyLogicStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Sets", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.EnumSet", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.function.Function", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.app.SupplyingApp", "com.dr.oursp.retail.app.api.BasicApi", "com.dr.oursp.retail.app.api.http.consts.MobileSupplyingSupplyEnum", "com.dr.oursp.retail.app.api.http.consts.MobileSupplyingTradeOrderEnum", "com.dr.oursp.retail.app.api.http.request.*", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyLogicStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Sets", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.EnumSet", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.function.Function", "java.util.stream.Collectors"],
     "class_name": "MobileSupplyingApi extends BasicApi",
     "extend_name": "BasicApi",
     "implements_name": [],
@@ -1730,7 +1073,7 @@ var data = [{
     "name": "MobileConveyingTransportApi",
     "package": "com.dr.oursp.retail.app.api.mobile",
     "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.oursp.retail.app.ConveyingApp", "com.dr.oursp.retail.app.api.BasicApi", "com.dr.oursp.retail.app.api.http.request.ExecuteWaybillDeliveryNoticeRequest", "com.dr.oursp.retail.app.api.http.request.ExecuteWaybillFeedbackRequest", "com.dr.oursp.retail.app.api.http.request.ExecuteWaybillLoadingRegistrationRequest", "com.dr.oursp.retail.app.api.http.request.ExecuteWaybillPageRequest", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteInExecutionStateEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank"],
+    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.app.ConveyingApp", "com.dr.oursp.retail.app.api.BasicApi", "com.dr.oursp.retail.app.api.http.request.ExecuteWaybillDeliveryNoticeRequest", "com.dr.oursp.retail.app.api.http.request.ExecuteWaybillFeedbackRequest", "com.dr.oursp.retail.app.api.http.request.ExecuteWaybillLoadingRegistrationRequest", "com.dr.oursp.retail.app.api.http.request.ExecuteWaybillPageRequest", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.logistics.car.domain.CarVo", "com.dr.oursp.retail.logistics.freighter.domain.DriverVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.execute.consts.ExecuteInExecutionStateEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank"],
     "class_name": "MobileConveyingTransportApi extends BasicApi",
     "extend_name": "BasicApi",
     "implements_name": [],
@@ -1739,7 +1082,7 @@ var data = [{
     "name": "MobileSellingApi",
     "package": "com.dr.oursp.retail.app.api.mobile",
     "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.app.SellingApp", "com.dr.oursp.retail.app.api.BasicApi", "com.dr.oursp.retail.app.api.http.PurchasingModelConvert", "com.dr.oursp.retail.app.api.http.consts.MobilePartnerManagementEnum", "com.dr.oursp.retail.app.api.http.consts.MobileSellingSupplierManagementEnum", "com.dr.oursp.retail.app.api.http.consts.MobileSellingSupplyHallEnum", "com.dr.oursp.retail.app.api.http.consts.MobileSellingTradeOrderEnum", "com.dr.oursp.retail.app.api.http.request.CommodityCommonModifyRequest", "com.dr.oursp.retail.app.api.http.request.CommodityModifyRequest", "com.dr.oursp.retail.app.api.http.request.SellerRemarkRequest", "com.dr.oursp.retail.app.api.http.request.TradeOrderRemarkRequest", "com.dr.oursp.retail.app.api.http.response.TradeBidHistoryResponse", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyLogicStateEnum", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Sets", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.*", "java.util.function.Function", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.account.domain.AccountInfoVO", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.retail.app.SellingApp", "com.dr.oursp.retail.app.api.BasicApi", "com.dr.oursp.retail.app.api.http.PurchasingModelConvert", "com.dr.oursp.retail.app.api.http.consts.MobilePartnerManagementEnum", "com.dr.oursp.retail.app.api.http.consts.MobileSellingSupplierManagementEnum", "com.dr.oursp.retail.app.api.http.consts.MobileSellingSupplyHallEnum", "com.dr.oursp.retail.app.api.http.consts.MobileSellingTradeOrderEnum", "com.dr.oursp.retail.app.api.http.request.CommodityCommonModifyRequest", "com.dr.oursp.retail.app.api.http.request.CommodityModifyRequest", "com.dr.oursp.retail.app.api.http.request.SellerRemarkRequest", "com.dr.oursp.retail.app.api.http.request.TradeOrderRemarkRequest", "com.dr.oursp.retail.app.api.http.response.TradeBidHistoryResponse", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyLogicStateEnum", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Sets", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.*", "java.util.function.Function", "java.util.stream.Collectors"],
     "class_name": "MobileSellingApi extends BasicApi",
     "extend_name": "BasicApi",
     "implements_name": [],
@@ -1784,7 +1127,7 @@ var data = [{
     "name": "TradeBidHistoryResponse",
     "package": "com.dr.oursp.retail.app.api.ws.response",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.globe.config.ws.AbstractWsResponse", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.trade.consts.BidStateEnum", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.SuperBuilder"],
+    "imports": ["com.dr.oursp.retail.consts.BidStateEnum", "com.dr.oursp.retail.globe.config.ws.AbstractWsResponse", "com.dr.oursp.retail.support.EnumWrapper", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.SuperBuilder"],
     "class_name": "TradeBidHistoryResponse extends AbstractWsResponse",
     "extend_name": "AbstractWsResponse",
     "implements_name": [],
@@ -1892,7 +1235,7 @@ var data = [{
     "name": "PlanWaybillService",
     "package": "com.dr.oursp.retail.app.service",
     "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.retail.app.service.event.logistics.waybill.PlanWaybillEventDriver", "com.dr.oursp.retail.app.service.event.logistics.waybill.PlanWaybillPutOnEvent", "com.dr.oursp.retail.app.service.event.logistics.waybill.PlanWaybillTakeDownEvent", "com.dr.oursp.retail.app.service.event.logistics.waybill.trade.PlanWaybillBidDealEvent", "com.dr.oursp.retail.app.service.event.logistics.waybill.trade.PlanWaybillBidRejectEvent", "com.dr.oursp.retail.app.service.event.logistics.waybill.trade.PlanWaybillTradeDealEvent", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.processor.PlanWaybillHallLogicalStateProcessor", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.processor.PlanWaybillHallTradeBidLogicalStateProcessor", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.processor.PlanWaybillLogicalStateProcessor", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.state.PlanWaybillHallLogicStateEnum", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.state.PlanWaybillHallTradeBidLogicStateEnum", "com.dr.oursp.retail.app.service.order.WaybillTradeOrderService", "com.dr.oursp.retail.app.service.param.TradeConfirmBidParam", "com.dr.oursp.retail.app.service.param.TradeRejectBidParam", "com.dr.oursp.retail.app.service.trade.TradeService", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.consts.*", "com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "com.dr.oursp.retail.invoice.model.InvoiceContent", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.plan.PlanWaybill", "com.dr.oursp.retail.logistics.waybill.plan.behavior.PlanWaybillModifiableProperties", "com.dr.oursp.retail.logistics.waybill.plan.behavior.PlanWaybillModifiablePropertiesImpl", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillTradeRuleDefinition", "com.dr.oursp.retail.logistics.waybill.plan.domain.AnySelector", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillRepository", "com.dr.oursp.retail.partner.domain.RepeatException", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetailBuilder", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.player.repository.AggregateRepository", "com.dr.oursp.retail.player.repository.RetailPlayerRepository", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.consts.StatisticsConstant", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.TradeItemFactory", "com.dr.oursp.retail.trade.checker.CheckPredicate", "com.dr.oursp.retail.trade.checker.TradeChecker", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.deal.TradeDeal", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.bid.domain.TradeBidRecordModifier", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.retail.trade.module.session.TradeSessionCheckFunction", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "com.dr.oursp.retail.trade.player.Seller", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.support.trace.LogElapsedTime", "com.google.common.base.Throwables", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.io.IOException", "java.time.Instant", "java.util.*", "java.util.function.Function", "java.util.function.Predicate", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.app.service.event.logistics.waybill.PlanWaybillEventDriver", "com.dr.oursp.retail.app.service.event.logistics.waybill.PlanWaybillPutOnEvent", "com.dr.oursp.retail.app.service.event.logistics.waybill.PlanWaybillTakeDownEvent", "com.dr.oursp.retail.app.service.event.logistics.waybill.trade.PlanWaybillBidDealEvent", "com.dr.oursp.retail.app.service.event.logistics.waybill.trade.PlanWaybillBidRejectEvent", "com.dr.oursp.retail.app.service.event.logistics.waybill.trade.PlanWaybillTradeDealEvent", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.processor.PlanWaybillHallLogicalStateProcessor", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.processor.PlanWaybillHallTradeBidLogicalStateProcessor", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.processor.PlanWaybillLogicalStateProcessor", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.state.PlanWaybillHallLogicStateEnum", "com.dr.oursp.retail.app.service.logical.logistics.waybill.plan.state.PlanWaybillHallTradeBidLogicStateEnum", "com.dr.oursp.retail.app.service.order.WaybillTradeOrderService", "com.dr.oursp.retail.app.service.param.TradeConfirmBidParam", "com.dr.oursp.retail.app.service.param.TradeRejectBidParam", "com.dr.oursp.retail.app.service.trade.TradeService", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.consts.*", "com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "com.dr.oursp.retail.invoice.model.InvoiceContent", "com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.invoice.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.plan.PlanWaybill", "com.dr.oursp.retail.logistics.waybill.plan.behavior.PlanWaybillModifiableProperties", "com.dr.oursp.retail.logistics.waybill.plan.behavior.PlanWaybillModifiablePropertiesImpl", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillLogicStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillTradeRuleDefinition", "com.dr.oursp.retail.logistics.waybill.plan.domain.AnySelector", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillRepository", "com.dr.oursp.retail.partner.domain.RepeatException", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetailBuilder", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.player.repository.AggregateRepository", "com.dr.oursp.retail.player.repository.RetailPlayerRepository", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.consts.StatisticsConstant", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.TradeItemFactory", "com.dr.oursp.retail.trade.checker.CheckPredicate", "com.dr.oursp.retail.trade.checker.TradeChecker", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.deal.TradeDeal", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.bid.domain.TradeBidRecordModifier", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.retail.trade.module.session.TradeSessionCheckFunction", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "com.dr.oursp.retail.trade.player.Seller", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.support.trace.LogElapsedTime", "com.google.common.base.Throwables", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.io.IOException", "java.time.Instant", "java.util.*", "java.util.function.Function", "java.util.function.Predicate", "java.util.stream.Collectors"],
     "class_name": "PlanWaybillService",
     "extend_name": "",
     "implements_name": [],
@@ -1901,7 +1244,7 @@ var data = [{
     "name": "ExecuteOrderService",
     "package": "com.dr.oursp.retail.app.service",
     "type": "class",
-    "imports": ["com.dr.domain.ModifierException", "com.dr.domain.selector.PageParam", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "com.dr.oursp.retail.logistics.order.behavior.modify.ExecuteOrderModifiableProperties", "com.dr.oursp.retail.logistics.order.behavior.modify.ExecuteOrderProcessPropertiesImplement", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderApprovalActionEnum", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrder", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.order.domain.rule.ExecuteOrderRuleVO", "com.dr.oursp.retail.logistics.order.exception.ExecuteOrderPayDuplicatesException", "com.dr.oursp.retail.logistics.order.repository.ExecuteOrderRepository", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.trace.LogElapsedTime", "com.google.common.base.Throwables", "com.google.common.collect.Lists", "lombok.AllArgsConstructor", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.io.IOException", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.function.BooleanSupplier", "java.util.function.Function", "java.util.function.Predicate", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.ModifierException", "com.dr.domain.selector.PageParam", "com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.logistics.order.behavior.modify.ExecuteOrderModifiableProperties", "com.dr.oursp.retail.logistics.order.behavior.modify.ExecuteOrderProcessPropertiesImplement", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderApprovalActionEnum", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderLogicStateEnum", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrder", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.logistics.order.domain.rule.ExecuteOrderRuleVO", "com.dr.oursp.retail.logistics.order.exception.ExecuteOrderPayDuplicatesException", "com.dr.oursp.retail.logistics.order.repository.ExecuteOrderRepository", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.trace.LogElapsedTime", "com.google.common.base.Throwables", "com.google.common.collect.Lists", "lombok.AllArgsConstructor", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.io.IOException", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.function.BooleanSupplier", "java.util.function.Function", "java.util.function.Predicate", "java.util.stream.Collectors"],
     "class_name": "ExecuteOrderService",
     "extend_name": "",
     "implements_name": [],
@@ -1937,7 +1280,7 @@ var data = [{
     "name": "PlayerService",
     "package": "com.dr.oursp.retail.app.service",
     "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.app.api.http.request.auth.AppAuthDetailRequest", "com.dr.oursp.infra.app.service.AppManagerService", "com.dr.oursp.infra.org.OpOrgService", "com.dr.oursp.retail.app.service.param.player.PlayerModelConvert", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.PlatformTypeEnum", "com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.CapitalAccount", "com.dr.oursp.retail.player.account.CapitalAccountSelector", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.consts.TransferAmountTypeEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountNotFoundException", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceiptByRedirectUrl", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.player.consts.DockingPlatformEnum", "com.dr.oursp.retail.player.consts.SignedStateEnum", "com.dr.oursp.retail.player.domain.RetailPlayerSelector", "com.dr.oursp.retail.player.reference.entity.IdentityRemoteRelationEntity", "com.dr.oursp.retail.player.reference.repository.AccountIdentityRemoteRelationAggregation", "com.dr.oursp.retail.player.reference.vo.BaseRemoteVO", "com.dr.oursp.retail.player.repository.AggregateRepository", "com.dr.oursp.retail.player.repository.RetailPlayerRepository", "com.dr.oursp.retail.player.vo.RetailPlayerPropDefinition", "com.dr.oursp.retail.player.vo.RetailPlayerProps", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.oursp.third.consts.BizDomainEnum", "com.dr.oursp.third.pay.PayCenter", "com.dr.oursp.third.pay.PayCenterRemoteCallException", "com.dr.oursp.third.pay.ThirdPlatformCapitalAccount", "com.dr.oursp.third.pay.repo.PayCenterSubjectEntity", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "java.math.BigDecimal", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.app.api.http.request.auth.AppAuthDetailRequest", "com.dr.oursp.infra.app.service.AppManagerService", "com.dr.oursp.infra.org.OpOrgService", "com.dr.oursp.retail.app.service.param.player.PlayerModelConvert", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.PlatformTypeEnum", "com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.CapitalAccount", "com.dr.oursp.retail.player.account.CapitalAccountSelector", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.consts.TransferAmountTypeEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountNotFoundException", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceiptByRedirectUrl", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.player.consts.DockingPlatformEnum", "com.dr.oursp.retail.player.consts.SignedStateEnum", "com.dr.oursp.retail.player.domain.RetailPlayerSelector", "com.dr.oursp.retail.player.reference.entity.IdentityRemoteRelationEntity", "com.dr.oursp.retail.player.reference.repository.AccountIdentityRemoteRelationAggregation", "com.dr.oursp.retail.player.reference.vo.BaseRemoteVO", "com.dr.oursp.retail.player.repository.AggregateRepository", "com.dr.oursp.retail.player.repository.RetailPlayerRepository", "com.dr.oursp.retail.player.vo.RetailPlayerPropDefinition", "com.dr.oursp.retail.player.vo.RetailPlayerProps", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.oursp.third.consts.BizDomainEnum", "com.dr.oursp.third.pay.PayCenter", "com.dr.oursp.third.pay.PayCenterRemoteCallException", "com.dr.oursp.third.pay.ThirdPlatformCapitalAccount", "com.dr.oursp.third.pay.repo.PayCenterSubjectEntity", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "java.math.BigDecimal", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
     "class_name": "PlayerService",
     "extend_name": "",
     "implements_name": [],
@@ -1955,7 +1298,7 @@ var data = [{
     "name": "AddressService",
     "package": "com.dr.oursp.retail.app.service",
     "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.retail.app.service.param.LogisticsAddressCommonModifyAreaParam", "com.dr.oursp.retail.app.service.param.LogisticsAddressCommonModifyParam", "com.dr.oursp.retail.logistics.address.domain.Address", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.address.domain.Selector", "com.dr.oursp.retail.logistics.address.repository.AddressRepository", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.trace.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "java.util.List", "java.util.Optional", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.retail.address.domain.Address", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.address.domain.Selector", "com.dr.oursp.retail.address.repository.AddressRepository", "com.dr.oursp.retail.app.service.param.LogisticsAddressCommonModifyAreaParam", "com.dr.oursp.retail.app.service.param.LogisticsAddressCommonModifyParam", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.trace.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "java.util.List", "java.util.Optional", "java.util.stream.Collectors"],
     "class_name": "AddressService",
     "extend_name": "",
     "implements_name": [],
@@ -1973,7 +1316,7 @@ var data = [{
     "name": "CommodityService",
     "package": "com.dr.oursp.retail.app.service",
     "type": "class",
-    "imports": ["com.dr.domain.ModifierException", "com.dr.domain.selector.PageParam", "com.dr.oursp.retail.app.service.competition.CommoditySupplyMultipleResourceCompetition", "com.dr.oursp.retail.app.service.competition.ResourceLocker", "com.dr.oursp.retail.app.service.event.commodity.CommodityEventDriver", "com.dr.oursp.retail.app.service.event.commodity.CommodityPutOnEvent", "com.dr.oursp.retail.app.service.event.commodity.CommodityTakeDownEvent", "com.dr.oursp.retail.app.service.event.commodity.supply.SupplyTakeDownEvent", "com.dr.oursp.retail.app.service.event.commodity.trade.CommodityBidDealEvent", "com.dr.oursp.retail.app.service.event.commodity.trade.CommodityBidRejectEvent", "com.dr.oursp.retail.app.service.event.commodity.trade.CommodityTradeDealEvent", "com.dr.oursp.retail.app.service.logical.commodity.coal.LogicStateMatcher", "com.dr.oursp.retail.app.service.order.CommodityTradeOrderService", "com.dr.oursp.retail.app.service.param.CommodityCommonModifyParam", "com.dr.oursp.retail.app.service.param.SupplyCommonModifyParam", "com.dr.oursp.retail.app.service.param.TradeConfirmBidParam", "com.dr.oursp.retail.app.service.param.TradeRejectBidParam", "com.dr.oursp.retail.app.service.trade.TradeService", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.coal.Commodity", "com.dr.oursp.retail.commodity.coal.behavior.CoalCommodityModifiableProperties", "com.dr.oursp.retail.commodity.coal.behavior.CoalCommodityModifiablePropertiesImpl", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.coal.domain.AnySelector", "com.dr.oursp.retail.commodity.coal.domain.Creator", "com.dr.oursp.retail.commodity.coal.repository.TradeCommodityRepository", "com.dr.oursp.retail.commodity.coal.rule.CommodityRuleChecker", "com.dr.oursp.retail.commodity.coal.rule.CommodityRuleVo", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.consts.CommodityOrderStateEnum", "com.dr.oursp.retail.commodity.supply.coal.behavior.CoalSupplyModifiableProperties", "com.dr.oursp.retail.commodity.supply.coal.behavior.CoalSupplyModifiablePropertiesImpl", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyLogicStateEnum", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.*", "com.dr.oursp.retail.commodity.supply.coal.repository.SupplyRepository", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "com.dr.oursp.retail.globe.lock.RedisLockConfig", "com.dr.oursp.retail.invoice.model.InvoiceContent", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.partner.domain.RepeatException", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountNotFoundException", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferRequestException", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferResponseException", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetailBuilder", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.reference.vo.TradeOrderRemoteVO", "com.dr.oursp.retail.quality.consts.QualityTypeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.consts.StatisticsConstant", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.Idempotent.RedisLocker", "com.dr.oursp.retail.support.Idempotent.ResourceCompetitionBuilder", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.TradeItemFactory", "com.dr.oursp.retail.trade.checker.CheckPredicate", "com.dr.oursp.retail.trade.checker.TradeChecker", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.deal.TradeDeal", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.bid.domain.TradeBidRecordModifier", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.retail.trade.module.session.TradeSessionCheckFunction", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "com.dr.oursp.retail.trade.player.Seller", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.competition.ResourceCallback", "com.dr.support.competition.ResourceCompetition", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.competition.exception.CallbackExecuteException", "com.dr.support.competition.exception.ReleaseLockException", "com.dr.support.trace.LogElapsedTime", "com.google.common.base.Throwables", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.data.redis.core.RedisTemplate", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "javax.validation.constraints.NotBlank", "java.io.IOException", "java.time.Instant", "java.util.*", "java.util.concurrent.atomic.AtomicReference", "java.util.function.BiPredicate", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.ModifierException", "com.dr.domain.selector.PageParam", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.app.service.competition.CommoditySupplyMultipleResourceCompetition", "com.dr.oursp.retail.app.service.competition.ResourceLocker", "com.dr.oursp.retail.app.service.event.commodity.CommodityEventDriver", "com.dr.oursp.retail.app.service.event.commodity.CommodityPutOnEvent", "com.dr.oursp.retail.app.service.event.commodity.CommodityTakeDownEvent", "com.dr.oursp.retail.app.service.event.commodity.supply.SupplyTakeDownEvent", "com.dr.oursp.retail.app.service.event.commodity.trade.CommodityBidDealEvent", "com.dr.oursp.retail.app.service.event.commodity.trade.CommodityBidRejectEvent", "com.dr.oursp.retail.app.service.event.commodity.trade.CommodityTradeDealEvent", "com.dr.oursp.retail.app.service.logical.commodity.coal.LogicStateMatcher", "com.dr.oursp.retail.app.service.order.CommodityTradeOrderService", "com.dr.oursp.retail.app.service.param.CommodityCommonModifyParam", "com.dr.oursp.retail.app.service.param.SupplyCommonModifyParam", "com.dr.oursp.retail.app.service.param.TradeConfirmBidParam", "com.dr.oursp.retail.app.service.param.TradeRejectBidParam", "com.dr.oursp.retail.app.service.trade.TradeService", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.coal.Commodity", "com.dr.oursp.retail.commodity.coal.behavior.CoalCommodityModifiableProperties", "com.dr.oursp.retail.commodity.coal.behavior.CoalCommodityModifiablePropertiesImpl", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityLogicStateEnum", "com.dr.oursp.retail.commodity.coal.consts.TradeCommodityPersistenceStateEnum", "com.dr.oursp.retail.commodity.coal.domain.AnySelector", "com.dr.oursp.retail.commodity.coal.domain.Creator", "com.dr.oursp.retail.commodity.coal.repository.TradeCommodityRepository", "com.dr.oursp.retail.commodity.coal.rule.CommodityRuleChecker", "com.dr.oursp.retail.commodity.coal.rule.CommodityRuleVo", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.behavior.CoalSupplyModifiableProperties", "com.dr.oursp.retail.commodity.supply.coal.behavior.CoalSupplyModifiablePropertiesImpl", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyLogicStateEnum", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.commodity.supply.coal.domain.*", "com.dr.oursp.retail.commodity.supply.coal.repository.SupplyRepository", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleVO", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "com.dr.oursp.retail.globe.lock.RedisLockConfig", "com.dr.oursp.retail.invoice.model.InvoiceContent", "com.dr.oursp.retail.invoice.order.consts.CommodityOrderStateEnum", "com.dr.oursp.retail.logistics.order.domain.ExecuteOrderVO", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.partner.domain.RepeatException", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountNotFoundException", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferRequestException", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferResponseException", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetailBuilder", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.reference.vo.TradeOrderRemoteVO", "com.dr.oursp.retail.quality.consts.QualityTypeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.consts.StatisticsConstant", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.Idempotent.RedisLocker", "com.dr.oursp.retail.support.Idempotent.ResourceCompetitionBuilder", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.TradeItemFactory", "com.dr.oursp.retail.trade.checker.CheckPredicate", "com.dr.oursp.retail.trade.checker.TradeChecker", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.deal.TradeDeal", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.bid.domain.TradeBidRecordModifier", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.retail.trade.module.session.TradeSessionCheckFunction", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "com.dr.oursp.retail.trade.player.Seller", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.competition.ResourceCallback", "com.dr.support.competition.ResourceCompetition", "com.dr.support.competition.exception.AcquireLockException", "com.dr.support.competition.exception.CallbackExecuteException", "com.dr.support.competition.exception.ReleaseLockException", "com.dr.support.trace.LogElapsedTime", "com.google.common.base.Throwables", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.data.redis.core.RedisTemplate", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "javax.validation.constraints.NotBlank", "java.io.IOException", "java.time.Instant", "java.util.*", "java.util.concurrent.atomic.AtomicReference", "java.util.function.BiPredicate", "java.util.stream.Collectors"],
     "class_name": "CommodityService",
     "extend_name": "",
     "implements_name": [],
@@ -1991,7 +1334,7 @@ var data = [{
     "name": "CommodityTradeOrderService",
     "package": "com.dr.oursp.retail.app.service.order",
     "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.consts.CommodityOrderStateEnum", "com.dr.oursp.retail.commodity.order.domain.CommodityOrder", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.commodity.order.repository.CommodityOrderRepository", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.trace.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "java.util.List", "java.util.Optional", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.invoice.order.CommodityOrder", "com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.invoice.order.consts.CommodityOrderStateEnum", "com.dr.oursp.retail.invoice.order.repository.CommodityOrderRepository", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.trace.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "java.util.List", "java.util.Optional", "java.util.stream.Collectors"],
     "class_name": "CommodityTradeOrderService",
     "extend_name": "",
     "implements_name": [],
@@ -2000,7 +1343,7 @@ var data = [{
     "name": "WaybillTradeOrderService",
     "package": "com.dr.oursp.retail.app.service.order",
     "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.retail.app.service.PlayerService", "com.dr.oursp.retail.app.service.trade.TradeService", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.logistics.waybill.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.waybill.order.domain.Waybill", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.order.repository.WaybillRepository", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetailBuilder", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.enums.KeyValueEnum", "com.dr.support.trace.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.UUID", "java.util.function.Predicate", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.retail.app.service.PlayerService", "com.dr.oursp.retail.app.service.trade.TradeService", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.invoice.order.Waybill", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.invoice.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.invoice.order.repository.WaybillRepository", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetailBuilder", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.statistical.consts.ResourceActionEnum", "com.dr.oursp.retail.statistical.consts.ResourceTypeEnum", "com.dr.oursp.retail.statistical.service.StatisticsService", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.enums.KeyValueEnum", "com.dr.support.trace.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.UUID", "java.util.function.Predicate", "java.util.stream.Collectors"],
     "class_name": "WaybillTradeOrderService",
     "extend_name": "",
     "implements_name": [],
@@ -2009,7 +1352,7 @@ var data = [{
     "name": "SquaringUpGoodsService",
     "package": "com.dr.oursp.retail.app.service.squaring",
     "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.retail.app.service.InvoiceService", "com.dr.oursp.retail.app.service.order.WaybillTradeOrderService", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.invoice.model.InvoiceContent", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.squaring.behavior.ApprovalData", "com.dr.oursp.retail.squaring.behavior.DataNexus", "com.dr.oursp.retail.squaring.goods.SquaringUpGoods", "com.dr.oursp.retail.squaring.goods.SquaringUpGoodsVo", "com.dr.oursp.retail.squaring.goods.domain.Creator", "com.dr.oursp.retail.squaring.goods.repository.SquaringUpGoodsRepository", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.oursp.third.squaring.remote.SquaringUpManager", "com.dr.oursp.third.squaring.remote.exception.SquaringException", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Maps", "lombok.Builder", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.List", "java.util.Map", "java.util.Optional", "java.util.UUID", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.retail.app.service.InvoiceService", "com.dr.oursp.retail.app.service.order.WaybillTradeOrderService", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.invoice.model.InvoiceContent", "com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.squaring.behavior.ApprovalData", "com.dr.oursp.retail.squaring.behavior.DataNexus", "com.dr.oursp.retail.squaring.goods.SquaringUpGoods", "com.dr.oursp.retail.squaring.goods.SquaringUpGoodsVo", "com.dr.oursp.retail.squaring.goods.domain.Creator", "com.dr.oursp.retail.squaring.goods.repository.SquaringUpGoodsRepository", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.oursp.third.squaring.remote.SquaringUpManager", "com.dr.oursp.third.squaring.remote.exception.SquaringException", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Maps", "lombok.Builder", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.List", "java.util.Map", "java.util.Optional", "java.util.UUID", "java.util.stream.Collectors"],
     "class_name": "SquaringUpGoodsService extends SquaringUpService",
     "extend_name": "SquaringUpService",
     "implements_name": [],
@@ -2018,7 +1361,7 @@ var data = [{
     "name": "SquaringUpWaybillService",
     "package": "com.dr.oursp.retail.app.service.squaring",
     "type": "class",
-    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.retail.app.service.InvoiceService", "com.dr.oursp.retail.app.service.order.WaybillTradeOrderService", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.invoice.model.InvoiceContent", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.logistics.waybill.order.domain.WaybillOrderVO", "com.dr.oursp.retail.squaring.behavior.ApprovalData", "com.dr.oursp.retail.squaring.behavior.DataNexus", "com.dr.oursp.retail.squaring.waybill.SquaringUpWaybill", "com.dr.oursp.retail.squaring.waybill.SquaringUpWaybillVo", "com.dr.oursp.retail.squaring.waybill.domain.Creator", "com.dr.oursp.retail.squaring.waybill.repository.SquaringUpWaybillRepository", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.oursp.third.squaring.remote.SquaringUpManager", "com.dr.oursp.third.squaring.remote.exception.SquaringException", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Maps", "lombok.Builder", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.List", "java.util.Map", "java.util.Optional", "java.util.UUID", "java.util.stream.Collectors"],
+    "imports": ["com.dr.domain.selector.PageParam", "com.dr.oursp.retail.app.service.InvoiceService", "com.dr.oursp.retail.app.service.order.WaybillTradeOrderService", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.invoice.model.InvoiceContent", "com.dr.oursp.retail.invoice.order.WaybillOrderVO", "com.dr.oursp.retail.logistics.waybill.execute.car.domain.CarWaybillVo", "com.dr.oursp.retail.squaring.behavior.ApprovalData", "com.dr.oursp.retail.squaring.behavior.DataNexus", "com.dr.oursp.retail.squaring.waybill.SquaringUpWaybill", "com.dr.oursp.retail.squaring.waybill.SquaringUpWaybillVo", "com.dr.oursp.retail.squaring.waybill.domain.Creator", "com.dr.oursp.retail.squaring.waybill.repository.SquaringUpWaybillRepository", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.oursp.third.squaring.remote.SquaringUpManager", "com.dr.oursp.third.squaring.remote.exception.SquaringException", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Maps", "lombok.Builder", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.List", "java.util.Map", "java.util.Optional", "java.util.UUID", "java.util.stream.Collectors"],
     "class_name": "SquaringUpWaybillService extends SquaringUpService",
     "extend_name": "SquaringUpService",
     "implements_name": [],
@@ -2036,7 +1379,7 @@ var data = [{
     "name": "TradeService",
     "package": "com.dr.oursp.retail.app.service.trade",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.order.repository.CommodityOrderRepository", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.trade.Trade", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.checker.TradeChecker", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.deal.TradeDeal", "com.dr.oursp.retail.trade.deal.TradeDealBuilder", "com.dr.oursp.retail.trade.module.bid.TradeBidRecord", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordBuilder", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.bid.domain.repository.TradeBidRecordRepository", "com.dr.oursp.retail.trade.module.margin.TradeMargin", "com.dr.oursp.retail.trade.module.margin.TradeMarginBuilder", "com.dr.oursp.retail.trade.module.margin.domain.TradeMarginRepository", "com.dr.oursp.retail.trade.module.prepare.TradeSignUpBuilder", "com.dr.oursp.retail.trade.module.prepare.domain.TradeSignUpRepository", "com.dr.oursp.retail.trade.module.session.TradeSession", "com.dr.oursp.retail.trade.module.session.TradeSessionBuilder", "com.dr.oursp.retail.trade.module.session.TradeSessionCheckFunction", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "com.dr.oursp.retail.trade.module.session.domain.repository.TradeSessionRepository", "com.dr.oursp.retail.trade.player.Buyer", "com.dr.oursp.retail.trade.player.BuyerBuilder", "com.dr.oursp.retail.trade.player.Seller", "com.dr.oursp.retail.trade.player.SellerBuilder", "com.dr.oursp.retail.trade.player.behavior.TradePrepare", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.enums.Enumerations", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Optional", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.invoice.order.repository.CommodityOrderRepository", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.trade.Trade", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.checker.TradeChecker", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.deal.TradeDeal", "com.dr.oursp.retail.trade.deal.TradeDealBuilder", "com.dr.oursp.retail.trade.module.bid.TradeBidRecord", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordBuilder", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.bid.domain.repository.TradeBidRecordRepository", "com.dr.oursp.retail.trade.module.margin.TradeMargin", "com.dr.oursp.retail.trade.module.margin.TradeMarginBuilder", "com.dr.oursp.retail.trade.module.margin.domain.TradeMarginRepository", "com.dr.oursp.retail.trade.module.prepare.TradeSignUpBuilder", "com.dr.oursp.retail.trade.module.prepare.domain.TradeSignUpRepository", "com.dr.oursp.retail.trade.module.session.TradeSession", "com.dr.oursp.retail.trade.module.session.TradeSessionBuilder", "com.dr.oursp.retail.trade.module.session.TradeSessionCheckFunction", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "com.dr.oursp.retail.trade.module.session.domain.repository.TradeSessionRepository", "com.dr.oursp.retail.trade.player.Buyer", "com.dr.oursp.retail.trade.player.BuyerBuilder", "com.dr.oursp.retail.trade.player.Seller", "com.dr.oursp.retail.trade.player.SellerBuilder", "com.dr.oursp.retail.trade.player.behavior.TradePrepare", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.enums.Enumerations", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Optional", "java.util.Set"],
     "class_name": "TradeService",
     "extend_name": "",
     "implements_name": [],
@@ -2072,7 +1415,7 @@ var data = [{
     "name": "LogisticsAddressCommonModifyAreaParam",
     "package": "com.dr.oursp.retail.app.service.param",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.logistics.address.entity.AddressArea", "io.swagger.annotations.ApiModelProperty", "lombok.Builder", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank", "javax.validation.constraints.Size"],
+    "imports": ["com.dr.oursp.retail.address.entity.AddressArea", "io.swagger.annotations.ApiModelProperty", "lombok.Builder", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank", "javax.validation.constraints.Size"],
     "class_name": "LogisticsAddressCommonModifyAreaParam",
     "extend_name": "",
     "implements_name": [],
@@ -2126,7 +1469,7 @@ var data = [{
     "name": "SupplyCommonModifyParam",
     "package": "com.dr.oursp.retail.app.service.param",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "lombok.Builder", "lombok.Data", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.consts.*", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "lombok.Builder", "lombok.Data", "java.util.Set"],
     "class_name": "SupplyCommonModifyParam",
     "extend_name": "",
     "implements_name": [],
@@ -2378,7 +1721,7 @@ var data = [{
     "name": "CommodityBidDealEventListener",
     "package": "com.dr.oursp.retail.app.service.event.commodity.trade",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.app.service.CommodityService", "com.dr.oursp.retail.app.service.InvoiceService", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.invoice.model.InvoiceContent", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.event.AbstractEventListener", "com.dr.oursp.retail.support.snapshot.Snapshot", "com.dr.oursp.retail.trade.consts.BidStateEnum", "com.dr.oursp.retail.trade.deal.TradeDeal", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "com.google.common.eventbus.Subscribe", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component", "javax.annotation.PostConstruct", "java.time.Instant"],
+    "imports": ["com.dr.oursp.retail.app.service.CommodityService", "com.dr.oursp.retail.app.service.InvoiceService", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.consts.BidStateEnum", "com.dr.oursp.retail.invoice.model.InvoiceContent", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.event.AbstractEventListener", "com.dr.oursp.retail.support.snapshot.Snapshot", "com.dr.oursp.retail.trade.deal.TradeDeal", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "com.google.common.eventbus.Subscribe", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component", "javax.annotation.PostConstruct", "java.time.Instant"],
     "class_name": "CommodityBidDealEventListener extends AbstractEventListener",
     "extend_name": "AbstractEventListener",
     "implements_name": [],
@@ -2495,7 +1838,7 @@ var data = [{
     "name": "PlanWaybillBidDealEventListener",
     "package": "com.dr.oursp.retail.app.service.event.logistics.waybill.trade",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.app.service.InvoiceService", "com.dr.oursp.retail.app.service.PlanWaybillService", "com.dr.oursp.retail.invoice.model.InvoiceContent", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.event.AbstractEventListener", "com.dr.oursp.retail.support.snapshot.Snapshot", "com.dr.oursp.retail.trade.consts.BidStateEnum", "com.dr.oursp.retail.trade.deal.TradeDeal", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.google.common.eventbus.Subscribe", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component", "javax.annotation.PostConstruct", "java.time.Instant"],
+    "imports": ["com.dr.oursp.retail.app.service.InvoiceService", "com.dr.oursp.retail.app.service.PlanWaybillService", "com.dr.oursp.retail.consts.BidStateEnum", "com.dr.oursp.retail.invoice.model.InvoiceContent", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.event.AbstractEventListener", "com.dr.oursp.retail.support.snapshot.Snapshot", "com.dr.oursp.retail.trade.deal.TradeDeal", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.google.common.eventbus.Subscribe", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component", "javax.annotation.PostConstruct", "java.time.Instant"],
     "class_name": "PlanWaybillBidDealEventListener extends AbstractEventListener",
     "extend_name": "AbstractEventListener",
     "implements_name": [],
@@ -3026,7 +2369,7 @@ var data = [{
     "name": "AbstractTradeDeal",
     "package": "com.dr.oursp.retail.trade.deal",
     "type": "abstract class",
-    "imports": ["com.dr.oursp.retail.trade.consts.BidStateEnum", "com.dr.oursp.retail.trade.module.bid.TradeBidRecord", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "lombok.AccessLevel", "lombok.Getter", "lombok.Setter", "java.util.List", "java.util.Objects", "java.util.function.Consumer"],
+    "imports": ["com.dr.oursp.retail.consts.BidStateEnum", "com.dr.oursp.retail.trade.module.bid.TradeBidRecord", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "lombok.AccessLevel", "lombok.Getter", "lombok.Setter", "java.util.List", "java.util.Objects", "java.util.function.Consumer"],
     "class_name": "AbstractTradeDeal implements TradeDeal",
     "extend_name": "",
     "implements_name": ["TradeDeal"],
@@ -3179,7 +2522,7 @@ var data = [{
     "name": "TradeBidRecord",
     "package": "com.dr.oursp.retail.trade.module.bid",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.consts.BidStateEnum", "com.dr.oursp.retail.trade.module.bid.domain.AnySelector", "com.dr.oursp.retail.trade.module.bid.domain.SingleSelector", "com.dr.oursp.retail.trade.module.bid.domain.entity.TradeBidRecordEntity", "com.dr.oursp.retail.trade.module.bid.domain.repository.TradeBidRecordRepository", "lombok.AccessLevel", "lombok.Setter", "lombok.ToString", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "java.util.Comparator", "java.util.List", "java.util.Optional", "java.util.function.Function", "java.util.stream.Collectors"],
+    "imports": ["com.dr.oursp.retail.consts.BidStateEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.module.bid.domain.AnySelector", "com.dr.oursp.retail.trade.module.bid.domain.SingleSelector", "com.dr.oursp.retail.trade.module.bid.domain.entity.TradeBidRecordEntity", "com.dr.oursp.retail.trade.module.bid.domain.repository.TradeBidRecordRepository", "lombok.AccessLevel", "lombok.Setter", "lombok.ToString", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "java.util.Comparator", "java.util.List", "java.util.Optional", "java.util.function.Function", "java.util.stream.Collectors"],
     "class_name": "TradeBidRecord",
     "extend_name": "",
     "implements_name": [],
@@ -3197,7 +2540,7 @@ var data = [{
     "name": "TradeBidRecordVo",
     "package": "com.dr.oursp.retail.trade.module.bid",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.trade.consts.BidRejectTypeEnum", "com.dr.oursp.retail.trade.consts.BidStateEnum", "com.dr.oursp.retail.trade.module.ITradeBidRecordDefinition", "com.dr.oursp.retail.trade.module.bid.domain.entity.TradeBidRecordEntity", "lombok.Builder", "lombok.Data", "javax.validation.Valid", "javax.validation.constraints.NotBlank"],
+    "imports": ["com.dr.oursp.retail.consts.BidStateEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.trade.consts.BidRejectTypeEnum", "com.dr.oursp.retail.trade.module.ITradeBidRecordDefinition", "com.dr.oursp.retail.trade.module.bid.domain.entity.TradeBidRecordEntity", "lombok.Builder", "lombok.Data", "javax.validation.Valid", "javax.validation.constraints.NotBlank"],
     "class_name": "TradeBidRecordVo implements ITradeBidRecordDefinition",
     "extend_name": "",
     "implements_name": ["ITradeBidRecordDefinition"],
@@ -3206,7 +2549,7 @@ var data = [{
     "name": "TradeBidRecordModifier",
     "package": "com.dr.oursp.retail.trade.module.bid.domain",
     "type": "class",
-    "imports": ["com.dr.domain.AbstractModifier", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.trade.checker.BidConfirmChecker", "com.dr.oursp.retail.trade.consts.BidRejectTypeEnum", "com.dr.oursp.retail.trade.consts.BidStateEnum", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.bid.domain.entity.TradeBidRecordEntity", "com.dr.oursp.retail.trade.module.bid.domain.repository.TradeBidRecordRepository", "org.apache.logging.log4j.util.Strings", "javax.validation.constraints.NotNull", "java.util.function.Supplier"],
+    "imports": ["com.dr.domain.AbstractModifier", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.consts.BidStateEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.trade.checker.BidConfirmChecker", "com.dr.oursp.retail.trade.consts.BidRejectTypeEnum", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.bid.domain.entity.TradeBidRecordEntity", "com.dr.oursp.retail.trade.module.bid.domain.repository.TradeBidRecordRepository", "org.apache.logging.log4j.util.Strings", "javax.validation.constraints.NotNull", "java.util.function.Supplier"],
     "class_name": "TradeBidRecordModifier extends AbstractModifier",
     "extend_name": "AbstractModifier",
     "implements_name": [],
@@ -3224,7 +2567,7 @@ var data = [{
     "name": "AnySelector",
     "package": "com.dr.oursp.retail.trade.module.bid.domain",
     "type": "class",
-    "imports": ["com.dr.domain.selector.AbstractSelector", "com.dr.oursp.retail.trade.consts.BidStateEnum", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.bid.domain.entity.TradeBidRecordEntity", "com.dr.oursp.retail.trade.module.bid.domain.repository.TradeBidRecordRepository", "java.util.Comparator", "java.util.List", "java.util.stream.Collectors", "java.util.stream.Stream"],
+    "imports": ["com.dr.domain.selector.AbstractSelector", "com.dr.oursp.retail.consts.BidStateEnum", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.bid.domain.entity.TradeBidRecordEntity", "com.dr.oursp.retail.trade.module.bid.domain.repository.TradeBidRecordRepository", "java.util.Comparator", "java.util.List", "java.util.stream.Collectors", "java.util.stream.Stream"],
     "class_name": "AnySelector extends AbstractSelector",
     "extend_name": "AbstractSelector",
     "implements_name": [],
@@ -3242,7 +2585,7 @@ var data = [{
     "name": "TradeBidRecordEntity",
     "package": "com.dr.oursp.retail.trade.module.bid.domain.entity",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.trade.consts.BidRejectTypeEnum", "com.dr.oursp.retail.trade.consts.BidStateEnum", "com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.Builder", "lombok.Data", "lombok.EqualsAndHashCode", "org.springframework.data.mongodb.core.mapping.Document", "javax.persistence.Id", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull"],
+    "imports": ["com.dr.oursp.retail.consts.BidStateEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.trade.consts.BidRejectTypeEnum", "com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.Builder", "lombok.Data", "lombok.EqualsAndHashCode", "org.springframework.data.mongodb.core.mapping.Document", "javax.persistence.Id", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull"],
     "class_name": "TradeBidRecordEntity extends BasicDocumentEntity",
     "extend_name": "BasicDocumentEntity",
     "implements_name": [],
@@ -3260,7 +2603,7 @@ var data = [{
     "name": "TradeMarginVO",
     "package": "com.dr.oursp.retail.trade.module.margin",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.TransferAmountTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.trade.consts.TradeMarginBidStateEnum", "com.dr.oursp.retail.trade.consts.TradeMarginStateEnum", "com.dr.oursp.retail.trade.module.margin.domain.TradeMarginEntity", "lombok.AccessLevel", "lombok.Builder", "lombok.Data"],
+    "imports": ["com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.TransferAmountTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.trade.consts.TradeMarginBidStateEnum", "com.dr.oursp.retail.trade.consts.TradeMarginStateEnum", "com.dr.oursp.retail.trade.module.margin.domain.TradeMarginEntity", "lombok.AccessLevel", "lombok.Builder", "lombok.Data"],
     "class_name": "TradeMarginVO",
     "extend_name": "",
     "implements_name": [],
@@ -3269,7 +2612,7 @@ var data = [{
     "name": "TradeMargin",
     "package": "com.dr.oursp.retail.trade.module.margin",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.TransferAmountTypeEnum", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetailBuilder", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetailByBidMargin", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.consts.TradeMarginBidStateEnum", "com.dr.oursp.retail.trade.consts.TradeMarginStateEnum", "com.dr.oursp.retail.trade.module.ITradeSessionDefinition", "com.dr.oursp.retail.trade.module.margin.domain.TradeMarginEntity", "com.dr.oursp.retail.trade.module.margin.domain.TradeMarginRepository", "com.dr.support.enums.Enumerations", "com.dr.support.hash.Hashing", "lombok.Builder", "lombok.Getter", "lombok.extern.slf4j.Slf4j", "org.springframework.util.Assert", "javax.validation.Valid", "javax.validation.constraints.NotNull", "javax.validation.constraints.Positive", "java.io.IOException", "java.nio.charset.StandardCharsets", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
+    "imports": ["com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.TransferAmountTypeEnum", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetailBuilder", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetailByBidMargin", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.consts.TradeMarginBidStateEnum", "com.dr.oursp.retail.trade.consts.TradeMarginStateEnum", "com.dr.oursp.retail.trade.module.ITradeSessionDefinition", "com.dr.oursp.retail.trade.module.margin.domain.TradeMarginEntity", "com.dr.oursp.retail.trade.module.margin.domain.TradeMarginRepository", "com.dr.support.enums.Enumerations", "com.dr.support.hash.Hashing", "lombok.Builder", "lombok.Getter", "lombok.extern.slf4j.Slf4j", "org.springframework.util.Assert", "javax.validation.Valid", "javax.validation.constraints.NotNull", "javax.validation.constraints.Positive", "java.io.IOException", "java.nio.charset.StandardCharsets", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
     "class_name": "TradeMargin",
     "extend_name": "",
     "implements_name": [],
@@ -3374,24 +2717,6 @@ var data = [{
     "implements_name": ["KeyValueEnum"],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/trade/consts/TradeMarginStateEnum.java"
 }, {
-    "name": "DeliveryMarginScopeEnum",
-    "package": "com.dr.oursp.retail.trade.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "DeliveryMarginScopeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/trade/consts/DeliveryMarginScopeEnum.java"
-}, {
-    "name": "DealModeEnum",
-    "package": "com.dr.oursp.retail.trade.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "DealModeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/trade/consts/DealModeEnum.java"
-}, {
     "name": "BidRejectTypeEnum",
     "package": "com.dr.oursp.retail.trade.consts",
     "type": "enum",
@@ -3400,15 +2725,6 @@ var data = [{
     "extend_name": "",
     "implements_name": ["KeyValueEnum"],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/trade/consts/BidRejectTypeEnum.java"
-}, {
-    "name": "BidStateEnum",
-    "package": "com.dr.oursp.retail.trade.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "BidStateEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/trade/consts/BidStateEnum.java"
 }, {
     "name": "TradeStateEnum",
     "package": "com.dr.oursp.retail.trade.consts",
@@ -3503,7 +2819,7 @@ var data = [{
     "name": "BidMargin",
     "package": "com.dr.oursp.retail.trade.player.behavior",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.trade.module.bid.TradeBidRecord", "com.dr.oursp.retail.trade.module.margin.TradeMargin", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.retail.trade.module.session.TradeSession", "lombok.Getter", "lombok.extern.slf4j.Slf4j", "java.io.IOException", "java.util.List", "java.util.Optional"],
+    "imports": ["com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.trade.module.bid.TradeBidRecord", "com.dr.oursp.retail.trade.module.margin.TradeMargin", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.retail.trade.module.session.TradeSession", "lombok.Getter", "lombok.extern.slf4j.Slf4j", "java.io.IOException", "java.util.List", "java.util.Optional"],
     "class_name": "BidMargin",
     "extend_name": "",
     "implements_name": [],
@@ -3530,7 +2846,7 @@ var data = [{
     "name": "Pay",
     "package": "com.dr.oursp.retail.trade.player.behavior",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.rule.CheckEvent", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.checker.BidChecker", "com.dr.oursp.retail.trade.checker.BidMarginChecker", "com.dr.oursp.retail.trade.checker.PayMarginChecker", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.consts.TradeMarginBidStateEnum", "com.dr.oursp.retail.trade.module.bid.TradeBidRecord", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMargin", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.retail.trade.module.margin.domain.TradeMarginEntity", "com.dr.oursp.retail.trade.module.session.TradeSession", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "lombok.Data", "lombok.Getter", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "javax.validation.constraints.NotNull", "javax.validation.constraints.Positive", "java.io.IOException", "java.util.List", "java.util.Optional", "java.util.function.BiPredicate", "java.util.function.Supplier", "java.util.stream.Collectors"],
+    "imports": ["com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "com.dr.oursp.retail.player.RetailPlayer", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.rule.CheckEvent", "com.dr.oursp.retail.trade.TradeItem", "com.dr.oursp.retail.trade.checker.BidChecker", "com.dr.oursp.retail.trade.checker.BidMarginChecker", "com.dr.oursp.retail.trade.checker.PayMarginChecker", "com.dr.oursp.retail.trade.consts.TradeCheckException", "com.dr.oursp.retail.trade.consts.TradeMarginBidStateEnum", "com.dr.oursp.retail.trade.module.bid.TradeBidRecord", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.retail.trade.module.margin.TradeMargin", "com.dr.oursp.retail.trade.module.margin.TradeMarginVO", "com.dr.oursp.retail.trade.module.margin.domain.TradeMarginEntity", "com.dr.oursp.retail.trade.module.session.TradeSession", "com.dr.oursp.retail.trade.module.session.TradeSessionVo", "lombok.Data", "lombok.Getter", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "javax.validation.constraints.NotNull", "javax.validation.constraints.Positive", "java.io.IOException", "java.util.List", "java.util.Optional", "java.util.function.BiPredicate", "java.util.function.Supplier", "java.util.stream.Collectors"],
     "class_name": "Pay",
     "extend_name": "",
     "implements_name": [],
@@ -3544,51 +2860,6 @@ var data = [{
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/trade/player/behavior/TradePrepare.java"
-}, {
-    "name": "CommodityOrderEntity",
-    "package": "com.dr.oursp.retail.commodity.order.repository",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.Data", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document"],
-    "class_name": "CommodityOrderEntity extends BasicDocumentEntity",
-    "extend_name": "BasicDocumentEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/commodity/order/repository/CommodityOrderEntity.java"
-}, {
-    "name": "CommodityOrderRepository",
-    "package": "com.dr.oursp.retail.commodity.order.repository",
-    "type": "interface",
-    "imports": ["org.springframework.data.mongodb.repository.MongoRepository", "java.util.Optional", "java.util.stream.Stream"],
-    "class_name": "CommodityOrderRepository extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/commodity/order/repository/CommodityOrderRepository.java"
-}, {
-    "name": "CommodityOrderVO",
-    "package": "com.dr.oursp.retail.commodity.order.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.consts.CommodityOrderStateEnum", "com.dr.oursp.retail.commodity.order.repository.CommodityOrderEntity", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.trade.consts.BidStateEnum", "lombok.AccessLevel", "lombok.Builder", "lombok.Data"],
-    "class_name": "CommodityOrderVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/commodity/order/domain/CommodityOrderVO.java"
-}, {
-    "name": "CommodityOrder",
-    "package": "com.dr.oursp.retail.commodity.order.domain",
-    "type": "class",
-    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractModifier", "com.dr.domain.AbstractSaver", "com.dr.domain.selector.AbstractSelector", "com.dr.domain.selector.AbstractSelectorBySingle", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.order.consts.CommodityOrderStateEnum", "com.dr.oursp.retail.commodity.order.repository.CommodityOrderEntity", "com.dr.oursp.retail.commodity.order.repository.CommodityOrderRepository", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.strategy.setting.PlatformSetting", "org.apache.logging.log4j.util.Strings", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Comparator", "java.util.function.Supplier", "java.util.stream.Stream"],
-    "class_name": "CommodityOrder",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/commodity/order/domain/CommodityOrder.java"
-}, {
-    "name": "CommodityOrderStateEnum",
-    "package": "com.dr.oursp.retail.commodity.order.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "CommodityOrderStateEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/commodity/order/consts/CommodityOrderStateEnum.java"
 }, {
     "name": "CoalSupplyBehaviorContext",
     "package": "com.dr.oursp.retail.commodity.supply.coal.behavior",
@@ -3611,7 +2882,7 @@ var data = [{
     "name": "CoalSupplyModifiableProperties",
     "package": "com.dr.oursp.retail.commodity.supply.coal.behavior",
     "type": "interface",
-    "imports": ["com.dr.domain.EntitySetterVisitor", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.supply.coal.entity.SupplyEntity", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "javax.validation.constraints.NotNull", "java.util.Set"],
+    "imports": ["com.dr.domain.EntitySetterVisitor", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.supply.coal.entity.SupplyEntity", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "javax.validation.constraints.NotNull", "java.util.Set"],
     "class_name": "CoalSupplyModifiableProperties",
     "extend_name": "",
     "implements_name": [],
@@ -3620,7 +2891,7 @@ var data = [{
     "name": "CoalSupplyModifiablePropertiesImpl",
     "package": "com.dr.oursp.retail.commodity.supply.coal.behavior",
     "type": "class",
-    "imports": ["cn.hutool.core.lang.Assert", "com.dr.domain.EntitySetterVisitor", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.supply.coal.entity.SupplyEntity", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.springframework.util.CollectionUtils", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Set", "java.util.function.Consumer"],
+    "imports": ["cn.hutool.core.lang.Assert", "com.dr.domain.EntitySetterVisitor", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.supply.coal.entity.SupplyEntity", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.springframework.util.CollectionUtils", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Set", "java.util.function.Consumer"],
     "class_name": "CoalSupplyModifiablePropertiesImpl implements CoalSupplyModifiableProperties",
     "extend_name": "",
     "implements_name": ["CoalSupplyModifiableProperties"],
@@ -3656,7 +2927,7 @@ var data = [{
     "name": "SupplyEntity",
     "package": "com.dr.oursp.retail.commodity.supply.coal.entity",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "com.google.common.collect.Sets", "lombok.Data", "lombok.ToString", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "com.google.common.collect.Sets", "lombok.Data", "lombok.ToString", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document", "java.util.Set"],
     "class_name": "SupplyEntity extends BasicDocumentEntity",
     "extend_name": "BasicDocumentEntity",
     "implements_name": [],
@@ -3701,7 +2972,7 @@ var data = [{
     "name": "SupplyRuleVO",
     "package": "com.dr.oursp.retail.commodity.supply.coal.rule",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.supply.coal.entity.TradeRule", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "lombok.Builder", "lombok.Setter", "lombok.experimental.Accessors", "java.util.Set", "java.util.stream.Collectors"],
+    "imports": ["com.dr.oursp.retail.commodity.supply.coal.entity.TradeRule", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "lombok.Builder", "lombok.Setter", "lombok.experimental.Accessors", "java.util.Set", "java.util.stream.Collectors"],
     "class_name": "SupplyRuleVO implements SupplyRuleDefinition",
     "extend_name": "",
     "implements_name": ["SupplyRuleDefinition"],
@@ -3719,7 +2990,7 @@ var data = [{
     "name": "SupplyRuleChecker",
     "package": "com.dr.oursp.retail.commodity.supply.coal.rule",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.rule.AbstractNullChecker", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.google.common.collect.Sets", "org.apache.logging.log4j.util.Strings", "java.util.Objects", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.rule.AbstractNullChecker", "com.google.common.collect.Sets", "org.apache.logging.log4j.util.Strings", "java.util.Objects", "java.util.Set"],
     "class_name": "SupplyRuleChecker extends AbstractNullChecker implements SupplyRuleDefinition",
     "extend_name": "AbstractNullChecker",
     "implements_name": [],
@@ -3728,7 +2999,7 @@ var data = [{
     "name": "SupplyRuleDefinition",
     "package": "com.dr.oursp.retail.commodity.supply.coal.rule",
     "type": "interface",
-    "imports": ["com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "java.util.Set"],
     "class_name": "SupplyRuleDefinition",
     "extend_name": "",
     "implements_name": [],
@@ -3746,7 +3017,7 @@ var data = [{
     "name": "SupplyModifier",
     "package": "com.dr.oursp.retail.commodity.supply.coal.domain",
     "type": "class",
-    "imports": ["com.dr.domain.AbstractModifier", "com.dr.domain.AbstractSaver", "com.dr.domain.EntitySetterVisitor", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.supply.coal.behavior.BasicCoalSupplyBehavior", "com.dr.oursp.retail.commodity.supply.coal.behavior.CoalSupplyBehavior", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.commodity.supply.coal.entity.SupplyEntity", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleChecker", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleVO", "com.dr.oursp.retail.commodity.supply.coal.state.CoalSupplyBehaviorState", "com.dr.oursp.retail.commodity.supply.coal.state.CoalSupplyDraftState", "com.dr.oursp.retail.commodity.supply.coal.state.CoalSupplyReleaseState", "com.dr.oursp.retail.commodity.supply.coal.state.CoalSupplyUnReleaseState", "com.dr.oursp.retail.consts.DisplayScope", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.enums.Enumerations", "com.dr.support.enums.KeyValueEnum", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.springframework.data.repository.CrudRepository", "org.springframework.util.CollectionUtils", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.function.Consumer", "java.util.function.Supplier"],
+    "imports": ["com.dr.domain.AbstractModifier", "com.dr.domain.AbstractSaver", "com.dr.domain.EntitySetterVisitor", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.supply.coal.behavior.BasicCoalSupplyBehavior", "com.dr.oursp.retail.commodity.supply.coal.behavior.CoalSupplyBehavior", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.commodity.supply.coal.entity.SupplyEntity", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleChecker", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleVO", "com.dr.oursp.retail.commodity.supply.coal.state.CoalSupplyBehaviorState", "com.dr.oursp.retail.commodity.supply.coal.state.CoalSupplyDraftState", "com.dr.oursp.retail.commodity.supply.coal.state.CoalSupplyReleaseState", "com.dr.oursp.retail.commodity.supply.coal.state.CoalSupplyUnReleaseState", "com.dr.oursp.retail.consts.DisplayScope", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.enums.Enumerations", "com.dr.support.enums.KeyValueEnum", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.springframework.data.repository.CrudRepository", "org.springframework.util.CollectionUtils", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.function.Consumer", "java.util.function.Supplier"],
     "class_name": "SupplyModifier extends AbstractModifier",
     "extend_name": "AbstractModifier",
     "implements_name": [],
@@ -3755,7 +3026,7 @@ var data = [{
     "name": "SupplyCreator",
     "package": "com.dr.oursp.retail.commodity.supply.coal.domain",
     "type": "class",
-    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.category.consts.CategoryStateEnum", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyUnitEnum", "com.dr.oursp.retail.commodity.supply.coal.entity.SupplyEntity", "com.dr.oursp.retail.commodity.supply.coal.repository.SupplyRepository", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleChecker", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleVO", "com.dr.oursp.retail.consts.DisplayScope", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "com.dr.support.enums.KeyValueEnum", "com.google.common.collect.Sets", "org.springframework.util.CollectionUtils", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "javax.validation.constraints.Size", "java.time.Instant", "java.util.Objects", "java.util.Set"],
+    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.category.consts.CategoryStateEnum", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyUnitEnum", "com.dr.oursp.retail.commodity.supply.coal.entity.SupplyEntity", "com.dr.oursp.retail.commodity.supply.coal.repository.SupplyRepository", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleChecker", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleVO", "com.dr.oursp.retail.consts.DisplayScope", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "com.dr.support.enums.KeyValueEnum", "com.google.common.collect.Sets", "org.springframework.util.CollectionUtils", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "javax.validation.constraints.Size", "java.time.Instant", "java.util.Objects", "java.util.Set"],
     "class_name": "SupplyCreator extends AbstractCreator",
     "extend_name": "AbstractCreator",
     "implements_name": [],
@@ -3782,7 +3053,7 @@ var data = [{
     "name": "SupplyVO",
     "package": "com.dr.oursp.retail.commodity.supply.coal.domain",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyUnitEnum", "com.dr.oursp.retail.commodity.supply.coal.entity.SupplyEntity", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.snapshot.Snapshot", "io.swagger.annotations.ApiModelProperty", "lombok.AllArgsConstructor", "lombok.Builder", "lombok.Data", "lombok.NoArgsConstructor", "lombok.experimental.Accessors", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.category.domain.CategoryOptionVO", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyStateEnum", "com.dr.oursp.retail.commodity.supply.coal.consts.SupplyUnitEnum", "com.dr.oursp.retail.commodity.supply.coal.entity.SupplyEntity", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.quality.domain.QualityReportVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.snapshot.Snapshot", "io.swagger.annotations.ApiModelProperty", "lombok.AllArgsConstructor", "lombok.Builder", "lombok.Data", "lombok.NoArgsConstructor", "lombok.experimental.Accessors", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.Set"],
     "class_name": "SupplyVO implements Snapshot",
     "extend_name": "",
     "implements_name": ["Snapshot"],
@@ -3953,7 +3224,7 @@ var data = [{
     "name": "CommodityRuleDefinition",
     "package": "com.dr.oursp.retail.commodity.coal.rule",
     "type": "interface",
-    "imports": ["com.dr.oursp.retail.consts.CheckException", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.consts.TradeRuleDefinition", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.consts.*", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "java.util.Set"],
     "class_name": "CommodityRuleDefinition extends TradeRuleDefinition",
     "extend_name": "TradeRuleDefinition",
     "implements_name": [],
@@ -3962,7 +3233,7 @@ var data = [{
     "name": "CommodityRuleVo",
     "package": "com.dr.oursp.retail.commodity.coal.rule",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "lombok.*", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.consts.*", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "lombok.*", "java.util.Set"],
     "class_name": "CommodityRuleVo implements CommodityRuleDefinition",
     "extend_name": "",
     "implements_name": ["CommodityRuleDefinition"],
@@ -3971,7 +3242,7 @@ var data = [{
     "name": "CommodityRuleChecker",
     "package": "com.dr.oursp.retail.commodity.coal.rule",
     "type": "class",
-    "imports": ["cn.hutool.core.lang.Assert", "com.dr.oursp.retail.commodity.coal.entity.CommodityEntity", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleDefinition", "com.dr.oursp.retail.consts.CheckException", "com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.rule.AbstractNullChecker", "com.dr.oursp.retail.support.rule.CheckEvent", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.google.common.collect.Range", "java.time.Instant", "java.util.Objects", "java.util.Set", "java.util.function.Predicate", "java.util.function.Supplier"],
+    "imports": ["cn.hutool.core.lang.Assert", "com.dr.oursp.retail.commodity.coal.entity.CommodityEntity", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.commodity.supply.coal.rule.SupplyRuleDefinition", "com.dr.oursp.retail.consts.*", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.rule.AbstractNullChecker", "com.dr.oursp.retail.support.rule.CheckEvent", "com.google.common.collect.Range", "java.time.Instant", "java.util.Objects", "java.util.Set", "java.util.function.Predicate", "java.util.function.Supplier"],
     "class_name": "CommodityRuleChecker",
     "extend_name": "",
     "implements_name": [],
@@ -3980,7 +3251,7 @@ var data = [{
     "name": "CommodityRuleBuilder",
     "package": "com.dr.oursp.retail.commodity.coal.rule",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.consts.MarginPaymentTypeEnum", "com.dr.oursp.retail.consts.TradeModeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "lombok.Getter", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.consts.*", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "lombok.Getter", "java.util.Set"],
     "class_name": "CommodityRuleBuilder implements CommodityRuleDefinition",
     "extend_name": "",
     "implements_name": ["CommodityRuleDefinition"],
@@ -4169,7 +3440,7 @@ var data = [{
     "name": "Creator",
     "package": "com.dr.oursp.retail.partner.domain",
     "type": "class",
-    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.category.consts.OptionsStateEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.entity.PartnerEntity", "com.dr.oursp.retail.partner.repository.PartnerRepository", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.enums.Enumerations", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.util.Assert", "javax.validation.constraints.NotNull", "java.util.Objects"],
+    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.entity.PartnerEntity", "com.dr.oursp.retail.partner.repository.PartnerRepository", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.enums.Enumerations", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.util.Assert", "javax.validation.constraints.NotNull", "java.util.Objects"],
     "class_name": "Creator extends AbstractCreator",
     "extend_name": "AbstractCreator",
     "implements_name": [],
@@ -4355,6 +3626,87 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/support/event/EventListener.java"
 }, {
+    "name": "AddressRepository",
+    "package": "com.dr.oursp.retail.address.repository",
+    "type": "interface",
+    "imports": ["com.dr.oursp.retail.address.entity.AddressEntity", "org.springframework.data.mongodb.repository.MongoRepository", "java.util.stream.Stream"],
+    "class_name": "AddressRepository extends MongoRepository",
+    "extend_name": "MongoRepository",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/address/repository/AddressRepository.java"
+}, {
+    "name": "AddressEntity",
+    "package": "com.dr.oursp.retail.address.entity",
+    "type": "class",
+    "imports": ["com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "com.google.common.collect.Lists", "lombok.Data", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document", "javax.validation.constraints.Size", "java.util.List"],
+    "class_name": "AddressEntity extends BasicDocumentEntity",
+    "extend_name": "BasicDocumentEntity",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/address/entity/AddressEntity.java"
+}, {
+    "name": "AddressArea",
+    "package": "com.dr.oursp.retail.address.entity",
+    "type": "class",
+    "imports": ["com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "org.springframework.data.mongodb.core.mapping.Document", "javax.validation.constraints.NotBlank", "javax.validation.constraints.Size"],
+    "class_name": "AddressArea extends BasicDocumentEntity",
+    "extend_name": "BasicDocumentEntity",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/address/entity/AddressArea.java"
+}, {
+    "name": "Modifier",
+    "package": "com.dr.oursp.retail.address.domain",
+    "type": "class",
+    "imports": ["com.dr.domain.AbstractModifier", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.address.entity.AddressArea", "com.dr.oursp.retail.address.entity.AddressEntity", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "org.apache.logging.log4j.util.Strings", "javax.validation.Valid", "javax.validation.constraints.Max", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank", "javax.validation.constraints.Size", "java.util.List", "java.util.Objects", "java.util.function.Supplier"],
+    "class_name": "Modifier extends AbstractModifier",
+    "extend_name": "AbstractModifier",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/address/domain/Modifier.java"
+}, {
+    "name": "Address",
+    "package": "com.dr.oursp.retail.address.domain",
+    "type": "class",
+    "imports": ["com.dr.oursp.retail.address.repository.AddressRepository", "lombok.extern.slf4j.Slf4j", "javax.validation.constraints.NotBlank"],
+    "class_name": "Address",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/address/domain/Address.java"
+}, {
+    "name": "SelectorSingle",
+    "package": "com.dr.oursp.retail.address.domain",
+    "type": "class",
+    "imports": ["com.dr.domain.AbstractSaver", "com.dr.domain.selector.AbstractSelectorBySingle", "com.dr.oursp.retail.address.entity.AddressEntity", "com.dr.oursp.retail.address.repository.AddressRepository", "javax.validation.constraints.NotBlank"],
+    "class_name": "SelectorSingle extends AbstractSelectorBySingle",
+    "extend_name": "AbstractSelectorBySingle",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/address/domain/SelectorSingle.java"
+}, {
+    "name": "Selector",
+    "package": "com.dr.oursp.retail.address.domain",
+    "type": "class",
+    "imports": ["com.dr.domain.selector.AbstractSelector", "com.dr.oursp.retail.address.entity.AddressEntity", "com.dr.oursp.retail.address.repository.AddressRepository", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "org.apache.logging.log4j.util.Strings", "javax.validation.constraints.NotBlank", "java.util.Comparator", "java.util.Objects", "java.util.stream.Stream"],
+    "class_name": "Selector extends AbstractSelector",
+    "extend_name": "AbstractSelector",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/address/domain/Selector.java"
+}, {
+    "name": "AddressVO",
+    "package": "com.dr.oursp.retail.address.domain",
+    "type": "class",
+    "imports": ["com.dr.oursp.retail.address.entity.AddressArea", "com.dr.oursp.retail.address.entity.AddressEntity", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.google.common.collect.Lists", "io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.experimental.Accessors", "java.util.List"],
+    "class_name": "AddressVO",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/address/domain/AddressVO.java"
+}, {
+    "name": "Creator",
+    "package": "com.dr.oursp.retail.address.domain",
+    "type": "class",
+    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.address.entity.AddressArea", "com.dr.oursp.retail.address.entity.AddressEntity", "com.dr.oursp.retail.address.repository.AddressRepository", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.token.Current", "org.apache.logging.log4j.util.Strings", "javax.validation.Valid", "javax.validation.constraints.Max", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank", "javax.validation.constraints.Size", "java.util.List", "java.util.Objects"],
+    "class_name": "Creator extends AbstractCreator",
+    "extend_name": "AbstractCreator",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/address/domain/Creator.java"
+}, {
     "name": "StatisticsTotalVo",
     "package": "com.dr.oursp.retail.statistical.vo",
     "type": "class",
@@ -4439,7 +3791,7 @@ var data = [{
     "name": "RejectProperties",
     "package": "com.dr.oursp.retail.logistics.order.behavior.modify",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.logistics.order.entity.ExecuteOrderEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.logistics.order.entity.ExecuteOrderEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "java.util.Set"],
     "class_name": "RejectProperties implements ExecuteOrderModifiableProperties",
     "extend_name": "",
     "implements_name": ["ExecuteOrderModifiableProperties"],
@@ -4448,7 +3800,7 @@ var data = [{
     "name": "AdjustmentProperties",
     "package": "com.dr.oursp.retail.logistics.order.behavior.modify",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.logistics.order.entity.ExecuteOrderEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.logistics.order.entity.ExecuteOrderEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "java.util.Set"],
     "class_name": "AdjustmentProperties implements ExecuteOrderModifiableProperties",
     "extend_name": "",
     "implements_name": ["ExecuteOrderModifiableProperties"],
@@ -4457,7 +3809,7 @@ var data = [{
     "name": "ExecuteOrderModifiableProperties",
     "package": "com.dr.oursp.retail.logistics.order.behavior.modify",
     "type": "interface",
-    "imports": ["com.dr.oursp.retail.logistics.order.entity.ExecuteOrderEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.logistics.order.entity.ExecuteOrderEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "java.util.Set"],
     "class_name": "ExecuteOrderModifiableProperties",
     "extend_name": "",
     "implements_name": [],
@@ -4466,7 +3818,7 @@ var data = [{
     "name": "ExecuteOrderProcessPropertiesImplement",
     "package": "com.dr.oursp.retail.logistics.order.behavior.modify",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.logistics.order.consts.ExecuteOrderApprovalActionEnum", "com.dr.oursp.retail.logistics.order.entity.ExecuteOrderEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "lombok.extern.slf4j.Slf4j", "javax.validation.Valid", "java.util.Set", "java.util.function.Consumer"],
+    "imports": ["com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderApprovalActionEnum", "com.dr.oursp.retail.logistics.order.entity.ExecuteOrderEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "lombok.extern.slf4j.Slf4j", "javax.validation.Valid", "java.util.Set", "java.util.function.Consumer"],
     "class_name": "ExecuteOrderProcessPropertiesImplement implements ExecuteOrderModifiableProperties",
     "extend_name": "",
     "implements_name": ["ExecuteOrderModifiableProperties"],
@@ -4475,7 +3827,7 @@ var data = [{
     "name": "ConfirmProperties",
     "package": "com.dr.oursp.retail.logistics.order.behavior.modify",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.logistics.order.entity.ExecuteOrderEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.logistics.order.entity.ExecuteOrderEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "java.util.Set"],
     "class_name": "ConfirmProperties implements ExecuteOrderModifiableProperties",
     "extend_name": "",
     "implements_name": ["ExecuteOrderModifiableProperties"],
@@ -4502,7 +3854,7 @@ var data = [{
     "name": "ExecuteOrderEntity",
     "package": "com.dr.oursp.retail.logistics.order.entity",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderCountersignEnum", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderStateEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.AllArgsConstructor", "lombok.Data", "lombok.experimental.Accessors", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document", "java.util.EnumSet"],
+    "imports": ["com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderCountersignEnum", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderStateEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.AllArgsConstructor", "lombok.Data", "lombok.experimental.Accessors", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document", "java.util.EnumSet"],
     "class_name": "ExecuteOrderEntity extends BasicDocumentEntity",
     "extend_name": "BasicDocumentEntity",
     "implements_name": [],
@@ -4511,7 +3863,7 @@ var data = [{
     "name": "ExecuteOrderRule",
     "package": "com.dr.oursp.retail.logistics.order.entity",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "com.google.common.collect.Sets", "lombok.Data", "lombok.experimental.Accessors", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.google.common.collect.Sets", "lombok.Data", "lombok.experimental.Accessors", "java.util.Set"],
     "class_name": "ExecuteOrderRule",
     "extend_name": "",
     "implements_name": [],
@@ -4610,7 +3962,7 @@ var data = [{
     "name": "ExecuteOrder",
     "package": "com.dr.oursp.retail.logistics.order.domain",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.logistics.order.repository.ExecuteOrderRepository", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull"],
+    "imports": ["com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.logistics.order.repository.ExecuteOrderRepository", "com.dr.oursp.retail.support.snapshot.SnapshotManager", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull"],
     "class_name": "ExecuteOrder",
     "extend_name": "",
     "implements_name": [],
@@ -4619,7 +3971,7 @@ var data = [{
     "name": "ExecuteOrderVO",
     "package": "com.dr.oursp.retail.logistics.order.domain",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderStateEnum", "com.dr.oursp.retail.logistics.order.domain.countersign.ExecuteOrderCountersignVO", "com.dr.oursp.retail.logistics.order.domain.rule.ExecuteOrderRuleVO", "com.dr.oursp.retail.logistics.order.entity.ExecuteOrderEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.snapshot.Snapshot", "lombok.AllArgsConstructor", "lombok.Builder", "lombok.Data", "lombok.NoArgsConstructor", "org.springframework.data.annotation.Id", "javax.validation.Valid", "javax.validation.constraints.NotNull"],
+    "imports": ["com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderStateEnum", "com.dr.oursp.retail.logistics.order.domain.countersign.ExecuteOrderCountersignVO", "com.dr.oursp.retail.logistics.order.domain.rule.ExecuteOrderRuleVO", "com.dr.oursp.retail.logistics.order.entity.ExecuteOrderEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.snapshot.Snapshot", "lombok.AllArgsConstructor", "lombok.Builder", "lombok.Data", "lombok.NoArgsConstructor", "org.springframework.data.annotation.Id", "javax.validation.Valid", "javax.validation.constraints.NotNull"],
     "class_name": "ExecuteOrderVO implements Snapshot",
     "extend_name": "",
     "implements_name": ["Snapshot"],
@@ -4637,7 +3989,7 @@ var data = [{
     "name": "Creator",
     "package": "com.dr.oursp.retail.logistics.order.domain",
     "type": "class",
-    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.category.consts.CategoryStateEnum", "com.dr.oursp.retail.commodity.order.domain.CommodityOrderVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderStateEnum", "com.dr.oursp.retail.logistics.order.domain.rule.ExecuteOrderRuleVO", "com.dr.oursp.retail.logistics.order.entity.ExecuteOrderCountersign", "com.dr.oursp.retail.logistics.order.entity.ExecuteOrderEntity", "com.dr.oursp.retail.logistics.order.repository.ExecuteOrderRepository", "com.dr.oursp.retail.support.EnumWrapper", "lombok.extern.slf4j.Slf4j", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull"],
+    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.invoice.order.CommodityOrderVO", "com.dr.oursp.retail.logistics.order.consts.ExecuteOrderStateEnum", "com.dr.oursp.retail.logistics.order.domain.rule.ExecuteOrderRuleVO", "com.dr.oursp.retail.logistics.order.entity.ExecuteOrderCountersign", "com.dr.oursp.retail.logistics.order.entity.ExecuteOrderEntity", "com.dr.oursp.retail.logistics.order.repository.ExecuteOrderRepository", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "lombok.extern.slf4j.Slf4j", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull"],
     "class_name": "Creator extends AbstractCreator",
     "extend_name": "AbstractCreator",
     "implements_name": [],
@@ -4646,7 +3998,7 @@ var data = [{
     "name": "ExecuteOrderRuleVO",
     "package": "com.dr.oursp.retail.logistics.order.domain.rule",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.logistics.order.entity.ExecuteOrderRule", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "lombok.Builder", "lombok.Setter", "lombok.experimental.Accessors", "java.util.Set", "java.util.stream.Collectors"],
+    "imports": ["com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.logistics.order.entity.ExecuteOrderRule", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "lombok.Builder", "lombok.Setter", "lombok.experimental.Accessors", "java.util.Set", "java.util.stream.Collectors"],
     "class_name": "ExecuteOrderRuleVO implements ExecuteOrderRuleDefinition",
     "extend_name": "",
     "implements_name": ["ExecuteOrderRuleDefinition"],
@@ -4655,7 +4007,7 @@ var data = [{
     "name": "ExecuteOrderRuleDefinition",
     "package": "com.dr.oursp.retail.logistics.order.domain.rule",
     "type": "interface",
-    "imports": ["com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.consts.DeliveryMarginScopeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "java.util.Set"],
     "class_name": "ExecuteOrderRuleDefinition",
     "extend_name": "",
     "implements_name": [],
@@ -4967,141 +4319,6 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/area/AreaRepository.java"
 }, {
-    "name": "AddressRepository",
-    "package": "com.dr.oursp.retail.logistics.address.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.retail.logistics.address.entity.AddressEntity", "org.springframework.data.mongodb.repository.MongoRepository", "java.util.stream.Stream"],
-    "class_name": "AddressRepository extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/address/repository/AddressRepository.java"
-}, {
-    "name": "AddressEntity",
-    "package": "com.dr.oursp.retail.logistics.address.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "com.google.common.collect.Lists", "lombok.Data", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document", "javax.validation.constraints.Size", "java.util.List"],
-    "class_name": "AddressEntity extends BasicDocumentEntity",
-    "extend_name": "BasicDocumentEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/address/entity/AddressEntity.java"
-}, {
-    "name": "AddressArea",
-    "package": "com.dr.oursp.retail.logistics.address.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "org.springframework.data.mongodb.core.mapping.Document", "javax.validation.constraints.NotBlank", "javax.validation.constraints.Size"],
-    "class_name": "AddressArea extends BasicDocumentEntity",
-    "extend_name": "BasicDocumentEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/address/entity/AddressArea.java"
-}, {
-    "name": "Modifier",
-    "package": "com.dr.oursp.retail.logistics.address.domain",
-    "type": "class",
-    "imports": ["com.dr.domain.AbstractModifier", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.logistics.address.entity.AddressArea", "com.dr.oursp.retail.logistics.address.entity.AddressEntity", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "org.apache.logging.log4j.util.Strings", "javax.validation.Valid", "javax.validation.constraints.Max", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank", "javax.validation.constraints.Size", "java.util.List", "java.util.Objects", "java.util.function.Supplier"],
-    "class_name": "Modifier extends AbstractModifier",
-    "extend_name": "AbstractModifier",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/address/domain/Modifier.java"
-}, {
-    "name": "Address",
-    "package": "com.dr.oursp.retail.logistics.address.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.logistics.address.repository.AddressRepository", "lombok.extern.slf4j.Slf4j", "javax.validation.constraints.NotBlank"],
-    "class_name": "Address",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/address/domain/Address.java"
-}, {
-    "name": "SelectorSingle",
-    "package": "com.dr.oursp.retail.logistics.address.domain",
-    "type": "class",
-    "imports": ["com.dr.domain.AbstractSaver", "com.dr.domain.selector.AbstractSelectorBySingle", "com.dr.oursp.retail.logistics.address.entity.AddressEntity", "com.dr.oursp.retail.logistics.address.repository.AddressRepository", "javax.validation.constraints.NotBlank"],
-    "class_name": "SelectorSingle extends AbstractSelectorBySingle",
-    "extend_name": "AbstractSelectorBySingle",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/address/domain/SelectorSingle.java"
-}, {
-    "name": "Selector",
-    "package": "com.dr.oursp.retail.logistics.address.domain",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.AbstractSelector", "com.dr.oursp.retail.logistics.address.entity.AddressEntity", "com.dr.oursp.retail.logistics.address.repository.AddressRepository", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "org.apache.logging.log4j.util.Strings", "javax.validation.constraints.NotBlank", "java.util.Comparator", "java.util.Objects", "java.util.stream.Stream"],
-    "class_name": "Selector extends AbstractSelector",
-    "extend_name": "AbstractSelector",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/address/domain/Selector.java"
-}, {
-    "name": "AddressVO",
-    "package": "com.dr.oursp.retail.logistics.address.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.logistics.address.entity.AddressArea", "com.dr.oursp.retail.logistics.address.entity.AddressEntity", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.google.common.collect.Lists", "io.swagger.annotations.ApiModelProperty", "lombok.Getter", "lombok.experimental.Accessors", "java.util.List"],
-    "class_name": "AddressVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/address/domain/AddressVO.java"
-}, {
-    "name": "Creator",
-    "package": "com.dr.oursp.retail.logistics.address.domain",
-    "type": "class",
-    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.category.consts.CategoryStateEnum", "com.dr.oursp.retail.logistics.address.entity.AddressArea", "com.dr.oursp.retail.logistics.address.entity.AddressEntity", "com.dr.oursp.retail.logistics.address.repository.AddressRepository", "com.dr.oursp.strategy.basic.token.Current", "org.apache.logging.log4j.util.Strings", "javax.validation.Valid", "javax.validation.constraints.Max", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank", "javax.validation.constraints.Size", "java.util.List", "java.util.Objects"],
-    "class_name": "Creator extends AbstractCreator",
-    "extend_name": "AbstractCreator",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/address/domain/Creator.java"
-}, {
-    "name": "WaybillRepository",
-    "package": "com.dr.oursp.retail.logistics.waybill.order.repository",
-    "type": "interface",
-    "imports": ["org.springframework.data.mongodb.repository.MongoRepository", "java.util.Optional", "java.util.stream.Stream"],
-    "class_name": "WaybillRepository extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/waybill/order/repository/WaybillRepository.java"
-}, {
-    "name": "WaybillEntity",
-    "package": "com.dr.oursp.retail.logistics.waybill.order.repository",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.AllArgsConstructor", "lombok.Data", "org.apache.logging.log4j.util.Strings", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document"],
-    "class_name": "WaybillEntity extends BasicDocumentEntity",
-    "extend_name": "BasicDocumentEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/waybill/order/repository/WaybillEntity.java"
-}, {
-    "name": "OrderRemark",
-    "package": "com.dr.oursp.retail.logistics.waybill.order.repository",
-    "type": "class",
-    "imports": ["lombok.AccessLevel", "lombok.Builder", "lombok.Data", "java.time.Instant"],
-    "class_name": "OrderRemark",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/waybill/order/repository/OrderRemark.java"
-}, {
-    "name": "WaybillOrderVO",
-    "package": "com.dr.oursp.retail.logistics.waybill.order.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.waybill.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.waybill.order.repository.OrderRemark", "com.dr.oursp.retail.logistics.waybill.order.repository.WaybillEntity", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "lombok.Builder", "lombok.Data"],
-    "class_name": "WaybillOrderVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/waybill/order/domain/WaybillOrderVO.java"
-}, {
-    "name": "Waybill",
-    "package": "com.dr.oursp.retail.logistics.waybill.order.domain",
-    "type": "class",
-    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractModifier", "com.dr.domain.AbstractSaver", "com.dr.domain.selector.AbstractSelector", "com.dr.domain.selector.AbstractSelectorBySingle", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.logistics.waybill.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.logistics.waybill.order.repository.OrderRemark", "com.dr.oursp.retail.logistics.waybill.order.repository.WaybillEntity", "com.dr.oursp.retail.logistics.waybill.order.repository.WaybillRepository", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.strategy.setting.PlatformSetting", "org.apache.logging.log4j.util.Strings", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Comparator", "java.util.Objects", "java.util.function.Predicate", "java.util.function.Supplier", "java.util.stream.Stream"],
-    "class_name": "Waybill",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/waybill/order/domain/Waybill.java"
-}, {
-    "name": "WaybillOrderStateEnum",
-    "package": "com.dr.oursp.retail.logistics.waybill.order.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "WaybillOrderStateEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/waybill/order/consts/WaybillOrderStateEnum.java"
-}, {
     "name": "PlanWaybill",
     "package": "com.dr.oursp.retail.logistics.waybill.plan",
     "type": "class",
@@ -5141,7 +4358,7 @@ var data = [{
     "name": "PlanWaybillModifiableProperties",
     "package": "com.dr.oursp.retail.logistics.waybill.plan.behavior",
     "type": "interface",
-    "imports": ["com.dr.domain.EntitySetterVisitor", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillTradeRuleDefinition", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillEntity", "com.dr.oursp.retail.support.RangeNumber", "java.util.Set"],
+    "imports": ["com.dr.domain.EntitySetterVisitor", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillTradeRuleDefinition", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillEntity", "com.dr.oursp.retail.support.RangeNumber", "java.util.Set"],
     "class_name": "PlanWaybillModifiableProperties",
     "extend_name": "",
     "implements_name": [],
@@ -5159,7 +4376,7 @@ var data = [{
     "name": "PlanWaybillModifiablePropertiesImpl",
     "package": "com.dr.oursp.retail.logistics.waybill.plan.behavior",
     "type": "class",
-    "imports": ["cn.hutool.core.lang.Assert", "com.dr.domain.EntitySetterVisitor", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.waybill.plan.PlanWaybillTradeRuleVo", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillTradeRuleDefinition", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillEntity", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.google.common.collect.Lists", "org.springframework.util.CollectionUtils", "java.util.List", "java.util.Set", "java.util.function.Consumer"],
+    "imports": ["cn.hutool.core.lang.Assert", "com.dr.domain.EntitySetterVisitor", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.logistics.waybill.plan.PlanWaybillTradeRuleVo", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillTradeRuleDefinition", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillEntity", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.google.common.collect.Lists", "org.springframework.util.CollectionUtils", "java.util.List", "java.util.Set", "java.util.function.Consumer"],
     "class_name": "PlanWaybillModifiablePropertiesImpl implements PlanWaybillModifiableProperties",
     "extend_name": "",
     "implements_name": ["PlanWaybillModifiableProperties"],
@@ -5168,7 +4385,7 @@ var data = [{
     "name": "PlanWaybillEntity",
     "package": "com.dr.oursp.retail.logistics.waybill.plan.repository",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.consts.ContactVo", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.waybill.plan.PlanWaybillTradeRuleVo", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "com.google.common.collect.Sets", "lombok.Data", "org.apache.logging.log4j.util.Strings", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.consts.ContactVo", "com.dr.oursp.retail.logistics.waybill.plan.PlanWaybillTradeRuleVo", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "com.google.common.collect.Sets", "lombok.Data", "org.apache.logging.log4j.util.Strings", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document", "java.util.Set"],
     "class_name": "PlanWaybillEntity extends BasicDocumentEntity",
     "extend_name": "BasicDocumentEntity",
     "implements_name": [],
@@ -5231,7 +4448,7 @@ var data = [{
     "name": "PlanWaybillVo",
     "package": "com.dr.oursp.retail.logistics.waybill.plan.domain",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.consts.ContactVo", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.waybill.plan.PlanWaybillTradeRuleVo", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.snapshot.Snapshot", "com.google.common.collect.Sets", "lombok.AllArgsConstructor", "lombok.Builder", "lombok.Data", "lombok.NoArgsConstructor", "org.springframework.data.annotation.Id", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.consts.ContactVo", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.logistics.waybill.plan.PlanWaybillTradeRuleVo", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.support.snapshot.Snapshot", "com.google.common.collect.Sets", "lombok.AllArgsConstructor", "lombok.Builder", "lombok.Data", "lombok.NoArgsConstructor", "org.springframework.data.annotation.Id", "java.util.Set"],
     "class_name": "PlanWaybillVo implements Snapshot",
     "extend_name": "",
     "implements_name": ["Snapshot"],
@@ -5276,7 +4493,7 @@ var data = [{
     "name": "Creator",
     "package": "com.dr.oursp.retail.logistics.waybill.plan.domain",
     "type": "class",
-    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.logistics.address.domain.AddressVO", "com.dr.oursp.retail.logistics.waybill.plan.PlanWaybillTradeRuleVo", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillTradeRuleDefinition", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillEntity", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillRepository", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "javax.validation.constraints.NotNull", "java.util.Set", "java.util.function.Supplier"],
+    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.consts.DisplayScopeEnum", "com.dr.oursp.retail.logistics.waybill.plan.PlanWaybillTradeRuleVo", "com.dr.oursp.retail.logistics.waybill.plan.consts.ConveyingPlatformTypeEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillStateEnum", "com.dr.oursp.retail.logistics.waybill.plan.consts.PlanWaybillTradeRuleDefinition", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillEntity", "com.dr.oursp.retail.logistics.waybill.plan.repository.PlanWaybillRepository", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "javax.validation.constraints.NotNull", "java.util.Set", "java.util.function.Supplier"],
     "class_name": "Creator extends AbstractCreator",
     "extend_name": "AbstractCreator",
     "implements_name": [],
@@ -5588,6 +4805,15 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/reference/CarrierPush.java"
 }, {
+    "name": "ZhongHuanApiConsts",
+    "package": "com.dr.oursp.retail.logistics.reference.dto",
+    "type": "class",
+    "imports": [],
+    "class_name": "ZhongHuanApiConsts",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/reference/dto/ZhongHuanApiConsts.java"
+}, {
     "name": "CarrierBaseResponse",
     "package": "com.dr.oursp.retail.logistics.reference.dto.response",
     "type": "class",
@@ -5699,7 +4925,7 @@ var data = [{
     "name": "BidSubmitRequest",
     "package": "com.dr.oursp.retail.logistics.reference.dto.request",
     "type": "class",
-    "imports": ["com.dr.oursp.infra.account.consts.AccountTypeEnum", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.retail.globe.PlatformTypeEnum", "com.dr.oursp.retail.player.reference.vo.BaseRemoteVO", "com.dr.oursp.retail.remote.zhonghuan.constants.ZhongHuanConstants", "com.dr.oursp.retail.remote.zhonghuan.vo.CarrierAccountRemoteVO", "com.dr.support.enums.KeyValueEnum", "com.dr.support.serialization.Serializations", "com.google.common.collect.Sets", "io.swagger.annotations.ApiModelProperty", "lombok.Builder", "lombok.Data", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "javax.validation.constraints.NotBlank", "javax.validation.constraints.Positive", "java.math.BigDecimal"],
+    "imports": ["com.dr.oursp.infra.account.consts.AccountTypeEnum", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.retail.globe.PlatformTypeEnum", "com.dr.oursp.retail.logistics.reference.dto.ZhongHuanApiConsts", "com.dr.oursp.retail.player.reference.vo.BaseRemoteVO", "com.dr.support.enums.KeyValueEnum", "com.dr.support.serialization.Serializations", "com.google.common.collect.Sets", "io.swagger.annotations.ApiModelProperty", "lombok.Builder", "lombok.Data", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "javax.validation.constraints.NotBlank", "javax.validation.constraints.Positive", "java.math.BigDecimal"],
     "class_name": "BidSubmitRequest",
     "extend_name": "",
     "implements_name": [],
@@ -5803,6 +5029,15 @@ var data = [{
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/reference/dto/request/PlanningWaybillRequest.java"
+}, {
+    "name": "CarrierAccountRemoteVO",
+    "package": "com.dr.oursp.retail.logistics.reference.dto.request",
+    "type": "class",
+    "imports": ["com.dr.oursp.retail.player.reference.vo.BaseRemoteVO", "io.swagger.annotations.ApiModelProperty", "lombok.Builder", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
+    "class_name": "CarrierAccountRemoteVO extends BaseRemoteVO",
+    "extend_name": "BaseRemoteVO",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/reference/dto/request/CarrierAccountRemoteVO.java"
 }, {
     "name": "ShippingLineRequest",
     "package": "com.dr.oursp.retail.logistics.reference.dto.request",
@@ -6029,6 +5264,15 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/logistics/reference/caller/zhonghuan/LogisticsFeignClient.java"
 }, {
+    "name": "DeliveryMarginScopeEnum",
+    "package": "com.dr.oursp.retail.consts",
+    "type": "enum",
+    "imports": ["com.dr.support.enums.KeyValueEnum"],
+    "class_name": "DeliveryMarginScopeEnum implements KeyValueEnum",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum"],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/consts/DeliveryMarginScopeEnum.java"
+}, {
     "name": "CheckException",
     "package": "com.dr.oursp.retail.consts",
     "type": "class",
@@ -6037,6 +5281,15 @@ var data = [{
     "extend_name": "RuntimeException",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/consts/CheckException.java"
+}, {
+    "name": "DealModeEnum",
+    "package": "com.dr.oursp.retail.consts",
+    "type": "enum",
+    "imports": ["com.dr.support.enums.KeyValueEnum"],
+    "class_name": "DealModeEnum implements KeyValueEnum",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum"],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/consts/DealModeEnum.java"
 }, {
     "name": "ContactVo",
     "package": "com.dr.oursp.retail.consts",
@@ -6055,6 +5308,15 @@ var data = [{
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/consts/DisplayScope.java"
+}, {
+    "name": "CapitalAccountManagerTypeEnum",
+    "package": "com.dr.oursp.retail.consts",
+    "type": "enum",
+    "imports": ["com.dr.support.enums.KeyValueEnum"],
+    "class_name": "CapitalAccountManagerTypeEnum implements KeyValueEnum",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum"],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/consts/CapitalAccountManagerTypeEnum.java"
 }, {
     "name": "MarginPaymentTypeEnum",
     "package": "com.dr.oursp.retail.consts",
@@ -6086,7 +5348,7 @@ var data = [{
     "name": "TradeRuleDefinition",
     "package": "com.dr.oursp.retail.consts",
     "type": "interface",
-    "imports": ["com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "java.util.Set"],
     "class_name": "TradeRuleDefinition",
     "extend_name": "",
     "implements_name": [],
@@ -6101,10 +5363,19 @@ var data = [{
     "implements_name": ["KeyValueEnum"],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/consts/DisplayScopeEnum.java"
 }, {
+    "name": "BidStateEnum",
+    "package": "com.dr.oursp.retail.consts",
+    "type": "enum",
+    "imports": ["com.dr.support.enums.KeyValueEnum"],
+    "class_name": "BidStateEnum implements KeyValueEnum",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum"],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/consts/BidStateEnum.java"
+}, {
     "name": "TradeRuleVo",
     "package": "com.dr.oursp.retail.consts",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "com.dr.oursp.retail.trade.consts.DealModeEnum", "com.dr.oursp.retail.trade.consts.DeliveryMarginScopeEnum", "lombok.Data", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.retail.support.RangeNumber", "lombok.Data", "java.util.Set"],
     "class_name": "TradeRuleVo implements TradeRuleDefinition",
     "extend_name": "",
     "implements_name": ["TradeRuleDefinition"],
@@ -6118,6 +5389,105 @@ var data = [{
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/invoice/InvoiceWrite.java"
+}, {
+    "name": "CommodityOrderVO",
+    "package": "com.dr.oursp.retail.invoice.order",
+    "type": "class",
+    "imports": ["com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.consts.BidStateEnum", "com.dr.oursp.retail.invoice.order.consts.CommodityOrderStateEnum", "com.dr.oursp.retail.invoice.order.repository.CommodityOrderEntity", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "lombok.AccessLevel", "lombok.Builder", "lombok.Data"],
+    "class_name": "CommodityOrderVO",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/invoice/order/CommodityOrderVO.java"
+}, {
+    "name": "CommodityOrder",
+    "package": "com.dr.oursp.retail.invoice.order",
+    "type": "class",
+    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractModifier", "com.dr.domain.AbstractSaver", "com.dr.domain.selector.AbstractSelector", "com.dr.domain.selector.AbstractSelectorBySingle", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.invoice.order.consts.CommodityOrderStateEnum", "com.dr.oursp.retail.invoice.order.repository.CommodityOrderEntity", "com.dr.oursp.retail.invoice.order.repository.CommodityOrderRepository", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.strategy.setting.PlatformSetting", "org.apache.logging.log4j.util.Strings", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Comparator", "java.util.function.Supplier", "java.util.stream.Stream"],
+    "class_name": "CommodityOrder",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/invoice/order/CommodityOrder.java"
+}, {
+    "name": "WaybillOrderVO",
+    "package": "com.dr.oursp.retail.invoice.order",
+    "type": "class",
+    "imports": ["com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.invoice.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.invoice.order.repository.OrderRemark", "com.dr.oursp.retail.invoice.order.repository.WaybillEntity", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "lombok.Builder", "lombok.Data"],
+    "class_name": "WaybillOrderVO",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/invoice/order/WaybillOrderVO.java"
+}, {
+    "name": "Waybill",
+    "package": "com.dr.oursp.retail.invoice.order",
+    "type": "class",
+    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractModifier", "com.dr.domain.AbstractSaver", "com.dr.domain.selector.AbstractSelector", "com.dr.domain.selector.AbstractSelectorBySingle", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.invoice.order.consts.WaybillOrderStateEnum", "com.dr.oursp.retail.invoice.order.repository.OrderRemark", "com.dr.oursp.retail.invoice.order.repository.WaybillEntity", "com.dr.oursp.retail.invoice.order.repository.WaybillRepository", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.trade.module.bid.TradeBidRecordVo", "com.dr.oursp.strategy.setting.PlatformSetting", "org.apache.logging.log4j.util.Strings", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Comparator", "java.util.Objects", "java.util.function.Predicate", "java.util.function.Supplier", "java.util.stream.Stream"],
+    "class_name": "Waybill",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/invoice/order/Waybill.java"
+}, {
+    "name": "CommodityOrderEntity",
+    "package": "com.dr.oursp.retail.invoice.order.repository",
+    "type": "class",
+    "imports": ["com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.Data", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document"],
+    "class_name": "CommodityOrderEntity extends BasicDocumentEntity",
+    "extend_name": "BasicDocumentEntity",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/invoice/order/repository/CommodityOrderEntity.java"
+}, {
+    "name": "WaybillRepository",
+    "package": "com.dr.oursp.retail.invoice.order.repository",
+    "type": "interface",
+    "imports": ["org.springframework.data.mongodb.repository.MongoRepository", "java.util.Optional", "java.util.stream.Stream"],
+    "class_name": "WaybillRepository extends MongoRepository",
+    "extend_name": "MongoRepository",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/invoice/order/repository/WaybillRepository.java"
+}, {
+    "name": "CommodityOrderRepository",
+    "package": "com.dr.oursp.retail.invoice.order.repository",
+    "type": "interface",
+    "imports": ["org.springframework.data.mongodb.repository.MongoRepository", "java.util.Optional", "java.util.stream.Stream"],
+    "class_name": "CommodityOrderRepository extends MongoRepository",
+    "extend_name": "MongoRepository",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/invoice/order/repository/CommodityOrderRepository.java"
+}, {
+    "name": "WaybillEntity",
+    "package": "com.dr.oursp.retail.invoice.order.repository",
+    "type": "class",
+    "imports": ["com.dr.oursp.retail.address.domain.AddressVO", "com.dr.oursp.retail.commodity.coal.vo.CommodityVo", "com.dr.oursp.retail.commodity.supply.coal.domain.SupplyVO", "com.dr.oursp.retail.logistics.waybill.plan.domain.PlanWaybillVo", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.AllArgsConstructor", "lombok.Data", "org.apache.logging.log4j.util.Strings", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document"],
+    "class_name": "WaybillEntity extends BasicDocumentEntity",
+    "extend_name": "BasicDocumentEntity",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/invoice/order/repository/WaybillEntity.java"
+}, {
+    "name": "OrderRemark",
+    "package": "com.dr.oursp.retail.invoice.order.repository",
+    "type": "class",
+    "imports": ["lombok.AccessLevel", "lombok.Builder", "lombok.Data", "java.time.Instant"],
+    "class_name": "OrderRemark",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/invoice/order/repository/OrderRemark.java"
+}, {
+    "name": "WaybillOrderStateEnum",
+    "package": "com.dr.oursp.retail.invoice.order.consts",
+    "type": "enum",
+    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
+    "class_name": "WaybillOrderStateEnum implements KeyValueEnum",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum"],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/invoice/order/consts/WaybillOrderStateEnum.java"
+}, {
+    "name": "CommodityOrderStateEnum",
+    "package": "com.dr.oursp.retail.invoice.order.consts",
+    "type": "enum",
+    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
+    "class_name": "CommodityOrderStateEnum implements KeyValueEnum",
+    "extend_name": "",
+    "implements_name": ["KeyValueEnum"],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/invoice/order/consts/CommodityOrderStateEnum.java"
 }, {
     "name": "InvoiceRepository",
     "package": "com.dr.oursp.retail.invoice.repository",
@@ -6176,7 +5546,7 @@ var data = [{
     "name": "RetailPlayer",
     "package": "com.dr.oursp.retail.player",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.player.account.CapitalAccount", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.proxy.AbstractCapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy", "com.dr.oursp.retail.player.domain.RetailPlayerCreator", "com.dr.oursp.retail.player.domain.RetailPlayerSelector", "com.dr.oursp.retail.player.repository.AggregateRepository", "com.dr.oursp.retail.player.vo.RetailPlayerPropDefinition", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "lombok.Getter", "lombok.extern.slf4j.Slf4j"],
+    "imports": ["com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.player.account.CapitalAccount", "com.dr.oursp.retail.player.account.proxy.AbstractCapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy", "com.dr.oursp.retail.player.domain.RetailPlayerCreator", "com.dr.oursp.retail.player.domain.RetailPlayerSelector", "com.dr.oursp.retail.player.repository.AggregateRepository", "com.dr.oursp.retail.player.vo.RetailPlayerPropDefinition", "com.dr.oursp.retail.player.vo.RetailPlayerVo", "lombok.Getter", "lombok.extern.slf4j.Slf4j"],
     "class_name": "RetailPlayer",
     "extend_name": "",
     "implements_name": [],
@@ -6257,7 +5627,7 @@ var data = [{
     "name": "CapitalAccountCreatorByPayCenter",
     "package": "com.dr.oursp.retail.player.account",
     "type": "class",
-    "imports": ["com.dr.domain.AbstractSaver", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.repo.CapitalAccountEntity", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.support.serialization.Serializations", "com.google.common.collect.Sets", "org.apache.logging.log4j.util.Strings", "java.math.BigDecimal", "java.util.Set", "java.util.UUID"],
+    "imports": ["com.dr.domain.AbstractSaver", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.repo.CapitalAccountEntity", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.support.serialization.Serializations", "com.google.common.collect.Sets", "org.apache.logging.log4j.util.Strings", "java.math.BigDecimal", "java.util.Set", "java.util.UUID"],
     "class_name": "CapitalAccountCreatorByPayCenter extends CapitalAccountCreator",
     "extend_name": "CapitalAccountCreator",
     "implements_name": [],
@@ -6266,7 +5636,7 @@ var data = [{
     "name": "CapitalAccountCreator",
     "package": "com.dr.oursp.retail.player.account",
     "type": "abstract class",
-    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.repo.CapitalAccountEntity", "java.math.BigDecimal", "java.util.Set", "java.util.function.Supplier"],
+    "imports": ["com.dr.domain.AbstractCreator", "com.dr.domain.AbstractSaver", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.repo.CapitalAccountEntity", "java.math.BigDecimal", "java.util.Set", "java.util.function.Supplier"],
     "class_name": "CapitalAccountCreator extends AbstractCreator",
     "extend_name": "AbstractCreator",
     "implements_name": [],
@@ -6275,7 +5645,7 @@ var data = [{
     "name": "CapitalAccountVo",
     "package": "com.dr.oursp.retail.player.account",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.repo.CapitalAccountEntity", "com.dr.oursp.retail.support.EnumWrapper", "lombok.*", "java.math.BigDecimal", "java.util.Set"],
+    "imports": ["com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.repo.CapitalAccountEntity", "com.dr.oursp.retail.support.EnumWrapper", "lombok.*", "java.math.BigDecimal", "java.util.Set"],
     "class_name": "CapitalAccountVo",
     "extend_name": "",
     "implements_name": [],
@@ -6284,7 +5654,7 @@ var data = [{
     "name": "CapitalAccountSelector",
     "package": "com.dr.oursp.retail.player.account",
     "type": "class",
-    "imports": ["com.dr.domain.AbstractModifier", "com.dr.domain.AbstractSaver", "com.dr.domain.selector.AbstractSelector", "com.dr.domain.selector.AbstractSelectorBySingle", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy", "com.dr.oursp.retail.player.account.repo.CapitalAccountEntity", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.support.serialization.Serializations", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.math.BigDecimal", "java.util.Set", "java.util.function.Supplier", "java.util.stream.Stream"],
+    "imports": ["com.dr.domain.AbstractModifier", "com.dr.domain.AbstractSaver", "com.dr.domain.selector.AbstractSelector", "com.dr.domain.selector.AbstractSelectorBySingle", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy", "com.dr.oursp.retail.player.account.repo.CapitalAccountEntity", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.support.serialization.Serializations", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.math.BigDecimal", "java.util.Set", "java.util.function.Supplier", "java.util.stream.Stream"],
     "class_name": "CapitalAccountSelector",
     "extend_name": "",
     "implements_name": [],
@@ -6302,7 +5672,7 @@ var data = [{
     "name": "AbstractCapitalAccountManagerProxyFactory",
     "package": "com.dr.oursp.retail.player.account.proxy",
     "type": "abstract class",
-    "imports": ["com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum"],
+    "imports": ["com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum"],
     "class_name": "AbstractCapitalAccountManagerProxyFactory",
     "extend_name": "",
     "implements_name": [],
@@ -6320,7 +5690,7 @@ var data = [{
     "name": "PayCenterProxy",
     "package": "com.dr.oursp.retail.player.account.proxy",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.changing.ChangingCapitalAccount", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetailByRefundBidMargin", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceiptByRedirectUrl", "com.dr.oursp.retail.remote.pay.api.consts.PayApiUrlConst", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.third.consts.BizDomainEnum", "com.dr.oursp.third.pay.PayCenter", "com.dr.oursp.third.pay.PayCenterRemoteCallException", "com.dr.oursp.third.pay.consts.PayCenterCapitalAccountTypeEnum", "com.dr.oursp.third.pay.http.response.BasicSignAccountCapitalResponse", "com.dr.oursp.third.pay.http.response.SignAccountCapitalPayResponse", "com.dr.oursp.third.pay.http.response.SignAccountCapitalRefundResponse", "com.dr.oursp.third.pay.repo.PayCenterCapitalAccountEntity", "com.google.common.base.Throwables", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.io.IOException", "java.util.List", "java.util.Map"],
+    "imports": ["com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.player.account.CapitalAccountVo", "com.dr.oursp.retail.player.account.changing.ChangingCapitalAccount", "com.dr.oursp.retail.player.account.consts.CapitalAccountStateEnum", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.exception.CapitalAccountTransferException", "com.dr.oursp.retail.player.account.proxy.callback.PayCenterCallbackApiUrlConst", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetail", "com.dr.oursp.retail.player.account.proxy.detail.CapitalBehaviorDetailByRefundBidMargin", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceiptByRedirectUrl", "com.dr.oursp.retail.support.AccurateNumber", "com.dr.oursp.retail.support.EnumWrapper", "com.dr.oursp.third.consts.BizDomainEnum", "com.dr.oursp.third.pay.PayCenter", "com.dr.oursp.third.pay.PayCenterRemoteCallException", "com.dr.oursp.third.pay.consts.PayCenterCapitalAccountTypeEnum", "com.dr.oursp.third.pay.http.response.BasicSignAccountCapitalResponse", "com.dr.oursp.third.pay.http.response.SignAccountCapitalPayResponse", "com.dr.oursp.third.pay.http.response.SignAccountCapitalRefundResponse", "com.dr.oursp.third.pay.repo.PayCenterCapitalAccountEntity", "com.google.common.base.Throwables", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.io.IOException", "java.util.List", "java.util.Map"],
     "class_name": "PayCenterProxy implements CapitalAccountManagerProxy",
     "extend_name": "",
     "implements_name": ["CapitalAccountManagerProxy"],
@@ -6347,7 +5717,7 @@ var data = [{
     "name": "CapitalAccountManagerProxyFactory",
     "package": "com.dr.oursp.retail.player.account.proxy",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "org.springframework.stereotype.Component"],
+    "imports": ["com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "org.springframework.stereotype.Component"],
     "class_name": "CapitalAccountManagerProxyFactory extends AbstractCapitalAccountManagerProxyFactory",
     "extend_name": "AbstractCapitalAccountManagerProxyFactory",
     "implements_name": [],
@@ -6433,6 +5803,15 @@ var data = [{
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/player/account/proxy/callback/PayCenterCallBackParam.java"
+}, {
+    "name": "PayCenterCallbackApiUrlConst",
+    "package": "com.dr.oursp.retail.player.account.proxy.callback",
+    "type": "class",
+    "imports": [],
+    "class_name": "PayCenterCallbackApiUrlConst",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/player/account/proxy/callback/PayCenterCallbackApiUrlConst.java"
 }, {
     "name": "PayCenterCallbackParamsForBidMargin",
     "package": "com.dr.oursp.retail.player.account.proxy.callback",
@@ -6559,15 +5938,6 @@ var data = [{
     "extend_name": "Exception",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/player/account/exception/CapitalAccountTransferException.java"
-}, {
-    "name": "CapitalAccountManagerTypeEnum",
-    "package": "com.dr.oursp.retail.player.account.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "CapitalAccountManagerTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/player/account/consts/CapitalAccountManagerTypeEnum.java"
 }, {
     "name": "Capital",
     "package": "com.dr.oursp.retail.player.account.consts",
@@ -6713,6 +6083,15 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/player/reference/ContractOrderPush.java"
 }, {
+    "name": "PurchaserReceivingAddressRequest",
+    "package": "com.dr.oursp.retail.player.reference.vo",
+    "type": "class",
+    "imports": ["lombok.Data", "lombok.experimental.Accessors"],
+    "class_name": "PurchaserReceivingAddressRequest",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/player/reference/vo/PurchaserReceivingAddressRequest.java"
+}, {
     "name": "AccountRemoteVO",
     "package": "com.dr.oursp.retail.player.reference.vo",
     "type": "class",
@@ -6725,7 +6104,7 @@ var data = [{
     "name": "SupplierRemoteVO",
     "package": "com.dr.oursp.retail.player.reference.vo",
     "type": "class",
-    "imports": ["com.dr.oursp.infra.account.consts.AccountTypeEnum", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.retail.player.reference.consts.YunXiaoConstants", "com.dr.oursp.retail.remote.yunxiao.api.http.req.SupplierCoalVariety", "com.dr.oursp.retail.remote.yunxiao.api.http.req.SupplierSendAddress", "com.dr.support.serialization.Serializations", "com.google.common.collect.Sets", "lombok.Data", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "javax.validation.constraints.NotBlank", "java.util.List"],
+    "imports": ["com.dr.oursp.infra.account.consts.AccountTypeEnum", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.retail.player.reference.consts.YunXiaoConstants", "com.dr.support.serialization.Serializations", "com.google.common.collect.Sets", "lombok.Data", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "javax.validation.constraints.NotBlank", "java.util.List"],
     "class_name": "SupplierRemoteVO extends BaseRemoteVO",
     "extend_name": "BaseRemoteVO",
     "implements_name": [],
@@ -6740,6 +6119,15 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/player/reference/vo/TradeOrderRemoteVO.java"
 }, {
+    "name": "SupplierCoalVariety",
+    "package": "com.dr.oursp.retail.player.reference.vo",
+    "type": "class",
+    "imports": ["lombok.Data", "lombok.experimental.Accessors"],
+    "class_name": "SupplierCoalVariety",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/player/reference/vo/SupplierCoalVariety.java"
+}, {
     "name": "MoneyAccountVO",
     "package": "com.dr.oursp.retail.player.reference.vo",
     "type": "class",
@@ -6748,6 +6136,15 @@ var data = [{
     "extend_name": "BasicInterRequest",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/player/reference/vo/MoneyAccountVO.java"
+}, {
+    "name": "PurchaserRequest",
+    "package": "com.dr.oursp.retail.player.reference.vo",
+    "type": "class",
+    "imports": ["com.dr.oursp.retail.player.reference.caller.yunxiao.dto.request.BasicInterRequest", "com.dr.oursp.retail.player.reference.caller.yunxiao.dto.request.CommonFileInfo", "com.dr.oursp.retail.remote.yunxiao.api.http.req.PurchaserEntrustRequest", "lombok.Data", "lombok.experimental.Accessors", "org.springframework.beans.BeanUtils", "javax.validation.constraints.NotBlank", "java.util.List"],
+    "class_name": "PurchaserRequest extends BasicInterRequest",
+    "extend_name": "BasicInterRequest",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/player/reference/vo/PurchaserRequest.java"
 }, {
     "name": "FixtureRemoteVO",
     "package": "com.dr.oursp.retail.player.reference.vo",
@@ -6761,7 +6158,7 @@ var data = [{
     "name": "PurchaserRemoteVO",
     "package": "com.dr.oursp.retail.player.reference.vo",
     "type": "class",
-    "imports": ["com.dr.oursp.infra.account.consts.AccountTypeEnum", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.retail.player.reference.caller.yunxiao.dto.request.CommonFileInfo", "com.dr.oursp.retail.player.reference.consts.YunXiaoConstants", "com.dr.oursp.retail.remote.yunxiao.api.http.req.PurchaserEntrustRequest", "com.dr.oursp.retail.remote.yunxiao.api.http.req.PurchaserReceivingAddressRequest", "com.dr.support.enums.KeyValueEnum", "com.dr.support.serialization.Serializations", "com.google.common.collect.Sets", "lombok.Data", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "javax.validation.constraints.NotBlank", "java.util.List"],
+    "imports": ["com.dr.oursp.infra.account.consts.AccountTypeEnum", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.retail.player.reference.caller.yunxiao.dto.request.CommonFileInfo", "com.dr.oursp.retail.player.reference.consts.YunXiaoConstants", "com.dr.oursp.retail.remote.yunxiao.api.http.req.PurchaserEntrustRequest", "com.dr.support.enums.KeyValueEnum", "com.dr.support.serialization.Serializations", "com.google.common.collect.Sets", "lombok.Data", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "javax.validation.constraints.NotBlank", "java.util.List"],
     "class_name": "PurchaserRemoteVO extends BaseRemoteVO",
     "extend_name": "BaseRemoteVO",
     "implements_name": [],
@@ -6775,6 +6172,15 @@ var data = [{
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/player/reference/vo/BaseRemoteVO.java"
+}, {
+    "name": "SupplierSendAddress",
+    "package": "com.dr.oursp.retail.player.reference.vo",
+    "type": "class",
+    "imports": ["lombok.Data", "lombok.experimental.Accessors"],
+    "class_name": "SupplierSendAddress",
+    "extend_name": "",
+    "implements_name": [],
+    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/player/reference/vo/SupplierSendAddress.java"
 }, {
     "name": "IdentityRemoteRelationRepository",
     "package": "com.dr.oursp.retail.player.reference.repository",
@@ -7028,24 +6434,6 @@ var data = [{
     "implements_name": ["KeyValueEnum"],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/player/reference/consts/FixtureTypeEnum.java"
 }, {
-    "name": "CarrierAccountRemoteVO",
-    "package": "com.dr.oursp.retail.remote.zhonghuan.vo",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.player.reference.vo.BaseRemoteVO", "io.swagger.annotations.ApiModelProperty", "lombok.Builder", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
-    "class_name": "CarrierAccountRemoteVO extends BaseRemoteVO",
-    "extend_name": "BaseRemoteVO",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/remote/zhonghuan/vo/CarrierAccountRemoteVO.java"
-}, {
-    "name": "ZhongHuanConstants",
-    "package": "com.dr.oursp.retail.remote.zhonghuan.constants",
-    "type": "class",
-    "imports": [],
-    "class_name": "ZhongHuanConstants",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/remote/zhonghuan/constants/ZhongHuanConstants.java"
-}, {
     "name": "LogisticsRemoteApi",
     "package": "com.dr.oursp.retail.remote.zhonghuan.api",
     "type": "class",
@@ -7076,7 +6464,7 @@ var data = [{
     "name": "PlayerRemoteApi",
     "package": "com.dr.oursp.retail.remote.yunxiao.api",
     "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.retail.globe.PlatformTypeEnum", "com.dr.oursp.retail.player.reference.caller.yunxiao.dto.request.PublishDataRequest", "com.dr.oursp.retail.remote.yunxiao.api.http.req.*", "com.dr.oursp.retail.remote.yunxiao.constants.YunXiaoActionTypeEnum", "com.dr.oursp.retail.remote.yunxiao.service.PlayerRemoteService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController", "javax.validation.Valid", "java.util.Objects"],
+    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.retail.globe.PlatformTypeEnum", "com.dr.oursp.retail.player.reference.caller.yunxiao.dto.request.PublishDataRequest", "com.dr.oursp.retail.player.reference.vo.PurchaserRequest", "com.dr.oursp.retail.remote.yunxiao.api.http.req.MgrAccountRequest", "com.dr.oursp.retail.remote.yunxiao.api.http.req.MoneyAccountRequest", "com.dr.oursp.retail.remote.yunxiao.api.http.req.SupplierRequest", "com.dr.oursp.retail.remote.yunxiao.api.http.req.YunXiaoModelConvert", "com.dr.oursp.retail.remote.yunxiao.constants.YunXiaoActionTypeEnum", "com.dr.oursp.retail.remote.yunxiao.service.PlayerRemoteService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController", "javax.validation.Valid", "java.util.Objects"],
     "class_name": "PlayerRemoteApi",
     "extend_name": "",
     "implements_name": [],
@@ -7112,20 +6500,11 @@ var data = [{
     "name": "DrsYunXiaoReceiveApi",
     "package": "com.dr.oursp.retail.remote.yunxiao.api",
     "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.retail.globe.PlatformTypeEnum", "com.dr.oursp.retail.player.reference.caller.yunxiao.dto.request.PublishDataRequest", "com.dr.oursp.retail.player.reference.caller.yunxiao.dto.response.PublishDataResponse", "com.dr.oursp.retail.remote.yunxiao.api.http.req.*", "com.dr.oursp.retail.remote.yunxiao.constants.YunXiaoActionTypeEnum", "com.dr.oursp.retail.remote.yunxiao.service.PlayerRemoteService", "com.dr.oursp.retail.remote.yunxiao.service.QualityRemoteService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "io.swagger.annotations.Api", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController", "javax.validation.Valid", "java.util.Objects"],
+    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.retail.globe.PlatformTypeEnum", "com.dr.oursp.retail.player.reference.caller.yunxiao.dto.request.PublishDataRequest", "com.dr.oursp.retail.player.reference.caller.yunxiao.dto.response.PublishDataResponse", "com.dr.oursp.retail.player.reference.vo.PurchaserRequest", "com.dr.oursp.retail.remote.yunxiao.api.http.req.*", "com.dr.oursp.retail.remote.yunxiao.constants.YunXiaoActionTypeEnum", "com.dr.oursp.retail.remote.yunxiao.service.PlayerRemoteService", "com.dr.oursp.retail.remote.yunxiao.service.QualityRemoteService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "io.swagger.annotations.Api", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController", "javax.validation.Valid", "java.util.Objects"],
     "class_name": "DrsYunXiaoReceiveApi",
     "extend_name": "",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/remote/yunxiao/api/DrsYunXiaoReceiveApi.java"
-}, {
-    "name": "PurchaserReceivingAddressRequest",
-    "package": "com.dr.oursp.retail.remote.yunxiao.api.http.req",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "PurchaserReceivingAddressRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/remote/yunxiao/api/http/req/PurchaserReceivingAddressRequest.java"
 }, {
     "name": "CoalMimeQualityRequest",
     "package": "com.dr.oursp.retail.remote.yunxiao.api.http.req",
@@ -7145,15 +6524,6 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/remote/yunxiao/api/http/req/MoneyAccountRequest.java"
 }, {
-    "name": "SupplierCoalVariety",
-    "package": "com.dr.oursp.retail.remote.yunxiao.api.http.req",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "SupplierCoalVariety",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/remote/yunxiao/api/http/req/SupplierCoalVariety.java"
-}, {
     "name": "OrgInfoRequest",
     "package": "com.dr.oursp.retail.remote.yunxiao.api.http.req",
     "type": "class",
@@ -7166,20 +6536,11 @@ var data = [{
     "name": "SupplierRequest",
     "package": "com.dr.oursp.retail.remote.yunxiao.api.http.req",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.player.reference.caller.yunxiao.dto.request.BasicInterRequest", "com.dr.oursp.retail.player.reference.vo.SupplierRemoteVO", "lombok.Data", "lombok.experimental.Accessors", "org.springframework.beans.BeanUtils", "java.util.List"],
+    "imports": ["com.dr.oursp.retail.player.reference.caller.yunxiao.dto.request.BasicInterRequest", "com.dr.oursp.retail.player.reference.vo.SupplierCoalVariety", "com.dr.oursp.retail.player.reference.vo.SupplierRemoteVO", "com.dr.oursp.retail.player.reference.vo.SupplierSendAddress", "lombok.Data", "lombok.experimental.Accessors", "org.springframework.beans.BeanUtils", "java.util.List"],
     "class_name": "SupplierRequest extends BasicInterRequest",
     "extend_name": "BasicInterRequest",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/remote/yunxiao/api/http/req/SupplierRequest.java"
-}, {
-    "name": "PurchaserRequest",
-    "package": "com.dr.oursp.retail.remote.yunxiao.api.http.req",
-    "type": "class",
-    "imports": ["com.dr.oursp.retail.player.reference.caller.yunxiao.dto.request.BasicInterRequest", "com.dr.oursp.retail.player.reference.caller.yunxiao.dto.request.CommonFileInfo", "com.dr.oursp.retail.player.reference.vo.PurchaserRemoteVO", "lombok.Data", "lombok.experimental.Accessors", "org.springframework.beans.BeanUtils", "javax.validation.constraints.NotBlank", "java.util.List"],
-    "class_name": "PurchaserRequest extends BasicInterRequest",
-    "extend_name": "BasicInterRequest",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/remote/yunxiao/api/http/req/PurchaserRequest.java"
 }, {
     "name": "PurchaserEntrustRequest",
     "package": "com.dr.oursp.retail.remote.yunxiao.api.http.req",
@@ -7208,15 +6569,6 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/remote/yunxiao/api/http/req/YunXiaoModelConvert.java"
 }, {
-    "name": "SupplierSendAddress",
-    "package": "com.dr.oursp.retail.remote.yunxiao.api.http.req",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "SupplierSendAddress",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/remote/yunxiao/api/http/req/SupplierSendAddress.java"
-}, {
     "name": "QualityRemoteService",
     "package": "com.dr.oursp.retail.remote.yunxiao.service",
     "type": "class",
@@ -7229,7 +6581,7 @@ var data = [{
     "name": "PlayerRemoteService",
     "package": "com.dr.oursp.retail.remote.yunxiao.service",
     "type": "class",
-    "imports": ["com.dr.oursp.infra.account.consts.AccountTypeEnum", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.entity.PhoneAssociateEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.account.service.PhoneLoginService", "com.dr.oursp.infra.ajc.AppJointCertService", "com.dr.oursp.infra.ajc.api.http.request.ConfigItem", "com.dr.oursp.infra.ajc.api.http.response.AppJointCertDefineResponse", "com.dr.oursp.infra.app.api.http.request.auth.AppAuthDetailRequest", "com.dr.oursp.infra.app.consts.AppAuthActionEnum", "com.dr.oursp.infra.app.consts.AppAuthEnum", "com.dr.oursp.infra.app.preset.AppConst", "com.dr.oursp.infra.app.preset.WisdomTransportationSalePerspective", "com.dr.oursp.infra.app.service.AppManagerService", "com.dr.oursp.retail.app.service.PartnerService", "com.dr.oursp.retail.app.service.PlayerService", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.PlatformTypeEnum", "com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.consts.SignedStateEnum", "com.dr.oursp.retail.player.reference.consts.YunXiaoOrgAccountEnum", "com.dr.oursp.retail.player.reference.consts.YunXiaoOrgTypeEnum", "com.dr.oursp.retail.player.reference.entity.AccountRemoteRelationEntity", "com.dr.oursp.retail.player.reference.entity.IdentityRemoteRelationEntity", "com.dr.oursp.retail.player.reference.repository.AccountIdentityRemoteRelationAggregation", "com.dr.oursp.retail.player.reference.vo.AccountRemoteVO", "com.dr.oursp.retail.player.reference.vo.PurchaserRemoteVO", "com.dr.oursp.retail.player.reference.vo.SupplierRemoteVO", "com.dr.oursp.retail.remote.yunxiao.service.vo.MoneyAccountRemoteVO", "com.dr.oursp.retail.remote.yunxiao.service.vo.YunXiaoOrgInfoVO", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityStateEnum", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "com.dr.support.enums.Enumerations", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "javax.validation.Valid", "java.math.BigDecimal", "java.time.LocalDateTime", "java.time.ZoneOffset", "java.util.*", "java.util.stream.Collectors"],
+    "imports": ["com.dr.oursp.infra.account.consts.AccountTypeEnum", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.entity.PhoneAssociateEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.account.service.PhoneLoginService", "com.dr.oursp.infra.ajc.AppJointCertService", "com.dr.oursp.infra.ajc.api.http.request.ConfigItem", "com.dr.oursp.infra.ajc.api.http.response.AppJointCertDefineResponse", "com.dr.oursp.infra.app.api.http.request.auth.AppAuthDetailRequest", "com.dr.oursp.infra.app.consts.AppAuthActionEnum", "com.dr.oursp.infra.app.consts.AppAuthEnum", "com.dr.oursp.infra.app.preset.AppConst", "com.dr.oursp.infra.app.preset.WisdomTransportationSalePerspective", "com.dr.oursp.infra.app.service.AppManagerService", "com.dr.oursp.retail.app.service.PartnerService", "com.dr.oursp.retail.app.service.PlayerService", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.consts.RetailRoleEnum", "com.dr.oursp.retail.globe.PlatformTypeEnum", "com.dr.oursp.retail.globe.config.mongo.MongoRetailConfig", "com.dr.oursp.retail.partner.consts.PartnerLevelEnum", "com.dr.oursp.retail.partner.domain.PartnerVO", "com.dr.oursp.retail.player.consts.SignedStateEnum", "com.dr.oursp.retail.player.reference.consts.YunXiaoOrgAccountEnum", "com.dr.oursp.retail.player.reference.consts.YunXiaoOrgTypeEnum", "com.dr.oursp.retail.player.reference.entity.AccountRemoteRelationEntity", "com.dr.oursp.retail.player.reference.entity.IdentityRemoteRelationEntity", "com.dr.oursp.retail.player.reference.repository.AccountIdentityRemoteRelationAggregation", "com.dr.oursp.retail.player.reference.vo.AccountRemoteVO", "com.dr.oursp.retail.player.reference.vo.PurchaserRemoteVO", "com.dr.oursp.retail.player.reference.vo.SupplierRemoteVO", "com.dr.oursp.retail.remote.yunxiao.service.vo.MoneyAccountRemoteVO", "com.dr.oursp.retail.remote.yunxiao.service.vo.YunXiaoOrgInfoVO", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityStateEnum", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "com.dr.support.enums.Enumerations", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "javax.validation.Valid", "java.math.BigDecimal", "java.time.LocalDateTime", "java.time.ZoneOffset", "java.util.*", "java.util.stream.Collectors"],
     "class_name": "PlayerRemoteService",
     "extend_name": "",
     "implements_name": [],
@@ -7256,7 +6608,7 @@ var data = [{
     "name": "PayCenterRemoteApi",
     "package": "com.dr.oursp.retail.remote.pay.api",
     "type": "class",
-    "imports": ["com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.remote.pay.api.consts.PayApiUrlConst", "com.dr.oursp.retail.remote.pay.api.http.request.SignAccountCapitalAsyncPayRequest", "com.dr.oursp.retail.remote.pay.service.PayCenterCallbackHandler", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiParam", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "java.util.Map"],
+    "imports": ["com.dr.oursp.retail.globe.RetailAppApiUrlConst", "com.dr.oursp.retail.player.account.proxy.callback.PayCenterCallbackApiUrlConst", "com.dr.oursp.retail.remote.pay.api.http.request.SignAccountCapitalAsyncPayRequest", "com.dr.oursp.retail.remote.pay.service.PayCenterCallbackHandler", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiParam", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "java.util.Map"],
     "class_name": "PayCenterRemoteApi",
     "extend_name": "",
     "implements_name": [],
@@ -7271,19 +6623,10 @@ var data = [{
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/remote/pay/api/http/request/SignAccountCapitalAsyncPayRequest.java"
 }, {
-    "name": "PayApiUrlConst",
-    "package": "com.dr.oursp.retail.remote.pay.api.consts",
-    "type": "class",
-    "imports": [],
-    "class_name": "PayApiUrlConst",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/remote/pay/api/consts/PayApiUrlConst.java"
-}, {
     "name": "PayCenterCallbackHandler",
     "package": "com.dr.oursp.retail.remote.pay.service",
     "type": "class",
-    "imports": ["com.dr.domain.ModifierException", "com.dr.oursp.retail.player.account.CapitalAccount", "com.dr.oursp.retail.player.account.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.callback.PayCenterCallBackParamsForPayment", "com.dr.oursp.retail.player.account.proxy.callback.PayCenterCallbackParamsForBidMargin", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.remote.pay.api.http.request.SignAccountCapitalAsyncPayRequest", "com.dr.oursp.retail.remote.pay.service.event.*", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.third.pay.DrPayResponseCodeEnum", "com.dr.oursp.third.pay.http.response.CapitalChangingReceipt", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.fasterxml.jackson.databind.DeserializationFeature", "com.fasterxml.jackson.databind.ObjectMapper", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.math.BigDecimal", "java.util.List", "java.util.Map"],
+    "imports": ["com.dr.domain.ModifierException", "com.dr.oursp.retail.consts.CapitalAccountManagerTypeEnum", "com.dr.oursp.retail.player.account.CapitalAccount", "com.dr.oursp.retail.player.account.consts.TransferBehaviorEnum", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxy", "com.dr.oursp.retail.player.account.proxy.CapitalAccountManagerProxyFactory", "com.dr.oursp.retail.player.account.proxy.callback.PayCenterCallBackParamsForPayment", "com.dr.oursp.retail.player.account.proxy.callback.PayCenterCallbackParamsForBidMargin", "com.dr.oursp.retail.player.account.proxy.receipt.CapitalBehaviorReceipt", "com.dr.oursp.retail.player.account.repo.CapitalAccountRepository", "com.dr.oursp.retail.remote.pay.api.http.request.SignAccountCapitalAsyncPayRequest", "com.dr.oursp.retail.remote.pay.service.event.*", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.third.pay.DrPayResponseCodeEnum", "com.dr.oursp.third.pay.http.response.CapitalChangingReceipt", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.fasterxml.jackson.databind.DeserializationFeature", "com.fasterxml.jackson.databind.ObjectMapper", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.math.BigDecimal", "java.util.List", "java.util.Map"],
     "class_name": "PayCenterCallbackHandler",
     "extend_name": "",
     "implements_name": [],
@@ -7351,7843 +6694,4 @@ var data = [{
     "extend_name": "Event",
     "implements_name": [],
     "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/retail/src/main/java/com/dr/oursp/retail/remote/pay/service/event/DrPayCallbackEvent.java"
-}, {
-    "name": "BasicOurspApplicationTester",
-    "package": "com.dr.oursp",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.account.UnifyAccountManager", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.oursp.strategy.basic.token.TokenManger", "com.dr.oursp.strategy.setting.ServerSettings", "lombok.AllArgsConstructor", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.junit.Before", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner"],
-    "class_name": "BasicOurspApplicationTester",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/BasicOurspApplicationTester.java"
-}, {
-    "name": "AppJointCertManagerTest",
-    "package": "com.dr.oursp.infra",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.strategy.basic.app.jc.AppJointCertDefine", "com.dr.oursp.strategy.basic.app.jc.AppJointCertManager", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.Optional"],
-    "class_name": "AppJointCertManagerTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/AppJointCertManagerTest.java"
-}, {
-    "name": "AppAuth",
-    "package": "com.dr.oursp.infra.app.entity",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.*", "java.io.Serializable"],
-    "class_name": "AppAuth implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/app/entity/AppAuth.java"
-}, {
-    "name": "App",
-    "package": "com.dr.oursp.infra.app.entity",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Column", "javax.persistence.Entity", "javax.persistence.Id", "javax.persistence.Table"],
-    "class_name": "App",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/app/entity/App.java"
-}, {
-    "name": "OpAppManagerApiTest",
-    "package": "com.dr.oursp.infra.app.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.infra.app.api.http.response.auth.AppAuthDetailResponse", "com.dr.oursp.strategy.api.ServiceResponse", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner"],
-    "class_name": "OpAppManagerApiTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/app/api/OpAppManagerApiTest.java"
-}, {
-    "name": "GlobalExceptionHandlerTest",
-    "package": "com.dr.oursp.infra.app.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.strategy.api.GlobalExceptionHandler", "com.dr.oursp.strategy.api.ServiceResponse", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.http.ResponseEntity", "org.springframework.test.context.junit4.SpringRunner"],
-    "class_name": "GlobalExceptionHandlerTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/app/api/GlobalExceptionHandlerTest.java"
-}, {
-    "name": "AppStoreApiTest",
-    "package": "com.dr.oursp.infra.app.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.infra.app.api.http.request.store.AppStoreAuthRequest", "com.dr.oursp.infra.app.api.http.request.store.AppStoreListRequest", "com.dr.oursp.infra.app.service.AppStoreService", "com.google.common.collect.Sets", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.HashSet"],
-    "class_name": "AppStoreApiTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/app/api/AppStoreApiTest.java"
-}, {
-    "name": "OiAjcInitTest",
-    "package": "com.dr.oursp.infra.app.oi.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.infra.ajc.AppJointCertService", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.account.repository.UnifyAccountRepository", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.List", "java.util.Map", "java.util.Optional", "java.util.stream.Collectors"],
-    "class_name": "OiAjcInitTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/app/oi/api/OiAjcInitTest.java"
-}, {
-    "name": "BizOrganizationApiTest",
-    "package": "com.dr.oursp.infra.org.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.oursp.OurspApplication", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.infra.org.api.http.request.MemberListRequest", "com.dr.oursp.infra.org.api.http.response.MemberResponse", "com.dr.oursp.infra.org.constant.IdentityClass", "com.google.common.collect.Lists", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner"],
-    "class_name": "BizOrganizationApiTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/org/api/BizOrganizationApiTest.java"
-}, {
-    "name": "OpOrganizationServiceTest",
-    "package": "com.dr.oursp.infra.org.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.infra.org.OpOrgService", "com.dr.oursp.infra.org.api.OpOrgModelConvert", "com.dr.oursp.infra.org.api.http.request.CreateAccountRequest", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.google.common.collect.Sets", "org.junit.Ignore", "org.junit.jupiter.api.Test", "org.junit.runner.RunWith", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "javax.annotation.Resource"],
-    "class_name": "OpOrganizationServiceTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/org/service/OpOrganizationServiceTest.java"
-}, {
-    "name": "TiAccountImport",
-    "package": "com.dr.oursp.infra.account",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.consts.AccountTypeEnum", "com.dr.oursp.infra.account.consts.SexTypeEnum", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.org.OpOrgService", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.support.serialization.Serializations", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.apache.poi.ss.usermodel.*", "org.apache.poi.xssf.usermodel.XSSFWorkbook", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.io.FileInputStream", "java.io.IOException", "java.nio.file.Files", "java.nio.file.Path", "java.nio.file.Paths", "java.util.*", "java.util.stream.Collectors"],
-    "class_name": "TiAccountImport",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/account/TiAccountImport.java"
-}, {
-    "name": "AccountServiceTest",
-    "package": "com.dr.oursp.infra.account",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.api.http.AccountInfoAttachment", "com.dr.support.serialization.Serializations", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.junit.Test", "java.util.Set"],
-    "class_name": "AccountServiceTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/account/AccountServiceTest.java"
-}, {
-    "name": "TiAccountServiceTest",
-    "package": "com.dr.oursp.infra.account",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.support.serialization.Serializations", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.io.IOException", "java.nio.charset.StandardCharsets", "java.nio.file.Files", "java.nio.file.Path", "java.nio.file.Paths", "java.nio.file.StandardOpenOption", "java.util.Map"],
-    "class_name": "TiAccountServiceTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/account/TiAccountServiceTest.java"
-}, {
-    "name": "OrderServiceConfig",
-    "package": "com.dr.oursp.infra.data.order",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.config.AppConfigItem", "com.dr.oursp.strategy.basic.app.consts.AppConfigTypeEnum", "com.dr.oursp.strategy.basic.app.consts.AppConfigValueTypeEnum", "lombok.Data", "static com.dr.oursp.infra.data.order.Constant.APPID"],
-    "class_name": "OrderServiceConfig",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/data/order/OrderServiceConfig.java"
-}, {
-    "name": "Constant",
-    "package": "com.dr.oursp.infra.data.order",
-    "type": "class",
-    "imports": [],
-    "class_name": "Constant",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/data/order/Constant.java"
-}, {
-    "name": "TestOrderService",
-    "package": "com.dr.oursp.infra.data.order",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.biz.BizClassifies", "com.dr.oursp.strategy.basic.app.biz.BizClassify", "com.dr.oursp.strategy.basic.app.menu.AppCustomMenu", "com.dr.oursp.strategy.basic.app.menu.AppDataDefineMenu", "com.dr.oursp.strategy.basic.app.menu.AppMenu", "com.dr.oursp.strategy.basic.role.PresetRole", "com.dr.oursp.strategy.basic.role.PresetRoles", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component"],
-    "class_name": "TestOrderService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/data/order/TestOrderService.java"
-}, {
-    "name": "OrderEntity",
-    "package": "com.dr.oursp.infra.data.order",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.data.DataDefineClass", "com.dr.oursp.strategy.basic.data.DataDefineField", "com.dr.oursp.strategy.basic.data.FieldTypeEnum", "com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntityWithId", "com.dr.oursp.strategy.basic.role.PresetRole", "com.dr.oursp.strategy.basic.role.PresetRoles", "lombok.EqualsAndHashCode", "javax.persistence.Entity", "javax.persistence.Table"],
-    "class_name": "OrderEntity extends BasicJpaEntityWithId",
-    "extend_name": "BasicJpaEntityWithId",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/data/order/OrderEntity.java"
-}, {
-    "name": "DataExcelUtilTest",
-    "package": "com.dr.oursp.infra.data.util",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.data.FieldTypeEnum", "org.junit.Test", "java.io.FileInputStream", "java.io.FileNotFoundException"],
-    "class_name": "DataExcelUtilTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/data/util/DataExcelUtilTest.java"
-}, {
-    "name": "EasyExcelTest",
-    "package": "com.dr.op.data.excel",
-    "type": "class",
-    "imports": ["com.alibaba.excel.EasyExcel", "org.junit.jupiter.api.Test", "java.util.ArrayList", "java.util.Date", "java.util.List"],
-    "class_name": "EasyExcelTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/data/excel/EasyExcelTest.java"
-}, {
-    "name": "AllocationRuleManagerTest",
-    "package": "com.dr.oursp.infra.allocation",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.strategy.basic.allocation.AllocationRuleManager", "com.dr.oursp.strategy.basic.allocation.consts.AllocateRuleMode", "com.dr.oursp.strategy.basic.allocation.consts.AllocationModifyModeEnum", "com.dr.oursp.strategy.basic.allocation.consts.AllocationTargetTypeEnum", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.assertj.core.util.Sets", "org.junit.jupiter.api.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.time.Instant", "java.util.HashSet", "java.util.LinkedHashSet"],
-    "class_name": "AllocationRuleManagerTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/infra/allocation/AllocationRuleManagerTest.java"
-}, {
-    "name": "NoticeTest",
-    "package": "com.dr.oursp.biz.notice",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.biz.article.ArticleService", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner"],
-    "class_name": "NoticeTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/biz/notice/NoticeTest.java"
-}, {
-    "name": "TodoTest",
-    "package": "com.dr.oursp.biz.todo",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.biz.todo.domain.vo.TodoVO", "com.dr.oursp.biz.todo.dto.TodoDTO", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.List"],
-    "class_name": "TodoTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/biz/todo/TodoTest.java"
-}, {
-    "name": "ImContactsTest",
-    "package": "com.dr.oursp.biz.im",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.biz.im.domain.ImContacts", "com.dr.oursp.biz.im.domain.vo.ImContactsVO", "com.dr.oursp.biz.im.domain.vo.ImOrgContactInfoVO", "com.dr.oursp.biz.im.repository.ImContactsRepo", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.List"],
-    "class_name": "ImContactsTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/biz/im/ImContactsTest.java"
-}, {
-    "name": "ImMessageTest",
-    "package": "com.dr.oursp.biz.im",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.biz.im.domain.ImMessage", "com.dr.oursp.biz.im.domain.dto.ImMessageDTO", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.amqp.rabbit.core.RabbitTemplate", "org.springframework.amqp.support.converter.MessageConverter", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.data.mongodb.core.MongoTemplate", "org.springframework.test.context.junit4.SpringRunner", "java.time.Instant", "java.util.UUID"],
-    "class_name": "ImMessageTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/biz/im/ImMessageTest.java"
-}, {
-    "name": "ImGroupTest",
-    "package": "com.dr.oursp.biz.im",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.biz.im.domain.ImGroup", "com.dr.oursp.biz.im.domain.vo.ImGroupVO", "com.dr.oursp.biz.im.repository.ImGroupRepo", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.Collections"],
-    "class_name": "ImGroupTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/biz/im/ImGroupTest.java"
-}, {
-    "name": "ImSessionTest",
-    "package": "com.dr.oursp.biz.im",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.biz.im.domain.ImGroup", "com.dr.oursp.biz.im.domain.ImSession", "com.dr.oursp.biz.im.domain.vo.ImSessionVO", "com.dr.oursp.biz.im.repository.ImGroupRepo", "com.dr.oursp.biz.im.repository.ImSessionRepo", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.List", "java.util.Set"],
-    "class_name": "ImSessionTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/biz/im/ImSessionTest.java"
-}, {
-    "name": "ArticleServiceTest",
-    "package": "com.dr.oursp.biz.article",
-    "type": "class",
-    "imports": ["com.dr.oursp.OurspApplication", "com.dr.oursp.biz.article.constant.*", "com.dr.oursp.biz.article.entity.ArticleEntity", "com.google.common.collect.Sets", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.time.Instant", "java.util.Collections", "java.util.List"],
-    "class_name": "ArticleServiceTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/biz/article/ArticleServiceTest.java"
-}, {
-    "name": "FallPagedTest",
-    "package": "com.dr.oursp.globe.http",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "org.apache.commons.compress.utils.Lists", "org.junit.Assert", "org.junit.Test", "java.util.List"],
-    "class_name": "FallPagedTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/test/java/com/dr/oursp/globe/http/FallPagedTest.java"
-}, {
-    "name": "OurspApplication",
-    "package": "com.dr.oursp",
-    "type": "class",
-    "imports": ["lombok.extern.slf4j.Slf4j", "org.springframework.boot.SpringApplication"],
-    "class_name": "OurspApplication",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/OurspApplication.java"
-}, {
-    "name": "RoleService",
-    "package": "com.dr.oursp.infra.role",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPageable", "com.dr.oursp.infra.org.api.http.response.PresetRoleResponse", "com.dr.oursp.infra.role.constant.RoleExcludeIdentityModeEnum", "com.dr.oursp.infra.role.dto.RuleSaveDTO", "com.dr.oursp.strategy.basic.app.AppManager", "com.dr.oursp.strategy.basic.app.entity.AppEntity", "com.dr.oursp.strategy.basic.app.entity.BizEntity", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityRoleRuleEnum", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.dr.oursp.strategy.basic.role.RoleManager", "com.dr.oursp.strategy.basic.role.entity.RoleEntity", "com.dr.oursp.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "java.util.*", "java.util.stream.Collectors"],
-    "class_name": "RoleService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/RoleService.java"
-}, {
-    "name": "RuleSaveDTO",
-    "package": "com.dr.oursp.infra.role.dto",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data"],
-    "class_name": "RuleSaveDTO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/dto/RuleSaveDTO.java"
-}, {
-    "name": "RoleExcludeIdentityModeEnum",
-    "package": "com.dr.oursp.infra.role.constant",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "RoleExcludeIdentityModeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/constant/RoleExcludeIdentityModeEnum.java"
-}, {
-    "name": "RoleApi",
-    "package": "com.dr.oursp.infra.role.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.app.repository.AppRegisteredRepository", "com.dr.oursp.infra.org.api.http.response.PresetRoleResponse", "com.dr.oursp.infra.role.RoleService", "com.dr.oursp.infra.role.api.http.RoleModelConvert", "com.dr.oursp.infra.role.api.http.request.*", "com.dr.oursp.infra.role.api.http.response.*", "com.dr.oursp.infra.role.constant.RoleExcludeIdentityModeEnum", "com.dr.oursp.infra.role.dto.RuleSaveDTO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.dr.oursp.strategy.basic.role.entity.RoleEntity", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "org.apache.logging.log4j.util.Strings", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.Arrays", "java.util.HashSet", "java.util.List", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "RoleApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/RoleApi.java"
-}, {
-    "name": "RoleModelConvert",
-    "package": "com.dr.oursp.infra.role.api.http",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.role.api.http.response.RoleDetailResponse", "com.dr.oursp.infra.role.api.http.response.RoleDetailRuleResponse", "com.dr.oursp.infra.role.api.http.response.RoleResponse", "com.dr.oursp.infra.role.api.http.response.RoleRuleResponse", "com.dr.oursp.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.dr.oursp.strategy.basic.role.entity.RoleEntity", "com.dr.oursp.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.support.serialization.Serializations", "com.google.common.reflect.TypeToken", "org.apache.logging.log4j.util.Strings", "java.util.Collections", "java.util.Set"],
-    "class_name": "RoleModelConvert",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/http/RoleModelConvert.java"
-}, {
-    "name": "RoleDetailRuleResponse",
-    "package": "com.dr.oursp.infra.role.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
-    "class_name": "RoleDetailRuleResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/http/response/RoleDetailRuleResponse.java"
-}, {
-    "name": "RoleSaveOrUpdateResponse",
-    "package": "com.dr.oursp.infra.role.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.AllArgsConstructor", "lombok.Data"],
-    "class_name": "RoleSaveOrUpdateResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/http/response/RoleSaveOrUpdateResponse.java"
-}, {
-    "name": "RoleDeleteResponse",
-    "package": "com.dr.oursp.infra.role.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "RoleDeleteResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/http/response/RoleDeleteResponse.java"
-}, {
-    "name": "RoleExecListResponse",
-    "package": "com.dr.oursp.infra.role.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor"],
-    "class_name": "RoleExecListResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/http/response/RoleExecListResponse.java"
-}, {
-    "name": "RoleResponse",
-    "package": "com.dr.oursp.infra.role.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
-    "class_name": "RoleResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/http/response/RoleResponse.java"
-}, {
-    "name": "RoleDetailResponse",
-    "package": "com.dr.oursp.infra.role.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
-    "class_name": "RoleDetailResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/http/response/RoleDetailResponse.java"
-}, {
-    "name": "RoleExceModifyResponse",
-    "package": "com.dr.oursp.infra.role.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "RoleExceModifyResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/http/response/RoleExceModifyResponse.java"
-}, {
-    "name": "RoleRuleResponse",
-    "package": "com.dr.oursp.infra.role.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "RoleRuleResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/http/response/RoleRuleResponse.java"
-}, {
-    "name": "RoleSaveOrUpdateRequest",
-    "package": "com.dr.oursp.infra.role.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "RoleSaveOrUpdateRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/http/request/RoleSaveOrUpdateRequest.java"
-}, {
-    "name": "RoleRuleSaveRequest",
-    "package": "com.dr.oursp.infra.role.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "RoleRuleSaveRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/http/request/RoleRuleSaveRequest.java"
-}, {
-    "name": "RoleExceptionModifyRequest",
-    "package": "com.dr.oursp.infra.role.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
-    "class_name": "RoleExceptionModifyRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/http/request/RoleExceptionModifyRequest.java"
-}, {
-    "name": "RoleDeleteRuleRequest",
-    "package": "com.dr.oursp.infra.role.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "RoleDeleteRuleRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/http/request/RoleDeleteRuleRequest.java"
-}, {
-    "name": "RoleSwitchRequest",
-    "package": "com.dr.oursp.infra.role.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "RoleSwitchRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/role/api/http/request/RoleSwitchRequest.java"
-}, {
-    "name": "AppAttachmentVO",
-    "package": "com.dr.oursp.infra.app.vo",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppAttachmentVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/vo/AppAttachmentVO.java"
-}, {
-    "name": "AppMenuVO",
-    "package": "com.dr.oursp.infra.app.vo",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data", "lombok.experimental.Accessors", "javax.persistence.Column"],
-    "class_name": "AppMenuVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/vo/AppMenuVO.java"
-}, {
-    "name": "AppJointCertConfigItemVO",
-    "package": "com.dr.oursp.infra.app.vo",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppJointCertConfigItemVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/vo/AppJointCertConfigItemVO.java"
-}, {
-    "name": "AppAuthVO",
-    "package": "com.dr.oursp.infra.app.vo",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.consts.AppItemTypeEnum", "com.dr.oursp.infra.app.entity.AppAuthEntity", "com.dr.oursp.infra.app.entity.AppRegisteredEntity", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.google.common.collect.Lists", "lombok.Data", "lombok.experimental.Accessors", "java.util.List"],
-    "class_name": "AppAuthVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/vo/AppAuthVO.java"
-}, {
-    "name": "AppLockBardVO",
-    "package": "com.dr.oursp.infra.app.vo",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.entity.AppLockEntity", "lombok.Data", "lombok.experimental.Accessors", "java.util.Objects"],
-    "class_name": "AppLockBardVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/vo/AppLockBardVO.java"
-}, {
-    "name": "AppPermissionVO",
-    "package": "com.dr.oursp.infra.app.vo",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppPermissionVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/vo/AppPermissionVO.java"
-}, {
-    "name": "AppCenterVO",
-    "package": "com.dr.oursp.infra.app.vo",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.api.AppModelConvert", "com.dr.oursp.infra.app.consts.AppCenterLockTypeEnum", "com.dr.oursp.infra.app.consts.AppItemTypeEnum", "com.dr.oursp.infra.app.entity.AppCenterEntranceEntity", "com.dr.oursp.infra.app.entity.AppCenterTopEntity", "com.dr.oursp.infra.app.entity.AppLockEntity", "com.dr.oursp.infra.app.entity.AppRegisteredEntity", "lombok.Data", "lombok.experimental.Accessors", "java.util.Objects"],
-    "class_name": "AppCenterVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/vo/AppCenterVO.java"
-}, {
-    "name": "AppInfoVO",
-    "package": "com.dr.oursp.infra.app.vo",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Builder", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppInfoVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/vo/AppInfoVO.java"
-}, {
-    "name": "AppBizVO",
-    "package": "com.dr.oursp.infra.app.vo",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppBizVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/vo/AppBizVO.java"
-}, {
-    "name": "AppConfigVO",
-    "package": "com.dr.oursp.infra.app.vo",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppConfigVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/vo/AppConfigVO.java"
-}, {
-    "name": "AppVO",
-    "package": "com.dr.oursp.infra.app.vo",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.consts.AppItemTypeEnum", "com.dr.oursp.infra.app.entity.AppRegisteredEntity", "com.google.common.collect.Lists", "lombok.Builder", "lombok.Data", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "java.util.List", "java.util.Objects"],
-    "class_name": "AppVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/vo/AppVO.java"
-}, {
-    "name": "AppDingVO",
-    "package": "com.dr.oursp.infra.app.vo",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.consts.AppDingTypeEnum", "lombok.Builder", "lombok.Getter", "lombok.experimental.Accessors"],
-    "class_name": "AppDingVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/vo/AppDingVO.java"
-}, {
-    "name": "AppAuthSubRepository",
-    "package": "com.dr.oursp.infra.app.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.app.entity.AppAuthEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.JpaRepository", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Stream"],
-    "class_name": "AppAuthSubRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/repository/AppAuthSubRepository.java"
-}, {
-    "name": "AppLockRepository",
-    "package": "com.dr.oursp.infra.app.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.app.entity.AppLockEntity", "org.springframework.data.jpa.repository.JpaRepository", "java.util.stream.Stream"],
-    "class_name": "AppLockRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/repository/AppLockRepository.java"
-}, {
-    "name": "AppCenterTopRepository",
-    "package": "com.dr.oursp.infra.app.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.app.entity.AppCenterTopEntity", "org.springframework.data.jpa.repository.JpaRepository", "java.util.List", "java.util.Optional"],
-    "class_name": "AppCenterTopRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/repository/AppCenterTopRepository.java"
-}, {
-    "name": "AppCenterFastEntranceRepository",
-    "package": "com.dr.oursp.infra.app.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.app.entity.AppCenterEntranceEntity", "org.springframework.data.jpa.repository.JpaRepository", "java.util.List", "java.util.Optional", "java.util.Set"],
-    "class_name": "AppCenterFastEntranceRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/repository/AppCenterFastEntranceRepository.java"
-}, {
-    "name": "AppRegisteredRepository",
-    "package": "com.dr.oursp.infra.app.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.app.entity.AppRegisteredEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.JpaRepository", "org.springframework.data.jpa.repository.Query", "java.util.List", "java.util.Set", "java.util.stream.Stream"],
-    "class_name": "AppRegisteredRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/repository/AppRegisteredRepository.java"
-}, {
-    "name": "AppCfgPersonalPrivilegeRepository",
-    "package": "com.dr.oursp.infra.app.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.app.entity.AppConfigPersonalPrivilegeEntity", "com.dr.oursp.infra.app.entity.AppConfigPersonalPrivilegeUnionId", "org.springframework.data.jpa.repository.JpaRepository"],
-    "class_name": "AppCfgPersonalPrivilegeRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/repository/AppCfgPersonalPrivilegeRepository.java"
-}, {
-    "name": "AppCfgPersonalRepository",
-    "package": "com.dr.oursp.infra.app.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.app.entity.AppConfigPersonalEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.JpaRepository", "org.springframework.data.jpa.repository.Query", "java.util.List"],
-    "class_name": "AppCfgPersonalRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/repository/AppCfgPersonalRepository.java"
-}, {
-    "name": "AppDingRepository",
-    "package": "com.dr.oursp.infra.app.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.app.entity.AppDingEntity", "org.springframework.data.jpa.repository.JpaRepository", "java.util.stream.Stream"],
-    "class_name": "AppDingRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/repository/AppDingRepository.java"
-}, {
-    "name": "AppCfgGlobalRepository",
-    "package": "com.dr.oursp.infra.app.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.app.entity.AppCfgGlobalUnionId", "com.dr.oursp.infra.app.entity.AppConfigGlobalEntity", "org.springframework.data.jpa.repository.JpaRepository"],
-    "class_name": "AppCfgGlobalRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/repository/AppCfgGlobalRepository.java"
-}, {
-    "name": "SmartRetailSupplier",
-    "package": "com.dr.oursp.infra.app.preset",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.consts.AppDisplayEnum", "lombok.Data"],
-    "class_name": "SmartRetailSupplier",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/SmartRetailSupplier.java"
-}, {
-    "name": "SmartRetailConveying",
-    "package": "com.dr.oursp.infra.app.preset",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.consts.AppDisplayEnum", "lombok.Data"],
-    "class_name": "SmartRetailConveying",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/SmartRetailConveying.java"
-}, {
-    "name": "SmartRetailSeller",
-    "package": "com.dr.oursp.infra.app.preset",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.consts.AppDisplayEnum", "lombok.Data"],
-    "class_name": "SmartRetailSeller",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/SmartRetailSeller.java"
-}, {
-    "name": "SmartRetailBuyer",
-    "package": "com.dr.oursp.infra.app.preset",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.consts.AppDisplayEnum", "lombok.Data"],
-    "class_name": "SmartRetailBuyer",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/SmartRetailBuyer.java"
-}, {
-    "name": "WisdomDispatch",
-    "package": "com.dr.oursp.infra.app.preset",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.consts.AppDisplayEnum", "com.dr.oursp.strategy.basic.app.jc.AppJointCertConfigItem", "com.dr.oursp.strategy.basic.app.jc.AppJointCertification", "lombok.Data"],
-    "class_name": "WisdomDispatch",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/WisdomDispatch.java"
-}, {
-    "name": "SmartRetailTransportationManagement",
-    "package": "com.dr.oursp.infra.app.preset",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.consts.AppDisplayEnum", "lombok.Data"],
-    "class_name": "SmartRetailTransportationManagement",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/SmartRetailTransportationManagement.java"
-}, {
-    "name": "WisdomTransportationSale",
-    "package": "com.dr.oursp.infra.app.preset",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.consts.AppDisplayEnum", "com.dr.oursp.strategy.basic.app.jc.AppJointCertConfigItem", "com.dr.oursp.strategy.basic.app.jc.AppJointCertification", "lombok.Data"],
-    "class_name": "WisdomTransportationSale",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/WisdomTransportationSale.java"
-}, {
-    "name": "AppConst",
-    "package": "com.dr.oursp.infra.app.preset",
-    "type": "class",
-    "imports": [],
-    "class_name": "AppConst",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/AppConst.java"
-}, {
-    "name": "WeaverOA",
-    "package": "com.dr.oursp.infra.app.preset",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.consts.AppDisplayEnum", "com.dr.oursp.strategy.basic.app.jc.AppJointCertConfigItem", "com.dr.oursp.strategy.basic.app.jc.AppJointCertification", "lombok.Data"],
-    "class_name": "WeaverOA",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/WeaverOA.java"
-}, {
-    "name": "WisdomTransportationSalePerspective",
-    "package": "com.dr.oursp.infra.app.preset",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.consts.AppDisplayEnum", "com.dr.oursp.strategy.basic.app.jc.AppJointCertConfigItem", "com.dr.oursp.strategy.basic.app.jc.AppJointCertification", "com.dr.support.enums.KeyValueEnum", "lombok.Data"],
-    "class_name": "WisdomTransportationSalePerspective",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/WisdomTransportationSalePerspective.java"
-}, {
-    "name": "SystemTest001Roles001",
-    "package": "com.dr.oursp.infra.app.preset.test",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.role.PresetRole", "com.dr.oursp.strategy.basic.role.PresetRoles", "com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst", "static com.dr.oursp.infra.app.preset.AppConst.AppIds.APP_ID_SYSTEM_TEST_001"],
-    "class_name": "SystemTest001Roles001",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/test/SystemTest001Roles001.java"
-}, {
-    "name": "SystemTest002Roles003",
-    "package": "com.dr.oursp.infra.app.preset.test",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.role.PresetRole", "com.dr.oursp.strategy.basic.role.PresetRoles", "com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst", "static com.dr.oursp.infra.app.preset.AppConst.AppIds.APP_ID_SYSTEM_TEST_002"],
-    "class_name": "SystemTest002Roles003",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/test/SystemTest002Roles003.java"
-}, {
-    "name": "SystemTest002Roles002",
-    "package": "com.dr.oursp.infra.app.preset.test",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.role.PresetRole", "com.dr.oursp.strategy.basic.role.PresetRoles", "com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst", "static com.dr.oursp.infra.app.preset.AppConst.AppIds.APP_ID_SYSTEM_TEST_002"],
-    "class_name": "SystemTest002Roles002",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/test/SystemTest002Roles002.java"
-}, {
-    "name": "SystemTest001",
-    "package": "com.dr.oursp.infra.app.preset.test",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.biz.BizClassifies", "com.dr.oursp.strategy.basic.app.biz.BizClassify", "com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.consts.AppDisplayEnum", "com.dr.oursp.strategy.basic.app.jc.AppJointCertification", "com.dr.oursp.strategy.basic.app.menu.AppCustomMenu", "com.dr.oursp.strategy.basic.app.menu.AppMenu", "com.dr.oursp.strategy.basic.role.PresetRole", "com.dr.oursp.strategy.basic.role.PresetRoles", "com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst", "lombok.Data", "static com.dr.oursp.infra.app.preset.AppConst.AppIds.AJC_ID_SYSTEM_TEST_001", "static com.dr.oursp.infra.app.preset.AppConst.AppIds.APP_ID_SYSTEM_TEST_001"],
-    "class_name": "SystemTest001",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/test/SystemTest001.java"
-}, {
-    "name": "SystemTest002Roles001",
-    "package": "com.dr.oursp.infra.app.preset.test",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.role.PresetRole", "com.dr.oursp.strategy.basic.role.PresetRoles", "com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst", "static com.dr.oursp.infra.app.preset.AppConst.AppIds.APP_ID_SYSTEM_TEST_002"],
-    "class_name": "SystemTest002Roles001",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/test/SystemTest002Roles001.java"
-}, {
-    "name": "SystemTest001Roles003",
-    "package": "com.dr.oursp.infra.app.preset.test",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.role.PresetRole", "com.dr.oursp.strategy.basic.role.PresetRoles", "com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst", "static com.dr.oursp.infra.app.preset.AppConst.AppIds.APP_ID_SYSTEM_TEST_001"],
-    "class_name": "SystemTest001Roles003",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/test/SystemTest001Roles003.java"
-}, {
-    "name": "SystemTest002",
-    "package": "com.dr.oursp.infra.app.preset.test",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.biz.BizClassifies", "com.dr.oursp.strategy.basic.app.biz.BizClassify", "com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.consts.AppDisplayEnum", "com.dr.oursp.strategy.basic.app.menu.AppCustomMenu", "com.dr.oursp.strategy.basic.app.menu.AppMenu", "com.dr.oursp.strategy.basic.role.PresetRole", "com.dr.oursp.strategy.basic.role.PresetRoles", "com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst", "lombok.Data", "static com.dr.oursp.infra.app.preset.AppConst.AppIds.APP_ID_SYSTEM_TEST_002"],
-    "class_name": "SystemTest002",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/test/SystemTest002.java"
-}, {
-    "name": "SystemTest001Roles002",
-    "package": "com.dr.oursp.infra.app.preset.test",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.role.PresetRole", "com.dr.oursp.strategy.basic.role.PresetRoles", "com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst", "static com.dr.oursp.infra.app.preset.AppConst.AppIds.APP_ID_SYSTEM_TEST_001"],
-    "class_name": "SystemTest001Roles002",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/preset/test/SystemTest001Roles002.java"
-}, {
-    "name": "AppAuthEntity",
-    "package": "com.dr.oursp.infra.app.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.consts.AppAuthEnum", "com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntityWithId", "io.swagger.annotations.ApiModel", "lombok.Data", "javax.persistence.Column", "javax.persistence.Entity", "javax.persistence.Index", "javax.persistence.Table", "java.io.Serializable", "java.time.Instant"],
-    "class_name": "AppAuthEntity extends BasicJpaEntityWithId implements Serializable",
-    "extend_name": "BasicJpaEntityWithId",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/entity/AppAuthEntity.java"
-}, {
-    "name": "AppCfgGlobalUnionId",
-    "package": "com.dr.oursp.infra.app.entity",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.NoArgsConstructor", "java.io.Serializable"],
-    "class_name": "AppCfgGlobalUnionId implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/entity/AppCfgGlobalUnionId.java"
-}, {
-    "name": "AppCenterEntranceEntity",
-    "package": "com.dr.oursp.infra.app.entity",
-    "type": "class",
-    "imports": ["com.baomidou.mybatisplus.annotation.IdType", "com.baomidou.mybatisplus.annotation.TableId", "com.baomidou.mybatisplus.annotation.TableName", "lombok.Data", "lombok.experimental.Accessors", "javax.persistence.*", "java.io.Serializable"],
-    "class_name": "AppCenterEntranceEntity implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/entity/AppCenterEntranceEntity.java"
-}, {
-    "name": "AppDingEntity",
-    "package": "com.dr.oursp.infra.app.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.consts.AppDingTypeEnum", "lombok.Data", "javax.persistence.*", "java.io.Serializable"],
-    "class_name": "AppDingEntity implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/entity/AppDingEntity.java"
-}, {
-    "name": "AppConfigPersonalPrivilegeEntity",
-    "package": "com.dr.oursp.infra.app.entity",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "lombok.Data", "javax.persistence.*", "java.io.Serializable"],
-    "class_name": "AppConfigPersonalPrivilegeEntity implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/entity/AppConfigPersonalPrivilegeEntity.java"
-}, {
-    "name": "AppCenterTopEntity",
-    "package": "com.dr.oursp.infra.app.entity",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.experimental.Accessors", "javax.persistence.*"],
-    "class_name": "AppCenterTopEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/entity/AppCenterTopEntity.java"
-}, {
-    "name": "AppConfigGlobalEntity",
-    "package": "com.dr.oursp.infra.app.entity",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "lombok.Data", "javax.persistence.*", "java.io.Serializable"],
-    "class_name": "AppConfigGlobalEntity implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/entity/AppConfigGlobalEntity.java"
-}, {
-    "name": "AppConfigPersonalEntity",
-    "package": "com.dr.oursp.infra.app.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntityWithId", "io.swagger.annotations.ApiModel", "lombok.Data", "javax.persistence.Column", "javax.persistence.Entity", "javax.persistence.Table", "java.io.Serializable"],
-    "class_name": "AppConfigPersonalEntity extends BasicJpaEntityWithId implements Serializable",
-    "extend_name": "BasicJpaEntityWithId",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/entity/AppConfigPersonalEntity.java"
-}, {
-    "name": "AppConfigPersonalPrivilegeUnionId",
-    "package": "com.dr.oursp.infra.app.entity",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.NoArgsConstructor", "javax.persistence.Id", "java.io.Serializable"],
-    "class_name": "AppConfigPersonalPrivilegeUnionId implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/entity/AppConfigPersonalPrivilegeUnionId.java"
-}, {
-    "name": "AppRegisteredEntity",
-    "package": "com.dr.oursp.infra.app.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.api.http.response.AppAttachmentResponse", "com.dr.oursp.infra.app.api.http.response.AppBizTypeResponse", "com.dr.oursp.infra.app.api.http.response.AppMenuInfoResponse", "com.dr.oursp.infra.app.api.http.response.AppPermissionResponse", "com.dr.oursp.infra.app.api.http.response.config.AppConfigResponse", "com.dr.oursp.infra.app.consts.AppSourceEnum", "com.dr.oursp.infra.app.vo.*", "com.dr.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.gson.reflect.TypeToken", "io.swagger.annotations.ApiModel", "lombok.Data", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "org.springframework.util.CollectionUtils", "javax.persistence.Column", "javax.persistence.Entity", "javax.persistence.Id", "javax.persistence.Table", "java.util.List"],
-    "class_name": "AppRegisteredEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/entity/AppRegisteredEntity.java"
-}, {
-    "name": "AppLockEntity",
-    "package": "com.dr.oursp.infra.app.entity",
-    "type": "class",
-    "imports": ["com.baomidou.mybatisplus.annotation.IdType", "com.baomidou.mybatisplus.annotation.TableId", "lombok.Data", "javax.persistence.*", "java.io.Serializable"],
-    "class_name": "AppLockEntity implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/entity/AppLockEntity.java"
-}, {
-    "name": "AppAssignApi",
-    "package": "com.dr.oursp.infra.app.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.app.api.http.request.allocation.AppAllocationRuleCreateRequest", "com.dr.oursp.infra.app.api.http.request.allocation.AppAllocationRuleModifyExceptionRequest", "com.dr.oursp.infra.app.api.http.request.allocation.AppAllocationRuleModifyRequest", "com.dr.oursp.infra.app.api.http.request.allocation.AppAssignRuleDeleteRequest", "com.dr.oursp.infra.app.api.http.response.allocation.AppAllocationRuleRequest", "com.dr.oursp.infra.dv.api.DataVisitModelConvert", "com.dr.oursp.infra.dv.api.http.response.ExceptionListResponse", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.allocation.AllocationRuleManager", "com.dr.oursp.strategy.basic.allocation.consts.AllocateRuleMode", "com.dr.oursp.strategy.basic.allocation.consts.AllocationModifyModeEnum", "com.dr.oursp.strategy.basic.allocation.consts.AllocationTargetTypeEnum", "com.dr.oursp.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "AppAssignApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/AppAssignApi.java"
-}, {
-    "name": "AppStoreApi",
-    "package": "com.dr.oursp.infra.app.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.app.api.http.request.store.AppStoreAuthRequest", "com.dr.oursp.infra.app.api.http.request.store.AppStoreListRequest", "com.dr.oursp.infra.app.api.http.response.store.AppStoreAuthResponse", "com.dr.oursp.infra.app.api.http.response.store.AppStoreListResponse", "com.dr.oursp.infra.app.consts.AppAuthActionEnum", "com.dr.oursp.infra.app.consts.AppAuthEnum", "com.dr.oursp.infra.app.service.AppStoreService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController", "javax.validation.Valid", "java.util.stream.Collectors"],
-    "class_name": "AppStoreApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/AppStoreApi.java"
-}, {
-    "name": "AppConfigApi",
-    "package": "com.dr.oursp.infra.app.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.app.api.http.request.config.AppConfigDetailInfo", "com.dr.oursp.infra.app.api.http.request.config.AppConfigPersonalPrivilegeInfo", "com.dr.oursp.infra.app.api.http.response.AppInfoResponse", "com.dr.oursp.infra.app.api.http.response.config.AppConfigPersonalResponse", "com.dr.oursp.infra.app.api.http.response.config.AppConfigResponse", "com.dr.oursp.infra.app.service.AppConfigService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.*", "java.util.List"],
-    "class_name": "AppConfigApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/AppConfigApi.java"
-}, {
-    "name": "AppCenterApi",
-    "package": "com.dr.oursp.infra.app.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.app.api.http.request.center.AppCenterLockRequest", "com.dr.oursp.infra.app.api.http.request.center.AppCenterSetTopRequest", "com.dr.oursp.infra.app.api.http.response.center.*", "com.dr.oursp.infra.app.consts.AppCenterLockStatusEnum", "com.dr.oursp.infra.app.consts.AppCenterLockTypeEnum", "com.dr.oursp.infra.app.consts.AppCenterTopStatusEnum", "com.dr.oursp.infra.app.service.AppCenterService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.annotation.Resource", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "AppCenterApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/AppCenterApi.java"
-}, {
-    "name": "AppDataApi",
-    "package": "com.dr.oursp.infra.app.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.app.api.http.request.lock.AppLockRequest", "com.dr.oursp.infra.app.api.http.response.lock.AppLockInfoResponse", "com.dr.oursp.infra.app.api.http.response.lock.AppLockResponse", "com.dr.oursp.infra.app.consts.AppLockStatusEnum", "com.dr.oursp.infra.app.consts.AppLockTypeEnum", "com.dr.oursp.infra.app.service.AppLockService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.annotation.Resource", "javax.validation.Valid", "java.util.stream.Collectors"],
-    "class_name": "AppDataApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/AppDataApi.java"
-}, {
-    "name": "OpAppManagerApi",
-    "package": "com.dr.oursp.infra.app.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.app.api.http.request.AppDetailRequest", "com.dr.oursp.infra.app.api.http.request.AppModifyDescRequest", "com.dr.oursp.infra.app.api.http.request.AppSaveRequest", "com.dr.oursp.infra.app.api.http.request.AppShelvesRequest", "com.dr.oursp.infra.app.api.http.request.auth.AppAuthDetailRequest", "com.dr.oursp.infra.app.api.http.request.auth.AppAuthRequest", "com.dr.oursp.infra.app.api.http.response.AppDetailResponse", "com.dr.oursp.infra.app.api.http.response.AppInfoResponse", "com.dr.oursp.infra.app.api.http.response.auth.AppAuthAppInfoResponse", "com.dr.oursp.infra.app.api.http.response.auth.AppAuthDetailResponse", "com.dr.oursp.infra.app.api.http.response.auth.AppAuthInfoResponse", "com.dr.oursp.infra.app.api.http.response.auth.OrgNeverAuthResponse", "com.dr.oursp.infra.app.consts.AppAuthActionEnum", "com.dr.oursp.infra.app.consts.AppDataBaseEnum", "com.dr.oursp.infra.app.consts.AppRegisterStatusEnum", "com.dr.oursp.infra.app.consts.AppShelveEnum", "com.dr.oursp.infra.app.service.AppManagerService", "com.dr.oursp.infra.app.vo.AppVO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "OpAppManagerApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/OpAppManagerApi.java"
-}, {
-    "name": "AppModelConvert",
-    "package": "com.dr.oursp.infra.app.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.infra.app.api.http.request.AppSaveRequest", "com.dr.oursp.infra.app.api.http.response.*", "com.dr.oursp.infra.app.api.http.response.allocation.AppAllocationRuleRequest", "com.dr.oursp.infra.app.api.http.response.auth.*", "com.dr.oursp.infra.app.api.http.response.center.AppCenterFastEntranceResponse", "com.dr.oursp.infra.app.api.http.response.center.AppCenterListResponse", "com.dr.oursp.infra.app.api.http.response.center.AppCenterMenusResponse", "com.dr.oursp.infra.app.api.http.response.config.AppConfigResponse", "com.dr.oursp.infra.app.api.http.response.lock.AppLockInfoResponse", "com.dr.oursp.infra.app.api.http.response.lock.AppLockResponse", "com.dr.oursp.infra.app.api.http.response.store.AppStoreAuthResponse", "com.dr.oursp.infra.app.api.http.response.store.AppStoreListResponse", "com.dr.oursp.infra.app.consts.*", "com.dr.oursp.infra.app.entity.AppAuthEntity", "com.dr.oursp.infra.app.entity.AppCenterEntranceEntity", "com.dr.oursp.infra.app.entity.AppRegisteredEntity", "com.dr.oursp.infra.app.vo.*", "com.dr.oursp.strategy.basic.allocation.entity.AllocationRuleEntity", "com.dr.oursp.strategy.basic.app.config.AppConfigDefine", "com.dr.oursp.strategy.basic.app.consts.AppConfigTypeEnum", "com.dr.oursp.strategy.basic.app.entity.BizEntity", "com.dr.oursp.strategy.basic.app.jc.AppJointCertConfigItemDefine", "com.dr.oursp.strategy.basic.app.menu.AppMenuDefine", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.role.entity.RoleEntity", "com.dr.support.enums.Enumerations", "com.google.common.collect.Lists", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Component", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "AppModelConvert",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/AppModelConvert.java"
-}, {
-    "name": "AppWorkbenchApi",
-    "package": "com.dr.oursp.infra.app.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.app.api.http.request.lock.AppLockRequest", "com.dr.oursp.infra.app.api.http.response.lock.AppLockListResponse", "com.dr.oursp.infra.app.api.http.response.lock.AppLockResponse", "com.dr.oursp.infra.app.consts.AppLockStatusEnum", "com.dr.oursp.infra.app.consts.AppLockTypeEnum", "com.dr.oursp.infra.app.consts.AppWorkBenchMode", "com.dr.oursp.infra.app.service.AppCenterService", "com.dr.oursp.infra.app.service.AppLockService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.annotation.Resource", "javax.validation.Valid", "java.util.stream.Collectors"],
-    "class_name": "AppWorkbenchApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/AppWorkbenchApi.java"
-}, {
-    "name": "MobileAppWorkbenchApi",
-    "package": "com.dr.oursp.infra.app.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.app.api.http.request.lock.AppLockRequest", "com.dr.oursp.infra.app.api.http.response.lock.AppLockListResponse", "com.dr.oursp.infra.app.api.http.response.lock.AppLockResponse", "com.dr.oursp.infra.app.consts.AppLockStatusEnum", "com.dr.oursp.infra.app.consts.AppLockTypeEnum", "com.dr.oursp.infra.app.consts.AppWorkBenchMode", "com.dr.oursp.infra.app.service.AppCenterService", "com.dr.oursp.infra.app.service.AppLockService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.annotation.Resource", "javax.validation.Valid", "java.util.stream.Collectors"],
-    "class_name": "MobileAppWorkbenchApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/MobileAppWorkbenchApi.java"
-}, {
-    "name": "MobileAppCenterApi",
-    "package": "com.dr.oursp.infra.app.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.app.api.http.request.center.AppCenterLockRequest", "com.dr.oursp.infra.app.api.http.request.center.AppCenterSetTopRequest", "com.dr.oursp.infra.app.api.http.response.center.*", "com.dr.oursp.infra.app.consts.AppCenterLockStatusEnum", "com.dr.oursp.infra.app.consts.AppCenterLockTypeEnum", "com.dr.oursp.infra.app.consts.AppCenterTopStatusEnum", "com.dr.oursp.infra.app.service.AppCenterService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.annotation.Resource", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "MobileAppCenterApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/MobileAppCenterApi.java"
-}, {
-    "name": "AppPermissionResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppPermissionResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/AppPermissionResponse.java"
-}, {
-    "name": "AppUpdateDescResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "java.util.List"],
-    "class_name": "AppUpdateDescResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/AppUpdateDescResponse.java"
-}, {
-    "name": "AppBizTypeResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppBizTypeResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/AppBizTypeResponse.java"
-}, {
-    "name": "AppAttachmentResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppAttachmentResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/AppAttachmentResponse.java"
-}, {
-    "name": "AppRefreshInfoResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "lombok.experimental.Accessors"],
-    "class_name": "AppRefreshInfoResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/AppRefreshInfoResponse.java"
-}, {
-    "name": "AppInfoResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppInfoResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/AppInfoResponse.java"
-}, {
-    "name": "AppDetailResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.api.http.response.config.AppConfigResponse", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "java.util.List"],
-    "class_name": "AppDetailResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/AppDetailResponse.java"
-}, {
-    "name": "AppMenuIconResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppMenuIconResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/AppMenuIconResponse.java"
-}, {
-    "name": "AppMenuInfoResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppMenuInfoResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/AppMenuInfoResponse.java"
-}, {
-    "name": "AppConfigItemResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.config",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppConfigItemResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/config/AppConfigItemResponse.java"
-}, {
-    "name": "AppConfigPersonalResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.config",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppConfigPersonalResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/config/AppConfigPersonalResponse.java"
-}, {
-    "name": "AppConfigRuleLabelResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.config",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppConfigRuleLabelResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/config/AppConfigRuleLabelResponse.java"
-}, {
-    "name": "AppConfigRuleDetailResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.config",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.dv.http.resp.VisibleRuleLabelResponse", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "java.util.List"],
-    "class_name": "AppConfigRuleDetailResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/config/AppConfigRuleDetailResponse.java"
-}, {
-    "name": "AppConfigResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.config",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppConfigResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/config/AppConfigResponse.java"
-}, {
-    "name": "AppNeverAuthResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.auth",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppNeverAuthResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/auth/AppNeverAuthResponse.java"
-}, {
-    "name": "AppAuthAppInfoResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.auth",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Builder", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppAuthAppInfoResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/auth/AppAuthAppInfoResponse.java"
-}, {
-    "name": "AppAuthConfigItemResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.auth",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "java.util.Objects"],
-    "class_name": "AppAuthConfigItemResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/auth/AppAuthConfigItemResponse.java"
-}, {
-    "name": "AppAuthDetailResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.auth",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.vo.AppConfigVO", "com.dr.oursp.infra.app.vo.AppJointCertConfigItemVO", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "java.util.List"],
-    "class_name": "AppAuthDetailResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/auth/AppAuthDetailResponse.java"
-}, {
-    "name": "AppAuthInfoResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.auth",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppAuthInfoResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/auth/AppAuthInfoResponse.java"
-}, {
-    "name": "OrgNeverAuthResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.auth",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "OrgNeverAuthResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/auth/OrgNeverAuthResponse.java"
-}, {
-    "name": "AppCenterMenusResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.center",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppCenterMenusResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/center/AppCenterMenusResponse.java"
-}, {
-    "name": "AppCenterLockResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.center",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppCenterLockResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/center/AppCenterLockResponse.java"
-}, {
-    "name": "AppCenterFastEntranceResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.center",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppCenterFastEntranceResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/center/AppCenterFastEntranceResponse.java"
-}, {
-    "name": "AppCenterSetTopResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.center",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppCenterSetTopResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/center/AppCenterSetTopResponse.java"
-}, {
-    "name": "AppCenterListResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.center",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppCenterListResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/center/AppCenterListResponse.java"
-}, {
-    "name": "AppLockResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.lock",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppLockResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/lock/AppLockResponse.java"
-}, {
-    "name": "AppLockInfoResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.lock",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppLockInfoResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/lock/AppLockInfoResponse.java"
-}, {
-    "name": "AppLockListResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.lock",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.api.http.response.center.AppCenterFastEntranceResponse", "com.google.common.collect.Lists", "lombok.Data", "lombok.experimental.Accessors", "org.springframework.util.CollectionUtils", "java.util.List"],
-    "class_name": "AppLockListResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/lock/AppLockListResponse.java"
-}, {
-    "name": "AppStoreListResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.store",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppStoreListResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/store/AppStoreListResponse.java"
-}, {
-    "name": "AppStoreAuthResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.store",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppStoreAuthResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/store/AppStoreAuthResponse.java"
-}, {
-    "name": "AppAssignTargetByIdentityResponse",
-    "package": "com.dr.oursp.infra.app.api.http.response.allocation",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.vo.AppVO", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "java.util.List"],
-    "class_name": "AppAssignTargetByIdentityResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/allocation/AppAssignTargetByIdentityResponse.java"
-}, {
-    "name": "AppAllocationRuleRequest",
-    "package": "com.dr.oursp.infra.app.api.http.response.allocation",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Set"],
-    "class_name": "AppAllocationRuleRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/response/allocation/AppAllocationRuleRequest.java"
-}, {
-    "name": "AppSaveRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.vo.*", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.List"],
-    "class_name": "AppSaveRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/AppSaveRequest.java"
-}, {
-    "name": "AppDetailRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotNull"],
-    "class_name": "AppDetailRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/AppDetailRequest.java"
-}, {
-    "name": "AppAttachmentRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppAttachmentRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/AppAttachmentRequest.java"
-}, {
-    "name": "AppInfoRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppInfoRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/AppInfoRequest.java"
-}, {
-    "name": "AppMenuInfoRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.Valid", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppMenuInfoRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/AppMenuInfoRequest.java"
-}, {
-    "name": "AppBizTypeRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppBizTypeRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/AppBizTypeRequest.java"
-}, {
-    "name": "AppShelvesRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppShelvesRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/AppShelvesRequest.java"
-}, {
-    "name": "AppMenuIconRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.Valid", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppMenuIconRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/AppMenuIconRequest.java"
-}, {
-    "name": "AppModifyDescRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.api.http.response.AppAttachmentResponse", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "java.util.List"],
-    "class_name": "AppModifyDescRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/AppModifyDescRequest.java"
-}, {
-    "name": "AppConfigRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.config",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppConfigRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/config/AppConfigRequest.java"
-}, {
-    "name": "AppConfigDetailInfo",
-    "package": "com.dr.oursp.infra.app.api.http.request.config",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.api.http.response.config.AppConfigResponse", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "java.util.List"],
-    "class_name": "AppConfigDetailInfo",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/config/AppConfigDetailInfo.java"
-}, {
-    "name": "AppConfigAssignRuleInfo",
-    "package": "com.dr.oursp.infra.app.api.http.request.config",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.api.http.request.allocation.AppAllocationRuleCreateRequest", "com.dr.oursp.strategy.basic.allocation.consts.AllocationTargetTypeEnum", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppConfigAssignRuleInfo extends AppAllocationRuleCreateRequest",
-    "extend_name": "AppAllocationRuleCreateRequest",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/config/AppConfigAssignRuleInfo.java"
-}, {
-    "name": "AppConfigPersonalPrivilegeInfo",
-    "package": "com.dr.oursp.infra.app.api.http.request.config",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.api.http.response.config.AppConfigResponse", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "java.util.List"],
-    "class_name": "AppConfigPersonalPrivilegeInfo",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/config/AppConfigPersonalPrivilegeInfo.java"
-}, {
-    "name": "AppAuthDetailRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.auth",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.ajc.api.http.request.ConfigItem", "com.dr.oursp.infra.app.api.http.response.config.AppConfigResponse", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "java.util.List", "java.util.Set"],
-    "class_name": "AppAuthDetailRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/auth/AppAuthDetailRequest.java"
-}, {
-    "name": "AppAuthRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.auth",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppAuthRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/auth/AppAuthRequest.java"
-}, {
-    "name": "AppAuthInfoRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.auth",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppAuthInfoRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/auth/AppAuthInfoRequest.java"
-}, {
-    "name": "AppCenterLockRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.center",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppCenterLockRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/center/AppCenterLockRequest.java"
-}, {
-    "name": "AppCenterMenusRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.center",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppCenterMenusRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/center/AppCenterMenusRequest.java"
-}, {
-    "name": "AppCenterSetTopRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.center",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppCenterSetTopRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/center/AppCenterSetTopRequest.java"
-}, {
-    "name": "AppLockListRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.lock",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageRequest", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.EqualsAndHashCode", "lombok.experimental.Accessors"],
-    "class_name": "AppLockListRequest extends PageRequest",
-    "extend_name": "PageRequest",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/lock/AppLockListRequest.java"
-}, {
-    "name": "AppLockRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.lock",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppLockRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/lock/AppLockRequest.java"
-}, {
-    "name": "AppStoreAuthRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.store",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotBlank"],
-    "class_name": "AppStoreAuthRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/store/AppStoreAuthRequest.java"
-}, {
-    "name": "AppStoreListRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.store",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageRequest", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "java.util.List", "java.util.Set"],
-    "class_name": "AppStoreListRequest extends PageRequest",
-    "extend_name": "PageRequest",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/store/AppStoreListRequest.java"
-}, {
-    "name": "AppAllocationRuleModifyRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.allocation",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.Valid", "javax.validation.constraints.NotNull"],
-    "class_name": "AppAllocationRuleModifyRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/allocation/AppAllocationRuleModifyRequest.java"
-}, {
-    "name": "AppAllocationRuleModifyExceptionRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.allocation",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.constraints.NotNull", "java.util.Set"],
-    "class_name": "AppAllocationRuleModifyExceptionRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/allocation/AppAllocationRuleModifyExceptionRequest.java"
-}, {
-    "name": "AppAllocationRuleCreateRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.allocation",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Set"],
-    "class_name": "AppAllocationRuleCreateRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/allocation/AppAllocationRuleCreateRequest.java"
-}, {
-    "name": "AppAssignRuleDeleteRequest",
-    "package": "com.dr.oursp.infra.app.api.http.request.allocation",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "AppAssignRuleDeleteRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/api/http/request/allocation/AppAssignRuleDeleteRequest.java"
-}, {
-    "name": "AppConfigService",
-    "package": "com.dr.oursp.infra.app.service",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPageable", "com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.app.api.AppModelConvert", "com.dr.oursp.infra.app.api.http.request.config.AppConfigDetailInfo", "com.dr.oursp.infra.app.api.http.request.config.AppConfigPersonalPrivilegeInfo", "com.dr.oursp.infra.app.api.http.response.AppInfoResponse", "com.dr.oursp.infra.app.api.http.response.config.AppConfigPersonalResponse", "com.dr.oursp.infra.app.api.http.response.config.AppConfigResponse", "com.dr.oursp.infra.app.consts.AppAuthEnum", "com.dr.oursp.infra.app.entity.*", "com.dr.oursp.infra.app.repository.*", "com.dr.oursp.strategy.basic.app.AppManager", "com.dr.oursp.strategy.basic.app.config.AppConfigDefine", "com.dr.oursp.strategy.basic.app.consts.AppConfigTypeEnum", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.reflect.TypeToken", "com.google.gson.Gson", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.stream.Collectors"],
-    "class_name": "AppConfigService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/service/AppConfigService.java"
-}, {
-    "name": "AppLockService",
-    "package": "com.dr.oursp.infra.app.service",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.app.api.AppModelConvert", "com.dr.oursp.infra.app.consts.*", "com.dr.oursp.infra.app.entity.AppAuthEntity", "com.dr.oursp.infra.app.entity.AppLockEntity", "com.dr.oursp.infra.app.repository.AppAuthSubRepository", "com.dr.oursp.infra.app.repository.AppLockRepository", "com.dr.oursp.infra.app.repository.AppRegisteredRepository", "com.dr.oursp.infra.app.vo.AppLockBardVO", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "javax.annotation.Resource", "java.time.Instant", "java.util.Comparator", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "AppLockService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/service/AppLockService.java"
-}, {
-    "name": "AppManagerService",
-    "package": "com.dr.oursp.infra.app.service",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPageable", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.ajc.AppJointCertService", "com.dr.oursp.infra.ajc.api.http.request.ConfigItem", "com.dr.oursp.infra.ajc.api.http.request.SaveAppJointCertRequest", "com.dr.oursp.infra.ajc.entity.AppJointCertConfigEntity", "com.dr.oursp.infra.ajc.entity.AppJointCertConfigId", "com.dr.oursp.infra.ajc.repository.AppJointCertRepository", "com.dr.oursp.infra.app.api.AppModelConvert", "com.dr.oursp.infra.app.api.http.request.AppMenuIconRequest", "com.dr.oursp.infra.app.api.http.request.AppModifyDescRequest", "com.dr.oursp.infra.app.api.http.request.AppSaveRequest", "com.dr.oursp.infra.app.api.http.request.auth.AppAuthDetailRequest", "com.dr.oursp.infra.app.api.http.response.AppAttachmentResponse", "com.dr.oursp.infra.app.consts.*", "com.dr.oursp.infra.app.domain.Application", "com.dr.oursp.infra.app.domain.annotation.AnnotationSelector", "com.dr.oursp.infra.app.domain.registered.RegisteredModifierOne", "com.dr.oursp.infra.app.entity.AppAuthEntity", "com.dr.oursp.infra.app.entity.AppRegisteredEntity", "com.dr.oursp.infra.app.repository.AppAuthSubRepository", "com.dr.oursp.infra.app.repository.AppRegisteredRepository", "com.dr.oursp.infra.app.vo.*", "com.dr.oursp.strategy.basic.account.consts.UnifyAccountState", "com.dr.oursp.strategy.basic.app.AppManager", "com.dr.oursp.strategy.basic.app.jc.AppJointCertConfigItemDefine", "com.dr.oursp.strategy.basic.app.jc.AppJointCertDefine", "com.dr.oursp.strategy.basic.app.jc.AppJointCertManager", "com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityStateEnum", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.role.RoleManager", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.enums.Enumerations", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "lombok.Setter", "lombok.experimental.Accessors", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "javax.annotation.PostConstruct", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.*", "java.util.function.Consumer", "java.util.function.Function", "java.util.function.Supplier", "java.util.stream.Collectors", "static com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem.TOP_PARENT_ID"],
-    "class_name": "AppManagerService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/service/AppManagerService.java"
-}, {
-    "name": "AppStoreService",
-    "package": "com.dr.oursp.infra.app.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.api.http.request.store.AppStoreListRequest", "com.dr.oursp.infra.app.consts.AppAuthActionEnum", "com.dr.oursp.infra.app.consts.AppAuthEnum", "com.dr.oursp.infra.app.entity.AppAuthEntity", "com.dr.oursp.infra.app.entity.AppRegisteredEntity", "com.dr.oursp.infra.app.repository.AppAuthSubRepository", "com.dr.oursp.infra.app.repository.AppRegisteredRepository", "com.dr.oursp.infra.app.vo.AppAuthVO", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "java.util.Comparator", "java.util.List", "java.util.Optional", "java.util.stream.Collectors"],
-    "class_name": "AppStoreService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/service/AppStoreService.java"
-}, {
-    "name": "AppCenterService",
-    "package": "com.dr.oursp.infra.app.service",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.app.api.AppModelConvert", "com.dr.oursp.infra.app.api.http.response.AppMenuInfoResponse", "com.dr.oursp.infra.app.api.http.response.center.AppCenterFastEntranceResponse", "com.dr.oursp.infra.app.consts.AppCenterLockStatusEnum", "com.dr.oursp.infra.app.consts.AppCenterLockTypeEnum", "com.dr.oursp.infra.app.consts.AppCenterTopStatusEnum", "com.dr.oursp.infra.app.consts.AppLockTypeEnum", "com.dr.oursp.infra.app.entity.*", "com.dr.oursp.infra.app.repository.AppCenterFastEntranceRepository", "com.dr.oursp.infra.app.repository.AppCenterTopRepository", "com.dr.oursp.infra.app.repository.AppLockRepository", "com.dr.oursp.infra.app.vo.AppCenterVO", "com.dr.oursp.infra.app.vo.AppMenuVO", "com.dr.oursp.infra.app.vo.AppVO", "com.dr.oursp.strategy.basic.app.AppManager", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "lombok.experimental.Accessors", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "javax.annotation.Resource", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.*", "java.util.stream.Collectors"],
-    "class_name": "AppCenterService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/service/AppCenterService.java"
-}, {
-    "name": "App",
-    "package": "com.dr.oursp.infra.app.oi.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.app.oi.entity.AppAuthTokenEntity", "com.dr.oursp.infra.app.oi.entity.AppAuthTokenId", "org.springframework.data.jpa.repository.JpaRepository"],
-    "class_name": "App auth token repository.",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/repository/AppAuthTokenRepository.java"
-}, {
-    "name": "AppAuthTokenEntity",
-    "package": "com.dr.oursp.infra.app.oi.entity",
-    "type": "class",
-    "imports": ["lombok.Data", "javax.persistence.EmbeddedId", "javax.persistence.Entity", "javax.persistence.Table"],
-    "class_name": "AppAuthTokenEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/entity/AppAuthTokenEntity.java"
-}, {
-    "name": "AppAuthTokenId",
-    "package": "com.dr.oursp.infra.app.oi.entity",
-    "type": "class",
-    "imports": ["lombok.Data", "javax.persistence.Embeddable", "java.io.Serializable"],
-    "class_name": "AppAuthTokenId implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/entity/AppAuthTokenId.java"
-}, {
-    "name": "OiYxAuthTokenApi",
-    "package": "com.dr.oursp.infra.app.oi.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.app.oi.api.http.req.yx.YxAuthTokenReq", "com.dr.oursp.infra.app.oi.api.http.res.yx.YxLoginResponse", "com.dr.oursp.infra.app.oi.service.OiYxAuthTokenService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController", "javax.validation.Valid"],
-    "class_name": "OiYxAuthTokenApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/OiYxAuthTokenApi.java"
-}, {
-    "name": "OiFwAuthTokenApi",
-    "package": "com.dr.oursp.infra.app.oi.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.app.oi.api.http.req.BasicAuthTokenReq", "com.dr.oursp.infra.app.oi.service.OiFwAuthTokenService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController"],
-    "class_name": "OiFwAuthTokenApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/OiFwAuthTokenApi.java"
-}, {
-    "name": "DispatchTokenManger",
-    "package": "com.dr.oursp.infra.app.oi.api.dispatch",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.account.UnifyAccountManager", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.support.trace.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component", "java.util.Optional", "static com.dr.oursp.strategy.basic.token.Token.NEVER_EXPIRED"],
-    "class_name": "DispatchTokenManger",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/dispatch/DispatchTokenManger.java"
-}, {
-    "name": "DispatchToken",
-    "package": "com.dr.oursp.infra.app.oi.api.dispatch",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.token.AES", "com.dr.oursp.strategy.basic.token.TokenException", "com.google.gson.Gson", "lombok.Data", "lombok.extern.slf4j.Slf4j", "javax.crypto.spec.SecretKeySpec", "java.security.NoSuchAlgorithmException", "java.time.Instant", "java.util.Map"],
-    "class_name": "DispatchToken",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/dispatch/DispatchToken.java"
-}, {
-    "name": "OiJdDispatchAuthTokenApi",
-    "package": "com.dr.oursp.infra.app.oi.api.dispatch",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.app.oi.api.http.req.dispatch.DispatchLoginInfoReq", "com.dr.oursp.infra.app.oi.api.http.req.dispatch.DispatchTokenReq", "com.dr.oursp.infra.app.oi.service.OiJdDispatchAuthTokenService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController"],
-    "class_name": "OiJdDispatchAuthTokenApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/dispatch/OiJdDispatchAuthTokenApi.java"
-}, {
-    "name": "OiJdDispatchReceiveApi",
-    "package": "com.dr.oursp.infra.app.oi.api.dispatch",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.app.oi.api.http.req.dispatch.DispatchTokenReq", "com.dr.oursp.infra.app.oi.api.http.res.dispatch.DispatchInterResponse", "com.dr.oursp.infra.app.oi.service.OiJdDispatchAuthTokenService", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.ApiOperation", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController"],
-    "class_name": "OiJdDispatchReceiveApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/dispatch/OiJdDispatchReceiveApi.java"
-}, {
-    "name": "YxLoginResponse",
-    "package": "com.dr.oursp.infra.app.oi.api.http.res.yx",
-    "type": "class",
-    "imports": ["lombok.Data", "java.io.Serializable"],
-    "class_name": "YxLoginResponse implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/http/res/yx/YxLoginResponse.java"
-}, {
-    "name": "DispatchInterResponse",
-    "package": "com.dr.oursp.infra.app.oi.api.http.res.dispatch",
-    "type": "class",
-    "imports": ["lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "java.io.Serializable"],
-    "class_name": "DispatchInterResponse implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/http/res/dispatch/DispatchInterResponse.java"
-}, {
-    "name": "PhoneByTokenResponse",
-    "package": "com.dr.oursp.infra.app.oi.api.http.res.dispatch",
-    "type": "class",
-    "imports": ["lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "java.io.Serializable"],
-    "class_name": "PhoneByTokenResponse implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/http/res/dispatch/PhoneByTokenResponse.java"
-}, {
-    "name": "AccountResultResponse",
-    "package": "com.dr.oursp.infra.app.oi.api.http.res.dispatch",
-    "type": "class",
-    "imports": ["lombok.Data", "java.io.Serializable"],
-    "class_name": "AccountResultResponse implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/http/res/dispatch/AccountResultResponse.java"
-}, {
-    "name": "BasicAuthTokenReq",
-    "package": "com.dr.oursp.infra.app.oi.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.Api", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.NotBlank", "java.io.Serializable"],
-    "class_name": "BasicAuthTokenReq implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/http/req/BasicAuthTokenReq.java"
-}, {
-    "name": "YxLoginInfoParam",
-    "package": "com.dr.oursp.infra.app.oi.api.http.req.yx",
-    "type": "class",
-    "imports": ["lombok.Data", "java.io.Serializable"],
-    "class_name": "YxLoginInfoParam implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/http/req/yx/YxLoginInfoParam.java"
-}, {
-    "name": "YxAuthTokenReq",
-    "package": "com.dr.oursp.infra.app.oi.api.http.req.yx",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.oi.api.http.req.BasicAuthTokenReq", "io.swagger.annotations.Api", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.NotBlank", "java.io.Serializable"],
-    "class_name": "YxAuthTokenReq extends BasicAuthTokenReq implements Serializable",
-    "extend_name": "BasicAuthTokenReq",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/http/req/yx/YxAuthTokenReq.java"
-}, {
-    "name": "DispatchTokenReq",
-    "package": "com.dr.oursp.infra.app.oi.api.http.req.dispatch",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "java.io.Serializable"],
-    "class_name": "DispatchTokenReq implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/http/req/dispatch/DispatchTokenReq.java"
-}, {
-    "name": "DispatchLoginInfoParam",
-    "package": "com.dr.oursp.infra.app.oi.api.http.req.dispatch",
-    "type": "class",
-    "imports": ["lombok.Data", "java.io.Serializable"],
-    "class_name": "DispatchLoginInfoParam implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/http/req/dispatch/DispatchLoginInfoParam.java"
-}, {
-    "name": "DispatchLoginInfoReq",
-    "package": "com.dr.oursp.infra.app.oi.api.http.req.dispatch",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "java.io.Serializable"],
-    "class_name": "DispatchLoginInfoReq implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/http/req/dispatch/DispatchLoginInfoReq.java"
-}, {
-    "name": "FwLoginInfoParam",
-    "package": "com.dr.oursp.infra.app.oi.api.http.req.fw",
-    "type": "class",
-    "imports": ["lombok.Data", "java.io.Serializable"],
-    "class_name": "FwLoginInfoParam implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/api/http/req/fw/FwLoginInfoParam.java"
-}, {
-    "name": "OiJdDispatchAuthTokenService",
-    "package": "com.dr.oursp.infra.app.oi.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.entity.PhoneAssociateEntity", "com.dr.oursp.infra.account.service.PhoneLoginService", "com.dr.oursp.infra.app.oi.api.dispatch.DispatchToken", "com.dr.oursp.infra.app.oi.api.dispatch.DispatchTokenManger", "com.dr.oursp.infra.app.oi.api.http.req.dispatch.DispatchLoginInfoParam", "com.dr.oursp.infra.app.oi.api.http.res.dispatch.AccountResultResponse", "com.dr.oursp.infra.app.oi.api.http.res.dispatch.DispatchInterResponse", "com.dr.oursp.infra.app.oi.api.http.res.dispatch.PhoneByTokenResponse", "com.dr.oursp.infra.app.preset.WisdomDispatch", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.token.Token", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.apache.commons.codec.binary.Base64", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service", "org.springframework.web.client.RestTemplate", "java.nio.charset.StandardCharsets", "java.util.Optional"],
-    "class_name": "OiJdDispatchAuthTokenService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/service/OiJdDispatchAuthTokenService.java"
-}, {
-    "name": "OiYxAuthTokenService",
-    "package": "com.dr.oursp.infra.app.oi.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.oi.api.http.req.yx.YxAuthTokenReq", "com.dr.oursp.infra.app.oi.api.http.req.yx.YxLoginInfoParam", "com.dr.oursp.infra.app.oi.api.http.res.yx.YxLoginResponse", "com.dr.oursp.infra.app.oi.consts.HttpURLConnectionUtils", "com.dr.oursp.infra.app.preset.AppConst", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service"],
-    "class_name": "OiYxAuthTokenService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/service/OiYxAuthTokenService.java"
-}, {
-    "name": "OiCommonAuthTokenService",
-    "package": "com.dr.oursp.infra.app.oi.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.ajc.AppJointCertService", "com.dr.oursp.infra.ajc.api.http.request.ConfigItem", "com.dr.oursp.infra.ajc.api.http.response.AppJointCertResponse", "com.dr.oursp.infra.app.oi.entity.AppAuthTokenEntity", "com.dr.oursp.infra.app.oi.entity.AppAuthTokenId", "com.dr.oursp.infra.app.oi.repository.AppAuthTokenRepository", "com.dr.support.trace.LogElapsedTime", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.util.Objects", "java.util.Optional", "java.util.Set"],
-    "class_name": "OiCommonAuthTokenService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/service/OiCommonAuthTokenService.java"
-}, {
-    "name": "OiFwAuthTokenService",
-    "package": "com.dr.oursp.infra.app.oi.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.oi.api.http.req.BasicAuthTokenReq", "com.dr.oursp.infra.app.oi.api.http.req.fw.FwLoginInfoParam", "com.dr.oursp.infra.app.oi.consts.HttpURLConnectionUtils", "com.dr.oursp.infra.app.preset.AppConst", "com.dr.oursp.infra.app.preset.WeaverOA", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service"],
-    "class_name": "OiFwAuthTokenService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/service/OiFwAuthTokenService.java"
-}, {
-    "name": "HttpURLConnectionUtils",
-    "package": "com.dr.oursp.infra.app.oi.consts",
-    "type": "class",
-    "imports": ["java.io.*", "java.net.HttpURLConnection", "java.net.MalformedURLException", "java.net.URL", "java.nio.charset.StandardCharsets"],
-    "class_name": "HttpURLConnectionUtils",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/oi/consts/HttpURLConnectionUtils.java"
-}, {
-    "name": "Application",
-    "package": "com.dr.oursp.infra.app.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.domain.annotation.AnnotationSelector", "com.dr.oursp.infra.app.domain.ding.DingSelector", "com.dr.oursp.infra.app.domain.registered.RegisteredSelector", "com.dr.oursp.infra.app.domain.registered.RegisteredSelectorOne", "com.dr.oursp.infra.app.repository.AppDingRepository", "com.dr.oursp.infra.app.repository.AppRegisteredRepository", "com.dr.oursp.strategy.basic.app.AppManager", "com.dr.oursp.strategy.basic.role.RoleManager"],
-    "class_name": "Application",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/domain/Application.java"
-}, {
-    "name": "AnnotationSelector",
-    "package": "com.dr.oursp.infra.app.domain.annotation",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.AbstractSelector", "com.dr.oursp.infra.app.api.AppModelConvert", "com.dr.oursp.infra.app.domain.registered.RefreshRegistration", "com.dr.oursp.infra.app.repository.AppRegisteredRepository", "com.dr.oursp.infra.app.vo.AppVO", "com.dr.oursp.strategy.basic.app.AppManager", "com.dr.oursp.strategy.basic.app.entity.AppEntity", "com.dr.oursp.strategy.basic.role.RoleManager", "javax.validation.constraints.NotBlank", "java.util.function.Predicate", "java.util.stream.Collectors", "java.util.stream.Stream"],
-    "class_name": "AnnotationSelector extends AbstractSelector",
-    "extend_name": "AbstractSelector",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/domain/annotation/AnnotationSelector.java"
-}, {
-    "name": "DingSelector",
-    "package": "com.dr.oursp.infra.app.domain.ding",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.AbstractSelector", "com.dr.oursp.infra.app.consts.AppDingTypeEnum", "com.dr.oursp.infra.app.domain.Application", "com.dr.oursp.infra.app.entity.AppDingEntity", "com.dr.oursp.infra.app.repository.AppDingRepository", "com.dr.oursp.infra.app.repository.AppRegisteredRepository", "com.dr.oursp.infra.app.vo.AppDingVO", "com.dr.oursp.infra.app.vo.AppInfoVO", "com.dr.oursp.infra.app.vo.AppMenuVO", "com.dr.oursp.infra.app.vo.AppVO", "com.dr.support.enums.Enumerations", "org.apache.logging.log4j.util.Strings", "java.util.Arrays", "java.util.Comparator", "java.util.stream.Stream"],
-    "class_name": "DingSelector extends AbstractSelector",
-    "extend_name": "AbstractSelector",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/domain/ding/DingSelector.java"
-}, {
-    "name": "RegisteredSelector",
-    "package": "com.dr.oursp.infra.app.domain.registered",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.AbstractSelector", "com.dr.oursp.infra.app.consts.AppRegisterStatusEnum", "com.dr.oursp.infra.app.consts.AppShelveEnum", "com.dr.oursp.infra.app.entity.AppRegisteredEntity", "com.dr.oursp.infra.app.repository.AppRegisteredRepository", "com.dr.oursp.infra.app.vo.AppVO", "org.apache.logging.log4j.util.Strings", "org.springframework.util.CollectionUtils", "java.util.Comparator", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors", "java.util.stream.Stream"],
-    "class_name": "RegisteredSelector extends AbstractSelector",
-    "extend_name": "AbstractSelector",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/domain/registered/RegisteredSelector.java"
-}, {
-    "name": "RegisteredCreator",
-    "package": "com.dr.oursp.infra.app.domain.registered",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.entity.AppRegisteredEntity", "com.dr.oursp.infra.app.repository.AppRegisteredRepository", "com.dr.oursp.strategy.basic.allocation.consts.AllocationTargetTypeEnum", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull"],
-    "class_name": "RegisteredCreator",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/domain/registered/RegisteredCreator.java"
-}, {
-    "name": "RegisteredSelectorOne",
-    "package": "com.dr.oursp.infra.app.domain.registered",
-    "type": "class",
-    "imports": ["com.dr.domain.AbstractSaver", "com.dr.domain.selector.AbstractSelectorBySingle", "com.dr.oursp.infra.app.entity.AppRegisteredEntity", "com.dr.oursp.infra.app.repository.AppRegisteredRepository", "com.dr.oursp.infra.app.vo.AppVO", "java.util.stream.Stream"],
-    "class_name": "RegisteredSelectorOne extends AbstractSelectorBySingle",
-    "extend_name": "AbstractSelectorBySingle",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/domain/registered/RegisteredSelectorOne.java"
-}, {
-    "name": "RefreshRegistration",
-    "package": "com.dr.oursp.infra.app.domain.registered",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.consts.AppRegisterStatusEnum", "com.dr.oursp.infra.app.entity.AppRegisteredEntity", "com.dr.oursp.infra.app.repository.AppRegisteredRepository", "com.dr.oursp.infra.app.vo.AppVO", "java.util.List"],
-    "class_name": "RefreshRegistration",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/domain/registered/RefreshRegistration.java"
-}, {
-    "name": "RegisteredModifierOne",
-    "package": "com.dr.oursp.infra.app.domain.registered",
-    "type": "class",
-    "imports": ["com.dr.domain.AbstractModifier", "com.dr.domain.AbstractSaver", "com.dr.oursp.infra.app.consts.*", "com.dr.oursp.infra.app.entity.AppRegisteredEntity", "com.dr.oursp.infra.app.vo.*", "java.time.Instant", "java.util.List", "java.util.Objects", "java.util.function.Supplier"],
-    "class_name": "RegisteredModifierOne extends AbstractModifier",
-    "extend_name": "AbstractModifier",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/domain/registered/RegisteredModifierOne.java"
-}, {
-    "name": "AppLockStatusEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
-    "class_name": "AppLockStatusEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppLockStatusEnum.java"
-}, {
-    "name": "AppAuthActionEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
-    "class_name": "AppAuthActionEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppAuthActionEnum.java"
-}, {
-    "name": "AppCenterTopStatusEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
-    "class_name": "AppCenterTopStatusEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppCenterTopStatusEnum.java"
-}, {
-    "name": "AppLockTypeEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
-    "class_name": "AppLockTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppLockTypeEnum.java"
-}, {
-    "name": "AppCenterLockTypeEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
-    "class_name": "AppCenterLockTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppCenterLockTypeEnum.java"
-}, {
-    "name": "AppDingTypeEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
-    "class_name": "AppDingTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppDingTypeEnum.java"
-}, {
-    "name": "AppAuthEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter"],
-    "class_name": "AppAuthEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppAuthEnum.java"
-}, {
-    "name": "AppWorkBenchMode",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
-    "class_name": "AppWorkBenchMode implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppWorkBenchMode.java"
-}, {
-    "name": "AppRegisterStatusEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter"],
-    "class_name": "AppRegisterStatusEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppRegisterStatusEnum.java"
-}, {
-    "name": "AppGloBalCfgEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter"],
-    "class_name": "AppGloBalCfgEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppGloBalCfgEnum.java"
-}, {
-    "name": "AppItemTypeEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.oursp.infra.app.vo.*", "com.dr.support.enums.KeyValueEnum", "com.dr.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.gson.reflect.TypeToken", "lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor", "org.apache.logging.log4j.util.Strings", "java.lang.reflect.Type", "java.util.List"],
-    "class_name": "AppItemTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppItemTypeEnum.java"
-}, {
-    "name": "AppSourceEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter"],
-    "class_name": "AppSourceEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppSourceEnum.java"
-}, {
-    "name": "AppInfoTypeEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.oursp.infra.app.api.http.response.AppAttachmentResponse", "com.dr.oursp.infra.app.api.http.response.AppBizTypeResponse", "com.dr.oursp.infra.app.api.http.response.AppMenuInfoResponse", "com.dr.oursp.infra.app.api.http.response.AppPermissionResponse", "com.dr.oursp.infra.app.api.http.response.config.AppConfigResponse", "com.dr.support.enums.KeyValueEnum", "com.dr.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.gson.reflect.TypeToken", "lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor", "org.apache.logging.log4j.util.Strings", "java.lang.reflect.Type", "java.util.List"],
-    "class_name": "AppInfoTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppInfoTypeEnum.java"
-}, {
-    "name": "AppDisplayEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter"],
-    "class_name": "AppDisplayEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppDisplayEnum.java"
-}, {
-    "name": "AppSubscribeWayEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter"],
-    "class_name": "AppSubscribeWayEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppSubscribeWayEnum.java"
-}, {
-    "name": "AppBasicEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter"],
-    "class_name": "AppBasicEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppBasicEnum.java"
-}, {
-    "name": "AppBusinessTypeAppEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter"],
-    "class_name": "AppBusinessTypeAppEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppBusinessTypeAppEnum.java"
-}, {
-    "name": "AppShelveEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter"],
-    "class_name": "AppShelveEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppShelveEnum.java"
-}, {
-    "name": "AppCenterLockStatusEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
-    "class_name": "AppCenterLockStatusEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppCenterLockStatusEnum.java"
-}, {
-    "name": "AppDataBaseEnum",
-    "package": "com.dr.oursp.infra.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
-    "class_name": "AppDataBaseEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/app/consts/AppDataBaseEnum.java"
-}, {
-    "name": "OpOrgService",
-    "package": "com.dr.oursp.infra.org",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.strategy.basic.app.AppManager", "com.dr.oursp.strategy.basic.app.entity.AppEntity", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityRoleRuleEnum", "com.dr.oursp.strategy.basic.identity.consts.IdentityStateEnum", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.role.RoleManager", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.support.trace.LogElapsedTime", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "java.util.HashSet", "java.util.List", "java.util.Set"],
-    "class_name": "OpOrgService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/OpOrgService.java"
-}, {
-    "name": "BizOrgService",
-    "package": "com.dr.oursp.infra.org",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPageable", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.org.dto.BizOrgMembersInfoDTO", "com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityRoleRuleEnum", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.dr.oursp.strategy.basic.role.RoleManager", "com.dr.oursp.strategy.basic.role.entity.RoleEntity", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "org.apache.logging.log4j.util.Strings", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "javax.validation.constraints.NotBlank", "java.util.*", "java.util.function.Function", "java.util.stream.Collectors"],
-    "class_name": "BizOrgService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/BizOrgService.java"
-}, {
-    "name": "BizOrgMembersInfoDTO",
-    "package": "com.dr.oursp.infra.org.dto",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "lombok.Data", "java.util.List", "java.util.Set"],
-    "class_name": "BizOrgMembersInfoDTO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/dto/BizOrgMembersInfoDTO.java"
-}, {
-    "name": "IdentityClass",
-    "package": "com.dr.oursp.infra.org.constant",
-    "type": "enum",
-    "imports": ["com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.support.enums.KeyValueEnum", "com.google.common.collect.Sets", "lombok.Getter", "java.util.Set"],
-    "class_name": "IdentityClass implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/constant/IdentityClass.java"
-}, {
-    "name": "BizOrgModelConvert",
-    "package": "com.dr.oursp.infra.org.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.infra.account.api.AccountModelConvert", "com.dr.oursp.infra.account.api.http.resp.AccountInfoResponse", "com.dr.oursp.infra.account.consts.AccountTypeEnum", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.label.service.CustomTagSystemManager", "com.dr.oursp.infra.org.api.http.Tags", "com.dr.oursp.infra.org.api.http.request.ModifyLabelRequest", "com.dr.oursp.infra.org.api.http.request.SaveMemberRequest", "com.dr.oursp.infra.org.api.http.response.MemberInfoResponse", "com.dr.oursp.infra.org.api.http.response.MemberResponse", "com.dr.oursp.infra.org.api.http.response.OrgList", "com.dr.oursp.infra.org.api.http.response.QueryListResponse", "com.dr.oursp.infra.org.dto.BizOrgMembersInfoDTO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "com.dr.support.serialization.Serializations", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "com.google.gson.Gson", "org.apache.logging.log4j.util.Strings", "java.util.*", "java.util.function.Function", "java.util.stream.Collectors"],
-    "class_name": "BizOrgModelConvert",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/BizOrgModelConvert.java"
-}, {
-    "name": "OpOrganizationApi",
-    "package": "com.dr.oursp.infra.org.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.account.api.AccountModelConvert", "com.dr.oursp.infra.account.api.http.req.ModifyAccountRequest", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.app.api.AppModelConvert", "com.dr.oursp.infra.app.api.http.request.auth.AppAuthDetailRequest", "com.dr.oursp.infra.app.api.http.response.auth.AppAuthAppInfoResponse", "com.dr.oursp.infra.app.api.http.response.auth.AppAuthDetailResponse", "com.dr.oursp.infra.app.api.http.response.auth.AppNeverAuthResponse", "com.dr.oursp.infra.app.consts.AppShelveEnum", "com.dr.oursp.infra.app.service.AppManagerService", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.infra.org.OpOrgService", "com.dr.oursp.infra.org.api.http.request.CreateAccountRequest", "com.dr.oursp.infra.org.api.http.request.SwitchRequest", "com.dr.oursp.infra.org.api.http.response.MemberInfoResponse", "com.dr.oursp.infra.org.api.http.response.OrgInfoDetail", "com.dr.oursp.infra.org.api.http.response.OrgList", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Sets", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "java.util.List", "java.util.Optional", "java.util.stream.Collectors"],
-    "class_name": "OpOrganizationApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/OpOrganizationApi.java"
-}, {
-    "name": "BizOrganizationApi",
-    "package": "com.dr.oursp.infra.org.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.account.api.AccountModelConvert", "com.dr.oursp.infra.account.api.http.resp.AccountInfoResponse", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.label.service.CustomTagSystemManager", "com.dr.oursp.infra.org.BizOrgService", "com.dr.oursp.infra.org.api.http.request.*", "com.dr.oursp.infra.org.api.http.response.*", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Lists", "io.swagger.annotations.*", "org.apache.logging.log4j.util.Strings", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "BizOrganizationApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/BizOrganizationApi.java"
-}, {
-    "name": "OpOrgModelConvert",
-    "package": "com.dr.oursp.infra.org.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.infra.account.api.AccountModelConvert", "com.dr.oursp.infra.account.api.http.resp.AccountInfoResponse", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.org.api.http.request.CreateAccountRequest", "com.dr.oursp.infra.org.api.http.response.OrgInfoDetail", "com.dr.oursp.infra.org.api.http.response.OrgList", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.support.serialization.Serializations", "com.google.common.collect.Sets", "java.util.Objects"],
-    "class_name": "OpOrgModelConvert",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/OpOrgModelConvert.java"
-}, {
-    "name": "Tags",
-    "package": "com.dr.oursp.infra.org.api.http",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Set"],
-    "class_name": "Tags",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/Tags.java"
-}, {
-    "name": "LabelCorrectResponse",
-    "package": "com.dr.oursp.infra.org.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "LabelCorrectResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/response/LabelCorrectResponse.java"
-}, {
-    "name": "AppAuthDetailResponse",
-    "package": "com.dr.oursp.infra.org.api.http.response",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.consts.AppConfigValueTypeEnum", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
-    "class_name": "AppAuthDetailResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/response/AppAuthDetailResponse.java"
-}, {
-    "name": "QueryListResponse",
-    "package": "com.dr.oursp.infra.org.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
-    "class_name": "QueryListResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/response/QueryListResponse.java"
-}, {
-    "name": "AppResponse",
-    "package": "com.dr.oursp.infra.org.api.http.response",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.app.api.http.response.AppPermissionResponse", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Id", "java.util.List"],
-    "class_name": "AppResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/response/AppResponse.java"
-}, {
-    "name": "PresetRoleResponse",
-    "package": "com.dr.oursp.infra.org.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
-    "class_name": "PresetRoleResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/response/PresetRoleResponse.java"
-}, {
-    "name": "PresetTagResponse",
-    "package": "com.dr.oursp.infra.org.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "PresetTagResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/response/PresetTagResponse.java"
-}, {
-    "name": "OrgInfoDetail",
-    "package": "com.dr.oursp.infra.org.api.http.response",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.api.http.AccountInfoAttachment", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
-    "class_name": "OrgInfoDetail",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/response/OrgInfoDetail.java"
-}, {
-    "name": "RoleRuleCorrectResponse",
-    "package": "com.dr.oursp.infra.org.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "RoleRuleCorrectResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/response/RoleRuleCorrectResponse.java"
-}, {
-    "name": "MemberInfoResponse",
-    "package": "com.dr.oursp.infra.org.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "MemberInfoResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/response/MemberInfoResponse.java"
-}, {
-    "name": "PresetRole",
-    "package": "com.dr.oursp.infra.org.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "PresetRole",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/response/PresetRole.java"
-}, {
-    "name": "OrgList",
-    "package": "com.dr.oursp.infra.org.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "OrgList",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/response/OrgList.java"
-}, {
-    "name": "MemberResponse",
-    "package": "com.dr.oursp.infra.org.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
-    "class_name": "MemberResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/response/MemberResponse.java"
-}, {
-    "name": "SwitchRequest",
-    "package": "com.dr.oursp.infra.org.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "SwitchRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/request/SwitchRequest.java"
-}, {
-    "name": "ModifyLabelRequest",
-    "package": "com.dr.oursp.infra.org.api.http.request",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.org.api.http.Tags", "com.google.common.collect.Maps", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Map", "java.util.Set"],
-    "class_name": "ModifyLabelRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/request/ModifyLabelRequest.java"
-}, {
-    "name": "CreateAccountRequest",
-    "package": "com.dr.oursp.infra.org.api.http.request",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.api.http.AccountInfoAttachment", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull", "java.util.Set"],
-    "class_name": "CreateAccountRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/request/CreateAccountRequest.java"
-}, {
-    "name": "MemberListRequest",
-    "package": "com.dr.oursp.infra.org.api.http.request",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.org.constant.IdentityClass", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.EqualsAndHashCode", "javax.validation.constraints.NotBlank"],
-    "class_name": "MemberListRequest extends PageRequest",
-    "extend_name": "PageRequest",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/request/MemberListRequest.java"
-}, {
-    "name": "AssociateRequest",
-    "package": "com.dr.oursp.infra.org.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "AssociateRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/request/AssociateRequest.java"
-}, {
-    "name": "SaveMemberRequest",
-    "package": "com.dr.oursp.infra.org.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "SaveMemberRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/request/SaveMemberRequest.java"
-}, {
-    "name": "ResetPasswordRequest",
-    "package": "com.dr.oursp.infra.org.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "ResetPasswordRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/request/ResetPasswordRequest.java"
-}, {
-    "name": "RoleRuleCorrectRequest",
-    "package": "com.dr.oursp.infra.org.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "RoleRuleCorrectRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/org/api/http/request/RoleRuleCorrectRequest.java"
-}, {
-    "name": "LabelInfoRepository",
-    "package": "com.dr.oursp.infra.label.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.label.entity.LabelInfoEntity", "org.springframework.data.jpa.repository.JpaRepository", "java.util.List", "java.util.Optional", "java.util.stream.Stream"],
-    "class_name": "LabelInfoRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/repository/LabelInfoRepository.java"
-}, {
-    "name": "LabelInfoEntity",
-    "package": "com.dr.oursp.infra.label.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.Entity", "javax.persistence.Table", "java.io.Serializable"],
-    "class_name": "LabelInfoEntity extends BasicTagJpaEntityWithId implements Serializable",
-    "extend_name": "BasicTagJpaEntityWithId",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/entity/LabelInfoEntity.java"
-}, {
-    "name": "LabelOpApi",
-    "package": "com.dr.oursp.infra.label.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.org.api.http.response.PresetTagResponse", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.tag.TagSystemManager", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "LabelOpApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/api/LabelOpApi.java"
-}, {
-    "name": "LabelSystemApi",
-    "package": "com.dr.oursp.infra.label.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.label.api.http.request.*", "com.dr.oursp.infra.label.api.http.response.LabelInfoDetail", "com.dr.oursp.infra.label.api.http.response.LabelShortInfoResponse", "com.dr.oursp.infra.label.entity.LabelInfoEntity", "com.dr.oursp.infra.label.service.LabelService", "com.dr.oursp.infra.label.service.LabelSystemService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.tag.entity.TagSystemEntity", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.*", "javax.annotation.Resource", "javax.validation.Valid", "java.util.List", "java.util.Optional"],
-    "class_name": "LabelSystemApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/api/LabelSystemApi.java"
-}, {
-    "name": "LabelInfoDetail",
-    "package": "com.dr.oursp.infra.label.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull", "java.util.List"],
-    "class_name": "LabelInfoDetail",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/api/http/response/LabelInfoDetail.java"
-}, {
-    "name": "LabelShortInfoResponse",
-    "package": "com.dr.oursp.infra.label.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "LabelShortInfoResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/api/http/response/LabelShortInfoResponse.java"
-}, {
-    "name": "LabelSystemRequest",
-    "package": "com.dr.oursp.infra.label.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "LabelSystemRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/api/http/request/LabelSystemRequest.java"
-}, {
-    "name": "LabelSystemSaveReq",
-    "package": "com.dr.oursp.infra.label.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "LabelSystemSaveReq",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/api/http/request/LabelSystemSaveReq.java"
-}, {
-    "name": "LabelSaveReq",
-    "package": "com.dr.oursp.infra.label.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull"],
-    "class_name": "LabelSaveReq",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/api/http/request/LabelSaveReq.java"
-}, {
-    "name": "LabelUpdateStateReq",
-    "package": "com.dr.oursp.infra.label.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "LabelUpdateStateReq",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/api/http/request/LabelUpdateStateReq.java"
-}, {
-    "name": "LabelRequest",
-    "package": "com.dr.oursp.infra.label.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "LabelRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/api/http/request/LabelRequest.java"
-}, {
-    "name": "LabelService",
-    "package": "com.dr.oursp.infra.label.service",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.label.api.http.request.LabelRequest", "com.dr.oursp.infra.label.api.http.request.LabelSaveReq", "com.dr.oursp.infra.label.api.http.response.LabelInfoDetail", "com.dr.oursp.infra.label.api.http.response.LabelShortInfoResponse", "com.dr.oursp.infra.label.entity.LabelInfoEntity", "com.dr.oursp.infra.label.repository.LabelInfoRepository", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "com.dr.oursp.strategy.basic.entity.seed.AutoIncrementSeed", "com.dr.oursp.strategy.basic.tag.TagSystemManager", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.enums.Enumerations", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.BeanUtils", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "javax.annotation.Resource", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotEmpty", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.stream.Collectors"],
-    "class_name": "LabelService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/service/LabelService.java"
-}, {
-    "name": "LabelSystemService",
-    "package": "com.dr.oursp.infra.label.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.label.api.http.request.LabelSystemSaveReq", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.tag.entity.TagSystemEntity", "com.dr.support.trace.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "javax.annotation.Resource", "javax.transaction.Transactional", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotEmpty", "javax.validation.constraints.NotNull", "javax.validation.constraints.PositiveOrZero", "java.time.Instant", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "LabelSystemService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/service/LabelSystemService.java"
-}, {
-    "name": "CustomTagSystemManager",
-    "package": "com.dr.oursp.infra.label.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.label.entity.LabelInfoEntity", "com.dr.oursp.infra.label.repository.LabelInfoRepository", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.tag.consts.TagTypeEnum", "com.dr.oursp.strategy.basic.tag.entity.TagSystemEntity", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemContainer", "com.dr.oursp.strategy.basic.tag.repository.TagSystemRepository", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.data.redis.core.RedisTemplate", "org.springframework.stereotype.Component", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors", "static com.dr.oursp.strategy.basic.tag.consts.TagSystemType.CUSTOM_TAG_SYSTEM"],
-    "class_name": "CustomTagSystemManager extends BasicTagSystem",
-    "extend_name": "BasicTagSystem",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/service/CustomTagSystemManager.java"
-}, {
-    "name": "LabelType",
-    "package": "com.dr.oursp.infra.label.consts",
-    "type": "enum",
-    "imports": ["lombok.AllArgsConstructor", "lombok.Getter", "lombok.NoArgsConstructor"],
-    "class_name": "LabelType",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/label/consts/LabelType.java"
-}, {
-    "name": "LabelSysResponse",
-    "package": "com.dr.oursp.infra.dv.http.resp",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "LabelSysResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/http/resp/LabelSysResponse.java"
-}, {
-    "name": "BusinessResponse",
-    "package": "com.dr.oursp.infra.dv.http.resp",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
-    "class_name": "BusinessResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/http/resp/BusinessResponse.java"
-}, {
-    "name": "VisibleAssignTargetByIdentityResponse",
-    "package": "com.dr.oursp.infra.dv.http.resp",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
-    "class_name": "VisibleAssignTargetByIdentityResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/http/resp/VisibleAssignTargetByIdentityResponse.java"
-}, {
-    "name": "VisibleRuleDetailResponse",
-    "package": "com.dr.oursp.infra.dv.http.resp",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
-    "class_name": "VisibleRuleDetailResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/http/resp/VisibleRuleDetailResponse.java"
-}, {
-    "name": "VisibleRuleLabelResponse",
-    "package": "com.dr.oursp.infra.dv.http.resp",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "VisibleRuleLabelResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/http/resp/VisibleRuleLabelResponse.java"
-}, {
-    "name": "VisibleRuleResponse",
-    "package": "com.dr.oursp.infra.dv.http.resp",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "VisibleRuleResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/http/resp/VisibleRuleResponse.java"
-}, {
-    "name": "VisibleRuleDetailDvRequest",
-    "package": "com.dr.oursp.infra.dv.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
-    "class_name": "VisibleRuleDetailDvRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/http/req/VisibleRuleDetailDvRequest.java"
-}, {
-    "name": "VisibleExceptionModifyRequest",
-    "package": "com.dr.oursp.infra.dv.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "VisibleExceptionModifyRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/http/req/VisibleExceptionModifyRequest.java"
-}, {
-    "name": "CommonDvRequest",
-    "package": "com.dr.oursp.infra.dv.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "CommonDvRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/http/req/CommonDvRequest.java"
-}, {
-    "name": "VisibleAssignRuleInfo",
-    "package": "com.dr.oursp.infra.dv.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "VisibleAssignRuleInfo",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/http/req/VisibleAssignRuleInfo.java"
-}, {
-    "name": "VisibleRuleLabelRequest",
-    "package": "com.dr.oursp.infra.dv.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "VisibleRuleLabelRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/http/req/VisibleRuleLabelRequest.java"
-}, {
-    "name": "VisibleRuleDvRequest",
-    "package": "com.dr.oursp.infra.dv.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "VisibleRuleDvRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/http/req/VisibleRuleDvRequest.java"
-}, {
-    "name": "DeleteVisibleRuleRequest",
-    "package": "com.dr.oursp.infra.dv.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "DeleteVisibleRuleRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/http/req/DeleteVisibleRuleRequest.java"
-}, {
-    "name": "DataVisitApi",
-    "package": "com.dr.oursp.infra.dv.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.dv.http.resp.BusinessResponse", "com.dr.oursp.infra.dv.service.DataVisitService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "io.swagger.annotations.*", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.GetMapping", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RequestParam", "org.springframework.web.bind.annotation.RestController"],
-    "class_name": "DataVisitApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/api/DataVisitApi.java"
-}, {
-    "name": "DataVisitModelConvert",
-    "package": "com.dr.oursp.infra.dv.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.dv.api.http.response.ExceptionListResponse", "com.dr.oursp.strategy.basic.allocation.domain.ExceptionInfo"],
-    "class_name": "DataVisitModelConvert",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/api/DataVisitModelConvert.java"
-}, {
-    "name": "VisibleRuleApi",
-    "package": "com.dr.oursp.infra.dv.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.dv.api.http.response.ExceptionListResponse", "com.dr.oursp.infra.dv.http.req.DeleteVisibleRuleRequest", "com.dr.oursp.infra.dv.http.req.VisibleAssignRuleInfo", "com.dr.oursp.infra.dv.http.req.VisibleExceptionModifyRequest", "com.dr.oursp.infra.dv.http.req.VisibleRuleDetailDvRequest", "com.dr.oursp.infra.dv.http.resp.VisibleAssignTargetByIdentityResponse", "com.dr.oursp.infra.dv.http.resp.VisibleRuleDetailResponse", "com.dr.oursp.infra.dv.http.resp.VisibleRuleResponse", "com.dr.oursp.infra.dv.service.VisibleRuleService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "io.swagger.annotations.*", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.*", "java.util.List", "java.util.Set"],
-    "class_name": "VisibleRuleApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/api/VisibleRuleApi.java"
-}, {
-    "name": "ExceptionListResponse",
-    "package": "com.dr.oursp.infra.dv.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor"],
-    "class_name": "ExceptionListResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/api/http/response/ExceptionListResponse.java"
-}, {
-    "name": "VisibleRuleService",
-    "package": "com.dr.oursp.infra.dv.service",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPageable", "com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.app.consts.AppDisplayEnum", "com.dr.oursp.infra.app.service.AppManagerService", "com.dr.oursp.infra.app.vo.AppVO", "com.dr.oursp.infra.dv.api.http.response.ExceptionListResponse", "com.dr.oursp.infra.dv.http.req.VisibleAssignRuleInfo", "com.dr.oursp.infra.dv.http.req.VisibleExceptionModifyRequest", "com.dr.oursp.infra.dv.http.req.VisibleRuleDetailDvRequest", "com.dr.oursp.infra.dv.http.req.VisibleRuleLabelRequest", "com.dr.oursp.infra.dv.http.resp.VisibleAssignTargetByIdentityResponse", "com.dr.oursp.infra.dv.http.resp.VisibleRuleDetailResponse", "com.dr.oursp.infra.dv.http.resp.VisibleRuleLabelResponse", "com.dr.oursp.infra.dv.http.resp.VisibleRuleResponse", "com.dr.oursp.infra.label.api.http.response.LabelInfoDetail", "com.dr.oursp.infra.label.service.LabelService", "com.dr.oursp.infra.label.service.LabelSystemService", "com.dr.oursp.strategy.basic.allocation.BasicAllocationManager", "com.dr.oursp.strategy.basic.app.AppManager", "com.dr.oursp.strategy.basic.app.entity.BizEntity", "com.dr.oursp.strategy.basic.entity.jpa.BasicAllocationRuleJpaEntity", "com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.oursp.strategy.basic.tag.entity.TagSystemEntity", "com.dr.oursp.strategy.basic.visible.VisibleManager", "com.dr.oursp.strategy.basic.visible.row.entity.IdentityRefDataVisibleEntity", "com.dr.oursp.strategy.basic.visible.row.entity.VisibleAllocationId", "com.dr.oursp.strategy.basic.visible.row.entity.VisibleRuleEntity", "com.dr.oursp.strategy.basic.visible.row.rule.IdentityVisibleRule", "com.dr.oursp.strategy.basic.visible.row.rule.SimpleVisibleRule", "com.dr.oursp.strategy.basic.visible.row.rule.Tags", "com.dr.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.util.*", "java.util.concurrent.atomic.AtomicInteger", "java.util.stream.Collectors"],
-    "class_name": "VisibleRuleService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/service/VisibleRuleService.java"
-}, {
-    "name": "DataVisitService",
-    "package": "com.dr.oursp.infra.dv.service",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.app.api.http.response.AppBizTypeResponse", "com.dr.oursp.infra.app.consts.AppAuthEnum", "com.dr.oursp.infra.app.entity.AppRegisteredEntity", "com.dr.oursp.infra.app.repository.AppRegisteredRepository", "com.dr.oursp.infra.dv.http.resp.BusinessResponse", "com.dr.oursp.infra.dv.http.resp.LabelSysResponse", "com.dr.oursp.infra.label.service.CustomTagSystemManager", "com.dr.oursp.strategy.basic.tag.entity.TagSystemEntity", "com.google.common.reflect.TypeToken", "com.google.gson.Gson", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.util.Comparator", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "DataVisitService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/service/DataVisitService.java"
-}, {
-    "name": "VisibleTypeEnum",
-    "package": "com.dr.oursp.infra.dv.consts",
-    "type": "enum",
-    "imports": [],
-    "class_name": "VisibleTypeEnum",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/dv/consts/VisibleTypeEnum.java"
-}, {
-    "name": "OOService",
-    "package": "com.dr.oursp.infra.oo",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.consts.AccountTypeEnum", "com.dr.oursp.infra.account.consts.SexTypeEnum", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.oo.api.http.req.OOCreateAccountRequest", "com.dr.oursp.infra.oo.api.http.req.OOModifyAccountRequest", "com.dr.oursp.strategy.basic.account.UnifyAccountManager", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "com.google.common.base.Strings", "com.google.common.collect.Sets", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Arrays", "java.util.Optional", "java.util.Set"],
-    "class_name": "OOService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/oo/OOService.java"
-}, {
-    "name": "OOAccountApi",
-    "package": "com.dr.oursp.infra.oo.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.oo.OOService", "com.dr.oursp.infra.oo.api.http.req.OOCreateAccountRequest", "com.dr.oursp.infra.oo.api.http.req.OOModifyAccountRequest", "com.dr.oursp.infra.oo.api.http.req.OOResetPwdRequest", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "org.springframework.web.bind.annotation.*"],
-    "class_name": "OOAccountApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/oo/api/OOAccountApi.java"
-}, {
-    "name": "OOResetPwdRequest",
-    "package": "com.dr.oursp.infra.oo.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "OOResetPwdRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/oo/api/http/req/OOResetPwdRequest.java"
-}, {
-    "name": "OOCreateAccountRequest",
-    "package": "com.dr.oursp.infra.oo.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.Max", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank"],
-    "class_name": "OOCreateAccountRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/oo/api/http/req/OOCreateAccountRequest.java"
-}, {
-    "name": "OOModifyAccountRequest",
-    "package": "com.dr.oursp.infra.oo.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.Max", "javax.validation.constraints.NotBlank"],
-    "class_name": "OOModifyAccountRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/oo/api/http/req/OOModifyAccountRequest.java"
-}, {
-    "name": "PhoneAssociateRepo",
-    "package": "com.dr.oursp.infra.account.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.account.entity.PhoneAssociateEntity", "org.springframework.data.jpa.repository.JpaRepository", "java.util.Optional"],
-    "class_name": "PhoneAssociateRepo extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/repository/PhoneAssociateRepo.java"
-}, {
-    "name": "AccountInfoRepo",
-    "package": "com.dr.oursp.infra.account.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.account.entity.AccountInfoEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.JpaRepository", "java.util.List", "java.util.Optional"],
-    "class_name": "AccountInfoRepo extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/repository/AccountInfoRepo.java"
-}, {
-    "name": "AccountInfoEntity",
-    "package": "com.dr.oursp.infra.account.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.consts.SexTypeEnum", "com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntity", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.Column", "javax.persistence.Entity", "javax.persistence.Id", "javax.persistence.Table"],
-    "class_name": "AccountInfoEntity extends BasicJpaEntity",
-    "extend_name": "BasicJpaEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/entity/AccountInfoEntity.java"
-}, {
-    "name": "PhoneAssociateEntity",
-    "package": "com.dr.oursp.infra.account.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntityWithId", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Column", "javax.persistence.Entity", "javax.persistence.Table", "javax.validation.Valid", "javax.validation.constraints.NotNull"],
-    "class_name": "PhoneAssociateEntity extends BasicJpaEntityWithId",
-    "extend_name": "BasicJpaEntityWithId",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/entity/PhoneAssociateEntity.java"
-}, {
-    "name": "MobileLoginApi",
-    "package": "com.dr.oursp.infra.account.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.account.api.http.req.*", "com.dr.oursp.infra.account.api.http.resp.LoginResponse", "com.dr.oursp.infra.account.api.http.resp.LoginUserInfo", "com.dr.oursp.infra.account.entity.PhoneAssociateEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.account.service.PhoneLoginService", "com.dr.oursp.infra.account.service.SmsService", "com.dr.oursp.infra.account.service.dto.AccountLoginUserInfoDTO", "com.dr.oursp.infra.ajc.wechat.WechatService", "com.dr.oursp.infra.ajc.wechat.entity.WechatAssociateEntity", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.oursp.strategy.basic.token.TokenManger", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiOperation", "io.swagger.annotations.ApiParam", "lombok.extern.slf4j.Slf4j", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "java.util.List", "java.util.Optional", "java.util.UUID"],
-    "class_name": "MobileLoginApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/MobileLoginApi.java"
-}, {
-    "name": "PhoneLoginApi",
-    "package": "com.dr.oursp.infra.account.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.account.api.http.req.PhoneAssociateRequest", "com.dr.oursp.infra.account.api.http.req.PhoneRequest", "com.dr.oursp.infra.account.api.http.resp.LoginResponse", "com.dr.oursp.infra.account.api.http.resp.LoginUserInfo", "com.dr.oursp.infra.account.api.http.resp.OrgPathItemResp", "com.dr.oursp.infra.account.entity.PhoneAssociateEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.account.service.PhoneLoginService", "com.dr.oursp.infra.account.service.dto.AccountLoginUserInfoDTO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.account.UnifyAccountManager", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiOperation", "io.swagger.annotations.ApiParam", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "java.util.List", "java.util.Optional", "java.util.stream.Collectors"],
-    "class_name": "PhoneLoginApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/PhoneLoginApi.java"
-}, {
-    "name": "LoginApi",
-    "package": "com.dr.oursp.infra.account.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.account.api.http.req.*", "com.dr.oursp.infra.account.api.http.resp.*", "com.dr.oursp.infra.account.consts.QrCodeCheckStatusEnum", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.account.service.PhoneLoginService", "com.dr.oursp.infra.account.service.SmsService", "com.dr.oursp.infra.account.service.dto.AccountLoginUserInfoDTO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.account.UnifyAccountManager", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.oursp.strategy.basic.token.TokenManger", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.data.redis.core.RedisTemplate", "org.springframework.http.MediaType", "org.springframework.http.codec.ServerSentEvent", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.*", "reactor.core.publisher.Flux", "javax.validation.Valid", "java.time.Duration", "java.util.List", "java.util.UUID", "java.util.concurrent.TimeUnit", "java.util.stream.Collectors"],
-    "class_name": "LoginApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/LoginApi.java"
-}, {
-    "name": "PersonalApi",
-    "package": "com.dr.oursp.infra.account.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.account.api.http.req.PersonalModifyAccountRequest", "com.dr.oursp.infra.account.api.http.req.PhoneAssociateBizRequest", "com.dr.oursp.infra.account.api.http.req.WechatAssociatePersonalRequest", "com.dr.oursp.infra.account.api.http.resp.PersonalAccountInfoResponse", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.entity.PhoneAssociateEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.account.service.PhoneLoginService", "com.dr.oursp.infra.ajc.wechat.WechatService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "org.apache.logging.log4j.util.Strings", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "java.util.Optional"],
-    "class_name": "PersonalApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/PersonalApi.java"
-}, {
-    "name": "AccountApi",
-    "package": "com.dr.oursp.infra.account.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.account.api.http.req.ModifyAccountRequest", "com.dr.oursp.infra.account.api.http.req.ResetPwdRequest", "com.dr.oursp.infra.account.api.http.req.SwitchAccountRequest", "com.dr.oursp.infra.account.api.http.resp.AccountInfoResponse", "com.dr.oursp.infra.account.api.http.resp.AccountListResponse", "com.dr.oursp.infra.account.api.http.resp.IdentityListGroupByOrgResponse", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.identity.IdentityManager", "io.swagger.annotations.*", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "java.util.List", "java.util.stream.Collectors", "static com.dr.oursp.infra.account.api.AccountModelConvert.toIdentityListGroupByOrgResponseList"],
-    "class_name": "AccountApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/AccountApi.java"
-}, {
-    "name": "AccountModelConvert",
-    "package": "com.dr.oursp.infra.account.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.infra.account.api.http.AccountInfoAttachment", "com.dr.oursp.infra.account.api.http.req.ModifyAccountRequest", "com.dr.oursp.infra.account.api.http.req.PersonalModifyAccountRequest", "com.dr.oursp.infra.account.api.http.resp.*", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.dto.AccountLoginUserInfoDTO", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.role.entity.RoleEntity", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "com.dr.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "org.apache.logging.log4j.util.Strings", "org.springframework.util.Assert", "javax.validation.constraints.NotNull", "java.util.*", "java.util.function.Consumer", "java.util.function.Function", "java.util.stream.Collectors"],
-    "class_name": "AccountModelConvert",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/AccountModelConvert.java"
-}, {
-    "name": "MobilePersonalApi",
-    "package": "com.dr.oursp.infra.account.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.account.api.http.req.PhoneAssociateBizRequest", "com.dr.oursp.infra.account.api.http.req.WechatAssociatePersonalRequest", "com.dr.oursp.infra.account.api.http.resp.PersonalAccountInfoResponse", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.entity.PhoneAssociateEntity", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.account.service.PhoneLoginService", "com.dr.oursp.infra.ajc.wechat.WechatService", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.data.redis.core.RedisTemplate", "org.springframework.util.Assert", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.Optional", "java.util.concurrent.TimeUnit"],
-    "class_name": "MobilePersonalApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/MobilePersonalApi.java"
-}, {
-    "name": "AccountInfoAttachment",
-    "package": "com.dr.oursp.infra.account.api.http",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "AccountInfoAttachment",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/AccountInfoAttachment.java"
-}, {
-    "name": "CurrentUserChangedIdentityResponse",
-    "package": "com.dr.oursp.infra.account.api.http.resp",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
-    "class_name": "CurrentUserChangedIdentityResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/resp/CurrentUserChangedIdentityResponse.java"
-}, {
-    "name": "LoginUserInfo",
-    "package": "com.dr.oursp.infra.account.api.http.resp",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Objects", "java.util.Set"],
-    "class_name": "LoginUserInfo",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/resp/LoginUserInfo.java"
-}, {
-    "name": "QrCodeCheckResponse",
-    "package": "com.dr.oursp.infra.account.api.http.resp",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.consts.QrCodeCheckStatusEnum", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
-    "class_name": "QrCodeCheckResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/resp/QrCodeCheckResponse.java"
-}, {
-    "name": "IdentityListGroupByOrgResponse",
-    "package": "com.dr.oursp.infra.account.api.http.resp",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "lombok.Data", "java.util.List"],
-    "class_name": "IdentityListGroupByOrgResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/resp/IdentityListGroupByOrgResponse.java"
-}, {
-    "name": "PersonalAccountInfoResponse",
-    "package": "com.dr.oursp.infra.account.api.http.resp",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.Valid"],
-    "class_name": "PersonalAccountInfoResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/resp/PersonalAccountInfoResponse.java"
-}, {
-    "name": "AccountListResponse",
-    "package": "com.dr.oursp.infra.account.api.http.resp",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "AccountListResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/resp/AccountListResponse.java"
-}, {
-    "name": "AdminLoginResponse",
-    "package": "com.dr.oursp.infra.account.api.http.resp",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "AdminLoginResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/resp/AdminLoginResponse.java"
-}, {
-    "name": "IdentityListResponse",
-    "package": "com.dr.oursp.infra.account.api.http.resp",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
-    "class_name": "IdentityListResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/resp/IdentityListResponse.java"
-}, {
-    "name": "AccountInfoResponse",
-    "package": "com.dr.oursp.infra.account.api.http.resp",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.api.http.AccountInfoAttachment", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
-    "class_name": "AccountInfoResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/resp/AccountInfoResponse.java"
-}, {
-    "name": "LoginResponse",
-    "package": "com.dr.oursp.infra.account.api.http.resp",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "LoginResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/resp/LoginResponse.java"
-}, {
-    "name": "OrgPathItemResp",
-    "package": "com.dr.oursp.infra.account.api.http.resp",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "OrgPathItemResp",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/resp/OrgPathItemResp.java"
-}, {
-    "name": "PhoneAssociateBizRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiParam", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "PhoneAssociateBizRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/PhoneAssociateBizRequest.java"
-}, {
-    "name": "VerifyRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "VerifyRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/VerifyRequest.java"
-}, {
-    "name": "MobileLoginRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "MobileLoginRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/MobileLoginRequest.java"
-}, {
-    "name": "MobileWechatAssociateRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "MobileWechatAssociateRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/MobileWechatAssociateRequest.java"
-}, {
-    "name": "ModifyAccountRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.api.http.AccountInfoAttachment", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Set"],
-    "class_name": "ModifyAccountRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/ModifyAccountRequest.java"
-}, {
-    "name": "WechatAssociatePersonalRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "WechatAssociatePersonalRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/WechatAssociatePersonalRequest.java"
-}, {
-    "name": "AdminLoginRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "AdminLoginRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/AdminLoginRequest.java"
-}, {
-    "name": "PhoneRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "PhoneRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/PhoneRequest.java"
-}, {
-    "name": "ResetPwdRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank"],
-    "class_name": "ResetPwdRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/ResetPwdRequest.java"
-}, {
-    "name": "CurrentUserChangedIdentityRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
-    "class_name": "CurrentUserChangedIdentityRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/CurrentUserChangedIdentityRequest.java"
-}, {
-    "name": "QrCodeLoginRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "QrCodeLoginRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/QrCodeLoginRequest.java"
-}, {
-    "name": "LoginRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "LoginRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/LoginRequest.java"
-}, {
-    "name": "PhoneLoginRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "PhoneLoginRequest extends PhoneRequest",
-    "extend_name": "PhoneRequest",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/PhoneLoginRequest.java"
-}, {
-    "name": "PhoneAssociateRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "PhoneAssociateRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/PhoneAssociateRequest.java"
-}, {
-    "name": "MobileWechatLoginRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "MobileWechatLoginRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/MobileWechatLoginRequest.java"
-}, {
-    "name": "SwitchAccountRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.Min"],
-    "class_name": "SwitchAccountRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/SwitchAccountRequest.java"
-}, {
-    "name": "PersonalModifyAccountRequest",
-    "package": "com.dr.oursp.infra.account.api.http.req",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank"],
-    "class_name": "PersonalModifyAccountRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/api/http/req/PersonalModifyAccountRequest.java"
-}, {
-    "name": "AccountService",
-    "package": "com.dr.oursp.infra.account.service",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPageable", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.repository.AccountInfoRepo", "com.dr.oursp.infra.account.service.dto.AccountLoginUserInfoDTO", "com.dr.oursp.strategy.basic.account.UnifyAccountManager", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.role.RoleManager", "com.dr.oursp.strategy.basic.role.entity.RoleEntity", "com.dr.oursp.strategy.basic.token.Token", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "org.springframework.util.DigestUtils", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotEmpty", "javax.validation.constraints.NotNull", "java.nio.charset.StandardCharsets", "java.time.Instant", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "AccountService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/service/AccountService.java"
-}, {
-    "name": "AccountInfoService",
-    "package": "com.dr.oursp.infra.account.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.repository.AccountInfoRepo", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "java.util.List", "java.util.Optional"],
-    "class_name": "AccountInfoService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/service/AccountInfoService.java"
-}, {
-    "name": "SmsService",
-    "package": "com.dr.oursp.infra.account.service",
-    "type": "class",
-    "imports": ["com.aliyuncs.CommonRequest", "com.aliyuncs.CommonResponse", "com.aliyuncs.DefaultAcsClient", "com.aliyuncs.http.MethodType", "com.aliyuncs.profile.DefaultProfile", "com.dr.support.serialization.Serializations", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.data.redis.core.RedisTemplate", "org.springframework.stereotype.Service", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Map", "java.util.Optional", "java.util.concurrent.TimeUnit"],
-    "class_name": "SmsService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/service/SmsService.java"
-}, {
-    "name": "PhoneLoginService",
-    "package": "com.dr.oursp.infra.account.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.entity.PhoneAssociateEntity", "com.dr.oursp.infra.account.repository.PhoneAssociateRepo", "com.dr.oursp.infra.account.service.dto.AccountLoginUserInfoDTO", "com.dr.oursp.strategy.basic.account.UnifyAccountManager", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.oursp.strategy.basic.token.TokenManger", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.trace.LogElapsedTime", "io.swagger.annotations.ApiParam", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.NotBlank", "java.util.List", "java.util.Optional"],
-    "class_name": "PhoneLoginService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/service/PhoneLoginService.java"
-}, {
-    "name": "SmsResult",
-    "package": "com.dr.oursp.infra.account.service",
-    "type": "class",
-    "imports": ["com.google.gson.annotations.SerializedName", "lombok.Data"],
-    "class_name": "SmsResult",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/service/SmsResult.java"
-}, {
-    "name": "AccountLoginUserInfoDTO",
-    "package": "com.dr.oursp.infra.account.service.dto",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "lombok.Data", "java.util.Set"],
-    "class_name": "AccountLoginUserInfoDTO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/service/dto/AccountLoginUserInfoDTO.java"
-}, {
-    "name": "AccountInfoVO",
-    "package": "com.dr.oursp.infra.account.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.entity.AccountInfoEntity", "lombok.AllArgsConstructor", "lombok.Builder", "lombok.Value"],
-    "class_name": "AccountInfoVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/domain/AccountInfoVO.java"
-}, {
-    "name": "SexTypeEnum",
-    "package": "com.dr.oursp.infra.account.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter", "org.apache.commons.lang3.StringUtils"],
-    "class_name": "SexTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/consts/SexTypeEnum.java"
-}, {
-    "name": "AccountTypeEnum",
-    "package": "com.dr.oursp.infra.account.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "AccountTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/consts/AccountTypeEnum.java"
-}, {
-    "name": "LoginModeEnum",
-    "package": "com.dr.oursp.infra.account.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "LoginModeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/consts/LoginModeEnum.java"
-}, {
-    "name": "QrCodeCheckStatusEnum",
-    "package": "com.dr.oursp.infra.account.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "QrCodeCheckStatusEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/account/consts/QrCodeCheckStatusEnum.java"
-}, {
-    "name": "DataDefinitionDto",
-    "package": "com.dr.oursp.infra.data.dto",
-    "type": "class",
-    "imports": ["com.baomidou.mybatisplus.annotation.TableField", "com.dr.oursp.infra.data.entity.DataDefinition", "com.dr.oursp.infra.data.entity.DataProp", "com.dr.oursp.strategy.basic.data.DataDefine", "com.dr.support.serialization.Serializations", "com.google.common.reflect.TypeToken", "io.swagger.annotations.ApiModel", "lombok.Data", "java.util.Comparator", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "DataDefinitionDto extends DataDefinition",
-    "extend_name": "DataDefinition",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/dto/DataDefinitionDto.java"
-}, {
-    "name": "DataOrder",
-    "package": "com.dr.oursp.infra.data.util",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.data.consts.OrderEnum", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable"],
-    "class_name": "DataOrder implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/util/DataOrder.java"
-}, {
-    "name": "DataKvns",
-    "package": "com.dr.oursp.infra.data.util",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.data.consts.KvnsEnum", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.io.Serializable"],
-    "class_name": "DataKvns implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/util/DataKvns.java"
-}, {
-    "name": "FileUtils",
-    "package": "com.dr.oursp.infra.data.util",
-    "type": "class",
-    "imports": ["cn.hutool.core.io.FileUtil", "java.io.BufferedInputStream", "java.io.IOException", "java.io.InputStream", "java.net.URL", "java.net.URLConnection"],
-    "class_name": "FileUtils extends FileUtil",
-    "extend_name": "FileUtil",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/util/FileUtils.java"
-}, {
-    "name": "DataExcelUtil",
-    "package": "com.dr.oursp.infra.data.util",
-    "type": "class",
-    "imports": ["cn.hutool.core.lang.Assert", "cn.hutool.core.util.StrUtil", "com.dr.oursp.infra.data.dto.DataDefinitionDto", "com.dr.oursp.infra.data.entity.DataProp", "com.google.common.collect.Lists", "org.apache.logging.log4j.util.Strings", "org.apache.poi.hssf.usermodel.HSSFDataFormat", "org.apache.poi.ss.usermodel.*", "org.apache.poi.xssf.streaming.SXSSFWorkbook", "org.apache.poi.xssf.usermodel.XSSFCell", "org.apache.poi.xssf.usermodel.XSSFRow", "org.apache.poi.xssf.usermodel.XSSFSheet", "org.apache.poi.xssf.usermodel.XSSFWorkbook", "java.io.ByteArrayOutputStream", "java.io.IOException", "java.io.InputStream", "java.util.Iterator", "java.util.LinkedHashMap", "java.util.List", "java.util.Map"],
-    "class_name": "DataExcelUtil",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/util/DataExcelUtil.java"
-}, {
-    "name": "DataSqlUtil",
-    "package": "com.dr.oursp.infra.data.util",
-    "type": "class",
-    "imports": ["cn.hutool.core.util.ObjectUtil", "cn.hutool.core.util.StrUtil", "com.dr.oursp.infra.data.consts.KvnsEnum", "com.dr.oursp.infra.data.dto.DataDefinitionDto", "com.dr.oursp.infra.data.entity.DataProp", "org.apache.logging.log4j.util.Strings", "org.springframework.util.CollectionUtils", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.stream.Collectors"],
-    "class_name": "DataSqlUtil",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/util/DataSqlUtil.java"
-}, {
-    "name": "CamelCaseUtil",
-    "package": "com.dr.oursp.infra.data.util",
-    "type": "class",
-    "imports": [],
-    "class_name": "CamelCaseUtil",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/util/CamelCaseUtil.java"
-}, {
-    "name": "DataDefinition",
-    "package": "com.dr.oursp.infra.data.entity",
-    "type": "class",
-    "imports": ["com.baomidou.mybatisplus.annotation.TableName", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.*", "java.io.Serializable", "java.time.Instant"],
-    "class_name": "DataDefinition implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/entity/DataDefinition.java"
-}, {
-    "name": "DataProp",
-    "package": "com.dr.oursp.infra.data.entity",
-    "type": "class",
-    "imports": ["lombok.Data", "java.io.Serializable"],
-    "class_name": "DataProp implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/entity/DataProp.java"
-}, {
-    "name": "DataFilter",
-    "package": "com.dr.oursp.infra.data.entity",
-    "type": "class",
-    "imports": ["com.baomidou.mybatisplus.annotation.IdType", "com.baomidou.mybatisplus.annotation.TableId", "com.baomidou.mybatisplus.annotation.TableName", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.*", "java.io.Serializable", "java.time.Instant"],
-    "class_name": "DataFilter implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/entity/DataFilter.java"
-}, {
-    "name": "DataFilterMapper",
-    "package": "com.dr.oursp.infra.data.mapper",
-    "type": "interface",
-    "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.dr.oursp.infra.data.entity.DataFilter", "org.apache.ibatis.annotations.Mapper"],
-    "class_name": "DataFilterMapper extends BaseMapper",
-    "extend_name": "BaseMapper",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/mapper/DataFilterMapper.java"
-}, {
-    "name": "DataListMapper",
-    "package": "com.dr.oursp.infra.data.mapper",
-    "type": "interface",
-    "imports": ["com.baomidou.mybatisplus.core.metadata.IPage", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.oursp.infra.data.api.http.response.DataSummaryResponse", "com.dr.oursp.infra.data.entity.DataProp", "org.apache.ibatis.annotations.Mapper", "org.apache.ibatis.annotations.Param", "java.util.LinkedHashMap", "java.util.List"],
-    "class_name": "DataListMapper",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/mapper/DataListMapper.java"
-}, {
-    "name": "DataDefineMapper",
-    "package": "com.dr.oursp.infra.data.mapper",
-    "type": "interface",
-    "imports": ["com.baomidou.mybatisplus.core.mapper.BaseMapper", "com.dr.oursp.infra.data.entity.DataDefinition", "org.apache.ibatis.annotations.Mapper"],
-    "class_name": "DataDefineMapper extends BaseMapper",
-    "extend_name": "BaseMapper",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/mapper/DataDefineMapper.java"
-}, {
-    "name": "DataApi",
-    "package": "com.dr.oursp.infra.data.api",
-    "type": "class",
-    "imports": ["cn.hutool.core.lang.Assert", "com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.data.api.http.request.*", "com.dr.oursp.infra.data.api.http.response.*", "com.dr.oursp.infra.data.service.DataService", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.serialization.Serializations", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.context.annotation.Scope", "org.springframework.http.ResponseEntity", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "java.sql.SQLException", "java.util.LinkedHashMap", "java.util.List"],
-    "class_name": "DataApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/DataApi.java"
-}, {
-    "name": "DataFallPaging",
-    "package": "com.dr.oursp.infra.data.api.http.page",
-    "type": "class",
-    "imports": ["com.baomidou.mybatisplus.core.metadata.IPage", "com.dr.domain.selector.FallPaged"],
-    "class_name": "DataFallPaging",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/page/DataFallPaging.java"
-}, {
-    "name": "DataPropResponse",
-    "package": "com.dr.oursp.infra.data.api.http.response",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.data.entity.DataProp", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable"],
-    "class_name": "DataPropResponse implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/response/DataPropResponse.java"
-}, {
-    "name": "DataDefineResponse",
-    "package": "com.dr.oursp.infra.data.api.http.response",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.data.DataDefine", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable"],
-    "class_name": "DataDefineResponse implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/response/DataDefineResponse.java"
-}, {
-    "name": "DataSummaryResponse",
-    "package": "com.dr.oursp.infra.data.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable"],
-    "class_name": "DataSummaryResponse implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/response/DataSummaryResponse.java"
-}, {
-    "name": "DataDefinePropResponse",
-    "package": "com.dr.oursp.infra.data.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable", "java.util.List"],
-    "class_name": "DataDefinePropResponse implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/response/DataDefinePropResponse.java"
-}, {
-    "name": "DataFilterResponse",
-    "package": "com.dr.oursp.infra.data.api.http.response",
-    "type": "class",
-    "imports": ["cn.hutool.core.date.DatePattern", "cn.hutool.core.date.DateUtil", "com.dr.oursp.infra.data.entity.DataFilter", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.io.Serializable", "java.util.Date"],
-    "class_name": "DataFilterResponse implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/response/DataFilterResponse.java"
-}, {
-    "name": "DataFilterSaveRequest",
-    "package": "com.dr.oursp.infra.data.api.http.request",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.data.util.DataKvns", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotEmpty", "java.util.List"],
-    "class_name": "DataFilterSaveRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/request/DataFilterSaveRequest.java"
-}, {
-    "name": "DataPropHighlightRequest",
-    "package": "com.dr.oursp.infra.data.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "DataPropHighlightRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/request/DataPropHighlightRequest.java"
-}, {
-    "name": "DataTagSumRequest",
-    "package": "com.dr.oursp.infra.data.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "DataTagSumRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/request/DataTagSumRequest.java"
-}, {
-    "name": "DataFilterUpdateRequest",
-    "package": "com.dr.oursp.infra.data.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "DataFilterUpdateRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/request/DataFilterUpdateRequest.java"
-}, {
-    "name": "DataListRequest",
-    "package": "com.dr.oursp.infra.data.api.http.request",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageRequest", "com.dr.oursp.infra.data.util.DataKvns", "com.dr.oursp.infra.data.util.DataOrder", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List", "java.util.Set"],
-    "class_name": "DataListRequest extends PageRequest",
-    "extend_name": "PageRequest",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/request/DataListRequest.java"
-}, {
-    "name": "DataTagListRequest",
-    "package": "com.dr.oursp.infra.data.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "DataTagListRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/request/DataTagListRequest.java"
-}, {
-    "name": "DataDefResetRequest",
-    "package": "com.dr.oursp.infra.data.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "DataDefResetRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/request/DataDefResetRequest.java"
-}, {
-    "name": "DataPropOrderRequest",
-    "package": "com.dr.oursp.infra.data.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "DataPropOrderRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/request/DataPropOrderRequest.java"
-}, {
-    "name": "DataFilterPageRequest",
-    "package": "com.dr.oursp.infra.data.api.http.request",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageRequest", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "DataFilterPageRequest extends PageRequest",
-    "extend_name": "PageRequest",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/request/DataFilterPageRequest.java"
-}, {
-    "name": "DataUploadRequest",
-    "package": "com.dr.oursp.infra.data.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "DataUploadRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/request/DataUploadRequest.java"
-}, {
-    "name": "DataDefDetailRequest",
-    "package": "com.dr.oursp.infra.data.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "DataDefDetailRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/request/DataDefDetailRequest.java"
-}, {
-    "name": "DataDownloadRequest",
-    "package": "com.dr.oursp.infra.data.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "DataDownloadRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/request/DataDownloadRequest.java"
-}, {
-    "name": "DataPropDingRequest",
-    "package": "com.dr.oursp.infra.data.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "DataPropDingRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/request/DataPropDingRequest.java"
-}, {
-    "name": "DataFilterDeleteRequest",
-    "package": "com.dr.oursp.infra.data.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "DataFilterDeleteRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/api/http/request/DataFilterDeleteRequest.java"
-}, {
-    "name": "DataService",
-    "package": "com.dr.oursp.infra.data.service",
-    "type": "class",
-    "imports": ["cn.hutool.core.date.DatePattern", "cn.hutool.core.date.DateUtil", "cn.hutool.core.lang.Assert", "cn.hutool.core.util.NumberUtil", "cn.hutool.core.util.StrUtil", "com.baomidou.mybatisplus.core.conditions.query.QueryWrapper", "com.baomidou.mybatisplus.core.metadata.IPage", "com.baomidou.mybatisplus.extension.plugins.pagination.Page", "com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.infra.data.api.http.page.DataFallPaging", "com.dr.oursp.infra.data.api.http.request.*", "com.dr.oursp.infra.data.api.http.response.*", "com.dr.oursp.infra.data.dto.DataDefinitionDto", "com.dr.oursp.infra.data.entity.DataDefinition", "com.dr.oursp.infra.data.entity.DataFilter", "com.dr.oursp.infra.data.entity.DataProp", "com.dr.oursp.infra.data.mapper.DataListMapper", "com.dr.oursp.infra.data.util.*", "com.dr.oursp.strategy.basic.data.DataDefine", "com.dr.oursp.strategy.basic.data.DataManager", "com.dr.oursp.strategy.basic.data.FieldTypeEnum", "com.dr.oursp.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.oursp.strategy.basic.visible.VisibleQuerySqlBuilder", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.http.HttpHeaders", "org.springframework.http.HttpStatus", "org.springframework.http.ResponseEntity", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.CollectionUtils", "javax.annotation.Resource", "java.io.ByteArrayOutputStream", "java.io.IOException", "java.io.InputStream", "java.net.URL", "java.sql.SQLException", "java.util.*", "java.util.regex.Pattern", "java.util.stream.Collectors"],
-    "class_name": "DataService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/service/DataService.java"
-}, {
-    "name": "IDataFilterService",
-    "package": "com.dr.oursp.infra.data.service",
-    "type": "interface",
-    "imports": ["com.baomidou.mybatisplus.extension.service.IService", "com.dr.oursp.infra.data.entity.DataFilter"],
-    "class_name": "IDataFilterService extends IService",
-    "extend_name": "IService",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/service/IDataFilterService.java"
-}, {
-    "name": "IDataDefineService",
-    "package": "com.dr.oursp.infra.data.service",
-    "type": "interface",
-    "imports": ["com.baomidou.mybatisplus.extension.service.IService", "com.dr.oursp.infra.data.entity.DataDefinition"],
-    "class_name": "IDataDefineService extends IService",
-    "extend_name": "IService",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/service/IDataDefineService.java"
-}, {
-    "name": "DataDefineServiceImpl",
-    "package": "com.dr.oursp.infra.data.service.impl",
-    "type": "class",
-    "imports": ["com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.oursp.infra.data.entity.DataDefinition", "com.dr.oursp.infra.data.mapper.DataDefineMapper", "com.dr.oursp.infra.data.service.IDataDefineService", "org.springframework.stereotype.Service"],
-    "class_name": "DataDefineServiceImpl extends ServiceImpl",
-    "extend_name": "ServiceImpl",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/service/impl/DataDefineServiceImpl.java"
-}, {
-    "name": "DataFilterServiceImpl",
-    "package": "com.dr.oursp.infra.data.service.impl",
-    "type": "class",
-    "imports": ["com.baomidou.mybatisplus.extension.service.impl.ServiceImpl", "com.dr.oursp.infra.data.entity.DataFilter", "com.dr.oursp.infra.data.mapper.DataFilterMapper", "com.dr.oursp.infra.data.service.IDataFilterService", "org.springframework.stereotype.Service"],
-    "class_name": "DataFilterServiceImpl extends ServiceImpl",
-    "extend_name": "ServiceImpl",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/service/impl/DataFilterServiceImpl.java"
-}, {
-    "name": "OrderEnum",
-    "package": "com.dr.oursp.infra.data.consts",
-    "type": "enum",
-    "imports": [],
-    "class_name": "OrderEnum",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/consts/OrderEnum.java"
-}, {
-    "name": "KvnsEnum",
-    "package": "com.dr.oursp.infra.data.consts",
-    "type": "enum",
-    "imports": [],
-    "class_name": "KvnsEnum",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/consts/KvnsEnum.java"
-}, {
-    "name": "DataConstants",
-    "package": "com.dr.oursp.infra.data.consts",
-    "type": "enum",
-    "imports": [],
-    "class_name": "DataConstants",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/data/consts/DataConstants.java"
-}, {
-    "name": "AppJointCertService",
-    "package": "com.dr.oursp.infra.ajc",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.ajc.api.http.request.ConfigItem", "com.dr.oursp.infra.ajc.api.http.request.SaveAppJointCertRequest", "com.dr.oursp.infra.ajc.api.http.response.AppJointCertDefineResponse", "com.dr.oursp.infra.ajc.api.http.response.AppJointCertResponse", "com.dr.oursp.infra.ajc.api.http.response.ConfigDefineItem", "com.dr.oursp.infra.ajc.entity.AppJointCertConfigEntity", "com.dr.oursp.infra.ajc.entity.AppJointCertConfigId", "com.dr.oursp.infra.ajc.entity.JointCertResponseDataEntity", "com.dr.oursp.infra.ajc.repository.AppJointCertRepository", "com.dr.oursp.infra.ajc.repository.JointCertResponseDataRepository", "com.dr.oursp.strategy.basic.app.jc.AppJointCertDefine", "com.dr.oursp.strategy.basic.app.jc.AppJointCertManager", "com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.support.serialization.Serializations", "com.google.common.reflect.TypeToken", "org.apache.logging.log4j.util.Strings", "org.springframework.lang.NonNull", "org.springframework.lang.Nullable", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.time.Instant", "java.util.*", "java.util.stream.Collectors"],
-    "class_name": "AppJointCertService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/AppJointCertService.java"
-}, {
-    "name": "JointCertResponseDataRepository",
-    "package": "com.dr.oursp.infra.ajc.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.ajc.entity.JointCertResponseDataEntity", "org.springframework.data.jpa.repository.JpaRepository", "java.util.List", "java.util.Optional", "java.util.Set"],
-    "class_name": "JointCertResponseDataRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/repository/JointCertResponseDataRepository.java"
-}, {
-    "name": "AppJointCertRepository",
-    "package": "com.dr.oursp.infra.ajc.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.ajc.entity.AppJointCertConfigEntity", "com.dr.oursp.infra.ajc.entity.AppJointCertConfigId", "org.springframework.data.jpa.repository.JpaRepository"],
-    "class_name": "AppJointCertRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/repository/AppJointCertRepository.java"
-}, {
-    "name": "AppJointCertConfigEntity",
-    "package": "com.dr.oursp.infra.ajc.entity",
-    "type": "class",
-    "imports": ["lombok.Data", "javax.persistence.Column", "javax.persistence.EmbeddedId", "javax.persistence.Entity", "javax.persistence.Table"],
-    "class_name": "AppJointCertConfigEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/entity/AppJointCertConfigEntity.java"
-}, {
-    "name": "AppJointCertConfigId",
-    "package": "com.dr.oursp.infra.ajc.entity",
-    "type": "class",
-    "imports": ["lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "lombok.experimental.Accessors", "javax.persistence.Embeddable", "java.io.Serializable"],
-    "class_name": "AppJointCertConfigId implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/entity/AppJointCertConfigId.java"
-}, {
-    "name": "JointCertResponseDataEntity",
-    "package": "com.dr.oursp.infra.ajc.entity",
-    "type": "class",
-    "imports": ["lombok.Data", "javax.persistence.Entity", "javax.persistence.Id", "javax.persistence.Table"],
-    "class_name": "JointCertResponseDataEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/entity/JointCertResponseDataEntity.java"
-}, {
-    "name": "WechatService",
-    "package": "com.dr.oursp.infra.ajc.wechat",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.account.service.dto.AccountLoginUserInfoDTO", "com.dr.oursp.infra.ajc.wechat.api.http.response.WechatAccessTokenResponse", "com.dr.oursp.infra.ajc.wechat.consts.WechatQRCodeStatusEnum", "com.dr.oursp.infra.ajc.wechat.dto.WechatQRCodeDTO", "com.dr.oursp.infra.ajc.wechat.entity.WechatAssociateEntity", "com.dr.oursp.infra.ajc.wechat.repository.WechatAccountRepo", "com.dr.oursp.strategy.basic.account.UnifyAccountManager", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.trace.LogElapsedTime", "com.fasterxml.jackson.core.JsonProcessingException", "com.fasterxml.jackson.databind.ObjectMapper", "lombok.extern.slf4j.Slf4j", "org.apache.commons.compress.utils.Lists", "org.springframework.stereotype.Service", "org.springframework.transaction.annotation.Transactional", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "org.springframework.web.client.RestTemplate", "javax.validation.constraints.NotBlank", "java.util.List", "java.util.Optional"],
-    "class_name": "WechatService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/wechat/WechatService.java"
-}, {
-    "name": "WechatQRCodeDTO",
-    "package": "com.dr.oursp.infra.ajc.wechat.dto",
-    "type": "class",
-    "imports": ["lombok.Data"],
-    "class_name": "WechatQRCodeDTO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/wechat/dto/WechatQRCodeDTO.java"
-}, {
-    "name": "WechatAccountRepo",
-    "package": "com.dr.oursp.infra.ajc.wechat.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.infra.ajc.wechat.entity.WechatAssociateEntity", "org.springframework.data.jpa.repository.JpaRepository", "java.util.Optional"],
-    "class_name": "WechatAccountRepo extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/wechat/repository/WechatAccountRepo.java"
-}, {
-    "name": "WechatAssociateEntity",
-    "package": "com.dr.oursp.infra.ajc.wechat.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntityWithId", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Column", "javax.persistence.Entity", "javax.persistence.Table", "javax.validation.Valid", "javax.validation.constraints.NotNull"],
-    "class_name": "WechatAssociateEntity extends BasicJpaEntityWithId",
-    "extend_name": "BasicJpaEntityWithId",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/wechat/entity/WechatAssociateEntity.java"
-}, {
-    "name": "WechatApi",
-    "package": "com.dr.oursp.infra.ajc.wechat.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.account.api.AccountModelConvert", "com.dr.oursp.infra.account.api.http.resp.LoginResponse", "com.dr.oursp.infra.account.api.http.resp.LoginUserInfo", "com.dr.oursp.infra.account.api.http.resp.OrgPathItemResp", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.infra.account.service.dto.AccountLoginUserInfoDTO", "com.dr.oursp.infra.ajc.wechat.WechatService", "com.dr.oursp.infra.ajc.wechat.api.http.WechatModelConvert", "com.dr.oursp.infra.ajc.wechat.api.http.request.WechatAssociateRequest", "com.dr.oursp.infra.ajc.wechat.api.http.request.WechatLoginRequest", "com.dr.oursp.infra.ajc.wechat.api.http.request.WechatQRCodeRequest", "com.dr.oursp.infra.ajc.wechat.api.http.response.WechatQRCodeResponse", "com.dr.oursp.infra.ajc.wechat.dto.WechatQRCodeDTO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.oursp.strategy.basic.token.TokenManger", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiOperation", "io.swagger.annotations.ApiParam", "org.springframework.web.bind.annotation.*", "java.util.List", "java.util.Optional", "java.util.stream.Collectors"],
-    "class_name": "WechatApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/wechat/api/WechatApi.java"
-}, {
-    "name": "WechatModelConvert",
-    "package": "com.dr.oursp.infra.ajc.wechat.api.http",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.ajc.wechat.api.http.response.WechatQRCodeResponse", "com.dr.oursp.infra.ajc.wechat.dto.WechatQRCodeDTO"],
-    "class_name": "WechatModelConvert",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/wechat/api/http/WechatModelConvert.java"
-}, {
-    "name": "WechatQRCodeResponse",
-    "package": "com.dr.oursp.infra.ajc.wechat.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "WechatQRCodeResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/wechat/api/http/response/WechatQRCodeResponse.java"
-}, {
-    "name": "WechatAccessTokenResponse",
-    "package": "com.dr.oursp.infra.ajc.wechat.api.http.response",
-    "type": "class",
-    "imports": ["com.fasterxml.jackson.annotation.JsonProperty", "io.swagger.annotations.ApiModel", "lombok.Data"],
-    "class_name": "WechatAccessTokenResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/wechat/api/http/response/WechatAccessTokenResponse.java"
-}, {
-    "name": "WechatAssociateRequest",
-    "package": "com.dr.oursp.infra.ajc.wechat.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "WechatAssociateRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/wechat/api/http/request/WechatAssociateRequest.java"
-}, {
-    "name": "WechatQRCodeRequest",
-    "package": "com.dr.oursp.infra.ajc.wechat.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "WechatQRCodeRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/wechat/api/http/request/WechatQRCodeRequest.java"
-}, {
-    "name": "WechatLoginRequest",
-    "package": "com.dr.oursp.infra.ajc.wechat.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "WechatLoginRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/wechat/api/http/request/WechatLoginRequest.java"
-}, {
-    "name": "WechatQRCodeStatusEnum",
-    "package": "com.dr.oursp.infra.ajc.wechat.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "WechatQRCodeStatusEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/wechat/consts/WechatQRCodeStatusEnum.java"
-}, {
-    "name": "BizAppJointCertApi",
-    "package": "com.dr.oursp.infra.ajc.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.ajc.AppJointCertService", "com.dr.oursp.infra.ajc.api.http.request.SaveAppJointCertRequest", "com.dr.oursp.infra.ajc.api.http.request.SaveRespRequest", "com.dr.oursp.infra.ajc.api.http.response.AppJointCertDefineResponse", "com.dr.oursp.infra.ajc.api.http.response.AppJointCertResponse", "com.dr.oursp.infra.ajc.api.http.response.JointCertResponseDataResponse", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.serialization.Serializations", "com.google.gson.reflect.TypeToken", "io.swagger.annotations.*", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.lang.NonNull", "org.springframework.web.bind.annotation.*", "java.util.List", "java.util.Map", "java.util.Optional", "java.util.stream.Collectors"],
-    "class_name": "BizAppJointCertApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/api/BizAppJointCertApi.java"
-}, {
-    "name": "OpAppJointCertApi",
-    "package": "com.dr.oursp.infra.ajc.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.infra.ajc.AppJointCertService", "com.dr.oursp.infra.ajc.api.http.request.SaveAppJointCertRequest", "com.dr.oursp.infra.ajc.api.http.request.SaveRespRequest", "com.dr.oursp.infra.ajc.api.http.response.AppJointCertDefineResponse", "com.dr.oursp.infra.ajc.api.http.response.AppJointCertResponse", "com.dr.oursp.infra.ajc.api.http.response.JointCertResponseDataResponse", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.serialization.Serializations", "com.google.gson.reflect.TypeToken", "io.swagger.annotations.*", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.lang.NonNull", "org.springframework.web.bind.annotation.*", "java.util.List", "java.util.Map", "java.util.Optional", "java.util.stream.Collectors"],
-    "class_name": "OpAppJointCertApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/api/OpAppJointCertApi.java"
-}, {
-    "name": "AppJointCertResponse",
-    "package": "com.dr.oursp.infra.ajc.api.http.response",
-    "type": "class",
-    "imports": ["com.dr.oursp.infra.ajc.api.http.request.ConfigItem", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Objects", "java.util.Set"],
-    "class_name": "AppJointCertResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/api/http/response/AppJointCertResponse.java"
-}, {
-    "name": "ConfigDefineItem",
-    "package": "com.dr.oursp.infra.ajc.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "ConfigDefineItem",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/api/http/response/ConfigDefineItem.java"
-}, {
-    "name": "AppJointCertDefineResponse",
-    "package": "com.dr.oursp.infra.ajc.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List", "java.util.Set"],
-    "class_name": "AppJointCertDefineResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/api/http/response/AppJointCertDefineResponse.java"
-}, {
-    "name": "JointCertResponseDataResponse",
-    "package": "com.dr.oursp.infra.ajc.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Map"],
-    "class_name": "JointCertResponseDataResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/api/http/response/JointCertResponseDataResponse.java"
-}, {
-    "name": "SaveRespRequest",
-    "package": "com.dr.oursp.infra.ajc.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Map"],
-    "class_name": "SaveRespRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/api/http/request/SaveRespRequest.java"
-}, {
-    "name": "SaveAppJointCertRequest",
-    "package": "com.dr.oursp.infra.ajc.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
-    "class_name": "SaveAppJointCertRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/api/http/request/SaveAppJointCertRequest.java"
-}, {
-    "name": "ConfigItem",
-    "package": "com.dr.oursp.infra.ajc.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Objects"],
-    "class_name": "ConfigItem",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/infra/ajc/api/http/request/ConfigItem.java"
-}, {
-    "name": "NoticeService",
-    "package": "com.dr.oursp.biz.notice",
-    "type": "class",
-    "imports": ["lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service"],
-    "class_name": "NoticeService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/notice/NoticeService.java"
-}, {
-    "name": "",
-    "package": "",
-    "type": "",
-    "imports": [],
-    "class_name": "",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/notice/repository/NoticeRecordRepo.java"
-}, {
-    "name": "MobileNoticeApi",
-    "package": "com.dr.oursp.biz.notice.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.biz.article.ArticleService", "com.dr.oursp.biz.article.api.ArticleModelConvert", "com.dr.oursp.biz.article.api.http.response.ArticleResponse", "com.dr.oursp.biz.article.constant.ArticleCollectTypeEnum", "com.dr.oursp.biz.article.constant.ArticleTypeEnum", "com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.GetMapping", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RequestParam", "org.springframework.web.bind.annotation.RestController", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.stream.Collectors"],
-    "class_name": "MobileNoticeApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/notice/api/MobileNoticeApi.java"
-}, {
-    "name": "NoticeApi",
-    "package": "com.dr.oursp.biz.notice.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.biz.article.ArticleService", "com.dr.oursp.biz.article.api.ArticleModelConvert", "com.dr.oursp.biz.article.api.http.response.ArticleResponse", "com.dr.oursp.biz.article.constant.ArticleCollectTypeEnum", "com.dr.oursp.biz.article.constant.ArticleTypeEnum", "com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.GetMapping", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RequestParam", "org.springframework.web.bind.annotation.RestController", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.stream.Collectors"],
-    "class_name": "NoticeApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/notice/api/NoticeApi.java"
-}, {
-    "name": "TodoService",
-    "package": "com.dr.oursp.biz.todo",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.todo.domain.Todo", "com.dr.oursp.biz.todo.domain.vo.TodoVO", "com.dr.oursp.biz.todo.dto.TodoDTO", "com.dr.oursp.biz.todo.entity.TodoEntity", "com.dr.oursp.biz.todo.repository.TodoRepo", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "javax.transaction.Transactional", "java.util.Comparator", "java.util.List", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "TodoService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/todo/TodoService.java"
-}, {
-    "name": "TodoDTO",
-    "package": "com.dr.oursp.biz.todo.dto",
-    "type": "class",
-    "imports": ["lombok.Data"],
-    "class_name": "TodoDTO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/todo/dto/TodoDTO.java"
-}, {
-    "name": "TodoRepo",
-    "package": "com.dr.oursp.biz.todo.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.biz.todo.entity.TodoEntity", "org.springframework.data.jpa.repository.JpaRepository", "java.util.stream.Stream"],
-    "class_name": "TodoRepo extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/todo/repository/TodoRepo.java"
-}, {
-    "name": "TodoEntity",
-    "package": "com.dr.oursp.biz.todo.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntityWithId", "lombok.*", "javax.persistence.Entity", "javax.persistence.Table"],
-    "class_name": "TodoEntity extends BasicJpaEntityWithId",
-    "extend_name": "BasicJpaEntityWithId",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/todo/entity/TodoEntity.java"
-}, {
-    "name": "TodoStatusEnum",
-    "package": "com.dr.oursp.biz.todo.constant",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "TodoStatusEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/todo/constant/TodoStatusEnum.java"
-}, {
-    "name": "TodoApi",
-    "package": "com.dr.oursp.biz.todo.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.biz.todo.TodoService", "com.dr.oursp.biz.todo.api.http.response.TodoResponse", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotNull"],
-    "class_name": "TodoApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/todo/api/TodoApi.java"
-}, {
-    "name": "TodoModelConvert",
-    "package": "com.dr.oursp.biz.todo.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.todo.api.http.response.TodoResponse", "com.dr.oursp.biz.todo.domain.vo.TodoVO", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "TodoModelConvert",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/todo/api/TodoModelConvert.java"
-}, {
-    "name": "MobileTodoApi",
-    "package": "com.dr.oursp.biz.todo.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.biz.todo.TodoService", "com.dr.oursp.biz.todo.api.http.response.TodoResponse", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotNull"],
-    "class_name": "MobileTodoApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/todo/api/MobileTodoApi.java"
-}, {
-    "name": "TodoResponse",
-    "package": "com.dr.oursp.biz.todo.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "TodoResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/todo/api/http/response/TodoResponse.java"
-}, {
-    "name": "Selector",
-    "package": "com.dr.oursp.biz.todo.domain",
-    "type": "class",
-    "imports": ["com.dr.domain.ValueObjectGenerator", "com.dr.oursp.biz.todo.domain.vo.TodoVO", "com.dr.oursp.biz.todo.entity.TodoEntity", "com.dr.oursp.biz.todo.repository.TodoRepo", "org.apache.logging.log4j.util.Strings", "javax.validation.constraints.PositiveOrZero", "java.util.Comparator", "java.util.Optional", "java.util.Set", "java.util.stream.Collector", "java.util.stream.Stream"],
-    "class_name": "Selector",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/todo/domain/Selector.java"
-}, {
-    "name": "Todo",
-    "package": "com.dr.oursp.biz.todo.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.todo.repository.TodoRepo"],
-    "class_name": "Todo",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/todo/domain/Todo.java"
-}, {
-    "name": "Creator",
-    "package": "com.dr.oursp.biz.todo.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.todo.domain.vo.TodoVO", "com.dr.oursp.biz.todo.dto.TodoDTO", "com.dr.oursp.biz.todo.entity.TodoEntity", "com.dr.oursp.biz.todo.repository.TodoRepo", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum"],
-    "class_name": "Creator",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/todo/domain/Creator.java"
-}, {
-    "name": "TodoVO",
-    "package": "com.dr.oursp.biz.todo.domain.vo",
-    "type": "class",
-    "imports": ["lombok.Value"],
-    "class_name": "TodoVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/todo/domain/vo/TodoVO.java"
-}, {
-    "name": "ImSessionService",
-    "package": "com.dr.oursp.biz.im",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.constant.ImSessionTypeEnum", "com.dr.oursp.biz.im.domain.ImGroup", "com.dr.oursp.biz.im.domain.ImMessage", "com.dr.oursp.biz.im.domain.ImSession", "com.dr.oursp.biz.im.domain.vo.ImSessionVO", "com.dr.oursp.biz.im.repository.ImGroupRepo", "com.dr.oursp.biz.im.repository.ImSessionRepo", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.data.mongodb.core.MongoTemplate", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.util.List", "java.util.Set"],
-    "class_name": "ImSessionService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/ImSessionService.java"
-}, {
-    "name": "ImMessageDispatch",
-    "package": "com.dr.oursp.biz.im",
-    "type": "interface",
-    "imports": ["com.dr.oursp.biz.im.constant.ImSessionTypeEnum", "com.dr.oursp.biz.im.domain.dto.ImMessageDTO"],
-    "class_name": "ImMessageDispatch",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/ImMessageDispatch.java"
-}, {
-    "name": "ImGroupService",
-    "package": "com.dr.oursp.biz.im",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.domain.ImContacts", "com.dr.oursp.biz.im.domain.ImGroup", "com.dr.oursp.biz.im.domain.vo.ImGroupVO", "com.dr.oursp.biz.im.repository.ImContactsRepo", "com.dr.oursp.biz.im.repository.ImGroupRepo", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "java.util.Collections", "java.util.Set"],
-    "class_name": "ImGroupService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/ImGroupService.java"
-}, {
-    "name": "ImContactsService",
-    "package": "com.dr.oursp.biz.im",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPageable", "com.dr.oursp.biz.im.domain.ImContacts", "com.dr.oursp.biz.im.domain.vo.ImContactInfoVO", "com.dr.oursp.biz.im.domain.vo.ImContactsVO", "com.dr.oursp.biz.im.domain.vo.ImOrgContactInfoVO", "com.dr.oursp.biz.im.entity.ImContactInfoEntity", "com.dr.oursp.biz.im.repository.ImContactInfoRepo", "com.dr.oursp.biz.im.repository.ImContactsRepo", "com.dr.oursp.infra.account.entity.AccountInfoEntity", "com.dr.oursp.infra.account.service.AccountInfoService", "com.dr.oursp.infra.account.service.AccountService", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "lombok.extern.slf4j.Slf4j", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "java.util.*", "java.util.stream.Collectors"],
-    "class_name": "ImContactsService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/ImContactsService.java"
-}, {
-    "name": "ImUtils",
-    "package": "com.dr.oursp.biz.im",
-    "type": "class",
-    "imports": ["org.springframework.web.socket.WebSocketSession", "org.springframework.web.util.UriComponentsBuilder", "java.util.Map", "java.util.Objects"],
-    "class_name": "ImUtils",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/ImUtils.java"
-}, {
-    "name": "ImSessionManager",
-    "package": "com.dr.oursp.biz.im",
-    "type": "class",
-    "imports": ["com.dr.support.trace.LogElapsedTime", "com.google.common.cache.Cache", "com.google.common.cache.CacheBuilder", "com.google.common.cache.RemovalListener", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component", "java.io.Closeable", "java.io.IOException", "java.util.Collection", "java.util.Objects", "java.util.Optional", "java.util.concurrent.TimeUnit"],
-    "class_name": "ImSessionManager",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/ImSessionManager.java"
-}, {
-    "name": "ImMessageDispatchStorageHandler",
-    "package": "com.dr.oursp.biz.im",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.constant.ImSessionTypeEnum", "com.dr.oursp.biz.im.domain.dto.ImMessageDTO", "com.dr.oursp.biz.im.entity.ImMessageEntity", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "lombok.extern.slf4j.Slf4j", "org.springframework.data.mongodb.core.MongoTemplate"],
-    "class_name": "ImMessageDispatchStorageHandler implements ImMessageDispatch",
-    "extend_name": "",
-    "implements_name": ["ImMessageDispatch"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/ImMessageDispatchStorageHandler.java"
-}, {
-    "name": "ImMessageReceiver",
-    "package": "com.dr.oursp.biz.im",
-    "type": "class",
-    "imports": ["cn.hutool.core.lang.Snowflake", "com.dr.oursp.biz.im.constant.ImSessionTypeEnum", "com.dr.oursp.biz.im.domain.dto.ImMessageDTO", "com.dr.oursp.biz.im.entity.ImSessionEntity", "com.dr.oursp.biz.im.repository.ImSessionRepo", "com.dr.support.enums.Enumerations", "com.fasterxml.jackson.databind.ObjectMapper", "lombok.extern.slf4j.Slf4j", "org.springframework.amqp.rabbit.annotation.Exchange", "org.springframework.amqp.rabbit.annotation.QueueBinding", "org.springframework.amqp.rabbit.annotation.RabbitHandler", "org.springframework.amqp.rabbit.annotation.RabbitListener", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.data.mongodb.core.MongoTemplate", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "org.springframework.web.socket.WebSocketSession", "java.util.concurrent.ThreadLocalRandom"],
-    "class_name": "ImMessageReceiver",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/ImMessageReceiver.java"
-}, {
-    "name": "ImMessageWebSocketHandler",
-    "package": "com.dr.oursp.biz.im",
-    "type": "class",
-    "imports": ["lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component", "org.springframework.web.socket.CloseStatus", "org.springframework.web.socket.TextMessage", "org.springframework.web.socket.WebSocketSession", "org.springframework.web.socket.handler.TextWebSocketHandler"],
-    "class_name": "ImMessageWebSocketHandler extends TextWebSocketHandler",
-    "extend_name": "TextWebSocketHandler",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/ImMessageWebSocketHandler.java"
-}, {
-    "name": "ImMessageService",
-    "package": "com.dr.oursp.biz.im",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.domain.dto.ImMessageDTO", "com.dr.oursp.biz.im.domain.vo.ImMessageVO", "com.dr.oursp.biz.im.entity.ImMessageEntity", "lombok.extern.slf4j.Slf4j", "org.springframework.amqp.rabbit.core.RabbitTemplate", "org.springframework.amqp.support.converter.Jackson2JsonMessageConverter", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.data.domain.Sort", "org.springframework.data.mongodb.core.MongoTemplate", "org.springframework.data.mongodb.core.query.Criteria", "org.springframework.data.mongodb.core.query.Query", "org.springframework.stereotype.Service", "java.time.Instant", "java.util.Comparator", "java.util.List", "java.util.Objects", "java.util.UUID", "java.util.stream.Collectors"],
-    "class_name": "ImMessageService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/ImMessageService.java"
-}, {
-    "name": "ImMessageDispatchSendHandler",
-    "package": "com.dr.oursp.biz.im",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.constant.ImSessionTypeEnum", "com.dr.oursp.biz.im.domain.dto.ImMessageDTO", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.fasterxml.jackson.databind.ObjectMapper", "lombok.extern.slf4j.Slf4j", "org.springframework.web.socket.TextMessage", "org.springframework.web.socket.WebSocketSession", "java.io.IOException"],
-    "class_name": "ImMessageDispatchSendHandler implements ImMessageDispatch",
-    "extend_name": "",
-    "implements_name": ["ImMessageDispatch"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/ImMessageDispatchSendHandler.java"
-}, {
-    "name": "ImContactsRepo",
-    "package": "com.dr.oursp.biz.im.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.biz.im.entity.ImContactsEntity", "org.springframework.data.mongodb.repository.MongoRepository", "java.util.Optional"],
-    "class_name": "ImContactsRepo extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/repository/ImContactsRepo.java"
-}, {
-    "name": "ImContactInfoRepo",
-    "package": "com.dr.oursp.biz.im.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.biz.im.entity.ImContactInfoEntity", "org.springframework.data.mongodb.repository.MongoRepository", "java.util.Optional"],
-    "class_name": "ImContactInfoRepo extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/repository/ImContactInfoRepo.java"
-}, {
-    "name": "ImSessionRepo",
-    "package": "com.dr.oursp.biz.im.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.biz.im.entity.ImSessionEntity", "org.springframework.data.mongodb.repository.MongoRepository", "java.util.Optional", "java.util.stream.Stream"],
-    "class_name": "ImSessionRepo extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/repository/ImSessionRepo.java"
-}, {
-    "name": "ImGroupRepo",
-    "package": "com.dr.oursp.biz.im.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.biz.im.entity.ImGroupEntity", "org.springframework.data.mongodb.repository.MongoRepository", "java.util.stream.Stream"],
-    "class_name": "ImGroupRepo extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/repository/ImGroupRepo.java"
-}, {
-    "name": "ImGroupEntity",
-    "package": "com.dr.oursp.biz.im.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.Data", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document", "java.util.Set"],
-    "class_name": "ImGroupEntity extends BasicDocumentEntity",
-    "extend_name": "BasicDocumentEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/entity/ImGroupEntity.java"
-}, {
-    "name": "ImContactInfoEntity",
-    "package": "com.dr.oursp.biz.im.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.Data", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.index.Indexed", "org.springframework.data.mongodb.core.mapping.Document"],
-    "class_name": "ImContactInfoEntity extends BasicDocumentEntity",
-    "extend_name": "BasicDocumentEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/entity/ImContactInfoEntity.java"
-}, {
-    "name": "ImSessionEntity",
-    "package": "com.dr.oursp.biz.im.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.Data", "lombok.EqualsAndHashCode", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.index.CompoundIndex", "org.springframework.data.mongodb.core.index.Indexed", "org.springframework.data.mongodb.core.mapping.Document"],
-    "class_name": "ImSessionEntity extends BasicDocumentEntity",
-    "extend_name": "BasicDocumentEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/entity/ImSessionEntity.java"
-}, {
-    "name": "ImContactsEntity",
-    "package": "com.dr.oursp.biz.im.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.Data", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.index.Indexed", "org.springframework.data.mongodb.core.mapping.Document", "java.util.Set"],
-    "class_name": "ImContactsEntity extends BasicDocumentEntity",
-    "extend_name": "BasicDocumentEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/entity/ImContactsEntity.java"
-}, {
-    "name": "ImMessageEntity",
-    "package": "com.dr.oursp.biz.im.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.Data", "lombok.EqualsAndHashCode", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.index.Indexed", "org.springframework.data.mongodb.core.mapping.Document"],
-    "class_name": "ImMessageEntity extends BasicDocumentEntity",
-    "extend_name": "BasicDocumentEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/entity/ImMessageEntity.java"
-}, {
-    "name": "ImSessionTypeEnum",
-    "package": "com.dr.oursp.biz.im.constant",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "ImSessionTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/constant/ImSessionTypeEnum.java"
-}, {
-    "name": "MobileImSessionApi",
-    "package": "com.dr.oursp.biz.im.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.biz.im.ImContactsService", "com.dr.oursp.biz.im.ImMessageService", "com.dr.oursp.biz.im.ImSessionService", "com.dr.oursp.biz.im.api.http.ImModelConvert", "com.dr.oursp.biz.im.api.http.request.ImMessageSendMessageRequest", "com.dr.oursp.biz.im.api.http.request.ImSessionCreateSessionRequest", "com.dr.oursp.biz.im.api.http.response.ImMessageResponse", "com.dr.oursp.biz.im.api.http.response.ImSessionResponse", "com.dr.oursp.biz.im.constant.ImSessionTypeEnum", "com.dr.oursp.biz.im.domain.vo.ImMessageVO", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "MobileImSessionApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/MobileImSessionApi.java"
-}, {
-    "name": "ImGroupApi",
-    "package": "com.dr.oursp.biz.im.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.ImGroupService", "com.dr.oursp.biz.im.api.http.ImModelConvert", "com.dr.oursp.biz.im.api.http.request.ImGroupAddMemberRequest", "com.dr.oursp.biz.im.api.http.request.ImGroupCreateGroupRequest", "com.dr.oursp.biz.im.api.http.request.ImGroupMuteMemberRequest", "com.dr.oursp.biz.im.api.http.request.ImGroupRemoveMemberRequest", "com.dr.oursp.biz.im.api.http.response.ImGroupResponse", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotNull"],
-    "class_name": "ImGroupApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/ImGroupApi.java"
-}, {
-    "name": "MobileImContactsApi",
-    "package": "com.dr.oursp.biz.im.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageRequest", "com.dr.oursp.biz.im.ImContactsService", "com.dr.oursp.biz.im.ImGroupService", "com.dr.oursp.biz.im.api.http.ImModelConvert", "com.dr.oursp.biz.im.api.http.request.ImContactsAddContactRequest", "com.dr.oursp.biz.im.api.http.request.ImContactsFavoriteContactRequest", "com.dr.oursp.biz.im.api.http.request.ImContactsRemoveContactRequest", "com.dr.oursp.biz.im.api.http.request.ImContactsVerifyContactRequest", "com.dr.oursp.biz.im.api.http.response.ImContactInfoResponse", "com.dr.oursp.biz.im.api.http.response.ImContactsResponse", "com.dr.oursp.biz.im.api.http.response.ImOrgContactInfoResponse", "com.dr.oursp.biz.im.domain.vo.ImContactInfoVO", "com.dr.oursp.biz.im.domain.vo.ImContactsVO", "com.dr.oursp.biz.im.domain.vo.ImGroupVO", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "MobileImContactsApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/MobileImContactsApi.java"
-}, {
-    "name": "ImContactsApi",
-    "package": "com.dr.oursp.biz.im.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageRequest", "com.dr.oursp.biz.im.ImContactsService", "com.dr.oursp.biz.im.ImGroupService", "com.dr.oursp.biz.im.api.http.ImModelConvert", "com.dr.oursp.biz.im.api.http.request.ImContactsAddContactRequest", "com.dr.oursp.biz.im.api.http.request.ImContactsFavoriteContactRequest", "com.dr.oursp.biz.im.api.http.request.ImContactsRemoveContactRequest", "com.dr.oursp.biz.im.api.http.request.ImContactsVerifyContactRequest", "com.dr.oursp.biz.im.api.http.response.ImContactInfoResponse", "com.dr.oursp.biz.im.api.http.response.ImContactsResponse", "com.dr.oursp.biz.im.api.http.response.ImOrgContactInfoResponse", "com.dr.oursp.biz.im.domain.vo.ImContactInfoVO", "com.dr.oursp.biz.im.domain.vo.ImContactsVO", "com.dr.oursp.biz.im.domain.vo.ImGroupVO", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "ImContactsApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/ImContactsApi.java"
-}, {
-    "name": "ImSessionApi",
-    "package": "com.dr.oursp.biz.im.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.biz.im.ImContactsService", "com.dr.oursp.biz.im.ImMessageService", "com.dr.oursp.biz.im.ImSessionService", "com.dr.oursp.biz.im.api.http.ImModelConvert", "com.dr.oursp.biz.im.api.http.request.ImMessageSendMessageRequest", "com.dr.oursp.biz.im.api.http.request.ImSessionCreateSessionRequest", "com.dr.oursp.biz.im.api.http.response.ImMessageResponse", "com.dr.oursp.biz.im.api.http.response.ImSessionResponse", "com.dr.oursp.biz.im.constant.ImSessionTypeEnum", "com.dr.oursp.biz.im.domain.vo.ImMessageVO", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "ImSessionApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/ImSessionApi.java"
-}, {
-    "name": "MobileImGroupApi",
-    "package": "com.dr.oursp.biz.im.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.ImGroupService", "com.dr.oursp.biz.im.api.http.ImModelConvert", "com.dr.oursp.biz.im.api.http.request.ImGroupAddMemberRequest", "com.dr.oursp.biz.im.api.http.request.ImGroupCreateGroupRequest", "com.dr.oursp.biz.im.api.http.request.ImGroupMuteMemberRequest", "com.dr.oursp.biz.im.api.http.request.ImGroupRemoveMemberRequest", "com.dr.oursp.biz.im.api.http.response.ImGroupResponse", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotNull"],
-    "class_name": "MobileImGroupApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/MobileImGroupApi.java"
-}, {
-    "name": "ImModelConvert",
-    "package": "com.dr.oursp.biz.im.api.http",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.api.http.response.*", "com.dr.oursp.biz.im.domain.vo.*", "java.util.ArrayList", "java.util.List", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "ImModelConvert",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/ImModelConvert.java"
-}, {
-    "name": "ImOrgContactInfoResponse",
-    "package": "com.dr.oursp.biz.im.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "ImOrgContactInfoResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/response/ImOrgContactInfoResponse.java"
-}, {
-    "name": "ImContactInfoResponse",
-    "package": "com.dr.oursp.biz.im.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "ImContactInfoResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/response/ImContactInfoResponse.java"
-}, {
-    "name": "ImMessageResponse",
-    "package": "com.dr.oursp.biz.im.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "ImMessageResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/response/ImMessageResponse.java"
-}, {
-    "name": "ImGroupResponse",
-    "package": "com.dr.oursp.biz.im.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
-    "class_name": "ImGroupResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/response/ImGroupResponse.java"
-}, {
-    "name": "ImSessionResponse",
-    "package": "com.dr.oursp.biz.im.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "ImSessionResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/response/ImSessionResponse.java"
-}, {
-    "name": "ImContactsResponse",
-    "package": "com.dr.oursp.biz.im.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
-    "class_name": "ImContactsResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/response/ImContactsResponse.java"
-}, {
-    "name": "ImContactsAddContactRequest",
-    "package": "com.dr.oursp.biz.im.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull"],
-    "class_name": "ImContactsAddContactRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/request/ImContactsAddContactRequest.java"
-}, {
-    "name": "ImContactsRemoveContactRequest",
-    "package": "com.dr.oursp.biz.im.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull"],
-    "class_name": "ImContactsRemoveContactRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/request/ImContactsRemoveContactRequest.java"
-}, {
-    "name": "ImGroupCreateGroupRequest",
-    "package": "com.dr.oursp.biz.im.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull", "java.util.Set"],
-    "class_name": "ImGroupCreateGroupRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/request/ImGroupCreateGroupRequest.java"
-}, {
-    "name": "ImGroupMuteMemberRequest",
-    "package": "com.dr.oursp.biz.im.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull"],
-    "class_name": "ImGroupMuteMemberRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/request/ImGroupMuteMemberRequest.java"
-}, {
-    "name": "ImMessageSendMessageRequest",
-    "package": "com.dr.oursp.biz.im.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "ImMessageSendMessageRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/request/ImMessageSendMessageRequest.java"
-}, {
-    "name": "ImSessionCreateSessionRequest",
-    "package": "com.dr.oursp.biz.im.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull"],
-    "class_name": "ImSessionCreateSessionRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/request/ImSessionCreateSessionRequest.java"
-}, {
-    "name": "ImContactsFavoriteContactRequest",
-    "package": "com.dr.oursp.biz.im.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull"],
-    "class_name": "ImContactsFavoriteContactRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/request/ImContactsFavoriteContactRequest.java"
-}, {
-    "name": "ImGroupAddMemberRequest",
-    "package": "com.dr.oursp.biz.im.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull", "java.util.Set"],
-    "class_name": "ImGroupAddMemberRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/request/ImGroupAddMemberRequest.java"
-}, {
-    "name": "ImContactsVerifyContactRequest",
-    "package": "com.dr.oursp.biz.im.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull"],
-    "class_name": "ImContactsVerifyContactRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/request/ImContactsVerifyContactRequest.java"
-}, {
-    "name": "ImGroupRemoveMemberRequest",
-    "package": "com.dr.oursp.biz.im.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull", "java.util.Set"],
-    "class_name": "ImGroupRemoveMemberRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/api/http/request/ImGroupRemoveMemberRequest.java"
-}, {
-    "name": "ImMessage",
-    "package": "com.dr.oursp.biz.im.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.domain.message.Selector", "org.springframework.data.mongodb.core.MongoTemplate"],
-    "class_name": "ImMessage",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/ImMessage.java"
-}, {
-    "name": "ImContacts",
-    "package": "com.dr.oursp.biz.im.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.domain.contacts.Creator", "com.dr.oursp.biz.im.domain.contacts.Selector", "com.dr.oursp.biz.im.repository.ImContactsRepo"],
-    "class_name": "ImContacts",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/ImContacts.java"
-}, {
-    "name": "ImGroup",
-    "package": "com.dr.oursp.biz.im.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.domain.group.Creator", "com.dr.oursp.biz.im.domain.group.Selector", "com.dr.oursp.biz.im.repository.ImGroupRepo"],
-    "class_name": "ImGroup",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/ImGroup.java"
-}, {
-    "name": "ImSession",
-    "package": "com.dr.oursp.biz.im.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.domain.session.Creator", "com.dr.oursp.biz.im.domain.session.Selector", "com.dr.oursp.biz.im.repository.ImSessionRepo"],
-    "class_name": "ImSession",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/ImSession.java"
-}, {
-    "name": "ImMessageDTO",
-    "package": "com.dr.oursp.biz.im.domain.dto",
-    "type": "class",
-    "imports": ["lombok.Data"],
-    "class_name": "ImMessageDTO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/dto/ImMessageDTO.java"
-}, {
-    "name": "ImContactInfoVO",
-    "package": "com.dr.oursp.biz.im.domain.vo",
-    "type": "class",
-    "imports": ["lombok.Value"],
-    "class_name": "ImContactInfoVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/vo/ImContactInfoVO.java"
-}, {
-    "name": "ImContactsVO",
-    "package": "com.dr.oursp.biz.im.domain.vo",
-    "type": "class",
-    "imports": ["lombok.Value", "java.util.Set"],
-    "class_name": "ImContactsVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/vo/ImContactsVO.java"
-}, {
-    "name": "ImMessageVO",
-    "package": "com.dr.oursp.biz.im.domain.vo",
-    "type": "class",
-    "imports": ["lombok.Value"],
-    "class_name": "ImMessageVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/vo/ImMessageVO.java"
-}, {
-    "name": "ImGroupVO",
-    "package": "com.dr.oursp.biz.im.domain.vo",
-    "type": "class",
-    "imports": ["lombok.Value", "java.util.Set"],
-    "class_name": "ImGroupVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/vo/ImGroupVO.java"
-}, {
-    "name": "ImOrgContactInfoVO",
-    "package": "com.dr.oursp.biz.im.domain.vo",
-    "type": "class",
-    "imports": ["lombok.Value"],
-    "class_name": "ImOrgContactInfoVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/vo/ImOrgContactInfoVO.java"
-}, {
-    "name": "ImSessionVO",
-    "package": "com.dr.oursp.biz.im.domain.vo",
-    "type": "class",
-    "imports": ["lombok.Value"],
-    "class_name": "ImSessionVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/vo/ImSessionVO.java"
-}, {
-    "name": "Selector",
-    "package": "com.dr.oursp.biz.im.domain.group",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.domain.vo.ImGroupVO", "com.dr.oursp.biz.im.entity.ImGroupEntity", "com.dr.oursp.biz.im.repository.ImGroupRepo", "java.util.List", "java.util.Set", "java.util.stream.Collectors", "java.util.stream.Stream"],
-    "class_name": "Selector",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/group/Selector.java"
-}, {
-    "name": "Creator",
-    "package": "com.dr.oursp.biz.im.domain.group",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.domain.vo.ImGroupVO", "com.dr.oursp.biz.im.entity.ImGroupEntity", "com.dr.oursp.biz.im.repository.ImGroupRepo", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "java.util.HashSet", "java.util.Set"],
-    "class_name": "Creator",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/group/Creator.java"
-}, {
-    "name": "Selector",
-    "package": "com.dr.oursp.biz.im.domain.contacts",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.domain.vo.ImContactsVO", "com.dr.oursp.biz.im.entity.ImContactsEntity", "com.dr.oursp.biz.im.repository.ImContactsRepo", "java.util.Objects", "java.util.Optional", "java.util.Set"],
-    "class_name": "Selector",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/contacts/Selector.java"
-}, {
-    "name": "Creator",
-    "package": "com.dr.oursp.biz.im.domain.contacts",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.domain.vo.ImContactsVO", "com.dr.oursp.biz.im.entity.ImContactsEntity", "com.dr.oursp.biz.im.repository.ImContactsRepo", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "java.util.Collections"],
-    "class_name": "Creator",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/contacts/Creator.java"
-}, {
-    "name": "Selector",
-    "package": "com.dr.oursp.biz.im.domain.message",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.entity.ImMessageEntity", "org.springframework.data.mongodb.core.MongoTemplate", "org.springframework.data.mongodb.core.query.Criteria", "org.springframework.data.mongodb.core.query.Query", "org.springframework.data.mongodb.core.query.Update"],
-    "class_name": "Selector",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/message/Selector.java"
-}, {
-    "name": "Creator",
-    "package": "com.dr.oursp.biz.im.domain.message",
-    "type": "class",
-    "imports": [],
-    "class_name": "Creator",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/message/Creator.java"
-}, {
-    "name": "Selector",
-    "package": "com.dr.oursp.biz.im.domain.session",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.domain.vo.ImSessionVO", "com.dr.oursp.biz.im.entity.ImSessionEntity", "com.dr.oursp.biz.im.repository.ImSessionRepo", "java.util.List", "java.util.stream.Collectors", "java.util.stream.Stream"],
-    "class_name": "Selector",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/session/Selector.java"
-}, {
-    "name": "Creator",
-    "package": "com.dr.oursp.biz.im.domain.session",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.constant.ImSessionTypeEnum", "com.dr.oursp.biz.im.domain.vo.ImSessionVO", "com.dr.oursp.biz.im.entity.ImSessionEntity", "com.dr.oursp.biz.im.repository.ImSessionRepo", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "java.util.ArrayList", "java.util.List", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "Creator",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/im/domain/session/Creator.java"
-}, {
-    "name": "ArticleService",
-    "package": "com.dr.oursp.biz.article",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.article.constant.*", "com.dr.oursp.biz.article.entity.ArticleCommentEntity", "com.dr.oursp.biz.article.entity.ArticleEntity", "com.dr.oursp.biz.article.repository.ArticleCommentRepo", "com.dr.oursp.biz.article.repository.ArticleRepo", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.dao.OptimisticLockingFailureException", "org.springframework.retry.annotation.Recover", "org.springframework.retry.annotation.Retryable", "org.springframework.stereotype.Service", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotEmpty", "java.time.Instant", "java.util.*", "java.util.stream.Collectors", "java.util.stream.Stream"],
-    "class_name": "ArticleService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/ArticleService.java"
-}, {
-    "name": "ArticleRepo",
-    "package": "com.dr.oursp.biz.article.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.biz.article.entity.ArticleEntity", "org.springframework.data.mongodb.repository.MongoRepository", "java.util.Optional", "java.util.stream.Stream"],
-    "class_name": "ArticleRepo extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/repository/ArticleRepo.java"
-}, {
-    "name": "ArticleCommentRepo",
-    "package": "com.dr.oursp.biz.article.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.biz.article.entity.ArticleCommentEntity", "org.springframework.data.mongodb.repository.MongoRepository", "java.util.stream.Stream"],
-    "class_name": "ArticleCommentRepo extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/repository/ArticleCommentRepo.java"
-}, {
-    "name": "ArticleAttachment",
-    "package": "com.dr.oursp.biz.article.entity",
-    "type": "class",
-    "imports": ["lombok.Data"],
-    "class_name": "ArticleAttachment",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/entity/ArticleAttachment.java"
-}, {
-    "name": "ArticleEntity",
-    "package": "com.dr.oursp.biz.article.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.article.constant.ArticleStatisticsTypeEnum", "com.dr.oursp.biz.article.constant.ArticleStatusEnum", "com.dr.oursp.biz.article.constant.ArticleTypeEnum", "com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.Data", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.index.Indexed", "org.springframework.data.mongodb.core.mapping.Document", "java.util.Arrays", "java.util.List", "java.util.Map", "java.util.Set"],
-    "class_name": "ArticleEntity extends BasicDocumentEntity",
-    "extend_name": "BasicDocumentEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/entity/ArticleEntity.java"
-}, {
-    "name": "ArticleCommentEntity",
-    "package": "com.dr.oursp.biz.article.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.article.constant.ArticleCommentStatisticsTypeEnum", "com.dr.oursp.biz.article.constant.ArticleCommentTypeEnum", "com.dr.oursp.strategy.basic.entity.mongo.BasicDocumentEntity", "lombok.Data", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.index.Indexed", "org.springframework.data.mongodb.core.mapping.Document", "java.util.Map"],
-    "class_name": "ArticleCommentEntity extends BasicDocumentEntity",
-    "extend_name": "BasicDocumentEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/entity/ArticleCommentEntity.java"
-}, {
-    "name": "ArticleCommentTypeEnum",
-    "package": "com.dr.oursp.biz.article.constant",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "ArticleCommentTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/constant/ArticleCommentTypeEnum.java"
-}, {
-    "name": "ArticleCommentStatisticsTypeEnum",
-    "package": "com.dr.oursp.biz.article.constant",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "ArticleCommentStatisticsTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/constant/ArticleCommentStatisticsTypeEnum.java"
-}, {
-    "name": "ArticleCollectTypeEnum",
-    "package": "com.dr.oursp.biz.article.constant",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "ArticleCollectTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/constant/ArticleCollectTypeEnum.java"
-}, {
-    "name": "ArticleStatusEnum",
-    "package": "com.dr.oursp.biz.article.constant",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "ArticleStatusEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/constant/ArticleStatusEnum.java"
-}, {
-    "name": "ArticleTypeEnum",
-    "package": "com.dr.oursp.biz.article.constant",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "ArticleTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/constant/ArticleTypeEnum.java"
-}, {
-    "name": "ArticleStatisticsTypeEnum",
-    "package": "com.dr.oursp.biz.article.constant",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "ArticleStatisticsTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/constant/ArticleStatisticsTypeEnum.java"
-}, {
-    "name": "MobileArticleApi",
-    "package": "com.dr.oursp.biz.article.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.biz.article.ArticleService", "com.dr.oursp.biz.article.api.http.request.ArticleCreateCommentRequest", "com.dr.oursp.biz.article.api.http.request.ArticleModifyCommentRequest", "com.dr.oursp.biz.article.api.http.request.ArticleUpdateCommentStatisticsRequest", "com.dr.oursp.biz.article.api.http.request.ArticleUpdateStatisticsRequest", "com.dr.oursp.biz.article.api.http.response.ArticleCommentResponse", "com.dr.oursp.biz.article.api.http.response.ArticleDetailResponse", "com.dr.oursp.biz.article.api.http.response.ArticleResponse", "com.dr.oursp.biz.article.constant.*", "com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.github.resilience4j.bulkhead.annotation.Bulkhead", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.stream.Collectors"],
-    "class_name": "MobileArticleApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/api/MobileArticleApi.java"
-}, {
-    "name": "ArticleCommentModelConvert",
-    "package": "com.dr.oursp.biz.article.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.article.api.http.response.ArticleCommentResponse", "com.dr.oursp.biz.article.entity.ArticleCommentEntity", "com.dr.oursp.globe.config.OSSConfig", "java.util.Optional"],
-    "class_name": "ArticleCommentModelConvert",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/api/ArticleCommentModelConvert.java"
-}, {
-    "name": "ArticleModelConvert",
-    "package": "com.dr.oursp.biz.article.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.article.api.http.response.ArticleDetailResponse", "com.dr.oursp.biz.article.api.http.response.ArticleResponse", "com.dr.oursp.biz.article.entity.ArticleEntity", "com.dr.oursp.globe.config.OSSConfig", "java.util.Optional"],
-    "class_name": "ArticleModelConvert",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/api/ArticleModelConvert.java"
-}, {
-    "name": "ArticleApi",
-    "package": "com.dr.oursp.biz.article.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.biz.article.ArticleService", "com.dr.oursp.biz.article.api.http.request.ArticleCreateCommentRequest", "com.dr.oursp.biz.article.api.http.request.ArticleModifyCommentRequest", "com.dr.oursp.biz.article.api.http.request.ArticleUpdateCommentStatisticsRequest", "com.dr.oursp.biz.article.api.http.request.ArticleUpdateStatisticsRequest", "com.dr.oursp.biz.article.api.http.response.ArticleCommentResponse", "com.dr.oursp.biz.article.api.http.response.ArticleDetailResponse", "com.dr.oursp.biz.article.api.http.response.ArticleResponse", "com.dr.oursp.biz.article.constant.*", "com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.github.resilience4j.bulkhead.annotation.Bulkhead", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.stream.Collectors"],
-    "class_name": "ArticleApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/api/ArticleApi.java"
-}, {
-    "name": "ArticleCommentResponse",
-    "package": "com.dr.oursp.biz.article.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Map"],
-    "class_name": "ArticleCommentResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/api/http/response/ArticleCommentResponse.java"
-}, {
-    "name": "ArticleDetailResponse",
-    "package": "com.dr.oursp.biz.article.api.http.response",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.article.entity.ArticleAttachment", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
-    "class_name": "ArticleDetailResponse extends ArticleResponse",
-    "extend_name": "ArticleResponse",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/api/http/response/ArticleDetailResponse.java"
-}, {
-    "name": "ArticleResponse",
-    "package": "com.dr.oursp.biz.article.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Map"],
-    "class_name": "ArticleResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/api/http/response/ArticleResponse.java"
-}, {
-    "name": "ArticleCreateCommentRequest",
-    "package": "com.dr.oursp.biz.article.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.Max", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank", "javax.validation.constraints.Size"],
-    "class_name": "ArticleCreateCommentRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/api/http/request/ArticleCreateCommentRequest.java"
-}, {
-    "name": "ArticleUpdateStatisticsRequest",
-    "package": "com.dr.oursp.biz.article.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.Max", "javax.validation.constraints.Min", "javax.validation.constraints.NotBlank"],
-    "class_name": "ArticleUpdateStatisticsRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/api/http/request/ArticleUpdateStatisticsRequest.java"
-}, {
-    "name": "ArticleModifyCommentRequest",
-    "package": "com.dr.oursp.biz.article.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "javax.validation.constraints.Size"],
-    "class_name": "ArticleModifyCommentRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/api/http/request/ArticleModifyCommentRequest.java"
-}, {
-    "name": "ArticleUpdateCommentStatisticsRequest",
-    "package": "com.dr.oursp.biz.article.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.Max", "javax.validation.constraints.Min"],
-    "class_name": "ArticleUpdateCommentStatisticsRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/article/api/http/request/ArticleUpdateCommentStatisticsRequest.java"
-}, {
-    "name": "BroadcastRepository",
-    "package": "com.dr.oursp.biz.broadcast.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.biz.broadcast.entity.BroadcastEntity", "org.springframework.data.jpa.repository.JpaRepository", "java.util.Optional", "java.util.stream.Stream"],
-    "class_name": "BroadcastRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/repository/BroadcastRepository.java"
-}, {
-    "name": "BroadcastEntity",
-    "package": "com.dr.oursp.biz.broadcast.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntity", "lombok.Data", "lombok.experimental.Accessors", "javax.persistence.*"],
-    "class_name": "BroadcastEntity extends BasicJpaEntity",
-    "extend_name": "BasicJpaEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/entity/BroadcastEntity.java"
-}, {
-    "name": "ArticlePublishEntity",
-    "package": "com.dr.oursp.biz.broadcast.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntity", "lombok.Data", "lombok.experimental.Accessors", "javax.persistence.*"],
-    "class_name": "ArticlePublishEntity extends BasicJpaEntity",
-    "extend_name": "BasicJpaEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/entity/ArticlePublishEntity.java"
-}, {
-    "name": "MobileBroadcastApi",
-    "package": "com.dr.oursp.biz.broadcast.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.biz.broadcast.api.http.response.BroadcastResponse", "com.dr.oursp.biz.broadcast.entity.BroadcastEntity", "com.dr.oursp.biz.broadcast.service.BroadcastService", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "io.swagger.annotations.Api", "io.swagger.annotations.ApiImplicitParam", "io.swagger.annotations.ApiImplicitParams", "io.swagger.annotations.ApiOperation", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.web.bind.annotation.GetMapping", "org.springframework.web.bind.annotation.RequestMapping", "org.springframework.web.bind.annotation.RestController", "javax.validation.Valid", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "MobileBroadcastApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/MobileBroadcastApi.java"
-}, {
-    "name": "BroadModelConvert",
-    "package": "com.dr.oursp.biz.broadcast.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.article.constant.ArticleStatusEnum", "com.dr.oursp.biz.article.entity.ArticleAttachment", "com.dr.oursp.biz.article.entity.ArticleEntity", "com.dr.oursp.biz.broadcast.api.http.request.ArticleSaveRequest", "com.dr.oursp.biz.broadcast.api.http.response.*", "com.dr.oursp.biz.broadcast.entity.BroadcastEntity", "com.dr.oursp.globe.config.OSSConfig", "com.dr.oursp.strategy.basic.allocation.entity.AllocationRuleEntity", "com.google.common.collect.Lists", "org.springframework.stereotype.Component", "org.springframework.util.CollectionUtils", "java.util.Collections", "java.util.Objects", "java.util.Optional", "java.util.stream.Collectors"],
-    "class_name": "BroadModelConvert",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/BroadModelConvert.java"
-}, {
-    "name": "BroadcastApi",
-    "package": "com.dr.oursp.biz.broadcast.api",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.FallPaged", "com.dr.domain.selector.PageRequest", "com.dr.oursp.biz.article.constant.ArticleStatusEnum", "com.dr.oursp.biz.broadcast.api.http.request.*", "com.dr.oursp.biz.broadcast.api.http.response.ArticleAssignableListResponse", "com.dr.oursp.biz.broadcast.api.http.response.ArticleDetailRequest", "com.dr.oursp.biz.broadcast.api.http.response.ArticleListResponse", "com.dr.oursp.biz.broadcast.api.http.response.BroadcastResponse", "com.dr.oursp.biz.broadcast.consts.BroadcastStatusEnum", "com.dr.oursp.biz.broadcast.entity.BroadcastEntity", "com.dr.oursp.biz.broadcast.service.BroadcastService", "com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.allocation.consts.AllocationModifyModeEnum", "com.dr.oursp.strategy.basic.allocation.domain.ExceptionInfo", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.dr.support.trace.LogElapsedTimeScope", "com.google.common.collect.Sets", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.CollectionUtils", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "BroadcastApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/BroadcastApi.java"
-}, {
-    "name": "BroadcastResponse",
-    "package": "com.dr.oursp.biz.broadcast.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "BroadcastResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/http/response/BroadcastResponse.java"
-}, {
-    "name": "ArticleAssignableResponse",
-    "package": "com.dr.oursp.biz.broadcast.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "java.util.Set"],
-    "class_name": "ArticleAssignableResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/http/response/ArticleAssignableResponse.java"
-}, {
-    "name": "ArticleAssignableException",
-    "package": "com.dr.oursp.biz.broadcast.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "ArticleAssignableException",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/http/response/ArticleAssignableException.java"
-}, {
-    "name": "ArticleDetailRequest",
-    "package": "com.dr.oursp.biz.broadcast.api.http.response",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.article.constant.ArticleStatusEnum", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "java.util.List", "java.util.Map"],
-    "class_name": "ArticleDetailRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/http/response/ArticleDetailRequest.java"
-}, {
-    "name": "ArticleAssignableListResponse",
-    "package": "com.dr.oursp.biz.broadcast.api.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "java.util.Set"],
-    "class_name": "ArticleAssignableListResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/http/response/ArticleAssignableListResponse.java"
-}, {
-    "name": "ArticleAttachmentResponse",
-    "package": "com.dr.oursp.biz.broadcast.api.http.response",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.experimental.Accessors"],
-    "class_name": "ArticleAttachmentResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/http/response/ArticleAttachmentResponse.java"
-}, {
-    "name": "ArticleListResponse",
-    "package": "com.dr.oursp.biz.broadcast.api.http.response",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.article.constant.ArticleStatusEnum", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.experimental.Accessors", "java.util.Map"],
-    "class_name": "ArticleListResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/http/response/ArticleListResponse.java"
-}, {
-    "name": "ArticleListRequest",
-    "package": "com.dr.oursp.biz.broadcast.api.http.request",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.PageRequest", "com.dr.oursp.biz.article.constant.ArticleStatusEnum", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.Set"],
-    "class_name": "ArticleListRequest extends PageRequest",
-    "extend_name": "PageRequest",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/http/request/ArticleListRequest.java"
-}, {
-    "name": "ArticleSaveRequest",
-    "package": "com.dr.oursp.biz.broadcast.api.http.request",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.article.entity.ArticleAttachment", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
-    "class_name": "ArticleSaveRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/http/request/ArticleSaveRequest.java"
-}, {
-    "name": "AssignableExcludeModifyRequest",
-    "package": "com.dr.oursp.biz.broadcast.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotNull", "java.util.Set"],
-    "class_name": "AssignableExcludeModifyRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/http/request/AssignableExcludeModifyRequest.java"
-}, {
-    "name": "BroadcastSaveRequest",
-    "package": "com.dr.oursp.biz.broadcast.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "javax.validation.constraints.Size"],
-    "class_name": "BroadcastSaveRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/http/request/BroadcastSaveRequest.java"
-}, {
-    "name": "ArticleAssignableSaveRequest",
-    "package": "com.dr.oursp.biz.broadcast.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "java.util.Set"],
-    "class_name": "ArticleAssignableSaveRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/api/http/request/ArticleAssignableSaveRequest.java"
-}, {
-    "name": "ArticleBuilder",
-    "package": "com.dr.oursp.biz.broadcast.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.broadcast.consts.BroadcastStatusEnum", "com.dr.oursp.biz.broadcast.entity.BroadcastEntity", "com.dr.oursp.biz.broadcast.repository.BroadcastRepository", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.setting.PlatformSetting", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull"],
-    "class_name": "ArticleBuilder",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/service/ArticleBuilder.java"
-}, {
-    "name": "BroadcastService",
-    "package": "com.dr.oursp.biz.broadcast.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.article.ArticleService", "com.dr.oursp.biz.article.constant.ArticleStatusEnum", "com.dr.oursp.biz.article.entity.ArticleEntity", "com.dr.oursp.biz.broadcast.consts.BroadcastStatusEnum", "com.dr.oursp.biz.broadcast.entity.BroadcastEntity", "com.dr.oursp.biz.broadcast.repository.BroadcastRepository", "com.dr.oursp.strategy.basic.allocation.AllocationRuleManager", "com.dr.oursp.strategy.basic.allocation.consts.AllocateRuleMode", "com.dr.oursp.strategy.basic.allocation.consts.AllocationModifyModeEnum", "com.dr.oursp.strategy.basic.allocation.consts.AllocationTargetTypeEnum", "com.dr.oursp.strategy.basic.allocation.domain.AllocationRule", "com.dr.oursp.strategy.basic.allocation.domain.ExceptionInfo", "com.dr.oursp.strategy.basic.allocation.entity.AllocationRuleEntity", "com.dr.oursp.strategy.basic.allocation.repository.AllocationRuleRepository", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.trace.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "javax.transaction.Transactional", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "BroadcastService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/service/BroadcastService.java"
-}, {
-    "name": "BroadcastQuery",
-    "package": "com.dr.oursp.biz.broadcast.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.broadcast.consts.BroadcastStatusEnum", "com.dr.oursp.biz.broadcast.entity.BroadcastEntity", "com.dr.oursp.biz.broadcast.repository.BroadcastRepository", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntity", "com.mongodb.internal.operation.OrderBy", "org.apache.logging.log4j.util.Strings", "org.springframework.util.comparator.Comparators", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Comparator", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.stream.Collectors", "java.util.stream.Stream"],
-    "class_name": "BroadcastQuery",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/service/BroadcastQuery.java"
-}, {
-    "name": "BroadcastBuilder",
-    "package": "com.dr.oursp.biz.broadcast.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.broadcast.consts.BroadcastStatusEnum", "com.dr.oursp.biz.broadcast.entity.BroadcastEntity", "com.dr.oursp.biz.broadcast.repository.BroadcastRepository", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.setting.PlatformSetting", "org.springframework.util.Assert", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "javax.validation.constraints.Size", "java.util.Optional"],
-    "class_name": "BroadcastBuilder",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/service/BroadcastBuilder.java"
-}, {
-    "name": "Broadcast",
-    "package": "com.dr.oursp.biz.broadcast.service",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.broadcast.repository.BroadcastRepository", "com.dr.oursp.strategy.setting.PlatformSetting", "org.springframework.stereotype.Service"],
-    "class_name": "Broadcast",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/service/Broadcast.java"
-}, {
-    "name": "BroadcastStatusEnum",
-    "package": "com.dr.oursp.biz.broadcast.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "BroadcastStatusEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/biz/broadcast/consts/BroadcastStatusEnum.java"
-}, {
-    "name": "RetryConfig",
-    "package": "com.dr.oursp.globe.config",
-    "type": "class",
-    "imports": ["org.springframework.context.annotation.Configuration", "org.springframework.retry.annotation.EnableRetry"],
-    "class_name": "RetryConfig",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/globe/config/RetryConfig.java"
-}, {
-    "name": "OSSConfig",
-    "package": "com.dr.oursp.globe.config",
-    "type": "class",
-    "imports": ["lombok.Data", "org.apache.logging.log4j.util.Strings", "org.springframework.boot.context.properties.ConfigurationProperties", "org.springframework.context.annotation.Configuration"],
-    "class_name": "OSSConfig",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/globe/config/OSSConfig.java"
-}, {
-    "name": "RedisPrimaryConfig",
-    "package": "com.dr.oursp.globe.config.redis",
-    "type": "class",
-    "imports": ["com.fasterxml.jackson.annotation.JsonAutoDetect", "com.fasterxml.jackson.annotation.JsonTypeInfo", "com.fasterxml.jackson.annotation.PropertyAccessor", "com.fasterxml.jackson.databind.ObjectMapper", "com.fasterxml.jackson.databind.jsontype.impl.LaissezFaireSubTypeValidator", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.boot.autoconfigure.data.redis.RedisProperties", "org.springframework.boot.context.properties.ConfigurationProperties", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "org.springframework.context.annotation.Primary", "org.springframework.data.redis.connection.RedisConnectionFactory", "org.springframework.data.redis.connection.RedisStandaloneConfiguration", "org.springframework.data.redis.connection.jedis.JedisClientConfiguration", "org.springframework.data.redis.connection.jedis.JedisConnectionFactory", "org.springframework.data.redis.core.RedisTemplate", "org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer", "org.springframework.data.redis.serializer.StringRedisSerializer", "redis.clients.jedis.JedisPoolConfig"],
-    "class_name": "RedisPrimaryConfig",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/globe/config/redis/RedisPrimaryConfig.java"
-}, {
-    "name": "TokenConfig",
-    "package": "com.dr.oursp.globe.config.web",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.RestApiTokenHandlerFilter", "com.dr.oursp.strategy.api.RestApiTokenHandlerFilterForAdmin", "com.dr.oursp.strategy.api.RestApiTokenHandlerFilterForMobile", "com.dr.oursp.strategy.basic.token.TokenManger", "com.google.common.collect.Lists", "org.springframework.boot.web.servlet.FilterRegistrationBean", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration"],
-    "class_name": "TokenConfig",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/globe/config/web/TokenConfig.java"
-}, {
-    "name": "SwaggerConfig",
-    "package": "com.dr.oursp.globe.config.web",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.api.SwaggerConfigBuilder", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Value", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "springfox.documentation.spring.web.plugins.Docket", "springfox.documentation.swagger2.annotations.EnableSwagger2"],
-    "class_name": "SwaggerConfig",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/globe/config/web/SwaggerConfig.java"
-}, {
-    "name": "WebSocketConfig",
-    "package": "com.dr.oursp.globe.config.web",
-    "type": "class",
-    "imports": ["com.dr.oursp.biz.im.ImMessageWebSocketHandler", "com.dr.oursp.globe.http.ApiUrlConst", "org.springframework.context.annotation.Configuration", "org.springframework.web.socket.config.annotation.EnableWebSocket", "org.springframework.web.socket.config.annotation.WebSocketConfigurer", "org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry", "org.springframework.web.socket.server.support.HttpSessionHandshakeInterceptor"],
-    "class_name": "WebSocketConfig implements WebSocketConfigurer",
-    "extend_name": "",
-    "implements_name": ["WebSocketConfigurer"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/globe/config/web/WebSocketConfig.java"
-}, {
-    "name": "OurspWebConfig",
-    "package": "com.dr.oursp.globe.config.web",
-    "type": "class",
-    "imports": ["org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "org.springframework.web.cors.CorsConfiguration", "org.springframework.web.cors.UrlBasedCorsConfigurationSource", "org.springframework.web.filter.CorsFilter"],
-    "class_name": "OurspWebConfig",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/globe/config/web/OurspWebConfig.java"
-}, {
-    "name": "GlobalExceptionConfig",
-    "package": "com.dr.oursp.globe.config.web",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.api.GlobalExceptionHandler", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.basic.role.AuthenticationException", "com.dr.support.competition.exception.AcquireLockException", "com.google.gson.JsonSyntaxException", "lombok.extern.slf4j.Slf4j", "org.springframework.context.annotation.Configuration", "org.springframework.web.bind.MethodArgumentNotValidException"],
-    "class_name": "GlobalExceptionConfig",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/globe/config/web/GlobalExceptionConfig.java"
-}, {
-    "name": "PrimaryConfig",
-    "package": "com.dr.oursp.globe.config.jpa",
-    "type": "class",
-    "imports": ["org.springframework.boot.context.properties.ConfigurationProperties", "org.springframework.boot.jdbc.DataSourceBuilder", "org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder", "org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy", "org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "org.springframework.context.annotation.Primary", "org.springframework.data.jpa.repository.config.EnableJpaRepositories", "org.springframework.orm.jpa.JpaTransactionManager", "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean", "org.springframework.transaction.PlatformTransactionManager", "org.springframework.transaction.annotation.EnableTransactionManagement", "javax.persistence.EntityManager", "javax.sql.DataSource", "java.util.HashMap", "java.util.Map"],
-    "class_name": "PrimaryConfig",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/globe/config/jpa/PrimaryConfig.java"
-}, {
-    "name": "RabbitMqConfiguration",
-    "package": "com.dr.oursp.globe.config.rabbit",
-    "type": "class",
-    "imports": ["com.fasterxml.jackson.databind.ObjectMapper", "org.springframework.amqp.support.converter.Jackson2JsonMessageConverter", "org.springframework.amqp.support.converter.MessageConverter", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration"],
-    "class_name": "RabbitMqConfiguration",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/globe/config/rabbit/RabbitMqConfiguration.java"
-}, {
-    "name": "MongoImConfig",
-    "package": "com.dr.oursp.globe.config.mongo",
-    "type": "class",
-    "imports": ["org.springframework.boot.autoconfigure.mongo.MongoProperties", "org.springframework.boot.context.properties.ConfigurationProperties", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "org.springframework.data.mongodb.MongoDatabaseFactory", "org.springframework.data.mongodb.core.MongoTemplate", "org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory", "org.springframework.data.mongodb.repository.config.EnableMongoRepositories"],
-    "class_name": "MongoImConfig",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/globe/config/mongo/MongoImConfig.java"
-}, {
-    "name": "MongoPrimaryConfig",
-    "package": "com.dr.oursp.globe.config.mongo",
-    "type": "class",
-    "imports": ["org.springframework.boot.autoconfigure.mongo.MongoProperties", "org.springframework.boot.context.properties.ConfigurationProperties", "org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "org.springframework.context.annotation.Primary", "org.springframework.data.mongodb.MongoDatabaseFactory", "org.springframework.data.mongodb.core.MongoTemplate", "org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory", "org.springframework.data.mongodb.repository.config.EnableMongoRepositories"],
-    "class_name": "MongoPrimaryConfig",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/globe/config/mongo/MongoPrimaryConfig.java"
-}, {
-    "name": "ApiUrlConst",
-    "package": "com.dr.oursp.globe.http",
-    "type": "class",
-    "imports": [],
-    "class_name": "ApiUrlConst",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/globe/http/ApiUrlConst.java"
-}, {
-    "name": "ThirdPlatformSettingEntity",
-    "package": "com.dr.oursp.third",
-    "type": "class",
-    "imports": ["lombok.Data", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document"],
-    "class_name": "ThirdPlatformSettingEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/ThirdPlatformSettingEntity.java"
-}, {
-    "name": "ThirdPlatformRepository",
-    "package": "com.dr.oursp.third",
-    "type": "interface",
-    "imports": ["org.springframework.data.mongodb.repository.MongoRepository", "java.util.List", "java.util.Optional"],
-    "class_name": "ThirdPlatformRepository extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/ThirdPlatformRepository.java"
-}, {
-    "name": "ThirdPlatform",
-    "package": "com.dr.oursp.third",
-    "type": "class",
-    "imports": ["com.dr.oursp.third.consts.BizDomainEnum", "com.dr.oursp.third.consts.ThirdPlatformEnum", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Component", "java.time.Instant", "java.util.List", "java.util.Optional", "java.util.UUID"],
-    "class_name": "ThirdPlatform",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/ThirdPlatform.java"
-}, {
-    "name": "SquaringUpCenter",
-    "package": "com.dr.oursp.third.squaring",
-    "type": "class",
-    "imports": ["com.dr.oursp.third.ThirdPlatform", "com.dr.oursp.third.consts.BizDomainEnum", "com.dr.oursp.third.consts.ThirdPlatformEnum", "com.dr.oursp.third.squaring.repo.SquaringUpCenterOperatorRepository", "com.dr.oursp.third.squaring.repo.SquaringUpCenterSubjectRepository", "org.apache.logging.log4j.util.Strings"],
-    "class_name": "SquaringUpCenter",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/SquaringUpCenter.java"
-}, {
-    "name": "SquaringUpCenterRemoteCaller",
-    "package": "com.dr.oursp.third.squaring",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.api.ServiceResponse", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.RequestBody"],
-    "class_name": "SquaringUpCenterRemoteCaller",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/SquaringUpCenterRemoteCaller.java"
-}, {
-    "name": "SquaringUpCenterSubjectRepository",
-    "package": "com.dr.oursp.third.squaring.repo",
-    "type": "interface",
-    "imports": ["org.springframework.data.mongodb.repository.MongoRepository"],
-    "class_name": "SquaringUpCenterSubjectRepository extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/repo/SquaringUpCenterSubjectRepository.java"
-}, {
-    "name": "SquaringUpCenterSubjectEntity",
-    "package": "com.dr.oursp.third.squaring.repo",
-    "type": "class",
-    "imports": ["lombok.Data", "org.springframework.data.mongodb.core.mapping.Document"],
-    "class_name": "SquaringUpCenterSubjectEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/repo/SquaringUpCenterSubjectEntity.java"
-}, {
-    "name": "SquaringUpCenterOperatorRepository",
-    "package": "com.dr.oursp.third.squaring.repo",
-    "type": "interface",
-    "imports": ["org.springframework.data.mongodb.repository.MongoRepository"],
-    "class_name": "SquaringUpCenterOperatorRepository extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/repo/SquaringUpCenterOperatorRepository.java"
-}, {
-    "name": "SquaringUpCenterOperatorEntity",
-    "package": "com.dr.oursp.third.squaring.repo",
-    "type": "class",
-    "imports": ["lombok.Data", "org.springframework.data.annotation.Id", "org.springframework.data.mongodb.core.mapping.Document"],
-    "class_name": "SquaringUpCenterOperatorEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/repo/SquaringUpCenterOperatorEntity.java"
-}, {
-    "name": "SquaringUpManager",
-    "package": "com.dr.oursp.third.squaring.remote",
-    "type": "class",
-    "imports": ["com.dr.oursp.third.squaring.remote.exception.SquaringException", "com.dr.oursp.third.squaring.remote.exception.SquaringRequestException", "com.dr.oursp.third.squaring.remote.exception.SquaringServerException", "com.dr.oursp.third.squaring.remote.request.*", "com.dr.oursp.third.squaring.remote.response.ProcessingResultResponse", "feign.FeignException", "feign.RetryableException", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.util.CollectionUtils", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.function.Supplier"],
-    "class_name": "SquaringUpManager",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/SquaringUpManager.java"
-}, {
-    "name": "Squaring",
-    "package": "com.dr.oursp.third.squaring.remote",
-    "type": "interface",
-    "imports": ["com.dr.oursp.third.squaring.remote.request.*", "com.dr.oursp.third.squaring.remote.response.BillResponse", "com.dr.oursp.third.squaring.remote.response.OriginalDataResponse", "com.dr.oursp.third.squaring.remote.response.ProcessingResultResponse", "com.dr.oursp.third.squaring.remote.response.SquaringResponse", "org.springframework.cloud.openfeign.FeignClient", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "java.util.List"],
-    "class_name": "Squaring up feign client.",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/SquaringUpFeignClient.java"
-}, {
-    "name": "ProcessingResultResponse",
-    "package": "com.dr.oursp.third.squaring.remote.response",
-    "type": "class",
-    "imports": ["lombok.Data", "org.springframework.data.annotation.Id", "org.springframework.data.annotation.Version", "java.util.Map"],
-    "class_name": "ProcessingResultResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/response/ProcessingResultResponse.java"
-}, {
-    "name": "OriginalDataResponse",
-    "package": "com.dr.oursp.third.squaring.remote.response",
-    "type": "class",
-    "imports": ["lombok.Data", "org.springframework.data.annotation.Id", "org.springframework.data.annotation.Version", "java.util.Map"],
-    "class_name": "OriginalDataResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/response/OriginalDataResponse.java"
-}, {
-    "name": "BillResponse",
-    "package": "com.dr.oursp.third.squaring.remote.response",
-    "type": "class",
-    "imports": ["lombok.Data", "org.springframework.data.annotation.Id", "org.springframework.data.annotation.Version"],
-    "class_name": "BillResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/response/BillResponse.java"
-}, {
-    "name": "SquaringResponse",
-    "package": "com.dr.oursp.third.squaring.remote.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.AccessLevel", "lombok.Getter", "lombok.Setter", "lombok.extern.slf4j.Slf4j", "java.io.Serializable"],
-    "class_name": "SquaringResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/response/SquaringResponse.java"
-}, {
-    "name": "NewDataRequest",
-    "package": "com.dr.oursp.third.squaring.remote.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Map"],
-    "class_name": "NewDataRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/request/NewDataRequest.java"
-}, {
-    "name": "BillAddOriginalRequest",
-    "package": "com.dr.oursp.third.squaring.remote.request",
-    "type": "class",
-    "imports": ["lombok.Data", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.List"],
-    "class_name": "BillAddOriginalRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/request/BillAddOriginalRequest.java"
-}, {
-    "name": "ProcessRequest",
-    "package": "com.dr.oursp.third.squaring.remote.request",
-    "type": "class",
-    "imports": ["com.google.common.collect.Maps", "lombok.Data", "javax.validation.constraints.NotBlank", "java.util.List", "java.util.Map"],
-    "class_name": "ProcessRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/request/ProcessRequest.java"
-}, {
-    "name": "NewProcessingRequest",
-    "package": "com.dr.oursp.third.squaring.remote.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "NewProcessingRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/request/NewProcessingRequest.java"
-}, {
-    "name": "BillRecordReportRequest",
-    "package": "com.dr.oursp.third.squaring.remote.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiParam", "lombok.Data", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Map"],
-    "class_name": "BillRecordReportRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/request/BillRecordReportRequest.java"
-}, {
-    "name": "SquaringException",
-    "package": "com.dr.oursp.third.squaring.remote.exception",
-    "type": "class",
-    "imports": [],
-    "class_name": "SquaringException extends Exception",
-    "extend_name": "Exception",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/exception/SquaringException.java"
-}, {
-    "name": "SquaringResponseException",
-    "package": "com.dr.oursp.third.squaring.remote.exception",
-    "type": "class",
-    "imports": [],
-    "class_name": "SquaringResponseException extends SquaringException",
-    "extend_name": "SquaringException",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/exception/SquaringResponseException.java"
-}, {
-    "name": "SquaringRequestException",
-    "package": "com.dr.oursp.third.squaring.remote.exception",
-    "type": "class",
-    "imports": [],
-    "class_name": "SquaringRequestException extends SquaringException",
-    "extend_name": "SquaringException",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/exception/SquaringRequestException.java"
-}, {
-    "name": "SquaringServerException",
-    "package": "com.dr.oursp.third.squaring.remote.exception",
-    "type": "class",
-    "imports": [],
-    "class_name": "SquaringServerException extends SquaringException",
-    "extend_name": "SquaringException",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/squaring/remote/exception/SquaringServerException.java"
-}, {
-    "name": "DrPayResponseCodeEnum",
-    "package": "com.dr.oursp.third.pay",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "DrPayResponseCodeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/DrPayResponseCodeEnum.java"
-}, {
-    "name": "ThirdPlatformCapitalAccount",
-    "package": "com.dr.oursp.third.pay",
-    "type": "interface",
-    "imports": [],
-    "class_name": "ThirdPlatformCapitalAccount",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/ThirdPlatformCapitalAccount.java"
-}, {
-    "name": "PayCenterRemoteCaller",
-    "package": "com.dr.oursp.third.pay",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.third.pay.http.request.*", "com.dr.oursp.third.pay.http.response.*", "org.springframework.cloud.openfeign.FeignClient", "org.springframework.util.MimeTypeUtils", "org.springframework.web.bind.annotation.PostMapping", "org.springframework.web.bind.annotation.PutMapping", "org.springframework.web.bind.annotation.RequestBody", "java.io.IOException"],
-    "class_name": "PayCenterRemoteCaller",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/PayCenterRemoteCaller.java"
-}, {
-    "name": "PayCenter",
-    "package": "com.dr.oursp.third.pay",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.oursp.third.ThirdPlatform", "com.dr.oursp.third.ThirdPlatformSettingEntity", "com.dr.oursp.third.consts.BizDomainEnum", "com.dr.oursp.third.consts.ThirdPlatformEnum", "com.dr.oursp.third.pay.http.request.*", "com.dr.oursp.third.pay.http.response.*", "com.dr.oursp.third.pay.param.SignAccountCapitalAsyncPayParam", "com.dr.oursp.third.pay.param.SignAccountCapitalPayParam", "com.dr.oursp.third.pay.param.SignAccountCapitalRefundParam", "com.dr.oursp.third.pay.repo.PayCenterCapitalAccountEntity", "com.dr.oursp.third.pay.repo.PayCenterCapitalAccountRepository", "com.dr.oursp.third.pay.repo.PayCenterSubjectEntity", "com.dr.oursp.third.pay.repo.PayCenterSubjectRepository", "com.dr.support.enums.Enumerations", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.ImmutableMap", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Value", "org.springframework.stereotype.Component", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.math.BigDecimal", "java.util.List", "java.util.Optional", "java.util.UUID"],
-    "class_name": "PayCenter",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/PayCenter.java"
-}, {
-    "name": "TransferDetail",
-    "package": "com.dr.oursp.third.pay",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data"],
-    "class_name": "TransferDetail",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/TransferDetail.java"
-}, {
-    "name": "PayCenterRemoteCallException",
-    "package": "com.dr.oursp.third.pay",
-    "type": "class",
-    "imports": [],
-    "class_name": "PayCenterRemoteCallException extends Exception",
-    "extend_name": "Exception",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/PayCenterRemoteCallException.java"
-}, {
-    "name": "SignAccountCapitalRefundParam",
-    "package": "com.dr.oursp.third.pay.param",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data", "java.math.BigDecimal"],
-    "class_name": "SignAccountCapitalRefundParam",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/param/SignAccountCapitalRefundParam.java"
-}, {
-    "name": "SignAccountCapitalAsyncPayParam",
-    "package": "com.dr.oursp.third.pay.param",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data", "java.math.BigDecimal", "java.util.Map"],
-    "class_name": "SignAccountCapitalAsyncPayParam",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/param/SignAccountCapitalAsyncPayParam.java"
-}, {
-    "name": "SignAccountCapitalPayParam",
-    "package": "com.dr.oursp.third.pay.param",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data", "java.math.BigDecimal"],
-    "class_name": "SignAccountCapitalPayParam",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/param/SignAccountCapitalPayParam.java"
-}, {
-    "name": "SignAccountCapitalPayResponse",
-    "package": "com.dr.oursp.third.pay.http.response",
-    "type": "class",
-    "imports": ["lombok.Data", "java.math.BigDecimal"],
-    "class_name": "SignAccountCapitalPayResponse extends BasicSignAccountCapitalResponse",
-    "extend_name": "BasicSignAccountCapitalResponse",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/response/SignAccountCapitalPayResponse.java"
-}, {
-    "name": "SignAccountVo",
-    "package": "com.dr.oursp.third.pay.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotEmpty", "javax.validation.constraints.PositiveOrZero", "java.math.BigDecimal"],
-    "class_name": "SignAccountVo",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/response/SignAccountVo.java"
-}, {
-    "name": "SignSubjectVo",
-    "package": "com.dr.oursp.third.pay.http.response",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "SignSubjectVo",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/response/SignSubjectVo.java"
-}, {
-    "name": "SignSubjectResponse",
-    "package": "com.dr.oursp.third.pay.http.response",
-    "type": "class",
-    "imports": ["lombok.Data"],
-    "class_name": "SignSubjectResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/response/SignSubjectResponse.java"
-}, {
-    "name": "CreateBizDomainResponse",
-    "package": "com.dr.oursp.third.pay.http.response",
-    "type": "class",
-    "imports": ["lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor"],
-    "class_name": "CreateBizDomainResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/response/CreateBizDomainResponse.java"
-}, {
-    "name": "OperationVo",
-    "package": "com.dr.oursp.third.pay.http.response",
-    "type": "class",
-    "imports": ["lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "java.util.List"],
-    "class_name": "OperationVo",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/response/OperationVo.java"
-}, {
-    "name": "BasicSignAccountCapitalResponse",
-    "package": "com.dr.oursp.third.pay.http.response",
-    "type": "class",
-    "imports": ["lombok.Data"],
-    "class_name": "BasicSignAccountCapitalResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/response/BasicSignAccountCapitalResponse.java"
-}, {
-    "name": "CapitalChangingReceipt",
-    "package": "com.dr.oursp.third.pay.http.response",
-    "type": "class",
-    "imports": ["com.dr.oursp.third.pay.TransferDetail", "com.dr.oursp.third.pay.consts.PayCenterCapitalAccountTypeEnum", "com.dr.support.enums.Enumerations", "lombok.Data", "java.math.BigDecimal", "java.util.List", "java.util.Optional"],
-    "class_name": "CapitalChangingReceipt",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/response/CapitalChangingReceipt.java"
-}, {
-    "name": "SignAccountResponse",
-    "package": "com.dr.oursp.third.pay.http.response",
-    "type": "class",
-    "imports": ["lombok.Data", "java.math.BigDecimal"],
-    "class_name": "SignAccountResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/response/SignAccountResponse.java"
-}, {
-    "name": "SignAccountCapitalRefundResponse",
-    "package": "com.dr.oursp.third.pay.http.response",
-    "type": "class",
-    "imports": ["lombok.Data", "java.math.BigDecimal"],
-    "class_name": "SignAccountCapitalRefundResponse extends BasicSignAccountCapitalResponse",
-    "extend_name": "BasicSignAccountCapitalResponse",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/response/SignAccountCapitalRefundResponse.java"
-}, {
-    "name": "SignSubjectRequest",
-    "package": "com.dr.oursp.third.pay.http.request",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data"],
-    "class_name": "SignSubjectRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/request/SignSubjectRequest.java"
-}, {
-    "name": "SignAccountCapitalRefundRequest",
-    "package": "com.dr.oursp.third.pay.http.request",
-    "type": "class",
-    "imports": ["com.dr.oursp.third.pay.TransferDetail", "lombok.Builder", "lombok.Data", "java.math.BigDecimal"],
-    "class_name": "SignAccountCapitalRefundRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/request/SignAccountCapitalRefundRequest.java"
-}, {
-    "name": "SignAccountCapitalPayRequest",
-    "package": "com.dr.oursp.third.pay.http.request",
-    "type": "class",
-    "imports": ["com.dr.oursp.third.pay.TransferDetail", "lombok.Builder", "lombok.Data", "java.math.BigDecimal"],
-    "class_name": "SignAccountCapitalPayRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/request/SignAccountCapitalPayRequest.java"
-}, {
-    "name": "SignAccountCapitalAsyncPayRequest",
-    "package": "com.dr.oursp.third.pay.http.request",
-    "type": "class",
-    "imports": ["com.dr.oursp.third.pay.TransferDetail", "lombok.Builder", "lombok.Data", "java.math.BigDecimal", "java.util.Map"],
-    "class_name": "SignAccountCapitalAsyncPayRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/request/SignAccountCapitalAsyncPayRequest.java"
-}, {
-    "name": "CreateDomainRequest",
-    "package": "com.dr.oursp.third.pay.http.request",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data"],
-    "class_name": "CreateDomainRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/request/CreateDomainRequest.java"
-}, {
-    "name": "SignAccountRequest",
-    "package": "com.dr.oursp.third.pay.http.request",
-    "type": "class",
-    "imports": ["lombok.Builder", "lombok.Data", "javax.validation.constraints.NotBlank"],
-    "class_name": "SignAccountRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/http/request/SignAccountRequest.java"
-}, {
-    "name": "DrPayResponseCodeEnum",
-    "package": "com.dr.oursp.third.pay.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "DrPayResponseCodeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/consts/DrPayResponseCodeEnum.java"
-}, {
-    "name": "PayCenterCapitalAccountTypeEnum",
-    "package": "com.dr.oursp.third.pay.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "io.swagger.annotations.ApiModel"],
-    "class_name": "PayCenterCapitalAccountTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/consts/PayCenterCapitalAccountTypeEnum.java"
-}, {
-    "name": "PayCenterSubjectEntity",
-    "package": "com.dr.oursp.third.pay.repo",
-    "type": "class",
-    "imports": ["lombok.Data", "org.springframework.data.mongodb.core.mapping.Document"],
-    "class_name": "PayCenterSubjectEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/repo/PayCenterSubjectEntity.java"
-}, {
-    "name": "PayCenterCapitalAccountRepository",
-    "package": "com.dr.oursp.third.pay.repo",
-    "type": "interface",
-    "imports": ["org.springframework.data.mongodb.repository.MongoRepository", "java.util.List", "java.util.Optional"],
-    "class_name": "PayCenterCapitalAccountRepository extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/repo/PayCenterCapitalAccountRepository.java"
-}, {
-    "name": "PayCenterSubjectRepository",
-    "package": "com.dr.oursp.third.pay.repo",
-    "type": "interface",
-    "imports": ["org.springframework.data.mongodb.repository.MongoRepository", "java.util.Optional"],
-    "class_name": "PayCenterSubjectRepository extends MongoRepository",
-    "extend_name": "MongoRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/repo/PayCenterSubjectRepository.java"
-}, {
-    "name": "PayCenterCapitalAccountEntity",
-    "package": "com.dr.oursp.third.pay.repo",
-    "type": "class",
-    "imports": ["com.dr.oursp.third.pay.ThirdPlatformCapitalAccount", "lombok.Data", "org.springframework.data.mongodb.core.mapping.Document"],
-    "class_name": "PayCenterCapitalAccountEntity implements ThirdPlatformCapitalAccount",
-    "extend_name": "",
-    "implements_name": ["ThirdPlatformCapitalAccount"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/pay/repo/PayCenterCapitalAccountEntity.java"
-}, {
-    "name": "PayCenterOperationApi",
-    "package": "com.dr.oursp.third.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.globe.http.ApiUrlConst", "com.dr.oursp.strategy.api.GlobeServiceResultEnum", "com.dr.oursp.strategy.api.ServiceResponse", "com.dr.oursp.third.api.http.request.CreateDomainRequest", "com.dr.oursp.third.api.http.response.DomainResponse", "com.dr.oursp.third.consts.BizDomainEnum", "com.dr.oursp.third.pay.PayCenter", "com.dr.oursp.third.pay.PayCenterRemoteCallException", "com.dr.support.enums.Enumerations", "com.google.common.base.Throwables", "io.swagger.annotations.*", "lombok.extern.slf4j.Slf4j", "org.springframework.web.bind.annotation.*", "javax.validation.Valid", "javax.validation.constraints.NotNull", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "PayCenterOperationApi",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/api/PayCenterOperationApi.java"
-}, {
-    "name": "PayCenterSubjectResponse",
-    "package": "com.dr.oursp.third.api.http.response",
-    "type": "class",
-    "imports": ["com.dr.oursp.third.pay.repo.PayCenterSubjectEntity", "lombok.Data"],
-    "class_name": "PayCenterSubjectResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/api/http/response/PayCenterSubjectResponse.java"
-}, {
-    "name": "PayCenterCapitalAccountResponse",
-    "package": "com.dr.oursp.third.api.http.response",
-    "type": "class",
-    "imports": ["com.dr.oursp.third.pay.repo.PayCenterCapitalAccountEntity", "com.fasterxml.jackson.annotation.JsonIgnore", "lombok.Data"],
-    "class_name": "PayCenterCapitalAccountResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/api/http/response/PayCenterCapitalAccountResponse.java"
-}, {
-    "name": "DomainResponse",
-    "package": "com.dr.oursp.third.api.http.response",
-    "type": "class",
-    "imports": ["com.dr.oursp.third.ThirdPlatformSettingEntity", "lombok.Data"],
-    "class_name": "DomainResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/api/http/response/DomainResponse.java"
-}, {
-    "name": "CreateCapitalAccountRequest",
-    "package": "com.dr.oursp.third.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiParam", "lombok.Data", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull"],
-    "class_name": "CreateCapitalAccountRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/api/http/request/CreateCapitalAccountRequest.java"
-}, {
-    "name": "CreateDomainRequest",
-    "package": "com.dr.oursp.third.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiParam", "lombok.Data", "javax.validation.Valid", "javax.validation.constraints.NotNull"],
-    "class_name": "CreateDomainRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/api/http/request/CreateDomainRequest.java"
-}, {
-    "name": "CreateSubjectRequest",
-    "package": "com.dr.oursp.third.api.http.request",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiParam", "lombok.Data", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull"],
-    "class_name": "CreateSubjectRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/api/http/request/CreateSubjectRequest.java"
-}, {
-    "name": "BizDomainEnum",
-    "package": "com.dr.oursp.third.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "BizDomainEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/consts/BizDomainEnum.java"
-}, {
-    "name": "ThirdPlatformEnum",
-    "package": "com.dr.oursp.third.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "ThirdPlatformEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/third/consts/ThirdPlatformEnum.java"
-}, {
-    "name": "BasicStrategyApplicationTester",
-    "package": "com.dr.oursp.strategy",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.account.UnifyAccountManager", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.oursp.strategy.basic.token.TokenManger", "com.dr.oursp.strategy.setting.ServerSettings", "lombok.AllArgsConstructor", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.junit.Before", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner"],
-    "class_name": "BasicStrategyApplicationTester",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/BasicStrategyApplicationTester.java"
-}, {
-    "name": "StrategyApplicationTests",
-    "package": "com.dr.oursp.strategy",
-    "type": "class",
-    "imports": ["org.junit.jupiter.api.Test", "org.springframework.boot.test.context.SpringBootTest"],
-    "class_name": "StrategyApplicationTests",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/StrategyApplicationTests.java"
-}, {
-    "name": "StrategyApplication",
-    "package": "com.dr.oursp.strategy",
-    "type": "class",
-    "imports": ["org.springframework.boot.SpringApplication", "org.springframework.boot.autoconfigure.SpringBootApplication"],
-    "class_name": "StrategyApplication",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/StrategyApplication.java"
-}, {
-    "name": "AESTest",
-    "package": "com.dr.oursp.strategy.basic.token",
-    "type": "class",
-    "imports": ["lombok.extern.slf4j.Slf4j", "org.junit.Test", "javax.crypto.BadPaddingException", "javax.crypto.IllegalBlockSizeException", "javax.crypto.NoSuchPaddingException", "java.security.InvalidKeyException", "java.security.NoSuchAlgorithmException", "java.util.Random", "java.util.concurrent.Executors", "java.util.concurrent.LinkedBlockingQueue", "java.util.concurrent.ThreadPoolExecutor", "java.util.concurrent.TimeUnit", "java.util.concurrent.atomic.AtomicInteger"],
-    "class_name": "AESTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/token/AESTest.java"
-}, {
-    "name": "TokenMangerTest",
-    "package": "com.dr.oursp.strategy.basic.token",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired"],
-    "class_name": "TokenMangerTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/token/TokenMangerTest.java"
-}, {
-    "name": "VisibleManagerTest",
-    "package": "com.dr.oursp.strategy.basic.visible",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "com.dr.oursp.strategy.basic.cases.order.OrderEntity", "com.dr.oursp.strategy.basic.cases.order.OrderService", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.oursp.strategy.basic.tag.ref.RefTagException", "com.dr.oursp.strategy.basic.visible.row.rule.IdentityVisibleRule", "com.dr.oursp.strategy.basic.visible.row.rule.SimpleVisibleRule", "com.dr.oursp.strategy.basic.visible.row.rule.Tags", "lombok.extern.slf4j.Slf4j", "org.assertj.core.util.Sets", "org.junit.Assert", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.beans.IntrospectionException", "java.lang.reflect.InvocationTargetException", "java.util.LinkedHashSet", "java.util.Set", "static com.dr.oursp.strategy.basic.cases.order.Constant.APPID", "static com.dr.oursp.strategy.basic.cases.order.Constant.BIZ_BUY_ID"],
-    "class_name": "VisibleManagerTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/visible/VisibleManagerTest.java"
-}, {
-    "name": "VisibleQuerySqlBuilderTest",
-    "package": "com.dr.oursp.strategy.basic.visible",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "com.dr.oursp.strategy.basic.cases.order.Constant", "com.dr.oursp.strategy.basic.cases.order.OrderEntity", "com.dr.oursp.strategy.basic.tag.TagException", "com.dr.oursp.strategy.basic.tag.consts.PresetTagSystemKey", "lombok.extern.slf4j.Slf4j", "org.assertj.core.util.Lists", "org.assertj.core.util.Sets", "org.junit.Before", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.util.Set"],
-    "class_name": "VisibleQuerySqlBuilderTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/visible/VisibleQuerySqlBuilderTest.java"
-}, {
-    "name": "RoleManagerTest",
-    "package": "com.dr.oursp.strategy.basic.role",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.google.common.collect.Sets", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired"],
-    "class_name": "RoleManagerTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/role/RoleManagerTest.java"
-}, {
-    "name": "RestMonitorTest",
-    "package": "com.dr.oursp.strategy.basic.monitor",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "org.junit.Test", "org.springframework.amqp.core.Message", "org.springframework.amqp.rabbit.annotation.Exchange", "org.springframework.amqp.rabbit.annotation.Queue", "org.springframework.amqp.rabbit.annotation.QueueBinding", "org.springframework.amqp.rabbit.annotation.RabbitListener", "org.springframework.web.bind.annotation.*"],
-    "class_name": "RestMonitorTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/monitor/RestMonitorTest.java"
-}, {
-    "name": "AppManagerTest",
-    "package": "com.dr.oursp.strategy.basic.app",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "com.dr.oursp.strategy.basic.cases.order.OrderServiceConfig", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.beans.IntrospectionException", "java.lang.reflect.InvocationTargetException", "java.util.Map"],
-    "class_name": "AppManagerTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/app/AppManagerTest.java"
-}, {
-    "name": "AppContainerTest",
-    "package": "com.dr.oursp.strategy.basic.app",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "com.dr.oursp.strategy.basic.app.scan.AppContainer", "lombok.extern.slf4j.Slf4j", "org.junit.Test"],
-    "class_name": "AppContainerTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/app/AppContainerTest.java"
-}, {
-    "name": "AppJointCertManagerTest",
-    "package": "com.dr.oursp.strategy.basic.app.jc",
-    "type": "class",
-    "imports": ["org.junit.Test", "static org.junit.Assert.*"],
-    "class_name": "AppJointCertManagerTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/app/jc/AppJointCertManagerTest.java"
-}, {
-    "name": "IdentityManagerTest",
-    "package": "com.dr.oursp.strategy.basic.identity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "com.dr.oursp.strategy.basic.identity.consts.IdentityRoleRuleEnum", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "lombok.extern.slf4j.Slf4j", "org.assertj.core.util.Sets", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.util.List"],
-    "class_name": "IdentityManagerTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/identity/IdentityManagerTest.java"
-}, {
-    "name": "IdentityRepositoryTest",
-    "package": "com.dr.oursp.strategy.basic.identity.repository",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "org.junit.Test", "org.springframework.data.domain.Example", "org.springframework.data.domain.ExampleMatcher", "org.springframework.data.jpa.convert.QueryByExamplePredicateBuilder", "org.springframework.data.jpa.domain.Specification", "javax.annotation.Resource", "javax.persistence.criteria.CriteriaBuilder", "javax.persistence.criteria.CriteriaQuery", "javax.persistence.criteria.Predicate", "javax.persistence.criteria.Root", "javax.transaction.Transactional", "java.util.ArrayList", "java.util.List", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "IdentityRepositoryTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/identity/repository/IdentityRepositoryTest.java"
-}, {
-    "name": "IdentityTest",
-    "package": "com.dr.oursp.strategy.basic.identity.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "com.dr.oursp.strategy.basic.entity.seed.AutoIncrementSeed", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.consts.StateCommand", "com.dr.oursp.strategy.basic.identity.domain.action.Modifier", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.repository.IdentityRefRoleRepository", "com.dr.oursp.strategy.basic.identity.repository.IdentityRepository", "com.dr.oursp.strategy.basic.role.RoleManager", "com.dr.oursp.strategy.setting.ServerSettings", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "javax.transaction.Transactional", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "IdentityTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/identity/domain/IdentityTest.java"
-}, {
-    "name": "BasicAllocationRuleTest",
-    "package": "com.dr.oursp.strategy.basic.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicAllocationRuleJpaEntity", "org.junit.jupiter.api.Test"],
-    "class_name": "BasicAllocationRuleTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/entity/BasicAllocationRuleTest.java"
-}, {
-    "name": "BasicEntityTest",
-    "package": "com.dr.oursp.strategy.basic.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "lombok.extern.slf4j.Slf4j"],
-    "class_name": "BasicEntityTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/entity/BasicEntityTest.java"
-}, {
-    "name": "AutoIncrementSeedTest",
-    "package": "com.dr.oursp.strategy.basic.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "com.dr.oursp.strategy.basic.entity.seed.AutoIncrementSeed", "com.dr.oursp.strategy.basic.entity.seed.TagIdSeedEntity", "org.junit.Assert", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired"],
-    "class_name": "AutoIncrementSeedTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/entity/AutoIncrementSeedTest.java"
-}, {
-    "name": "OrderRepository",
-    "package": "com.dr.oursp.strategy.basic.cases.order",
-    "type": "interface",
-    "imports": ["org.springframework.data.jpa.repository.JpaRepository"],
-    "class_name": "OrderRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/cases/order/OrderRepository.java"
-}, {
-    "name": "OrderServiceConfig",
-    "package": "com.dr.oursp.strategy.basic.cases.order",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.config.AppConfigItem", "com.dr.oursp.strategy.basic.app.consts.AppConfigTypeEnum", "com.dr.oursp.strategy.basic.app.consts.AppConfigValueTypeEnum", "lombok.Data", "static com.dr.oursp.strategy.basic.cases.order.Constant.APPID"],
-    "class_name": "OrderServiceConfig",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/cases/order/OrderServiceConfig.java"
-}, {
-    "name": "Constant",
-    "package": "com.dr.oursp.strategy.basic.cases.order",
-    "type": "class",
-    "imports": [],
-    "class_name": "Constant",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/cases/order/Constant.java"
-}, {
-    "name": "OrderCaseTester",
-    "package": "com.dr.oursp.strategy.basic.cases.order",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.oursp.strategy.basic.tag.ref.RefTagException", "lombok.extern.slf4j.Slf4j", "org.assertj.core.util.Sets", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired", "java.beans.IntrospectionException", "java.lang.reflect.InvocationTargetException", "java.util.Set"],
-    "class_name": "OrderCaseTester extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/cases/order/OrderCaseTester.java"
-}, {
-    "name": "OrderService",
-    "package": "com.dr.oursp.strategy.basic.cases.order",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.biz.BizClassifies", "com.dr.oursp.strategy.basic.app.biz.BizClassify", "com.dr.oursp.strategy.basic.app.menu.AppCustomMenu", "com.dr.oursp.strategy.basic.app.menu.AppDataDefineMenu", "com.dr.oursp.strategy.basic.app.menu.AppMenu", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.role.PresetRole", "com.dr.oursp.strategy.basic.role.PresetRoles", "com.dr.oursp.strategy.basic.tag.TagSystemManager", "com.dr.oursp.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.oursp.strategy.basic.tag.ref.RefTagException", "lombok.extern.slf4j.Slf4j", "org.assertj.core.util.Sets", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Component", "java.beans.IntrospectionException", "java.lang.reflect.InvocationTargetException", "java.util.Set", "static com.dr.oursp.strategy.basic.cases.order.Constant.*"],
-    "class_name": "OrderService",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/cases/order/OrderService.java"
-}, {
-    "name": "OrderEntity",
-    "package": "com.dr.oursp.strategy.basic.cases.order",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.data.DataDefineClass", "com.dr.oursp.strategy.basic.data.DataDefineField", "com.dr.oursp.strategy.basic.data.FieldTypeEnum", "com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntityWithId", "com.dr.oursp.strategy.basic.role.PresetRole", "com.dr.oursp.strategy.basic.role.PresetRoles", "com.dr.oursp.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.oursp.strategy.basic.tag.consts.ReferTagPersistenceEnum", "com.dr.oursp.strategy.basic.tag.ref.RefTag", "com.dr.oursp.strategy.basic.visible.column.ColumnVisible", "com.dr.oursp.strategy.basic.visible.row.VisibleTag", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.Entity", "javax.persistence.Table", "static com.dr.oursp.strategy.basic.cases.order.Constant.*"],
-    "class_name": "OrderEntity extends BasicJpaEntityWithId",
-    "extend_name": "BasicJpaEntityWithId",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/cases/order/OrderEntity.java"
-}, {
-    "name": "AreaTagSystemManager",
-    "package": "com.dr.oursp.strategy.basic.cases.area",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.consts.AppKeyConst", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.tag.TagSystem", "com.dr.oursp.strategy.basic.tag.consts.TagTypeEnum", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "org.springframework.stereotype.Component", "java.util.List", "java.util.Optional"],
-    "class_name": "AreaTagSystemManager extends BasicTagSystem",
-    "extend_name": "BasicTagSystem",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/cases/area/AreaTagSystemManager.java"
-}, {
-    "name": "UnifyAccountManagerTest",
-    "package": "com.dr.oursp.strategy.basic.account",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "com.dr.oursp.strategy.basic.token.TokenException", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired"],
-    "class_name": "UnifyAccountManagerTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/account/UnifyAccountManagerTest.java"
-}, {
-    "name": "DataDefineContainerTest",
-    "package": "com.dr.oursp.strategy.basic.data",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "lombok.extern.slf4j.Slf4j", "org.junit.Test"],
-    "class_name": "DataDefineContainerTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/data/DataDefineContainerTest.java"
-}, {
-    "name": "TagSystemManagerTest",
-    "package": "com.dr.oursp.strategy.basic.tag",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "org.junit.Test", "org.springframework.beans.factory.annotation.Autowired"],
-    "class_name": "TagSystemManagerTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/tag/TagSystemManagerTest.java"
-}, {
-    "name": "BasicPresetVisibleTagsStatementSystemTest",
-    "package": "com.dr.oursp.strategy.basic.tag.preset",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.BasicStrategyApplicationTester", "com.dr.oursp.strategy.basic.app.consts.AppKeyConst", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.tag.TagSystem", "com.dr.oursp.strategy.basic.tag.consts.TagTypeEnum", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Component", "java.util.List", "java.util.Optional"],
-    "class_name": "BasicPresetVisibleTagsStatementSystemTest extends BasicStrategyApplicationTester",
-    "extend_name": "BasicStrategyApplicationTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/tag/preset/BasicPresetVisibleTagsStatementSystemTest.java"
-}, {
-    "name": "CommonAllocationRuleServiceTest",
-    "package": "com.dr.strategy.basic.allocation",
-    "type": "class",
-    "imports": ["com.dr.strategy.BasicSpringbootTester", "com.dr.strategy.basic.allocation.entity.CommonAllocationRuleEntity", "com.dr.strategy.basic.allocation.entity.CommonRuleUnionId", "com.dr.strategy.basic.allocation.service.CommonAllocationRuleService", "lombok.extern.slf4j.Slf4j", "org.junit.Test", "org.junit.runner.RunWith", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.boot.test.context.SpringBootTest", "org.springframework.test.context.junit4.SpringRunner", "java.util.HashSet", "java.util.Optional", "java.util.Set"],
-    "class_name": "CommonAllocationRuleServiceTest extends BasicSpringbootTester",
-    "extend_name": "BasicSpringbootTester",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/allocation/CommonAllocationRuleServiceTest.java"
-}, {
-    "name": "AllocationRuleTest",
-    "package": "com.dr.oursp.strategy.basic.allocation.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.allocation.consts.AllocationTargetTypeEnum", "com.dr.oursp.strategy.basic.allocation.repository.AllocationRuleRepository", "com.google.common.collect.Sets", "org.apache.logging.log4j.util.Strings", "org.junit.Test"],
-    "class_name": "AllocationRuleTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/basic/allocation/domain/AllocationRuleTest.java"
-}, {
-    "name": "StateChangedEventHandlerTest",
-    "package": "com.dr.oursp.strategy.domain",
-    "type": "class",
-    "imports": ["com.dr.domain.StateChangedEventHandler", "com.dr.support.enums.KeyValueEnum", "lombok.AllArgsConstructor", "lombok.Data", "org.junit.Test"],
-    "class_name": "StateChangedEventHandlerTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/oursp/strategy/domain/StateChangedEventHandlerTest.java"
-}, {
-    "name": "HashingTest",
-    "package": "com.dr.support.hash",
-    "type": "class",
-    "imports": ["com.google.common.base.Charsets", "org.junit.Assert", "org.junit.Test"],
-    "class_name": "HashingTest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/test/java/com/dr/support/hash/HashingTest.java"
-}, {
-    "name": "GlobeScanner",
-    "package": "com.dr.oursp.strategy.basic",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.biz.BizClassifies", "com.dr.oursp.strategy.basic.app.biz.BizClassify", "com.dr.oursp.strategy.basic.app.consts.AppDisplayEnum", "com.dr.oursp.strategy.basic.app.consts.AppKeyConst", "com.dr.oursp.strategy.basic.app.scan.AppScanner", "com.dr.oursp.strategy.basic.data.DataDefineScanner", "com.dr.oursp.strategy.basic.role.PresetRoleScanner", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemScanner", "com.dr.oursp.strategy.basic.tag.ref.RefTagScanner", "com.dr.oursp.strategy.basic.visible.column.ColumnVisibleScanner", "com.dr.support.trace.LogElapsedTime", "lombok.extern.slf4j.Slf4j", "org.springframework.context.event.ContextRefreshedEvent", "org.springframework.context.event.EventListener", "org.springframework.stereotype.Component"],
-    "class_name": "GlobeScanner",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/GlobeScanner.java"
-}, {
-    "name": "TokenManger",
-    "package": "com.dr.oursp.strategy.basic.token",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.account.UnifyAccountManager", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "lombok.NonNull", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.lang.Nullable", "org.springframework.stereotype.Component", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.Map", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors", "static com.dr.oursp.strategy.basic.token.Token.NEVER_EXPIRED"],
-    "class_name": "TokenManger",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/token/TokenManger.java"
-}, {
-    "name": "CurrentUser",
-    "package": "com.dr.oursp.strategy.basic.token",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.google.common.collect.Maps", "lombok.Data", "org.springframework.util.Assert", "java.time.Instant", "java.util.Map", "java.util.Optional", "java.util.Set"],
-    "class_name": "CurrentUser",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/token/CurrentUser.java"
-}, {
-    "name": "Current",
-    "package": "com.dr.oursp.strategy.basic.token",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "lombok.NonNull", "java.util.Objects", "java.util.Optional"],
-    "class_name": "Current",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/token/Current.java"
-}, {
-    "name": "TokenException",
-    "package": "com.dr.oursp.strategy.basic.token",
-    "type": "class",
-    "imports": [],
-    "class_name": "TokenException extends Exception",
-    "extend_name": "Exception",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/token/TokenException.java"
-}, {
-    "name": "CurrentUserException",
-    "package": "com.dr.oursp.strategy.basic.token",
-    "type": "class",
-    "imports": [],
-    "class_name": "CurrentUserException extends RuntimeException",
-    "extend_name": "RuntimeException",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/token/CurrentUserException.java"
-}, {
-    "name": "Token",
-    "package": "com.dr.oursp.strategy.basic.token",
-    "type": "class",
-    "imports": ["com.google.gson.Gson", "lombok.Data", "lombok.extern.slf4j.Slf4j", "javax.crypto.spec.SecretKeySpec", "java.security.NoSuchAlgorithmException", "java.time.Instant", "java.util.Map"],
-    "class_name": "Token",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/token/Token.java"
-}, {
-    "name": "AES",
-    "package": "com.dr.oursp.strategy.basic.token",
-    "type": "class",
-    "imports": ["lombok.extern.slf4j.Slf4j", "javax.crypto.BadPaddingException", "javax.crypto.Cipher", "javax.crypto.IllegalBlockSizeException", "javax.crypto.NoSuchPaddingException", "javax.crypto.spec.SecretKeySpec", "java.nio.charset.StandardCharsets", "java.security.InvalidKeyException", "java.security.MessageDigest", "java.security.NoSuchAlgorithmException", "java.util.Arrays", "java.util.Base64"],
-    "class_name": "AES",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/token/AES.java"
-}, {
-    "name": "VisibleManager",
-    "package": "com.dr.oursp.strategy.basic.visible",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.allocation.BasicAllocationManager", "com.dr.oursp.strategy.basic.app.consts.AppKeyConst", "com.dr.oursp.strategy.basic.entity.jpa.BasicAllocationRuleJpaEntity", "com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntity", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.role.PresetRole", "com.dr.oursp.strategy.basic.role.PresetRoles", "com.dr.oursp.strategy.basic.role.RoleAction", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.visible.column.ColumnVisible", "com.dr.oursp.strategy.basic.visible.row.entity.IdentityRefDataVisibleEntity", "com.dr.oursp.strategy.basic.visible.row.entity.VisibleAllocationId", "com.dr.oursp.strategy.basic.visible.row.entity.VisibleRuleEntity", "com.dr.oursp.strategy.basic.visible.row.repository.IdentityRefDataVisibleRepository", "com.dr.oursp.strategy.basic.visible.row.repository.VisibleRuleRepository", "com.dr.oursp.strategy.basic.visible.row.rule.IdentityVisibleRule", "com.dr.oursp.strategy.basic.visible.row.rule.SimpleVisibleRule", "com.dr.oursp.strategy.basic.visible.row.rule.Tags", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.NumericConverter", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "javax.transaction.Transactional", "java.beans.IntrospectionException", "java.beans.Introspector", "java.beans.PropertyDescriptor", "java.lang.reflect.InvocationTargetException", "java.time.Instant", "java.util.LinkedHashSet", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.function.Predicate", "java.util.stream.Collectors", "static com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst.VISIBLE_BASIC"],
-    "class_name": "VisibleManager",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/VisibleManager.java"
-}, {
-    "name": "ColumnVisibleContainer",
-    "package": "com.dr.oursp.strategy.basic.visible",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.visible.column.ColumnVisible", "com.google.common.collect.Maps", "org.springframework.util.Assert", "java.util.Map", "java.util.Optional"],
-    "class_name": "ColumnVisibleContainer",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/ColumnVisibleContainer.java"
-}, {
-    "name": "VisibleQuerySqlBuilder",
-    "package": "com.dr.oursp.strategy.basic.visible",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntity", "com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.visible.row.VisibleTag", "com.dr.oursp.strategy.basic.visible.row.rule.IdentityVisibleRule", "com.dr.oursp.strategy.basic.visible.row.rule.Tags", "com.dr.support.trace.LogElapsedTime", "com.google.common.base.Joiner", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.lang.reflect.Field", "java.util.ArrayList", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "VisibleQuerySqlBuilder",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/VisibleQuerySqlBuilder.java"
-}, {
-    "name": "ColumnVisibleScanner",
-    "package": "com.dr.oursp.strategy.basic.visible.column",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntity", "com.dr.oursp.strategy.basic.role.PresetRoleContainer", "com.dr.oursp.strategy.basic.visible.ColumnVisibleContainer", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.BeanScanner", "com.google.common.collect.Maps", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.config.BeanDefinition", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.lang.reflect.Field", "java.util.Map", "java.util.Objects", "java.util.Set"],
-    "class_name": "ColumnVisibleScanner",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/column/ColumnVisibleScanner.java"
-}, {
-    "name": "ColumnVisible",
-    "package": "com.dr.oursp.strategy.basic.visible.column",
-    "type": "interface",
-    "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "ColumnVisible",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/column/ColumnVisible.java"
-}, {
-    "name": "VisibleColumnManager",
-    "package": "com.dr.oursp.strategy.basic.visible.column",
-    "type": "class",
-    "imports": ["lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component"],
-    "class_name": "VisibleColumnManager",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/column/VisibleColumnManager.java"
-}, {
-    "name": "ColumnVisibleRule",
-    "package": "com.dr.oursp.strategy.basic.visible.column",
-    "type": "class",
-    "imports": ["lombok.Data"],
-    "class_name": "ColumnVisibleRule",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/column/ColumnVisibleRule.java"
-}, {
-    "name": "VisibleTag",
-    "package": "com.dr.oursp.strategy.basic.visible.row",
-    "type": "interface",
-    "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "VisibleTag",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/row/VisibleTag.java"
-}, {
-    "name": "VisibleRuleRepository",
-    "package": "com.dr.oursp.strategy.basic.visible.row.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.visible.row.entity.VisibleRuleEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.JpaRepository", "org.springframework.data.jpa.repository.Query", "java.util.List", "java.util.Set"],
-    "class_name": "VisibleRuleRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/row/repository/VisibleRuleRepository.java"
-}, {
-    "name": "IdentityRefDataVisibleRepository",
-    "package": "com.dr.oursp.strategy.basic.visible.row.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.visible.row.entity.IdentityRefDataVisibleEntity", "com.dr.oursp.strategy.basic.visible.row.entity.VisibleAllocationId", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.JpaRepository", "org.springframework.data.jpa.repository.Query", "java.util.List", "java.util.Set"],
-    "class_name": "IdentityRefDataVisibleRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/row/repository/IdentityRefDataVisibleRepository.java"
-}, {
-    "name": "IdentityRefDataVisibleEntity",
-    "package": "com.dr.oursp.strategy.basic.visible.row.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicAllocationRuleJpaEntity", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.EmbeddedId", "javax.persistence.Entity", "javax.persistence.Table"],
-    "class_name": "IdentityRefDataVisibleEntity extends BasicAllocationRuleJpaEntity",
-    "extend_name": "BasicAllocationRuleJpaEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/row/entity/IdentityRefDataVisibleEntity.java"
-}, {
-    "name": "VisibleRuleEntity",
-    "package": "com.dr.oursp.strategy.basic.visible.row.entity",
-    "type": "class",
-    "imports": ["lombok.Data", "javax.persistence.*"],
-    "class_name": "VisibleRuleEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/row/entity/VisibleRuleEntity.java"
-}, {
-    "name": "VisibleAllocationId",
-    "package": "com.dr.oursp.strategy.basic.visible.row.entity",
-    "type": "class",
-    "imports": ["lombok.Data", "javax.persistence.Embeddable", "java.io.Serializable"],
-    "class_name": "VisibleAllocationId implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/row/entity/VisibleAllocationId.java"
-}, {
-    "name": "Tags",
-    "package": "com.dr.oursp.strategy.basic.visible.row.rule",
-    "type": "class",
-    "imports": ["lombok.Data", "java.util.LinkedHashSet"],
-    "class_name": "Tags",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/row/rule/Tags.java"
-}, {
-    "name": "IdentityVisibleRule",
-    "package": "com.dr.oursp.strategy.basic.visible.row.rule",
-    "type": "class",
-    "imports": ["lombok.Data", "java.util.Objects"],
-    "class_name": "IdentityVisibleRule",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/row/rule/IdentityVisibleRule.java"
-}, {
-    "name": "SimpleVisibleRule",
-    "package": "com.dr.oursp.strategy.basic.visible.row.rule",
-    "type": "class",
-    "imports": ["lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "java.util.LinkedHashSet"],
-    "class_name": "SimpleVisibleRule",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/row/rule/SimpleVisibleRule.java"
-}, {
-    "name": "VisibleRuleTypeEnum",
-    "package": "com.dr.oursp.strategy.basic.visible.row.consts",
-    "type": "enum",
-    "imports": ["lombok.Getter"],
-    "class_name": "VisibleRuleTypeEnum",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/visible/row/consts/VisibleRuleTypeEnum.java"
-}, {
-    "name": "RoleAction",
-    "package": "com.dr.oursp.strategy.basic.role",
-    "type": "interface",
-    "imports": ["org.apache.logging.log4j.util.Strings", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "RoleAction",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/role/RoleAction.java"
-}, {
-    "name": "RoleActionCtrl",
-    "package": "com.dr.oursp.strategy.basic.role",
-    "type": "interface",
-    "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "RoleActionCtrl",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/role/RoleActionCtrl.java"
-}, {
-    "name": "RoleAspect",
-    "package": "com.dr.oursp.strategy.basic.role",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst", "com.dr.oursp.strategy.basic.role.entity.RoleEntity", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "com.dr.oursp.strategy.setting.ServerSettings", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.aspectj.lang.ProceedingJoinPoint", "org.aspectj.lang.annotation.Aspect", "org.aspectj.lang.annotation.Before", "org.aspectj.lang.reflect.MethodSignature", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.util.Assert", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.lang.reflect.Method", "java.util.Objects", "java.util.Set"],
-    "class_name": "RoleAspect",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/role/RoleAspect.java"
-}, {
-    "name": "PresetRoleScanner",
-    "package": "com.dr.oursp.strategy.basic.role",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.scan.AppContainer", "com.dr.oursp.strategy.basic.role.consts.RoleTypeEnum", "com.dr.oursp.strategy.basic.role.entity.RoleEntity", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.BeanScanner", "com.dr.support.serialization.Serializations", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.config.BeanDefinition", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.lang.reflect.Method", "java.util.List", "java.util.Set"],
-    "class_name": "PresetRoleScanner",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/role/PresetRoleScanner.java"
-}, {
-    "name": "PresetRoles",
-    "package": "com.dr.oursp.strategy.basic.role",
-    "type": "interface",
-    "imports": ["org.apache.logging.log4j.util.Strings", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "PresetRoles",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/role/PresetRoles.java"
-}, {
-    "name": "PresetRoleContainer",
-    "package": "com.dr.oursp.strategy.basic.role",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.role.entity.RoleEntity", "com.google.common.collect.Maps", "java.util.Map"],
-    "class_name": "PresetRoleContainer",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/role/PresetRoleContainer.java"
-}, {
-    "name": "AuthenticationException",
-    "package": "com.dr.oursp.strategy.basic.role",
-    "type": "class",
-    "imports": [],
-    "class_name": "AuthenticationException extends Exception",
-    "extend_name": "Exception",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/role/AuthenticationException.java"
-}, {
-    "name": "PresetRole",
-    "package": "com.dr.oursp.strategy.basic.role",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "PresetRole",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/role/PresetRole.java"
-}, {
-    "name": "RoleManager",
-    "package": "com.dr.oursp.strategy.basic.role",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.consts.AppKeyConst", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.entity.seed.AutoIncrementSeed", "com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst", "com.dr.oursp.strategy.basic.role.consts.RoleTypeEnum", "com.dr.oursp.strategy.basic.role.entity.RoleEntity", "com.dr.oursp.strategy.basic.role.repository.RoleRepository", "com.dr.oursp.strategy.basic.tag.TagSystem", "com.dr.oursp.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.oursp.strategy.basic.tag.consts.TagTypeEnum", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.enums.Enumerations", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.data.domain.Pageable", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotEmpty", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "RoleManager extends BasicTagSystem",
-    "extend_name": "BasicTagSystem",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/role/RoleManager.java"
-}, {
-    "name": "RoleRepository",
-    "package": "com.dr.oursp.strategy.basic.role.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.role.entity.RoleEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.JpaRepository", "java.util.List", "java.util.Optional", "java.util.stream.Stream"],
-    "class_name": "RoleRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/role/repository/RoleRepository.java"
-}, {
-    "name": "RoleEntity",
-    "package": "com.dr.oursp.strategy.basic.role.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.Entity", "javax.persistence.Table"],
-    "class_name": "RoleEntity extends BasicTagJpaEntityWithId",
-    "extend_name": "BasicTagJpaEntityWithId",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/role/entity/RoleEntity.java"
-}, {
-    "name": "RoleTypeEnum",
-    "package": "com.dr.oursp.strategy.basic.role.consts",
-    "type": "enum",
-    "imports": ["lombok.Getter"],
-    "class_name": "RoleTypeEnum",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/role/consts/RoleTypeEnum.java"
-}, {
-    "name": "PresetRoleIdConst",
-    "package": "com.dr.oursp.strategy.basic.role.consts",
-    "type": "class",
-    "imports": [],
-    "class_name": "PresetRoleIdConst",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/role/consts/PresetRoleIdConst.java"
-}, {
-    "name": "CollectData",
-    "package": "com.dr.oursp.strategy.basic.monitor",
-    "type": "class",
-    "imports": ["lombok.AllArgsConstructor", "lombok.Builder", "lombok.Data", "lombok.NoArgsConstructor"],
-    "class_name": "CollectData",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/CollectData.java"
-}, {
-    "name": "ResourceCollector",
-    "package": "com.dr.oursp.strategy.basic.monitor",
-    "type": "interface",
-    "imports": ["java.lang.annotation.*"],
-    "class_name": "ResourceCollector",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/ResourceCollector.java"
-}, {
-    "name": "RestApiRequestCollector",
-    "package": "com.dr.oursp.strategy.basic.monitor",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.monitor.Interceptor.HttpResourceEvent", "com.dr.oursp.strategy.basic.monitor.aspect.ResourceEvent", "com.dr.oursp.strategy.basic.monitor.consts.AmqpConstant", "com.dr.oursp.strategy.basic.monitor.consts.ResourceActionEnum", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Sets", "com.google.common.util.concurrent.ThreadFactoryBuilder", "com.google.gson.Gson", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.amqp.core.FanoutExchange", "org.springframework.amqp.core.Message", "org.springframework.amqp.core.MessageProperties", "org.springframework.amqp.rabbit.core.RabbitAdmin", "org.springframework.amqp.rabbit.core.RabbitTemplate", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.stereotype.Component", "javax.annotation.PostConstruct", "java.io.Serializable", "java.nio.charset.StandardCharsets", "java.time.Instant", "java.util.Map", "java.util.Set", "java.util.concurrent.ExecutorService", "java.util.concurrent.Executors"],
-    "class_name": "RestApiRequestCollector",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/RestApiRequestCollector.java"
-}, {
-    "name": "AutoAmqpConfiguration",
-    "package": "com.dr.oursp.strategy.basic.monitor.config",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.monitor.rabbitmq.RabbitBeanFactory", "lombok.extern.slf4j.Slf4j", "org.springframework.boot.autoconfigure.condition.ConditionalOnClass"],
-    "class_name": "AutoAmqpConfiguration",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/config/AutoAmqpConfiguration.java"
-}, {
-    "name": "AmqpConnectionProperties",
-    "package": "com.dr.oursp.strategy.basic.monitor.config",
-    "type": "class",
-    "imports": ["lombok.Data"],
-    "class_name": "AmqpConnectionProperties",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/config/AmqpConnectionProperties.java"
-}, {
-    "name": "YamlPropertyLoaderFactory",
-    "package": "com.dr.oursp.strategy.basic.monitor.config",
-    "type": "class",
-    "imports": ["lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.config.YamlPropertiesFactoryBean", "org.springframework.core.env.PropertiesPropertySource", "org.springframework.core.env.PropertySource", "org.springframework.core.io.Resource", "org.springframework.core.io.support.EncodedResource", "org.springframework.core.io.support.PropertySourceFactory", "org.springframework.lang.Nullable", "java.io.IOException", "java.util.Objects", "java.util.Properties"],
-    "class_name": "YamlPropertyLoaderFactory",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/config/YamlPropertyLoaderFactory.java"
-}, {
-    "name": "AutoAmqpConfigurationProperties",
-    "package": "com.dr.oursp.strategy.basic.monitor.config",
-    "type": "class",
-    "imports": ["lombok.Data", "org.springframework.boot.context.properties.ConfigurationProperties", "org.springframework.context.annotation.PropertySource"],
-    "class_name": "AutoAmqpConfigurationProperties",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/config/AutoAmqpConfigurationProperties.java"
-}, {
-    "name": "RabbitBeanFactory",
-    "package": "com.dr.oursp.strategy.basic.monitor.rabbitmq",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.monitor.config.AmqpConnectionProperties", "com.dr.oursp.strategy.basic.monitor.config.AutoAmqpConfigurationProperties", "org.springframework.amqp.rabbit.connection.ConnectionFactory", "org.springframework.amqp.rabbit.core.RabbitAdmin", "org.springframework.amqp.rabbit.core.RabbitTemplate", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.beans.factory.annotation.Qualifier", "org.springframework.boot.autoconfigure.condition.ConditionalOnClass", "org.springframework.context.annotation.Bean"],
-    "class_name": "RabbitBeanFactory",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/rabbitmq/RabbitBeanFactory.java"
-}, {
-    "name": "RabbitFactoryBuilder",
-    "package": "com.dr.oursp.strategy.basic.monitor.rabbitmq",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.monitor.config.AmqpConnectionProperties", "org.springframework.amqp.core.AcknowledgeMode", "org.springframework.amqp.rabbit.config.DirectRabbitListenerContainerFactory", "org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory", "org.springframework.amqp.rabbit.connection.CachingConnectionFactory", "org.springframework.amqp.rabbit.connection.ConnectionFactory", "org.springframework.amqp.support.converter.Jackson2JsonMessageConverter"],
-    "class_name": "RabbitFactoryBuilder",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/rabbitmq/RabbitFactoryBuilder.java"
-}, {
-    "name": "ResourceEvent",
-    "package": "com.dr.oursp.strategy.basic.monitor.aspect",
-    "type": "class",
-    "imports": ["lombok.Data"],
-    "class_name": "ResourceEvent",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/aspect/ResourceEvent.java"
-}, {
-    "name": "MethodAspect",
-    "package": "com.dr.oursp.strategy.basic.monitor.aspect",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.monitor.ResourceCollector", "com.dr.oursp.strategy.basic.monitor.RestApiRequestCollector", "lombok.extern.slf4j.Slf4j", "org.aspectj.lang.ProceedingJoinPoint", "org.aspectj.lang.annotation.Around", "org.aspectj.lang.annotation.Aspect", "org.aspectj.lang.reflect.MethodSignature", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.stereotype.Component", "java.lang.reflect.Method"],
-    "class_name": "MethodAspect",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/aspect/MethodAspect.java"
-}, {
-    "name": "HttpResourceEvent",
-    "package": "com.dr.oursp.strategy.basic.monitor.Interceptor",
-    "type": "class",
-    "imports": ["lombok.Data", "java.util.Map"],
-    "class_name": "HttpResourceEvent",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/Interceptor/HttpResourceEvent.java"
-}, {
-    "name": "WebConfig",
-    "package": "com.dr.oursp.strategy.basic.monitor.Interceptor",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.monitor.RestApiRequestCollector", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.context.annotation.Configuration", "org.springframework.web.servlet.config.annotation.InterceptorRegistry", "org.springframework.web.servlet.config.annotation.WebMvcConfigurer"],
-    "class_name": "WebConfig implements WebMvcConfigurer",
-    "extend_name": "",
-    "implements_name": ["WebMvcConfigurer"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/Interceptor/WebConfig.java"
-}, {
-    "name": "RestCtrlHandlerInterceptorAdapter",
-    "package": "com.dr.oursp.strategy.basic.monitor.Interceptor",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.monitor.RestApiRequestCollector", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "com.google.common.io.CharStreams", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.lang.NonNull", "org.springframework.lang.Nullable", "org.springframework.web.servlet.HandlerInterceptor", "javax.servlet.*", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletResponse", "java.io.IOException", "java.util.Map", "java.util.Objects", "java.util.Set"],
-    "class_name": "RestCtrlHandlerInterceptorAdapter implements HandlerInterceptor, Filter",
-    "extend_name": "",
-    "implements_name": ["HandlerInterceptor", ""],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/Interceptor/RestCtrlHandlerInterceptorAdapter.java"
-}, {
-    "name": "ResourceActionEnum",
-    "package": "com.dr.oursp.strategy.basic.monitor.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "ResourceActionEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/consts/ResourceActionEnum.java"
-}, {
-    "name": "AmqpConstant",
-    "package": "com.dr.oursp.strategy.basic.monitor.consts",
-    "type": "class",
-    "imports": [],
-    "class_name": "AmqpConstant",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/monitor/consts/AmqpConstant.java"
-}, {
-    "name": "AppManager",
-    "package": "com.dr.oursp.strategy.basic.app",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.config.AppConfigDefine", "com.dr.oursp.strategy.basic.app.entity.AppEntity", "com.dr.oursp.strategy.basic.app.entity.BizEntity", "com.dr.oursp.strategy.basic.app.menu.AppMenuDefine", "com.dr.oursp.strategy.basic.app.scan.AppContainer", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.beans.IntrospectionException", "java.beans.PropertyDescriptor", "java.lang.reflect.InvocationTargetException", "java.util.List", "java.util.Map", "java.util.Objects"],
-    "class_name": "AppManager",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/AppManager.java"
-}, {
-    "name": "App",
-    "package": "com.dr.oursp.strategy.basic.app",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.app.consts.AppDisplayEnum", "com.dr.oursp.strategy.basic.role.PresetRoles", "org.apache.logging.log4j.util.Strings", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "App",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/App.java"
-}, {
-    "name": "BizClassifies",
-    "package": "com.dr.oursp.strategy.basic.app.biz",
-    "type": "interface",
-    "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "BizClassifies",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/biz/BizClassifies.java"
-}, {
-    "name": "BizClassify",
-    "package": "com.dr.oursp.strategy.basic.app.biz",
-    "type": "interface",
-    "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "BizClassify",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/biz/BizClassify.java"
-}, {
-    "name": "AppConfigItem",
-    "package": "com.dr.oursp.strategy.basic.app.config",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.app.consts.AppConfigTypeEnum", "com.dr.oursp.strategy.basic.app.consts.AppConfigValueTypeEnum", "org.apache.logging.log4j.util.Strings", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "AppConfigItem",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/config/AppConfigItem.java"
-}, {
-    "name": "AppConfig",
-    "package": "com.dr.oursp.strategy.basic.app.config",
-    "type": "interface",
-    "imports": ["java.lang.annotation.*"],
-    "class_name": "AppConfig",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/config/AppConfig.java"
-}, {
-    "name": "AppConfigDefine",
-    "package": "com.dr.oursp.strategy.basic.app.config",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.consts.AppConfigTypeEnum", "com.dr.oursp.strategy.basic.app.consts.AppConfigValueTypeEnum", "lombok.Data"],
-    "class_name": "AppConfigDefine",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/config/AppConfigDefine.java"
-}, {
-    "name": "BizEntity",
-    "package": "com.dr.oursp.strategy.basic.app.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.biz.BizClassify", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Builder", "lombok.Data", "javax.persistence.Id"],
-    "class_name": "BizEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/entity/BizEntity.java"
-}, {
-    "name": "AppEntity",
-    "package": "com.dr.oursp.strategy.basic.app.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.consts.AppDisplayEnum", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.Id"],
-    "class_name": "AppEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/entity/AppEntity.java"
-}, {
-    "name": "AppScanner",
-    "package": "com.dr.oursp.strategy.basic.app.scan",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.GlobeScanner", "com.dr.oursp.strategy.basic.app.App", "com.dr.oursp.strategy.basic.app.biz.BizClassifies", "com.dr.oursp.strategy.basic.app.biz.BizClassify", "com.dr.oursp.strategy.basic.app.config.AppConfig", "com.dr.oursp.strategy.basic.app.config.AppConfigDefine", "com.dr.oursp.strategy.basic.app.config.AppConfigItem", "com.dr.oursp.strategy.basic.app.consts.AppMenuType", "com.dr.oursp.strategy.basic.app.entity.AppEntity", "com.dr.oursp.strategy.basic.app.entity.BizEntity", "com.dr.oursp.strategy.basic.app.jc.AppJointCertScanner", "com.dr.oursp.strategy.basic.app.menu.AppCustomMenu", "com.dr.oursp.strategy.basic.app.menu.AppDataDefineMenu", "com.dr.oursp.strategy.basic.app.menu.AppMenu", "com.dr.oursp.strategy.basic.app.menu.AppMenuDefine", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.BeanScanner", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.config.BeanDefinition", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.lang.reflect.Field", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.Set"],
-    "class_name": "AppScanner implements GlobeScanner.Scanner",
-    "extend_name": "",
-    "implements_name": ["GlobeScanner.Scanner"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/scan/AppScanner.java"
-}, {
-    "name": "AppContainer",
-    "package": "com.dr.oursp.strategy.basic.app.scan",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.config.AppConfigDefine", "com.dr.oursp.strategy.basic.app.entity.AppEntity", "com.dr.oursp.strategy.basic.app.entity.BizEntity", "com.dr.oursp.strategy.basic.app.jc.AppJointCertDefine", "com.dr.oursp.strategy.basic.app.menu.AppMenuDefine", "com.google.common.collect.Maps", "java.util.List", "java.util.Map"],
-    "class_name": "AppContainer",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/scan/AppContainer.java"
-}, {
-    "name": "AppCustomMenu",
-    "package": "com.dr.oursp.strategy.basic.app.menu",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst"],
-    "class_name": "AppCustomMenu",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/menu/AppCustomMenu.java"
-}, {
-    "name": "AppMenu",
-    "package": "com.dr.oursp.strategy.basic.app.menu",
-    "type": "interface",
-    "imports": ["java.lang.annotation.*"],
-    "class_name": "AppMenu",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/menu/AppMenu.java"
-}, {
-    "name": "AppMenuDefine",
-    "package": "com.dr.oursp.strategy.basic.app.menu",
-    "type": "class",
-    "imports": ["lombok.Data"],
-    "class_name": "AppMenuDefine",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/menu/AppMenuDefine.java"
-}, {
-    "name": "AppDataDefineMenu",
-    "package": "com.dr.oursp.strategy.basic.app.menu",
-    "type": "interface",
-    "imports": ["org.apache.logging.log4j.util.Strings"],
-    "class_name": "AppDataDefineMenu",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/menu/AppDataDefineMenu.java"
-}, {
-    "name": "AppJointCertDefine",
-    "package": "com.dr.oursp.strategy.basic.app.jc",
-    "type": "class",
-    "imports": ["lombok.Data", "java.util.List", "java.util.Objects", "java.util.Set"],
-    "class_name": "AppJointCertDefine",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/jc/AppJointCertDefine.java"
-}, {
-    "name": "AppJointCertConfigItem",
-    "package": "com.dr.oursp.strategy.basic.app.jc",
-    "type": "interface",
-    "imports": ["org.apache.logging.log4j.util.Strings", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "AppJointCertConfigItem",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/jc/AppJointCertConfigItem.java"
-}, {
-    "name": "AppJointCertification",
-    "package": "com.dr.oursp.strategy.basic.app.jc",
-    "type": "interface",
-    "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "AppJointCertification",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/jc/AppJointCertification.java"
-}, {
-    "name": "AppJointCertConfigItemDefine",
-    "package": "com.dr.oursp.strategy.basic.app.jc",
-    "type": "class",
-    "imports": ["lombok.Data", "java.util.Objects"],
-    "class_name": "AppJointCertConfigItemDefine",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/jc/AppJointCertConfigItemDefine.java"
-}, {
-    "name": "AppJointCertScanner",
-    "package": "com.dr.oursp.strategy.basic.app.jc",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.GlobeScanner", "com.dr.oursp.strategy.basic.app.entity.AppEntity", "com.dr.oursp.strategy.basic.app.scan.AppContainer", "com.dr.support.BeanScanner", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.config.BeanDefinition", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.util.Arrays", "java.util.List", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "AppJointCertScanner implements GlobeScanner.Scanner",
-    "extend_name": "",
-    "implements_name": ["GlobeScanner.Scanner"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/jc/AppJointCertScanner.java"
-}, {
-    "name": "AppJointCertManager",
-    "package": "com.dr.oursp.strategy.basic.app.jc",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.scan.AppContainer", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.util.Map", "java.util.Optional"],
-    "class_name": "AppJointCertManager",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/jc/AppJointCertManager.java"
-}, {
-    "name": "AppConfigValueTypeEnum",
-    "package": "com.dr.oursp.strategy.basic.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "AppConfigValueTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/consts/AppConfigValueTypeEnum.java"
-}, {
-    "name": "AppMenuType",
-    "package": "com.dr.oursp.strategy.basic.app.consts",
-    "type": "enum",
-    "imports": ["lombok.Getter"],
-    "class_name": "AppMenuType",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/consts/AppMenuType.java"
-}, {
-    "name": "AppKeyConst",
-    "package": "com.dr.oursp.strategy.basic.app.consts",
-    "type": "class",
-    "imports": [],
-    "class_name": "AppKeyConst",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/consts/AppKeyConst.java"
-}, {
-    "name": "AppDisplayEnum",
-    "package": "com.dr.oursp.strategy.basic.app.consts",
-    "type": "enum",
-    "imports": [],
-    "class_name": "AppDisplayEnum",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/consts/AppDisplayEnum.java"
-}, {
-    "name": "AppConfigTypeEnum",
-    "package": "com.dr.oursp.strategy.basic.app.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "java.util.Arrays"],
-    "class_name": "AppConfigTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/app/consts/AppConfigTypeEnum.java"
-}, {
-    "name": "IdentityManager",
-    "package": "com.dr.oursp.strategy.basic.identity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.allocation.BasicAllocationQuery", "com.dr.oursp.strategy.basic.app.consts.AppKeyConst", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "com.dr.oursp.strategy.basic.entity.seed.AutoIncrementSeed", "com.dr.oursp.strategy.basic.identity.consts.IdentityRoleRuleEnum", "com.dr.oursp.strategy.basic.identity.consts.IdentityStateEnum", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.domain.Identity", "com.dr.oursp.strategy.basic.identity.domain.action.AnySelector", "com.dr.oursp.strategy.basic.identity.domain.action.Selector", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.dr.oursp.strategy.basic.identity.entity.IdentityRefRoleRuleId", "com.dr.oursp.strategy.basic.identity.repository.IdentityRefRoleRepository", "com.dr.oursp.strategy.basic.identity.repository.IdentityRepository", "com.dr.oursp.strategy.basic.role.*", "com.dr.oursp.strategy.basic.role.consts.PresetRoleIdConst", "com.dr.oursp.strategy.basic.role.entity.RoleEntity", "com.dr.oursp.strategy.basic.tag.TagSystem", "com.dr.oursp.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.oursp.strategy.basic.tag.consts.TagTypeEnum", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.cache.annotation.Cacheable", "org.springframework.data.domain.Pageable", "org.springframework.lang.Nullable", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "javax.annotation.Resource", "javax.transaction.Transactional", "javax.validation.constraints.*", "java.util.*", "java.util.function.Function", "java.util.stream.Collectors"],
-    "class_name": "IdentityManager extends BasicTagSystem",
-    "extend_name": "BasicTagSystem",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/IdentityManager.java"
-}, {
-    "name": "IdentityRefRoleRepository",
-    "package": "com.dr.oursp.strategy.basic.identity.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.dr.oursp.strategy.basic.identity.entity.IdentityRefRoleRuleId", "org.springframework.data.jpa.repository.JpaRepository", "org.springframework.stereotype.Repository", "java.util.List", "java.util.Set", "java.util.stream.Stream"],
-    "class_name": "IdentityRefRoleRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/repository/IdentityRefRoleRepository.java"
-}, {
-    "name": "IdentityRepository",
-    "package": "com.dr.oursp.strategy.basic.identity.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "org.springframework.data.domain.Pageable", "org.springframework.data.jpa.repository.JpaRepository", "org.springframework.data.jpa.repository.JpaSpecificationExecutor", "org.springframework.stereotype.Repository", "java.util.Collection", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.stream.Stream"],
-    "class_name": "IdentityRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/repository/IdentityRepository.java"
-}, {
-    "name": "IdentityEntity",
-    "package": "com.dr.oursp.strategy.basic.identity.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "com.dr.oursp.strategy.basic.identity.consts.IdentityStateEnum", "com.dr.support.enums.Enumerations", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.Entity", "javax.persistence.Index", "javax.persistence.Table", "javax.validation.constraints.Min", "java.io.Serializable", "static com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem.TOP_PARENT_ID"],
-    "class_name": "IdentityEntity extends BasicTagJpaEntityWithId implements Serializable",
-    "extend_name": "BasicTagJpaEntityWithId",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/entity/IdentityEntity.java"
-}, {
-    "name": "IdentityRefRoleRuleId",
-    "package": "com.dr.oursp.strategy.basic.identity.entity",
-    "type": "class",
-    "imports": ["lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "javax.persistence.Embeddable", "java.io.Serializable", "java.util.Objects"],
-    "class_name": "IdentityRefRoleRuleId implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/entity/IdentityRefRoleRuleId.java"
-}, {
-    "name": "IdentityRefRoleEntity",
-    "package": "com.dr.oursp.strategy.basic.identity.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicAllocationRuleJpaEntity", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.EmbeddedId", "javax.persistence.Entity", "javax.persistence.Index", "javax.persistence.Table"],
-    "class_name": "IdentityRefRoleEntity extends BasicAllocationRuleJpaEntity",
-    "extend_name": "BasicAllocationRuleJpaEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/entity/IdentityRefRoleEntity.java"
-}, {
-    "name": "IdentityAggregateVo",
-    "package": "com.dr.oursp.strategy.basic.identity.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.identity.consts.IdentityStateEnum", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.support.enums.Enumerations", "com.google.common.collect.Lists", "lombok.Getter", "lombok.Setter", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "org.springframework.util.CollectionUtils", "java.util.Collection", "java.util.Collections", "java.util.List", "java.util.Objects", "java.util.stream.Collectors"],
-    "class_name": "IdentityAggregateVo",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/IdentityAggregateVo.java"
-}, {
-    "name": "Identity",
-    "package": "com.dr.oursp.strategy.basic.identity.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.seed.AutoIncrementSeed", "com.dr.oursp.strategy.basic.identity.domain.action.Creator", "com.dr.oursp.strategy.basic.identity.domain.action.Selector", "com.dr.oursp.strategy.basic.identity.repository.IdentityRepository", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "com.dr.oursp.strategy.setting.PlatformSetting"],
-    "class_name": "Identity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/Identity.java"
-}, {
-    "name": "IdentityAllocationRoleVO",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.vo",
-    "type": "class",
-    "imports": ["lombok.Getter", "lombok.Setter", "lombok.experimental.Accessors", "java.util.Collection"],
-    "class_name": "IdentityAllocationRoleVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/vo/IdentityAllocationRoleVO.java"
-}, {
-    "name": "RoleVO",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.vo",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.role.consts.RoleTypeEnum", "lombok.Getter", "javax.management.relation.Role", "java.util.Collection"],
-    "class_name": "RoleVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/vo/RoleVO.java"
-}, {
-    "name": "IdentityVO",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.vo",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.identity.consts.IdentityStateEnum", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.support.enums.KeyValueEnum", "com.google.common.collect.ImmutableList", "lombok.Getter", "lombok.ToString", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Objects"],
-    "class_name": "IdentityVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/vo/IdentityVO.java"
-}, {
-    "name": "IdentityAllocationRuleByRoleVO",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.vo",
-    "type": "class",
-    "imports": ["lombok.Getter", "lombok.Setter", "lombok.experimental.Accessors", "java.util.Collection", "java.util.Collections"],
-    "class_name": "IdentityAllocationRuleByRoleVO",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/vo/IdentityAllocationRuleByRoleVO.java"
-}, {
-    "name": "IdentityAllocationRuleByRoleAggregate",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.ref",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.identity.domain.IdentityAggregateVo", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityAllocationRuleByRoleVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.dr.oursp.strategy.basic.identity.entity.IdentityRefRoleRuleId", "com.google.common.collect.Lists", "lombok.Getter", "lombok.Setter", "lombok.experimental.Accessors", "org.springframework.util.CollectionUtils", "java.util.Collection", "java.util.List", "java.util.Map", "java.util.stream.Collectors"],
-    "class_name": "IdentityAllocationRuleByRoleAggregate",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/ref/IdentityAllocationRuleByRoleAggregate.java"
-}, {
-    "name": "Allocation",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.ref",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.identity.domain.IdentityAggregateVo", "com.dr.oursp.strategy.basic.identity.repository.IdentityRefRoleRepository", "com.dr.oursp.strategy.basic.identity.repository.IdentityRepository", "com.google.common.annotations.Beta", "java.util.Collection"],
-    "class_name": "Allocation",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/ref/Allocation.java"
-}, {
-    "name": "IdentityRefRoleAggregate",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.ref",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.identity.domain.vo.IdentityAllocationRoleVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityRefRoleEntity", "lombok.Getter", "lombok.Setter", "lombok.experimental.Accessors", "java.util.Collection"],
-    "class_name": "IdentityRefRoleAggregate",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/ref/IdentityRefRoleAggregate.java"
-}, {
-    "name": "AllocationRole",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.ref",
-    "type": "class",
-    "imports": ["com.dr.domain.AbstractSaver", "com.dr.domain.EntityGenerator", "com.dr.domain.ValueObjectGenerator", "com.dr.oursp.strategy.basic.allocation.BasicAllocationQuery", "com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "com.dr.oursp.strategy.basic.identity.consts.ChangeExcludeIdentitiesMode", "com.dr.oursp.strategy.basic.identity.consts.IdentityRoleRuleEnum", "com.dr.oursp.strategy.basic.identity.domain.IdentityAggregateVo", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityAllocationRoleVO", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityAllocationRuleByRoleVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.identity.entity.IdentityRefRoleEntity", "com.dr.oursp.strategy.basic.identity.entity.IdentityRefRoleRuleId", "com.dr.oursp.strategy.basic.identity.repository.IdentityRefRoleRepository", "com.dr.oursp.strategy.basic.identity.repository.IdentityRepository", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "org.apache.logging.log4j.util.Strings", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "javax.annotation.Nullable", "javax.transaction.Transactional", "javax.validation.constraints.NotNull", "java.util.*", "java.util.function.Function", "java.util.function.Predicate", "java.util.stream.Collector", "java.util.stream.Collectors", "java.util.stream.Stream"],
-    "class_name": "AllocationRole",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/ref/AllocationRole.java"
-}, {
-    "name": "Modifier",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.action",
-    "type": "class",
-    "imports": ["com.dr.domain.AbstractModifier", "com.dr.domain.AbstractSaver", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.identity.consts.IdentityStateEnum", "com.dr.oursp.strategy.basic.identity.consts.StateCommand", "com.dr.oursp.strategy.basic.identity.domain.IdentityAggregateVo", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.identity.repository.IdentityRepository", "org.springframework.util.Assert", "java.util.function.Supplier"],
-    "class_name": "Modifier extends AbstractModifier",
-    "extend_name": "AbstractModifier",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/action/Modifier.java"
-}, {
-    "name": "VoGenerator",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.action",
-    "type": "class",
-    "imports": ["com.dr.domain.ValueObjectGenerator", "com.dr.oursp.strategy.basic.identity.domain.IdentityAggregateVo", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.google.common.collect.Lists", "java.util.Optional", "java.util.stream.Collector"],
-    "class_name": "VoGenerator implements ValueObjectGenerator",
-    "extend_name": "",
-    "implements_name": ["ValueObjectGenerator"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/action/VoGenerator.java"
-}, {
-    "name": "SingleSelector",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.action",
-    "type": "class",
-    "imports": ["com.dr.domain.selector.AbstractSelectorBySingle", "com.dr.oursp.strategy.basic.identity.domain.IdentityAggregateVo", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.identity.repository.IdentityRepository", "com.google.common.annotations.Beta", "org.apache.logging.log4j.util.Strings", "org.springframework.util.Assert", "javax.validation.constraints.NotBlank"],
-    "class_name": "SingleSelector extends AbstractSelectorBySingle",
-    "extend_name": "AbstractSelectorBySingle",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/action/SingleSelector.java"
-}, {
-    "name": "ExtendSelector",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.action",
-    "type": "class",
-    "imports": ["com.dr.domain.ValueObjectGenerator", "com.dr.oursp.strategy.basic.identity.domain.IdentityAggregateVo", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.identity.repository.IdentityRepository", "com.google.common.annotations.Beta", "org.apache.logging.log4j.util.Strings", "org.springframework.util.CollectionUtils", "javax.validation.constraints.NegativeOrZero", "java.util.List", "java.util.Optional", "java.util.stream.Collectors"],
-    "class_name": "ExtendSelector",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/action/ExtendSelector.java"
-}, {
-    "name": "Selector",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.action",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.identity.repository.IdentityRepository", "javax.validation.constraints.NotBlank"],
-    "class_name": "Selector",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/action/Selector.java"
-}, {
-    "name": "AnySelector",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.action",
-    "type": "class",
-    "imports": ["com.dr.domain.ValueObjectGenerator", "com.dr.domain.selector.AbstractSelector", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.identity.consts.IdentityStateEnum", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.domain.IdentityAggregateVo", "com.dr.oursp.strategy.basic.identity.domain.ref.Allocation", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.identity.repository.IdentityRepository", "org.apache.logging.log4j.util.Strings", "org.springframework.util.CollectionUtils", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotEmpty", "javax.validation.constraints.NotNull", "javax.validation.constraints.PositiveOrZero", "java.util.Arrays", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.function.Function", "java.util.stream.Collector", "java.util.stream.Collectors", "java.util.stream.Stream"],
-    "class_name": "AnySelector extends AbstractSelector",
-    "extend_name": "AbstractSelector",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/action/AnySelector.java"
-}, {
-    "name": "Creator",
-    "package": "com.dr.oursp.strategy.basic.identity.domain.action",
-    "type": "class",
-    "imports": ["com.dr.domain.AbstractSaver", "com.dr.domain.ValueObjectGenerator", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.entity.seed.AutoIncrementSeed", "com.dr.oursp.strategy.basic.identity.consts.IdentityTypeEnum", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.identity.entity.IdentityEntity", "com.dr.oursp.strategy.basic.identity.repository.IdentityRepository", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "com.dr.oursp.strategy.setting.PlatformSetting", "com.google.common.collect.Lists", "org.apache.logging.log4j.util.Strings", "java.util.Objects", "java.util.Optional", "java.util.function.Function", "java.util.stream.Collector", "static com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem.TOP_PARENT_ID", "static com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem.TOP_PARENT_PATH"],
-    "class_name": "Creator",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/domain/action/Creator.java"
-}, {
-    "name": "IdentityTypeEnum",
-    "package": "com.dr.oursp.strategy.basic.identity.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "IdentityTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/consts/IdentityTypeEnum.java"
-}, {
-    "name": "IdentityStateEnum",
-    "package": "com.dr.oursp.strategy.basic.identity.consts",
-    "type": "enum",
-    "imports": ["com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "IdentityStateEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/consts/IdentityStateEnum.java"
-}, {
-    "name": "IdentityRoleRuleEnum",
-    "package": "com.dr.oursp.strategy.basic.identity.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "IdentityRoleRuleEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/consts/IdentityRoleRuleEnum.java"
-}, {
-    "name": "StateCommand",
-    "package": "com.dr.oursp.strategy.basic.identity.consts",
-    "type": "enum",
-    "imports": [],
-    "class_name": "StateCommand",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/consts/StateCommand.java"
-}, {
-    "name": "ChangeExcludeIdentitiesMode",
-    "package": "com.dr.oursp.strategy.basic.identity.consts",
-    "type": "enum",
-    "imports": [],
-    "class_name": "ChangeExcludeIdentitiesMode",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/identity/consts/ChangeExcludeIdentitiesMode.java"
-}, {
-    "name": "TagIdSeedEntity",
-    "package": "com.dr.oursp.strategy.basic.entity.seed",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.NoArgsConstructor", "lombok.experimental.Accessors", "javax.persistence.Entity", "javax.persistence.Id", "javax.persistence.Table", "javax.persistence.Version"],
-    "class_name": "TagIdSeedEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/entity/seed/TagIdSeedEntity.java"
-}, {
-    "name": "AutoIncrementSeed",
-    "package": "com.dr.oursp.strategy.basic.entity.seed",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.seed.repository.AutoIncrementSeedRepo", "com.dr.support.enums.KeyValueEnum", "lombok.Getter", "org.springframework.stereotype.Component", "javax.transaction.Transactional", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.Optional"],
-    "class_name": "AutoIncrementSeed",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/entity/seed/AutoIncrementSeed.java"
-}, {
-    "name": "AutoIncrementSeedRepo",
-    "package": "com.dr.oursp.strategy.basic.entity.seed.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.entity.seed.TagIdSeedEntity", "org.springframework.data.jpa.repository.JpaRepository"],
-    "class_name": "AutoIncrementSeedRepo extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/entity/seed/repository/AutoIncrementSeedRepo.java"
-}, {
-    "name": "BasicAllocationRuleJpaEntity",
-    "package": "com.dr.oursp.strategy.basic.entity.jpa",
-    "type": "class",
-    "imports": ["com.google.common.collect.Sets", "io.swagger.annotations.ApiModel", "lombok.Data", "org.apache.logging.log4j.util.Strings", "org.springframework.util.Assert", "javax.persistence.Column", "javax.persistence.MappedSuperclass", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.Arrays", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "BasicAllocationRuleJpaEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/entity/jpa/BasicAllocationRuleJpaEntity.java"
-}, {
-    "name": "BasicJpaEntity",
-    "package": "com.dr.oursp.strategy.basic.entity.jpa",
-    "type": "abstract class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "lombok.Getter", "lombok.Setter", "lombok.ToString", "org.springframework.data.annotation.Version", "javax.persistence.MappedSuperclass", "javax.validation.constraints.NotBlank", "java.time.Instant"],
-    "class_name": "BasicJpaEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/entity/jpa/BasicJpaEntity.java"
-}, {
-    "name": "BasicJpaEntityWithId",
-    "package": "com.dr.oursp.strategy.basic.entity.jpa",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.GeneratedValue", "javax.persistence.GenerationType", "javax.persistence.Id", "javax.persistence.MappedSuperclass"],
-    "class_name": "BasicJpaEntityWithId extends BasicJpaEntity",
-    "extend_name": "BasicJpaEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/entity/jpa/BasicJpaEntityWithId.java"
-}, {
-    "name": "BasicTagJpaEntityWithId",
-    "package": "com.dr.oursp.strategy.basic.entity.jpa",
-    "type": "class",
-    "imports": ["com.dr.support.serialization.Serializations", "com.google.common.base.Splitter", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "com.google.gson.reflect.TypeToken", "lombok.Data", "org.apache.logging.log4j.util.Strings", "javax.persistence.Column", "javax.persistence.Id", "javax.persistence.MappedSuperclass", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "BasicTagJpaEntityWithId extends BasicJpaEntity",
-    "extend_name": "BasicJpaEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/entity/jpa/BasicTagJpaEntityWithId.java"
-}, {
-    "name": "BasicDocumentEntity",
-    "package": "com.dr.oursp.strategy.basic.entity.mongo",
-    "type": "abstract class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "lombok.Getter", "lombok.RequiredArgsConstructor", "lombok.Setter", "lombok.ToString", "lombok.experimental.SuperBuilder", "org.springframework.data.annotation.Version", "javax.validation.constraints.NotBlank", "java.time.Instant", "java.util.Map", "java.util.Set"],
-    "class_name": "BasicDocumentEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/entity/mongo/BasicDocumentEntity.java"
-}, {
-    "name": "BasicTagDocumentEntityWithId",
-    "package": "com.dr.oursp.strategy.basic.entity.mongo",
-    "type": "class",
-    "imports": ["com.google.common.base.Splitter", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "lombok.Data", "org.apache.logging.log4j.util.Strings", "org.springframework.data.annotation.Id", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "BasicTagDocumentEntityWithId extends BasicDocumentEntity",
-    "extend_name": "BasicDocumentEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/entity/mongo/BasicTagDocumentEntityWithId.java"
-}, {
-    "name": "EntityStateEnum",
-    "package": "com.dr.oursp.strategy.basic.entity.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "lombok.Getter"],
-    "class_name": "EntityStateEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/entity/consts/EntityStateEnum.java"
-}, {
-    "name": "UnifyAccountManager",
-    "package": "com.dr.oursp.strategy.basic.account",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.account.consts.UnifyAccountState", "com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "com.dr.oursp.strategy.basic.account.repository.UnifyAccountRepository", "com.dr.oursp.strategy.basic.token.Token", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.oursp.strategy.setting.PlatformSetting", "com.dr.support.hash.Hashing", "com.dr.support.trace.LogElapsedTime", "org.apache.logging.log4j.util.Strings", "org.springframework.stereotype.Service", "org.springframework.util.Assert", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.nio.charset.StandardCharsets", "java.util.Optional", "static com.dr.oursp.strategy.basic.token.Token.NEVER_EXPIRED"],
-    "class_name": "UnifyAccountManager",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/account/UnifyAccountManager.java"
-}, {
-    "name": "UnifyAccountRepository",
-    "package": "com.dr.oursp.strategy.basic.account.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.account.entity.UnifyAccountEntity", "org.springframework.data.jpa.repository.JpaRepository", "java.util.Optional"],
-    "class_name": "UnifyAccountRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/account/repository/UnifyAccountRepository.java"
-}, {
-    "name": "UnifyAccountEntity",
-    "package": "com.dr.oursp.strategy.basic.account.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntityWithId", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.EqualsAndHashCode", "javax.persistence.Entity", "javax.persistence.Index", "javax.persistence.Table"],
-    "class_name": "UnifyAccountEntity extends BasicJpaEntityWithId",
-    "extend_name": "BasicJpaEntityWithId",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/account/entity/UnifyAccountEntity.java"
-}, {
-    "name": "UnifyAccountState",
-    "package": "com.dr.oursp.strategy.basic.account.consts",
-    "type": "enum",
-    "imports": ["lombok.Getter"],
-    "class_name": "UnifyAccountState",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/account/consts/UnifyAccountState.java"
-}, {
-    "name": "DataDefineContainer",
-    "package": "com.dr.oursp.strategy.basic.data",
-    "type": "class",
-    "imports": ["com.google.common.collect.Maps", "java.util.Map"],
-    "class_name": "DataDefineContainer",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/data/DataDefineContainer.java"
-}, {
-    "name": "DataDefineClass",
-    "package": "com.dr.oursp.strategy.basic.data",
-    "type": "interface",
-    "imports": ["org.apache.logging.log4j.util.Strings", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "DataDefineClass",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/data/DataDefineClass.java"
-}, {
-    "name": "FieldTypeEnum",
-    "package": "com.dr.oursp.strategy.basic.data",
-    "type": "enum",
-    "imports": [],
-    "class_name": "FieldTypeEnum",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/data/FieldTypeEnum.java"
-}, {
-    "name": "DataManager",
-    "package": "com.dr.oursp.strategy.basic.data",
-    "type": "class",
-    "imports": ["com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.util.Map", "java.util.Set"],
-    "class_name": "DataManager",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/data/DataManager.java"
-}, {
-    "name": "DataDefine",
-    "package": "com.dr.oursp.strategy.basic.data",
-    "type": "class",
-    "imports": ["lombok.Data", "java.util.List"],
-    "class_name": "DataDefine",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/data/DataDefine.java"
-}, {
-    "name": "DataDefineScanner",
-    "package": "com.dr.oursp.strategy.basic.data",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.GlobeScanner", "com.dr.oursp.strategy.basic.app.scan.AppContainer", "com.dr.support.BeanScanner", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.config.BeanDefinition", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.lang.reflect.Field", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.Set"],
-    "class_name": "DataDefineScanner implements GlobeScanner.Scanner",
-    "extend_name": "",
-    "implements_name": ["GlobeScanner.Scanner"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/data/DataDefineScanner.java"
-}, {
-    "name": "DataDefineField",
-    "package": "com.dr.oursp.strategy.basic.data",
-    "type": "interface",
-    "imports": ["org.apache.logging.log4j.util.Strings", "java.lang.annotation.*"],
-    "class_name": "DataDefineField",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/data/DataDefineField.java"
-}, {
-    "name": "PresetTags",
-    "package": "com.dr.oursp.strategy.basic.tag",
-    "type": "interface",
-    "imports": ["java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "PresetTags",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/PresetTags.java"
-}, {
-    "name": "TagQuery",
-    "package": "com.dr.oursp.strategy.basic.tag",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "org.springframework.lang.Nullable", "org.springframework.transaction.annotation.Transactional", "javax.validation.constraints.NotNull", "javax.validation.constraints.PositiveOrZero", "java.util.List", "java.util.Optional"],
-    "class_name": "TagQuery",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/TagQuery.java"
-}, {
-    "name": "TagSystemManager",
-    "package": "com.dr.oursp.strategy.basic.tag",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntity", "com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "com.dr.oursp.strategy.basic.tag.consts.TagSystemType", "com.dr.oursp.strategy.basic.tag.entity.TagSystemEntity", "com.dr.oursp.strategy.basic.tag.preset.BasicTagSystem", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemContainer", "com.dr.oursp.strategy.basic.tag.preset.PresetTagSystemException", "com.dr.oursp.strategy.basic.tag.ref.RefTagContainer", "com.dr.oursp.strategy.basic.tag.ref.RefTagException", "com.dr.support.serialization.Serializations", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "com.google.gson.Gson", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.annotation.Autowired", "org.springframework.data.redis.core.RedisTemplate", "org.springframework.stereotype.Component", "javax.validation.constraints.NotBlank", "java.beans.IntrospectionException", "java.beans.PropertyDescriptor", "java.lang.reflect.InvocationTargetException", "java.util.*", "java.util.stream.Collectors"],
-    "class_name": "TagSystemManager",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/TagSystemManager.java"
-}, {
-    "name": "TagSystem",
-    "package": "com.dr.oursp.strategy.basic.tag",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.tag.consts.TagTypeEnum", "org.apache.logging.log4j.util.Strings", "java.lang.annotation.*"],
-    "class_name": "TagSystem",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/TagSystem.java"
-}, {
-    "name": "RedisConfig",
-    "package": "com.dr.oursp.strategy.basic.tag",
-    "type": "class",
-    "imports": ["org.springframework.context.annotation.Bean", "org.springframework.context.annotation.Configuration", "org.springframework.data.redis.connection.RedisConnectionFactory", "org.springframework.data.redis.core.RedisTemplate"],
-    "class_name": "RedisConfig",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/RedisConfig.java"
-}, {
-    "name": "PresetTag",
-    "package": "com.dr.oursp.strategy.basic.tag",
-    "type": "interface",
-    "imports": ["org.apache.logging.log4j.util.Strings", "java.lang.annotation.ElementType", "java.lang.annotation.Retention", "java.lang.annotation.RetentionPolicy", "java.lang.annotation.Target"],
-    "class_name": "PresetTag",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/PresetTag.java"
-}, {
-    "name": "TagException",
-    "package": "com.dr.oursp.strategy.basic.tag",
-    "type": "class",
-    "imports": [],
-    "class_name": "TagException extends Exception",
-    "extend_name": "Exception",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/TagException.java"
-}, {
-    "name": "TagSystemRepository",
-    "package": "com.dr.oursp.strategy.basic.tag.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.tag.entity.TagSystemEntity", "org.springframework.data.jpa.repository.JpaRepository", "java.util.List", "java.util.Optional", "java.util.Set"],
-    "class_name": "TagSystemRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/repository/TagSystemRepository.java"
-}, {
-    "name": "RefTagScanner",
-    "package": "com.dr.oursp.strategy.basic.tag.ref",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntity", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.config.BeanDefinition", "org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider", "org.springframework.core.type.filter.AssignableTypeFilter", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.lang.reflect.Field", "java.util.Map", "java.util.Objects"],
-    "class_name": "RefTagScanner",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/ref/RefTagScanner.java"
-}, {
-    "name": "RefTagScannerException",
-    "package": "com.dr.oursp.strategy.basic.tag.ref",
-    "type": "class",
-    "imports": [],
-    "class_name": "RefTagScannerException extends Exception",
-    "extend_name": "Exception",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/ref/RefTagScannerException.java"
-}, {
-    "name": "RefTagException",
-    "package": "com.dr.oursp.strategy.basic.tag.ref",
-    "type": "class",
-    "imports": [],
-    "class_name": "RefTagException extends Exception",
-    "extend_name": "Exception",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/ref/RefTagException.java"
-}, {
-    "name": "RefTagDefined",
-    "package": "com.dr.oursp.strategy.basic.tag.ref",
-    "type": "class",
-    "imports": ["lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "java.util.Objects"],
-    "class_name": "RefTagDefined",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/ref/RefTagDefined.java"
-}, {
-    "name": "RefTag",
-    "package": "com.dr.oursp.strategy.basic.tag.ref",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.tag.consts.ReferTagPersistenceEnum", "java.lang.annotation.*"],
-    "class_name": "RefTag",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/ref/RefTag.java"
-}, {
-    "name": "RefTagContainer",
-    "package": "com.dr.oursp.strategy.basic.tag.ref",
-    "type": "class",
-    "imports": ["com.google.common.collect.Maps", "org.springframework.lang.NonNull", "java.util.Map", "java.util.Objects"],
-    "class_name": "RefTagContainer",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/ref/RefTagContainer.java"
-}, {
-    "name": "OpRoleTagSystem",
-    "package": "com.dr.oursp.strategy.basic.tag.preset",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.app.consts.AppKeyConst", "com.dr.oursp.strategy.basic.entity.consts.EntityStateEnum", "com.dr.oursp.strategy.basic.tag.PresetTag", "com.dr.oursp.strategy.basic.tag.PresetTags", "com.dr.oursp.strategy.basic.tag.TagSystem", "com.dr.oursp.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.oursp.strategy.basic.tag.consts.TagTypeEnum", "org.springframework.stereotype.Component", "java.util.List", "java.util.Optional"],
-    "class_name": "OpRoleTagSystem extends BasicTagSystem",
-    "extend_name": "BasicTagSystem",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/preset/OpRoleTagSystem.java"
-}, {
-    "name": "PresetTagSystemScanner",
-    "package": "com.dr.oursp.strategy.basic.tag.preset",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "com.dr.oursp.strategy.basic.tag.PresetTag", "com.dr.oursp.strategy.basic.tag.PresetTags", "com.dr.oursp.strategy.basic.tag.TagSystem", "com.dr.oursp.strategy.basic.tag.TagSystemManager", "com.dr.oursp.strategy.basic.tag.entity.TagSystemEntity", "com.dr.oursp.strategy.setting.ServerSettings", "com.dr.support.BeanScanner", "com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "org.springframework.beans.factory.config.BeanDefinition", "org.springframework.context.ApplicationContext", "org.springframework.stereotype.Component", "org.springframework.util.Assert", "java.util.Arrays", "java.util.Map", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "PresetTagSystemScanner",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/preset/PresetTagSystemScanner.java"
-}, {
-    "name": "BasicTagSystem",
-    "package": "com.dr.oursp.strategy.basic.tag.preset",
-    "type": "abstract class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicJpaEntity", "com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "com.dr.oursp.strategy.basic.tag.TagException", "com.dr.oursp.strategy.basic.tag.TagQuery", "com.dr.oursp.strategy.basic.tag.TagSystemManager", "com.dr.oursp.strategy.basic.tag.consts.ReferTagPersistenceEnum", "com.dr.oursp.strategy.basic.tag.ref.RefTagContainer", "com.dr.oursp.strategy.basic.tag.ref.RefTagDefined", "com.dr.oursp.strategy.basic.tag.ref.RefTagException", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "com.google.common.reflect.TypeToken", "com.google.gson.Gson", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.util.Assert", "javax.annotation.Resource", "javax.validation.constraints.NotNull", "java.beans.IntrospectionException", "java.beans.PropertyDescriptor", "java.lang.reflect.InvocationTargetException", "java.util.List", "java.util.Map", "java.util.Objects", "java.util.Set"],
-    "class_name": "BasicTagSystem implements TagQuery",
-    "extend_name": "",
-    "implements_name": ["TagQuery"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/preset/BasicTagSystem.java"
-}, {
-    "name": "PresetTagSystemException",
-    "package": "com.dr.oursp.strategy.basic.tag.preset",
-    "type": "class",
-    "imports": [],
-    "class_name": "PresetTagSystemException extends RuntimeException",
-    "extend_name": "RuntimeException",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/preset/PresetTagSystemException.java"
-}, {
-    "name": "PresetTagSystemContainer",
-    "package": "com.dr.oursp.strategy.basic.tag.preset",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicTagJpaEntityWithId", "com.dr.oursp.strategy.basic.tag.entity.TagSystemEntity", "com.google.common.collect.Maps", "java.util.Map"],
-    "class_name": "PresetTagSystemContainer",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/preset/PresetTagSystemContainer.java"
-}, {
-    "name": "TagSystemEntity",
-    "package": "com.dr.oursp.strategy.basic.tag.entity",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "javax.persistence.*"],
-    "class_name": "TagSystemEntity",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/entity/TagSystemEntity.java"
-}, {
-    "name": "TagTypeEnum",
-    "package": "com.dr.oursp.strategy.basic.tag.consts",
-    "type": "enum",
-    "imports": ["lombok.Getter"],
-    "class_name": "TagTypeEnum",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/consts/TagTypeEnum.java"
-}, {
-    "name": "ReferTagPersistenceEnum",
-    "package": "com.dr.oursp.strategy.basic.tag.consts",
-    "type": "enum",
-    "imports": [],
-    "class_name": "ReferTagPersistenceEnum",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/consts/ReferTagPersistenceEnum.java"
-}, {
-    "name": "PresetTagSystemKey",
-    "package": "com.dr.oursp.strategy.basic.tag.consts",
-    "type": "class",
-    "imports": [],
-    "class_name": "PresetTagSystemKey",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/consts/PresetTagSystemKey.java"
-}, {
-    "name": "TagSystemType",
-    "package": "com.dr.oursp.strategy.basic.tag.consts",
-    "type": "class",
-    "imports": [],
-    "class_name": "TagSystemType",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/tag/consts/TagSystemType.java"
-}, {
-    "name": "AllocationRuleManager",
-    "package": "com.dr.oursp.strategy.basic.allocation",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.allocation.consts.AllocateRuleMode", "com.dr.oursp.strategy.basic.allocation.consts.AllocationModifyModeEnum", "com.dr.oursp.strategy.basic.allocation.consts.AllocationTargetTypeEnum", "com.dr.oursp.strategy.basic.allocation.domain.AllocationRule", "com.dr.oursp.strategy.basic.allocation.domain.ExceptionInfo", "com.dr.oursp.strategy.basic.allocation.entity.AllocationRuleEntity", "com.dr.oursp.strategy.basic.allocation.repository.AllocationRuleRepository", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "com.dr.oursp.strategy.basic.tag.consts.PresetTagSystemKey", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Service", "org.springframework.util.CollectionUtils", "javax.transaction.Transactional", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "AllocationRuleManager",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/allocation/AllocationRuleManager.java"
-}, {
-    "name": "BasicAllocationQuery",
-    "package": "com.dr.oursp.strategy.basic.allocation",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicAllocationRuleJpaEntity", "com.google.common.collect.Sets", "lombok.Setter", "lombok.experimental.Accessors", "lombok.extern.slf4j.Slf4j", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.Set", "java.util.function.Function", "java.util.function.Predicate", "java.util.stream.Stream"],
-    "class_name": "BasicAllocationQuery",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/allocation/BasicAllocationQuery.java"
-}, {
-    "name": "BasicAllocationManager",
-    "package": "com.dr.oursp.strategy.basic.allocation",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicAllocationRuleJpaEntity", "com.dr.oursp.strategy.basic.identity.IdentityManager", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.springframework.stereotype.Component", "java.util.List", "java.util.Optional", "java.util.Set", "java.util.function.Function", "java.util.function.Predicate", "java.util.stream.Stream"],
-    "class_name": "BasicAllocationManager",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/allocation/BasicAllocationManager.java"
-}, {
-    "name": "AllocationRuleRepository",
-    "package": "com.dr.oursp.strategy.basic.allocation.repository",
-    "type": "interface",
-    "imports": ["com.dr.oursp.strategy.basic.allocation.entity.AllocationRuleEntity", "org.springframework.data.jpa.repository.JpaRepository", "java.util.stream.Stream"],
-    "class_name": "AllocationRuleRepository extends JpaRepository",
-    "extend_name": "JpaRepository",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/allocation/repository/AllocationRuleRepository.java"
-}, {
-    "name": "AllocationRuleUnionId",
-    "package": "com.dr.oursp.strategy.basic.allocation.entity",
-    "type": "class",
-    "imports": ["lombok.Data", "lombok.NoArgsConstructor", "java.io.Serializable"],
-    "class_name": "AllocationRuleUnionId implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/allocation/entity/AllocationRuleUnionId.java"
-}, {
-    "name": "AllocationRuleEntity",
-    "package": "com.dr.oursp.strategy.basic.allocation.entity",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.allocation.consts.AllocateRuleMode", "com.dr.oursp.strategy.basic.allocation.consts.AllocationTargetTypeEnum", "com.dr.oursp.strategy.basic.entity.jpa.BasicAllocationRuleJpaEntity", "lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "javax.persistence.*", "java.io.Serializable"],
-    "class_name": "AllocationRuleEntity extends BasicAllocationRuleJpaEntity implements Serializable",
-    "extend_name": "BasicAllocationRuleJpaEntity",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/allocation/entity/AllocationRuleEntity.java"
-}, {
-    "name": "ExceptionInfo",
-    "package": "com.dr.oursp.strategy.basic.allocation.domain",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.identity.domain.vo.IdentityVO", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.Data"],
-    "class_name": "ExceptionInfo",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/allocation/domain/ExceptionInfo.java"
-}, {
-    "name": "AllocationRule",
-    "package": "com.dr.oursp.strategy.basic.allocation.domain",
-    "type": "class",
-    "imports": ["com.dr.domain.AbstractSaver", "com.dr.oursp.strategy.basic.allocation.consts.AllocateRuleMode", "com.dr.oursp.strategy.basic.allocation.consts.AllocationModifyModeEnum", "com.dr.oursp.strategy.basic.allocation.consts.AllocationTargetTypeEnum", "com.dr.oursp.strategy.basic.allocation.entity.AllocationRuleEntity", "com.dr.oursp.strategy.basic.allocation.repository.AllocationRuleRepository", "com.dr.oursp.strategy.basic.entity.jpa.BasicAllocationRuleJpaEntity", "com.dr.support.trace.LogElapsedTime", "com.google.common.collect.Lists", "com.google.common.collect.Sets", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.time.Instant", "java.util.*", "java.util.function.Predicate", "java.util.stream.Collectors", "java.util.stream.Stream"],
-    "class_name": "AllocationRule",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/allocation/domain/AllocationRule.java"
-}, {
-    "name": "AllocateRuleMode",
-    "package": "com.dr.oursp.strategy.basic.allocation.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "AllocateRuleMode implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/allocation/consts/AllocateRuleMode.java"
-}, {
-    "name": "AllocationTargetTypeEnum",
-    "package": "com.dr.oursp.strategy.basic.allocation.consts",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "AllocationTargetTypeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/allocation/consts/AllocationTargetTypeEnum.java"
-}, {
-    "name": "AllocationModifyModeEnum",
-    "package": "com.dr.oursp.strategy.basic.allocation.consts",
-    "type": "enum",
-    "imports": ["com.dr.oursp.strategy.basic.entity.jpa.BasicAllocationRuleJpaEntity", "com.dr.support.enums.KeyValueEnum", "java.util.Set"],
-    "class_name": "AllocationModifyModeEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/basic/allocation/consts/AllocationModifyModeEnum.java"
-}, {
-    "name": "RestApiExceptionAdvice",
-    "package": "com.dr.oursp.strategy.api",
-    "type": "class",
-    "imports": ["lombok.extern.slf4j.Slf4j", "org.springframework.http.ResponseEntity", "org.springframework.web.bind.annotation.ExceptionHandler", "org.springframework.web.bind.annotation.RestControllerAdvice", "javax.servlet.http.HttpServletRequest"],
-    "class_name": "RestApiExceptionAdvice",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/api/RestApiExceptionAdvice.java"
-}, {
-    "name": "SwaggerConfigBuilder",
-    "package": "com.dr.oursp.strategy.api",
-    "type": "class",
-    "imports": ["springfox.documentation.builders.PathSelectors", "springfox.documentation.builders.RequestHandlerSelectors", "springfox.documentation.spi.DocumentationType", "springfox.documentation.spring.web.plugins.Docket"],
-    "class_name": "SwaggerConfigBuilder",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/api/SwaggerConfigBuilder.java"
-}, {
-    "name": "RestApiTokenHandlerFilterForAdmin",
-    "package": "com.dr.oursp.strategy.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.oursp.strategy.basic.token.TokenManger", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "javax.servlet.*", "javax.servlet.http.HttpServletRequest", "java.io.IOException"],
-    "class_name": "RestApiTokenHandlerFilterForAdmin extends TokenHandlerFilter implements Filter",
-    "extend_name": "TokenHandlerFilter",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/api/RestApiTokenHandlerFilterForAdmin.java"
-}, {
-    "name": "RestApiTokenHandlerFilter",
-    "package": "com.dr.oursp.strategy.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.oursp.strategy.basic.token.TokenManger", "lombok.Builder", "lombok.Getter", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "javax.servlet.*", "javax.servlet.http.HttpServletRequest", "java.io.IOException"],
-    "class_name": "RestApiTokenHandlerFilter extends TokenHandlerFilter implements Filter",
-    "extend_name": "TokenHandlerFilter",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/api/RestApiTokenHandlerFilter.java"
-}, {
-    "name": "GlobeServiceResultEnum",
-    "package": "com.dr.oursp.strategy.api",
-    "type": "enum",
-    "imports": ["com.dr.support.enums.KeyValueEnum"],
-    "class_name": "GlobeServiceResultEnum implements KeyValueEnum",
-    "extend_name": "",
-    "implements_name": ["KeyValueEnum"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/api/GlobeServiceResultEnum.java"
-}, {
-    "name": "GlobalExceptionHandler",
-    "package": "com.dr.oursp.strategy.api",
-    "type": "class",
-    "imports": ["com.google.common.base.Throwables", "com.google.common.collect.Maps", "lombok.Value", "lombok.extern.slf4j.Slf4j", "org.springframework.http.HttpStatus", "org.springframework.http.ResponseEntity", "org.springframework.stereotype.Component", "java.util.Map", "java.util.function.Function"],
-    "class_name": "GlobalExceptionHandler",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/api/GlobalExceptionHandler.java"
-}, {
-    "name": "RequestInfo",
-    "package": "com.dr.oursp.strategy.api",
-    "type": "class",
-    "imports": ["com.dr.support.serialization.Serializations", "com.google.common.collect.Maps", "com.google.common.collect.Sets", "org.apache.logging.log4j.util.Strings", "org.springframework.util.MultiValueMap", "org.springframework.web.socket.WebSocketSession", "org.springframework.web.util.UriComponentsBuilder", "javax.servlet.http.HttpServletRequest", "java.util.Collections", "java.util.Map", "java.util.Objects", "java.util.Set"],
-    "class_name": "RequestInfo",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/api/RequestInfo.java"
-}, {
-    "name": "ServiceResponse",
-    "package": "com.dr.oursp.strategy.api",
-    "type": "class",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "io.swagger.annotations.ApiModel", "io.swagger.annotations.ApiModelProperty", "lombok.*", "java.io.Serializable"],
-    "class_name": "ServiceResponse",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/api/ServiceResponse.java"
-}, {
-    "name": "SwaggerDisplayConfig",
-    "package": "com.dr.oursp.strategy.api",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.springframework.beans.factory.annotation.Value", "org.springframework.context.annotation.Primary", "org.springframework.stereotype.Component", "springfox.documentation.builders.ModelPropertyBuilder", "springfox.documentation.schema.Annotations", "springfox.documentation.spi.DocumentationType", "springfox.documentation.spi.schema.ModelPropertyBuilderPlugin", "springfox.documentation.spi.schema.contexts.ModelPropertyContext", "springfox.documentation.swagger.schema.ApiModelProperties", "java.lang.reflect.Field", "java.util.Arrays", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.stream.Collectors"],
-    "class_name": "SwaggerDisplayConfig implements ModelPropertyBuilderPlugin",
-    "extend_name": "",
-    "implements_name": ["ModelPropertyBuilderPlugin"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/api/SwaggerDisplayConfig.java"
-}, {
-    "name": "RestApiTokenHandlerFilterForMobile",
-    "package": "com.dr.oursp.strategy.api",
-    "type": "class",
-    "imports": ["com.dr.oursp.strategy.basic.token.Current", "com.dr.oursp.strategy.basic.token.CurrentUser", "com.dr.oursp.strategy.basic.token.TokenException", "com.dr.oursp.strategy.basic.token.TokenManger", "lombok.Builder", "lombok.Getter", "lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "javax.servlet.*", "javax.servlet.http.HttpServletRequest", "java.io.IOException"],
-    "class_name": "RestApiTokenHandlerFilterForMobile extends TokenHandlerFilter implements Filter",
-    "extend_name": "TokenHandlerFilter",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/api/RestApiTokenHandlerFilterForMobile.java"
-}, {
-    "name": "RestApiCORSHandlerFilter",
-    "package": "com.dr.oursp.strategy.api",
-    "type": "class",
-    "imports": ["org.springframework.core.annotation.Order", "org.springframework.stereotype.Component", "org.springframework.web.filter.OncePerRequestFilter", "javax.servlet.FilterChain", "javax.servlet.ServletException", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletResponse", "java.io.IOException"],
-    "class_name": "RestApiCORSHandlerFilter extends OncePerRequestFilter",
-    "extend_name": "OncePerRequestFilter",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/api/RestApiCORSHandlerFilter.java"
-}, {
-    "name": "TokenHandlerFilter",
-    "package": "com.dr.oursp.strategy.api",
-    "type": "class",
-    "imports": ["com.dr.support.serialization.Serializations", "com.google.common.collect.Lists", "org.apache.logging.log4j.util.Strings", "javax.servlet.ServletRequest", "javax.servlet.ServletResponse", "javax.servlet.http.HttpServletRequest", "javax.servlet.http.HttpServletResponse", "java.io.IOException", "java.io.PrintWriter", "java.util.List", "java.util.function.BiFunction"],
-    "class_name": "TokenHandlerFilter",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/api/TokenHandlerFilter.java"
-}, {
-    "name": "ServerSettings",
-    "package": "com.dr.oursp.strategy.setting",
-    "type": "class",
-    "imports": ["com.dr.support.trace.LogElapsedTime", "lombok.Setter", "org.springframework.beans.factory.annotation.Value", "org.springframework.stereotype.Component"],
-    "class_name": "ServerSettings implements PlatformSetting",
-    "extend_name": "",
-    "implements_name": ["PlatformSetting"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/setting/ServerSettings.java"
-}, {
-    "name": "PlatformSetting",
-    "package": "com.dr.oursp.strategy.setting",
-    "type": "interface",
-    "imports": [],
-    "class_name": "PlatformSetting",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/oursp/strategy/setting/PlatformSetting.java"
-}, {
-    "name": "NumericConverter",
-    "package": "com.dr.support",
-    "type": "class",
-    "imports": ["com.google.common.collect.Maps", "org.apache.logging.log4j.util.Strings", "java.util.HashSet", "java.util.Map", "java.util.Objects", "java.util.Set", "java.util.function.Function"],
-    "class_name": "NumericConverter",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/NumericConverter.java"
-}, {
-    "name": "LogbackForIP",
-    "package": "com.dr.support",
-    "type": "class",
-    "imports": ["ch.qos.logback.classic.pattern.ClassicConverter", "ch.qos.logback.classic.spi.ILoggingEvent", "lombok.extern.slf4j.Slf4j", "org.springframework.context.annotation.Configuration", "org.springframework.stereotype.Component", "java.net.InetAddress", "java.net.UnknownHostException"],
-    "class_name": "LogbackForIP extends ClassicConverter",
-    "extend_name": "ClassicConverter",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/LogbackForIP.java"
-}, {
-    "name": "BeanScanner",
-    "package": "com.dr.support",
-    "type": "class",
-    "imports": ["org.springframework.beans.factory.config.BeanDefinition", "org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider", "org.springframework.core.type.filter.AnnotationTypeFilter", "org.springframework.core.type.filter.AssignableTypeFilter", "java.lang.annotation.Annotation", "java.util.Set"],
-    "class_name": "BeanScanner",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/BeanScanner.java"
-}, {
-    "name": "PermissionCalculator",
-    "package": "com.dr.support",
-    "type": "class",
-    "imports": [],
-    "class_name": "PermissionCalculator",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/PermissionCalculator.java"
-}, {
-    "name": "ElapsedTimeAspect",
-    "package": "com.dr.support.trace",
-    "type": "class",
-    "imports": ["lombok.extern.slf4j.Slf4j", "org.apache.logging.log4j.util.Strings", "org.aspectj.lang.ProceedingJoinPoint", "org.aspectj.lang.annotation.Around", "org.aspectj.lang.annotation.Aspect", "org.springframework.context.annotation.Configuration", "java.util.Objects"],
-    "class_name": "ElapsedTimeAspect",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/trace/ElapsedTimeAspect.java"
-}, {
-    "name": "LogElapsedTime",
-    "package": "com.dr.support.trace",
-    "type": "interface",
-    "imports": ["java.lang.annotation.*"],
-    "class_name": "LogElapsedTime",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/trace/LogElapsedTime.java"
-}, {
-    "name": "LogElapsedTimeScope",
-    "package": "com.dr.support.trace",
-    "type": "enum",
-    "imports": [],
-    "class_name": "LogElapsedTimeScope",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/trace/LogElapsedTimeScope.java"
-}, {
-    "name": "Trace",
-    "package": "com.dr.support.trace",
-    "type": "class",
-    "imports": ["lombok.Data", "java.io.Serializable", "java.util.UUID", "java.util.concurrent.TimeUnit"],
-    "class_name": "Trace implements Serializable",
-    "extend_name": "",
-    "implements_name": ["Serializable"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/trace/Trace.java"
-}, {
-    "name": "Hashing",
-    "package": "com.dr.support.hash",
-    "type": "class",
-    "imports": ["java.nio.charset.Charset"],
-    "class_name": "Hashing",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/hash/Hashing.java"
-}, {
-    "name": "Serializations",
-    "package": "com.dr.support.serialization",
-    "type": "class",
-    "imports": ["com.google.gson.Gson", "com.google.gson.reflect.TypeToken", "java.lang.reflect.Type", "java.util.Map"],
-    "class_name": "Serializations",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/serialization/Serializations.java"
-}, {
-    "name": "JsonSerializable",
-    "package": "com.dr.support.serialization",
-    "type": "interface",
-    "imports": ["java.io.Serializable"],
-    "class_name": "JsonSerializable extends Serializable",
-    "extend_name": "Serializable",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/serialization/JsonSerializable.java"
-}, {
-    "name": "Enumerations",
-    "package": "com.dr.support.enums",
-    "type": "class",
-    "imports": ["org.springframework.lang.NonNull", "java.util.Arrays", "java.util.Optional", "java.util.Set", "java.util.stream.Collectors"],
-    "class_name": "Enumerations",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/enums/Enumerations.java"
-}, {
-    "name": "KeyValueEnum",
-    "package": "com.dr.support.enums",
-    "type": "interface",
-    "imports": [],
-    "class_name": "KeyValueEnum",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/enums/KeyValueEnum.java"
-}, {
-    "name": "BlockLockerPool",
-    "package": "com.dr.support.lock",
-    "type": "class",
-    "imports": ["com.google.common.collect.Maps", "lombok.extern.slf4j.Slf4j", "java.util.Objects", "java.util.concurrent.ConcurrentMap"],
-    "class_name": "BlockLockerPool",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/lock/BlockLockerPool.java"
-}, {
-    "name": "BlockLocker",
-    "package": "com.dr.support.lock",
-    "type": "class",
-    "imports": ["lombok.extern.slf4j.Slf4j", "org.springframework.util.Assert", "java.util.Objects", "java.util.concurrent.Callable", "java.util.concurrent.TimeUnit", "java.util.concurrent.locks.Condition", "java.util.concurrent.locks.Lock", "java.util.concurrent.locks.ReentrantLock", "java.util.function.Predicate"],
-    "class_name": "BlockLocker",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/lock/BlockLocker.java"
-}, {
-    "name": "ResourceCallback",
-    "package": "com.dr.support.competition",
-    "type": "interface",
-    "imports": ["com.dr.support.competition.exception.CallbackExecuteException"],
-    "class_name": "ResourceCallback",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/competition/ResourceCallback.java"
-}, {
-    "name": "ResourceCompetition",
-    "package": "com.dr.support.competition",
-    "type": "interface",
-    "imports": ["com.dr.support.competition.exception.AcquireLockException", "com.dr.support.competition.exception.CallbackExecuteException", "com.dr.support.competition.exception.ReleaseLockException", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull"],
-    "class_name": "ResourceCompetition",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/competition/ResourceCompetition.java"
-}, {
-    "name": "AbstractMultipleResourceCompetition",
-    "package": "com.dr.support.competition",
-    "type": "abstract class",
-    "imports": ["com.dr.support.competition.exception.AcquireLockException", "com.dr.support.competition.exception.CallbackExecuteException", "com.dr.support.competition.exception.ReleaseLockException", "lombok.AccessLevel", "lombok.Getter", "lombok.extern.slf4j.Slf4j", "org.springframework.util.Assert", "org.springframework.util.CollectionUtils", "javax.validation.Valid", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.List", "java.util.Objects", "java.util.Stack"],
-    "class_name": "AbstractMultipleResourceCompetition",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/competition/AbstractMultipleResourceCompetition.java"
-}, {
-    "name": "ResourceCompetitionLocker",
-    "package": "com.dr.support.competition",
-    "type": "interface",
-    "imports": ["com.dr.support.competition.exception.AcquireLockException", "com.dr.support.competition.exception.ReleaseLockException"],
-    "class_name": "ResourceCompetitionLocker",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/competition/ResourceCompetitionLocker.java"
-}, {
-    "name": "AbstractResourceCompetition",
-    "package": "com.dr.support.competition",
-    "type": "abstract class",
-    "imports": ["com.dr.support.competition.exception.AcquireLockException", "com.dr.support.competition.exception.CallbackExecuteException", "com.dr.support.competition.exception.ReleaseLockException", "org.apache.commons.lang3.StringUtils", "javax.validation.constraints.NotBlank", "javax.validation.constraints.NotNull", "java.util.Objects"],
-    "class_name": "AbstractResourceCompetition implements ResourceCompetition",
-    "extend_name": "",
-    "implements_name": ["ResourceCompetition"],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/competition/AbstractResourceCompetition.java"
-}, {
-    "name": "ReleaseLockException",
-    "package": "com.dr.support.competition.exception",
-    "type": "class",
-    "imports": [],
-    "class_name": "ReleaseLockException extends Exception",
-    "extend_name": "Exception",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/competition/exception/ReleaseLockException.java"
-}, {
-    "name": "AcquireLockException",
-    "package": "com.dr.support.competition.exception",
-    "type": "class",
-    "imports": [],
-    "class_name": "AcquireLockException extends Exception",
-    "extend_name": "Exception",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/competition/exception/AcquireLockException.java"
-}, {
-    "name": "CallbackExecuteException",
-    "package": "com.dr.support.competition.exception",
-    "type": "class",
-    "imports": [],
-    "class_name": "CallbackExecuteException extends Exception",
-    "extend_name": "Exception",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/support/competition/exception/CallbackExecuteException.java"
-}, {
-    "name": "Entity",
-    "package": "com.dr.domain",
-    "type": "interface",
-    "imports": [],
-    "class_name": "Entity selector.",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/EntityGenerator.java"
-}, {
-    "name": "StateChangedEventHandler",
-    "package": "com.dr.domain",
-    "type": "class",
-    "imports": ["com.dr.support.enums.KeyValueEnum", "com.google.common.collect.Maps", "lombok.*", "lombok.extern.slf4j.Slf4j", "java.util.Map", "java.util.Objects", "java.util.function.Consumer"],
-    "class_name": "StateChangedEventHandler",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/StateChangedEventHandler.java"
-}, {
-    "name": "EntitySetterVisitor",
-    "package": "com.dr.domain",
-    "type": "interface",
-    "imports": ["java.util.List", "java.util.function.Consumer"],
-    "class_name": "EntitySetterVisitor",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/EntitySetterVisitor.java"
-}, {
-    "name": "AbstractModifier",
-    "package": "com.dr.domain",
-    "type": "abstract class",
-    "imports": ["lombok.AccessLevel", "lombok.Getter", "lombok.Setter", "lombok.extern.slf4j.Slf4j", "org.springframework.util.Assert", "java.util.List", "java.util.Objects", "java.util.function.Consumer", "java.util.function.Function", "java.util.function.Predicate", "java.util.function.Supplier"],
-    "class_name": "AbstractModifier",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/AbstractModifier.java"
-}, {
-    "name": "AbstractSaver",
-    "package": "com.dr.domain",
-    "type": "class",
-    "imports": ["com.google.common.collect.Lists", "org.springframework.data.repository.CrudRepository", "org.springframework.util.Assert", "javax.validation.constraints.NotNull", "java.util.Collection", "java.util.List", "java.util.function.Consumer", "java.util.function.Predicate"],
-    "class_name": "AbstractSaver",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/AbstractSaver.java"
-}, {
-    "name": "SaverIllegalStateException",
-    "package": "com.dr.domain",
-    "type": "class",
-    "imports": [],
-    "class_name": "SaverIllegalStateException extends Exception",
-    "extend_name": "Exception",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/SaverIllegalStateException.java"
-}, {
-    "name": "ModifierException",
-    "package": "com.dr.domain",
-    "type": "class",
-    "imports": [],
-    "class_name": "ModifierException extends RuntimeException",
-    "extend_name": "RuntimeException",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/ModifierException.java"
-}, {
-    "name": "Entity",
-    "package": "com.dr.domain",
-    "type": "interface",
-    "imports": [],
-    "class_name": "Entity selector.",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/EntitySaver.java"
-}, {
-    "name": "EntityPropSetter",
-    "package": "com.dr.domain",
-    "type": "class",
-    "imports": ["lombok.Getter", "java.util.function.Consumer", "java.util.function.Predicate"],
-    "class_name": "EntityPropSetter",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/EntityPropSetter.java"
-}, {
-    "name": "ValueObjectGenerator",
-    "package": "com.dr.domain",
-    "type": "interface",
-    "imports": ["java.util.Optional", "java.util.stream.Collector"],
-    "class_name": "ValueObjectGenerator",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/ValueObjectGenerator.java"
-}, {
-    "name": "AbstractCreator",
-    "package": "com.dr.domain",
-    "type": "abstract class",
-    "imports": ["lombok.AccessLevel", "lombok.Getter", "java.util.List", "java.util.Objects", "java.util.function.Consumer", "java.util.function.Supplier"],
-    "class_name": "AbstractCreator",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/AbstractCreator.java"
-}, {
-    "name": "PageParam",
-    "package": "com.dr.domain.selector",
-    "type": "class",
-    "imports": ["lombok.AllArgsConstructor", "lombok.Data", "lombok.NoArgsConstructor", "lombok.experimental.Accessors", "org.apache.logging.log4j.util.Strings", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.PositiveOrZero"],
-    "class_name": "PageParam",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/selector/PageParam.java"
-}, {
-    "name": "FallPageable",
-    "package": "com.dr.domain.selector",
-    "type": "class",
-    "imports": ["org.springframework.data.domain.Pageable", "org.springframework.data.domain.Sort", "java.io.Serializable"],
-    "class_name": "FallPageable implements Pageable, Serializable",
-    "extend_name": "",
-    "implements_name": ["Pageable", ""],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/selector/FallPageable.java"
-}, {
-    "name": "Paged",
-    "package": "com.dr.domain.selector",
-    "type": "interface",
-    "imports": ["javax.validation.constraints.PositiveOrZero"],
-    "class_name": "Paged selector.",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/selector/PagedSelector.java"
-}, {
-    "name": "PageRequest",
-    "package": "com.dr.domain.selector",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "org.apache.logging.log4j.util.Strings", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.PositiveOrZero"],
-    "class_name": "PageRequest",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/selector/PageRequest.java"
-}, {
-    "name": "AbstractJpaSelector",
-    "package": "com.dr.domain.selector",
-    "type": "abstract class",
-    "imports": ["com.dr.domain.ValueObjectGenerator", "com.google.common.collect.Lists", "lombok.extern.slf4j.Slf4j", "org.springframework.data.domain.Example", "org.springframework.data.domain.ExampleMatcher", "org.springframework.data.domain.PageRequest", "org.springframework.data.domain.Sort", "org.springframework.data.jpa.convert.QueryByExamplePredicateBuilder", "org.springframework.data.jpa.domain.Specification", "org.springframework.data.jpa.repository.JpaSpecificationExecutor", "javax.persistence.criteria.CriteriaBuilder", "javax.persistence.criteria.CriteriaQuery", "javax.persistence.criteria.Predicate", "javax.persistence.criteria.Root", "java.util.Comparator", "java.util.List", "java.util.Objects", "java.util.Optional", "java.util.function.Consumer", "java.util.function.Function", "java.util.function.Supplier", "java.util.stream.Collector", "java.util.stream.Stream"],
-    "class_name": "AbstractJpaSelector",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/selector/AbstractJpaSelector.java"
-}, {
-    "name": "Paged",
-    "package": "com.dr.domain.selector",
-    "type": "class",
-    "imports": ["io.swagger.annotations.ApiModelProperty", "lombok.Data", "java.util.List"],
-    "class_name": "Paged",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/selector/Paged.java"
-}, {
-    "name": "AbstractSelector",
-    "package": "com.dr.domain.selector",
-    "type": "abstract class",
-    "imports": ["com.dr.domain.EntityGenerator", "com.dr.domain.ValueObjectGenerator", "lombok.AccessLevel", "lombok.Getter", "java.util.Comparator", "java.util.Optional", "java.util.function.Function", "java.util.function.Predicate", "java.util.function.Supplier", "java.util.stream.Collector", "java.util.stream.Collectors", "java.util.stream.Stream"],
-    "class_name": "AbstractSelector",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/selector/AbstractSelector.java"
-}, {
-    "name": "AbstractSelectorBySingle",
-    "package": "com.dr.domain.selector",
-    "type": "abstract class",
-    "imports": ["org.springframework.util.Assert", "java.util.Objects", "java.util.Optional", "java.util.function.Supplier", "java.util.stream.Stream"],
-    "class_name": "AbstractSelectorBySingle",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/selector/AbstractSelectorBySingle.java"
-}, {
-    "name": "FallPaged",
-    "package": "com.dr.domain.selector",
-    "type": "class",
-    "imports": ["com.google.common.collect.Lists", "io.swagger.annotations.ApiModelProperty", "lombok.Data", "lombok.extern.slf4j.Slf4j", "org.springframework.validation.annotation.Validated", "javax.validation.constraints.Min", "javax.validation.constraints.NotNull", "java.util.Collection", "java.util.List", "java.util.stream.Collectors"],
-    "class_name": "FallPaged",
-    "extend_name": "",
-    "implements_name": [],
-    "file_name": "/Volumes/mac\u5de5\u4f5c/workplace/dr/dr_strategy/strategy/src/main/java/com/dr/domain/selector/FallPaged.java"
 }];

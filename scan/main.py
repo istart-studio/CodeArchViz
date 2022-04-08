@@ -5,11 +5,8 @@ from scan.load_source import load_source_file
 from scan.read_source_file import getJavaFiles
 
 # 扫描包的文件
-# /Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy 下的所有 *.java 文件
-# file_path = "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs"
-# file_path = "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy"
-
-file_path = "/Volumes/mac工作/workplace/dr/dr_strategy"
+# 扫描文件夹下的所有 *.java 文件
+file_path = "/Volumes/mac工作/workplace/dr/dr_strategy/retail/src/main/java"
 source_files = getJavaFiles(file_path);
 
 cards: [] = []

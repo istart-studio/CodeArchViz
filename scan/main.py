@@ -9,7 +9,7 @@ from scan.read_source_file import getJavaFiles
 # file_path = "/Users/dongyan/Documents/workplace/history/dongrun_project/pro_drs"
 # file_path = "/Users/dongyan/Documents/workplace/history/dongrun_project/dr_strategy"
 
-file_path = "/Volumes/mac工作/workplace/dr/dr_strategy/service-provider/src/main/java/com/dr/oursp/retail"
+file_path = "/Volumes/mac工作/workplace/dr/dr_strategy"
 source_files = getJavaFiles(file_path);
 
 cards: [] = []

@@ -24,15 +24,48 @@ wheels/
 venv/
 env/
 ENV/
+.venv/
+.env/
+.virtualenv/
 
 # IDE
 .idea/
 .vscode/
 *.swp
 *.swo
+.project
+.pydevproject
+.settings/
+*.sublime-workspace
+*.sublime-project
 
 # 项目特定
 output/
 *.log
 .DS_Store
+codearchviz/view_ec/source_json_data.js
 jcda/view_ec/source_json_data.js
+
+# 临时文件
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+.hypothesis/
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# 文档生成
+docs/_build/
+docs/api/
+
+# 系统文件
+Thumbs.db
+.directory
+desktop.ini

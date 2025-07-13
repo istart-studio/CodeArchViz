@@ -1,0 +1,12 @@
+include LICENSE
+include README.md
+include requirements.txt
+include CONTRIBUTING.md
+
+recursive-include codearchviz/view_ec *
+recursive-include codearchviz/view *
+
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude *$py.class 

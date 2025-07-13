@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+<head>
+    <meta charset="utf-8">
+    <title>Java 代码依赖关系</title>
+    <!-- spring boot -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.json-viewer.css" rel="stylesheet">
+</head>
+<body style="margin: 0">
+
+<div class="container-fluid" style="margin-bottom: 100px;">
+    <div class="row">
+        <div class="col-9">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            全局引用依赖
+                        </div>
+                        <div class="card-body">
+                            <!-- 全局图 -->
+                            <div id="graph" style="height: 600px;"></div>
+                        </div>
+                        <div class="card-footer text-muted">
+                            可拖动，可放大/缩小
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            引用
+                        </div>
+                        <div class="card-body">
+                            <!-- 单个对象 关系图 -->
+                            <div id="graph_left_tree" style="height: 400px;"></div>
+                        </div>
+                        <div class="card-footer text-muted">
+                            可拖动，可放大/缩小
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            依赖
+                        </div>
+                        <div class="card-body">
+                            <!-- 单个对象 树图 -->
+                            <div id="graph_right_tree" style="height: 400px;"></div>
+                        </div>
+                        <div class="card-footer text-muted">
+                            可拖动，可放大/缩小
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header">
+                    元素详情
+                </div>
+                <div class="card-body">
+                    <!-- 详情 -->
+                    <div id="json-render" style="font-size: 12px;"></div>
+                </div>
+                <div class="card-footer text-muted">
+                    左侧图中点击元素，查看详情
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    包依赖结构
+                </div>
+                <div class="card-body">
+                    <!-- 详情 -->
+                    <div id="package-json-render" style="font-size: 12px;"></div>
+                </div>
+                <div class="card-footer text-muted">
+                    左侧图中点击元素，查看详情
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card text-center">
+                <div class="card-header">
+                    包内引用统计
+                </div>
+                <div class="card-body">
+                    <div id="graph_top_ref" style="height: 500px;"></div>
+                </div>
+                <div class="card-footer text-muted">
+                    包内类的引用统计，点击单个元素可以查询此类所在包的统计
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card text-center">
+                <div class="card-header">
+                    (I,A) 图
+                    A 抽象度
+                    I 稳定度
+                </div>
+                <div class="card-body">
+                    <div id="fan_in_out" style="height: 500px;"></div>
+                </div>
+                <div class="card-footer">
+                    <ul class="list-group">
+                        <li>
+                            将不稳定性（I）作为横轴，抽象程度（A）作为纵轴
+                        </li>
+                        <li>
+                            左上角（0，1）:最稳定、只包含抽象类和接口的组件
+                        </li>
+                        <li>
+                            右下角（1，0）:最不稳定、只包含具体实现类，没有任何接口的组件
+                        </li>
+                        <li>
+                            主序列线:左上角和右下角的连线.位于线上的组件，他们的稳定性和抽象程度相匹配，是设计良好的组件。
+                        </li>
+                        <li>
+                            痛苦区:
+                            位于（0，0）周围区域的组件,它们是非常稳定（注意这里的稳定指的是变更成本）并且非常具体的组件，因为他们的抽象程度低，决定了他们经常改动的命运，但是又有许多其他组件依赖他们，改起来非常痛苦.
+                        </li>
+                        <li>
+                            无用区: 右上角区域的组件，没有其他组件依赖他们，他们自身的抽象程度又很高，很有可能是陈年的老代码
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- echarts -->
+<script type="text/javascript" src="js/echarts.js"></script>
+<!-- 数据 -->
+<script type="text/javascript" src="./source_json_data.js"></script>
+<!-- 全局关系图 （全局图、引用、依赖）3个图，并且关联了点击json-->
+<script type="text/javascript" src="./convert_data_all_package.js"></script>
+<!-- json 序列化 -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.json-viewer.js"></script>
+<!-- 单个依赖图 关系图-->
+<script type="text/javascript" src="./convert_data_left_tree.js"></script>
+<!-- 单个依赖图 树 -->
+<script type="text/javascript" src="./convert_data_right_tree.js"></script>
+
+<script type="text/javascript" src="render_tree_graph.js"></script>
+
+<!-- 统计图 -->
+<script type="text/javascript" src="./render_statistics.js"></script>
+
+<!-- Fan-In/Fan-Out 图 -->
+<script type="text/javascript" src="./render_fan_in_out.js"></script>
+
+<!-- 包依赖 图 -->
+<script type="text/javascript" src="./render_package_dependency.js"></script>
+
+
+<script type="text/javascript">
+
+    const globeData = data;
+    render_tree_graph({
+        globeData: data,
+        searchPackage: "com.dr.oursp.retail",
+        maxPackageDeepLevel: 5,
+        clickFunc: function (singleData) {
+            render_statistics(globeData, singleData.package, {limit: 20});
+        }
+    });
+    render_statistics(globeData, "com.dr.oursp.retail", {limit: 20});
+    render_fan_in_out(globeData, "com.dr.oursp.retail");
+
+    render_package_dependency(globeData, {
+        divId: "#package-json-render",
+        searchPackages: ["com.dr.oursp.retail.trade", "com.dr.oursp.retail.player", "com.dr.oursp.retail.commodity", "com.dr.oursp.retail.logistics",
+            "com.dr.oursp.retail.invoice", "com.dr.oursp.retail.statistical", "com.dr.oursp.retail.remote",
+            "com.dr.oursp.retail.quality", "com.dr.oursp.retail.partner", "com.dr.oursp.retail.category",
+            "com.dr.oursp.retail.globe"],
+        excludePackages: ["com.dr.oursp.retail.app", "com.dr.oursp.retail.consts", "com.dr.oursp.retail.remote"],
+        collapsed: true,
+        withQuotes: false
+    });
+</script>
+</body>
+</html>
+    
